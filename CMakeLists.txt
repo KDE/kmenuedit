@@ -6,6 +6,7 @@ set(QT_MIN_VERSION "5.2.0")
 find_package(ECM 0.0.11 REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${ECM_KDE_MODULE_DIR})
 
+include(FeatureSummary)
 include(KDEInstallDirs)
 include(KDECMakeSettings)
 include(KDECompilerSettings)
@@ -20,19 +21,17 @@ find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS
 find_package(KF5 CONFIG REQUIRED COMPONENTS
     I18n
     XmlGui
-    WindowSystem
-    KCMUtils
-    Solid
-    Plasma
     DBusAddons
     IconThemes
     KIO
     Sonnet
-    Init
-    KDE4Support
+    KDELibs4Support
 )
 
 find_package(KHotKeysDBusInterface QUIET)
+
+feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
+
 remove_definitions(-DQT_NO_CAST_FROM_ASCII -DQT_STRICT_ITERATORS -DQT_NO_CAST_FROM_BYTEARRAY -DQT_NO_KEYWORDS)
 add_subdirectory( pixmaps ) 
 add_subdirectory( doc )
@@ -67,7 +66,7 @@ target_link_libraries(kdeinit_kmenuedit
     KF5::SonnetCore
     KF5::SonnetUi
     KF5::XmlGui
-    KF5::KDE4Support
+    KF5::KDELibs4Support
 )
 
 install(TARGETS kdeinit_kmenuedit  DESTINATION ${LIB_INSTALL_DIR} )
