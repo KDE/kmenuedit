@@ -55,8 +55,8 @@ public:
 
 extern "C" int Q_DECL_EXPORT kdemain( int argc, char **argv )
 {
-    KAboutData aboutData(QStringLiteral("kmenuedit"), QString(), i18n("KDE Menu Editor"),
-                         QString(version), i18n(description), KAboutData::License_GPL,
+    KAboutData aboutData(QStringLiteral("kmenuedit"), i18n("KDE Menu Editor"),
+                         QString(version), i18n(description), KAboutLicense::GPL,
                          i18n("(C) 2000-2003, Waldo Bastian, Raffaele Sandrini, Matthias Elter"));
     aboutData.addAuthor(i18n("Waldo Bastian"), i18n("Maintainer"), "bastian@kde.org");
     aboutData.addAuthor(i18n("Raffaele Sandrini"), i18n("Previous Maintainer"), QStringLiteral("sandrini@kde.org"));
