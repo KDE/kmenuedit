@@ -260,37 +260,37 @@ TreeView::TreeView( KActionCollection *ac, QWidget *parent, const char *name )
     header()->hide();
 
     // listen for creation
-    connect(m_ac->action(NEW_ITEM_ACTION_NAME), SIGNAL(activated()), SLOT(newitem()));
-    connect(m_ac->action(NEW_SUBMENU_ACTION_NAME), SIGNAL(activated()), SLOT(newsubmenu()));
-    connect(m_ac->action(NEW_SEPARATOR_ACTION_NAME), SIGNAL(activated()), SLOT(newsep()));
+    connect(m_ac->action(NEW_ITEM_ACTION_NAME), SIGNAL(triggered()), SLOT(newitem()));
+    connect(m_ac->action(NEW_SUBMENU_ACTION_NAME), SIGNAL(triggered()), SLOT(newsubmenu()));
+    connect(m_ac->action(NEW_SEPARATOR_ACTION_NAME), SIGNAL(triggered()), SLOT(newsep()));
 
     // listen for copy
-    connect(m_ac->action(CUT_ACTION_NAME), SIGNAL(activated()), SLOT(cut()));
-    connect(m_ac->action(COPY_ACTION_NAME), SIGNAL(activated()), SLOT(copy()));
-    connect(m_ac->action(PASTE_ACTION_NAME), SIGNAL(activated()), SLOT(paste()));
+    connect(m_ac->action(CUT_ACTION_NAME), SIGNAL(triggered()), SLOT(cut()));
+    connect(m_ac->action(COPY_ACTION_NAME), SIGNAL(triggered()), SLOT(copy()));
+    connect(m_ac->action(PASTE_ACTION_NAME), SIGNAL(triggered()), SLOT(paste()));
 
     // listen for deleting
-    connect(m_ac->action(DELETE_ACTION_NAME), SIGNAL(activated()), SLOT(del()));
+    connect(m_ac->action(DELETE_ACTION_NAME), SIGNAL(triggered()), SLOT(del()));
 
     // listen for sorting
     m_sortSignalMapper = new QSignalMapper(this);
     QAction *action = m_ac->action(SORT_BY_NAME_ACTION_NAME);
-    connect(action, SIGNAL(activated()), m_sortSignalMapper, SLOT(map()));
+    connect(action, SIGNAL(triggered()), m_sortSignalMapper, SLOT(map()));
     m_sortSignalMapper->setMapping(action, SortByName);
     action = m_ac->action(SORT_BY_DESCRIPTION_ACTION_NAME);
-    connect(action, SIGNAL(activated()), m_sortSignalMapper, SLOT(map()));
+    connect(action, SIGNAL(triggered()), m_sortSignalMapper, SLOT(map()));
     m_sortSignalMapper->setMapping(action, SortByDescription);
     action = m_ac->action(SORT_ALL_BY_NAME_ACTION_NAME);
-    connect(action, SIGNAL(activated()), m_sortSignalMapper, SLOT(map()));
+    connect(action, SIGNAL(triggered()), m_sortSignalMapper, SLOT(map()));
     m_sortSignalMapper->setMapping(action, SortAllByName);
     action = m_ac->action(SORT_ALL_BY_DESCRIPTION_ACTION_NAME);
-    connect(action, SIGNAL(activated()), m_sortSignalMapper, SLOT(map()));
+    connect(action, SIGNAL(triggered()), m_sortSignalMapper, SLOT(map()));
     m_sortSignalMapper->setMapping(action, SortAllByDescription);
     connect(m_sortSignalMapper, SIGNAL(mapped(const int)), this, SLOT(sort(const int)));
 
     // connect moving up/down actions
-    connect(m_ac->action(MOVE_UP_ACTION_NAME), SIGNAL(activated()), SLOT(moveUpItem()));
-    connect(m_ac->action(MOVE_DOWN_ACTION_NAME), SIGNAL(activated()), SLOT(moveDownItem()));
+    connect(m_ac->action(MOVE_UP_ACTION_NAME), SIGNAL(triggered()), SLOT(moveUpItem()));
+    connect(m_ac->action(MOVE_DOWN_ACTION_NAME), SIGNAL(triggered()), SLOT(moveDownItem()));
 
     // listen for selection
     connect(this, SIGNAL(currentItemChanged(QTreeWidgetItem*,QTreeWidgetItem*)),
