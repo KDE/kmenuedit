@@ -22,6 +22,7 @@
 #include <QHBoxLayout>
 #include <QCheckBox>
 #include <QGroupBox>
+#include <QPushButton>
 
 #include <KLocalizedString>
 #include <KConfigGroup>
@@ -45,7 +46,7 @@ PreferencesDialog::PreferencesDialog( QWidget *parent )
     page->setIcon( QIcon::fromTheme( "tools-check-spelling" ) );
     addPage(page);
 
-    connect( this, SIGNAL(okClicked()), this, SLOT(slotSave()) );
+    connect( button(QDialogButtonBox::Ok), SIGNAL(clicked()), this, SLOT(slotSave()) );
 }
 
 void PreferencesDialog::slotSave()
