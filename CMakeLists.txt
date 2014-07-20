@@ -33,12 +33,13 @@ find_package(KHotKeysDBusInterface QUIET)
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
 
 remove_definitions(-DQT_NO_CAST_FROM_ASCII -DQT_STRICT_ITERATORS -DQT_NO_CAST_FROM_BYTEARRAY -DQT_NO_KEYWORDS)
+add_definitions(-DTRANSLATION_DOMAIN=\"kmenuedit\")
+
 add_subdirectory( pixmaps ) 
 add_subdirectory( doc )
 
 set(kmenueditcommon_STAT_SRCS preferencesdlg.cpp klinespellchecking.cpp basictab.cpp treeview.cpp kmenuedit.cpp menufile.cpp menuinfo.cpp configurationmanager.cpp )
 ########### next target ###############
-
 qt5_add_dbus_adaptor( kmenueditcommon_STAT_SRCS org.kde.kmenuedit.xml kmenuedit.h KMenuEdit)
 
 if(NOT WIN32 AND ${KHotKeysDBusInterface_FOUND})
@@ -84,4 +85,3 @@ add_dependencies(kdeinit_kmenuedit kded_khotkeys)
 endif()
 
 ecm_install_icons( ${ICON_INSTALL_DIR}  )
-
