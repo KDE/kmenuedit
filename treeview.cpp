@@ -372,13 +372,15 @@ void TreeView::readMenuFolderInfo(MenuFolderInfo *folderInfo, KServiceGroup::Ptr
     {
         if (e->isType(KST_KServiceGroup))
         {
+            const KServiceGroup::Ptr serviceGroup(static_cast<KServiceGroup*>(e.data()));
             MenuFolderInfo *subFolderInfo = new MenuFolderInfo();
-            readMenuFolderInfo(subFolderInfo, KServiceGroup::Ptr(e), folderInfo->fullId);
+            readMenuFolderInfo(subFolderInfo, serviceGroup, folderInfo->fullId);
             folderInfo->add(subFolderInfo, true);
         }
         else if (e->isType(KST_KService))
         {
-            folderInfo->add(new MenuEntryInfo(KService::Ptr(e)), true);
+            const KService::Ptr service(static_cast<KService*>(e.data()));
+            folderInfo->add(new MenuEntryInfo(service), true);
         }
         else if (e->isType(KST_KServiceSeparator))
         {
