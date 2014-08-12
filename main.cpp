@@ -62,6 +62,7 @@ extern "C" int Q_DECL_EXPORT kdemain( int argc, char **argv )
     aboutData.addAuthor(i18n("Raffaele Sandrini"), i18n("Previous Maintainer"), QStringLiteral("sandrini@kde.org"));
     aboutData.addAuthor(i18n("Matthias Elter"), i18n("Original Author"), QStringLiteral("elter@kde.org"));
     aboutData.addAuthor(i18n("Montel Laurent"), QString(), QStringLiteral("montel@kde.org"));
+    KAboutData::setApplicationData(aboutData);
 
     KMenuApplication app(argc, argv);
 
