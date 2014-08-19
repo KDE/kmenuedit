@@ -1,4 +1,5 @@
 project(kmenuedit)
+set(PROJECT_VERSION "5.0.95")
 
 cmake_minimum_required(VERSION 2.8.12 FATAL_ERROR)
 set(QT_MIN_VERSION "5.3.0")
@@ -55,6 +56,7 @@ endif()
 set(kmenuedit_KDEINIT_SRCS main.cpp ${kmenueditcommon_STAT_SRCS})
 
 kf5_add_kdeinit_executable( kmenuedit ${kmenuedit_KDEINIT_SRCS})
+target_compile_definitions(kdeinit_kmenuedit PRIVATE -DPROJECT_VERSION="${PROJECT_VERSION}")
 
 target_link_libraries(kdeinit_kmenuedit
     Qt5::DBus

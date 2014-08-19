@@ -32,7 +32,6 @@
 #endif
 
 static const char description[] = I18N_NOOP("KDE menu editor");
-static const char version[] = "1.0";
 
 static KMenuEdit *menuEdit = 0;
 
@@ -43,7 +42,7 @@ public:
     : QApplication(argc, argv)
     {
         QCoreApplication::setApplicationName(QStringLiteral("kmenuedit"));
-        QCoreApplication::setApplicationVersion(QString(version));
+        QCoreApplication::setApplicationVersion(PROJECT_VERSION);
         QCoreApplication::setOrganizationDomain(QStringLiteral("kde.org"));
         QApplication::setApplicationDisplayName(i18n("KDE Menu Editor"));
     }
@@ -56,7 +55,7 @@ public:
 extern "C" int Q_DECL_EXPORT kdemain( int argc, char **argv )
 {
     KAboutData aboutData(QStringLiteral("kmenuedit"), i18n("KDE Menu Editor"),
-                         QString(version), i18n(description), KAboutLicense::GPL,
+                         PROJECT_VERSION, i18n(description), KAboutLicense::GPL,
                          i18n("(C) 2000-2003, Waldo Bastian, Raffaele Sandrini, Matthias Elter"));
     aboutData.addAuthor(i18n("Waldo Bastian"), i18n("Maintainer"), "bastian@kde.org");
     aboutData.addAuthor(i18n("Raffaele Sandrini"), i18n("Previous Maintainer"), QStringLiteral("sandrini@kde.org"));
@@ -78,8 +77,10 @@ extern "C" int Q_DECL_EXPORT kdemain( int argc, char **argv )
     parser.addPositionalArgument(QStringLiteral("menu-id"),
                                  i18n("Menu entry to pre-select"),
                                  QStringLiteral("[menu-id]"));
-
+    aboutData.setupCommandLine(&parser);
     parser.process(app);
+    aboutData.processCommandLine(&parser);
+
     const auto args = parser.positionalArguments();
 
     menuEdit = new KMenuEdit();
