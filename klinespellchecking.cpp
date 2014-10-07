@@ -23,7 +23,7 @@
 
 #include <KStandardAction>
 #include <KActionCollection>
-#include <KAction>
+#include <QAction>
 #include <sonnet/dialog.h>
 #include <sonnet/backgroundchecker.h>
 
@@ -100,9 +100,5 @@ void KLineSpellChecking::contextMenuEvent(QContextMenuEvent *e)
     popup->exec(e->globalPos());
     delete popup;
 }
-
-
-
-#include "klinespellchecking.moc"
 
 

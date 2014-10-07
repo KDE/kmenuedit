@@ -36,7 +36,7 @@
 #include <QtDBus/QtDBus>
 #include <QSignalMapper>
 
-#include <KAction>
+#include <QAction>
 #include <KActionCollection>
 #include <KBuildSycocaProgressDialog>
 #include <KDebug>
@@ -54,7 +54,6 @@
 #include <kio/netaccess.h>
 #include <KUrl>
 
-#include "treeview.moc"
 #include "menufile.h"
 #include "menuinfo.h"
 

@@ -92,4 +92,3 @@ void MiscPage::saveOptions()
     ConfigurationManager::getInstance()->setHiddenEntriesVisible(m_showHiddenEntries->isChecked());
 }
 
-#include "preferencesdlg.moc"

@@ -21,13 +21,13 @@
 
 #include <QSplitter>
 
-#include <KAction>
+#include <QAction>
 #include <KActionCollection>
 #include <KActionMenu>
 #include <KConfig>
 #include <KDebug>
 #include <KGlobal>
-#include <KIcon>
+#include <QIcon>
 #include <KLocalizedString>
 #include <KMessageBox>
 #include <KService>
@@ -41,8 +41,6 @@
 #include "preferencesdlg.h"
 #include "kmenueditadaptor.h"
 #include "configurationmanager.h"
-
-#include "kmenuedit.moc"
 
 KMenuEdit::KMenuEdit ()
     : KXmlGuiWindow (0)
@@ -72,20 +70,20 @@ void KMenuEdit::setupActions()
     QAction *action = 0;
 
     action = actionCollection()->addAction(NEW_SUBMENU_ACTION_NAME);
-    action->setIcon(KIcon("menu_new"));
+    action->setIcon(QIcon::fromTheme("menu_new"));
     action->setText(i18n("&New Submenu..."));
     action->setShortcut(QKeySequence(Qt::CTRL + Qt::SHIFT + Qt::Key_N));
     action = actionCollection()->addAction(NEW_ITEM_ACTION_NAME);
-    action->setIcon(KIcon("document-new")) ;
+    action->setIcon(QIcon::fromTheme("document-new")) ;
     action->setText(i18n("New &Item..."));
     action->setShortcuts(KStandardShortcut::openNew());
     action = actionCollection()->addAction(NEW_SEPARATOR_ACTION_NAME);
-    action->setIcon(KIcon("menu_new_sep"));
+    action->setIcon(QIcon::fromTheme("menu_new_sep"));
     action->setText(i18n("New S&eparator"));
     action->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_I));
 
     // "sort selection" menu
-    KActionMenu* sortMenu = new KActionMenu(KIcon("view-sort-ascending"), i18n("&Sort"), this);
+    KActionMenu* sortMenu = new KActionMenu(QIcon::fromTheme("view-sort-ascending"), i18n("&Sort"), this);
     sortMenu->setDelayed(false);
     actionCollection()->addAction(SORT_ACTION_NAME, sortMenu);
     action = actionCollection()->addAction(SORT_BY_NAME_ACTION_NAME);
@@ -104,10 +102,10 @@ void KMenuEdit::setupActions()
 
     // move up/down
     action = actionCollection()->addAction(MOVE_UP_ACTION_NAME);
-    action->setIcon(KIcon("go-up"));
+    action->setIcon(QIcon::fromTheme("go-up"));
     action->setText(i18n("Move &Up"));
     action = actionCollection()->addAction(MOVE_DOWN_ACTION_NAME);
-    action->setIcon(KIcon("go-down"));
+    action->setIcon(QIcon::fromTheme("go-down"));
     action->setText(i18n("Move &Down"));
 
     actionCollection()->addAction(KStandardAction::Save, this, SLOT(slotSave()));
@@ -116,7 +114,7 @@ void KMenuEdit::setupActions()
     actionCollection()->addAction(KStandardAction::Copy);
     actionCollection()->addAction(KStandardAction::Paste);
 
-    action = new KAction( i18n("Restore to System Menu"), this );
+    action = new QAction( i18n("Restore to System Menu"), this );
     actionCollection()->addAction( "restore_system_menu", action );
     connect( action, SIGNAL(triggered(bool)), SLOT(slotRestoreMenu()) );
 
@@ -191,7 +189,7 @@ void KMenuEdit::slotChangeView()
     delete m_actionDelete;
 
     m_actionDelete = actionCollection()->addAction(DELETE_ACTION_NAME);
-    m_actionDelete->setIcon(KIcon("edit-delete"));
+    m_actionDelete->setIcon(QIcon::fromTheme("edit-delete"));
     m_actionDelete->setText(i18n("&Delete"));
     m_actionDelete->setShortcut(QKeySequence(Qt::Key_Delete));
 

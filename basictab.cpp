@@ -43,8 +43,6 @@
 #include "klinespellchecking.h"
 #include "menuinfo.h"
 
-#include "basictab.moc"
-
 BasicTab::BasicTab( QWidget *parent )
     : KTabWidget(parent)
 {
