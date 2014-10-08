@@ -22,7 +22,6 @@
 #include <KLocalizedString>
 #include <KAboutData>
 #include <kdbusservice.h>
-#include <kdemacros.h>
 
 #include <QApplication>
 #include <QtCore/QCommandLineParser>
