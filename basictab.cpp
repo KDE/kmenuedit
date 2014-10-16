@@ -27,7 +27,6 @@
 #include <QGridLayout>
 
 #include <KLocalizedString>
-#include <KGlobal>
 #include <KDialog>
 #include <KKeySequenceWidget>
 #include <KLineEdit>

@@ -42,7 +42,7 @@ class BasicTab : public KTabWidget
     Q_OBJECT
 
 public:
-    BasicTab( QWidget *parent=0 );
+    explicit BasicTab( QWidget *parent=0 );
 
     void apply();
 

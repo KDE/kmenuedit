@@ -24,16 +24,13 @@
 #include <QAction>
 #include <KActionCollection>
 #include <KActionMenu>
-#include <KConfig>
-#include <KDebug>
-#include <KGlobal>
 #include <QIcon>
 #include <KLocalizedString>
+#include <KXMLGUIFactory>
 #include <KMessageBox>
 #include <KService>
 #include <KStandardAction>
 #include <KStandardShortcut>
-#include <KXMLGUIFactory>
 #include <sonnet/configdialog.h>
 
 #include "treeview.h"

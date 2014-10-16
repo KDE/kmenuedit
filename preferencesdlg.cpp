@@ -25,7 +25,6 @@
 #include <QPushButton>
 
 #include <KLocalizedString>
-#include <KConfigGroup>
 #include <sonnet/configwidget.h>
 #include "configurationmanager.h"
 
