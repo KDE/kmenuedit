@@ -20,7 +20,7 @@
 #ifndef basictab_h
 #define basictab_h
 
-#include <KTabWidget>
+#include <QTabWidget>
 #include <KShortcut>
 #include <KService>
 
@@ -37,7 +37,7 @@ class KLineSpellChecking;
 class MenuFolderInfo;
 class MenuEntryInfo;
 
-class BasicTab : public KTabWidget
+class BasicTab : public QTabWidget
 {
     Q_OBJECT
 

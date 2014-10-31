@@ -43,7 +43,7 @@
 #include "menuinfo.h"
 
 BasicTab::BasicTab( QWidget *parent )
-    : KTabWidget(parent)
+    : QTabWidget(parent)
 {
     _menuFolderInfo = 0;
     _menuEntryInfo = 0;

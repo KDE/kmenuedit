@@ -21,7 +21,7 @@
 #include "khotkeys.h"
 #include "khotkeys_interface.h"
 
-#include <KDebug>
+#include <QDebug>
 #include <KLocalizedString>
 #include <KMessageBox>
 
@@ -45,7 +45,7 @@ bool KHotKeys::init()
     if(!khotkeysInterface->isValid()) {
         QDBusError err = khotkeysInterface->lastError();
         if (err.isValid()) {
-            kError() << err.name() << ":" << err.message();
+            qCritical() << err.name() << ":" << err.message();
         }
         KMessageBox::error(
             NULL,
@@ -83,7 +83,7 @@ QString KHotKeys::getMenuEntryShortcut( const QString& entry_P )
 
     QDBusReply<QString> reply = khotkeysInterface->get_menuentry_shortcut(entry_P);
     if (!reply.isValid()) {
-        kError() << reply.error();
+        qCritical() << reply.error();
         return "";
 
     } else {
@@ -106,7 +106,7 @@ QString KHotKeys::changeMenuEntryShortcut(
             shortcut_P);
 
     if (!reply.isValid()) {
-        kError() << reply.error();
+        qCritical() << reply.error();
         return "";
     } else {
         return reply;

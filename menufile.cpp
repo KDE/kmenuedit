@@ -23,7 +23,7 @@
 #include <QRegExp>
 #include <QFileInfo>
 
-#include <KDebug>
+#include <QDebug>
 #include <KGlobal>
 #include <KLocalizedString>
 #include <KStandardDirs>
@@ -65,7 +65,7 @@ bool MenuFile::load()
    if (!file.open( QIODevice::ReadOnly ))
    {
        if ( file.exists() )
-           kWarning() << "Could not read " << m_fileName ;
+           qWarning() << "Could not read " << m_fileName ;
        create();
        return false;
    }
@@ -74,7 +74,7 @@ bool MenuFile::load()
    int errorRow;
    int errorCol;
    if ( !m_doc.setContent( &file, &errorMsg, &errorRow, &errorCol ) ) {
-      kWarning() << "Parse error in " << m_fileName << ", line " << errorRow << ", col " << errorCol << ": " << errorMsg ;
+      qWarning() << "Parse error in " << m_fileName << ", line " << errorRow << ", col " << errorCol << ": " << errorMsg ;
       file.close();
       create();
       return false;
@@ -97,7 +97,7 @@ bool MenuFile::save()
 
    if (!file.open( QIODevice::WriteOnly ))
    {
-      kWarning() << "Could not write " << m_fileName ;
+      qWarning() << "Could not write " << m_fileName ;
       m_error = i18n("Could not write to %1", m_fileName);
       return false;
    }
@@ -110,7 +110,7 @@ bool MenuFile::save()
 
    if (file.error() != QFile::NoError)
    {
-      kWarning() << "Could not close " << m_fileName ;
+      qWarning() << "Could not close " << m_fileName ;
       m_error = i18n("Could not write to %1", m_fileName);
       return false;
    }

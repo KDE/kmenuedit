@@ -39,7 +39,7 @@
 #include <QAction>
 #include <KActionCollection>
 #include <KBuildSycocaProgressDialog>
-#include <KDebug>
+#include <QDebug>
 #include <KDesktopFile>
 #include <KGlobal>
 #include <KIconLoader>
@@ -462,7 +462,7 @@ TreeItem *TreeView::createTreeItem(TreeItem *parent, QTreeWidgetItem *after, Men
         name = entryInfo->caption;
     }
 
-    //kDebug() << parent << after << name;
+    ////qDebug() << parent << after << name;
     item->setMenuEntryInfo(entryInfo);
     item->setName(name);
     item->setIcon(0, appIcon(entryInfo->icon));
@@ -909,7 +909,7 @@ bool TreeView::dropMimeData(QTreeWidgetItem *item, int index, const QMimeData *d
 
     QString folder = parentItem ? parentItem->directory() : "/";
     MenuFolderInfo *parentFolderInfo = parentItem ? parentItem->folderInfo() : m_rootFolder;
-    kDebug() << "think we're dropping on" << (parentItem ? parentItem->text(0) : "Top Level") <<  index;
+    //qDebug() << "think we're dropping on" << (parentItem ? parentItem->text(0) : "Top Level") <<  index;
 
     if (!data->hasFormat(s_internalMimeType)) {
         // External drop
@@ -973,7 +973,7 @@ bool TreeView::dropMimeData(QTreeWidgetItem *item, int index, const QMimeData *d
         return false; // Nothing to do
     }
 
-    //kDebug() << "an internal drag of" << dragItem->text(0) << (parentItem ? parentItem->text(0) : "Top level");
+    ////qDebug() << "an internal drag of" << dragItem->text(0) << (parentItem ? parentItem->text(0) : "Top level");
     if (dragItem->isDirectory()) {
         MenuFolderInfo *folderInfo = dragItem->folderInfo();
         if (action == Qt::CopyAction) {
@@ -1002,7 +1002,7 @@ bool TreeView::dropMimeData(QTreeWidgetItem *item, int index, const QMimeData *d
 
             // Add file to menu
             //m_menuFile->moveMenu(oldFolder, folder + newFolder);
-            kDebug() << "moving" << dragItem->text(0) << "to" << folder + newFolder;
+            //qDebug() << "moving" << dragItem->text(0) << "to" << folder + newFolder;
             m_menuFile->pushAction(MenuFile::MOVE_MENU, oldFolder, folder + newFolder);
 
             // Make sure caption is unique
@@ -1088,7 +1088,7 @@ bool TreeView::dropMimeData(QTreeWidgetItem *item, int index, const QMimeData *d
         setCurrentItem(newItem);
     }
 
-    kDebug() << "setting the layout to be dirty at" << parentItem;
+    //qDebug() << "setting the layout to be dirty at" << parentItem;
     setLayoutDirty(parentItem);
     return true;
 }
