@@ -22,6 +22,7 @@
 #include <KLocalizedString>
 #include <KAboutData>
 #include <kdbusservice.h>
+#include <Kdelibs4ConfigMigrator>
 
 #include <QApplication>
 #include <QtCore/QCommandLineParser>
@@ -53,6 +54,11 @@ public:
 
 extern "C" int Q_DECL_EXPORT kdemain( int argc, char **argv )
 {
+    Kdelibs4ConfigMigrator migrate(QLatin1String("kmenuedit"));
+    migrate.setConfigFiles(QStringList() << QLatin1String("kmenueditrc"));
+    migrate.setUiFiles(QStringList() << QLatin1String("kmenueditui.rc"));
+    migrate.migrate();
+
     KAboutData aboutData(QStringLiteral("kmenuedit"), i18n("KDE Menu Editor"),
                          PROJECT_VERSION, i18n(description), KAboutLicense::GPL,
                          i18n("(C) 2000-2003, Waldo Bastian, Raffaele Sandrini, Matthias Elter"));
