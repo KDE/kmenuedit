@@ -35,7 +35,7 @@
 #include <KUrlRequester>
 #include <KShell>
 
-#ifndef Q_WS_WIN
+#ifndef Q_OS_WIN
 #include "khotkeys.h"
 #endif
 

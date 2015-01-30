@@ -28,7 +28,7 @@ const QString ConfigurationManager::SPLITTER_SIZES_PROPERTY_NAME = "SplitterSize
 ConfigurationManager* ConfigurationManager::m_instance = 0;
 
 ConfigurationManager::ConfigurationManager() :
-    m_configGroup(KGlobal::config(), GENERAL_CONFIG_GROUP)
+    m_configGroup(KSharedConfig::openConfig(), GENERAL_CONFIG_GROUP)
 {
 }
 
