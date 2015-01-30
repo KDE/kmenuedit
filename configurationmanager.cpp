@@ -18,8 +18,7 @@
  */
 
 #include "configurationmanager.h"
-
-#include <KGlobal>
+#include <KSharedConfig>
 
 const QString ConfigurationManager::GENERAL_CONFIG_GROUP = "General";
 const QString ConfigurationManager::SHOW_HIDDEN_ENTRIES_PROPERTY_NAME = "ShowHidden";
