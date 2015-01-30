@@ -228,7 +228,7 @@ void BasicTab::initConnections()
     connect(_descriptionEdit, SIGNAL(textChanged(QString)), SLOT(slotChanged()));
     connect(_commentEdit, SIGNAL(textChanged(QString)), SLOT(slotChanged()));
     connect(_execEdit, SIGNAL(textChanged(QString)), SLOT(slotChanged()));
-    connect(_execEdit, SIGNAL(urlSelected(KUrl)), SLOT(slotExecSelected()));
+    connect(_execEdit, SIGNAL(urlSelected(QUrl)), SLOT(slotExecSelected()));
     connect(_launchCB, SIGNAL(clicked()), SLOT(launchcb_clicked()));
     connect(_systrayCB, SIGNAL(clicked()), SLOT(systraycb_clicked()));
     connect(_onlyShowInKdeCB, SIGNAL(clicked()), SLOT(onlyshowcb_clicked()));
