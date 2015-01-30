@@ -35,7 +35,7 @@
 #include <KUrlRequester>
 #include <KShell>
 
-#ifndef Q_WS_WIN
+#ifndef Q_OS_WIN
 #include "khotkeys.h"
 #endif
 
@@ -224,24 +224,24 @@ void BasicTab::initAdvancedTab()
 void BasicTab::initConnections()
 {
     // general tab's components
-    connect(_nameEdit, SIGNAL(textChanged(QString)), SLOT(slotChanged()));
-    connect(_descriptionEdit, SIGNAL(textChanged(QString)), SLOT(slotChanged()));
-    connect(_commentEdit, SIGNAL(textChanged(QString)), SLOT(slotChanged()));
-    connect(_execEdit, SIGNAL(textChanged(QString)), SLOT(slotChanged()));
-    connect(_execEdit, SIGNAL(urlSelected(KUrl)), SLOT(slotExecSelected()));
-    connect(_launchCB, SIGNAL(clicked()), SLOT(launchcb_clicked()));
-    connect(_systrayCB, SIGNAL(clicked()), SLOT(systraycb_clicked()));
-    connect(_onlyShowInKdeCB, SIGNAL(clicked()), SLOT(onlyshowcb_clicked()));
-    connect(_hiddenEntryCB, SIGNAL(clicked()), SLOT(hiddenentrycb_clicked()));
-    connect(_iconButton, SIGNAL(iconChanged(QString)), SLOT(slotChanged()));
+    connect(_nameEdit, &KLineEdit::textChanged, this, &BasicTab::slotChanged);
+    connect(_descriptionEdit, &KLineSpellChecking::textChanged, this, &BasicTab::slotChanged);
+    connect(_commentEdit, &KLineSpellChecking::textChanged, this, &BasicTab::slotChanged);
+    connect(_execEdit, &KUrlRequester::textChanged, this, &BasicTab::slotChanged);
+    connect(_execEdit, &KUrlRequester::urlSelected, this, &BasicTab::slotExecSelected);
+    connect(_launchCB, &QCheckBox::clicked, this, &BasicTab::launchcb_clicked);
+    connect(_systrayCB, &QCheckBox::clicked, this, &BasicTab::systraycb_clicked);
+    connect(_onlyShowInKdeCB, &QCheckBox::clicked, this, &BasicTab::onlyshowcb_clicked);
+    connect(_hiddenEntryCB, &QCheckBox::clicked, this, &BasicTab::hiddenentrycb_clicked);
+    connect(_iconButton, &KIconButton::iconChanged, this, &BasicTab::slotChanged);
 
     // advanced tab's components
-    connect(_pathEdit, SIGNAL(textChanged(QString)), SLOT(slotChanged()));
-    connect(_terminalCB, SIGNAL(clicked()), SLOT(termcb_clicked()));
-    connect(_terminalOptionsEdit, SIGNAL(textChanged(QString)), SLOT(slotChanged()));
-    connect(_userCB, SIGNAL(clicked()), SLOT(uidcb_clicked()));
-    connect(_userNameEdit, SIGNAL(textChanged(QString)), SLOT(slotChanged()));
-    connect(_keyBindingEdit, SIGNAL(keySequenceChanged(QKeySequence)), this, SLOT(slotCapturedKeySequence(QKeySequence)));
+    connect(_pathEdit, &KUrlRequester::textChanged, this, &BasicTab::slotChanged);
+    connect(_terminalCB, &QCheckBox::clicked, this, &BasicTab::termcb_clicked);
+    connect(_terminalOptionsEdit, &KLineEdit::textChanged, this, &BasicTab::slotChanged);
+    connect(_userCB, &QCheckBox::clicked, this, &BasicTab::uidcb_clicked);
+    connect(_userNameEdit, &KLineEdit::textChanged, this, &BasicTab::slotChanged);
+    connect(_keyBindingEdit, &KKeySequenceWidget::keySequenceChanged, this, &BasicTab::slotCapturedKeySequence);
 }
 
 void BasicTab::slotDisableAction()

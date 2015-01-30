@@ -45,7 +45,7 @@ PreferencesDialog::PreferencesDialog( QWidget *parent )
     page->setIcon( QIcon::fromTheme( "tools-check-spelling" ) );
     addPage(page);
 
-    connect( button(QDialogButtonBox::Ok), SIGNAL(clicked()), this, SLOT(slotSave()) );
+    connect(button(QDialogButtonBox::Ok), &QPushButton::clicked, this, &PreferencesDialog::slotSave);
 }
 
 void PreferencesDialog::slotSave()

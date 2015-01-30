@@ -69,15 +69,15 @@ void KMenuEdit::setupActions()
     action = actionCollection()->addAction(NEW_SUBMENU_ACTION_NAME);
     action->setIcon(QIcon::fromTheme("menu_new"));
     action->setText(i18n("&New Submenu..."));
-    action->setShortcut(QKeySequence(Qt::CTRL + Qt::SHIFT + Qt::Key_N));
+    actionCollection()->setDefaultShortcut(action, QKeySequence(Qt::CTRL + Qt::SHIFT + Qt::Key_N));
     action = actionCollection()->addAction(NEW_ITEM_ACTION_NAME);
     action->setIcon(QIcon::fromTheme("document-new")) ;
     action->setText(i18n("New &Item..."));
-    action->setShortcuts(KStandardShortcut::openNew());
+    actionCollection()->setDefaultShortcuts(action, KStandardShortcut::openNew());
     action = actionCollection()->addAction(NEW_SEPARATOR_ACTION_NAME);
     action->setIcon(QIcon::fromTheme("menu_new_sep"));
     action->setText(i18n("New S&eparator"));
-    action->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_I));
+    actionCollection()->setDefaultShortcut(action, QKeySequence(Qt::CTRL + Qt::Key_I));
 
     // "sort selection" menu
     KActionMenu* sortMenu = new KActionMenu(QIcon::fromTheme("view-sort-ascending"), i18n("&Sort"), this);
@@ -188,7 +188,7 @@ void KMenuEdit::slotChangeView()
     m_actionDelete = actionCollection()->addAction(DELETE_ACTION_NAME);
     m_actionDelete->setIcon(QIcon::fromTheme("edit-delete"));
     m_actionDelete->setText(i18n("&Delete"));
-    m_actionDelete->setShortcut(QKeySequence(Qt::Key_Delete));
+    actionCollection()->setDefaultShortcut(m_actionDelete, QKeySequence(Qt::Key_Delete));
 
     if (m_splitter == 0) {
        setupView();
