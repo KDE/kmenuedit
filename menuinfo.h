@@ -36,19 +36,11 @@ public:
     virtual ~MenuInfo() {}
 };
 
-class MenuSeparatorInfo : public MenuInfo
-{
-public:
-    MenuSeparatorInfo() {}
-};
-
 class MenuFolderInfo : public MenuInfo
 {
 public:
     MenuFolderInfo() : dirty(false), hidden(false) { }
     ~MenuFolderInfo() { qDeleteAll(subFolders); subFolders.clear(); }
-    // Add separator
-    void add(MenuSeparatorInfo *, bool initial=false);
 
     // Add sub menu
     void add(MenuFolderInfo *, bool initial=false);

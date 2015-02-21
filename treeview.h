@@ -38,13 +38,11 @@ class KDesktopFile;
 class MenuFile;
 class MenuFolderInfo;
 class MenuEntryInfo;
-class MenuSeparatorInfo;
 class KShortcut;
 
 static const QString SAVE_ACTION_NAME = "file_save";
 static const QString NEW_ITEM_ACTION_NAME = "new_item";
 static const QString NEW_SUBMENU_ACTION_NAME = "new_submenu";
-static const QString NEW_SEPARATOR_ACTION_NAME = "new_separator";
 static const QString CUT_ACTION_NAME = "edit_cut";
 static const QString COPY_ACTION_NAME = "edit_copy";
 static const QString PASTE_ACTION_NAME = "edit_paste";
@@ -84,7 +82,6 @@ public:
 
     bool isDirectory() const { return m_folderInfo; }
     bool isEntry() const { return m_entryInfo; }
-    bool isSeparator() const { return !isDirectory() && !isEntry(); }
 
     bool isHiddenInMenu() const { return m_hidden; }
     void setHiddenInMenu(bool b);
@@ -147,7 +144,6 @@ protected Q_SLOTS:
 
     void newsubmenu();
     void newitem();
-    void newsep();
 
     void cut();
     void copy();
@@ -171,7 +167,6 @@ protected:
     QTreeWidgetItem *selectedItem();
     TreeItem *createTreeItem(TreeItem *parent, QTreeWidgetItem *after, MenuFolderInfo *folderInfo, bool _init = false);
     TreeItem *createTreeItem(TreeItem *parent, QTreeWidgetItem *after, MenuEntryInfo *entryInfo, bool _init = false);
-    TreeItem *createTreeItem(TreeItem *parent, QTreeWidgetItem *after, MenuSeparatorInfo *sepInfo, bool _init = false);
 
     void del(TreeItem *, bool deleteInfo);
     void fill();
@@ -212,7 +207,6 @@ private:
     bool               m_showHidden;
     MenuFile          *m_menuFile;
     MenuFolderInfo    *m_rootFolder;
-    MenuSeparatorInfo *m_separator;
     QStringList        m_newMenuIds;
     QStringList        m_newDirectoryList;
     bool               m_layoutDirty;

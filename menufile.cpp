@@ -43,7 +43,6 @@ const QString MenuFile::MF_NEW =           "New";
 const QString MenuFile::MF_DIRECTORY =     "Directory";
 const QString MenuFile::MF_LAYOUT =        "Layout";
 const QString MenuFile::MF_MENUNAME =      "Menuname";
-const QString MenuFile::MF_SEPARATOR =     "Separator";
 const QString MenuFile::MF_MERGE =         "Merge";
 
 MenuFile::MenuFile(const QString &file)
@@ -313,11 +312,7 @@ void MenuFile::setLayout(const QString &menuName, const QStringList &layout)
        it != layout.constEnd(); ++it)
    {
       QString li = *it;
-      if (li == ":S")
-      {
-         layoutNode.appendChild(m_doc.createElement(MF_SEPARATOR));
-      }
-      else if (li == ":M")
+      if (li == ":M")
       {
          QDomElement mergeNode = m_doc.createElement(MF_MERGE);
          mergeNode.setAttribute("type", "menus");
