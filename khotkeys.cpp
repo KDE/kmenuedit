@@ -25,6 +25,8 @@
 #include <KLocalizedString>
 #include <KMessageBox>
 
+#include <QDebug>
+
 static bool khotkeys_present = false;
 static bool khotkeys_inited = false;
 static OrgKdeKhotkeysInterface *khotkeysInterface = NULL;
@@ -53,6 +55,8 @@ bool KHotKeys::init()
     }
 
     khotkeys_present = khotkeysInterface->isValid();
+
+    qDebug() << khotkeys_present;
     return true;
 }
 
@@ -67,8 +71,12 @@ void KHotKeys::cleanup()
 
 bool KHotKeys::present()
 {
+qDebug() << khotkeys_inited;
+
     if( !khotkeys_inited )
         init();
+
+    qDebug() << khotkeys_present;
 
     return khotkeys_present;
 }
@@ -80,13 +88,16 @@ QString KHotKeys::getMenuEntryShortcut( const QString& entry_P )
 
     if( !khotkeys_present || !khotkeysInterface->isValid())
         return "";
-
+qDebug() << khotkeys_inited;
+    qDebug() << khotkeys_present;
+    qDebug() << entry_P;
     QDBusReply<QString> reply = khotkeysInterface->get_menuentry_shortcut(entry_P);
     if (!reply.isValid()) {
         qCritical() << reply.error();
         return "";
 
     } else {
+            qDebug() << reply;
         return reply;
     }
 }
@@ -101,6 +112,11 @@ QString KHotKeys::changeMenuEntryShortcut(
     if( !khotkeys_present || !khotkeysInterface->isValid())
         return "";
 
+    qDebug() << khotkeys_inited;
+    qDebug() << khotkeys_present;
+    qDebug() << entry_P;
+    qDebug() << shortcut_P;
+
     QDBusReply<QString> reply = khotkeysInterface->register_menuentry_shortcut(
             entry_P,
             shortcut_P);
@@ -109,6 +125,7 @@ QString KHotKeys::changeMenuEntryShortcut(
         qCritical() << reply.error();
         return "";
     } else {
+        qDebug() << reply;
         return reply;
     }
 }
