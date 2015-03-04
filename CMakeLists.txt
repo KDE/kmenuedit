@@ -4,10 +4,11 @@ set(PROJECT_VERSION "5.2.90")
 cmake_minimum_required(VERSION 2.8.12 FATAL_ERROR)
 set(QT_MIN_VERSION "5.4.0")
 
-find_package(ECM 1.3.0 REQUIRED NO_MODULE)
+find_package(ECM 1.7.0 REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${ECM_KDE_MODULE_DIR})
 
 include(FeatureSummary)
+include(ECMAddAppIcon)
 include(KDEInstallDirs)
 include(KDECMakeSettings)
 include(KDECompilerSettings)
@@ -72,18 +73,18 @@ target_link_libraries(kdeinit_kmenuedit
     KF5::KDELibs4Support
 )
 
-install(TARGETS kdeinit_kmenuedit  DESTINATION ${LIB_INSTALL_DIR} )
+install(TARGETS kdeinit_kmenuedit  DESTINATION ${KDE_INSTALL_LIBDIR} )
 
 target_link_libraries( kmenuedit kdeinit_kmenuedit )
-install(TARGETS kmenuedit ${INSTALL_TARGETS_DEFAULT_ARGS})
+install(TARGETS kmenuedit ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 
 ########### install files ###############
 
-install( PROGRAMS org.kde.kmenuedit.desktop  DESTINATION  ${XDG_APPS_INSTALL_DIR} )
-install( FILES kmenueditui.rc  DESTINATION  ${KXMLGUI_INSTALL_DIR}/kmenuedit )
+install( PROGRAMS org.kde.kmenuedit.desktop  DESTINATION  ${KDE_INSTALL_APPDIR} )
+install( FILES kmenueditui.rc  DESTINATION  ${KDE_INSTALL_KXMLGUI5DIR}/kmenuedit )
 
 if(NOT WIN32 AND ${KHotKeysDBusInterface_FOUND})
 add_dependencies(kdeinit_kmenuedit kded_khotkeys)
 endif()
 
-ecm_install_icons( ICONS hi16-apps-kmenuedit.png  hi22-apps-kmenuedit.png  hi32-apps-kmenuedit.png  hi48-apps-kmenuedit.png DESTINATION ${ICON_INSTALL_DIR}  )
+ecm_install_icons( ICONS hi16-apps-kmenuedit.png  hi22-apps-kmenuedit.png  hi32-apps-kmenuedit.png  hi48-apps-kmenuedit.png DESTINATION ${KDE_INSTALL_ICONDIR}  )
