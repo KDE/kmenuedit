@@ -87,4 +87,4 @@ if(NOT WIN32 AND ${KHotKeysDBusInterface_FOUND})
 add_dependencies(kdeinit_kmenuedit kded_khotkeys)
 endif()
 
-ecm_install_icons( ICONS hi16-apps-kmenuedit.png  hi22-apps-kmenuedit.png  hi32-apps-kmenuedit.png  hi48-apps-kmenuedit.png DESTINATION ${KDE_INSTALL_ICONDIR}  )
+ecm_install_icons( ICONS 16-apps-kmenuedit.png  22-apps-kmenuedit.png  32-apps-kmenuedit.png  48-apps-kmenuedit.png DESTINATION ${KDE_INSTALL_ICONDIR} THEME hicolor  )
