@@ -65,6 +65,31 @@
 
 static const char *s_internalMimeType = "application/x-kmenuedit-internal";
 
+class SeparatorWidget : public QWidget
+{
+public:
+    SeparatorWidget()
+        : QWidget(0)
+    {
+    }
+
+protected:
+    void paintEvent(QPaintEvent * /*event*/)
+    {
+        QPainter p(this);
+        // Draw Separator
+        int h = (height() / 2) -1;
+//        if (isSelected()) {
+//            p->setPen( palette().color( QPalette::HighlightedText ) );
+//        } else {
+//            p->setPen( palette().color( QPalette::Text ) );
+//        }
+
+        p.drawLine(2, h, width() - 4, h);
+    }
+};
+
+
 TreeItem::TreeItem(QTreeWidgetItem *parent, QTreeWidgetItem *after, const QString& menuId, bool _m_init)
     : QTreeWidgetItem(parent, after),
       m_hidden(false),
@@ -229,6 +254,7 @@ TreeView::TreeView( KActionCollection *ac, QWidget *parent, const char *name )
     // listen for creation
     connect(m_ac->action(NEW_ITEM_ACTION_NAME), SIGNAL(triggered()), SLOT(newitem()));
     connect(m_ac->action(NEW_SUBMENU_ACTION_NAME), SIGNAL(triggered()), SLOT(newsubmenu()));
+    connect(m_ac->action(NEW_SEPARATOR_ACTION_NAME), SIGNAL(triggered()), SLOT(newsep()));
 
     // listen for copy
     connect(m_ac->action(CUT_ACTION_NAME), SIGNAL(triggered()), SLOT(cut()));
@@ -264,12 +290,14 @@ TreeView::TreeView( KActionCollection *ac, QWidget *parent, const char *name )
 
     m_menuFile = new MenuFile(KStandardDirs::locateLocal("xdgconf-menu", "applications-kmenuedit.menu"));
     m_rootFolder = new MenuFolderInfo;
+    m_separator = new MenuSeparatorInfo;
 }
 
 TreeView::~TreeView()
 {
     cleanupClipboard();
     delete m_rootFolder;
+    delete m_separator;
 }
 
 void TreeView::setViewMode(bool showHidden)
@@ -281,6 +309,7 @@ void TreeView::setViewMode(bool showHidden)
     // creation
     m_popupMenu->addAction(m_ac->action(NEW_ITEM_ACTION_NAME));
     m_popupMenu->addAction(m_ac->action(NEW_SUBMENU_ACTION_NAME));
+    m_popupMenu->addAction(m_ac->action(NEW_SEPARATOR_ACTION_NAME));
     m_popupMenu->addSeparator();
 
     // copy
@@ -344,6 +373,10 @@ void TreeView::readMenuFolderInfo(MenuFolderInfo *folderInfo, KServiceGroup::Ptr
         {
             const KService::Ptr service(static_cast<KService*>(e.data()));
             folderInfo->add(new MenuEntryInfo(service), true);
+        }
+        else if (e->isType(KST_KServiceSeparator))
+        {
+            folderInfo->add(m_separator, true);
         }
     }
 }
@@ -439,6 +472,19 @@ TreeItem *TreeView::createTreeItem(TreeItem *parent, QTreeWidgetItem *after, Men
     return item;
 }
 
+TreeItem *TreeView::createTreeItem(TreeItem *parent, QTreeWidgetItem *after, MenuSeparatorInfo *, bool init)
+{
+    TreeItem* item;
+    if (parent) {
+        item = new TreeItem(parent, after, QString(), init);
+    } else {
+        item = new TreeItem(this, after, QString(), init);
+    }
+
+    setItemWidget(item, 0, new SeparatorWidget);
+    return item;
+}
+
 void TreeView::fillBranch(MenuFolderInfo *folderInfo, TreeItem *parent)
 {
     QString relPath = parent ? parent->directory() : QString();
@@ -456,6 +502,12 @@ void TreeView::fillBranch(MenuFolderInfo *folderInfo, TreeItem *parent)
        if (subFolder)
        {
           after = createTreeItem(parent, after, subFolder);
+          continue;
+       }
+       MenuSeparatorInfo *separator = dynamic_cast<MenuSeparatorInfo*>(info);
+       if (separator)
+       {
+          after = createTreeItem(parent, after, separator);
           continue;
        }
     }
@@ -1026,6 +1078,14 @@ bool TreeView::dropMimeData(QTreeWidgetItem *item, int index, const QMimeData *d
 
         TreeItem *newItem = createTreeItem(parentItem, after, entryInfo);
         setCurrentItem(newItem);
+    } else  {
+        // copying a separator
+        if (action != Qt::CopyAction) {
+            del(dragItem, false);
+        }
+
+        TreeItem *newItem = createTreeItem(parentItem, after, m_separator);
+        setCurrentItem(newItem);
     }
 
     //qDebug() << "setting the layout to be dirty at" << parentItem;
@@ -1189,6 +1249,35 @@ void TreeView::newitem()
    parentFolderInfo->add(entryInfo);
 
    TreeItem *newItem = createTreeItem(parentItem, item, entryInfo, true);
+
+   setCurrentItem(newItem);
+   setLayoutDirty(parentItem);
+}
+
+void TreeView::newsep()
+{
+   TreeItem *parentItem = 0;
+   TreeItem *item = (TreeItem*)selectedItem();
+
+   if(!item)
+   {
+      parentItem = 0;
+   }
+   else if(item->isDirectory())
+   {
+      parentItem = item;
+      item = 0;
+   }
+   else
+   {
+      parentItem = static_cast<TreeItem*>(item->parent());
+   }
+
+   // create the TreeItem
+   if(parentItem)
+      parentItem->setExpanded(true);
+
+   TreeItem *newItem = createTreeItem(parentItem, item, m_separator, true);
 
    setCurrentItem(newItem);
    setLayoutDirty(parentItem);
@@ -1383,6 +1472,16 @@ void TreeView::paste()
 
       setCurrentItem(newItem);
    }
+   else
+   {
+      // create separator
+      if(parentItem)
+         parentItem->setExpanded(true);
+
+      TreeItem *newItem = createTreeItem(parentItem, item, m_separator, true);
+
+      setCurrentItem(newItem);
+   }
    setLayoutDirty(parentItem);
 }
 
@@ -1433,6 +1532,15 @@ void TreeView::sortItem(TreeItem *item, const SortType& sortType)
     // sort children groups, splited by separator items
     QList<QTreeWidgetItem*>::iterator startIt = children.begin();
     QList<QTreeWidgetItem*>::iterator currentIt = children.begin();
+    while (currentIt != children.end()) {
+        TreeItem *child = static_cast<TreeItem*>(*currentIt);
+        // if it's a separator, sort previous items and continue on following items
+        if (child->isSeparator() && startIt != currentIt) {
+            sortItemChildren(startIt, currentIt, sortType);
+            startIt = currentIt + 1;
+        }
+        ++currentIt;
+    }
     sortItemChildren(startIt, currentIt, sortType);
 
     // insert sorted children in the tree
@@ -1440,6 +1548,10 @@ void TreeView::sortItem(TreeItem *item, const SortType& sortType)
     foreach (QTreeWidgetItem *child, children) {
         // recreate item widget for separators
         TreeItem *treeItem = static_cast<TreeItem*>(child);
+        if (treeItem->isSeparator()) {
+            setItemWidget(treeItem, 0, new SeparatorWidget);
+        }
+
         // try to sort sub-children
         sortItem(static_cast<TreeItem*>(child), sortType);
     }
@@ -1519,6 +1631,14 @@ void TreeView::moveUpOrDownItem(bool isMovingUpAction)
     // swap items
     parentItem->removeChild(sourceItem);
     parentItem->insertChild(destIndex, sourceItem);
+
+    // recreate item widget for separators
+    if (sourceItem->isSeparator()) {
+        setItemWidget(sourceItem, 0, new SeparatorWidget);
+    }
+    if (destItem->isSeparator()) {
+        setItemWidget(destItem, 0, new SeparatorWidget);
+    }
 
     // set the focus on the source item
     setCurrentItem(sourceItem);
@@ -1796,6 +1916,7 @@ void TreeView::restoreMenuSystem()
     clear();
     cleanupClipboard();
     delete m_rootFolder;
+    delete m_separator;
 
     m_layoutDirty = false;
     m_newMenuIds.clear();
@@ -1803,6 +1924,7 @@ void TreeView::restoreMenuSystem()
     m_menuFile->restoreMenuSystem(kmenueditfile);
 
     m_rootFolder = new MenuFolderInfo;
+    m_separator = new MenuSeparatorInfo;
 
     readMenuFolderInfo();
     fill();
@@ -1817,12 +1939,14 @@ void TreeView::updateTreeView(bool showHidden)
     clear();
     cleanupClipboard();
     delete m_rootFolder;
+    delete m_separator;
 
     m_layoutDirty = false;
     m_newMenuIds.clear();
     m_newDirectoryList.clear();
 
     m_rootFolder = new MenuFolderInfo;
+    m_separator = new MenuSeparatorInfo;
 
     readMenuFolderInfo();
     fill();

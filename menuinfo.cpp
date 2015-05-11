@@ -38,6 +38,13 @@ static QStringList *s_newShortcuts = 0;
 static QStringList *s_freeShortcuts = 0;
 static QStringList *s_deletedApps = 0;
 
+// Add separator
+void MenuFolderInfo::add(MenuSeparatorInfo *info, bool initial)
+{
+   if (initial)
+      initialLayout.append(info);
+}
+
 // Add sub menu
 void MenuFolderInfo::add(MenuFolderInfo *info, bool initial)
 {
