@@ -104,7 +104,7 @@ void MenuFolderInfo::take(MenuEntryInfo *entry)
 // Return a unique sub-menu caption inspired by @p caption
 QString MenuFolderInfo::uniqueMenuCaption(const QString &caption)
 {
-   QRegExp r("(.*)(?=-\\d+)");
+   QRegExp r(QStringLiteral("(.*)(?=-\\d+)"));
    QString cap = (r.indexIn(caption) > -1) ? r.cap(1) : caption;
 
    QString result = caption;
@@ -123,7 +123,7 @@ QString MenuFolderInfo::uniqueMenuCaption(const QString &caption)
       if (ok)
          return result;
 
-      result = cap + QString("-%1").arg(n);
+      result = cap + QStringLiteral("-%1").arg(n);
    }
    return QString(); // Never reached
 }
@@ -131,7 +131,7 @@ QString MenuFolderInfo::uniqueMenuCaption(const QString &caption)
 // Return a unique item caption inspired by @p caption
 QString MenuFolderInfo::uniqueItemCaption(const QString &caption, const QString &exclude)
 {
-   QRegExp r("(.*)(?=-\\d+)");
+   QRegExp r(QStringLiteral("(.*)(?=-\\d+)"));
    QString cap = (r.indexIn(caption) > -1) ? r.cap(1) : caption;
 
    QString result = caption;
@@ -152,7 +152,7 @@ QString MenuFolderInfo::uniqueItemCaption(const QString &caption, const QString 
       if (ok)
          return result;
 
-      result = cap + QString("-%1").arg(n);
+      result = cap + QStringLiteral("-%1").arg(n);
    }
    return QString(); // Never reached
 }
@@ -183,7 +183,7 @@ void MenuFolderInfo::save(MenuFile *menuFile)
           it != s_deletedApps->constEnd(); ++it)
       {
          // The shorcut is deleted if we set a empty sequence
-         KHotKeys::changeMenuEntryShortcut(*it, "");
+         KHotKeys::changeMenuEntryShortcut(*it, QLatin1String(""));
       }
 #endif
       delete s_deletedApps;

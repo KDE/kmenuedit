@@ -48,7 +48,7 @@ KMenuEdit::KMenuEdit ()
 {
     // dbus
     ( void )new KmenueditAdaptor(this);
-    QDBusConnection::sessionBus().registerObject("/KMenuEdit", this);
+    QDBusConnection::sessionBus().registerObject(QStringLiteral("/KMenuEdit"), this);
 
     m_showHidden = ConfigurationManager::getInstance()->hiddenEntriesVisible();
 
@@ -67,20 +67,20 @@ void KMenuEdit::setupActions()
     QAction *action = 0;
 
     action = actionCollection()->addAction(NEW_SUBMENU_ACTION_NAME);
-    action->setIcon(QIcon::fromTheme("menu_new"));
+    action->setIcon(QIcon::fromTheme(QStringLiteral("menu_new")));
     action->setText(i18n("&New Submenu..."));
     actionCollection()->setDefaultShortcut(action, QKeySequence(Qt::CTRL + Qt::SHIFT + Qt::Key_N));
     action = actionCollection()->addAction(NEW_ITEM_ACTION_NAME);
-    action->setIcon(QIcon::fromTheme("document-new")) ;
+    action->setIcon(QIcon::fromTheme(QStringLiteral("document-new"))) ;
     action->setText(i18n("New &Item..."));
     actionCollection()->setDefaultShortcuts(action, KStandardShortcut::openNew());
     action = actionCollection()->addAction(NEW_SEPARATOR_ACTION_NAME);
-    action->setIcon(QIcon::fromTheme("menu_new_sep"));
+    action->setIcon(QIcon::fromTheme(QStringLiteral("menu_new_sep")));
     action->setText(i18n("New S&eparator"));
     actionCollection()->setDefaultShortcut(action, QKeySequence(Qt::CTRL + Qt::Key_I));
 
     // "sort selection" menu
-    KActionMenu* sortMenu = new KActionMenu(QIcon::fromTheme("view-sort-ascending"), i18n("&Sort"), this);
+    KActionMenu* sortMenu = new KActionMenu(QIcon::fromTheme(QStringLiteral("view-sort-ascending")), i18n("&Sort"), this);
     sortMenu->setDelayed(false);
     actionCollection()->addAction(SORT_ACTION_NAME, sortMenu);
     action = actionCollection()->addAction(SORT_BY_NAME_ACTION_NAME);
@@ -99,10 +99,10 @@ void KMenuEdit::setupActions()
 
     // move up/down
     action = actionCollection()->addAction(MOVE_UP_ACTION_NAME);
-    action->setIcon(QIcon::fromTheme("go-up"));
+    action->setIcon(QIcon::fromTheme(QStringLiteral("go-up")));
     action->setText(i18n("Move &Up"));
     action = actionCollection()->addAction(MOVE_DOWN_ACTION_NAME);
-    action->setIcon(QIcon::fromTheme("go-down"));
+    action->setIcon(QIcon::fromTheme(QStringLiteral("go-down")));
     action->setText(i18n("Move &Down"));
 
     actionCollection()->addAction(KStandardAction::Save, this, SLOT(slotSave()));
@@ -112,8 +112,8 @@ void KMenuEdit::setupActions()
     actionCollection()->addAction(KStandardAction::Paste);
 
     action = new QAction( i18n("Restore to System Menu"), this );
-    actionCollection()->addAction( "restore_system_menu", action );
-    connect( action, SIGNAL(triggered(bool)), SLOT(slotRestoreMenu()) );
+    actionCollection()->addAction( QStringLiteral("restore_system_menu"), action );
+    connect( action, &QAction::triggered, this, &KMenuEdit::slotRestoreMenu );
 
     KStandardAction::preferences( this, SLOT(slotConfigure()), actionCollection() );
 }
@@ -146,8 +146,8 @@ void KMenuEdit::setupView()
             m_basicTab, SLOT(setFolderInfo(MenuFolderInfo*)));
     connect(m_tree, SIGNAL(entrySelected(MenuEntryInfo*)),
             m_basicTab, SLOT(setEntryInfo(MenuEntryInfo*)));
-    connect(m_tree, SIGNAL(disableAction()),
-            m_basicTab, SLOT(slotDisableAction()) );
+    connect(m_tree, &TreeView::disableAction,
+            m_basicTab, &BasicTab::slotDisableAction );
 
     connect(m_basicTab, SIGNAL(changed(MenuFolderInfo*)),
             m_tree, SLOT(currentDataChanged(MenuFolderInfo*)));
@@ -155,8 +155,8 @@ void KMenuEdit::setupView()
     connect(m_basicTab, SIGNAL(changed(MenuEntryInfo*)),
             m_tree, SLOT(currentDataChanged(MenuEntryInfo*)));
 
-    connect(m_basicTab, SIGNAL(findServiceShortcut(KShortcut,KService::Ptr&)),
-            m_tree, SLOT(findServiceShortcut(KShortcut,KService::Ptr&)));
+    connect(m_basicTab, &BasicTab::findServiceShortcut,
+            m_tree, &TreeView::findServiceShortcut);
 
     // restore splitter sizes
     QList<int> sizes = ConfigurationManager::getInstance()->getSplitterSizes();
@@ -186,14 +186,14 @@ void KMenuEdit::slotChangeView()
     delete m_actionDelete;
 
     m_actionDelete = actionCollection()->addAction(DELETE_ACTION_NAME);
-    m_actionDelete->setIcon(QIcon::fromTheme("edit-delete"));
+    m_actionDelete->setIcon(QIcon::fromTheme(QStringLiteral("edit-delete")));
     m_actionDelete->setText(i18n("&Delete"));
     actionCollection()->setDefaultShortcut(m_actionDelete, QKeySequence(Qt::Key_Delete));
 
     if (m_splitter == 0) {
        setupView();
     }
-    setupGUI(KXmlGuiWindow::ToolBar|Keys|Save|Create, "kmenueditui.rc");
+    setupGUI(KXmlGuiWindow::ToolBar|Keys|Save|Create, QStringLiteral("kmenueditui.rc"));
 
     m_tree->setViewMode(m_showHidden);
     m_basicTab->updateHiddenEntry( m_showHidden );

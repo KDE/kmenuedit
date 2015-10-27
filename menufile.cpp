@@ -28,23 +28,23 @@
 #include <KLocalizedString>
 #include <KStandardDirs>
 
-const QString MenuFile::MF_MENU =          "Menu";
-const QString MenuFile::MF_PUBLIC_ID =     "-//freedesktop//DTD Menu 1.0//EN";
-const QString MenuFile::MF_SYSTEM_ID =     "http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd";
-const QString MenuFile::MF_NAME =          "Name";
-const QString MenuFile::MF_INCLUDE =       "Include";
-const QString MenuFile::MF_EXCLUDE =       "Exclude";
-const QString MenuFile::MF_FILENAME =      "Filename";
-const QString MenuFile::MF_DELETED =       "Deleted";
-const QString MenuFile::MF_NOTDELETED =    "NotDeleted";
-const QString MenuFile::MF_MOVE =          "Move";
-const QString MenuFile::MF_OLD =           "Old";
-const QString MenuFile::MF_NEW =           "New";
-const QString MenuFile::MF_DIRECTORY =     "Directory";
-const QString MenuFile::MF_LAYOUT =        "Layout";
-const QString MenuFile::MF_MENUNAME =      "Menuname";
-const QString MenuFile::MF_SEPARATOR =     "Separator";
-const QString MenuFile::MF_MERGE =         "Merge";
+const QString MenuFile::MF_MENU =          QStringLiteral("Menu");
+const QString MenuFile::MF_PUBLIC_ID =     QStringLiteral("-//freedesktop//DTD Menu 1.0//EN");
+const QString MenuFile::MF_SYSTEM_ID =     QStringLiteral("http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd");
+const QString MenuFile::MF_NAME =          QStringLiteral("Name");
+const QString MenuFile::MF_INCLUDE =       QStringLiteral("Include");
+const QString MenuFile::MF_EXCLUDE =       QStringLiteral("Exclude");
+const QString MenuFile::MF_FILENAME =      QStringLiteral("Filename");
+const QString MenuFile::MF_DELETED =       QStringLiteral("Deleted");
+const QString MenuFile::MF_NOTDELETED =    QStringLiteral("NotDeleted");
+const QString MenuFile::MF_MOVE =          QStringLiteral("Move");
+const QString MenuFile::MF_OLD =           QStringLiteral("Old");
+const QString MenuFile::MF_NEW =           QStringLiteral("New");
+const QString MenuFile::MF_DIRECTORY =     QStringLiteral("Directory");
+const QString MenuFile::MF_LAYOUT =        QStringLiteral("Layout");
+const QString MenuFile::MF_MENUNAME =      QStringLiteral("Menuname");
+const QString MenuFile::MF_SEPARATOR =     QStringLiteral("Separator");
+const QString MenuFile::MF_MERGE =         QStringLiteral("Merge");
 
 MenuFile::MenuFile(const QString &file)
  : m_fileName(file), m_bDirty(false)
@@ -313,26 +313,26 @@ void MenuFile::setLayout(const QString &menuName, const QStringList &layout)
        it != layout.constEnd(); ++it)
    {
       QString li = *it;
-      if (li == ":S")
+      if (li == QLatin1String(":S"))
       {
          layoutNode.appendChild(m_doc.createElement(MF_SEPARATOR));
       }
-      else if (li == ":M")
+      else if (li == QLatin1String(":M"))
       {
          QDomElement mergeNode = m_doc.createElement(MF_MERGE);
-         mergeNode.setAttribute("type", "menus");
+         mergeNode.setAttribute(QStringLiteral("type"), QStringLiteral("menus"));
          layoutNode.appendChild(mergeNode);
       }
-      else if (li == ":F")
+      else if (li == QLatin1String(":F"))
       {
          QDomElement mergeNode = m_doc.createElement(MF_MERGE);
-         mergeNode.setAttribute("type", "files");
+         mergeNode.setAttribute(QStringLiteral("type"), QStringLiteral("files"));
          layoutNode.appendChild(mergeNode);
       }
-      else if (li == ":A")
+      else if (li == QLatin1String(":A"))
       {
          QDomElement mergeNode = m_doc.createElement(MF_MERGE);
-         mergeNode.setAttribute("type", "all");
+         mergeNode.setAttribute(QStringLiteral("type"), QStringLiteral("all"));
          layoutNode.appendChild(mergeNode);
       }
       else if (li.endsWith('/'))
@@ -458,7 +458,7 @@ QString MenuFile::uniqueMenuName(const QString &menuName, const QString &newMenu
    if (result.endsWith('/'))
        result.truncate(result.length()-1);
 
-   QRegExp r("(.*)(?=-\\d+)");
+   QRegExp r(QStringLiteral("(.*)(?=-\\d+)"));
    result = (r.indexIn(result) > -1) ? r.cap(1) : result;
 
    int trunc = result.length(); // Position of trailing '/'
@@ -471,7 +471,7 @@ QString MenuFile::uniqueMenuName(const QString &menuName, const QString &newMenu
          return result;
 
       result.truncate(trunc);
-      result.append(QString("-%1/").arg(n));
+      result.append(QStringLiteral("-%1/").arg(n));
    }
    return QString(); // Never reached
 }
@@ -534,7 +534,7 @@ bool MenuFile::performAllActions()
    for(QStringList::ConstIterator it = removed.constBegin();
        it != removed.constEnd(); ++it)
    {
-      addEntry("/.hidden/", *it);
+      addEntry(QStringLiteral("/.hidden/"), *it);
    }
 
    m_removedEntries.clear();

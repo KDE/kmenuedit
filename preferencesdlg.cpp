@@ -36,13 +36,13 @@ PreferencesDialog::PreferencesDialog( QWidget *parent )
 
     m_pageMisc = new MiscPage( this );
     KPageWidgetItem *page = new KPageWidgetItem( m_pageMisc , i18n( "General options" ) );
-    page->setIcon( QIcon::fromTheme( "kmenuedit" ) );
+    page->setIcon( QIcon::fromTheme( QStringLiteral("kmenuedit") ) );
     addPage(page);
 
     m_pageSpellChecking = new SpellCheckingPage( this );
     page = new KPageWidgetItem( m_pageSpellChecking , i18n( "Spell Checking" ) );
     page->setHeader( i18n( "Spell checking Options" ) );
-    page->setIcon( QIcon::fromTheme( "tools-check-spelling" ) );
+    page->setIcon( QIcon::fromTheme( QStringLiteral("tools-check-spelling") ) );
     addPage(page);
 
     connect(button(QDialogButtonBox::Ok), &QPushButton::clicked, this, &PreferencesDialog::slotSave);

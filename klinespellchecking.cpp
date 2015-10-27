@@ -44,11 +44,11 @@ void KLineSpellChecking::slotCheckSpelling()
         return;
     }
     Sonnet::Dialog *spellDialog = new Sonnet::Dialog(new Sonnet::BackgroundChecker(this), 0);
-    connect(spellDialog, SIGNAL(replace(QString,int,QString)), this, SLOT(spellCheckerCorrected(QString,int,QString)));
-    connect(spellDialog, SIGNAL(misspelling(QString,int)), this, SLOT(spellCheckerMisspelling(QString,int)));
+    connect(spellDialog, &Sonnet::Dialog::replace, this, &KLineSpellChecking::spellCheckerCorrected);
+    connect(spellDialog, &Sonnet::Dialog::misspelling, this, &KLineSpellChecking::spellCheckerMisspelling);
     connect(spellDialog, SIGNAL(done(QString)), this, SLOT(slotSpellCheckDone(QString)));
-    connect(spellDialog, SIGNAL(cancel()), this, SLOT(spellCheckerFinished()));
-    connect(spellDialog, SIGNAL(stop()), this, SLOT(spellCheckerFinished()));
+    connect(spellDialog, &Sonnet::Dialog::cancel, this, &KLineSpellChecking::spellCheckerFinished);
+    connect(spellDialog, &Sonnet::Dialog::stop, this, &KLineSpellChecking::spellCheckerFinished);
     spellDialog->setBuffer(text());
     spellDialog->show();
 }

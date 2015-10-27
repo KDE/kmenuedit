@@ -41,21 +41,21 @@ class MenuEntryInfo;
 class MenuSeparatorInfo;
 class KShortcut;
 
-static const QString SAVE_ACTION_NAME = "file_save";
-static const QString NEW_ITEM_ACTION_NAME = "new_item";
-static const QString NEW_SUBMENU_ACTION_NAME = "new_submenu";
-static const QString NEW_SEPARATOR_ACTION_NAME = "new_separator";
-static const QString CUT_ACTION_NAME = "edit_cut";
-static const QString COPY_ACTION_NAME = "edit_copy";
-static const QString PASTE_ACTION_NAME = "edit_paste";
-static const QString DELETE_ACTION_NAME = "delete";
-static const QString SORT_ACTION_NAME = "sort";
-static const QString SORT_BY_NAME_ACTION_NAME = "sort_by_name";
-static const QString SORT_BY_DESCRIPTION_ACTION_NAME = "sort_by_description";
-static const QString SORT_ALL_BY_NAME_ACTION_NAME = "sort_all_by_name";
-static const QString SORT_ALL_BY_DESCRIPTION_ACTION_NAME = "sort_all_by_description";
-static const QString MOVE_UP_ACTION_NAME = "move_up";
-static const QString MOVE_DOWN_ACTION_NAME = "move_down";
+static const QString SAVE_ACTION_NAME = QStringLiteral("file_save");
+static const QString NEW_ITEM_ACTION_NAME = QStringLiteral("new_item");
+static const QString NEW_SUBMENU_ACTION_NAME = QStringLiteral("new_submenu");
+static const QString NEW_SEPARATOR_ACTION_NAME = QStringLiteral("new_separator");
+static const QString CUT_ACTION_NAME = QStringLiteral("edit_cut");
+static const QString COPY_ACTION_NAME = QStringLiteral("edit_copy");
+static const QString PASTE_ACTION_NAME = QStringLiteral("edit_paste");
+static const QString DELETE_ACTION_NAME = QStringLiteral("delete");
+static const QString SORT_ACTION_NAME = QStringLiteral("sort");
+static const QString SORT_BY_NAME_ACTION_NAME = QStringLiteral("sort_by_name");
+static const QString SORT_BY_DESCRIPTION_ACTION_NAME = QStringLiteral("sort_by_description");
+static const QString SORT_ALL_BY_NAME_ACTION_NAME = QStringLiteral("sort_all_by_name");
+static const QString SORT_ALL_BY_DESCRIPTION_ACTION_NAME = QStringLiteral("sort_all_by_description");
+static const QString MOVE_UP_ACTION_NAME = QStringLiteral("move_up");
+static const QString MOVE_DOWN_ACTION_NAME = QStringLiteral("move_down");
 
 class TreeItem : public QTreeWidgetItem
 {

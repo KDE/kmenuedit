@@ -39,8 +39,8 @@ bool KHotKeys::init()
     // Check if khotkeys is running
     QDBusConnection bus = QDBusConnection::sessionBus();
     khotkeysInterface = new OrgKdeKhotkeysInterface(
-        "org.kde.kded5",
-        "/modules/khotkeys",
+        QStringLiteral("org.kde.kded5"),
+        QStringLiteral("/modules/khotkeys"),
         bus,
         NULL);
 
@@ -87,14 +87,14 @@ QString KHotKeys::getMenuEntryShortcut( const QString& entry_P )
         init();
 
     if( !khotkeys_present || !khotkeysInterface->isValid())
-        return "";
+        return QLatin1String("");
 qDebug() << khotkeys_inited;
     qDebug() << khotkeys_present;
     qDebug() << entry_P;
     QDBusReply<QString> reply = khotkeysInterface->get_menuentry_shortcut(entry_P);
     if (!reply.isValid()) {
         qCritical() << reply.error();
-        return "";
+        return QLatin1String("");
 
     } else {
             qDebug() << reply;
@@ -110,7 +110,7 @@ QString KHotKeys::changeMenuEntryShortcut(
         init();
 
     if( !khotkeys_present || !khotkeysInterface->isValid())
-        return "";
+        return QLatin1String("");
 
     qDebug() << khotkeys_inited;
     qDebug() << khotkeys_present;
@@ -123,7 +123,7 @@ QString KHotKeys::changeMenuEntryShortcut(
 
     if (!reply.isValid()) {
         qCritical() << reply.error();
-        return "";
+        return QLatin1String("");
     } else {
         qDebug() << reply;
         return reply;

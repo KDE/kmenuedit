@@ -400,7 +400,7 @@ void BasicTab::setEntryInfo(MenuEntryInfo *entryInfo)
     else // backwards comp.
         _launchCB->setChecked(df->desktopGroup().readEntry("X-KDE-StartupNotify", true));
 
-    _onlyShowInKdeCB->setChecked( df->desktopGroup().readXdgListEntry("OnlyShowIn").contains( "KDE" ) ); // or maybe enable only if it contains nothing but KDE?
+    _onlyShowInKdeCB->setChecked( df->desktopGroup().readXdgListEntry("OnlyShowIn").contains( QStringLiteral("KDE") ) ); // or maybe enable only if it contains nothing but KDE?
 
     if ( df->desktopGroup().hasKey( "NoDisplay" ) )
         _hiddenEntryCB->setChecked( df->desktopGroup().readEntry( "NoDisplay", true ) );
@@ -453,10 +453,10 @@ void BasicTab::apply()
          * For example: - The list is "Gnome;", the user enables "Only show in KDE" - should we remove Gnome?
          *              - The list is "Gnome;KDE;", the user unchecks the box - should we keep Gnome?
          */
-        if ( _onlyShowInKdeCB->isChecked() && !onlyShowIn.contains("KDE"))
-            onlyShowIn << "KDE";
-        else if ( !_onlyShowInKdeCB->isChecked() && onlyShowIn.contains("KDE"))
-            onlyShowIn.removeAll("KDE");
+        if ( _onlyShowInKdeCB->isChecked() && !onlyShowIn.contains(QStringLiteral("KDE")))
+            onlyShowIn << QStringLiteral("KDE");
+        else if ( !_onlyShowInKdeCB->isChecked() && onlyShowIn.contains(QStringLiteral("KDE")))
+            onlyShowIn.removeAll(QStringLiteral("KDE"));
         if (onlyShowIn.isEmpty())
             dg.deleteEntry("OnlyShowIn");
         else

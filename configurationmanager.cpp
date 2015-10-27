@@ -20,9 +20,9 @@
 #include "configurationmanager.h"
 #include <KSharedConfig>
 
-const QString ConfigurationManager::GENERAL_CONFIG_GROUP = "General";
-const QString ConfigurationManager::SHOW_HIDDEN_ENTRIES_PROPERTY_NAME = "ShowHidden";
-const QString ConfigurationManager::SPLITTER_SIZES_PROPERTY_NAME = "SplitterSizes";
+const QString ConfigurationManager::GENERAL_CONFIG_GROUP = QStringLiteral("General");
+const QString ConfigurationManager::SHOW_HIDDEN_ENTRIES_PROPERTY_NAME = QStringLiteral("ShowHidden");
+const QString ConfigurationManager::SPLITTER_SIZES_PROPERTY_NAME = QStringLiteral("SplitterSizes");
 
 ConfigurationManager* ConfigurationManager::m_instance = 0;
 

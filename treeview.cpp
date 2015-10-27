@@ -248,18 +248,18 @@ TreeView::TreeView( KActionCollection *ac, QWidget *parent, const char *name )
     setAcceptDrops(true);
     setMinimumWidth(240);
 
-    setHeaderLabels(QStringList() << QString(""));
+    setHeaderLabels(QStringList() << QLatin1String(""));
     header()->hide();
 
     // listen for creation
-    connect(m_ac->action(NEW_ITEM_ACTION_NAME), SIGNAL(triggered()), SLOT(newitem()));
-    connect(m_ac->action(NEW_SUBMENU_ACTION_NAME), SIGNAL(triggered()), SLOT(newsubmenu()));
-    connect(m_ac->action(NEW_SEPARATOR_ACTION_NAME), SIGNAL(triggered()), SLOT(newsep()));
+    connect(m_ac->action(NEW_ITEM_ACTION_NAME), &QAction::triggered, this, &TreeView::newitem);
+    connect(m_ac->action(NEW_SUBMENU_ACTION_NAME), &QAction::triggered, this, &TreeView::newsubmenu);
+    connect(m_ac->action(NEW_SEPARATOR_ACTION_NAME), &QAction::triggered, this, &TreeView::newsep);
 
     // listen for copy
-    connect(m_ac->action(CUT_ACTION_NAME), SIGNAL(triggered()), SLOT(cut()));
+    connect(m_ac->action(CUT_ACTION_NAME), &QAction::triggered, this, &TreeView::cut);
     connect(m_ac->action(COPY_ACTION_NAME), SIGNAL(triggered()), SLOT(copy()));
-    connect(m_ac->action(PASTE_ACTION_NAME), SIGNAL(triggered()), SLOT(paste()));
+    connect(m_ac->action(PASTE_ACTION_NAME), &QAction::triggered, this, &TreeView::paste);
 
     // listen for deleting
     connect(m_ac->action(DELETE_ACTION_NAME), SIGNAL(triggered()), SLOT(del()));
@@ -281,14 +281,14 @@ TreeView::TreeView( KActionCollection *ac, QWidget *parent, const char *name )
     connect(m_sortSignalMapper, SIGNAL(mapped(const int)), this, SLOT(sort(const int)));
 
     // connect moving up/down actions
-    connect(m_ac->action(MOVE_UP_ACTION_NAME), SIGNAL(triggered()), SLOT(moveUpItem()));
-    connect(m_ac->action(MOVE_DOWN_ACTION_NAME), SIGNAL(triggered()), SLOT(moveDownItem()));
+    connect(m_ac->action(MOVE_UP_ACTION_NAME), &QAction::triggered, this, &TreeView::moveUpItem);
+    connect(m_ac->action(MOVE_DOWN_ACTION_NAME), &QAction::triggered, this, &TreeView::moveDownItem);
 
     // listen for selection
-    connect(this, SIGNAL(currentItemChanged(QTreeWidgetItem*,QTreeWidgetItem*)),
-            SLOT(itemSelected(QTreeWidgetItem*)));
+    connect(this, &QTreeWidget::currentItemChanged,
+            this, &TreeView::itemSelected);
 
-    m_menuFile = new MenuFile(KStandardDirs::locateLocal("xdgconf-menu", "applications-kmenuedit.menu"));
+    m_menuFile = new MenuFile(KStandardDirs::locateLocal("xdgconf-menu", QStringLiteral("applications-kmenuedit.menu")));
     m_rootFolder = new MenuFolderInfo;
     m_separator = new MenuSeparatorInfo;
 }
@@ -394,7 +394,7 @@ QString TreeView::findName(KDesktopFile *df, bool deleted)
     QString name = df->readName();
     if (deleted)
     {
-       if (name == "empty")
+       if (name == QLatin1String("empty"))
           name.clear();
        if (name.isEmpty())
        {
@@ -413,7 +413,7 @@ QString TreeView::findName(KDesktopFile *df, bool deleted)
              KDesktopFile df2(*it);
              name = df2.readName();
 
-             if (!name.isEmpty() && (name != "empty"))
+             if (!name.isEmpty() && (name != QLatin1String("empty")))
                 return name;
           }
        }
@@ -523,7 +523,7 @@ void TreeView::closeAllItems(QTreeWidgetItem *item)
 
 TreeItem *TreeView::expandPath(TreeItem *item, const QString &path)
 {
-   int i = path.indexOf("/");
+   int i = path.indexOf(QStringLiteral("/"));
    QString subMenu = path.left(i+1);
    QString restMenu = path.mid(i+1);
 
@@ -567,7 +567,7 @@ void TreeView::selectMenu(const QString &menu)
        restMenu += '/';
 
    TreeItem *item = 0;
-   int i = restMenu.indexOf("/");
+   int i = restMenu.indexOf(QStringLiteral("/"));
    QString subMenu = restMenu.left(i+1);
    restMenu = restMenu.mid(i+1);
 
@@ -718,7 +718,7 @@ QStringList TreeView::fileList(const QString& rPath)
     QString relativePath = rPath;
 
     // truncate "/.directory"
-    int pos = relativePath.lastIndexOf("/.directory");
+    int pos = relativePath.lastIndexOf(QLatin1String("/.directory"));
     if (pos > 0) relativePath.truncate(pos);
 
     QStringList filelist;
@@ -731,7 +731,7 @@ QStringList TreeView::fileList(const QString& rPath)
         if(!dir.exists()) continue;
 
         dir.setFilter(QDir::Files);
-        dir.setNameFilters(QStringList() << "*.desktop;*.kdelnk");
+        dir.setNameFilters(QStringList() << QStringLiteral("*.desktop;*.kdelnk"));
 
         // build a list of files
         const QStringList files = dir.entryList();
@@ -757,7 +757,7 @@ QStringList TreeView::dirList(const QString& rPath)
     QString relativePath = rPath;
 
     // truncate "/.directory"
-    int pos = relativePath.lastIndexOf("/.directory");
+    int pos = relativePath.lastIndexOf(QLatin1String("/.directory"));
     if (pos > 0) relativePath.truncate(pos);
 
     QStringList dirlist;
@@ -773,7 +773,7 @@ QStringList TreeView::dirList(const QString& rPath)
         // build a list of subdirs
         const QStringList subdirs = dir.entryList();
         for (QStringList::ConstIterator it = subdirs.constBegin(); it != subdirs.constEnd(); ++it) {
-            if ((*it) == "." || (*it) == "..") continue;
+            if ((*it) == QLatin1String(".") || (*it) == QLatin1String("..")) continue;
             // does not work?!
             // if (dirlist.contains(*it)) continue;
 
@@ -830,7 +830,7 @@ static QString createDesktopFile(const QString &file, QString *menuId, QStringLi
    QString base = file.mid(file.lastIndexOf('/')+1);
    base = base.left(base.lastIndexOf('.'));
 
-   QRegExp r("(.*)(?=-\\d+)");
+   QRegExp r(QStringLiteral("(.*)(?=-\\d+)"));
    base = (r.indexIn(base) > -1) ? r.cap(1) : base;
 
    QString result = KService::newServicePath(true, base, menuId, excludeList);
@@ -861,7 +861,7 @@ static QString createDirectoryFile(const QString &file, QStringList *excludeList
       if (i == 1)
          result = base + ".directory";
       else
-         result = base + QString("-%1.directory").arg(i);
+         result = base + QStringLiteral("-%1.directory").arg(i);
 
       if (!excludeList->contains(result))
       {
@@ -907,7 +907,7 @@ bool TreeView::dropMimeData(QTreeWidgetItem *item, int index, const QMimeData *d
         }
     }
 
-    QString folder = parentItem ? parentItem->directory() : "/";
+    QString folder = parentItem ? parentItem->directory() : QStringLiteral("/");
     MenuFolderInfo *parentFolderInfo = parentItem ? parentItem->folderInfo() : m_rootFolder;
     //qDebug() << "think we're dropping on" << (parentItem ? parentItem->text(0) : "Top Level") <<  index;
 
@@ -1159,7 +1159,7 @@ void TreeView::newsubmenu()
    folderInfo->caption = parentFolderInfo->uniqueMenuCaption(caption);
    folderInfo->id = m_menuFile->uniqueMenuName(folder, caption, parentFolderInfo->existingMenuIds());
    folderInfo->directoryFile = file;
-   folderInfo->icon = "package";
+   folderInfo->icon = QLatin1String("package");
    folderInfo->hidden = false;
    folderInfo->setDirty();
 
@@ -1787,17 +1787,17 @@ static QStringList extractLayout(QTreeWidget *tree, QTreeWidgetItem *parent)
         if (item->isDirectory()) {
             if (firstFolder) {
                 firstFolder = false;
-                layout << ":M"; // Add new folders here...
+                layout << QStringLiteral(":M"); // Add new folders here...
             }
             layout << (item->folderInfo()->id);
         } else if (item->isEntry()) {
             if (firstEntry) {
                 firstEntry = false;
-                layout << ":F"; // Add new entries here...
+                layout << QStringLiteral(":F"); // Add new entries here...
             }
             layout << (item->entryInfo()->menuId());
         } else {
-            layout << ":S";
+            layout << QStringLiteral(":S");
         }
     }
 
@@ -1899,7 +1899,7 @@ void TreeView::restoreMenuSystem()
 {
     if ( KMessageBox::warningYesNo( this, i18n( "Do you want to restore the system menu? Warning: This will remove all custom menus." ) )==KMessageBox::No )
         return;
-    QString kmenueditfile = KStandardDirs::locateLocal("xdgconf-menu", "applications-kmenuedit.menu");
+    QString kmenueditfile = KStandardDirs::locateLocal("xdgconf-menu", QStringLiteral("applications-kmenuedit.menu"));
     if ( QFile::exists( kmenueditfile ) )
     {
         if ( !QFile::remove( kmenueditfile ) )
@@ -1957,7 +1957,7 @@ void TreeView::updateTreeView(bool showHidden)
 
 void TreeView::sendReloadMenu()
 {
-    QDBusMessage message = QDBusMessage::createSignal("/kickoff", "org.kde.plasma", "reloadMenu");
+    QDBusMessage message = QDBusMessage::createSignal(QStringLiteral("/kickoff"), QStringLiteral("org.kde.plasma"), QStringLiteral("reloadMenu"));
     QDBusConnection::sessionBus().send(message);
 }
 

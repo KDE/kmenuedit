@@ -54,15 +54,15 @@ public:
 
 extern "C" int Q_DECL_EXPORT kdemain( int argc, char **argv )
 {
-    Kdelibs4ConfigMigrator migrate(QLatin1String("kmenuedit"));
-    migrate.setConfigFiles(QStringList() << QLatin1String("kmenueditrc"));
-    migrate.setUiFiles(QStringList() << QLatin1String("kmenueditui.rc"));
+    Kdelibs4ConfigMigrator migrate(QStringLiteral("kmenuedit"));
+    migrate.setConfigFiles(QStringList() << QStringLiteral("kmenueditrc"));
+    migrate.setUiFiles(QStringList() << QStringLiteral("kmenueditui.rc"));
     migrate.migrate();
 
     KAboutData aboutData(QStringLiteral("kmenuedit"), i18n("KDE Menu Editor"),
                          PROJECT_VERSION, i18n(description), KAboutLicense::GPL,
                          i18n("(C) 2000-2003, Waldo Bastian, Raffaele Sandrini, Matthias Elter"));
-    aboutData.addAuthor(i18n("Waldo Bastian"), i18n("Maintainer"), "bastian@kde.org");
+    aboutData.addAuthor(i18n("Waldo Bastian"), i18n("Maintainer"), QStringLiteral("bastian@kde.org"));
     aboutData.addAuthor(i18n("Raffaele Sandrini"), i18n("Previous Maintainer"), QStringLiteral("sandrini@kde.org"));
     aboutData.addAuthor(i18n("Matthias Elter"), i18n("Original Author"), QStringLiteral("elter@kde.org"));
     aboutData.addAuthor(i18n("Montel Laurent"), QString(), QStringLiteral("montel@kde.org"));
