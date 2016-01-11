@@ -59,6 +59,8 @@ extern "C" int Q_DECL_EXPORT kdemain( int argc, char **argv )
     migrate.setUiFiles(QStringList() << QStringLiteral("kmenueditui.rc"));
     migrate.migrate();
 
+    KLocalizedString::setApplicationDomain("kmenuedit");
+
     KAboutData aboutData(QStringLiteral("kmenuedit"), i18n("KDE Menu Editor"),
                          PROJECT_VERSION, i18n(description), KAboutLicense::GPL,
                          i18n("(C) 2000-2003, Waldo Bastian, Raffaele Sandrini, Matthias Elter"));
