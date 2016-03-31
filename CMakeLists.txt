@@ -43,7 +43,7 @@ set(kmenueditcommon_STAT_SRCS preferencesdlg.cpp klinespellchecking.cpp basictab
 ########### next target ###############
 qt5_add_dbus_adaptor( kmenueditcommon_STAT_SRCS org.kde.kmenuedit.xml kmenuedit.h KMenuEdit)
 
-if(NOT WIN32 AND ${KHotKeysDBusInterface_FOUND})
+if(NOT WIN32 AND KHotKeysDBusInterface_FOUND)
 qt5_add_dbus_interface(
     kmenueditcommon_STAT_SRCS
     ${KHOTKEYS_DBUS_INTERFACE}
@@ -82,7 +82,7 @@ install(TARGETS kmenuedit ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 install( PROGRAMS org.kde.kmenuedit.desktop  DESTINATION  ${KDE_INSTALL_APPDIR} )
 install( FILES kmenueditui.rc  DESTINATION  ${KDE_INSTALL_KXMLGUI5DIR}/kmenuedit )
 
-if(NOT WIN32 AND ${KHotKeysDBusInterface_FOUND})
+if(NOT WIN32 AND KHotKeysDBusInterface_FOUND)
 add_dependencies(kdeinit_kmenuedit kded_khotkeys)
 endif()
 
