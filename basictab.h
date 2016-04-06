@@ -60,7 +60,6 @@ public Q_SLOTS:
 protected Q_SLOTS:
     void slotChanged();
     void launchcb_clicked();
-    void systraycb_clicked();
     void termcb_clicked();
     void uidcb_clicked();
     void slotCapturedKeySequence(const QKeySequence&);
@@ -92,7 +91,7 @@ protected:
     KKeySequenceWidget *_keyBindingEdit;
     KUrlRequester *_execEdit, *_pathEdit;
     KLineEdit    *_terminalOptionsEdit, *_userNameEdit;
-    QCheckBox    *_terminalCB, *_userCB, *_launchCB, *_systrayCB, *_onlyShowInKdeCB, *_hiddenEntryCB;
+    QCheckBox    *_terminalCB, *_userCB, *_launchCB, *_onlyShowInKdeCB, *_hiddenEntryCB;
     KIconButton  *_iconButton;
     QGroupBox    *_workPathGroup, *_terminalGroup, *_userGroup, *_keyBindingGroup;
     QLabel *_terminalOptionsLabel, *_userNameLabel, *_pathLabel, *_nameLabel, *_commentLabel, *_execLabel, *_keyBindingLabel;

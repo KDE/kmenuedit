@@ -116,18 +116,14 @@ void BasicTab::initGeneralTab()
     _launchCB = new QCheckBox(i18n("Enable &launch feedback"));
     generalTabLayout->addWidget(_launchCB, 4, 0, 1, 3 );
 
-    // systray
-    _systrayCB = new QCheckBox(i18n("&Place in system tray"));
-    generalTabLayout->addWidget(_systrayCB, 5, 0, 1, 3 );
-
     // KDE visibility
     _onlyShowInKdeCB = new QCheckBox(i18n("Only show in KDE"));
-    generalTabLayout->addWidget(_onlyShowInKdeCB, 6, 0, 1, 3 );
+    generalTabLayout->addWidget(_onlyShowInKdeCB, 5, 0, 1, 3 );
 
     // hidden entry
     _hiddenEntryCB = new QCheckBox(i18n("Hidden entry"));
     _hiddenEntryCB->hide();
-    generalTabLayout->addWidget(_hiddenEntryCB, 7, 0, 1, 3 );
+    generalTabLayout->addWidget(_hiddenEntryCB, 6, 0, 1, 3 );
 
     // icon
     _iconButton = new KIconButton();
@@ -230,7 +226,6 @@ void BasicTab::initConnections()
     connect(_execEdit, &KUrlRequester::textChanged, this, &BasicTab::slotChanged);
     connect(_execEdit, &KUrlRequester::urlSelected, this, &BasicTab::slotExecSelected);
     connect(_launchCB, &QCheckBox::clicked, this, &BasicTab::launchcb_clicked);
-    connect(_systrayCB, &QCheckBox::clicked, this, &BasicTab::systraycb_clicked);
     connect(_onlyShowInKdeCB, &QCheckBox::clicked, this, &BasicTab::onlyshowcb_clicked);
     connect(_hiddenEntryCB, &QCheckBox::clicked, this, &BasicTab::hiddenentrycb_clicked);
     connect(_iconButton, &KIconButton::iconChanged, this, &BasicTab::slotChanged);
@@ -253,7 +248,6 @@ void BasicTab::slotDisableAction()
     _commentEdit->setEnabled(false);
     _execEdit->setEnabled(false);
     _launchCB->setEnabled(false);
-    _systrayCB->setEnabled(false);
     _onlyShowInKdeCB->setEnabled( false );
     _hiddenEntryCB->setEnabled( false );
     _nameLabel->setEnabled(false);
@@ -277,7 +271,6 @@ void BasicTab::enableWidgets(bool isDF, bool isDeleted)
     _iconButton->setEnabled(!isDeleted);
     _execEdit->setEnabled(isDF && !isDeleted);
     _launchCB->setEnabled(isDF && !isDeleted);
-    _systrayCB->setEnabled(isDF && !isDeleted);
     _onlyShowInKdeCB->setEnabled( isDF && !isDeleted );
     _hiddenEntryCB->setEnabled( isDF && !isDeleted );
     _nameLabel->setEnabled(!isDeleted);
@@ -316,7 +309,6 @@ void BasicTab::setFolderInfo(MenuFolderInfo *folderInfo)
     _terminalOptionsEdit->clear();
     _userNameEdit->clear();
     _launchCB->setChecked(false);
-    _systrayCB->setChecked(false);
     _terminalCB->setChecked(false);
     _onlyShowInKdeCB->setChecked( false );
     _hiddenEntryCB->setChecked( false );
@@ -344,7 +336,6 @@ void BasicTab::setEntryInfo(MenuEntryInfo *entryInfo)
        _keyBindingEdit->clearKeySequence();
 
        _execEdit->lineEdit()->clear();
-       _systrayCB->setChecked(false);
        _onlyShowInKdeCB->setChecked( false );
        _hiddenEntryCB->setChecked( false );
 
@@ -379,17 +370,7 @@ void BasicTab::setEntryInfo(MenuEntryInfo *entryInfo)
             _keyBindingEdit->clearKeySequence();
     }
 #endif
-    QString temp = df->desktopGroup().readEntry("Exec");
-    if (temp.startsWith(QLatin1String("ksystraycmd ")))
-    {
-      _execEdit->lineEdit()->setText(temp.right(temp.length()-12));
-      _systrayCB->setChecked(true);
-    }
-    else
-    {
-      _execEdit->lineEdit()->setText(temp);
-      _systrayCB->setChecked(false);
-    }
+    _execEdit->lineEdit()->setText(df->desktopGroup().readEntry("Exec"));
 
     _pathEdit->lineEdit()->setText(df->readPath());
     _terminalOptionsEdit->setText(df->desktopGroup().readEntry("TerminalOptions"));
@@ -430,10 +411,7 @@ void BasicTab::apply()
         KDesktopFile *df = _menuEntryInfo->desktopFile();
         KConfigGroup dg = df->desktopGroup();
         dg.writeEntry("Comment", _commentEdit->text());
-        if (_systrayCB->isChecked())
-          dg.writeEntry("Exec", _execEdit->lineEdit()->text().prepend("ksystraycmd "));
-        else
-          dg.writeEntry("Exec", _execEdit->lineEdit()->text());
+        dg.writeEntry("Exec", _execEdit->lineEdit()->text());
 
         dg.writePathEntry("Path", _pathEdit->lineEdit()->text());
 
@@ -483,11 +461,6 @@ void BasicTab::slotChanged()
 }
 
 void BasicTab::launchcb_clicked()
-{
-    slotChanged();
-}
-
-void BasicTab::systraycb_clicked()
 {
     slotChanged();
 }
