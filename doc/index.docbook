@@ -179,13 +179,15 @@ to the bottom of the tree to make it a top level entry.
 <para>There is no way to transfer menu settings using the &GUI;, you have to do that manually 
 and copy the following files to the target user:</para>
 <para>&kmenuedit; stores the menu hierarchy in 
-<filename>$<envar>HOME</envar>/.config/menus/applications-kmenuedit.menu</filename>
-and <filename class="directory">$<envar>HOME</envar>/.local/share/desktop-directories</filename> 
-contains desktop files for submenus you created.
-In <filename class="directory">$<envar>HOME</envar>/.local/share/applications/</filename> you 
-find the desktop files for the custom items you created.
+<filename>menus/applications-kmenuedit.menu</filename> in the folder <filename class="directory">$(qtpaths --paths
+GenericConfigLocation)</filename>
+and <filename class="directory">desktop-directories</filename> in the folder <filename class="directory">$(qtpaths --paths
+GenericDataLocation)</filename> contains desktop files for submenus you created.
+In <filename class="directory">applications/</filename> in the folder <filename class="directory">$(qtpaths --paths
+GenericDataLocation)</filename> you find the desktop files for the custom items you created.
 </para>
-<para>The shortcuts for each application are stored in <filename>~/.kde/share/config/kglobalshortcutsrc</filename>, 
+<para>The shortcuts for each application are stored in <filename>kglobalshortcutsrc</filename>
+in the folder <filename class="directory">$(qtpaths --paths GenericConfigLocation)</filename>, 
 but export/import does not work because the UUIDs of the shortcuts do not match up between systems, even though the 
 <filename class="extension">.desktop</filename> files are the same. You have to assign all shortcuts manually again.
 </para>
