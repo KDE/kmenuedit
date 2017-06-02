@@ -143,7 +143,7 @@ Q_SIGNALS:
 
 protected Q_SLOTS:
     void itemSelected(QTreeWidgetItem *);
-    bool dropMimeData(QTreeWidgetItem *parent, int index, const QMimeData *data, Qt::DropAction action);
+    bool dropMimeData(QTreeWidgetItem *parent, int index, const QMimeData *data, Qt::DropAction action) Q_DECL_OVERRIDE;
 
     void newsubmenu();
     void newitem();
@@ -165,9 +165,9 @@ protected:
     SortAllByDescription
     };
 
-    void contextMenuEvent(QContextMenuEvent *event);
-    void dropEvent(QDropEvent *event);
-    void startDrag(Qt::DropActions supportedActions);
+    void contextMenuEvent(QContextMenuEvent *event) Q_DECL_OVERRIDE;
+    void dropEvent(QDropEvent *event) Q_DECL_OVERRIDE;
+    void startDrag(Qt::DropActions supportedActions) Q_DECL_OVERRIDE;
     QTreeWidgetItem *selectedItem();
     TreeItem *createTreeItem(TreeItem *parent, QTreeWidgetItem *after, MenuFolderInfo *folderInfo, bool _init = false);
     TreeItem *createTreeItem(TreeItem *parent, QTreeWidgetItem *after, MenuEntryInfo *entryInfo, bool _init = false);
@@ -197,9 +197,9 @@ protected:
     QStringList fileList(const QString& relativePath);
     QStringList dirList(const QString& relativePath);
 
-    virtual QStringList mimeTypes() const;
-    QMimeData *mimeData(const QList<QTreeWidgetItem *> items) const;
-    Qt::DropActions supportedDropActions() const;
+    QStringList mimeTypes() const Q_DECL_OVERRIDE;
+    QMimeData *mimeData(const QList<QTreeWidgetItem *> items) const Q_DECL_OVERRIDE;
+    Qt::DropActions supportedDropActions() const Q_DECL_OVERRIDE;
 
     void sendReloadMenu();
 
@@ -226,12 +226,12 @@ class MenuItemMimeData : public QMimeData
 {
 public:
     MenuItemMimeData(TreeItem *item);
-    virtual QStringList formats() const;
-    virtual bool hasFormat(const QString &mimeType) const;
+    QStringList formats() const Q_DECL_OVERRIDE;
+    bool hasFormat(const QString &mimeType) const Q_DECL_OVERRIDE;
     TreeItem *item() const;
 
 protected:
-    virtual QVariant retrieveData(const QString &mimeType, QVariant::Type type) const;
+    QVariant retrieveData(const QString &mimeType, QVariant::Type type) const Q_DECL_OVERRIDE;
 
 private:
     TreeItem *m_item;

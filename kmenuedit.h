@@ -44,7 +44,7 @@ public:
 protected:
     void setupView();
     void setupActions();
-    bool queryClose();
+    bool queryClose() Q_DECL_OVERRIDE;
 
 protected Q_SLOTS:
     void slotSave();

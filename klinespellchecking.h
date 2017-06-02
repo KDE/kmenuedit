@@ -33,7 +33,7 @@ public:
     void highLightWord( unsigned int length, unsigned int pos );
 
 protected:
-    virtual void contextMenuEvent(QContextMenuEvent *e);
+    void contextMenuEvent(QContextMenuEvent *e) Q_DECL_OVERRIDE;
 
 private Q_SLOTS:
     void slotCheckSpelling();

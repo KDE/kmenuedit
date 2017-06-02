@@ -74,7 +74,7 @@ public:
     }
 
 protected:
-    void paintEvent(QPaintEvent * /*event*/)
+    void paintEvent(QPaintEvent * /*event*/) Q_DECL_OVERRIDE
     {
         QPainter p(this);
         // Draw Separator
