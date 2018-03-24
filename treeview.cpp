@@ -29,7 +29,7 @@
 #include <QHeaderView>
 #include <QPainter>
 #include <QRegExp>
-#include <QPixmap>
+#include <QIcon>
 #include <QDropEvent>
 #include <QMenu>
 #include <QApplication>
@@ -224,13 +224,6 @@ bool TreeItem::isLayoutDirty() const
 
     return false;
 }
-
-static QPixmap appIcon(const QString &iconName)
-{
-    QPixmap normal = KIconLoader::global()->loadIcon(iconName, KIconLoader::Small, 0, KIconLoader::DefaultState, QStringList(), 0L, true);
-    return normal;
-}
-
 
 TreeView::TreeView( KActionCollection *ac, QWidget *parent, const char *name )
     : QTreeWidget(parent), m_ac(ac), m_popupMenu(0), m_clipboard(0),
@@ -432,7 +425,7 @@ TreeItem *TreeView::createTreeItem(TreeItem *parent, QTreeWidgetItem *after, Men
 
     item->setMenuFolderInfo(folderInfo);
     item->setName(folderInfo->caption);
-    item->setIcon(0, appIcon(folderInfo->icon));
+    item->setIcon(0, QIcon::fromTheme(folderInfo->icon));
     item->setDirectoryPath(folderInfo->fullId);
     item->setHiddenInMenu(folderInfo->hidden);
     item->load();
@@ -465,7 +458,7 @@ TreeItem *TreeView::createTreeItem(TreeItem *parent, QTreeWidgetItem *after, Men
     ////qDebug() << parent << after << name;
     item->setMenuEntryInfo(entryInfo);
     item->setName(name);
-    item->setIcon(0, appIcon(entryInfo->icon));
+    item->setIcon(0, QIcon::fromTheme(entryInfo->icon));
     item->setHiddenInMenu(hidden);
     item->load();
 
@@ -687,7 +680,7 @@ void TreeView::currentDataChanged(MenuFolderInfo *folderInfo)
     }
 
     item->setName(folderInfo->caption);
-    item->setIcon(0, appIcon(folderInfo->icon));
+    item->setIcon(0, QIcon::fromTheme(folderInfo->icon));
 }
 
 void TreeView::currentDataChanged(MenuEntryInfo *entryInfo)
@@ -710,7 +703,7 @@ void TreeView::currentDataChanged(MenuEntryInfo *entryInfo)
     }
 
     item->setName(name);
-    item->setIcon(0, appIcon(entryInfo->icon));
+    item->setIcon(0, QIcon::fromTheme(entryInfo->icon));
 }
 
 QStringList TreeView::fileList(const QString& rPath)

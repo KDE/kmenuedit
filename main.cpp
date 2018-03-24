@@ -59,6 +59,7 @@ extern "C" int Q_DECL_EXPORT kdemain( int argc, char **argv )
     migrate.setUiFiles(QStringList() << QStringLiteral("kmenueditui.rc"));
     migrate.migrate();
 
+    QGuiApplication::setAttribute(Qt::AA_UseHighDpiPixmaps);
     KLocalizedString::setApplicationDomain("kmenuedit");
 
     KAboutData aboutData(QStringLiteral("kmenuedit"), i18n("KDE Menu Editor"),
