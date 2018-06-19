@@ -77,8 +77,6 @@ extern "C" int Q_DECL_EXPORT kdemain( int argc, char **argv )
 
     QCommandLineParser parser;
     parser.setApplicationDescription(i18n("KDE Menu Editor"));
-    parser.addVersionOption();
-    parser.addHelpOption();
     parser.addPositionalArgument(QStringLiteral("menu"),
                                  i18n("Sub menu to pre-select"),
                                  QStringLiteral("[menu]"));
