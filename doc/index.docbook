@@ -343,14 +343,6 @@ have permission to run the program.</para></listitem>
 </para></listitem>
 </varlistentry>
 <varlistentry>
-<term><guilabel>Place in system tray</guilabel></term>
-<listitem><para>When checked, the application's icon will show up in the panel system tray.
-You will then be able to hide or show the application by clicking on the system
-tray icon. Clicking on it using the &RMB; will allow also you to undock, or quit the
-application.
-</para></listitem>
-</varlistentry>
-<varlistentry>
 <term><guilabel>Only show in &kde;</guilabel></term>
 <listitem><para>When checked, the application entry will only be visible in all &kde; application launchers but not in other desktops environments.
 </para></listitem>
