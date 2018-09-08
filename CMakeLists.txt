@@ -27,6 +27,8 @@ find_package(KF5 REQUIRED COMPONENTS
     IconThemes
     KIO
     Sonnet
+    DocTools
+    Init
     KDELibs4Support
 )
 
