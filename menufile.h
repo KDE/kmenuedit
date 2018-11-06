@@ -19,7 +19,7 @@
 #ifndef menufile_h
 #define menufile_h
 
-#include <QtXml/qdom.h>
+#include <qdom.h>
 
 #include <QList>
 #include <QStringList>

@@ -25,7 +25,7 @@
 #include <Kdelibs4ConfigMigrator>
 
 #include <QApplication>
-#include <QtCore/QCommandLineParser>
+#include <QCommandLineParser>
 #include "kmenuedit.h"
 #ifndef Q_OS_WIN
 #include "khotkeys.h"

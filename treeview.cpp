@@ -33,7 +33,7 @@
 #include <QDropEvent>
 #include <QMenu>
 #include <QApplication>
-#include <QtDBus/QtDBus>
+#include <QtDBus>
 #include <QSignalMapper>
 
 #include <QAction>
