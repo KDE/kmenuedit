@@ -54,6 +54,7 @@ public:
 
 extern "C" int Q_DECL_EXPORT kdemain( int argc, char **argv )
 {
+    KMenuApplication app(argc, argv);
     Kdelibs4ConfigMigrator migrate(QStringLiteral("kmenuedit"));
     migrate.setConfigFiles(QStringList() << QStringLiteral("kmenueditrc"));
     migrate.setUiFiles(QStringList() << QStringLiteral("kmenueditui.rc"));
@@ -71,7 +72,6 @@ extern "C" int Q_DECL_EXPORT kdemain( int argc, char **argv )
     aboutData.addAuthor(i18n("Montel Laurent"), QString(), QStringLiteral("montel@kde.org"));
     KAboutData::setApplicationData(aboutData);
 
-    KMenuApplication app(argc, argv);
 
     KDBusService service(KDBusService::Unique);
 
