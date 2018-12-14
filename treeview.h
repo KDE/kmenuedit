@@ -115,8 +115,8 @@ class TreeView : public QTreeWidget
     friend class TreeItem;
     Q_OBJECT
 public:
-    explicit TreeView(KActionCollection *ac, QWidget *parent=0, const char *name=0);
-    ~TreeView();
+    explicit TreeView(KActionCollection *ac, QWidget *parent=nullptr);
+    ~TreeView() override;
 
     void readMenuFolderInfo(MenuFolderInfo *folderInfo=0, KServiceGroup::Ptr folder=KServiceGroup::Ptr(), const QString &prefix=QString());
     void setViewMode(bool showHidden);
@@ -143,7 +143,7 @@ Q_SIGNALS:
 
 protected Q_SLOTS:
     void itemSelected(QTreeWidgetItem *);
-    bool dropMimeData(QTreeWidgetItem *parent, int index, const QMimeData *data, Qt::DropAction action) Q_DECL_OVERRIDE;
+    bool dropMimeData(QTreeWidgetItem *parent, int index, const QMimeData *data, Qt::DropAction action) override;
 
     void newsubmenu();
     void newitem();
@@ -165,9 +165,9 @@ protected:
     SortAllByDescription
     };
 
-    void contextMenuEvent(QContextMenuEvent *event) Q_DECL_OVERRIDE;
-    void dropEvent(QDropEvent *event) Q_DECL_OVERRIDE;
-    void startDrag(Qt::DropActions supportedActions) Q_DECL_OVERRIDE;
+    void contextMenuEvent(QContextMenuEvent *event) override;
+    void dropEvent(QDropEvent *event) override;
+    void startDrag(Qt::DropActions supportedActions) override;
     QTreeWidgetItem *selectedItem();
     TreeItem *createTreeItem(TreeItem *parent, QTreeWidgetItem *after, MenuFolderInfo *folderInfo, bool _init = false);
     TreeItem *createTreeItem(TreeItem *parent, QTreeWidgetItem *after, MenuEntryInfo *entryInfo, bool _init = false);
@@ -197,9 +197,9 @@ protected:
     QStringList fileList(const QString& relativePath);
     QStringList dirList(const QString& relativePath);
 
-    QStringList mimeTypes() const Q_DECL_OVERRIDE;
-    QMimeData *mimeData(const QList<QTreeWidgetItem *> items) const Q_DECL_OVERRIDE;
-    Qt::DropActions supportedDropActions() const Q_DECL_OVERRIDE;
+    QStringList mimeTypes() const override;
+    QMimeData *mimeData(const QList<QTreeWidgetItem *> items) const override;
+    Qt::DropActions supportedDropActions() const override;
 
     void sendReloadMenu();
 
@@ -226,12 +226,12 @@ class MenuItemMimeData : public QMimeData
 {
 public:
     MenuItemMimeData(TreeItem *item);
-    QStringList formats() const Q_DECL_OVERRIDE;
-    bool hasFormat(const QString &mimeType) const Q_DECL_OVERRIDE;
+    QStringList formats() const override;
+    bool hasFormat(const QString &mimeType) const override;
     TreeItem *item() const;
 
 protected:
-    QVariant retrieveData(const QString &mimeType, QVariant::Type type) const Q_DECL_OVERRIDE;
+    QVariant retrieveData(const QString &mimeType, QVariant::Type type) const override;
 
 private:
     TreeItem *m_item;

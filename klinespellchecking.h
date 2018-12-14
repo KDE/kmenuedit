@@ -27,13 +27,13 @@ class KLineSpellChecking : public KLineEdit
 {
     Q_OBJECT
 public:
-    KLineSpellChecking( QWidget *parent = 0 );
-    ~KLineSpellChecking();
+    explicit KLineSpellChecking( QWidget *parent = nullptr );
+    ~KLineSpellChecking() override;
 
     void highLightWord( unsigned int length, unsigned int pos );
 
 protected:
-    void contextMenuEvent(QContextMenuEvent *e) Q_DECL_OVERRIDE;
+    void contextMenuEvent(QContextMenuEvent *e) override;
 
 private Q_SLOTS:
     void slotCheckSpelling();

@@ -74,7 +74,7 @@ public:
     }
 
 protected:
-    void paintEvent(QPaintEvent * /*event*/) Q_DECL_OVERRIDE
+    void paintEvent(QPaintEvent * /*event*/) override
     {
         QPainter p(this);
         // Draw Separator
@@ -225,7 +225,7 @@ bool TreeItem::isLayoutDirty() const
     return false;
 }
 
-TreeView::TreeView( KActionCollection *ac, QWidget *parent, const char *name )
+TreeView::TreeView(KActionCollection *ac, QWidget *parent)
     : QTreeWidget(parent), m_ac(ac), m_popupMenu(0), m_clipboard(0),
       m_clipboardFolderInfo(0), m_clipboardEntryInfo(0),
       m_layoutDirty(false),
@@ -233,7 +233,6 @@ TreeView::TreeView( KActionCollection *ac, QWidget *parent, const char *name )
 {
     m_dropMimeTypes << s_internalMimeType << KUrl::List::mimeDataTypes();
     qRegisterMetaType<TreeItem *>("TreeItem");
-    setObjectName(name);
     setAllColumnsShowFocus(true);
     setRootIsDecorated(true);
     setSortingEnabled(false);

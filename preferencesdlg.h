@@ -34,7 +34,7 @@ class PreferencesDialog : public KPageDialog
 {
     Q_OBJECT
 public:
-    PreferencesDialog( QWidget *parent );
+    explicit PreferencesDialog( QWidget *parent );
 
 protected Q_SLOTS:
     void slotSave();
@@ -48,7 +48,7 @@ class SpellCheckingPage : public QWidget
 {
     Q_OBJECT
 public:
-    SpellCheckingPage( QWidget * );
+    explicit SpellCheckingPage( QWidget * );
     void saveOptions();
 private:
     Sonnet::ConfigWidget *m_confPage;
@@ -58,7 +58,7 @@ class MiscPage : public QWidget
 {
     Q_OBJECT
 public:
-    MiscPage( QWidget * );
+    explicit MiscPage( QWidget * );
     void saveOptions();
 private:
     QCheckBox *m_showHiddenEntries;

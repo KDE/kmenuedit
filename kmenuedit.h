@@ -33,7 +33,7 @@ class KMenuEdit : public KXmlGuiWindow
 
 public:
     KMenuEdit();
-    ~KMenuEdit();
+    ~KMenuEdit() override;
 
     void selectMenu(const QString &menu);
     void selectMenuEntry(const QString &menuEntry);
@@ -44,7 +44,7 @@ public:
 protected:
     void setupView();
     void setupActions();
-    bool queryClose() Q_DECL_OVERRIDE;
+    bool queryClose() override;
 
 protected Q_SLOTS:
     void slotSave();
