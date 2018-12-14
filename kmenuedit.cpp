@@ -64,9 +64,7 @@ KMenuEdit::~KMenuEdit()
 
 void KMenuEdit::setupActions()
 {
-    QAction *action = 0;
-
-    action = actionCollection()->addAction(NEW_SUBMENU_ACTION_NAME);
+    QAction *action = actionCollection()->addAction(NEW_SUBMENU_ACTION_NAME);
     action->setIcon(QIcon::fromTheme(QStringLiteral("menu_new")));
     action->setText(i18n("&New Submenu..."));
     actionCollection()->setDefaultShortcut(action, QKeySequence(Qt::CTRL + Qt::SHIFT + Qt::Key_N));
@@ -135,9 +133,9 @@ void KMenuEdit::slotConfigure()
 
 void KMenuEdit::setupView()
 {
-    m_splitter = new QSplitter;
+    m_splitter = new QSplitter(this);
     m_splitter->setOrientation(Qt::Horizontal);
-    m_tree = new TreeView(actionCollection());
+    m_tree = new TreeView(actionCollection(), this);
     m_splitter->addWidget(m_tree);
     m_basicTab = new BasicTab;
     m_splitter->addWidget(m_basicTab);
