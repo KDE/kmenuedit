@@ -40,8 +40,8 @@ protected Q_SLOTS:
     void slotSave();
 
 private:
-    SpellCheckingPage *m_pageSpellChecking;
-    MiscPage *m_pageMisc;
+    SpellCheckingPage *m_pageSpellChecking = nullptr;
+    MiscPage *m_pageMisc = nullptr;
 };
 
 class SpellCheckingPage : public QWidget
@@ -51,7 +51,7 @@ public:
     explicit SpellCheckingPage( QWidget * );
     void saveOptions();
 private:
-    Sonnet::ConfigWidget *m_confPage;
+    Sonnet::ConfigWidget *m_confPage = nullptr;
 };
 
 class MiscPage : public QWidget
@@ -61,7 +61,7 @@ public:
     explicit MiscPage( QWidget * );
     void saveOptions();
 private:
-    QCheckBox *m_showHiddenEntries;
+    QCheckBox *m_showHiddenEntries = nullptr;
 };
 
 

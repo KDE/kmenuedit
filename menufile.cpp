@@ -124,7 +124,7 @@ QDomElement MenuFile::findMenu(QDomElement elem, const QString &menuName, bool c
 {
    QString menuNodeName;
    QString subMenuName;
-   int i = menuName.indexOf('/');
+   int i = menuName.indexOf(QLatin1Char('/'));
    if (i >= 0)
    {
       menuNodeName = menuName.left(i);
@@ -198,10 +198,10 @@ static QString entryToDirId(const QString &path)
       local = KGlobal::dirs()->relativeLocation("xdgdata-dirs", path);
    }
 
-   if (local.isEmpty() || local.startsWith('/'))
+   if (local.isEmpty() || local.startsWith(QLatin1Char('/')))
    {
       // What now? Use filename only and hope for the best.
-      local = path.mid(path.lastIndexOf('/')+1);
+      local = path.mid(path.lastIndexOf(QLatin1Char('/'))+1);
    }
    return local;
 }
@@ -335,7 +335,7 @@ void MenuFile::setLayout(const QString &menuName, const QStringList &layout)
          mergeNode.setAttribute(QStringLiteral("type"), QStringLiteral("all"));
          layoutNode.appendChild(mergeNode);
       }
-      else if (li.endsWith('/'))
+      else if (li.endsWith(QLatin1Char('/')))
       {
          li.truncate(li.length()-1);
          QDomElement menuNode = m_doc.createElement(MF_MENUNAME);
@@ -395,8 +395,8 @@ void MenuFile::moveMenu(const QString &oldMenu, const QString &newMenu)
 
 // TODO: GET RID OF COMMON PART, IT BREAKS STUFF
    // Find common part
-   QStringList oldMenuParts = oldMenu.split( '/');
-   QStringList newMenuParts = newMenu.split( '/');
+   QStringList oldMenuParts = oldMenu.split(QLatin1Char('/'));
+   QStringList newMenuParts = newMenu.split(QLatin1Char('/'));
    QString commonMenuName;
    int max = qMin(oldMenuParts.count(), newMenuParts.count());
    int i = 0;
@@ -404,20 +404,20 @@ void MenuFile::moveMenu(const QString &oldMenu, const QString &newMenu)
    {
       if (oldMenuParts[i] != newMenuParts[i])
          break;
-      commonMenuName += '/' + oldMenuParts[i];
+      commonMenuName += QLatin1Char('/') + oldMenuParts[i];
    }
    QString oldMenuName;
    for(int j = i; j < oldMenuParts.count()-1; j++)
    {
       if (i != j)
-         oldMenuName += '/';
+         oldMenuName += QLatin1Char('/');
       oldMenuName += oldMenuParts[j];
    }
    QString newMenuName;
    for(int j = i; j < newMenuParts.count()-1; j++)
    {
       if (i != j)
-         newMenuName += '/';
+         newMenuName += QLatin1Char('/');
       newMenuName += newMenuParts[j];
    }
 
@@ -455,7 +455,7 @@ QString MenuFile::uniqueMenuName(const QString &menuName, const QString &newMenu
    QDomElement elem = findMenu(m_doc.documentElement(), menuName, false);
 
    QString result = newMenu;
-   if (result.endsWith('/'))
+   if (result.endsWith(QLatin1Char('/')))
        result.truncate(result.length()-1);
 
    QRegExp r(QStringLiteral("(.*)(?=-\\d+)"));
@@ -463,7 +463,7 @@ QString MenuFile::uniqueMenuName(const QString &menuName, const QString &newMenu
 
    int trunc = result.length(); // Position of trailing '/'
 
-   result.append("/");
+   result.append(QLatin1Char('/'));
 
    for(int n = 1; ++n; )
    {

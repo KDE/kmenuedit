@@ -53,11 +53,11 @@ protected Q_SLOTS:
     void slotConfigure();
 
 protected:
-    TreeView           *m_tree;
-    BasicTab           *m_basicTab;
-    QSplitter          *m_splitter;
+    TreeView           *m_tree = nullptr;
+    BasicTab           *m_basicTab = nullptr;
+    QSplitter          *m_splitter = nullptr;
 
-    QAction *m_actionDelete;
+    QAction *m_actionDelete = nullptr;
     bool m_showHidden;
 };
 

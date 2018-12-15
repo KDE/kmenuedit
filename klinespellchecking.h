@@ -30,7 +30,7 @@ public:
     explicit KLineSpellChecking( QWidget *parent = nullptr );
     ~KLineSpellChecking() override;
 
-    void highLightWord( unsigned int length, unsigned int pos );
+    void highLightWord(int length, int pos );
 
 protected:
     void contextMenuEvent(QContextMenuEvent *e) override;

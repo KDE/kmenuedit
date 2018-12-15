@@ -45,8 +45,6 @@
 BasicTab::BasicTab( QWidget *parent )
     : QTabWidget(parent)
 {
-    _menuFolderInfo = 0;
-    _menuEntryInfo = 0;
 
     initGeneralTab();
     initAdvancedTab();
@@ -492,7 +490,7 @@ void BasicTab::uidcb_clicked()
 void BasicTab::slotExecSelected()
 {
     QString path = _execEdit->lineEdit()->text();
-    if (!path.startsWith('\''))
+    if (!path.startsWith(QLatin1Char('\'')))
         _execEdit->lineEdit()->setText(KShell::quoteArg(path));
 }
 

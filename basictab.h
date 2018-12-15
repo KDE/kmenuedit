@@ -85,20 +85,34 @@ protected:
     void enableWidgets(bool isDF, bool isDeleted);
 
 protected:
-    KLineEdit    *_nameEdit;
-    KLineSpellChecking*_commentEdit;
-    KLineSpellChecking   *_descriptionEdit;
-    KKeySequenceWidget *_keyBindingEdit;
-    KUrlRequester *_execEdit, *_pathEdit;
-    KLineEdit    *_terminalOptionsEdit, *_userNameEdit;
-    QCheckBox    *_terminalCB, *_userCB, *_launchCB, *_onlyShowInKdeCB, *_hiddenEntryCB;
-    KIconButton  *_iconButton;
-    QGroupBox    *_workPathGroup, *_terminalGroup, *_userGroup, *_keyBindingGroup;
-    QLabel *_terminalOptionsLabel, *_userNameLabel, *_pathLabel, *_nameLabel, *_commentLabel, *_execLabel, *_keyBindingLabel;
-    QLabel      *_descriptionLabel;
+    KLineEdit    *_nameEdit = nullptr;
+    KLineSpellChecking*_commentEdit = nullptr;
+    KLineSpellChecking   *_descriptionEdit = nullptr;
+    KKeySequenceWidget *_keyBindingEdit = nullptr;
+    KUrlRequester *_execEdit, *_pathEdit = nullptr;
+    KLineEdit    *_terminalOptionsEdit = nullptr;
+    KLineEdit *_userNameEdit = nullptr;
+    QCheckBox    *_terminalCB = nullptr;
+    QCheckBox *_userCB = nullptr;
+    QCheckBox *_launchCB = nullptr;
+    QCheckBox *_onlyShowInKdeCB = nullptr;
+    QCheckBox *_hiddenEntryCB = nullptr;
+    KIconButton  *_iconButton = nullptr;
+    QGroupBox    *_workPathGroup = nullptr;
+    QGroupBox *_terminalGroup = nullptr;
+    QGroupBox *_userGroup = nullptr;
+    QGroupBox *_keyBindingGroup = nullptr;
+    QLabel *_terminalOptionsLabel = nullptr;
+    QLabel *_userNameLabel = nullptr;
+    QLabel *_pathLabel = nullptr;
+    QLabel *_nameLabel = nullptr;
+    QLabel *_commentLabel = nullptr;
+    QLabel *_execLabel = nullptr;
+    QLabel *_keyBindingLabel = nullptr;
+    QLabel      *_descriptionLabel = nullptr;
 
-    MenuFolderInfo *_menuFolderInfo;
-    MenuEntryInfo  *_menuEntryInfo;
+    MenuFolderInfo *_menuFolderInfo = nullptr;
+    MenuEntryInfo  *_menuEntryInfo = nullptr;
 };
 
 #endif

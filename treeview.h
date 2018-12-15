@@ -204,28 +204,28 @@ protected:
     void sendReloadMenu();
 
 private:
-    KActionCollection *m_ac;
-    QMenu             *m_popupMenu;
+    KActionCollection *m_ac = nullptr;
+    QMenu             *m_popupMenu = nullptr;
     int                m_clipboard;
-    MenuFolderInfo    *m_clipboardFolderInfo;
-    MenuEntryInfo     *m_clipboardEntryInfo;
+    MenuFolderInfo    *m_clipboardFolderInfo = nullptr;
+    MenuEntryInfo     *m_clipboardEntryInfo = nullptr;
     bool               m_showHidden;
-    MenuFile          *m_menuFile;
-    MenuFolderInfo    *m_rootFolder;
-    MenuSeparatorInfo *m_separator;
+    MenuFile          *m_menuFile = nullptr;
+    MenuFolderInfo    *m_rootFolder = nullptr;
+    MenuSeparatorInfo *m_separator = nullptr;
     QStringList        m_newMenuIds;
     QStringList        m_newDirectoryList;
     bool               m_layoutDirty;
     bool               m_detailedMenuEntries;
     bool               m_detailedEntriesNamesFirst;
     QStringList        m_dropMimeTypes;
-    QSignalMapper     *m_sortSignalMapper;
+    QSignalMapper     *m_sortSignalMapper = nullptr;
 };
 
 class MenuItemMimeData : public QMimeData
 {
 public:
-    MenuItemMimeData(TreeItem *item);
+    explicit MenuItemMimeData(TreeItem *item);
     QStringList formats() const override;
     bool hasFormat(const QString &mimeType) const override;
     TreeItem *item() const;
@@ -234,7 +234,7 @@ protected:
     QVariant retrieveData(const QString &mimeType, QVariant::Type type) const override;
 
 private:
-    TreeItem *m_item;
+    TreeItem *m_item = nullptr;
 };
 
 Q_DECLARE_METATYPE(TreeItem *)

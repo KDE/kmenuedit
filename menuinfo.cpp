@@ -34,9 +34,9 @@
 // MenuFolderInfo
 //
 
-static QStringList *s_newShortcuts = 0;
-static QStringList *s_freeShortcuts = 0;
-static QStringList *s_deletedApps = 0;
+static QStringList *s_newShortcuts = nullptr;
+static QStringList *s_freeShortcuts = nullptr;
+static QStringList *s_deletedApps = nullptr;
 
 // Add separator
 void MenuFolderInfo::add(MenuSeparatorInfo *info, bool initial)
@@ -187,14 +187,14 @@ void MenuFolderInfo::save(MenuFile *menuFile)
       }
 #endif
       delete s_deletedApps;
-      s_deletedApps = 0;
+      s_deletedApps = nullptr;
    }
 
    if (dirty)
    {
       QString local = KDesktopFile::locateLocal(directoryFile);
 
-      KDesktopFile *df = 0;
+      KDesktopFile *df = nullptr;
       if (directoryFile != local)
       {
          KDesktopFile orig(QStandardPaths::ApplicationsLocation, directoryFile);
@@ -320,7 +320,7 @@ void MenuEntryInfo::setDirty()
 bool MenuEntryInfo::needInsertion()
 {
    // If entry is dirty and previously stored under applnk, then we need to be added explicitly
-   return dirty && !service->entryPath().startsWith('/');
+   return dirty && !service->entryPath().startsWith(QLatin1Char('/'));
 }
 
 void MenuEntryInfo::save()

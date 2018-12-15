@@ -29,7 +29,7 @@
 
 static bool khotkeys_present = false;
 static bool khotkeys_inited = false;
-static OrgKdeKhotkeysInterface *khotkeysInterface = NULL;
+static OrgKdeKhotkeysInterface *khotkeysInterface = nullptr;
 
 
 bool KHotKeys::init()
@@ -51,7 +51,7 @@ bool KHotKeys::init()
         }
         KMessageBox::error(
             NULL,
-            "<qt>" + i18n("Unable to contact khotkeys. Your changes are saved, but they could not be activated.") + "</qt>" );
+            QStringLiteral("<qt>") + i18n("Unable to contact khotkeys. Your changes are saved, but they could not be activated.") + QStringLiteral("</qt>") );
     }
 
     khotkeys_present = khotkeysInterface->isValid();
@@ -71,7 +71,7 @@ void KHotKeys::cleanup()
 
 bool KHotKeys::present()
 {
-qDebug() << khotkeys_inited;
+    qDebug() << khotkeys_inited;
 
     if( !khotkeys_inited )
         init();

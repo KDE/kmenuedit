@@ -188,7 +188,7 @@ void KMenuEdit::slotChangeView()
     m_actionDelete->setText(i18n("&Delete"));
     actionCollection()->setDefaultShortcut(m_actionDelete, QKeySequence(Qt::Key_Delete));
 
-    if (m_splitter == 0) {
+    if (!m_splitter) {
        setupView();
     }
     setupGUI(KXmlGuiWindow::ToolBar|Keys|Save|Create, QStringLiteral("kmenueditui.rc"));

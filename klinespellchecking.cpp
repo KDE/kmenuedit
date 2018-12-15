@@ -43,7 +43,7 @@ void KLineSpellChecking::slotCheckSpelling()
     if ( text().isEmpty() ) {
         return;
     }
-    Sonnet::Dialog *spellDialog = new Sonnet::Dialog(new Sonnet::BackgroundChecker(this), 0);
+    Sonnet::Dialog *spellDialog = new Sonnet::Dialog(new Sonnet::BackgroundChecker(this), nullptr);
     connect(spellDialog, &Sonnet::Dialog::replace, this, &KLineSpellChecking::spellCheckerCorrected);
     connect(spellDialog, &Sonnet::Dialog::misspelling, this, &KLineSpellChecking::spellCheckerMisspelling);
     connect(spellDialog, SIGNAL(done(QString)), this, SLOT(slotSpellCheckDone(QString)));
@@ -58,7 +58,7 @@ void KLineSpellChecking::spellCheckerMisspelling( const QString &_text, int pos)
     highLightWord( _text.length(),pos );
 }
 
-void KLineSpellChecking::highLightWord( unsigned int length, unsigned int pos )
+void KLineSpellChecking::highLightWord( int length, int pos )
 {
     setSelection ( pos, length );
 }
