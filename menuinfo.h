@@ -23,7 +23,7 @@
 
 #include <QList>
 
-#include <KShortcut>
+#include <QKeySequence>
 #include <KService>
 
 class MenuFile;
@@ -46,7 +46,7 @@ class MenuFolderInfo : public MenuInfo
 {
 public:
     MenuFolderInfo() : dirty(false), hidden(false) { }
-    ~MenuFolderInfo() { qDeleteAll(subFolders); subFolders.clear(); }
+    ~MenuFolderInfo();
     // Add separator
     void add(MenuSeparatorInfo *, bool initial=false);
 
@@ -120,7 +120,7 @@ public:
     void save(MenuFile *);
 
     // Search service by shortcut
-    KService::Ptr findServiceShortcut(const KShortcut&);
+    KService::Ptr findServiceShortcut(const QKeySequence&);
 
     // Set whether the entry is in active use (as opposed to in the clipboard/deleted)
     void setInUse(bool inUse);
@@ -161,9 +161,9 @@ public:
 
     QString file() const { return service->entryPath(); }
 
-    KShortcut shortcut();
-    void setShortcut(const KShortcut &_shortcut);
-    bool isShortcutAvailable(const KShortcut &_shortcut);
+    QKeySequence shortcut();
+    void setShortcut(const QKeySequence &_shortcut);
+    bool isShortcutAvailable(const QKeySequence &_shortcut);
 
     void setDirty();
 
@@ -183,7 +183,7 @@ public:
     QString icon;
     KService::Ptr service;
     KDesktopFile *m_desktopFile;
-    KShortcut shortCut;
+    QKeySequence shortCut;
     bool shortcutLoaded;
     bool shortcutDirty;
     bool dirty;

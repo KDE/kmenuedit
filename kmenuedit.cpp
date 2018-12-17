@@ -40,11 +40,7 @@
 #include "configurationmanager.h"
 
 KMenuEdit::KMenuEdit ()
-    : KXmlGuiWindow (0)
-    , m_tree(0)
-    , m_basicTab(0)
-    , m_splitter(0)
-    , m_actionDelete(0)
+    : KXmlGuiWindow (nullptr)
 {
     // dbus
     ( void )new KmenueditAdaptor(this);

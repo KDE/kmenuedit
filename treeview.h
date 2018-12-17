@@ -39,7 +39,7 @@ class MenuFile;
 class MenuFolderInfo;
 class MenuEntryInfo;
 class MenuSeparatorInfo;
-class KShortcut;
+class QKeySequence;
 
 static const QString SAVE_ACTION_NAME = QStringLiteral("file_save");
 static const QString NEW_ITEM_ACTION_NAME = QStringLiteral("new_item");
@@ -134,7 +134,7 @@ public:
 public Q_SLOTS:
     void currentDataChanged(MenuFolderInfo *folderInfo);
     void currentDataChanged(MenuEntryInfo *entryInfo);
-    void findServiceShortcut(const KShortcut&, KService::Ptr &);
+    void findServiceShortcut(const QKeySequence&, KService::Ptr &);
 
 Q_SIGNALS:
     void entrySelected(MenuFolderInfo *folderInfo);

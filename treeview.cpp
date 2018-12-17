@@ -291,6 +291,7 @@ TreeView::~TreeView()
     cleanupClipboard();
     delete m_rootFolder;
     delete m_separator;
+    delete m_menuFile;
 }
 
 void TreeView::setViewMode(bool showHidden)
@@ -692,7 +693,7 @@ void TreeView::currentDataChanged(MenuEntryInfo *entryInfo)
 
     QString name;
 
-    if (m_detailedMenuEntries && entryInfo->description.length() != 0) {
+    if (m_detailedMenuEntries && !entryInfo->description.isEmpty()) {
         if (m_detailedEntriesNamesFirst) {
             name = entryInfo->caption + QStringLiteral(" (") + entryInfo->description + QLatin1Char(')');
         } else {
@@ -1883,7 +1884,7 @@ bool TreeView::dirty()
     return m_layoutDirty || m_rootFolder->hasDirt() || m_menuFile->dirty() || isLayoutDirty();
 }
 
-void TreeView::findServiceShortcut(const KShortcut&cut, KService::Ptr &service)
+void TreeView::findServiceShortcut(const QKeySequence&cut, KService::Ptr &service)
 {
     service = m_rootFolder->findServiceShortcut(cut);
 }

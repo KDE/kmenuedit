@@ -39,10 +39,16 @@ static QStringList *s_freeShortcuts = nullptr;
 static QStringList *s_deletedApps = nullptr;
 
 // Add separator
+MenuFolderInfo::~MenuFolderInfo()
+{
+    qDeleteAll(subFolders);
+    subFolders.clear();
+}
+
 void MenuFolderInfo::add(MenuSeparatorInfo *info, bool initial)
 {
-   if (initial)
-      initialLayout.append(info);
+    if (initial)
+        initialLayout.append(info);
 }
 
 // Add sub menu
@@ -248,7 +254,7 @@ bool MenuFolderInfo::hasDirt()
    return false;
 }
 
-KService::Ptr MenuFolderInfo::findServiceShortcut(const KShortcut&cut)
+KService::Ptr MenuFolderInfo::findServiceShortcut(const QKeySequence&cut)
 {
    KService::Ptr result;
    // Check sub-menus
@@ -370,7 +376,7 @@ void MenuEntryInfo::setIcon(const QString &_icon)
    desktopFile()->desktopGroup().writeEntry("Icon", icon);
 }
 
-KShortcut MenuEntryInfo::shortcut()
+QKeySequence MenuEntryInfo::shortcut()
 {
 #ifdef WITH_HOTKEYS
    if (!shortcutLoaded)
@@ -378,14 +384,14 @@ KShortcut MenuEntryInfo::shortcut()
       shortcutLoaded = true;
       if( KHotKeys::present())
       {
-         shortCut = KShortcut(KHotKeys::getMenuEntryShortcut( service->storageId() ));
+         shortCut = QKeySequence(KHotKeys::getMenuEntryShortcut( service->storageId() ));
       }
    }
 #endif
    return shortCut;
 }
 
-static void freeShortcut(const KShortcut &shortCut)
+static void freeShortcut(const QKeySequence &shortCut)
 {
    if (!shortCut.isEmpty())
    {
@@ -400,7 +406,7 @@ static void freeShortcut(const KShortcut &shortCut)
    }
 }
 
-static void allocateShortcut(const KShortcut &shortCut)
+static void allocateShortcut(const QKeySequence &shortCut)
 {
    if (!shortCut.isEmpty())
    {
@@ -415,7 +421,7 @@ static void allocateShortcut(const KShortcut &shortCut)
    }
 }
 
-void MenuEntryInfo::setShortcut(const KShortcut &_shortcut)
+void MenuEntryInfo::setShortcut(const QKeySequence &_shortcut)
 {
    if (shortCut == _shortcut)
       return;
@@ -425,7 +431,7 @@ void MenuEntryInfo::setShortcut(const KShortcut &_shortcut)
 
    shortCut = _shortcut;
    if (shortCut.isEmpty())
-      shortCut = KShortcut(); // Normalize
+      shortCut = QKeySequence(); // Normalize
 
    shortcutLoaded = true;
    shortcutDirty = true;
@@ -435,8 +441,8 @@ void MenuEntryInfo::setInUse(bool inUse)
 {
    if (inUse)
    {
-      KShortcut temp = shortcut();
-      shortCut = KShortcut();
+      QKeySequence temp = shortcut();
+      shortCut = QKeySequence();
       if (isShortcutAvailable(temp))
          shortCut = temp;
       else
@@ -458,7 +464,7 @@ void MenuEntryInfo::setInUse(bool inUse)
    }
 }
 
-bool MenuEntryInfo::isShortcutAvailable(const KShortcut &_shortcut)
+bool MenuEntryInfo::isShortcutAvailable(const QKeySequence &_shortcut)
 {
    // We only have to check agains not saved local shortcuts.
    // KKeySequenceWidget checks against all other registered shortcuts.

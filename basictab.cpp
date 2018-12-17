@@ -363,7 +363,7 @@ void BasicTab::setEntryInfo(MenuEntryInfo *entryInfo)
     if( KHotKeys::present())
     {
         if ( !entryInfo->shortcut().isEmpty() )
-            _keyBindingEdit->setKeySequence( entryInfo->shortcut().primary() );
+            _keyBindingEdit->setKeySequence( entryInfo->shortcut() );
         else
             _keyBindingEdit->clearKeySequence();
     }
@@ -498,7 +498,7 @@ void BasicTab::slotCapturedKeySequence(const QKeySequence& seq)
 {
     if (signalsBlocked())
        return;
-    KShortcut cut(seq, QKeySequence());
+    QKeySequence cut(seq);
 #ifdef WITH_HOTKEYS
     if (_menuEntryInfo->isShortcutAvailable( cut ) && KHotKeys::present() )
     {

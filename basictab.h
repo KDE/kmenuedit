@@ -21,7 +21,7 @@
 #define basictab_h
 
 #include <QTabWidget>
-#include <KShortcut>
+#include <QKeySequence>
 #include <KService>
 
 class KKeySequenceWidget;
@@ -51,7 +51,7 @@ public:
 Q_SIGNALS:
     void changed( MenuFolderInfo * );
     void changed( MenuEntryInfo * );
-    void findServiceShortcut(const KShortcut&, KService::Ptr &);
+    void findServiceShortcut(const QKeySequence&, KService::Ptr &);
 
 public Q_SLOTS:
     void setFolderInfo(MenuFolderInfo *folderInfo);

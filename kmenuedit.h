@@ -58,7 +58,7 @@ protected:
     QSplitter          *m_splitter = nullptr;
 
     QAction *m_actionDelete = nullptr;
-    bool m_showHidden;
+    bool m_showHidden = false;
 };
 
 #endif
