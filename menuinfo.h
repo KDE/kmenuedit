@@ -20,7 +20,6 @@
 #ifndef menuinfo_h
 #define menuinfo_h
 
-
 #include <QList>
 
 #include <QKeySequence>
@@ -32,26 +31,37 @@ class MenuEntryInfo;
 class MenuInfo
 {
 public:
-    MenuInfo() {}
-    virtual ~MenuInfo() {}
+    MenuInfo()
+    {
+    }
+
+    virtual ~MenuInfo()
+    {
+    }
 };
 
 class MenuSeparatorInfo : public MenuInfo
 {
 public:
-    MenuSeparatorInfo() {}
+    MenuSeparatorInfo()
+    {
+    }
 };
 
 class MenuFolderInfo : public MenuInfo
 {
 public:
-    MenuFolderInfo() : dirty(false), hidden(false) { }
+    MenuFolderInfo() : dirty(false)
+        , hidden(false)
+    {
+    }
+
     ~MenuFolderInfo();
     // Add separator
-    void add(MenuSeparatorInfo *, bool initial=false);
+    void add(MenuSeparatorInfo *, bool initial = false);
 
     // Add sub menu
-    void add(MenuFolderInfo *, bool initial=false);
+    void add(MenuFolderInfo *, bool initial = false);
 
     // Remove sub menu (without deleting it)
     void take(MenuFolderInfo *);
@@ -81,30 +91,38 @@ public:
 
     void setCaption(const QString &_caption)
     {
-       if (_caption == caption) return;
-       caption = _caption;
-       setDirty();
+        if (_caption == caption) {
+            return;
+        }
+        caption = _caption;
+        setDirty();
     }
 
     void setIcon(const QString &_icon)
     {
-       if (_icon == icon) return;
-       icon = _icon;
-       setDirty();
+        if (_icon == icon) {
+            return;
+        }
+        icon = _icon;
+        setDirty();
     }
 
     void setGenericName(const QString &_description)
     {
-       if (_description == genericname) return;
-       genericname = _description;
-       setDirty();
+        if (_description == genericname) {
+            return;
+        }
+        genericname = _description;
+        setDirty();
     }
 
     void setComment(const QString &_comment)
     {
-       if (_comment == comment) return;
-       comment = _comment;
-       setDirty();
+        if (_comment == comment) {
+            return;
+        }
+        comment = _comment;
+        setDirty();
     }
 
     // Mark menu as dirty
@@ -120,7 +138,7 @@ public:
     void save(MenuFile *);
 
     // Search service by shortcut
-    KService::Ptr findServiceShortcut(const QKeySequence&);
+    KService::Ptr findServiceShortcut(const QKeySequence &);
 
     // Set whether the entry is in active use (as opposed to in the clipboard/deleted)
     void setInUse(bool inUse);
@@ -144,22 +162,33 @@ class MenuEntryInfo : public MenuInfo
 {
 public:
     explicit MenuEntryInfo(const KService::Ptr &_service, KDesktopFile *_df = nullptr)
-     : service(_service), m_desktopFile(_df),
-       shortcutLoaded(false), shortcutDirty(false), dirty(_df != 0), hidden(false)
+        : service(_service)
+        , m_desktopFile(_df)
+        , shortcutLoaded(false)
+        , shortcutDirty(false)
+        , dirty(_df != 0)
+        , hidden(false)
     {
-       caption = service->name();
-       description = service->genericName();
-       icon = service->icon();
+        caption = service->name();
+        description = service->genericName();
+        icon = service->icon();
     }
+
     ~MenuEntryInfo();
 
     void setCaption(const QString &_caption);
     void setDescription(const QString &_description);
     void setIcon(const QString &_icon);
 
-    QString menuId() const { return service->menuId(); }
+    QString menuId() const
+    {
+        return service->menuId();
+    }
 
-    QString file() const { return service->entryPath(); }
+    QString file() const
+    {
+        return service->entryPath();
+    }
 
     QKeySequence shortcut();
     void setShortcut(const QKeySequence &_shortcut);

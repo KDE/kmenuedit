@@ -31,7 +31,6 @@ static bool khotkeys_present = false;
 static bool khotkeys_inited = false;
 static OrgKdeKhotkeysInterface *khotkeysInterface = nullptr;
 
-
 bool KHotKeys::init()
 {
     khotkeys_inited = true;
@@ -44,14 +43,14 @@ bool KHotKeys::init()
         bus,
         NULL);
 
-    if(!khotkeysInterface->isValid()) {
+    if (!khotkeysInterface->isValid()) {
         QDBusError err = khotkeysInterface->lastError();
         if (err.isValid()) {
             qCritical() << err.name() << ":" << err.message();
         }
         KMessageBox::error(
             NULL,
-            QStringLiteral("<qt>") + i18n("Unable to contact khotkeys. Your changes are saved, but they could not be activated.") + QStringLiteral("</qt>") );
+            QStringLiteral("<qt>") + i18n("Unable to contact khotkeys. Your changes are saved, but they could not be activated.") + QStringLiteral("</qt>"));
     }
 
     khotkeys_present = khotkeysInterface->isValid();
@@ -62,7 +61,7 @@ bool KHotKeys::init()
 
 void KHotKeys::cleanup()
 {
-    if( khotkeys_inited && khotkeys_present ) {
+    if (khotkeys_inited && khotkeys_present) {
         // CleanUp ???
     }
 
@@ -73,54 +72,28 @@ bool KHotKeys::present()
 {
     qDebug() << khotkeys_inited;
 
-    if( !khotkeys_inited )
+    if (!khotkeys_inited) {
         init();
+    }
 
     qDebug() << khotkeys_present;
 
     return khotkeys_present;
 }
 
-QString KHotKeys::getMenuEntryShortcut( const QString& entry_P )
+QString KHotKeys::getMenuEntryShortcut(const QString &entry_P)
 {
-    if( !khotkeys_inited )
+    if (!khotkeys_inited) {
         init();
-
-    if( !khotkeys_present || !khotkeysInterface->isValid())
-        return QLatin1String("");
-qDebug() << khotkeys_inited;
-    qDebug() << khotkeys_present;
-    qDebug() << entry_P;
-    QDBusReply<QString> reply = khotkeysInterface->get_menuentry_shortcut(entry_P);
-    if (!reply.isValid()) {
-        qCritical() << reply.error();
-        return QLatin1String("");
-
-    } else {
-            qDebug() << reply;
-        return reply;
     }
-}
 
-QString KHotKeys::changeMenuEntryShortcut(
-        const QString& entry_P,
-        const QString shortcut_P )
-{
-    if( !khotkeys_inited )
-        init();
-
-    if( !khotkeys_present || !khotkeysInterface->isValid())
+    if (!khotkeys_present || !khotkeysInterface->isValid()) {
         return QLatin1String("");
-
+    }
     qDebug() << khotkeys_inited;
     qDebug() << khotkeys_present;
     qDebug() << entry_P;
-    qDebug() << shortcut_P;
-
-    QDBusReply<QString> reply = khotkeysInterface->register_menuentry_shortcut(
-            entry_P,
-            shortcut_P);
-
+    QDBusReply<QString> reply = khotkeysInterface->get_menuentry_shortcut(entry_P);
     if (!reply.isValid()) {
         qCritical() << reply.error();
         return QLatin1String("");
@@ -130,3 +103,31 @@ QString KHotKeys::changeMenuEntryShortcut(
     }
 }
 
+QString KHotKeys::changeMenuEntryShortcut(
+    const QString &entry_P, const QString shortcut_P)
+{
+    if (!khotkeys_inited) {
+        init();
+    }
+
+    if (!khotkeys_present || !khotkeysInterface->isValid()) {
+        return QLatin1String("");
+    }
+
+    qDebug() << khotkeys_inited;
+    qDebug() << khotkeys_present;
+    qDebug() << entry_P;
+    qDebug() << shortcut_P;
+
+    QDBusReply<QString> reply = khotkeysInterface->register_menuentry_shortcut(
+        entry_P,
+        shortcut_P);
+
+    if (!reply.isValid()) {
+        qCritical() << reply.error();
+        return QLatin1String("");
+    } else {
+        qDebug() << reply;
+        return reply;
+    }
+}

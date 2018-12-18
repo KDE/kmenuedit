@@ -40,10 +40,10 @@
 #include "configurationmanager.h"
 
 KMenuEdit::KMenuEdit ()
-    : KXmlGuiWindow (nullptr)
+    : KXmlGuiWindow(nullptr)
 {
     // dbus
-    ( void )new KmenueditAdaptor(this);
+    (void)new KmenueditAdaptor(this);
     QDBusConnection::sessionBus().registerObject(QStringLiteral("/KMenuEdit"), this);
 
     m_showHidden = ConfigurationManager::getInstance()->hiddenEntriesVisible();
@@ -65,7 +65,7 @@ void KMenuEdit::setupActions()
     action->setText(i18n("&New Submenu..."));
     actionCollection()->setDefaultShortcut(action, QKeySequence(Qt::CTRL + Qt::SHIFT + Qt::Key_N));
     action = actionCollection()->addAction(NEW_ITEM_ACTION_NAME);
-    action->setIcon(QIcon::fromTheme(QStringLiteral("document-new"))) ;
+    action->setIcon(QIcon::fromTheme(QStringLiteral("document-new")));
     action->setText(i18n("New &Item..."));
     actionCollection()->setDefaultShortcuts(action, KStandardShortcut::openNew());
     action = actionCollection()->addAction(NEW_SEPARATOR_ACTION_NAME);
@@ -74,7 +74,7 @@ void KMenuEdit::setupActions()
     actionCollection()->setDefaultShortcut(action, QKeySequence(Qt::CTRL + Qt::Key_I));
 
     // "sort selection" menu
-    KActionMenu* sortMenu = new KActionMenu(QIcon::fromTheme(QStringLiteral("view-sort-ascending")), i18n("&Sort"), this);
+    KActionMenu *sortMenu = new KActionMenu(QIcon::fromTheme(QStringLiteral("view-sort-ascending")), i18n("&Sort"), this);
     sortMenu->setDelayed(false);
     actionCollection()->addAction(SORT_ACTION_NAME, sortMenu);
     action = actionCollection()->addAction(SORT_BY_NAME_ACTION_NAME);
@@ -105,24 +105,22 @@ void KMenuEdit::setupActions()
     actionCollection()->addAction(KStandardAction::Copy);
     actionCollection()->addAction(KStandardAction::Paste);
 
-    action = new QAction( i18n("Restore to System Menu"), this );
-    actionCollection()->addAction( QStringLiteral("restore_system_menu"), action );
-    connect( action, &QAction::triggered, this, &KMenuEdit::slotRestoreMenu );
+    action = new QAction(i18n("Restore to System Menu"), this);
+    actionCollection()->addAction(QStringLiteral("restore_system_menu"), action);
+    connect(action, &QAction::triggered, this, &KMenuEdit::slotRestoreMenu);
 
-    KStandardAction::preferences( this, SLOT(slotConfigure()), actionCollection() );
+    KStandardAction::preferences(this, SLOT(slotConfigure()), actionCollection());
 }
 
 void KMenuEdit::slotConfigure()
 {
-    PreferencesDialog dialog( this );
-    if ( dialog.exec() )
-    {
+    PreferencesDialog dialog(this);
+    if (dialog.exec()) {
         bool newShowHiddenValue = ConfigurationManager::getInstance()->hiddenEntriesVisible();
-        if ( newShowHiddenValue != m_showHidden )
-        {
+        if (newShowHiddenValue != m_showHidden) {
             m_showHidden = newShowHiddenValue;
             m_tree->updateTreeView(m_showHidden);
-            m_basicTab->updateHiddenEntry( m_showHidden );
+            m_basicTab->updateHiddenEntry(m_showHidden);
         }
     }
 }
@@ -141,7 +139,7 @@ void KMenuEdit::setupView()
     connect(m_tree, SIGNAL(entrySelected(MenuEntryInfo*)),
             m_basicTab, SLOT(setEntryInfo(MenuEntryInfo*)));
     connect(m_tree, &TreeView::disableAction,
-            m_basicTab, &BasicTab::slotDisableAction );
+            m_basicTab, &BasicTab::slotDisableAction);
 
     connect(m_basicTab, SIGNAL(changed(MenuFolderInfo*)),
             m_tree, SLOT(currentDataChanged(MenuFolderInfo*)));
@@ -175,7 +173,7 @@ void KMenuEdit::selectMenuEntry(const QString &menuEntry)
 
 void KMenuEdit::slotChangeView()
 {
-    guiFactory()->removeClient( this );
+    guiFactory()->removeClient(this);
 
     delete m_actionDelete;
 
@@ -185,12 +183,12 @@ void KMenuEdit::slotChangeView()
     actionCollection()->setDefaultShortcut(m_actionDelete, QKeySequence(Qt::Key_Delete));
 
     if (!m_splitter) {
-       setupView();
+        setupView();
     }
     setupGUI(KXmlGuiWindow::ToolBar|Keys|Save|Create, QStringLiteral("kmenueditui.rc"));
 
     m_tree->setViewMode(m_showHidden);
-    m_basicTab->updateHiddenEntry( m_showHidden );
+    m_basicTab->updateHiddenEntry(m_showHidden);
 }
 
 void KMenuEdit::slotSave()
@@ -200,26 +198,26 @@ void KMenuEdit::slotSave()
 
 bool KMenuEdit::queryClose()
 {
-    if (!m_tree->dirty()) return true;
-
+    if (!m_tree->dirty()) {
+        return true;
+    }
 
     int result;
     result = KMessageBox::warningYesNoCancel(this,
                                              i18n("You have made changes to the menu.\n"
-                         "Do you want to save the changes or discard them?"),
+                                                  "Do you want to save the changes or discard them?"),
                                              i18n("Save Menu Changes?"),
-                                             KStandardGuiItem::save(), KStandardGuiItem::discard() );
+                                             KStandardGuiItem::save(), KStandardGuiItem::discard());
 
-    switch(result)
-    {
-      case KMessageBox::Yes:
-         return m_tree->save();
+    switch (result) {
+    case KMessageBox::Yes:
+        return m_tree->save();
 
-      case KMessageBox::No:
-         return true;
+    case KMessageBox::No:
+        return true;
 
-      default:
-         break;
+    default:
+        break;
     }
     return false;
 }

@@ -42,17 +42,17 @@
 #include "klinespellchecking.h"
 #include "menuinfo.h"
 
-BasicTab::BasicTab( QWidget *parent )
+BasicTab::BasicTab(QWidget *parent)
     : QTabWidget(parent)
 {
-
     initGeneralTab();
     initAdvancedTab();
     initConnections();
 
 #ifdef WITH_HOTKEYS
-    if (!KHotKeys::present())
+    if (!KHotKeys::present()) {
         _keyBindingGroup->hide();
+    }
 #endif
     slotDisableAction();
 }
@@ -62,8 +62,8 @@ void BasicTab::initGeneralTab()
     // general tab
     QWidget *generalTab = new QWidget();
     QGridLayout *generalTabLayout = new QGridLayout(generalTab);
-    generalTabLayout->setMargin( KDialog::marginHint() );
-    generalTabLayout->setSpacing( KDialog::spacingHint() );
+    generalTabLayout->setMargin(KDialog::marginHint());
+    generalTabLayout->setSpacing(KDialog::spacingHint());
     generalTab->setAcceptDrops(false);
 
     // name
@@ -112,20 +112,20 @@ void BasicTab::initGeneralTab()
 
     // launch feedback
     _launchCB = new QCheckBox(i18n("Enable &launch feedback"));
-    generalTabLayout->addWidget(_launchCB, 4, 0, 1, 3 );
+    generalTabLayout->addWidget(_launchCB, 4, 0, 1, 3);
 
     // KDE visibility
     _onlyShowInKdeCB = new QCheckBox(i18n("Only show in KDE"));
-    generalTabLayout->addWidget(_onlyShowInKdeCB, 5, 0, 1, 3 );
+    generalTabLayout->addWidget(_onlyShowInKdeCB, 5, 0, 1, 3);
 
     // hidden entry
     _hiddenEntryCB = new QCheckBox(i18n("Hidden entry"));
     _hiddenEntryCB->hide();
-    generalTabLayout->addWidget(_hiddenEntryCB, 6, 0, 1, 3 );
+    generalTabLayout->addWidget(_hiddenEntryCB, 6, 0, 1, 3);
 
     // icon
     _iconButton = new KIconButton();
-    _iconButton->setFixedSize(56,56);
+    _iconButton->setFixedSize(56, 56);
     _iconButton->setIconSize(32);
     generalTabLayout->addWidget(_iconButton, 0, 2, 2, 1);
     generalTabLayout->addItem(new QSpacerItem(0, 0, QSizePolicy::Minimum, QSizePolicy::MinimumExpanding), 8, 0, 1, 3);
@@ -199,7 +199,7 @@ void BasicTab::initAdvancedTab()
     // key binding
     _keyBindingGroup = new QGroupBox();
     QHBoxLayout *keyBindingGroupLayout = new QHBoxLayout(_keyBindingGroup);
-    keyBindingGroupLayout->setMargin(KDialog::marginHint() );
+    keyBindingGroupLayout->setMargin(KDialog::marginHint());
     keyBindingGroupLayout->setSpacing(KDialog::spacingHint());
     _keyBindingLabel = new QLabel(i18n("Current shortcut &key:"));
     keyBindingGroupLayout->addWidget(_keyBindingLabel);
@@ -246,8 +246,8 @@ void BasicTab::slotDisableAction()
     _commentEdit->setEnabled(false);
     _execEdit->setEnabled(false);
     _launchCB->setEnabled(false);
-    _onlyShowInKdeCB->setEnabled( false );
-    _hiddenEntryCB->setEnabled( false );
+    _onlyShowInKdeCB->setEnabled(false);
+    _hiddenEntryCB->setEnabled(false);
     _nameLabel->setEnabled(false);
     _descriptionLabel->setEnabled(false);
     _commentLabel->setEnabled(false);
@@ -257,7 +257,7 @@ void BasicTab::slotDisableAction()
     _userGroup->setEnabled(false);
     _iconButton->setEnabled(false);
     // key binding part
-    _keyBindingGroup->setEnabled( false );
+    _keyBindingGroup->setEnabled(false);
 }
 
 void BasicTab::enableWidgets(bool isDF, bool isDeleted)
@@ -269,8 +269,8 @@ void BasicTab::enableWidgets(bool isDF, bool isDeleted)
     _iconButton->setEnabled(!isDeleted);
     _execEdit->setEnabled(isDF && !isDeleted);
     _launchCB->setEnabled(isDF && !isDeleted);
-    _onlyShowInKdeCB->setEnabled( isDF && !isDeleted );
-    _hiddenEntryCB->setEnabled( isDF && !isDeleted );
+    _onlyShowInKdeCB->setEnabled(isDF && !isDeleted);
+    _hiddenEntryCB->setEnabled(isDF && !isDeleted);
     _nameLabel->setEnabled(!isDeleted);
     _descriptionLabel->setEnabled(!isDeleted);
     _commentLabel->setEnabled(!isDeleted);
@@ -279,7 +279,7 @@ void BasicTab::enableWidgets(bool isDF, bool isDeleted)
     _workPathGroup->setEnabled(isDF && !isDeleted);
     _terminalGroup->setEnabled(isDF && !isDeleted);
     _userGroup->setEnabled(isDF && !isDeleted);
-    _keyBindingGroup->setEnabled( isDF && !isDeleted );
+    _keyBindingGroup->setEnabled(isDF && !isDeleted);
 
     _terminalOptionsEdit->setEnabled(isDF && !isDeleted && _terminalCB->isChecked());
     _terminalOptionsLabel->setEnabled(isDF && !isDeleted && _terminalCB->isChecked());
@@ -308,8 +308,8 @@ void BasicTab::setFolderInfo(MenuFolderInfo *folderInfo)
     _userNameEdit->clear();
     _launchCB->setChecked(false);
     _terminalCB->setChecked(false);
-    _onlyShowInKdeCB->setChecked( false );
-    _hiddenEntryCB->setChecked( false );
+    _onlyShowInKdeCB->setChecked(false);
+    _hiddenEntryCB->setChecked(false);
     _userCB->setChecked(false);
     _keyBindingEdit->clearKeySequence();
 
@@ -323,30 +323,29 @@ void BasicTab::setEntryInfo(MenuEntryInfo *entryInfo)
     _menuFolderInfo = 0;
     _menuEntryInfo = entryInfo;
 
-    if (!entryInfo)
-    {
-       _nameEdit->clear();
-       _descriptionEdit->clear();
-       _commentEdit->clear();
-       _iconButton->setIcon( QString() );
+    if (!entryInfo) {
+        _nameEdit->clear();
+        _descriptionEdit->clear();
+        _commentEdit->clear();
+        _iconButton->setIcon(QString());
 
-       // key binding part
-       _keyBindingEdit->clearKeySequence();
+        // key binding part
+        _keyBindingEdit->clearKeySequence();
 
-       _execEdit->lineEdit()->clear();
-       _onlyShowInKdeCB->setChecked( false );
-       _hiddenEntryCB->setChecked( false );
+        _execEdit->lineEdit()->clear();
+        _onlyShowInKdeCB->setChecked(false);
+        _hiddenEntryCB->setChecked(false);
 
-       _pathEdit->lineEdit()->clear();
-       _terminalOptionsEdit->clear();
-       _userNameEdit->clear();
+        _pathEdit->lineEdit()->clear();
+        _terminalOptionsEdit->clear();
+        _userNameEdit->clear();
 
-       _launchCB->setChecked(false);
-       _terminalCB->setChecked(false);
-       _userCB->setChecked(false);
-       enableWidgets(true, true);
-       blockSignals(false);
-       return;
+        _launchCB->setChecked(false);
+        _terminalCB->setChecked(false);
+        _userCB->setChecked(false);
+        enableWidgets(true, true);
+        blockSignals(false);
+        return;
     }
 
     KDesktopFile *df = entryInfo->desktopFile();
@@ -360,12 +359,12 @@ void BasicTab::setEntryInfo(MenuEntryInfo *entryInfo)
 
     // key binding part
 #ifdef WITH_HOTKEYS
-    if( KHotKeys::present())
-    {
-        if ( !entryInfo->shortcut().isEmpty() )
-            _keyBindingEdit->setKeySequence( entryInfo->shortcut() );
-        else
+    if (KHotKeys::present()) {
+        if (!entryInfo->shortcut().isEmpty()) {
+            _keyBindingEdit->setKeySequence(entryInfo->shortcut());
+        } else {
             _keyBindingEdit->clearKeySequence();
+        }
     }
 #endif
     _execEdit->lineEdit()->setText(df->desktopGroup().readEntry("Exec"));
@@ -374,22 +373,25 @@ void BasicTab::setEntryInfo(MenuEntryInfo *entryInfo)
     _terminalOptionsEdit->setText(df->desktopGroup().readEntry("TerminalOptions"));
     _userNameEdit->setText(df->desktopGroup().readEntry("X-KDE-Username"));
 
-    if( df->desktopGroup().hasKey( "StartupNotify" ))
+    if (df->desktopGroup().hasKey("StartupNotify")) {
         _launchCB->setChecked(df->desktopGroup().readEntry("StartupNotify", true));
-    else // backwards comp.
+    } else { // backwards comp.
         _launchCB->setChecked(df->desktopGroup().readEntry("X-KDE-StartupNotify", true));
+    }
 
-    _onlyShowInKdeCB->setChecked( df->desktopGroup().readXdgListEntry("OnlyShowIn").contains( QStringLiteral("KDE") ) ); // or maybe enable only if it contains nothing but KDE?
+    _onlyShowInKdeCB->setChecked(df->desktopGroup().readXdgListEntry("OnlyShowIn").contains(QStringLiteral("KDE")));     // or maybe enable only if it contains nothing but KDE?
 
-    if ( df->desktopGroup().hasKey( "NoDisplay" ) )
-        _hiddenEntryCB->setChecked( df->desktopGroup().readEntry( "NoDisplay", true ) );
-    else
-        _hiddenEntryCB->setChecked( false );
+    if (df->desktopGroup().hasKey("NoDisplay")) {
+        _hiddenEntryCB->setChecked(df->desktopGroup().readEntry("NoDisplay", true));
+    } else {
+        _hiddenEntryCB->setChecked(false);
+    }
 
-    if(df->desktopGroup().readEntry("Terminal", 0) == 1)
+    if (df->desktopGroup().readEntry("Terminal", 0) == 1) {
         _terminalCB->setChecked(true);
-    else
+    } else {
         _terminalCB->setChecked(false);
+    }
 
     _userCB->setChecked(df->desktopGroup().readEntry("X-KDE-SubstituteUID", false));
 
@@ -399,8 +401,7 @@ void BasicTab::setEntryInfo(MenuEntryInfo *entryInfo)
 
 void BasicTab::apply()
 {
-    if (_menuEntryInfo)
-    {
+    if (_menuEntryInfo) {
         _menuEntryInfo->setDirty();
         _menuEntryInfo->setCaption(_nameEdit->text());
         _menuEntryInfo->setDescription(_descriptionEdit->text());
@@ -413,33 +414,34 @@ void BasicTab::apply()
 
         dg.writePathEntry("Path", _pathEdit->lineEdit()->text());
 
-        if (_terminalCB->isChecked())
+        if (_terminalCB->isChecked()) {
             dg.writeEntry("Terminal", 1);
-        else
+        } else {
             dg.writeEntry("Terminal", 0);
+        }
 
         dg.writeEntry("TerminalOptions", _terminalOptionsEdit->text());
         dg.writeEntry("X-KDE-SubstituteUID", _userCB->isChecked());
         dg.writeEntry("X-KDE-Username", _userNameEdit->text());
         dg.writeEntry("StartupNotify", _launchCB->isChecked());
-        dg.writeEntry( "NoDisplay", _hiddenEntryCB->isChecked() );
+        dg.writeEntry("NoDisplay", _hiddenEntryCB->isChecked());
 
         QStringList onlyShowIn = df->desktopGroup().readXdgListEntry("OnlyShowIn");
         /* the exact semantics of this checkbox are unclear if there is more than just KDE in the list...
          * For example: - The list is "Gnome;", the user enables "Only show in KDE" - should we remove Gnome?
          *              - The list is "Gnome;KDE;", the user unchecks the box - should we keep Gnome?
          */
-        if ( _onlyShowInKdeCB->isChecked() && !onlyShowIn.contains(QStringLiteral("KDE")))
+        if (_onlyShowInKdeCB->isChecked() && !onlyShowIn.contains(QStringLiteral("KDE"))) {
             onlyShowIn << QStringLiteral("KDE");
-        else if ( !_onlyShowInKdeCB->isChecked() && onlyShowIn.contains(QStringLiteral("KDE")))
+        } else if (!_onlyShowInKdeCB->isChecked() && onlyShowIn.contains(QStringLiteral("KDE"))) {
             onlyShowIn.removeAll(QStringLiteral("KDE"));
-        if (onlyShowIn.isEmpty())
+        }
+        if (onlyShowIn.isEmpty()) {
             dg.deleteEntry("OnlyShowIn");
-        else
+        } else {
             dg.writeXdgListEntry("OnlyShowIn", onlyShowIn);
-    }
-    else
-    {
+        }
+    } else {
         _menuFolderInfo->setCaption(_nameEdit->text());
         _menuFolderInfo->setGenericName(_descriptionEdit->text());
         _menuFolderInfo->setComment(_commentEdit->text());
@@ -449,13 +451,15 @@ void BasicTab::apply()
 
 void BasicTab::slotChanged()
 {
-    if (signalsBlocked())
-       return;
+    if (signalsBlocked()) {
+        return;
+    }
     apply();
-    if (_menuEntryInfo)
-       emit changed( _menuEntryInfo );
-    else
-       emit changed( _menuFolderInfo );
+    if (_menuEntryInfo) {
+        emit changed(_menuEntryInfo);
+    } else {
+        emit changed(_menuFolderInfo);
+    }
 }
 
 void BasicTab::launchcb_clicked()
@@ -490,35 +494,35 @@ void BasicTab::uidcb_clicked()
 void BasicTab::slotExecSelected()
 {
     QString path = _execEdit->lineEdit()->text();
-    if (!path.startsWith(QLatin1Char('\'')))
+    if (!path.startsWith(QLatin1Char('\''))) {
         _execEdit->lineEdit()->setText(KShell::quoteArg(path));
+    }
 }
 
-void BasicTab::slotCapturedKeySequence(const QKeySequence& seq)
+void BasicTab::slotCapturedKeySequence(const QKeySequence &seq)
 {
-    if (signalsBlocked())
-       return;
+    if (signalsBlocked()) {
+        return;
+    }
     QKeySequence cut(seq);
 #ifdef WITH_HOTKEYS
-    if (_menuEntryInfo->isShortcutAvailable( cut ) && KHotKeys::present() )
-    {
-       _menuEntryInfo->setShortcut( cut );
-    }
-    else
-    {
-       // We will not assign the shortcut so reset the visible key sequence
-       _keyBindingEdit->setKeySequence(QKeySequence());
+    if (_menuEntryInfo->isShortcutAvailable(cut) && KHotKeys::present()) {
+        _menuEntryInfo->setShortcut(cut);
+    } else {
+        // We will not assign the shortcut so reset the visible key sequence
+        _keyBindingEdit->setKeySequence(QKeySequence());
     }
 #endif
-    if (_menuEntryInfo)
-       emit changed( _menuEntryInfo );
+    if (_menuEntryInfo) {
+        emit changed(_menuEntryInfo);
+    }
 }
 
-
-void BasicTab::updateHiddenEntry( bool show )
+void BasicTab::updateHiddenEntry(bool show)
 {
-    if ( show )
+    if (show) {
         _hiddenEntryCB->show();
-    else
+    } else {
         _hiddenEntryCB->hide();
+    }
 }

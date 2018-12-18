@@ -27,11 +27,11 @@
 #include <sonnet/dialog.h>
 #include <sonnet/backgroundchecker.h>
 
-KLineSpellChecking::KLineSpellChecking(QWidget* parent)
+KLineSpellChecking::KLineSpellChecking(QWidget *parent)
     : KLineEdit(parent)
 {
     KActionCollection *ac = new KActionCollection(this);
-    m_spellAction = KStandardAction::spelling( this, SLOT(slotCheckSpelling()), ac );
+    m_spellAction = KStandardAction::spelling(this, SLOT(slotCheckSpelling()), ac);
 }
 
 KLineSpellChecking::~KLineSpellChecking()
@@ -40,7 +40,7 @@ KLineSpellChecking::~KLineSpellChecking()
 
 void KLineSpellChecking::slotCheckSpelling()
 {
-    if ( text().isEmpty() ) {
+    if (text().isEmpty()) {
         return;
     }
     Sonnet::Dialog *spellDialog = new Sonnet::Dialog(new Sonnet::BackgroundChecker(this), nullptr);
@@ -53,23 +53,22 @@ void KLineSpellChecking::slotCheckSpelling()
     spellDialog->show();
 }
 
-void KLineSpellChecking::spellCheckerMisspelling( const QString &_text, int pos)
+void KLineSpellChecking::spellCheckerMisspelling(const QString &_text, int pos)
 {
-    highLightWord( _text.length(),pos );
+    highLightWord(_text.length(), pos);
 }
 
-void KLineSpellChecking::highLightWord( int length, int pos )
+void KLineSpellChecking::highLightWord(int length, int pos)
 {
-    setSelection ( pos, length );
+    setSelection(pos, length);
 }
 
-void KLineSpellChecking::spellCheckerCorrected( const QString &old, int pos, const QString &corr )
+void KLineSpellChecking::spellCheckerCorrected(const QString &old, int pos, const QString &corr)
 {
-    if( old!= corr )
-    {
-        setSelection ( pos, old.length() );
-        insert( corr );
-        setSelection ( pos, corr.length() );
+    if (old != corr) {
+        setSelection(pos, old.length());
+        insert(corr);
+        setSelection(pos, corr.length());
     }
 }
 
@@ -77,28 +76,28 @@ void KLineSpellChecking::spellCheckerFinished()
 {
 }
 
-void KLineSpellChecking::slotSpellCheckDone( const QString &s )
+void KLineSpellChecking::slotSpellCheckDone(const QString &s)
 {
-    if( s != text() )
-        setText( s );
+    if (s != text()) {
+        setText(s);
+    }
 }
 
 void KLineSpellChecking::contextMenuEvent(QContextMenuEvent *e)
 {
-    QMenu* popup = createStandardContextMenu();
+    QMenu *popup = createStandardContextMenu();
 
-    if ( !popup )
+    if (!popup) {
         return;
+    }
 
-    if (echoMode() == QLineEdit::Normal &&
-        !isReadOnly()) {
+    if (echoMode() == QLineEdit::Normal
+        && !isReadOnly()) {
         popup->addSeparator();
 
-        popup->addAction( m_spellAction );
-        m_spellAction->setEnabled( !text().isEmpty() );
+        popup->addAction(m_spellAction);
+        m_spellAction->setEnabled(!text().isEmpty());
     }
     popup->exec(e->globalPos());
     delete popup;
 }
-
-

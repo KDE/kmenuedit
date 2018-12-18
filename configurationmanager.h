@@ -57,7 +57,7 @@ public:
             }
             mutex.unlock();
         }
-        return m_instance;;
+        return m_instance;
     }
 
     /**
@@ -86,13 +86,12 @@ public:
      *
      * @param sizes Splitter sizes.
      */
-    void setSplitterSizes(const QList<int>& sizes);
-
+    void setSplitterSizes(const QList<int> &sizes);
 
 protected:
     ConfigurationManager();
     ConfigurationManager(const ConfigurationManager &); // hide copy constructor
-    ConfigurationManager& operator=(const ConfigurationManager &); // hide assign op
+    ConfigurationManager &operator=(const ConfigurationManager &); // hide assign op
 };
 
 #endif

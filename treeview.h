@@ -66,31 +66,78 @@ public:
     static bool itemNameLessThan(QTreeWidgetItem *item1, QTreeWidgetItem *item2);
     static bool itemDescriptionLessThan(QTreeWidgetItem *item1, QTreeWidgetItem *item2);
 
-    QString menuId() const { return m_menuId; }
+    QString menuId() const
+    {
+        return m_menuId;
+    }
 
-    QString directory() const { return m_directoryPath; }
-    void setDirectoryPath(const QString& path) { m_directoryPath = path; }
+    QString directory() const
+    {
+        return m_directoryPath;
+    }
 
-    MenuFolderInfo *folderInfo() { return m_folderInfo; }
-    void setMenuFolderInfo(MenuFolderInfo *folderInfo) { m_folderInfo = folderInfo; }
+    void setDirectoryPath(const QString &path)
+    {
+        m_directoryPath = path;
+    }
 
-    MenuEntryInfo *entryInfo() const { return m_entryInfo; }
-    void setMenuEntryInfo(MenuEntryInfo *entryInfo) { m_entryInfo = entryInfo; }
+    MenuFolderInfo *folderInfo()
+    {
+        return m_folderInfo;
+    }
 
-    QString name() const { return m_name; }
+    void setMenuFolderInfo(MenuFolderInfo *folderInfo)
+    {
+        m_folderInfo = folderInfo;
+    }
+
+    MenuEntryInfo *entryInfo() const
+    {
+        return m_entryInfo;
+    }
+
+    void setMenuEntryInfo(MenuEntryInfo *entryInfo)
+    {
+        m_entryInfo = entryInfo;
+    }
+
+    QString name() const
+    {
+        return m_name;
+    }
+
     void setName(const QString &name);
 
     QString description() const;
 
-    bool isDirectory() const { return m_folderInfo; }
-    bool isEntry() const { return m_entryInfo; }
-    bool isSeparator() const { return !isDirectory() && !isEntry(); }
+    bool isDirectory() const
+    {
+        return m_folderInfo;
+    }
 
-    bool isHiddenInMenu() const { return m_hidden; }
+    bool isEntry() const
+    {
+        return m_entryInfo;
+    }
+
+    bool isSeparator() const
+    {
+        return !isDirectory() && !isEntry();
+    }
+
+    bool isHiddenInMenu() const
+    {
+        return m_hidden;
+    }
+
     void setHiddenInMenu(bool b);
 
     bool isLayoutDirty() const;
-    void setLayoutDirty() { m_layoutDirty = true; }
+    void setLayoutDirty()
+    {
+        m_layoutDirty = true;
+    }
+
     void saveLayout(MenuFile *menuFile);
 
     void load();
@@ -115,10 +162,10 @@ class TreeView : public QTreeWidget
     friend class TreeItem;
     Q_OBJECT
 public:
-    explicit TreeView(KActionCollection *ac, QWidget *parent=nullptr);
+    explicit TreeView(KActionCollection *ac, QWidget *parent = nullptr);
     ~TreeView() override;
 
-    void readMenuFolderInfo(MenuFolderInfo *folderInfo=0, KServiceGroup::Ptr folder=KServiceGroup::Ptr(), const QString &prefix=QString());
+    void readMenuFolderInfo(MenuFolderInfo *folderInfo = 0, KServiceGroup::Ptr folder = KServiceGroup::Ptr(), const QString &prefix = QString());
     void setViewMode(bool showHidden);
     bool save();
 
@@ -134,7 +181,7 @@ public:
 public Q_SLOTS:
     void currentDataChanged(MenuFolderInfo *folderInfo);
     void currentDataChanged(MenuEntryInfo *entryInfo);
-    void findServiceShortcut(const QKeySequence&, KService::Ptr &);
+    void findServiceShortcut(const QKeySequence &, KService::Ptr &);
 
 Q_SIGNALS:
     void entrySelected(MenuFolderInfo *folderInfo);
@@ -159,10 +206,10 @@ protected Q_SLOTS:
 
 protected:
     enum SortType {
-    SortByName = 0,
-    SortByDescription,
-    SortAllByName,
-    SortAllByDescription
+        SortByName = 0,
+        SortByDescription,
+        SortAllByName,
+        SortAllByDescription
     };
 
     void contextMenuEvent(QContextMenuEvent *event) override;
@@ -177,16 +224,16 @@ protected:
     void fill();
     void fillBranch(MenuFolderInfo *folderInfo, TreeItem *parent);
     QString findName(KDesktopFile *df, bool deleted);
-    void sortItem(TreeItem *item, const SortType& sortType);
-    void sortItemChildren(const QList<QTreeWidgetItem*>::iterator& begin, const QList<QTreeWidgetItem*>::iterator& end, const SortType& sortType);
-    TreeItem* getParentItem(QTreeWidgetItem *item) const;
+    void sortItem(TreeItem *item, const SortType &sortType);
+    void sortItemChildren(const QList<QTreeWidgetItem *>::iterator &begin, const QList<QTreeWidgetItem *>::iterator &end, const SortType &sortType);
+    TreeItem *getParentItem(QTreeWidgetItem *item) const;
     void moveUpOrDownItem(bool isMovingUpAction);
 
     void closeAllItems(QTreeWidgetItem *item);
     TreeItem *expandPath(TreeItem *item, const QString &path);
 
     // moving = src will be removed later
-    void copy( bool moving );
+    void copy(bool moving);
 
     void cleanupClipboard();
 
@@ -194,8 +241,8 @@ protected:
     void setLayoutDirty(TreeItem *);
     void saveLayout();
 
-    QStringList fileList(const QString& relativePath);
-    QStringList dirList(const QString& relativePath);
+    QStringList fileList(const QString &relativePath);
+    QStringList dirList(const QString &relativePath);
 
     QStringList mimeTypes() const override;
     QMimeData *mimeData(const QList<QTreeWidgetItem *> items) const override;
@@ -205,21 +252,21 @@ protected:
 
 private:
     KActionCollection *m_ac = nullptr;
-    QMenu             *m_popupMenu = nullptr;
-    int                m_clipboard;
-    MenuFolderInfo    *m_clipboardFolderInfo = nullptr;
-    MenuEntryInfo     *m_clipboardEntryInfo = nullptr;
-    bool               m_showHidden;
-    MenuFile          *m_menuFile = nullptr;
-    MenuFolderInfo    *m_rootFolder = nullptr;
+    QMenu *m_popupMenu = nullptr;
+    int m_clipboard;
+    MenuFolderInfo *m_clipboardFolderInfo = nullptr;
+    MenuEntryInfo *m_clipboardEntryInfo = nullptr;
+    bool m_showHidden;
+    MenuFile *m_menuFile = nullptr;
+    MenuFolderInfo *m_rootFolder = nullptr;
     MenuSeparatorInfo *m_separator = nullptr;
-    QStringList        m_newMenuIds;
-    QStringList        m_newDirectoryList;
-    bool               m_layoutDirty;
-    bool               m_detailedMenuEntries;
-    bool               m_detailedEntriesNamesFirst;
-    QStringList        m_dropMimeTypes;
-    QSignalMapper     *m_sortSignalMapper = nullptr;
+    QStringList m_newMenuIds;
+    QStringList m_newDirectoryList;
+    bool m_layoutDirty;
+    bool m_detailedMenuEntries;
+    bool m_detailedEntriesNamesFirst;
+    QStringList m_dropMimeTypes;
+    QSignalMapper *m_sortSignalMapper = nullptr;
 };
 
 class MenuItemMimeData : public QMimeData

@@ -24,10 +24,10 @@ const QString ConfigurationManager::GENERAL_CONFIG_GROUP = QStringLiteral("Gener
 const QString ConfigurationManager::SHOW_HIDDEN_ENTRIES_PROPERTY_NAME = QStringLiteral("ShowHidden");
 const QString ConfigurationManager::SPLITTER_SIZES_PROPERTY_NAME = QStringLiteral("SplitterSizes");
 
-ConfigurationManager* ConfigurationManager::m_instance = nullptr;
+ConfigurationManager *ConfigurationManager::m_instance = nullptr;
 
-ConfigurationManager::ConfigurationManager() :
-    m_configGroup(KSharedConfig::openConfig(), GENERAL_CONFIG_GROUP)
+ConfigurationManager::ConfigurationManager()
+    : m_configGroup(KSharedConfig::openConfig(), GENERAL_CONFIG_GROUP)
 {
 }
 
@@ -47,7 +47,7 @@ QList<int> ConfigurationManager::getSplitterSizes() const
     return m_configGroup.readEntry(SPLITTER_SIZES_PROPERTY_NAME, QList<int>());
 }
 
-void ConfigurationManager::setSplitterSizes(const QList<int>& sizes)
+void ConfigurationManager::setSplitterSizes(const QList<int> &sizes)
 {
     m_configGroup.writeEntry(SPLITTER_SIZES_PROPERTY_NAME, sizes);
     m_configGroup.sync();

@@ -38,21 +38,25 @@ static KMenuEdit *menuEdit = nullptr;
 class KMenuApplication : public QApplication
 {
 public:
-   KMenuApplication(int &argc, char **argv)
-    : QApplication(argc, argv)
+    KMenuApplication(int &argc, char **argv)
+        : QApplication(argc, argv)
     {
         QCoreApplication::setApplicationName(QStringLiteral("kmenuedit"));
         QCoreApplication::setApplicationVersion(QLatin1String(PROJECT_VERSION));
         QCoreApplication::setOrganizationDomain(QStringLiteral("kde.org"));
         QApplication::setApplicationDisplayName(i18n("KDE Menu Editor"));
     }
+
 #ifdef WITH_HOTKEYS
-   virtual ~KMenuApplication() { KHotKeys::cleanup(); }
+    virtual ~KMenuApplication()
+    {
+        KHotKeys::cleanup();
+    }
+
 #endif
 };
 
-
-extern "C" int Q_DECL_EXPORT kdemain( int argc, char **argv )
+extern "C" int Q_DECL_EXPORT kdemain(int argc, char **argv)
 {
     KMenuApplication app(argc, argv);
     Kdelibs4ConfigMigrator migrate(QStringLiteral("kmenuedit"));
@@ -71,7 +75,6 @@ extern "C" int Q_DECL_EXPORT kdemain( int argc, char **argv )
     aboutData.addAuthor(i18n("Matthias Elter"), i18n("Original Author"), QStringLiteral("elter@kde.org"));
     aboutData.addAuthor(i18n("Montel Laurent"), QString(), QStringLiteral("montel@kde.org"));
     KAboutData::setApplicationData(aboutData);
-
 
     KDBusService service(KDBusService::Unique);
 
@@ -98,5 +101,5 @@ extern "C" int Q_DECL_EXPORT kdemain( int argc, char **argv )
     }
     menuEdit->show();
 
-    return  app.exec();
+    return app.exec();
 }
