@@ -21,11 +21,11 @@
 #include "khotkeys.h"
 #include "khotkeys_interface.h"
 
-#include <QDebug>
+#include "kmenuedit_debug.h"
 #include <KLocalizedString>
 #include <KMessageBox>
 
-#include <QDebug>
+#include "kmenuedit_debug.h"
 
 static bool khotkeys_present = false;
 static bool khotkeys_inited = false;
@@ -46,7 +46,7 @@ bool KHotKeys::init()
     if (!khotkeysInterface->isValid()) {
         QDBusError err = khotkeysInterface->lastError();
         if (err.isValid()) {
-            qCritical() << err.name() << ":" << err.message();
+            qCCritical(KMENUEDIT_LOG) << err.name() << ":" << err.message();
         }
         KMessageBox::error(
             NULL,
@@ -55,7 +55,7 @@ bool KHotKeys::init()
 
     khotkeys_present = khotkeysInterface->isValid();
 
-    qDebug() << khotkeys_present;
+    qCDebug(KMENUEDIT_LOG) << khotkeys_present;
     return true;
 }
 
@@ -70,13 +70,13 @@ void KHotKeys::cleanup()
 
 bool KHotKeys::present()
 {
-    qDebug() << khotkeys_inited;
+    qCDebug(KMENUEDIT_LOG) << khotkeys_inited;
 
     if (!khotkeys_inited) {
         init();
     }
 
-    qDebug() << khotkeys_present;
+    qCDebug(KMENUEDIT_LOG) << khotkeys_present;
 
     return khotkeys_present;
 }
@@ -90,15 +90,15 @@ QString KHotKeys::getMenuEntryShortcut(const QString &entry_P)
     if (!khotkeys_present || !khotkeysInterface->isValid()) {
         return QLatin1String("");
     }
-    qDebug() << khotkeys_inited;
-    qDebug() << khotkeys_present;
-    qDebug() << entry_P;
+    qCDebug(KMENUEDIT_LOG) << khotkeys_inited;
+    qCDebug(KMENUEDIT_LOG) << khotkeys_present;
+    qCDebug(KMENUEDIT_LOG) << entry_P;
     QDBusReply<QString> reply = khotkeysInterface->get_menuentry_shortcut(entry_P);
     if (!reply.isValid()) {
-        qCritical() << reply.error();
+        qCCritical(KMENUEDIT_LOG) << reply.error();
         return QLatin1String("");
     } else {
-        qDebug() << reply;
+        qCDebug(KMENUEDIT_LOG) << reply;
         return reply;
     }
 }
@@ -114,20 +114,20 @@ QString KHotKeys::changeMenuEntryShortcut(
         return QLatin1String("");
     }
 
-    qDebug() << khotkeys_inited;
-    qDebug() << khotkeys_present;
-    qDebug() << entry_P;
-    qDebug() << shortcut_P;
+    qCDebug(KMENUEDIT_LOG) << khotkeys_inited;
+    qCDebug(KMENUEDIT_LOG) << khotkeys_present;
+    qCDebug(KMENUEDIT_LOG) << entry_P;
+    qCDebug(KMENUEDIT_LOG) << shortcut_P;
 
     QDBusReply<QString> reply = khotkeysInterface->register_menuentry_shortcut(
         entry_P,
         shortcut_P);
 
     if (!reply.isValid()) {
-        qCritical() << reply.error();
+        qCCritical(KMENUEDIT_LOG) << reply.error();
         return QLatin1String("");
     } else {
-        qDebug() << reply;
+        qCDebug(KMENUEDIT_LOG) << reply;
         return reply;
     }
 }

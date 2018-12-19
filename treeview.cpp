@@ -39,7 +39,7 @@
 #include <QAction>
 #include <KActionCollection>
 #include <KBuildSycocaProgressDialog>
-#include <QDebug>
+#include "kmenuedit_debug.h"
 #include <KDesktopFile>
 #include <KGlobal>
 #include <KIconLoader>
@@ -451,7 +451,7 @@ TreeItem *TreeView::createTreeItem(TreeItem *parent, QTreeWidgetItem *after, Men
         name = entryInfo->caption;
     }
 
-    ////qDebug() << parent << after << name;
+    ////qCDebug(KMENUEDIT_LOG) << parent << after << name;
     item->setMenuEntryInfo(entryInfo);
     item->setName(name);
     item->setIcon(0, QIcon::fromTheme(entryInfo->icon));
@@ -900,7 +900,7 @@ bool TreeView::dropMimeData(QTreeWidgetItem *item, int index, const QMimeData *d
 
     QString folder = parentItem ? parentItem->directory() : QStringLiteral("/");
     MenuFolderInfo *parentFolderInfo = parentItem ? parentItem->folderInfo() : m_rootFolder;
-    //qDebug() << "think we're dropping on" << (parentItem ? parentItem->text(0) : "Top Level") <<  index;
+    //qCDebug(KMENUEDIT_LOG) << "think we're dropping on" << (parentItem ? parentItem->text(0) : "Top Level") <<  index;
 
     if (!data->hasFormat(QLatin1String(s_internalMimeType))) {
         // External drop
@@ -964,7 +964,7 @@ bool TreeView::dropMimeData(QTreeWidgetItem *item, int index, const QMimeData *d
         return false; // Nothing to do
     }
 
-    ////qDebug() << "an internal drag of" << dragItem->text(0) << (parentItem ? parentItem->text(0) : "Top level");
+    ////qCDebug(KMENUEDIT_LOG) << "an internal drag of" << dragItem->text(0) << (parentItem ? parentItem->text(0) : "Top level");
     if (dragItem->isDirectory()) {
         MenuFolderInfo *folderInfo = dragItem->folderInfo();
         if (action == Qt::CopyAction) {
@@ -993,7 +993,7 @@ bool TreeView::dropMimeData(QTreeWidgetItem *item, int index, const QMimeData *d
 
             // Add file to menu
             //m_menuFile->moveMenu(oldFolder, folder + newFolder);
-            //qDebug() << "moving" << dragItem->text(0) << "to" << folder + newFolder;
+            //qCDebug(KMENUEDIT_LOG) << "moving" << dragItem->text(0) << "to" << folder + newFolder;
             m_menuFile->pushAction(MenuFile::MOVE_MENU, oldFolder, folder + newFolder);
 
             // Make sure caption is unique
@@ -1079,7 +1079,7 @@ bool TreeView::dropMimeData(QTreeWidgetItem *item, int index, const QMimeData *d
         setCurrentItem(newItem);
     }
 
-    //qDebug() << "setting the layout to be dirty at" << parentItem;
+    //qCDebug(KMENUEDIT_LOG) << "setting the layout to be dirty at" << parentItem;
     setLayoutDirty(parentItem);
     return true;
 }
@@ -1865,16 +1865,16 @@ void TreeView::restoreMenuSystem()
     QString kmenueditfile = KStandardDirs::locateLocal("xdgconf-menu", QStringLiteral("applications-kmenuedit.menu"));
     if (QFile::exists(kmenueditfile)) {
         if (!QFile::remove(kmenueditfile)) {
-            qWarning()<<"Could not delete "<<kmenueditfile;
+            qCWarning(KMENUEDIT_LOG)<<"Could not delete "<<kmenueditfile;
         }
     }
 
     QString xdgdir = KGlobal::dirs()->KStandardDirs::localxdgdatadir();
     if (!KIO::NetAccess::del(QUrl::fromLocalFile(xdgdir + QStringLiteral("/applications")), this)) {
-        qWarning()<<"Could not delete dir :"<<(xdgdir+ QStringLiteral("/applications"));
+        qCWarning(KMENUEDIT_LOG)<<"Could not delete dir :"<<(xdgdir+ QStringLiteral("/applications"));
     }
     if (!KIO::NetAccess::del(QUrl::fromLocalFile(xdgdir + QStringLiteral("/desktop-directories")), this)) {
-        qWarning()<<"Could not delete dir :"<<(xdgdir + QStringLiteral("/desktop-directories"));
+        qCWarning(KMENUEDIT_LOG)<<"Could not delete dir :"<<(xdgdir + QStringLiteral("/desktop-directories"));
     }
 
     KBuildSycocaProgressDialog::rebuildKSycoca(this);

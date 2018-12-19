@@ -23,7 +23,7 @@
 #include <QRegExp>
 #include <QFileInfo>
 
-#include <QDebug>
+#include "kmenuedit_debug.h"
 #include <KGlobal>
 #include <KLocalizedString>
 #include <KStandardDirs>
@@ -66,7 +66,7 @@ bool MenuFile::load()
     QFile file(m_fileName);
     if (!file.open(QIODevice::ReadOnly)) {
         if (file.exists()) {
-            qWarning() << "Could not read " << m_fileName;
+            qCWarning(KMENUEDIT_LOG) << "Could not read " << m_fileName;
         }
         create();
         return false;
@@ -76,7 +76,7 @@ bool MenuFile::load()
     int errorRow;
     int errorCol;
     if (!m_doc.setContent(&file, &errorMsg, &errorRow, &errorCol)) {
-        qWarning() << "Parse error in " << m_fileName << ", line " << errorRow << ", col " << errorCol << ": " << errorMsg;
+        qCWarning(KMENUEDIT_LOG) << "Parse error in " << m_fileName << ", line " << errorRow << ", col " << errorCol << ": " << errorMsg;
         file.close();
         create();
         return false;
@@ -98,7 +98,7 @@ bool MenuFile::save()
     QFile file(m_fileName);
 
     if (!file.open(QIODevice::WriteOnly)) {
-        qWarning() << "Could not write " << m_fileName;
+        qCWarning(KMENUEDIT_LOG) << "Could not write " << m_fileName;
         m_error = i18n("Could not write to %1", m_fileName);
         return false;
     }
@@ -110,7 +110,7 @@ bool MenuFile::save()
     file.close();
 
     if (file.error() != QFile::NoError) {
-        qWarning() << "Could not close " << m_fileName;
+        qCWarning(KMENUEDIT_LOG) << "Could not close " << m_fileName;
         m_error = i18n("Could not write to %1", m_fileName);
         return false;
     }
