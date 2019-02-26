@@ -54,6 +54,7 @@
 #include <kio/netaccess.h>
 #include <KUrlMimeData>
 #include <KUrl>
+#include <KStringHandler>
 
 #include "menufile.h"
 #include "menuinfo.h"
@@ -497,15 +498,6 @@ void TreeView::fillBranch(MenuFolderInfo *folderInfo, TreeItem *parent)
         }
     }
 }
-
-void TreeView::closeAllItems(QTreeWidgetItem *item)
-{
-    item->setExpanded(false);
-    for (int i = 0; i < item->childCount(); ++i) {
-        closeAllItems(item->child(i));
-    }
-}
-
 TreeItem *TreeView::expandPath(TreeItem *item, const QString &path)
 {
     int i = path.indexOf(QStringLiteral("/"));
@@ -534,9 +526,10 @@ TreeItem *TreeView::expandPath(TreeItem *item, const QString &path)
 
 void TreeView::selectMenu(const QString &menu)
 {
-    for (int i = 0; i < topLevelItemCount(); ++i) {
-        closeAllItems(topLevelItem(i));
-    }
+
+    // close all parent expansions and deselect everything
+    collapseAll();
+    setCurrentIndex(rootIndex());
 
     if (menu.length() <= 1) {
         setCurrentItem(topLevelItem(0));
@@ -1924,6 +1917,18 @@ void TreeView::sendReloadMenu()
 {
     QDBusMessage message = QDBusMessage::createSignal(QStringLiteral("/kickoff"), QStringLiteral("org.kde.plasma"), QStringLiteral("reloadMenu"));
     QDBusConnection::sessionBus().send(message);
+}
+
+// Slot to expand or retract items in tree based on length of search string
+void TreeView::searchUpdated(const QString &searchString) {
+    // expand all categories if we typed more than a few characters, otherwise collapse and un-select everything
+    // use logicalLength for CJK users
+    if (KStringHandler::logicalLength(searchString) > 2) {
+        expandAll();
+    } else {
+        collapseAll();
+        setCurrentIndex(rootIndex());
+    }
 }
 
 MenuItemMimeData::MenuItemMimeData(TreeItem *item)

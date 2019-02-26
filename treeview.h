@@ -182,6 +182,7 @@ public Q_SLOTS:
     void currentDataChanged(MenuFolderInfo *folderInfo);
     void currentDataChanged(MenuEntryInfo *entryInfo);
     void findServiceShortcut(const QKeySequence &, KService::Ptr &);
+    void searchUpdated(const QString &searchString);
 
 Q_SIGNALS:
     void entrySelected(MenuFolderInfo *folderInfo);
@@ -229,7 +230,6 @@ protected:
     TreeItem *getParentItem(QTreeWidgetItem *item) const;
     void moveUpOrDownItem(bool isMovingUpAction);
 
-    void closeAllItems(QTreeWidgetItem *item);
     TreeItem *expandPath(TreeItem *item, const QString &path);
 
     // moving = src will be removed later

@@ -26,6 +26,7 @@ class QSplitter;
 class QAction;
 class BasicTab;
 class TreeView;
+class KTreeWidgetSearchLine;
 
 class KMenuEdit : public KXmlGuiWindow
 {
@@ -56,6 +57,7 @@ protected:
     TreeView *m_tree = nullptr;
     BasicTab *m_basicTab = nullptr;
     QSplitter *m_splitter = nullptr;
+    KTreeWidgetSearchLine *m_searchLine = nullptr;
 
     QAction *m_actionDelete = nullptr;
     bool m_showHidden = false;

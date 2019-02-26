@@ -20,6 +20,8 @@
 #include "kmenuedit.h"
 
 #include <QSplitter>
+#include <QVBoxLayout>
+#include <QFrame>
 
 #include <QAction>
 #include <KActionCollection>
@@ -31,6 +33,7 @@
 #include <KService>
 #include <KStandardAction>
 #include <KStandardShortcut>
+#include <KTreeWidgetSearchLine>
 #include <sonnet/configdialog.h>
 
 #include "treeview.h"
@@ -127,12 +130,32 @@ void KMenuEdit::slotConfigure()
 
 void KMenuEdit::setupView()
 {
+    // setup search and tree view
+    m_tree = new TreeView(actionCollection(), this);
+
+    m_searchLine = new KTreeWidgetSearchLine(this, m_tree);
+    m_searchLine->setCaseSensitivity(Qt::CaseSensitivity::CaseInsensitive);
+    m_searchLine->setKeepParentsVisible(true);
+    m_searchLine->setPlaceholderText(i18n("Search..."));
+    m_searchLine->setToolTip(i18n("Search through the list of applications below"));
+
+    QVBoxLayout *treeLayout = new QVBoxLayout;
+    treeLayout->addWidget(m_searchLine);
+    treeLayout->addWidget(m_tree);
+    treeLayout->setContentsMargins(0, 0, 0, 0); // no padding, fixes alignment issues
+    QFrame *treeFrame = new QFrame; // required to insert tree + search into splitter
+    treeFrame->setLayout(treeLayout);
+
     m_splitter = new QSplitter(this);
     m_splitter->setOrientation(Qt::Horizontal);
-    m_tree = new TreeView(actionCollection(), this);
-    m_splitter->addWidget(m_tree);
+    m_splitter->addWidget(treeFrame);
+
+    // setup info tab view
     m_basicTab = new BasicTab;
     m_splitter->addWidget(m_basicTab);
+
+    // add padding to splitter
+    m_splitter->setContentsMargins(/*left=*/5, /*top=*/0, /*right=*/5, /*bottom=*/0);
 
     connect(m_tree, SIGNAL(entrySelected(MenuFolderInfo*)),
             m_basicTab, SLOT(setFolderInfo(MenuFolderInfo*)));
@@ -150,6 +173,8 @@ void KMenuEdit::setupView()
     connect(m_basicTab, &BasicTab::findServiceShortcut,
             m_tree, &TreeView::findServiceShortcut);
 
+    connect(m_searchLine, &KTreeWidgetSearchLine::searchUpdated,
+            m_tree, &TreeView::searchUpdated);
     // restore splitter sizes
     QList<int> sizes = ConfigurationManager::getInstance()->getSplitterSizes();
     if (sizes.isEmpty()) {
