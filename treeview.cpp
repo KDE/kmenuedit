@@ -1536,11 +1536,11 @@ void TreeView::sortItemChildren(const QList<QTreeWidgetItem *>::iterator &begin,
 {
     // sort by name
     if (sortType == SortByName) {
-        qSort(begin, end, TreeItem::itemNameLessThan);
+        std::sort(begin, end, TreeItem::itemNameLessThan);
     }
     // sort by description
     else if (sortType == SortByDescription) {
-        qSort(begin, end, TreeItem::itemDescriptionLessThan);
+        std::sort(begin, end, TreeItem::itemDescriptionLessThan);
     }
 }
 
