@@ -141,7 +141,7 @@ bool TreeItem::itemNameLessThan(QTreeWidgetItem *item1, QTreeWidgetItem *item2)
 {
     TreeItem *treeItem1 = static_cast<TreeItem *>(item1);
     TreeItem *treeItem2 = static_cast<TreeItem *>(item2);
-    return treeItem1->name().toLower() < treeItem2->name().toLower();
+    return QString::localeAwareCompare(treeItem1->name(), treeItem2->name()) < 0;
 }
 
 /**
@@ -155,14 +155,14 @@ bool TreeItem::itemDescriptionLessThan(QTreeWidgetItem *item1, QTreeWidgetItem *
     // extract descriptions in lower case
     TreeItem *treeItem1 = static_cast<TreeItem *>(item1);
     TreeItem *treeItem2 = static_cast<TreeItem *>(item2);
-    const QString description1 = treeItem1->description().toLower();
-    const QString description2 = treeItem2->description().toLower();
+    const QString description1 = treeItem1->description();
+    const QString description2 = treeItem2->description();
 
     // if description is missing for both items, sort them using their names
     if (description1.isEmpty() && description2.isEmpty()) {
         return itemNameLessThan(item1, item2);
     } else {
-        return description1 < description2;
+        return QString::localeAwareCompare(description1, description2) < 0;
     }
 }
 
