@@ -91,4 +91,8 @@ install( FILES kmenueditui.rc  DESTINATION  ${KDE_INSTALL_KXMLGUI5DIR}/kmenuedit
 ecm_install_icons( ICONS 16-apps-kmenuedit.png  22-apps-kmenuedit.png  32-apps-kmenuedit.png  48-apps-kmenuedit.png DESTINATION ${KDE_INSTALL_ICONDIR} THEME hicolor  )
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
 
-install( FILES kmenuedit.categories DESTINATION ${KDE_INSTALL_CONFDIR} )
+if (${ECM_VERSION} STRGREATER "5.58.0")
+    install(FILES kmenuedit.categories  DESTINATION  ${KDE_INSTALL_LOGGINGCATEGORIESDIR})
+else()
+    install(FILES kmenuedit.categories  DESTINATION ${KDE_INSTALL_CONFDIR})
+endif()
