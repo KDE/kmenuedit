@@ -444,9 +444,9 @@ TreeItem *TreeView::createTreeItem(TreeItem *parent, QTreeWidgetItem *after, Men
 
     if (m_detailedMenuEntries && entryInfo->description.length() != 0) {
         if (m_detailedEntriesNamesFirst) {
-            name = entryInfo->caption + QStringLiteral(" (") + entryInfo->description + QLatin1Char(')');
+            name = entryInfo->caption + QLatin1String(" (") + entryInfo->description + QLatin1Char(')');
         } else {
-            name = entryInfo->description + QStringLiteral(" (") + entryInfo->caption + QLatin1Char(')');
+            name = entryInfo->description + QLatin1String(" (") + entryInfo->caption + QLatin1Char(')');
         }
     } else {
         name = entryInfo->caption;
@@ -500,7 +500,7 @@ void TreeView::fillBranch(MenuFolderInfo *folderInfo, TreeItem *parent)
 }
 TreeItem *TreeView::expandPath(TreeItem *item, const QString &path)
 {
-    int i = path.indexOf(QStringLiteral("/"));
+    int i = path.indexOf(QLatin1String("/"));
     QString subMenu = path.left(i+1);
     QString restMenu = path.mid(i+1);
 
@@ -546,7 +546,7 @@ void TreeView::selectMenu(const QString &menu)
     }
 
     TreeItem *item = nullptr;
-    int i = restMenu.indexOf(QStringLiteral("/"));
+    int i = restMenu.indexOf(QLatin1String("/"));
     QString subMenu = restMenu.left(i+1);
     restMenu = restMenu.mid(i+1);
 
@@ -679,9 +679,9 @@ void TreeView::currentDataChanged(MenuEntryInfo *entryInfo)
 
     if (m_detailedMenuEntries && !entryInfo->description.isEmpty()) {
         if (m_detailedEntriesNamesFirst) {
-            name = entryInfo->caption + QStringLiteral(" (") + entryInfo->description + QLatin1Char(')');
+            name = entryInfo->caption + QLatin1String(" (") + entryInfo->description + QLatin1Char(')');
         } else {
-            name = entryInfo->description + QStringLiteral(" (") + entryInfo->caption + QLatin1Char(')');
+            name = entryInfo->description + QLatin1String(" (") + entryInfo->caption + QLatin1Char(')');
         }
     } else {
         name = entryInfo->caption;
@@ -756,7 +756,7 @@ QStringList TreeView::dirList(const QString &rPath)
         // build a list of subdirs
         const QStringList subdirs = dir.entryList();
         for (QStringList::ConstIterator it = subdirs.constBegin(); it != subdirs.constEnd(); ++it) {
-            if ((*it) == QLatin1String(".") || (*it) == QLatin1String("..")) {
+            if ((*it) == QLatin1Char('.') || (*it) == QLatin1String("..")) {
                 continue;
             }
             // does not work?!

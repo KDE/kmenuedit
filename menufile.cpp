@@ -320,7 +320,7 @@ void MenuFile::setLayout(const QString &menuName, const QStringList &layout)
             mergeNode.setAttribute(QStringLiteral("type"), QStringLiteral("all"));
             layoutNode.appendChild(mergeNode);
         } else if (li.endsWith(QLatin1Char('/'))) {
-            li.truncate(li.length()-1);
+            li.chop(1);
             QDomElement menuNode = m_doc.createElement(MF_MENUNAME);
             menuNode.appendChild(m_doc.createTextNode(li));
             layoutNode.appendChild(menuNode);
@@ -436,7 +436,7 @@ QString MenuFile::uniqueMenuName(const QString &menuName, const QString &newMenu
 
     QString result = newMenu;
     if (result.endsWith(QLatin1Char('/'))) {
-        result.truncate(result.length()-1);
+        result.chop(1);
     }
 
     QRegExp r(QStringLiteral("(.*)(?=-\\d+)"));
