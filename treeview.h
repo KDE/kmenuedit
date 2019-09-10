@@ -241,9 +241,6 @@ protected:
     void setLayoutDirty(TreeItem *);
     void saveLayout();
 
-    QStringList fileList(const QString &relativePath);
-    QStringList dirList(const QString &relativePath);
-
     QStringList mimeTypes() const override;
     QMimeData *mimeData(const QList<QTreeWidgetItem *> items) const override;
     Qt::DropActions supportedDropActions() const override;
