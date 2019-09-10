@@ -22,11 +22,10 @@
 #include <QTextStream>
 #include <QRegExp>
 #include <QFileInfo>
+#include <QStandardPaths>
 
 #include "kmenuedit_debug.h"
-#include <KGlobal>
 #include <KLocalizedString>
-#include <KStandardDirs>
 
 const QString MenuFile::MF_MENU = QStringLiteral("Menu");
 const QString MenuFile::MF_PUBLIC_ID = QStringLiteral("-//freedesktop//DTD Menu 1.0//EN");
@@ -186,6 +185,18 @@ QDomElement MenuFile::findMenu(QDomElement elem, const QString &menuName, bool c
     }
 }
 
+static QString relativeToDesktopDirsLocation(const QString &file)
+{
+    const QString canonical = QFileInfo(file).canonicalFilePath();
+    const QStringList dirs = QStandardPaths::standardLocations(QStandardPaths::GenericDataLocation);
+    for (const QString &dir : dirs) {
+        const QString base = dir + QLatin1String("/desktop-directories");
+        if (canonical.startsWith(base))
+            return canonical.mid(base.length()+1);
+    }
+    return QString();
+}
+
 static QString entryToDirId(const QString &path)
 {
     // See also KDesktopFile::locateLocal
@@ -193,7 +204,7 @@ static QString entryToDirId(const QString &path)
     if (QFileInfo(path).isAbsolute()) {
         // XDG Desktop menu items come with absolute paths, we need to
         // extract their relative path and then build a local path.
-        local = KGlobal::dirs()->relativeLocation("xdgdata-dirs", path);
+        local = relativeToDesktopDirsLocation(path);
     }
 
     if (local.isEmpty() || local.startsWith(QLatin1Char('/'))) {

@@ -22,8 +22,9 @@
 #include <QRegExp>
 
 #include <KDesktopFile>
-#include <KStandardDirs>
+
 #include <KConfigGroup>
+#include <QStandardPaths>
 
 #include "menufile.h"
 #ifdef WITH_HOTKEYS
@@ -306,7 +307,7 @@ void MenuEntryInfo::setDirty()
 
     dirty = true;
 
-    QString local = KStandardDirs::locateLocal("xdgdata-apps", service->menuId());
+    QString local = QStandardPaths::writableLocation(QStandardPaths::ApplicationsLocation) + QLatin1Char('/') + service->menuId();
     if (local != service->entryPath()) {
         KDesktopFile *oldDf = desktopFile();
         m_desktopFile = oldDf->copyTo(local);

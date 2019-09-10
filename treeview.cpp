@@ -41,7 +41,6 @@
 #include <KBuildSycocaProgressDialog>
 #include "kmenuedit_debug.h"
 #include <KDesktopFile>
-#include <KGlobal>
 #include <KIconLoader>
 #include <KInputDialog>
 #include <KLocalizedString>
@@ -50,11 +49,10 @@
 #include <KServiceGroup>
 #include <KConfig>
 #include <KConfigGroup>
-#include <KStandardDirs>
-#include <kio/netaccess.h>
 #include <KUrlMimeData>
 #include <KUrl>
 #include <KStringHandler>
+#include <QStandardPaths>
 
 #include "menufile.h"
 #include "menuinfo.h"
@@ -285,7 +283,7 @@ TreeView::TreeView(KActionCollection *ac, QWidget *parent)
     connect(this, &QTreeWidget::currentItemChanged,
             this, &TreeView::itemSelected);
 
-    m_menuFile = new MenuFile(KStandardDirs::locateLocal("xdgconf-menu", QStringLiteral("applications-kmenuedit.menu")));
+    m_menuFile = new MenuFile(QStandardPaths::writableLocation(QStandardPaths::ConfigLocation) + QLatin1String("/menus/") + QStringLiteral("applications-kmenuedit.menu"));
     m_rootFolder = new MenuFolderInfo;
     m_separator = new MenuSeparatorInfo;
 }
@@ -766,14 +764,14 @@ static QString createDirectoryFile(const QString &file, QStringList *excludeList
         }
 
         if (!excludeList->contains(result)) {
-            if (KStandardDirs::locate("xdgdata-dirs", result).isEmpty()) {
+            if (QStandardPaths::locate(QStandardPaths::GenericDataLocation, QLatin1String("desktop-directories/") + result).isEmpty()) {
                 break;
             }
         }
         i++;
     }
     excludeList->append(result);
-    result = KStandardDirs::locateLocal("xdgdata-dirs", result);
+    result = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/desktop-directories/") + result;
     return result;
 }
 
@@ -1772,19 +1770,24 @@ void TreeView::restoreMenuSystem()
     if (KMessageBox::warningYesNo(this, i18n("Do you want to restore the system menu? Warning: This will remove all custom menus.")) == KMessageBox::No) {
         return;
     }
-    QString kmenueditfile = KStandardDirs::locateLocal("xdgconf-menu", QStringLiteral("applications-kmenuedit.menu"));
+    const QString kmenueditfile = QStandardPaths::writableLocation(QStandardPaths::ConfigLocation) + QLatin1String("/menus/applications-kmenuedit.menu");
     if (QFile::exists(kmenueditfile)) {
         if (!QFile::remove(kmenueditfile)) {
             qCWarning(KMENUEDIT_LOG)<<"Could not delete "<<kmenueditfile;
         }
     }
 
-    QString xdgdir = KGlobal::dirs()->KStandardDirs::localxdgdatadir();
-    if (!KIO::NetAccess::del(QUrl::fromLocalFile(xdgdir + QStringLiteral("/applications")), this)) {
-        qCWarning(KMENUEDIT_LOG)<<"Could not delete dir :"<<(xdgdir+ QStringLiteral("/applications"));
+    const QString xdgappsdir = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/applications");
+    if (QFileInfo(xdgappsdir).isDir()) {
+        if (!QDir(xdgappsdir).removeRecursively()) {
+            qCWarning(KMENUEDIT_LOG)<<"Could not delete dir :" << xdgappsdir;
+        }
     }
-    if (!KIO::NetAccess::del(QUrl::fromLocalFile(xdgdir + QStringLiteral("/desktop-directories")), this)) {
-        qCWarning(KMENUEDIT_LOG)<<"Could not delete dir :"<<(xdgdir + QStringLiteral("/desktop-directories"));
+    const QString xdgdesktopdir = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/desktop-directories");
+    if (QFileInfo(xdgdesktopdir).isDir()) {
+        if (!QDir(xdgdesktopdir).removeRecursively()) {
+            qCWarning(KMENUEDIT_LOG)<<"Could not delete dir :" << xdgdesktopdir;
+        }
     }
 
     KBuildSycocaProgressDialog::rebuildKSycoca(this);
