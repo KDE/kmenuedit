@@ -616,7 +616,7 @@ void TreeView::selectMenuEntry(const QString &menuEntry)
 void TreeView::itemSelected(QTreeWidgetItem *item)
 {
     // ensure the item is visible as selected
-    setItemSelected(item, true);
+    item->setSelected(true);
 
     TreeItem *_item = static_cast<TreeItem *>(item);
     TreeItem *parentItem = nullptr;
@@ -1883,7 +1883,7 @@ QVariant MenuItemMimeData::retrieveData(const QString &mimeType, QVariant::Type 
     Q_UNUSED(type);
 
     if (m_item && mimeType == QLatin1String(s_internalMimeType)) {
-        return qVariantFromValue<TreeItem *>(m_item);
+        return QVariant::fromValue<TreeItem *>(m_item);
     }
 
     return QVariant();
