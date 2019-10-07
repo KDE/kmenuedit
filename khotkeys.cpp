@@ -25,8 +25,6 @@
 #include <KLocalizedString>
 #include <KMessageBox>
 
-#include "kmenuedit_debug.h"
-
 static bool khotkeys_present = false;
 static bool khotkeys_inited = false;
 static OrgKdeKhotkeysInterface *khotkeysInterface = nullptr;

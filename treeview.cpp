@@ -24,19 +24,20 @@
 
 #include <unistd.h>
 
+#include <QAction>
+#include <QApplication>
+#include <QDBusConnection>
+#include <QDBusMessage>
 #include <QDir>
 #include <QDrag>
+#include <QDropEvent>
 #include <QHeaderView>
+#include <QIcon>
+#include <QMenu>
 #include <QPainter>
 #include <QRegExp>
-#include <QIcon>
-#include <QDropEvent>
-#include <QMenu>
-#include <QApplication>
-#include <QtDBus>
 #include <QSignalMapper>
 
-#include <QAction>
 #include <KActionCollection>
 #include <KBuildSycocaProgressDialog>
 #include "kmenuedit_debug.h"
@@ -1361,7 +1362,7 @@ void TreeView::paste()
 
 /**
  * This slot is called from the signal mapper to sort children contained in an item.
- * This item is determinated according to the chosen sort type.
+ * This item is determined according to the chosen sort type.
  *
  * @brief Determine which item is to sort, and do it.
  * @param sortCmd Sort type.
