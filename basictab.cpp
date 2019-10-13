@@ -26,8 +26,8 @@
 #include <QVBoxLayout>
 #include <QGridLayout>
 
+#include <KConfigGroup>
 #include <KLocalizedString>
-#include <KDialog>
 #include <KKeySequenceWidget>
 #include <KLineEdit>
 #include <KIconButton>
@@ -62,8 +62,6 @@ void BasicTab::initGeneralTab()
     // general tab
     QWidget *generalTab = new QWidget();
     QGridLayout *generalTabLayout = new QGridLayout(generalTab);
-    generalTabLayout->setContentsMargins(KDialog::marginHint(), KDialog::marginHint(), KDialog::marginHint(), KDialog::marginHint());
-    generalTabLayout->setSpacing(KDialog::spacingHint());
     generalTab->setAcceptDrops(false);
 
     // name
@@ -143,8 +141,6 @@ void BasicTab::initAdvancedTab()
     // work path
     _workPathGroup = new QGroupBox();
     QHBoxLayout *workPathGroupLayout = new QHBoxLayout(_workPathGroup);
-    workPathGroupLayout->setSpacing(KDialog::spacingHint());
-    workPathGroupLayout->setContentsMargins(KDialog::marginHint(), KDialog::marginHint(), KDialog::marginHint(), KDialog::marginHint());
     _pathLabel = new QLabel(i18n("&Work path:"));
     workPathGroupLayout->addWidget(_pathLabel);
     _pathEdit = new KUrlRequester();
@@ -157,14 +153,11 @@ void BasicTab::initAdvancedTab()
     // terminal CB
     _terminalGroup = new QGroupBox();
     QVBoxLayout *terminalGroupLayout = new QVBoxLayout(_terminalGroup);
-    terminalGroupLayout->setContentsMargins(KDialog::marginHint(), KDialog::marginHint(), KDialog::marginHint(), KDialog::marginHint());
-    terminalGroupLayout->setSpacing(KDialog::spacingHint());
     _terminalCB = new QCheckBox(i18n("Run in term&inal"));
     terminalGroupLayout->addWidget(_terminalCB);
     // terminal options
     QWidget *terminalOptionsGroup = new QWidget();
     QHBoxLayout *terminalOptionsGroupLayout = new QHBoxLayout(terminalOptionsGroup);
-    terminalOptionsGroupLayout->setSpacing(KDialog::spacingHint());
     _terminalOptionsLabel = new QLabel(i18n("Terminal &options:"));
     terminalOptionsGroupLayout->addWidget(_terminalOptionsLabel);
     _terminalOptionsEdit = new KLineEdit();
@@ -178,14 +171,11 @@ void BasicTab::initAdvancedTab()
     // user name CB
     _userGroup = new QGroupBox();
     QVBoxLayout *userGroupLayout = new QVBoxLayout(_userGroup);
-    userGroupLayout->setContentsMargins(KDialog::marginHint(), KDialog::marginHint(), KDialog::marginHint(), KDialog::marginHint());
-    userGroupLayout->setSpacing(KDialog::spacingHint());
     _userCB = new QCheckBox(i18n("&Run as a different user"));
     userGroupLayout->addWidget(_userCB);
     // user name
     QWidget *userNameGroup = new QWidget();
     QHBoxLayout *userNameGroupLayout = new QHBoxLayout(userNameGroup);
-    userNameGroupLayout->setSpacing(KDialog::spacingHint());
     _userNameLabel = new QLabel(i18n("&Username:"));
     userNameGroupLayout->addWidget(_userNameLabel);
     _userNameEdit = new KLineEdit();
@@ -199,8 +189,6 @@ void BasicTab::initAdvancedTab()
     // key binding
     _keyBindingGroup = new QGroupBox();
     QHBoxLayout *keyBindingGroupLayout = new QHBoxLayout(_keyBindingGroup);
-    keyBindingGroupLayout->setContentsMargins(KDialog::marginHint(), KDialog::marginHint(), KDialog::marginHint(), KDialog::marginHint());
-    keyBindingGroupLayout->setSpacing(KDialog::spacingHint());
     _keyBindingLabel = new QLabel(i18n("Current shortcut &key:"));
     keyBindingGroupLayout->addWidget(_keyBindingLabel);
     _keyBindingEdit = new KKeySequenceWidget();

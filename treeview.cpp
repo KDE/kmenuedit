@@ -33,17 +33,18 @@
 #include <QDropEvent>
 #include <QHeaderView>
 #include <QIcon>
+#include <QInputDialog>
 #include <QMenu>
 #include <QPainter>
 #include <QRegExp>
 #include <QSignalMapper>
+#include <QUrl>
 
 #include <KActionCollection>
 #include <KBuildSycocaProgressDialog>
 #include "kmenuedit_debug.h"
 #include <KDesktopFile>
 #include <KIconLoader>
-#include <KInputDialog>
 #include <KLocalizedString>
 #include <KMessageBox>
 #include <KService>
@@ -51,7 +52,6 @@
 #include <KConfig>
 #include <KConfigGroup>
 #include <KUrlMimeData>
-#include <KUrl>
 #include <KStringHandler>
 #include <QStandardPaths>
 
@@ -813,11 +813,11 @@ bool TreeView::dropMimeData(QTreeWidgetItem *item, int index, const QMimeData *d
 
     if (!data->hasFormat(QLatin1String(s_internalMimeType))) {
         // External drop
-        if (!KUrl::List::canDecode(data)) {
+        if (!data->hasUrls()) {
             return false;
         }
 
-        KUrl::List urls = KUrl::List::fromMimeData(data);
+        QList<QUrl> urls = KUrlMimeData::urlsFromMimeData(data);
         if (urls.isEmpty() || !urls[0].isLocalFile()) {
             return false;
         }
@@ -1023,8 +1023,8 @@ void TreeView::newsubmenu()
     TreeItem *item = (TreeItem *)selectedItem();
 
     bool ok;
-    QString caption = KInputDialog::getText(i18n("New Submenu"),
-                                            i18n("Submenu name:"), QString(), &ok, this);
+    QString caption = QInputDialog::getText(this, i18n("New Submenu"), i18n("Submenu name:"),
+                                            QLineEdit::Normal, QString(), &ok);
 
     if (!ok) {
         return;
@@ -1091,8 +1091,8 @@ void TreeView::newitem()
     TreeItem *item = (TreeItem *)selectedItem();
 
     bool ok;
-    QString caption = KInputDialog::getText(i18n("New Item"),
-                                            i18n("Item name:"), QString(), &ok, this);
+    QString caption = QInputDialog::getText(this, i18n("New Item"), i18n("Item name:"),
+                                            QLineEdit::Normal, QString(), &ok);
 
     if (!ok) {
         return;

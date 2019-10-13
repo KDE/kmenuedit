@@ -27,10 +27,10 @@ find_package(KF5 REQUIRED COMPONENTS
     DBusAddons
     IconThemes
     KIO
+    ItemViews
     Sonnet
     DocTools
     Init
-    KDELibs4Support
 )
 
 find_package(KHotKeysDBusInterface QUIET)
@@ -72,10 +72,10 @@ target_link_libraries(kdeinit_kmenuedit
     KF5::IconThemes
     KF5::KIOCore
     KF5::KIOWidgets
+    KF5::ItemViews
     KF5::SonnetCore
     KF5::SonnetUi
     KF5::XmlGui
-    KF5::KDELibs4Support
 )
 
 install(TARGETS kdeinit_kmenuedit  DESTINATION ${KDE_INSTALL_LIBDIR} )
