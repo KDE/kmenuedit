@@ -37,7 +37,6 @@
 #include <QMenu>
 #include <QPainter>
 #include <QRegExp>
-#include <QSignalMapper>
 #include <QUrl>
 
 #include <KActionCollection>
@@ -261,20 +260,14 @@ TreeView::TreeView(KActionCollection *ac, QWidget *parent)
     connect(m_ac->action(DELETE_ACTION_NAME), SIGNAL(triggered()), SLOT(del()));
 
     // listen for sorting
-    m_sortSignalMapper = new QSignalMapper(this);
     QAction *action = m_ac->action(SORT_BY_NAME_ACTION_NAME);
-    connect(action, SIGNAL(triggered()), m_sortSignalMapper, SLOT(map()));
-    m_sortSignalMapper->setMapping(action, SortByName);
+    connect(action, &QAction::triggered, this, [this]() {sort(SortByName);});
     action = m_ac->action(SORT_BY_DESCRIPTION_ACTION_NAME);
-    connect(action, SIGNAL(triggered()), m_sortSignalMapper, SLOT(map()));
-    m_sortSignalMapper->setMapping(action, SortByDescription);
+    connect(action, &QAction::triggered, this, [this]() {sort(SortByDescription);});
     action = m_ac->action(SORT_ALL_BY_NAME_ACTION_NAME);
-    connect(action, SIGNAL(triggered()), m_sortSignalMapper, SLOT(map()));
-    m_sortSignalMapper->setMapping(action, SortAllByName);
+    connect(action, &QAction::triggered, this, [this]() {sort(SortAllByName);});
     action = m_ac->action(SORT_ALL_BY_DESCRIPTION_ACTION_NAME);
-    connect(action, SIGNAL(triggered()), m_sortSignalMapper, SLOT(map()));
-    m_sortSignalMapper->setMapping(action, SortAllByDescription);
-    connect(m_sortSignalMapper, SIGNAL(mapped(const int)), this, SLOT(sort(const int)));
+    connect(action, &QAction::triggered, this, [this]() {sort(SortAllByDescription);});
 
     // connect moving up/down actions
     connect(m_ac->action(MOVE_UP_ACTION_NAME), &QAction::triggered, this, &TreeView::moveUpItem);

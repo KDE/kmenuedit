@@ -31,7 +31,6 @@
 
 class QMenu;
 class QDropEvent;
-class QSignalMapper;
 
 class KActionCollection;
 class KDesktopFile;
@@ -263,7 +262,6 @@ private:
     bool m_detailedMenuEntries;
     bool m_detailedEntriesNamesFirst;
     QStringList m_dropMimeTypes;
-    QSignalMapper *m_sortSignalMapper = nullptr;
 };
 
 class MenuItemMimeData : public QMimeData
