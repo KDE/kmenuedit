@@ -1371,16 +1371,20 @@ void TreeView::sort(const int sortCmd)
     TreeItem *itemToSort;
     if (sortType == SortByName || sortType == SortByDescription) {
         itemToSort = static_cast<TreeItem *>(selectedItem());
+        sortItem(itemToSort, sortType);
     } else if (sortType == SortAllByDescription) {
         sortType = SortByDescription;
-        itemToSort = static_cast<TreeItem *>(invisibleRootItem());
+        for (int i = 0; i < topLevelItemCount(); ++i) {
+            itemToSort = static_cast<TreeItem *>(topLevelItem(i));
+            sortItem(itemToSort, sortType);
+        }
     } else { /* if (sortType == SortAllByName) */
         sortType = SortByName;
-        itemToSort = static_cast<TreeItem *>(invisibleRootItem());
+        for (int i = 0; i < topLevelItemCount(); ++i) {
+            itemToSort = static_cast<TreeItem *>(topLevelItem(i));
+            sortItem(itemToSort, sortType);
+        }
     }
-
-    // proceed to the sorting
-    sortItem(itemToSort, sortType);
 }
 
 /**
