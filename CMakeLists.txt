@@ -40,7 +40,7 @@ find_package(KHotKeysDBusInterface QUIET)
 
 #add_definitions(-DQT_NO_CAST_FROM_ASCII -DQT_STRICT_ITERATORS -DQT_NO_CAST_FROM_BYTEARRAY)
 
-add_definitions(-DQT_STRICT_ITERATORS -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_FROM_BYTEARRAY)
+add_definitions(-DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_FROM_BYTEARRAY)
 
 add_subdirectory( pixmaps ) 
 add_subdirectory( doc )
