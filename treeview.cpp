@@ -609,10 +609,12 @@ void TreeView::selectMenuEntry(const QString &menuEntry)
 
 void TreeView::itemSelected(QTreeWidgetItem *item)
 {
-    // ensure the item is visible as selected
-    item->setSelected(true);
+    if (item) {
+        // ensure the item is visible as selected
+        item->setSelected(true);
+    }
 
-    TreeItem *_item = static_cast<TreeItem *>(item);
+    TreeItem *_item = item ? static_cast<TreeItem *>(item) : nullptr;
     TreeItem *parentItem = nullptr;
     bool selected = false;
     bool dselected = false;
@@ -631,21 +633,23 @@ void TreeView::itemSelected(QTreeWidgetItem *item)
         m_ac->action(DELETE_ACTION_NAME)->setEnabled(selected && !dselected);
     }
 
-    m_ac->action(SORT_BY_NAME_ACTION_NAME)->setEnabled(selected && _item->isDirectory() && (_item->childCount() > 0));
+    m_ac->action(SORT_BY_NAME_ACTION_NAME)->setEnabled(selected && _item && _item->isDirectory() && (_item->childCount() > 0));
     m_ac->action(SORT_BY_DESCRIPTION_ACTION_NAME)->setEnabled(m_ac->action(SORT_BY_NAME_ACTION_NAME)->isEnabled());
 
-    m_ac->action(MOVE_UP_ACTION_NAME)->setEnabled(selected && (parentItem->indexOfChild(_item) > 0));
-    m_ac->action(MOVE_DOWN_ACTION_NAME)->setEnabled(selected && (parentItem->indexOfChild(_item) < parentItem->childCount() - 1));
+    m_ac->action(MOVE_UP_ACTION_NAME)->setEnabled(_item && selected && (parentItem->indexOfChild(_item) > 0));
+    m_ac->action(MOVE_DOWN_ACTION_NAME)->setEnabled(_item && selected && (parentItem->indexOfChild(_item) < parentItem->childCount() - 1));
 
     if (!item) {
         emit disableAction();
         return;
     }
 
-    if (_item->isDirectory()) {
-        emit entrySelected(_item->folderInfo());
-    } else {
-        emit entrySelected(_item->entryInfo());
+    if (_item) {
+        if (_item->isDirectory()) {
+            emit entrySelected(_item->folderInfo());
+        } else {
+            emit entrySelected(_item->entryInfo());
+        }
     }
 }
 
