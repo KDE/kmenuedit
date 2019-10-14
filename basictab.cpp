@@ -29,7 +29,7 @@
 #include <KConfigGroup>
 #include <KLocalizedString>
 #include <KKeySequenceWidget>
-#include <KLineEdit>
+#include <QLineEdit>
 #include <KIconButton>
 #include <KDesktopFile>
 #include <KUrlRequester>
@@ -67,8 +67,9 @@ void BasicTab::initGeneralTab()
     // name
     _nameLabel = new QLabel(i18n("&Name:"));
     generalTabLayout->addWidget(_nameLabel, 0, 0);
-    _nameEdit = new KLineEdit();
+    _nameEdit = new QLineEdit();
     _nameEdit->setAcceptDrops(false);
+    _nameEdit->setClearButtonEnabled(true);
     _nameLabel->setBuddy(_nameEdit);
     generalTabLayout->addWidget(_nameEdit, 0, 1, 1, 1);
 
@@ -160,7 +161,8 @@ void BasicTab::initAdvancedTab()
     QHBoxLayout *terminalOptionsGroupLayout = new QHBoxLayout(terminalOptionsGroup);
     _terminalOptionsLabel = new QLabel(i18n("Terminal &options:"));
     terminalOptionsGroupLayout->addWidget(_terminalOptionsLabel);
-    _terminalOptionsEdit = new KLineEdit();
+    _terminalOptionsEdit = new QLineEdit();
+    _terminalOptionsEdit->setClearButtonEnabled(true);
     _terminalOptionsEdit->setAcceptDrops(false);
     _terminalOptionsEdit->setEnabled(false);
     _terminalOptionsLabel->setBuddy(_terminalOptionsEdit);
@@ -178,7 +180,8 @@ void BasicTab::initAdvancedTab()
     QHBoxLayout *userNameGroupLayout = new QHBoxLayout(userNameGroup);
     _userNameLabel = new QLabel(i18n("&Username:"));
     userNameGroupLayout->addWidget(_userNameLabel);
-    _userNameEdit = new KLineEdit();
+    _userNameEdit = new QLineEdit();
+    _userNameEdit->setClearButtonEnabled(true);
     _userNameEdit->setAcceptDrops(false);
     _userNameEdit->setEnabled(false);
     _userNameLabel->setBuddy(_userNameEdit);
@@ -206,7 +209,7 @@ void BasicTab::initAdvancedTab()
 void BasicTab::initConnections()
 {
     // general tab's components
-    connect(_nameEdit, &KLineEdit::textChanged, this, &BasicTab::slotChanged);
+    connect(_nameEdit, &QLineEdit::textChanged, this, &BasicTab::slotChanged);
     connect(_descriptionEdit, &KLineSpellChecking::textChanged, this, &BasicTab::slotChanged);
     connect(_commentEdit, &KLineSpellChecking::textChanged, this, &BasicTab::slotChanged);
     connect(_execEdit, &KUrlRequester::textChanged, this, &BasicTab::slotChanged);
@@ -219,9 +222,9 @@ void BasicTab::initConnections()
     // advanced tab's components
     connect(_pathEdit, &KUrlRequester::textChanged, this, &BasicTab::slotChanged);
     connect(_terminalCB, &QCheckBox::clicked, this, &BasicTab::termcb_clicked);
-    connect(_terminalOptionsEdit, &KLineEdit::textChanged, this, &BasicTab::slotChanged);
+    connect(_terminalOptionsEdit, &QLineEdit::textChanged, this, &BasicTab::slotChanged);
     connect(_userCB, &QCheckBox::clicked, this, &BasicTab::uidcb_clicked);
-    connect(_userNameEdit, &KLineEdit::textChanged, this, &BasicTab::slotChanged);
+    connect(_userNameEdit, &QLineEdit::textChanged, this, &BasicTab::slotChanged);
     connect(_keyBindingEdit, &KKeySequenceWidget::keySequenceChanged, this, &BasicTab::slotCapturedKeySequence);
 }
 

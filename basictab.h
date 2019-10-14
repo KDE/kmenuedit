@@ -25,7 +25,7 @@
 #include <KService>
 
 class KKeySequenceWidget;
-class KLineEdit;
+class QLineEdit;
 class KIconButton;
 class QCheckBox;
 class QGroupBox;
@@ -85,13 +85,13 @@ protected:
     void enableWidgets(bool isDF, bool isDeleted);
 
 protected:
-    KLineEdit *_nameEdit = nullptr;
+    QLineEdit *_nameEdit = nullptr;
     KLineSpellChecking *_commentEdit = nullptr;
     KLineSpellChecking *_descriptionEdit = nullptr;
     KKeySequenceWidget *_keyBindingEdit = nullptr;
     KUrlRequester *_execEdit, *_pathEdit = nullptr;
-    KLineEdit *_terminalOptionsEdit = nullptr;
-    KLineEdit *_userNameEdit = nullptr;
+    QLineEdit *_terminalOptionsEdit = nullptr;
+    QLineEdit *_userNameEdit = nullptr;
     QCheckBox *_terminalCB = nullptr;
     QCheckBox *_userCB = nullptr;
     QCheckBox *_launchCB = nullptr;
