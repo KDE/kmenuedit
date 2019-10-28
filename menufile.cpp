@@ -18,6 +18,7 @@
 
 #include "menufile.h"
 
+#include <QDir>
 #include <QFile>
 #include <QTextStream>
 #include <QRegExp>
@@ -95,6 +96,9 @@ void MenuFile::create()
 bool MenuFile::save()
 {
     QFile file(m_fileName);
+    // create directory if it doesn't exist
+    QFileInfo info(file);
+    info.dir().mkpath(QStringLiteral("."));
 
     if (!file.open(QIODevice::WriteOnly)) {
         qCWarning(KMENUEDIT_LOG) << "Could not write " << m_fileName;
