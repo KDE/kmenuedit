@@ -16,6 +16,7 @@ include(KDECMakeSettings)
 include(KDECompilerSettings NO_POLICY_SCOPE)
 include(ECMInstallIcons)
 include(ECMQtDeclareLoggingCategory)
+include(KDEClangFormat)
 
 find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS
     Core
@@ -83,6 +84,10 @@ target_link_libraries(kdeinit_kmenuedit
     KF5::SonnetUi
     KF5::XmlGui
 )
+
+# add clang-format target for all our real source files
+file(GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES *.cpp *.h)
+kde_clang_format(${ALL_CLANG_FORMAT_SOURCE_FILES})
 
 install(TARGETS kdeinit_kmenuedit  DESTINATION ${KDE_INSTALL_LIBDIR} )
 
