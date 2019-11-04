@@ -181,7 +181,7 @@ void KMenuEdit::setupView()
         sizes << 1 << 3;
     }
     m_splitter->setSizes(sizes);
-    m_tree->setFocus();
+    m_searchLine->setFocus();
 
     setCentralWidget(m_splitter);
 }
