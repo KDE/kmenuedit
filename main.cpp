@@ -27,9 +27,6 @@
 #include <QApplication>
 #include <QCommandLineParser>
 #include "kmenuedit.h"
-#ifndef Q_OS_WIN
-#include "khotkeys.h"
-#endif
 
 static const char description[] = I18N_NOOP("KDE menu editor");
 
@@ -46,14 +43,6 @@ public:
         QCoreApplication::setOrganizationDomain(QStringLiteral("kde.org"));
         QApplication::setApplicationDisplayName(i18n("KDE Menu Editor"));
     }
-
-#ifdef WITH_HOTKEYS
-    virtual ~KMenuApplication()
-    {
-        KHotKeys::cleanup();
-    }
-
-#endif
 };
 
 extern "C" int Q_DECL_EXPORT kdemain(int argc, char **argv)

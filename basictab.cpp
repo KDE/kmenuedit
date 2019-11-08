@@ -35,9 +35,7 @@
 #include <KUrlRequester>
 #include <KShell>
 
-#ifndef Q_OS_WIN
-#include "khotkeys.h"
-#endif
+#include "globalaccel.h"
 
 #include "klinespellchecking.h"
 #include "menuinfo.h"
@@ -49,11 +47,6 @@ BasicTab::BasicTab(QWidget *parent)
     initAdvancedTab();
     initConnections();
 
-#ifdef WITH_HOTKEYS
-    if (!KHotKeys::present()) {
-        _keyBindingGroup->hide();
-    }
-#endif
     slotDisableAction();
 }
 
@@ -349,15 +342,11 @@ void BasicTab::setEntryInfo(MenuEntryInfo *entryInfo)
     _iconButton->setIcon(df->readIcon());
 
     // key binding part
-#ifdef WITH_HOTKEYS
-    if (KHotKeys::present()) {
-        if (!entryInfo->shortcut().isEmpty()) {
-            _keyBindingEdit->setKeySequence(entryInfo->shortcut());
-        } else {
-            _keyBindingEdit->clearKeySequence();
-        }
+    if (!entryInfo->shortcut().isEmpty()) {
+        _keyBindingEdit->setKeySequence(entryInfo->shortcut());
+    } else {
+        _keyBindingEdit->clearKeySequence();
     }
-#endif
     _execEdit->lineEdit()->setText(df->desktopGroup().readEntry("Exec"));
 
     _pathEdit->lineEdit()->setText(df->readPath());
@@ -496,14 +485,12 @@ void BasicTab::slotCapturedKeySequence(const QKeySequence &seq)
         return;
     }
     QKeySequence cut(seq);
-#ifdef WITH_HOTKEYS
-    if (_menuEntryInfo->isShortcutAvailable(cut) && KHotKeys::present()) {
+    if (_menuEntryInfo->isShortcutAvailable(cut)) {
         _menuEntryInfo->setShortcut(cut);
     } else {
         // We will not assign the shortcut so reset the visible key sequence
         _keyBindingEdit->setKeySequence(QKeySequence());
     }
-#endif
     if (_menuEntryInfo) {
         emit changed(_menuEntryInfo);
     }

@@ -26,10 +26,8 @@
 #include <KConfigGroup>
 #include <QStandardPaths>
 
+#include "globalaccel.h"
 #include "menufile.h"
-#ifdef WITH_HOTKEYS
-#include "khotkeys.h"
-#endif
 
 //
 // MenuFolderInfo
@@ -179,14 +177,12 @@ void MenuFolderInfo::setDirty()
 void MenuFolderInfo::save(MenuFile *menuFile)
 {
     if (s_deletedApps) {
-#ifdef WITH_HOTKEYS
         // Remove hotkeys for applications that have been deleted
         for (QStringList::ConstIterator it = s_deletedApps->constBegin();
              it != s_deletedApps->constEnd(); ++it) {
             // The shorcut is deleted if we set a empty sequence
-            KHotKeys::changeMenuEntryShortcut(*it, QLatin1String(""));
+            GlobalAccel::changeMenuEntryShortcut(*it, QKeySequence());
         }
-#endif
         delete s_deletedApps;
         s_deletedApps = nullptr;
     }
@@ -327,14 +323,10 @@ void MenuEntryInfo::save()
         m_desktopFile->sync();
         dirty = false;
     }
-#ifdef WITH_HOTKEYS
     if (shortcutDirty) {
-        if (KHotKeys::present()) {
-            KHotKeys::changeMenuEntryShortcut(service->storageId(), shortCut.toString());
-        }
+        GlobalAccel::changeMenuEntryShortcut(service->storageId(), shortCut);
         shortcutDirty = false;
     }
-#endif
 }
 
 void MenuEntryInfo::setCaption(const QString &_caption)
@@ -370,14 +362,10 @@ void MenuEntryInfo::setIcon(const QString &_icon)
 
 QKeySequence MenuEntryInfo::shortcut()
 {
-#ifdef WITH_HOTKEYS
     if (!shortcutLoaded) {
         shortcutLoaded = true;
-        if (KHotKeys::present()) {
-            shortCut = QKeySequence(KHotKeys::getMenuEntryShortcut(service->storageId()));
-        }
+        shortCut = GlobalAccel::getMenuEntryShortcut(service->storageId());
     }
-#endif
     return shortCut;
 }
 

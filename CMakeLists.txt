@@ -34,14 +34,13 @@ find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
     Sonnet
     DocTools
     Init
+    GlobalAccel
 )
 
-find_package(KHotKeysDBusInterface QUIET)
 if (EXISTS "${CMAKE_SOURCE_DIR}/.git")
-   add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0x060000)
-   add_definitions(-DKF_DISABLE_DEPRECATED_BEFORE_AND_AT=0x060000)
+    add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0x060000)
+    add_definitions(-DKF_DISABLE_DEPRECATED_BEFORE_AND_AT=0x060000)
 endif()
-
 
 #add_definitions(-DQT_NO_CAST_FROM_ASCII -DQT_STRICT_ITERATORS -DQT_NO_CAST_FROM_BYTEARRAY)
 
@@ -49,22 +48,13 @@ add_definitions(-DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_FROM_BYTEARRAY)
 
 add_subdirectory( pixmaps ) 
 add_subdirectory( doc )
+add_subdirectory(kconf_update)
 
-set(kmenueditcommon_STAT_SRCS preferencesdlg.cpp klinespellchecking.cpp basictab.cpp treeview.cpp kmenuedit.cpp menufile.cpp menuinfo.cpp configurationmanager.cpp )
+set(kmenueditcommon_STAT_SRCS preferencesdlg.cpp klinespellchecking.cpp basictab.cpp treeview.cpp kmenuedit.cpp menufile.cpp menuinfo.cpp configurationmanager.cpp globalaccel.cpp)
 ########### next target ###############
 qt5_add_dbus_adaptor( kmenueditcommon_STAT_SRCS org.kde.kmenuedit.xml kmenuedit.h KMenuEdit)
 
 ecm_qt_declare_logging_category(kmenueditcommon_STAT_SRCS HEADER kmenuedit_debug.h IDENTIFIER KMENUEDIT_LOG CATEGORY_NAME org.kde.kmenuedit)
-
-if(NOT WIN32 AND KHotKeysDBusInterface_FOUND)
-qt5_add_dbus_interface(
-    kmenueditcommon_STAT_SRCS
-    ${KHOTKEYS_DBUS_INTERFACE}
-    khotkeys_interface)
-set(kmenueditcommon_STAT_SRCS ${kmenueditcommon_STAT_SRCS} khotkeys.cpp)
-
-add_definitions(-DWITH_HOTKEYS)
-endif()
 
 set(kmenuedit_KDEINIT_SRCS main.cpp ${kmenueditcommon_STAT_SRCS})
 
@@ -75,6 +65,7 @@ target_link_libraries(kdeinit_kmenuedit
     Qt5::DBus
     Qt5::Xml
     KF5::DBusAddons
+    KF5::GlobalAccel
     KF5::I18n
     KF5::IconThemes
     KF5::KIOCore
