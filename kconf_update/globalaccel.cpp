@@ -5,7 +5,6 @@
 #include <KConfig>
 #include <KConfigGroup>
 #include <KGlobalAccel>
-#include "kglobalaccel_interface.h"
 
 #include "../globalaccel.h"
 
