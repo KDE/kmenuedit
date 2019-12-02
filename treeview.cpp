@@ -707,7 +707,7 @@ void TreeView::startDrag(Qt::DropActions supportedActions)
     }
 
     QDrag *drag = new QDrag(this);
-    int iconSize = KIconLoader::global()->currentSize(KIconLoader::Small);
+    const int iconSize = style()->pixelMetric(QStyle::PM_SmallIconSize);
     drag->setPixmap(selectedItem()->icon(0).pixmap(iconSize, iconSize));
     drag->setMimeData(data);
     drag->exec(supportedActions, Qt::MoveAction);
