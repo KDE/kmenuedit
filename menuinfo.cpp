@@ -181,7 +181,7 @@ void MenuFolderInfo::save(MenuFile *menuFile)
         for (QStringList::ConstIterator it = s_deletedApps->constBegin();
              it != s_deletedApps->constEnd(); ++it) {
             // The shorcut is deleted if we set a empty sequence
-            GlobalAccel::changeMenuEntryShortcut(*it, QKeySequence());
+            GlobalAccel::changeMenuEntryShortcut(KService::serviceByStorageId(*it), QKeySequence());
         }
         delete s_deletedApps;
         s_deletedApps = nullptr;
@@ -324,7 +324,7 @@ void MenuEntryInfo::save()
         dirty = false;
     }
     if (shortcutDirty) {
-        GlobalAccel::changeMenuEntryShortcut(service->storageId(), shortCut);
+        GlobalAccel::changeMenuEntryShortcut(service, shortCut);
         shortcutDirty = false;
     }
 }
@@ -364,7 +364,7 @@ QKeySequence MenuEntryInfo::shortcut()
 {
     if (!shortcutLoaded) {
         shortcutLoaded = true;
-        shortCut = GlobalAccel::getMenuEntryShortcut(service->storageId());
+        shortCut = GlobalAccel::getMenuEntryShortcut(service);
     }
     return shortCut;
 }

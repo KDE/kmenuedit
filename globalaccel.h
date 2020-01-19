@@ -18,14 +18,14 @@
 #ifndef GLOBALACCEL_H
 #define GLOBALACCEL_H
 
-#include <QString>
+#include <KService>
 #include <QKeySequence>
 
 class GlobalAccel
 {
 public:
-    static QKeySequence getMenuEntryShortcut(const QString &storageId);
-    static void changeMenuEntryShortcut(const QString &storageId, const QKeySequence &shortcut);
+    static QKeySequence getMenuEntryShortcut(const KService::Ptr service);
+    static void changeMenuEntryShortcut(const KService::Ptr service, const QKeySequence &shortcut);
 };
 
 #endif // GLOBALACCEL_H
