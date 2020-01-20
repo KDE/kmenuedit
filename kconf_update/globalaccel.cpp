@@ -65,7 +65,7 @@ int main(int argc, char **argv)
         KGlobalAccel::self()->setShortcut(&action, {});
         KGlobalAccel::self()->removeAllShortcuts(&action);
         if (!shortcut.isEmpty() && !shortcut[0].isEmpty()) {
-            GlobalAccel::changeMenuEntryShortcut(storageId, shortcut[0]);
+            GlobalAccel::changeMenuEntryShortcut(KService::serviceByStorageId(storageId), shortcut[0]);
         }
         khotkeysrc.deleteGroup(groupName);
         khotkeysrc.deleteGroup(groupName + QStringLiteral("Actions"));
