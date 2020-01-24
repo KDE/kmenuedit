@@ -33,7 +33,6 @@ find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
     ItemViews
     Sonnet
     DocTools
-    Init
     GlobalAccel
 )
 
@@ -58,10 +57,10 @@ ecm_qt_declare_logging_category(kmenueditcommon_STAT_SRCS HEADER kmenuedit_debug
 
 set(kmenuedit_KDEINIT_SRCS main.cpp ${kmenueditcommon_STAT_SRCS})
 
-kf5_add_kdeinit_executable( kmenuedit ${kmenuedit_KDEINIT_SRCS})
-target_compile_definitions(kdeinit_kmenuedit PRIVATE -DPROJECT_VERSION="${PROJECT_VERSION}")
+add_executable( kmenuedit ${kmenuedit_KDEINIT_SRCS})
+target_compile_definitions(kmenuedit PRIVATE -DPROJECT_VERSION="${PROJECT_VERSION}")
 
-target_link_libraries(kdeinit_kmenuedit
+target_link_libraries(kmenuedit
     Qt5::DBus
     Qt5::Xml
     KF5::DBusAddons
@@ -80,9 +79,6 @@ target_link_libraries(kdeinit_kmenuedit
 file(GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES *.cpp *.h)
 kde_clang_format(${ALL_CLANG_FORMAT_SOURCE_FILES})
 
-install(TARGETS kdeinit_kmenuedit  DESTINATION ${KDE_INSTALL_LIBDIR} )
-
-target_link_libraries( kmenuedit kdeinit_kmenuedit )
 install(TARGETS kmenuedit ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 
 ########### install files ###############

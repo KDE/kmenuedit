@@ -45,7 +45,7 @@ public:
     }
 };
 
-extern "C" int Q_DECL_EXPORT kdemain(int argc, char **argv)
+int main(int argc, char **argv)
 {
     KMenuApplication app(argc, argv);
     Kdelibs4ConfigMigrator migrate(QStringLiteral("kmenuedit"));
