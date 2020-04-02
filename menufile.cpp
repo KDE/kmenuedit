@@ -21,7 +21,7 @@
 #include <QDir>
 #include <QFile>
 #include <QTextStream>
-#include <QRegExp>
+#include <QRegularExpression>
 #include <QFileInfo>
 #include <QStandardPaths>
 
@@ -454,8 +454,9 @@ QString MenuFile::uniqueMenuName(const QString &menuName, const QString &newMenu
         result.chop(1);
     }
 
-    QRegExp r(QStringLiteral("(.*)(?=-\\d+)"));
-    result = (r.indexIn(result) > -1) ? r.cap(1) : result;
+    static const QRegularExpression re(QStringLiteral("(.*)(?=-\\d+)"));
+    const QRegularExpressionMatch match = re.match(result);
+    result = match.hasMatch() ? match.captured(1) : result;
 
     int trunc = result.length(); // Position of trailing '/'
 

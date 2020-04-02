@@ -19,7 +19,7 @@
 
 #include "menuinfo.h"
 
-#include <QRegExp>
+#include <QRegularExpressionMatch>
 
 #include <KDesktopFile>
 
@@ -106,11 +106,17 @@ void MenuFolderInfo::take(MenuEntryInfo *entry)
     entries.removeAll(entry);
 }
 
+QString uniqueCaption(const QString &caption)
+{
+    static const QRegularExpression re(QStringLiteral("(.*)(?=-\\d+)"));
+    const QRegularExpressionMatch match = re.match(caption);
+    return match.hasMatch() ? match.captured(1) : caption;
+}
+
 // Return a unique sub-menu caption inspired by @p caption
 QString MenuFolderInfo::uniqueMenuCaption(const QString &caption)
 {
-    QRegExp r(QStringLiteral("(.*)(?=-\\d+)"));
-    QString cap = (r.indexIn(caption) > -1) ? r.cap(1) : caption;
+    QString cap = uniqueCaption(caption);
 
     QString result = caption;
 
@@ -134,8 +140,7 @@ QString MenuFolderInfo::uniqueMenuCaption(const QString &caption)
 // Return a unique item caption inspired by @p caption
 QString MenuFolderInfo::uniqueItemCaption(const QString &caption, const QString &exclude)
 {
-    QRegExp r(QStringLiteral("(.*)(?=-\\d+)"));
-    QString cap = (r.indexIn(caption) > -1) ? r.cap(1) : caption;
+    QString cap = uniqueCaption(caption);
 
     QString result = caption;
 

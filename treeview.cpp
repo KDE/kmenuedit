@@ -36,7 +36,7 @@
 #include <QInputDialog>
 #include <QMenu>
 #include <QPainter>
-#include <QRegExp>
+#include <QRegularExpressionMatch>
 #include <QUrl>
 
 #include <KActionCollection>
@@ -727,8 +727,9 @@ static QString createDesktopFile(const QString &file, QString *menuId, QStringLi
     QString base = file.mid(file.lastIndexOf(QLatin1Char('/'))+1);
     base = base.left(base.lastIndexOf(QLatin1Char('.')));
 
-    QRegExp r(QStringLiteral("(.*)(?=-\\d+)"));
-    base = (r.indexIn(base) > -1) ? r.cap(1) : base;
+    const QRegularExpression re(QStringLiteral("(.*)(?=-\\d+)"));
+    const QRegularExpressionMatch match = re.match(base);
+    base = match.hasMatch() ? match.captured(1) : base;
 
     QString result = KService::newServicePath(true, base, menuId, excludeList);
     excludeList->append(*menuId);
