@@ -39,7 +39,7 @@ public:
         : QApplication(argc, argv)
     {
         QCoreApplication::setApplicationName(QStringLiteral("kmenuedit"));
-        QCoreApplication::setApplicationVersion(QLatin1String(PROJECT_VERSION));
+        QCoreApplication::setApplicationVersion(QStringLiteral(PROJECT_VERSION));
         QCoreApplication::setOrganizationDomain(QStringLiteral("kde.org"));
         QApplication::setApplicationDisplayName(i18n("KDE Menu Editor"));
     }
@@ -57,7 +57,7 @@ int main(int argc, char **argv)
     KLocalizedString::setApplicationDomain("kmenuedit");
 
     KAboutData aboutData(QStringLiteral("kmenuedit"), i18n("KDE Menu Editor"),
-                         QLatin1String(PROJECT_VERSION), i18n(description), KAboutLicense::GPL,
+                         QStringLiteral(PROJECT_VERSION), i18n(description), KAboutLicense::GPL,
                          i18n("(C) 2000-2003, Waldo Bastian, Raffaele Sandrini, Matthias Elter"));
     aboutData.addAuthor(i18n("Waldo Bastian"), i18n("Maintainer"), QStringLiteral("bastian@kde.org"));
     aboutData.addAuthor(i18n("Raffaele Sandrini"), i18n("Previous Maintainer"), QStringLiteral("sandrini@kde.org"));

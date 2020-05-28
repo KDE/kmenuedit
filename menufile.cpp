@@ -194,7 +194,7 @@ static QString relativeToDesktopDirsLocation(const QString &file)
     const QString canonical = QFileInfo(file).canonicalFilePath();
     const QStringList dirs = QStandardPaths::standardLocations(QStandardPaths::GenericDataLocation);
     for (const QString &dir : dirs) {
-        const QString base = dir + QLatin1String("/desktop-directories");
+        const QString base = dir + QStringLiteral("/desktop-directories");
         if (canonical.startsWith(base))
             return canonical.mid(base.length()+1);
     }
@@ -218,7 +218,7 @@ static QString entryToDirId(const QString &path)
     return local;
 }
 
-static void purgeIncludesExcludes(QDomElement elem, const QString &appId, QDomElement &excludeNode, QDomElement &includeNode)
+static void purgeIncludesExcludes(const QDomElement &elem, const QString &appId, QDomElement &excludeNode, QDomElement &includeNode)
 {
     // Remove any previous includes/excludes of appId
     QDomNode n = elem.firstChild();

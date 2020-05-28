@@ -277,7 +277,7 @@ TreeView::TreeView(KActionCollection *ac, QWidget *parent)
     connect(this, &QTreeWidget::currentItemChanged,
             this, &TreeView::itemSelected);
 
-    m_menuFile = new MenuFile(QStandardPaths::writableLocation(QStandardPaths::ConfigLocation) + QLatin1String("/menus/") + QStringLiteral("applications-kmenuedit.menu"));
+    m_menuFile = new MenuFile(QStandardPaths::writableLocation(QStandardPaths::ConfigLocation) + QStringLiteral("/menus/") + QStringLiteral("applications-kmenuedit.menu"));
     m_rootFolder = new MenuFolderInfo;
     m_separator = new MenuSeparatorInfo;
 }
@@ -436,9 +436,9 @@ TreeItem *TreeView::createTreeItem(TreeItem *parent, QTreeWidgetItem *after, Men
 
     if (m_detailedMenuEntries && entryInfo->description.length() != 0) {
         if (m_detailedEntriesNamesFirst) {
-            name = entryInfo->caption + QLatin1String(" (") + entryInfo->description + QLatin1Char(')');
+            name = entryInfo->caption + QStringLiteral(" (") + entryInfo->description + QLatin1Char(')');
         } else {
-            name = entryInfo->description + QLatin1String(" (") + entryInfo->caption + QLatin1Char(')');
+            name = entryInfo->description + QStringLiteral(" (") + entryInfo->caption + QLatin1Char(')');
         }
     } else {
         name = entryInfo->caption;
@@ -675,9 +675,9 @@ void TreeView::currentDataChanged(MenuEntryInfo *entryInfo)
 
     if (m_detailedMenuEntries && !entryInfo->description.isEmpty()) {
         if (m_detailedEntriesNamesFirst) {
-            name = entryInfo->caption + QLatin1String(" (") + entryInfo->description + QLatin1Char(')');
+            name = entryInfo->caption + QStringLiteral(" (") + entryInfo->description + QLatin1Char(')');
         } else {
-            name = entryInfo->description + QLatin1String(" (") + entryInfo->caption + QLatin1Char(')');
+            name = entryInfo->description + QStringLiteral(" (") + entryInfo->caption + QLatin1Char(')');
         }
     } else {
         name = entryInfo->caption;
@@ -763,14 +763,14 @@ static QString createDirectoryFile(const QString &file, QStringList *excludeList
         }
 
         if (!excludeList->contains(result)) {
-            if (QStandardPaths::locate(QStandardPaths::GenericDataLocation, QLatin1String("desktop-directories/") + result).isEmpty()) {
+            if (QStandardPaths::locate(QStandardPaths::GenericDataLocation, QStringLiteral("desktop-directories/") + result).isEmpty()) {
                 break;
             }
         }
         i++;
     }
     excludeList->append(result);
-    result = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/desktop-directories/") + result;
+    result = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QStringLiteral("/desktop-directories/") + result;
     return result;
 }
 
@@ -1053,7 +1053,7 @@ void TreeView::newsubmenu()
     folderInfo->caption = parentFolderInfo->uniqueMenuCaption(caption);
     folderInfo->id = m_menuFile->uniqueMenuName(folder, caption, parentFolderInfo->existingMenuIds());
     folderInfo->directoryFile = file;
-    folderInfo->icon = QLatin1String("package");
+    folderInfo->icon = QStringLiteral("package");
     folderInfo->hidden = false;
     folderInfo->setDirty();
 
@@ -1396,7 +1396,7 @@ void TreeView::sort(const int sortCmd)
  * @param item Item to sort.
  * @param sortType Sort type.
  */
-void TreeView::sortItem(TreeItem *item, const SortType &sortType)
+void TreeView::sortItem(TreeItem *item, SortType sortType)
 {
     // sort the selected item only if contains children
     if ((!item->isDirectory()) || (item->childCount() == 0)) {
@@ -1450,7 +1450,7 @@ void TreeView::sortItem(TreeItem *item, const SortType &sortType)
  * @param end Last child iterator (exclusive, pointed child won't be affected).
  * @param sortType Sort type.
  */
-void TreeView::sortItemChildren(const QList<QTreeWidgetItem *>::iterator &begin, const QList<QTreeWidgetItem *>::iterator &end, const SortType &sortType)
+void TreeView::sortItemChildren(const QList<QTreeWidgetItem *>::iterator &begin, const QList<QTreeWidgetItem *>::iterator &end, SortType sortType)
 {
     // sort by name
     if (sortType == SortByName) {
@@ -1773,20 +1773,20 @@ void TreeView::restoreMenuSystem()
     if (KMessageBox::warningYesNo(this, i18n("Do you want to restore the system menu? Warning: This will remove all custom menus.")) == KMessageBox::No) {
         return;
     }
-    const QString kmenueditfile = QStandardPaths::writableLocation(QStandardPaths::ConfigLocation) + QLatin1String("/menus/applications-kmenuedit.menu");
+    const QString kmenueditfile = QStandardPaths::writableLocation(QStandardPaths::ConfigLocation) + QStringLiteral("/menus/applications-kmenuedit.menu");
     if (QFile::exists(kmenueditfile)) {
         if (!QFile::remove(kmenueditfile)) {
             qCWarning(KMENUEDIT_LOG)<<"Could not delete "<<kmenueditfile;
         }
     }
 
-    const QString xdgappsdir = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/applications");
+    const QString xdgappsdir = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QStringLiteral("/applications");
     if (QFileInfo(xdgappsdir).isDir()) {
         if (!QDir(xdgappsdir).removeRecursively()) {
             qCWarning(KMENUEDIT_LOG)<<"Could not delete dir :" << xdgappsdir;
         }
     }
-    const QString xdgdesktopdir = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/desktop-directories");
+    const QString xdgdesktopdir = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QStringLiteral("/desktop-directories");
     if (QFileInfo(xdgdesktopdir).isDir()) {
         if (!QDir(xdgdesktopdir).removeRecursively()) {
             qCWarning(KMENUEDIT_LOG)<<"Could not delete dir :" << xdgdesktopdir;

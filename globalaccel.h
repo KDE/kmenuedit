@@ -24,8 +24,8 @@
 class GlobalAccel
 {
 public:
-    static QKeySequence getMenuEntryShortcut(const KService::Ptr service);
-    static void changeMenuEntryShortcut(const KService::Ptr service, const QKeySequence &shortcut);
+    static QKeySequence getMenuEntryShortcut(const KService::Ptr &service);
+    static void changeMenuEntryShortcut(const KService::Ptr &service, const QKeySequence &shortcut);
 };
 
 #endif // GLOBALACCEL_H

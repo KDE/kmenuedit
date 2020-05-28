@@ -26,7 +26,7 @@
 #include <KLocalizedString>
 #include <KService>
 
-void GlobalAccel::changeMenuEntryShortcut(const KService::Ptr service, const QKeySequence &shortcut)
+void GlobalAccel::changeMenuEntryShortcut(const KService::Ptr &service, const QKeySequence &shortcut)
 {
     const QString desktopFile = QStringLiteral("%1.desktop").arg(service->desktopEntryName());
 
@@ -46,7 +46,7 @@ void GlobalAccel::changeMenuEntryShortcut(const KService::Ptr service, const QKe
 
 }
 
-QKeySequence GlobalAccel::getMenuEntryShortcut(const KService::Ptr service)
+QKeySequence GlobalAccel::getMenuEntryShortcut(const KService::Ptr &service)
 {
     const QString desktopFile = QStringLiteral("%1.desktop").arg(service->desktopEntryName());
     const QList<QKeySequence> shortcut = KGlobalAccel::self()->globalShortcut(desktopFile, QStringLiteral("_launch"));

@@ -224,8 +224,8 @@ protected:
     void fill();
     void fillBranch(MenuFolderInfo *folderInfo, TreeItem *parent);
     QString findName(KDesktopFile *df, bool deleted);
-    void sortItem(TreeItem *item, const SortType &sortType);
-    void sortItemChildren(const QList<QTreeWidgetItem *>::iterator &begin, const QList<QTreeWidgetItem *>::iterator &end, const SortType &sortType);
+    void sortItem(TreeItem *item, SortType sortType);
+    void sortItemChildren(const QList<QTreeWidgetItem *>::iterator &begin, const QList<QTreeWidgetItem *>::iterator &end, SortType sortType);
     TreeItem *getParentItem(QTreeWidgetItem *item) const;
     void moveUpOrDownItem(bool isMovingUpAction);
 
@@ -266,6 +266,7 @@ private:
 
 class MenuItemMimeData : public QMimeData
 {
+    Q_OBJECT
 public:
     explicit MenuItemMimeData(TreeItem *item);
     QStringList formats() const override;
