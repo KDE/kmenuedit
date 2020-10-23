@@ -24,7 +24,6 @@
 
 #include <KGlobalAccel>
 #include <KLocalizedString>
-#include <KService>
 
 void GlobalAccel::changeMenuEntryShortcut(const KService::Ptr &service, const QKeySequence &shortcut)
 {

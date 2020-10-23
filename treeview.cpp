@@ -46,8 +46,6 @@
 #include <KIconLoader>
 #include <KLocalizedString>
 #include <KMessageBox>
-#include <KService>
-#include <KServiceGroup>
 #include <KConfig>
 #include <KConfigGroup>
 #include <KUrlMimeData>
