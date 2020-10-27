@@ -1,5 +1,5 @@
 project(kmenuedit)
-set(PROJECT_VERSION "5.20.1")
+set(PROJECT_VERSION "5.20.2")
 
 cmake_minimum_required(VERSION 2.8.12 FATAL_ERROR)
 
