@@ -1,5 +1,6 @@
-<!DOCTYPE kpartgui SYSTEM "kpartgui.dtd">
-<kpartgui name="kmenuedit" version="11">
+<?xml version="1.0"?>
+<!DOCTYPE gui SYSTEM "kpartgui.dtd">
+<gui name="kmenuedit" version="11">
 
 <MenuBar>
 
@@ -49,4 +50,4 @@
  <Action name="sort"/>
 </ToolBar>
 
-</kpartgui>
+</gui>
