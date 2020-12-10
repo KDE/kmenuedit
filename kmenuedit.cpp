@@ -66,7 +66,7 @@ void KMenuEdit::setupActions()
     QAction *action = actionCollection()->addAction(NEW_SUBMENU_ACTION_NAME);
     action->setIcon(QIcon::fromTheme(QStringLiteral("menu_new")));
     action->setText(i18n("&New Submenu..."));
-    actionCollection()->setDefaultShortcut(action, QKeySequence(Qt::CTRL + Qt::SHIFT + Qt::Key_N));
+    actionCollection()->setDefaultShortcut(action, QKeySequence(Qt::CTRL | Qt::SHIFT | Qt::Key_N));
     action = actionCollection()->addAction(NEW_ITEM_ACTION_NAME);
     action->setIcon(QIcon::fromTheme(QStringLiteral("document-new")));
     action->setText(i18n("New &Item..."));
@@ -74,7 +74,7 @@ void KMenuEdit::setupActions()
     action = actionCollection()->addAction(NEW_SEPARATOR_ACTION_NAME);
     action->setIcon(QIcon::fromTheme(QStringLiteral("menu_new_sep")));
     action->setText(i18n("New S&eparator"));
-    actionCollection()->setDefaultShortcut(action, QKeySequence(Qt::CTRL + Qt::Key_I));
+    actionCollection()->setDefaultShortcut(action, QKeySequence(Qt::CTRL | Qt::Key_I));
 
     // "sort selection" menu
     KActionMenu *sortMenu = new KActionMenu(QIcon::fromTheme(QStringLiteral("view-sort-ascending")), i18n("&Sort"), this);
