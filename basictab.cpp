@@ -359,7 +359,8 @@ void BasicTab::setEntryInfo(MenuEntryInfo *entryInfo)
         _launchCB->setChecked(df->desktopGroup().readEntry("X-KDE-StartupNotify", true));
     }
 
-    _onlyShowInKdeCB->setChecked(df->desktopGroup().readXdgListEntry("OnlyShowIn").contains(QLatin1String("KDE")));     // or maybe enable only if it contains nothing but KDE?
+    // or maybe enable only if it contains nothing but KDE?
+    _onlyShowInKdeCB->setChecked(df->desktopGroup().readXdgListEntry("OnlyShowIn").contains(QLatin1String("KDE")));
 
     if (df->desktopGroup().hasKey("NoDisplay")) {
         _hiddenEntryCB->setChecked(df->desktopGroup().readEntry("NoDisplay", true));

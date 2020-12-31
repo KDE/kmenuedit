@@ -209,7 +209,7 @@ protected:
         SortByName = 0,
         SortByDescription,
         SortAllByName,
-        SortAllByDescription
+        SortAllByDescription,
     };
 
     void contextMenuEvent(QContextMenuEvent *event) override;

@@ -48,7 +48,7 @@ public:
         REMOVE_ENTRY,
         ADD_MENU,
         REMOVE_MENU,
-        MOVE_MENU
+        MOVE_MENU,
     };
 
     struct ActionAtom
