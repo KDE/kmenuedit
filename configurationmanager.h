@@ -20,8 +20,8 @@
 #ifndef configurationmanager_h
 #define configurationmanager_h
 
-#include <QObject>
 #include <QMutex>
+#include <QObject>
 
 #include <KConfigGroup>
 

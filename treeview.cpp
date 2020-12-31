@@ -39,17 +39,17 @@
 #include <QRegularExpressionMatch>
 #include <QUrl>
 
+#include "kmenuedit_debug.h"
 #include <KActionCollection>
 #include <KBuildSycocaProgressDialog>
-#include "kmenuedit_debug.h"
+#include <KConfig>
+#include <KConfigGroup>
 #include <KDesktopFile>
 #include <KIconLoader>
 #include <KLocalizedString>
 #include <KMessageBox>
-#include <KConfig>
-#include <KConfigGroup>
-#include <KUrlMimeData>
 #include <KStringHandler>
+#include <KUrlMimeData>
 #include <QStandardPaths>
 
 #include "menufile.h"
@@ -57,8 +57,8 @@
 
 #define MOVE_FOLDER 'M'
 #define COPY_FOLDER 'C'
-#define MOVE_FILE   'm'
-#define COPY_FILE   'c'
+#define MOVE_FILE 'm'
+#define COPY_FILE 'c'
 #define COPY_SEPARATOR 'S'
 
 static const char *s_internalMimeType = "application/x-kmenuedit-internal";
@@ -76,12 +76,12 @@ protected:
     {
         QPainter p(this);
         // Draw Separator
-        int h = (height() / 2) -1;
-//        if (isSelected()) {
-//            p->setPen( palette().color( QPalette::HighlightedText ) );
-//        } else {
-//            p->setPen( palette().color( QPalette::Text ) );
-//        }
+        int h = (height() / 2) - 1;
+        //        if (isSelected()) {
+        //            p->setPen( palette().color( QPalette::HighlightedText ) );
+        //        } else {
+        //            p->setPen( palette().color( QPalette::Text ) );
+        //        }
 
         p.drawLine(2, h, width() - 4, h);
     }
@@ -259,23 +259,31 @@ TreeView::TreeView(KActionCollection *ac, QWidget *parent)
 
     // listen for sorting
     QAction *action = m_ac->action(SORT_BY_NAME_ACTION_NAME);
-    connect(action, &QAction::triggered, this, [this]() {sort(SortByName);});
+    connect(action, &QAction::triggered, this, [this]() {
+        sort(SortByName);
+    });
     action = m_ac->action(SORT_BY_DESCRIPTION_ACTION_NAME);
-    connect(action, &QAction::triggered, this, [this]() {sort(SortByDescription);});
+    connect(action, &QAction::triggered, this, [this]() {
+        sort(SortByDescription);
+    });
     action = m_ac->action(SORT_ALL_BY_NAME_ACTION_NAME);
-    connect(action, &QAction::triggered, this, [this]() {sort(SortAllByName);});
+    connect(action, &QAction::triggered, this, [this]() {
+        sort(SortAllByName);
+    });
     action = m_ac->action(SORT_ALL_BY_DESCRIPTION_ACTION_NAME);
-    connect(action, &QAction::triggered, this, [this]() {sort(SortAllByDescription);});
+    connect(action, &QAction::triggered, this, [this]() {
+        sort(SortAllByDescription);
+    });
 
     // connect moving up/down actions
     connect(m_ac->action(MOVE_UP_ACTION_NAME), &QAction::triggered, this, &TreeView::moveUpItem);
     connect(m_ac->action(MOVE_DOWN_ACTION_NAME), &QAction::triggered, this, &TreeView::moveDownItem);
 
     // listen for selection
-    connect(this, &QTreeWidget::currentItemChanged,
-            this, &TreeView::itemSelected);
+    connect(this, &QTreeWidget::currentItemChanged, this, &TreeView::itemSelected);
 
-    m_menuFile = new MenuFile(QStandardPaths::writableLocation(QStandardPaths::ConfigLocation) + QStringLiteral("/menus/") + QStringLiteral("applications-kmenuedit.menu"));
+    m_menuFile = new MenuFile(QStandardPaths::writableLocation(QStandardPaths::ConfigLocation) + QStringLiteral("/menus/") +
+                              QStringLiteral("applications-kmenuedit.menu"));
     m_rootFolder = new MenuFolderInfo;
     m_separator = new MenuSeparatorInfo;
 }
@@ -344,7 +352,7 @@ void TreeView::readMenuFolderInfo(MenuFolderInfo *folderInfo, KServiceGroup::Ptr
     folderInfo->icon = folder->icon();
     QString id = folder->relPath();
     int i = id.lastIndexOf(QLatin1Char('/'), -2);
-    id = id.mid(i+1);
+    id = id.mid(i + 1);
     folderInfo->id = id;
     folderInfo->fullId = prefix + id;
 
@@ -381,9 +389,7 @@ QString TreeView::findName(KDesktopFile *df, bool deleted)
         if (name.isEmpty()) {
             bool isLocal = true;
             const QStringList files = QStandardPaths::locateAll(df->resource(), df->fileName(), QStandardPaths::LocateFile);
-            for (QStringList::ConstIterator it = files.constBegin();
-                 it != files.constEnd();
-                 ++it) {
+            for (QStringList::ConstIterator it = files.constBegin(); it != files.constEnd(); ++it) {
                 if (isLocal) {
                     isLocal = false;
                     continue;
@@ -491,8 +497,8 @@ void TreeView::fillBranch(MenuFolderInfo *folderInfo, TreeItem *parent)
 TreeItem *TreeView::expandPath(TreeItem *item, const QString &path)
 {
     int i = path.indexOf(QLatin1String("/"));
-    QString subMenu = path.left(i+1);
-    QString restMenu = path.mid(i+1);
+    QString subMenu = path.left(i + 1);
+    QString restMenu = path.mid(i + 1);
 
     for (int i = 0; i < item->childCount(); ++i) {
         TreeItem *childItem = dynamic_cast<TreeItem *>(item->child(i));
@@ -516,7 +522,6 @@ TreeItem *TreeView::expandPath(TreeItem *item, const QString &path)
 
 void TreeView::selectMenu(const QString &menu)
 {
-
     // close all parent expansions and deselect everything
     collapseAll();
     setCurrentIndex(rootIndex());
@@ -537,8 +542,8 @@ void TreeView::selectMenu(const QString &menu)
 
     TreeItem *item = nullptr;
     int i = restMenu.indexOf(QLatin1String("/"));
-    QString subMenu = restMenu.left(i+1);
-    restMenu = restMenu.mid(i+1);
+    QString subMenu = restMenu.left(i + 1);
+    restMenu = restMenu.mid(i + 1);
 
     for (int i = 0; i < topLevelItemCount(); ++i) {
         item = dynamic_cast<TreeItem *>(topLevelItem(i));
@@ -722,7 +727,7 @@ QMimeData *TreeView::mimeData(const QList<QTreeWidgetItem *> items) const
 
 static QString createDesktopFile(const QString &file, QString *menuId, QStringList *excludeList)
 {
-    QString base = file.mid(file.lastIndexOf(QLatin1Char('/'))+1);
+    QString base = file.mid(file.lastIndexOf(QLatin1Char('/')) + 1);
     base = base.left(base.lastIndexOf(QLatin1Char('.')));
 
     const QRegularExpression re(QStringLiteral("(.*)(?=-\\d+)"));
@@ -747,13 +752,12 @@ static KDesktopFile *copyDesktopFile(MenuEntryInfo *entryInfo, QString *menuId, 
 
 static QString createDirectoryFile(const QString &file, QStringList *excludeList)
 {
-    QString base = file.mid(file.lastIndexOf(QLatin1Char('/'))+1);
+    QString base = file.mid(file.lastIndexOf(QLatin1Char('/')) + 1);
     base = base.left(base.lastIndexOf(QLatin1Char('.')));
 
     QString result;
     int i = 1;
-    while (true)
-    {
+    while (true) {
         if (i == 1) {
             result = base + QStringLiteral(".directory");
         } else {
@@ -805,7 +809,7 @@ bool TreeView::dropMimeData(QTreeWidgetItem *item, int index, const QMimeData *d
 
     QString folder = parentItem ? parentItem->directory() : QStringLiteral("/");
     MenuFolderInfo *parentFolderInfo = parentItem ? parentItem->folderInfo() : m_rootFolder;
-    //qCDebug(KMENUEDIT_LOG) << "think we're dropping on" << (parentItem ? parentItem->text(0) : "Top Level") <<  index;
+    // qCDebug(KMENUEDIT_LOG) << "think we're dropping on" << (parentItem ? parentItem->text(0) : "Top Level") <<  index;
 
     if (!data->hasFormat(QLatin1String(s_internalMimeType))) {
         // External drop
@@ -818,7 +822,7 @@ bool TreeView::dropMimeData(QTreeWidgetItem *item, int index, const QMimeData *d
             return false;
         }
 
-        //FIXME: this should really support multiple DnD
+        // FIXME: this should really support multiple DnD
         QString path = urls[0].path();
         if (!path.endsWith(QLatin1String(".desktop"))) {
             return false;
@@ -897,8 +901,8 @@ bool TreeView::dropMimeData(QTreeWidgetItem *item, int index, const QMimeData *d
             folderInfo->id = newFolder;
 
             // Add file to menu
-            //m_menuFile->moveMenu(oldFolder, folder + newFolder);
-            //qCDebug(KMENUEDIT_LOG) << "moving" << dragItem->text(0) << "to" << folder + newFolder;
+            // m_menuFile->moveMenu(oldFolder, folder + newFolder);
+            // qCDebug(KMENUEDIT_LOG) << "moving" << dragItem->text(0) << "to" << folder + newFolder;
             m_menuFile->pushAction(MenuFile::MOVE_MENU, oldFolder, folder + newFolder);
 
             // Make sure caption is unique
@@ -942,7 +946,7 @@ bool TreeView::dropMimeData(QTreeWidgetItem *item, int index, const QMimeData *d
         if (action == Qt::CopyAction) {
             // Need to copy file and then add it
             KDesktopFile *df = copyDesktopFile(entryInfo, &menuId, &m_newMenuIds); // Duplicate
-            //UNDO-ACTION: NEW_MENU_ID (menuId)
+            // UNDO-ACTION: NEW_MENU_ID (menuId)
 
             KService::Ptr s(new KService(df));
             s->setMenuId(menuId);
@@ -984,7 +988,7 @@ bool TreeView::dropMimeData(QTreeWidgetItem *item, int index, const QMimeData *d
         setCurrentItem(newItem);
     }
 
-    //qCDebug(KMENUEDIT_LOG) << "setting the layout to be dirty at" << parentItem;
+    // qCDebug(KMENUEDIT_LOG) << "setting the layout to be dirty at" << parentItem;
     setLayoutDirty(parentItem);
     return true;
 }
@@ -1019,8 +1023,7 @@ void TreeView::newsubmenu()
     TreeItem *item = (TreeItem *)selectedItem();
 
     bool ok;
-    QString caption = QInputDialog::getText(this, i18n("New Submenu"), i18n("Submenu name:"),
-                                            QLineEdit::Normal, QString(), &ok);
+    QString caption = QInputDialog::getText(this, i18n("New Submenu"), i18n("Submenu name:"), QLineEdit::Normal, QString(), &ok);
 
     if (!ok) {
         return;
@@ -1087,8 +1090,7 @@ void TreeView::newitem()
     TreeItem *item = (TreeItem *)selectedItem();
 
     bool ok;
-    QString caption = QInputDialog::getText(this, i18n("New Item"), i18n("Item name:"),
-                                            QLineEdit::Normal, QString(), &ok);
+    QString caption = QInputDialog::getText(this, i18n("New Item"), i18n("Item name:"), QLineEdit::Normal, QString(), &ok);
 
     if (!ok) {
         return;
@@ -1722,8 +1724,9 @@ bool TreeView::save()
     if (success) {
         KBuildSycocaProgressDialog::rebuildKSycoca(this);
     } else {
-        KMessageBox::sorry(this, QStringLiteral("<qt>")+i18n("Menu changes could not be saved because of the following problem:")+QStringLiteral("<br><br>")
-                           +m_menuFile->error()+QStringLiteral("</qt>"));
+        KMessageBox::sorry(this,
+                           QStringLiteral("<qt>") + i18n("Menu changes could not be saved because of the following problem:") + QStringLiteral("<br><br>") +
+                               m_menuFile->error() + QStringLiteral("</qt>"));
     }
 
     sendReloadMenu();
@@ -1774,20 +1777,20 @@ void TreeView::restoreMenuSystem()
     const QString kmenueditfile = QStandardPaths::writableLocation(QStandardPaths::ConfigLocation) + QStringLiteral("/menus/applications-kmenuedit.menu");
     if (QFile::exists(kmenueditfile)) {
         if (!QFile::remove(kmenueditfile)) {
-            qCWarning(KMENUEDIT_LOG)<<"Could not delete "<<kmenueditfile;
+            qCWarning(KMENUEDIT_LOG) << "Could not delete " << kmenueditfile;
         }
     }
 
     const QString xdgappsdir = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QStringLiteral("/applications");
     if (QFileInfo(xdgappsdir).isDir()) {
         if (!QDir(xdgappsdir).removeRecursively()) {
-            qCWarning(KMENUEDIT_LOG)<<"Could not delete dir :" << xdgappsdir;
+            qCWarning(KMENUEDIT_LOG) << "Could not delete dir :" << xdgappsdir;
         }
     }
     const QString xdgdesktopdir = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QStringLiteral("/desktop-directories");
     if (QFileInfo(xdgdesktopdir).isDir()) {
         if (!QDir(xdgdesktopdir).removeRecursively()) {
-            qCWarning(KMENUEDIT_LOG)<<"Could not delete dir :" << xdgdesktopdir;
+            qCWarning(KMENUEDIT_LOG) << "Could not delete dir :" << xdgdesktopdir;
         }
     }
 
@@ -1841,7 +1844,8 @@ void TreeView::sendReloadMenu()
 }
 
 // Slot to expand or retract items in tree based on length of search string
-void TreeView::searchUpdated(const QString &searchString) {
+void TreeView::searchUpdated(const QString &searchString)
+{
     // expand all categories if we typed more than a few characters, otherwise collapse and un-select everything
     // use logicalLength for CJK users
     if (KStringHandler::logicalLength(searchString) > 2) {

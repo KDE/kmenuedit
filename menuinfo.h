@@ -22,8 +22,8 @@
 
 #include <QList>
 
-#include <QKeySequence>
 #include <KService>
+#include <QKeySequence>
 
 class MenuFile;
 class MenuEntryInfo;
@@ -51,7 +51,8 @@ public:
 class MenuFolderInfo : public MenuInfo
 {
 public:
-    MenuFolderInfo() : dirty(false)
+    MenuFolderInfo()
+        : dirty(false)
         , hidden(false)
     {
     }

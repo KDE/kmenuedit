@@ -19,14 +19,14 @@
  *
  */
 
-#include <KLocalizedString>
 #include <KAboutData>
-#include <kdbusservice.h>
+#include <KLocalizedString>
 #include <Kdelibs4ConfigMigrator>
+#include <kdbusservice.h>
 
+#include "kmenuedit.h"
 #include <QApplication>
 #include <QCommandLineParser>
-#include "kmenuedit.h"
 
 static const char description[] = I18N_NOOP("KDE menu editor");
 
@@ -56,8 +56,11 @@ int main(int argc, char **argv)
     QGuiApplication::setAttribute(Qt::AA_UseHighDpiPixmaps);
     KLocalizedString::setApplicationDomain("kmenuedit");
 
-    KAboutData aboutData(QStringLiteral("kmenuedit"), i18n("KDE Menu Editor"),
-                         QStringLiteral(PROJECT_VERSION), i18n(description), KAboutLicense::GPL,
+    KAboutData aboutData(QStringLiteral("kmenuedit"),
+                         i18n("KDE Menu Editor"),
+                         QStringLiteral(PROJECT_VERSION),
+                         i18n(description),
+                         KAboutLicense::GPL,
                          i18n("(C) 2000-2003, Waldo Bastian, Raffaele Sandrini, Matthias Elter"));
     aboutData.addAuthor(i18n("Waldo Bastian"), i18n("Maintainer"), QStringLiteral("bastian@kde.org"));
     aboutData.addAuthor(i18n("Raffaele Sandrini"), i18n("Previous Maintainer"), QStringLiteral("sandrini@kde.org"));
@@ -69,12 +72,8 @@ int main(int argc, char **argv)
 
     QCommandLineParser parser;
     parser.setApplicationDescription(i18n("KDE Menu Editor"));
-    parser.addPositionalArgument(QStringLiteral("menu"),
-                                 i18n("Sub menu to pre-select"),
-                                 QStringLiteral("[menu]"));
-    parser.addPositionalArgument(QStringLiteral("menu-id"),
-                                 i18n("Menu entry to pre-select"),
-                                 QStringLiteral("[menu-id]"));
+    parser.addPositionalArgument(QStringLiteral("menu"), i18n("Sub menu to pre-select"), QStringLiteral("[menu]"));
+    parser.addPositionalArgument(QStringLiteral("menu-id"), i18n("Menu entry to pre-select"), QStringLiteral("[menu-id]"));
     aboutData.setupCommandLine(&parser);
     parser.process(app);
     aboutData.processCommandLine(&parser);

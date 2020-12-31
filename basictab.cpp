@@ -21,19 +21,19 @@
 #include "basictab.h"
 
 #include <QCheckBox>
-#include <QLabel>
-#include <QGroupBox>
-#include <QVBoxLayout>
 #include <QGridLayout>
+#include <QGroupBox>
+#include <QLabel>
+#include <QVBoxLayout>
 
 #include <KConfigGroup>
-#include <KLocalizedString>
-#include <KKeySequenceWidget>
-#include <QLineEdit>
-#include <KIconButton>
 #include <KDesktopFile>
-#include <KUrlRequester>
+#include <KIconButton>
+#include <KKeySequenceWidget>
+#include <KLocalizedString>
 #include <KShell>
+#include <KUrlRequester>
+#include <QLineEdit>
 
 #include "globalaccel.h"
 
@@ -87,18 +87,18 @@ void BasicTab::initGeneralTab()
     generalTabLayout->addWidget(_execLabel, 3, 0);
     _execEdit = new KUrlRequester();
     _execEdit->lineEdit()->setAcceptDrops(false);
-    _execEdit->setWhatsThis(i18n(
-                                "Following the command, you can have several place holders which will be replaced "
-                                "with the actual values when the actual program is run:\n"
-                                "%f - a single file name\n"
-                                "%F - a list of files; use for applications that can open several local files at once\n"
-                                "%u - a single URL\n"
-                                "%U - a list of URLs\n"
-                                "%d - the folder of the file to open\n"
-                                "%D - a list of folders\n"
-                                "%i - the icon\n"
-                                "%m - the mini-icon\n"
-                                "%c - the caption"));
+    _execEdit->setWhatsThis(
+        i18n("Following the command, you can have several place holders which will be replaced "
+             "with the actual values when the actual program is run:\n"
+             "%f - a single file name\n"
+             "%F - a list of files; use for applications that can open several local files at once\n"
+             "%u - a single URL\n"
+             "%U - a list of URLs\n"
+             "%d - the folder of the file to open\n"
+             "%D - a list of folders\n"
+             "%i - the icon\n"
+             "%m - the mini-icon\n"
+             "%c - the caption"));
     _execLabel->setBuddy(_execEdit);
     generalTabLayout->addWidget(_execEdit, 3, 1, 1, 2);
 
@@ -223,8 +223,8 @@ void BasicTab::initConnections()
 
 void BasicTab::slotDisableAction()
 {
-    //disable all group at the beginning.
-    //because there is not file selected.
+    // disable all group at the beginning.
+    // because there is not file selected.
     _nameEdit->setEnabled(false);
     _descriptionEdit->setEnabled(false);
     _commentEdit->setEnabled(false);

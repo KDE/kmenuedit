@@ -20,9 +20,9 @@
 #ifndef basictab_h
 #define basictab_h
 
-#include <QTabWidget>
-#include <QKeySequence>
 #include <KService>
+#include <QKeySequence>
+#include <QTabWidget>
 
 class KKeySequenceWidget;
 class QLineEdit;

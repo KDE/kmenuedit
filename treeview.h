@@ -23,8 +23,8 @@
 #ifndef treeview_h
 #define treeview_h
 
-#include <QTreeWidget>
 #include <QMimeData>
+#include <QTreeWidget>
 
 #include <KService>
 #include <KServiceGroup>
@@ -141,7 +141,7 @@ public:
 
     void load();
 
-    //virtual void paintCell(QPainter * p, const QColorGroup & cg, int column, int width, int align);
+    // virtual void paintCell(QPainter * p, const QColorGroup & cg, int column, int width, int align);
 
 private:
     void update();

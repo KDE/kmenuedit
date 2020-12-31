@@ -19,30 +19,30 @@
  */
 #include "kmenuedit.h"
 
+#include <QFrame>
 #include <QSplitter>
 #include <QVBoxLayout>
-#include <QFrame>
 
-#include <QAction>
 #include <KActionCollection>
 #include <KActionMenu>
-#include <QIcon>
 #include <KLocalizedString>
-#include <KXMLGUIFactory>
 #include <KMessageBox>
 #include <KService>
 #include <KStandardAction>
 #include <KStandardShortcut>
 #include <KTreeWidgetSearchLine>
+#include <KXMLGUIFactory>
+#include <QAction>
+#include <QIcon>
 #include <sonnet/configdialog.h>
 
-#include "treeview.h"
 #include "basictab.h"
-#include "preferencesdlg.h"
-#include "kmenueditadaptor.h"
 #include "configurationmanager.h"
+#include "kmenueditadaptor.h"
+#include "preferencesdlg.h"
+#include "treeview.h"
 
-KMenuEdit::KMenuEdit ()
+KMenuEdit::KMenuEdit()
     : KXmlGuiWindow(nullptr)
 {
     // dbus
@@ -166,11 +166,9 @@ void KMenuEdit::setupView()
     connect(m_basicTab, SIGNAL(changed(MenuEntryInfo*)), m_tree, SLOT(currentDataChanged(MenuEntryInfo*)));
     // clang-format on
 
-    connect(m_basicTab, &BasicTab::findServiceShortcut,
-            m_tree, &TreeView::findServiceShortcut);
+    connect(m_basicTab, &BasicTab::findServiceShortcut, m_tree, &TreeView::findServiceShortcut);
 
-    connect(m_searchLine, &KTreeWidgetSearchLine::searchUpdated,
-            m_tree, &TreeView::searchUpdated);
+    connect(m_searchLine, &KTreeWidgetSearchLine::searchUpdated, m_tree, &TreeView::searchUpdated);
     // restore splitter sizes
     QList<int> sizes = ConfigurationManager::getInstance()->getSplitterSizes();
     if (sizes.isEmpty()) {
@@ -206,7 +204,7 @@ void KMenuEdit::slotChangeView()
     if (!m_splitter) {
         setupView();
     }
-    setupGUI(KXmlGuiWindow::ToolBar|Keys|Save|Create, QStringLiteral("kmenueditui.rc"));
+    setupGUI(KXmlGuiWindow::ToolBar | Keys | Save | Create, QStringLiteral("kmenueditui.rc"));
 
     m_tree->setViewMode(m_showHidden);
     m_basicTab->updateHiddenEntry(m_showHidden);
@@ -228,7 +226,8 @@ bool KMenuEdit::queryClose()
                                              i18n("You have made changes to the menu.\n"
                                                   "Do you want to save the changes or discard them?"),
                                              i18n("Save Menu Changes?"),
-                                             KStandardGuiItem::save(), KStandardGuiItem::discard());
+                                             KStandardGuiItem::save(),
+                                             KStandardGuiItem::discard());
 
     switch (result) {
     case KMessageBox::Yes:

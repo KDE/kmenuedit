@@ -18,14 +18,14 @@
  */
 #include "klinespellchecking.h"
 
-#include <QMenu>
 #include <QContextMenuEvent>
+#include <QMenu>
 
-#include <KStandardAction>
 #include <KActionCollection>
+#include <KStandardAction>
 #include <QAction>
-#include <sonnet/dialog.h>
 #include <sonnet/backgroundchecker.h>
+#include <sonnet/dialog.h>
 
 KLineSpellChecking::KLineSpellChecking(QWidget *parent)
     : KLineEdit(parent)
@@ -91,8 +91,7 @@ void KLineSpellChecking::contextMenuEvent(QContextMenuEvent *e)
         return;
     }
 
-    if (echoMode() == QLineEdit::Normal
-        && !isReadOnly()) {
+    if (echoMode() == QLineEdit::Normal && !isReadOnly()) {
         popup->addSeparator();
 
         popup->addAction(m_spellAction);

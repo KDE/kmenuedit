@@ -19,14 +19,14 @@
 
 #include "preferencesdlg.h"
 
-#include <QHBoxLayout>
 #include <QCheckBox>
 #include <QGroupBox>
+#include <QHBoxLayout>
 #include <QPushButton>
 
+#include "configurationmanager.h"
 #include <KLocalizedString>
 #include <sonnet/configwidget.h>
-#include "configurationmanager.h"
 
 PreferencesDialog::PreferencesDialog(QWidget *parent)
     : KPageDialog(parent)

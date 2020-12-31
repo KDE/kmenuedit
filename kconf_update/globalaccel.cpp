@@ -29,8 +29,7 @@
 int main(int argc, char **argv)
 {
     QCoreApplication app(argc, argv);
-    QDBusInterface khotkeys(QStringLiteral("org.kde.kded5"), QStringLiteral("/modules/khotkeys"),
-        QStringLiteral("org.kde.khotkeys"));
+    QDBusInterface khotkeys(QStringLiteral("org.kde.kded5"), QStringLiteral("/modules/khotkeys"), QStringLiteral("org.kde.khotkeys"));
     khotkeys.call(QStringLiteral("declareConfigOutDated"));
     KConfig khotkeysrc(QStringLiteral("khotkeysrc"), KConfig::SimpleConfig);
     const int dataCount = KConfigGroup(&khotkeysrc, "Data").readEntry("DataCount", 0);
@@ -57,7 +56,7 @@ int main(int argc, char **argv)
         }
         const QString storageId = KConfigGroup(&khotkeysrc, groupName + QStringLiteral("Actions0")).readEntry("CommandURL");
         const QString id = KConfigGroup(&khotkeysrc, groupName + QStringLiteral("Triggers0")).readEntry("Uuid");
-        //ask globalaccel about the current shortcut rather than parsing it ourselves
+        // ask globalaccel about the current shortcut rather than parsing it ourselves
         const QList<QKeySequence> shortcut = KGlobalAccel::self()->globalShortcut(QStringLiteral("khotkeys"), id);
         QAction action;
         action.setObjectName(id);

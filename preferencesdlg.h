@@ -26,7 +26,8 @@ class SpellCheckingPage;
 class MiscPage;
 class QCheckBox;
 
-namespace Sonnet {
+namespace Sonnet
+{
 class ConfigWidget;
 }
 
@@ -50,6 +51,7 @@ class SpellCheckingPage : public QWidget
 public:
     explicit SpellCheckingPage(QWidget *);
     void saveOptions();
+
 private:
     Sonnet::ConfigWidget *m_confPage = nullptr;
 };
@@ -60,6 +62,7 @@ class MiscPage : public QWidget
 public:
     explicit MiscPage(QWidget *);
     void saveOptions();
+
 private:
     QCheckBox *m_showHiddenEntries = nullptr;
 };
