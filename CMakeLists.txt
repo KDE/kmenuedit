@@ -64,8 +64,8 @@ add_executable( kmenuedit ${kmenuedit_KDEINIT_SRCS})
 target_compile_definitions(kmenuedit PRIVATE -DPROJECT_VERSION="${PROJECT_VERSION}")
 
 target_link_libraries(kmenuedit
-    Qt5::DBus
-    Qt5::Xml
+    Qt::DBus
+    Qt::Xml
     KF5::DBusAddons
     KF5::GlobalAccel
     KF5::I18n
