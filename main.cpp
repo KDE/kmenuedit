@@ -1,7 +1,7 @@
 /*
  *   SPDX-FileCopyrightText: 2000 Matthias Elter <elter@kde.org>
- *   SPDX-FileCopyrightText: 2001-2002 Raffaele Sandrini <sandrini@kde.org)
- *   SPDX-FileCopyrightText: 2008 Montel Laurent <montel@kde.org)
+ *   SPDX-FileCopyrightText: 2001-2002 Raffaele Sandrini <sandrini@kde.org>
+ *   SPDX-FileCopyrightText: 2008 Montel Laurent <montel@kde.org>
  *
  *   SPDX-License-Identifier: GPL-2.0-or-later
  *
