@@ -66,7 +66,7 @@ void KMenuEdit::setupActions()
 
     // "sort selection" menu
     KActionMenu *sortMenu = new KActionMenu(QIcon::fromTheme(QStringLiteral("view-sort-ascending")), i18n("&Sort"), this);
-    sortMenu->setDelayed(false);
+    sortMenu->setPopupMode(QToolButton::InstantPopup);
     actionCollection()->addAction(SORT_ACTION_NAME, sortMenu);
     action = actionCollection()->addAction(SORT_BY_NAME_ACTION_NAME);
     action->setText(i18n("&Sort selection by Name"));
