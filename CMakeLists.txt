@@ -1,5 +1,5 @@
 project(kmenuedit)
-set(PROJECT_VERSION "5.22.0")
+set(PROJECT_VERSION "5.22.1")
 
 cmake_minimum_required(VERSION 3.16)
 
