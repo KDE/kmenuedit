@@ -704,7 +704,11 @@ void TreeView::startDrag(Qt::DropActions supportedActions)
     drag->exec(supportedActions, Qt::MoveAction);
 }
 
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
 QMimeData *TreeView::mimeData(const QList<QTreeWidgetItem *> items) const
+#else
+QMimeData *TreeView::mimeData(const QList<QTreeWidgetItem *> &items) const
+#endif
 {
     if (items.isEmpty()) {
         return nullptr;
