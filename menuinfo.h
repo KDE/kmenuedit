@@ -45,7 +45,7 @@ public:
     {
     }
 
-    ~MenuFolderInfo();
+    ~MenuFolderInfo() override;
     // Add separator
     void add(MenuSeparatorInfo *, bool initial = false);
 
@@ -163,7 +163,7 @@ public:
         icon = service->icon();
     }
 
-    ~MenuEntryInfo();
+    ~MenuEntryInfo() override;
 
     void setCaption(const QString &_caption);
     void setDescription(const QString &_description);

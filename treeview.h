@@ -49,7 +49,7 @@ class TreeItem : public QTreeWidgetItem
 public:
     TreeItem(QTreeWidgetItem *parent, QTreeWidgetItem *after, const QString &menuId, bool __init = false);
     TreeItem(QTreeWidget *parent, QTreeWidgetItem *after, const QString &menuId, bool __init = false);
-    ~TreeItem();
+    ~TreeItem() override;
     static bool itemNameLessThan(QTreeWidgetItem *item1, QTreeWidgetItem *item2);
     static bool itemDescriptionLessThan(QTreeWidgetItem *item1, QTreeWidgetItem *item2);
 
