@@ -52,7 +52,25 @@ add_subdirectory( pixmaps )
 add_subdirectory( doc )
 add_subdirectory(kconf_update)
 
-set(kmenueditcommon_STAT_SRCS preferencesdlg.cpp klinespellchecking.cpp basictab.cpp treeview.cpp kmenuedit.cpp menufile.cpp menuinfo.cpp configurationmanager.cpp globalaccel.cpp)
+set(kmenueditcommon_STAT_SRCS basictab.cpp
+    basictab.h
+    configurationmanager.cpp
+    configurationmanager.h
+    globalaccel.cpp
+    globalaccel.h
+    klinespellchecking.cpp
+    klinespellchecking.h
+    kmenuedit.cpp
+    kmenuedit.h
+    main.cpp
+    menufile.cpp
+    menufile.h
+    menuinfo.cpp
+    menuinfo.h
+    preferencesdlg.cpp
+    preferencesdlg.h
+    treeview.cpp
+    treeview.h)
 ########### next target ###############
 qt_add_dbus_adaptor( kmenueditcommon_STAT_SRCS org.kde.kmenuedit.xml kmenuedit.h KMenuEdit)
 
