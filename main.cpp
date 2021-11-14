@@ -16,8 +16,6 @@
 #include <QApplication>
 #include <QCommandLineParser>
 
-static const char description[] = I18N_NOOP("KDE menu editor");
-
 static KMenuEdit *menuEdit = nullptr;
 
 class KMenuApplication : public QApplication
@@ -47,7 +45,7 @@ int main(int argc, char **argv)
     KAboutData aboutData(QStringLiteral("kmenuedit"),
                          i18n("KDE Menu Editor"),
                          QStringLiteral(PROJECT_VERSION),
-                         i18n(description),
+                         i18n("KDE menu editor"),
                          KAboutLicense::GPL,
                          i18n("(C) 2000-2003, Waldo Bastian, Raffaele Sandrini, Matthias Elter"));
     aboutData.addAuthor(i18n("Waldo Bastian"), i18n("Maintainer"), QStringLiteral("bastian@kde.org"));
