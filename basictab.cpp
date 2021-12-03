@@ -356,11 +356,7 @@ void BasicTab::setEntryInfo(MenuEntryInfo *entryInfo)
         _hiddenEntryCB->setChecked(false);
     }
 
-    if (df->desktopGroup().readEntry("Terminal", 0) == 1) {
-        _terminalCB->setChecked(true);
-    } else {
-        _terminalCB->setChecked(false);
-    }
+    _terminalCB->setChecked(df->desktopGroup().readEntry("Terminal", false));
 
     _userCB->setChecked(df->desktopGroup().readEntry("X-KDE-SubstituteUID", false));
 
@@ -381,14 +377,10 @@ void BasicTab::apply()
         dg.writeEntry("Comment", _commentEdit->text());
         dg.writeEntry("Exec", _execEdit->lineEdit()->text());
 
-        dg.writePathEntry("Path", _pathEdit->lineEdit()->text());
+        // NOT writePathEntry, it writes the entry with non-XDG-compliant flag: Path[$e]
+        dg.writeEntry("Path", _pathEdit->lineEdit()->text());
 
-        if (_terminalCB->isChecked()) {
-            dg.writeEntry("Terminal", 1);
-        } else {
-            dg.writeEntry("Terminal", 0);
-        }
-
+        dg.writeEntry("Terminal", _terminalCB->isChecked());
         dg.writeEntry("TerminalOptions", _terminalOptionsEdit->text());
         dg.writeEntry("X-KDE-SubstituteUID", _userCB->isChecked());
         dg.writeEntry("X-KDE-Username", _userNameEdit->text());
