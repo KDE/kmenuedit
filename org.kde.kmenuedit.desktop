@@ -101,3 +101,4 @@ X-DBUS-StartupType=Unique
 X-DBUS-ServiceName=org.kde.kmenuedit
 Categories=Qt;KDE;Settings;
 NoDisplay=true
+SingleMainWindow=true
