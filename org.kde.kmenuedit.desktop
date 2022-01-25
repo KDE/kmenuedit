@@ -96,9 +96,9 @@ Name[xh]=Umhleli we Menu
 Name[x-test]=xxMenu Editorxx
 Name[zh_CN]=菜单编辑器
 Name[zh_TW]=選單編輯器
+Comment=Edit how applications are presented in app launchers
 
 X-DBUS-StartupType=Unique
 X-DBUS-ServiceName=org.kde.kmenuedit
-Categories=Qt;KDE;Settings;
-NoDisplay=true
+Categories=Qt;KDE;System;
 SingleMainWindow=true
