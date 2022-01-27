@@ -4,9 +4,27 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0+</project_license>
   <name>Menu Edit</name>
+  <name xml:lang="ca">Editor de menús</name>
+  <name xml:lang="es">Editar el menú</name>
+  <name xml:lang="nl">Bewerken van menu</name>
+  <name xml:lang="sv">Menyredigering</name>
+  <name xml:lang="uk">Редагування меню</name>
+  <name xml:lang="x-test">xxMenu Editxx</name>
   <summary>Edit how applications are presented in app launchers</summary>
+  <summary xml:lang="ca">Edita com es presenten les aplicacions en els llançadors d'aplicacions</summary>
+  <summary xml:lang="es">Editar cómo se presentan las aplicaciones en los lanzadores de aplicaciones</summary>
+  <summary xml:lang="nl">Bewerk hoe toepassingen gepresenteerd worden in starters van toepassingen</summary>
+  <summary xml:lang="sv">Redigera hur program presenteras i startprogram</summary>
+  <summary xml:lang="uk">Редагування способу, у який пункти програм буде показано у програмах для запуску програм</summary>
+  <summary xml:lang="x-test">xxEdit how applications are presented in app launchersxx</summary>
   <description>
     <p>KDE Menu Edit lets you edit how your apps are presented in application launchers, such as Plasma's Application Launcher widget.</p>
+    <p xml:lang="ca">L'editor de menús del KDE permet editar com es presenten les aplicacions en els llançadors d'aplicacions, com el giny del Llançador d'aplicacions del KDE.</p>
+    <p xml:lang="es">Editar el menú de KDE le permite modificar cómo se presentan las aplicaciones en los lanzadores de aplicaciones, como el widget del «Lanzador de aplicaciones» de Plasma.</p>
+    <p xml:lang="nl">KDE Bewerken van menu laat u bewerken hoe uw toepassingen gepresenteerd worden in starters van toepassingen, zoals het widget van Starter van toepassingen van Plasma.</p>
+    <p xml:lang="sv">KDE:s Menyredigering låter dig redigera hur program presenteras i startprogram, såsom Plasmas grafiska komponent för programstart.</p>
+    <p xml:lang="uk">«Редагування меню KDE» надає вам змогу визначити, у який спосіб буде показано пункти програм у програмах для запуску програм, зокрема віджеті запуску програм Плазми.</p>
+    <p xml:lang="x-test">xxKDE Menu Edit lets you edit how your apps are presented in application launchers, such as Plasma's Application Launcher widget.xx</p>
   </description>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=kmenuedit</url>
   <project_group>KDE</project_group>
