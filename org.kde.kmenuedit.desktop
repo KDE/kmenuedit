@@ -97,6 +97,12 @@ Name[x-test]=xxMenu Editorxx
 Name[zh_CN]=菜单编辑器
 Name[zh_TW]=選單編輯器
 Comment=Edit how applications are presented in app launchers
+Comment[ca]=Edita com es presenten les aplicacions en els llançadors d'aplicacions
+Comment[es]=Editar cómo se presentan las aplicaciones en los lanzadores de aplicaciones
+Comment[nl]=Bewerk hoe toepassingen gepresenteerd worden in starters van toepassingen
+Comment[sv]=Redigera hur program presenteras i startprogram
+Comment[uk]=Редагування способу, у який пункти програм буде показано у програмах для запуску програм
+Comment[x-test]=xxEdit how applications are presented in app launchersxx
 
 X-DBUS-StartupType=Unique
 X-DBUS-ServiceName=org.kde.kmenuedit
