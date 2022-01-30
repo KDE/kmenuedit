@@ -7,8 +7,10 @@
   <name xml:lang="ca">Editor de menús</name>
   <name xml:lang="es">Editar el menú</name>
   <name xml:lang="fr">Menu « Édition »</name>
+  <name xml:lang="ia">Menu Edit (Modifica de menu )</name>
   <name xml:lang="it">Modifica menu</name>
   <name xml:lang="nl">Bewerken van menu</name>
+  <name xml:lang="sk">Menu editor</name>
   <name xml:lang="sl">Urejevalnik menijev</name>
   <name xml:lang="sv">Menyredigering</name>
   <name xml:lang="uk">Редагування меню</name>
@@ -17,8 +19,10 @@
   <summary xml:lang="ca">Edita com es presenten les aplicacions en els llançadors d'aplicacions</summary>
   <summary xml:lang="es">Editar cómo se presentan las aplicaciones en los lanzadores de aplicaciones</summary>
   <summary xml:lang="fr">Modifier la présentation des applications dans les lanceurs d'applications</summary>
+  <summary xml:lang="ia">Modifica  como applicationes essera presentate in lanceatores de app</summary>
   <summary xml:lang="it">Modifica come le applicazioni sono presentate negli esecutori delle applicazioni</summary>
   <summary xml:lang="nl">Bewerk hoe toepassingen gepresenteerd worden in starters van toepassingen</summary>
+  <summary xml:lang="sk">Editovať, ako sa aplikácie zobrazujú v spúšťačoch aplikácií</summary>
   <summary xml:lang="sl">Uredi kako so aplikacije prikazane v zaganjalnikih programov</summary>
   <summary xml:lang="sv">Redigera hur program presenteras i startprogram</summary>
   <summary xml:lang="uk">Редагування способу, у який пункти програм буде показано у програмах для запуску програм</summary>
@@ -28,6 +32,7 @@
     <p xml:lang="ca">L'editor de menús del KDE permet editar com es presenten les aplicacions en els llançadors d'aplicacions, com el giny del Llançador d'aplicacions del KDE.</p>
     <p xml:lang="es">Editar el menú de KDE le permite modificar cómo se presentan las aplicaciones en los lanzadores de aplicaciones, como el widget del «Lanzador de aplicaciones» de Plasma.</p>
     <p xml:lang="fr">Le menu « Édition » de KDE vous permet de modifier la présentation des applications dans les lanceurs d'applications, comme le composant graphique « Lanceur d'applications » de Plasma.</p>
+    <p xml:lang="ia">Menu Edit de KDE permitte te modifcar como tu applicationes es presentate in lanceatores de app, come le widget Application Launcher (Lanceator de application) de Plasma.</p>
     <p xml:lang="it">Modifica menu di KDE ti consente di modificare il modo in cui le tue applicazioni vengono presentate negli avviatori di applicazioni, come l'oggetto di avvio delle applicazioni di Plasma.</p>
     <p xml:lang="nl">KDE Bewerken van menu laat u bewerken hoe uw toepassingen gepresenteerd worden in starters van toepassingen, zoals het widget van Starter van toepassingen van Plasma.</p>
     <p xml:lang="sl">KDE Menu Edit vam omogoča urejanje, kako so aplikacije prikazane v zaganjalnikih kot npr. gradnik Plasma's Application Launcher.</p>
