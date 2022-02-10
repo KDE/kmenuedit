@@ -109,6 +109,7 @@ Comment[ro]=Modifică felul în care aplicațiile sunt prezentate în lansatorii
 Comment[sl]=Uredi kako so aplikacije predstavljene v zaganjalnikih programov
 Comment[sv]=Redigera hur program presenteras i startprogram
 Comment[uk]=Редагування способу, у який пункти програм буде показано у програмах для запуску програм
+Comment[vi]=Chỉnh sửa cách các ứng dụng được trình bày trong các trình khởi chạy ứng dụng
 Comment[x-test]=xxEdit how applications are presented in app launchersxx
 
 X-DBUS-StartupType=Unique
