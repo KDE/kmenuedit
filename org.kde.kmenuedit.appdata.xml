@@ -18,6 +18,7 @@
   <name xml:lang="sl">Urejevalnik menijev</name>
   <name xml:lang="sv">Menyredigering</name>
   <name xml:lang="uk">Редагування меню</name>
+  <name xml:lang="vi">Chỉnh sửa trình đơn</name>
   <name xml:lang="x-test">xxMenu Editxx</name>
   <summary>Edit how applications are presented in app launchers</summary>
   <summary xml:lang="ar">حرر كيف تُعرض البرامج في مطلقات البرامج</summary>
@@ -34,6 +35,7 @@
   <summary xml:lang="sl">Uredi kako so aplikacije prikazane v zaganjalnikih programov</summary>
   <summary xml:lang="sv">Redigera hur program presenteras i startprogram</summary>
   <summary xml:lang="uk">Редагування способу, у який пункти програм буде показано у програмах для запуску програм</summary>
+  <summary xml:lang="vi">Chỉnh sửa cách các ứng dụng được trình bày trong các trình khởi chạy ứng dụng</summary>
   <summary xml:lang="x-test">xxEdit how applications are presented in app launchersxx</summary>
   <description>
     <p>KDE Menu Edit lets you edit how your apps are presented in application launchers, such as Plasma's Application Launcher widget.</p>
@@ -50,6 +52,7 @@
     <p xml:lang="sl">KDE Menu Edit vam omogoča urejanje, kako so aplikacije prikazane v zaganjalnikih kot npr. gradnik Plasma's Application Launcher.</p>
     <p xml:lang="sv">KDE:s Menyredigering låter dig redigera hur program presenteras i startprogram, såsom Plasmas grafiska komponent för programstart.</p>
     <p xml:lang="uk">«Редагування меню KDE» надає вам змогу визначити, у який спосіб буде показано пункти програм у програмах для запуску програм, зокрема віджеті запуску програм Плазми.</p>
+    <p xml:lang="vi">Trình chỉnh sửa trình đơn KDE cho phép bạn chỉnh sửa cách các ứng dụng được trình bày trong các trình khởi chạy ứng dụng, chẳng hạn như phụ kiện "Trình khởi chạy ứng dụng" của Plasma.</p>
     <p xml:lang="x-test">xxKDE Menu Edit lets you edit how your apps are presented in application launchers, such as Plasma's Application Launcher widget.xx</p>
   </description>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=kmenuedit</url>
