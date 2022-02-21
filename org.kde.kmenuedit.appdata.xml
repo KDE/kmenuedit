@@ -12,6 +12,7 @@
   <name xml:lang="fr">Menu « Édition »</name>
   <name xml:lang="ia">Menu Edit (Modifica de menu )</name>
   <name xml:lang="it">Modifica menu</name>
+  <name xml:lang="ko">메뉴 편집</name>
   <name xml:lang="nl">Bewerken van menu</name>
   <name xml:lang="pt-BR">Editor de menu</name>
   <name xml:lang="ro">Redactare meniu</name>
@@ -30,6 +31,7 @@
   <summary xml:lang="fr">Modifier la présentation des applications dans les lanceurs d'applications</summary>
   <summary xml:lang="ia">Modifica  como applicationes essera presentate in lanceatores de app</summary>
   <summary xml:lang="it">Modifica come le applicazioni sono presentate negli esecutori delle applicazioni</summary>
+  <summary xml:lang="ko">앱 실행기에 표시되는 프로그램 편집</summary>
   <summary xml:lang="nl">Bewerk hoe toepassingen gepresenteerd worden in starters van toepassingen</summary>
   <summary xml:lang="pt-BR">Editar como as aplicações são mostradas nos lançadores de aplicativos</summary>
   <summary xml:lang="ro">Modifică felul în care aplicațiile sunt prezentate în lansatorii de aplicații</summary>
@@ -49,6 +51,7 @@
     <p xml:lang="fr">Le menu « Édition » de KDE vous permet de modifier la présentation des applications dans les lanceurs d'applications, comme le composant graphique « Lanceur d'applications » de Plasma.</p>
     <p xml:lang="ia">Menu Edit de KDE permitte te modifcar como tu applicationes es presentate in lanceatores de app, come le widget Application Launcher (Lanceator de application) de Plasma.</p>
     <p xml:lang="it">Modifica menu di KDE ti consente di modificare il modo in cui le tue applicazioni vengono presentate negli avviatori di applicazioni, come l'oggetto di avvio delle applicazioni di Plasma.</p>
+    <p xml:lang="ko">KDE 메뉴 편집기를 사용하여 Plasma 프로그램 실행기 위젯 등 프로그램 실행기에 앱이 표시되는 방법을 편집할 수 있습니다.</p>
     <p xml:lang="nl">KDE Bewerken van menu laat u bewerken hoe uw toepassingen gepresenteerd worden in starters van toepassingen, zoals het widget van Starter van toepassingen van Plasma.</p>
     <p xml:lang="pt-BR">O editor de menu do KDE permite a você editar como seus aplicativos são mostrados nos lançadores de aplicativos como o widget do lançador de aplicativos do Plasma</p>
     <p xml:lang="ro">„Redactare meniu” KDE vă permite să modificați felul în care aplicațiile sunt prezentate în lansatori de aplicații, cum ar fi controlul grafic Plasma „Lansator de aplicații”.</p>
