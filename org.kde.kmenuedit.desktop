@@ -99,6 +99,7 @@ Name[zh_TW]=選單編輯器
 Comment=Edit how applications are presented in app launchers
 Comment[ar]=حرر كيف تُعرض البرامج في مطلقات البرامج
 Comment[ca]=Edita com es presenten les aplicacions en els llançadors d'aplicacions
+Comment[de]=Bearbeiten, wie Anwendungen im Anwendungsstarter dargestellt werden
 Comment[en_GB]=Edit how applications are presented in app launchers
 Comment[es]=Editar cómo se presentan las aplicaciones en los lanzadores de aplicaciones
 Comment[fi]=Muokkaa miltä sovellukset näyttävät sovelluskäynnistimissä
@@ -114,6 +115,7 @@ Comment[sv]=Redigera hur program presenteras i startprogram
 Comment[uk]=Редагування способу, у який пункти програм буде показано у програмах для запуску програм
 Comment[vi]=Chỉnh sửa cách các ứng dụng được trình bày trong các trình khởi chạy ứng dụng
 Comment[x-test]=xxEdit how applications are presented in app launchersxx
+Comment[zh_CN]=编辑应用程序在应用程序启动器中的显示方式
 
 X-DBUS-StartupType=Unique
 X-DBUS-ServiceName=org.kde.kmenuedit
