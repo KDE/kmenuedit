@@ -22,6 +22,7 @@
   <name xml:lang="uk">Редагування меню</name>
   <name xml:lang="vi">Chỉnh sửa trình đơn</name>
   <name xml:lang="x-test">xxMenu Editxx</name>
+  <name xml:lang="zh-CN">菜单编辑器</name>
   <summary>Edit how applications are presented in app launchers</summary>
   <summary xml:lang="ar">حرر كيف تُعرض البرامج في مطلقات البرامج</summary>
   <summary xml:lang="ca">Edita com es presenten les aplicacions en els llançadors d'aplicacions</summary>
@@ -41,6 +42,7 @@
   <summary xml:lang="uk">Редагування способу, у який пункти програм буде показано у програмах для запуску програм</summary>
   <summary xml:lang="vi">Chỉnh sửa cách các ứng dụng được trình bày trong các trình khởi chạy ứng dụng</summary>
   <summary xml:lang="x-test">xxEdit how applications are presented in app launchersxx</summary>
+  <summary xml:lang="zh-CN">编辑应用程序在应用程序启动器中的显示方式</summary>
   <description>
     <p>KDE Menu Edit lets you edit how your apps are presented in application launchers, such as Plasma's Application Launcher widget.</p>
     <p xml:lang="ar">يسمح لك محرر قائمة كدي أن تحرر كيف تُعرض البرامج في مطلقات البرامج مثل مطلق برامج بلازما.</p>
@@ -60,6 +62,7 @@
     <p xml:lang="uk">«Редагування меню KDE» надає вам змогу визначити, у який спосіб буде показано пункти програм у програмах для запуску програм, зокрема віджеті запуску програм Плазми.</p>
     <p xml:lang="vi">Trình chỉnh sửa trình đơn KDE cho phép bạn chỉnh sửa cách các ứng dụng được trình bày trong các trình khởi chạy ứng dụng, chẳng hạn như phụ kiện "Trình khởi chạy ứng dụng" của Plasma.</p>
     <p xml:lang="x-test">xxKDE Menu Edit lets you edit how your apps are presented in application launchers, such as Plasma's Application Launcher widget.xx</p>
+    <p xml:lang="zh-CN">KDE 菜单编辑器用于编辑应用程序在应用程序启动器中的显示方式，例如 Plasma 应用程序起动器部件等。</p>
   </description>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=kmenuedit</url>
   <project_group>KDE</project_group>
