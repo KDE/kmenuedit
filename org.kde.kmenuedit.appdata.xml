@@ -6,6 +6,7 @@
   <name>Menu Edit</name>
   <name xml:lang="ar">محرر القائمة</name>
   <name xml:lang="ca">Editor de menús</name>
+  <name xml:lang="ca-valencia">Editor de menús</name>
   <name xml:lang="en-GB">Menu Edit</name>
   <name xml:lang="es">Editar el menú</name>
   <name xml:lang="fi">Valikkomuokkain</name>
@@ -26,6 +27,7 @@
   <summary>Edit how applications are presented in app launchers</summary>
   <summary xml:lang="ar">حرر كيف تُعرض البرامج في مطلقات البرامج</summary>
   <summary xml:lang="ca">Edita com es presenten les aplicacions en els llançadors d'aplicacions</summary>
+  <summary xml:lang="ca-valencia">Edita com es presenten les aplicacions en els llançadors d'aplicacions</summary>
   <summary xml:lang="cs">Upravit jak budou aplikace zobrazovány ve spouštěčích</summary>
   <summary xml:lang="en-GB">Edit how applications are presented in app launchers</summary>
   <summary xml:lang="es">Editar cómo se presentan las aplicaciones en los lanzadores de aplicaciones</summary>
@@ -48,6 +50,7 @@
     <p>KDE Menu Edit lets you edit how your apps are presented in application launchers, such as Plasma's Application Launcher widget.</p>
     <p xml:lang="ar">يسمح لك محرر قائمة كدي أن تحرر كيف تُعرض البرامج في مطلقات البرامج مثل مطلق برامج بلازما.</p>
     <p xml:lang="ca">L'editor de menús del KDE permet editar com es presenten les aplicacions en els llançadors d'aplicacions, com el giny del Llançador d'aplicacions del KDE.</p>
+    <p xml:lang="ca-valencia">L'editor de menús del KDE permet editar com es presenten les aplicacions en els llançadors d'aplicacions, com el giny del Llançador d'aplicacions del KDE.</p>
     <p xml:lang="en-GB">KDE Menu Edit lets you edit how your apps are presented in application launchers, such as Plasma's Application Launcher widget.</p>
     <p xml:lang="es">Editar el menú de KDE le permite modificar cómo se presentan las aplicaciones en los lanzadores de aplicaciones, como el widget del «Lanzador de aplicaciones» de Plasma.</p>
     <p xml:lang="fi">KDE:n valikkomuokkaimella voit muokata sitä, miten sovellukset esitetään sovelluskäynnistimissä kuten Plasman käynnistinsovelmassa.</p>
