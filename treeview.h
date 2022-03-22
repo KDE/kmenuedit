@@ -266,8 +266,11 @@ public:
     TreeItem *item() const;
 
 protected:
+#if (QT_VERSION < QT_VERSION_CHECK(6, 0, 0))
     QVariant retrieveData(const QString &mimeType, QVariant::Type type) const override;
-
+#else
+    QVariant retrieveData(const QString &mimeType, QMetaType type) const override;
+#endif
 private:
     TreeItem *m_item = nullptr;
 };
