@@ -39,6 +39,7 @@ find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
     Sonnet
     DocTools
     GlobalAccel
+    WindowSystem
 )
 
 add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0x050f00)
@@ -94,6 +95,7 @@ target_link_libraries(kmenuedit
     KF5::SonnetCore
     KF5::SonnetUi
     KF5::XmlGui
+    KF5::WindowSystem
 )
 
 # add clang-format target for all our real source files

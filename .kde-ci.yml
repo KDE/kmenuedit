@@ -14,3 +14,4 @@ Dependencies:
     'frameworks/ksonnet': '@stable'
     'frameworks/kdoctools': '@stable'
     'frameworks/kglobalaccel': '@stable'
+    'frameworks/kwindowsystem': '@stable'

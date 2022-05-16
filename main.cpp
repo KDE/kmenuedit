@@ -12,13 +12,12 @@
 #if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
 #include <Kdelibs4ConfigMigrator>
 #endif
+#include <KWindowSystem>
 #include <kdbusservice.h>
 
 #include "kmenuedit.h"
 #include <QApplication>
 #include <QCommandLineParser>
-
-static KMenuEdit *menuEdit = nullptr;
 
 class KMenuApplication : public QApplication
 {
@@ -67,15 +66,28 @@ int main(int argc, char **argv)
     parser.process(app);
     aboutData.processCommandLine(&parser);
 
-    const auto args = parser.positionalArguments();
+    auto *menuEdit = new KMenuEdit();
 
-    menuEdit = new KMenuEdit();
-    if (!args.isEmpty()) {
-        menuEdit->selectMenu(args.at(0));
-        if (args.count() > 1) {
-            menuEdit->selectMenuEntry(args.at(1));
+    auto useArgs = [menuEdit](const QCommandLineParser &parser) {
+        const QStringList args = parser.positionalArguments();
+        if (!args.isEmpty()) {
+            menuEdit->selectMenu(args.at(0));
+            if (args.count() > 1) {
+                menuEdit->selectMenuEntry(args.at(1));
+            }
         }
-    }
+    };
+
+    useArgs(parser);
+
+    QObject::connect(&service, &KDBusService::activateRequested, menuEdit, [useArgs, &parser, menuEdit](const QStringList &args, const QString & /*workDir*/) {
+        parser.parse(args);
+        useArgs(parser);
+
+        KWindowSystem::updateStartupId(menuEdit->windowHandle());
+        KWindowSystem::activateWindow(menuEdit->windowHandle());
+    });
+
     menuEdit->show();
 
     return app.exec();
