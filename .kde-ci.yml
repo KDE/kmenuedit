@@ -15,3 +15,5 @@ Dependencies:
     'frameworks/kdoctools': '@stable'
     'frameworks/kglobalaccel': '@stable'
     'frameworks/kwindowsystem': '@stable'
+Options:
+  require-passing-tests-on: [ 'Linux', 'FreeBSD']
