@@ -1716,9 +1716,9 @@ bool TreeView::save()
     if (success) {
         KBuildSycocaProgressDialog::rebuildKSycoca(this);
     } else {
-        KMessageBox::sorry(this,
-                           QStringLiteral("<qt>") + i18n("Menu changes could not be saved because of the following problem:") + QStringLiteral("<br><br>") +
-                               m_menuFile->error() + QStringLiteral("</qt>"));
+        KMessageBox::error(this,
+                           QStringLiteral("<qt>") + i18n("Menu changes could not be saved because of the following problem:") + QStringLiteral("<br><br>")
+                               + m_menuFile->error() + QStringLiteral("</qt>"));
     }
 
     sendReloadMenu();
