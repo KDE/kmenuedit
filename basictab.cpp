@@ -71,11 +71,17 @@ void BasicTab::initGeneralTab()
     generalTabLayout->addWidget(_commentEdit, 2, 1, 1, 2);
 
     // command
-    _execLabel = new QLabel(i18n("Co&mmand:"));
-    generalTabLayout->addWidget(_execLabel, 3, 0);
-    _execEdit = new KUrlRequester();
-    _execEdit->lineEdit()->setAcceptDrops(false);
-    _execEdit->setWhatsThis(
+    _programLabel = new QLabel(i18nc("@label:textbox the name or path to a command-line program", "Program:"));
+    generalTabLayout->addWidget(_programLabel, 3, 0);
+    _programEdit = new KUrlRequester();
+    _programEdit->lineEdit()->setAcceptDrops(false);
+    _programLabel->setBuddy(_programEdit);
+    generalTabLayout->addWidget(_programEdit, 3, 1, 1, 2);
+
+    _argsLabel = new QLabel(i18nc("@label:textfield", "Command-Line Arguments:"));
+    generalTabLayout->addWidget(_argsLabel, 4, 0);
+    _argsEdit = new QLineEdit();
+    _argsEdit->setWhatsThis(
         i18n("Following the command, you can have several place holders which will be replaced "
              "with the actual values when the actual program is run:\n"
              "%f - a single file name\n"
@@ -87,21 +93,21 @@ void BasicTab::initGeneralTab()
              "%i - the icon\n"
              "%m - the mini-icon\n"
              "%c - the caption"));
-    _execLabel->setBuddy(_execEdit);
-    generalTabLayout->addWidget(_execEdit, 3, 1, 1, 2);
+    _argsLabel->setBuddy(_argsEdit);
+    generalTabLayout->addWidget(_argsEdit, 4, 1, 1, 2);
 
     // launch feedback
     _launchCB = new QCheckBox(i18n("Enable &launch feedback"));
-    generalTabLayout->addWidget(_launchCB, 4, 0, 1, 3);
+    generalTabLayout->addWidget(_launchCB, 5, 0, 1, 3);
 
     // KDE visibility
     _onlyShowInKdeCB = new QCheckBox(i18n("Only show when logged into a Plasma session"));
-    generalTabLayout->addWidget(_onlyShowInKdeCB, 5, 0, 1, 3);
+    generalTabLayout->addWidget(_onlyShowInKdeCB, 6, 0, 1, 3);
 
     // hidden entry
     _hiddenEntryCB = new QCheckBox(i18n("Hidden entry"));
     _hiddenEntryCB->hide();
-    generalTabLayout->addWidget(_hiddenEntryCB, 6, 0, 1, 3);
+    generalTabLayout->addWidget(_hiddenEntryCB, 7, 0, 1, 3);
 
     // icon
     _iconButton = new KIconButton();
@@ -193,8 +199,9 @@ void BasicTab::initConnections()
     connect(_nameEdit, &QLineEdit::textChanged, this, &BasicTab::slotChanged);
     connect(_descriptionEdit, &KLineSpellChecking::textChanged, this, &BasicTab::slotChanged);
     connect(_commentEdit, &KLineSpellChecking::textChanged, this, &BasicTab::slotChanged);
-    connect(_execEdit, &KUrlRequester::textChanged, this, &BasicTab::slotChanged);
-    connect(_execEdit, &KUrlRequester::urlSelected, this, &BasicTab::slotExecSelected);
+    connect(_programEdit, &KUrlRequester::textChanged, this, &BasicTab::slotChanged);
+    connect(_argsEdit, &QLineEdit::textChanged, this, &BasicTab::slotChanged);
+    connect(_programEdit, &KUrlRequester::urlSelected, this, &BasicTab::slotExecSelected);
     connect(_launchCB, &QCheckBox::clicked, this, &BasicTab::launchcb_clicked);
     connect(_onlyShowInKdeCB, &QCheckBox::clicked, this, &BasicTab::onlyshowcb_clicked);
     connect(_hiddenEntryCB, &QCheckBox::clicked, this, &BasicTab::hiddenentrycb_clicked);
@@ -216,14 +223,16 @@ void BasicTab::slotDisableAction()
     _nameEdit->setEnabled(false);
     _descriptionEdit->setEnabled(false);
     _commentEdit->setEnabled(false);
-    _execEdit->setEnabled(false);
+    _programEdit->setEnabled(false);
+    _argsEdit->setEnabled(false);
     _launchCB->setEnabled(false);
     _onlyShowInKdeCB->setEnabled(false);
     _hiddenEntryCB->setEnabled(false);
     _nameLabel->setEnabled(false);
     _descriptionLabel->setEnabled(false);
     _commentLabel->setEnabled(false);
-    _execLabel->setEnabled(false);
+    _programLabel->setEnabled(false);
+    _argsLabel->setEnabled(false);
     _workPathGroup->setEnabled(false);
     _terminalGroup->setEnabled(false);
     _userGroup->setEnabled(false);
@@ -239,14 +248,16 @@ void BasicTab::enableWidgets(bool isDF, bool isDeleted)
     _descriptionEdit->setEnabled(!isDeleted);
     _commentEdit->setEnabled(!isDeleted);
     _iconButton->setEnabled(!isDeleted);
-    _execEdit->setEnabled(isDF && !isDeleted);
+    _programEdit->setEnabled(isDF && !isDeleted);
+    _argsEdit->setEnabled(isDF && !isDeleted);
     _launchCB->setEnabled(isDF && !isDeleted);
     _onlyShowInKdeCB->setEnabled(isDF && !isDeleted);
     _hiddenEntryCB->setEnabled(isDF && !isDeleted);
     _nameLabel->setEnabled(!isDeleted);
     _descriptionLabel->setEnabled(!isDeleted);
     _commentLabel->setEnabled(!isDeleted);
-    _execLabel->setEnabled(isDF && !isDeleted);
+    _programLabel->setEnabled(isDF && !isDeleted);
+    _argsLabel->setEnabled(isDF && !isDeleted);
 
     _workPathGroup->setEnabled(isDF && !isDeleted);
     _terminalGroup->setEnabled(isDF && !isDeleted);
@@ -274,7 +285,8 @@ void BasicTab::setFolderInfo(MenuFolderInfo *folderInfo)
     _iconButton->setIcon(folderInfo->icon);
 
     // clean all disabled fields and return
-    _execEdit->lineEdit()->clear();
+    _programEdit->lineEdit()->clear();
+    _argsEdit->clear();
     _pathEdit->lineEdit()->clear();
     _terminalOptionsEdit->clear();
     _userNameEdit->clear();
@@ -304,7 +316,8 @@ void BasicTab::setEntryInfo(MenuEntryInfo *entryInfo)
         // key binding part
         _keyBindingEdit->clearKeySequence();
 
-        _execEdit->lineEdit()->clear();
+        _programEdit->lineEdit()->clear();
+        _argsEdit->clear();
         _onlyShowInKdeCB->setChecked(false);
         _hiddenEntryCB->setChecked(false);
 
@@ -335,7 +348,14 @@ void BasicTab::setEntryInfo(MenuEntryInfo *entryInfo)
     } else {
         _keyBindingEdit->clearKeySequence();
     }
-    _execEdit->lineEdit()->setText(df->desktopGroup().readEntry("Exec"));
+
+    QStringList execLine = KShell::splitArgs(df->desktopGroup().readEntry("Exec"));
+    if (!execLine.isEmpty()) {
+        _programEdit->lineEdit()->setText(execLine.takeFirst());
+    } else {
+        _programEdit->lineEdit()->clear();
+    }
+    _argsEdit->setText(KShell::joinArgs(execLine));
 
     _pathEdit->lineEdit()->setText(df->readPath());
     _terminalOptionsEdit->setText(df->desktopGroup().readEntry("TerminalOptions"));
@@ -375,7 +395,8 @@ void BasicTab::apply()
         KDesktopFile *df = _menuEntryInfo->desktopFile();
         KConfigGroup dg = df->desktopGroup();
         dg.writeEntry("Comment", _commentEdit->text());
-        dg.writeEntry("Exec", _execEdit->lineEdit()->text());
+        QStringList programArgs = QStringList(_programEdit->lineEdit()->text()) + KShell::splitArgs(_argsEdit->text());
+        dg.writeEntry("Exec", KShell::joinArgs(programArgs));
 
         // NOT writePathEntry, it writes the entry with non-XDG-compliant flag: Path[$e]
         dg.writeEntry("Path", _pathEdit->lineEdit()->text());
@@ -454,9 +475,9 @@ void BasicTab::uidcb_clicked()
 
 void BasicTab::slotExecSelected()
 {
-    QString path = _execEdit->lineEdit()->text();
+    QString path = _programEdit->lineEdit()->text();
     if (!path.startsWith(QLatin1Char('\''))) {
-        _execEdit->lineEdit()->setText(KShell::quoteArg(path));
+        _programEdit->lineEdit()->setText(KShell::quoteArg(path));
     }
 }
 
