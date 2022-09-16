@@ -28,6 +28,7 @@
   <name xml:lang="sk">Menu editor</name>
   <name xml:lang="sl">Urejevalnik menijev</name>
   <name xml:lang="sv">Menyredigering</name>
+  <name xml:lang="ta">பட்டித் திருத்தி</name>
   <name xml:lang="tr">Menu Edit</name>
   <name xml:lang="uk">Редагування меню</name>
   <name xml:lang="vi">Chỉnh sửa trình đơn</name>
@@ -59,6 +60,7 @@
   <summary xml:lang="sk">Editovať, ako sa aplikácie zobrazujú v spúšťačoch aplikácií</summary>
   <summary xml:lang="sl">Uredi kako so aplikacije prikazane v zaganjalnikih programov</summary>
   <summary xml:lang="sv">Redigera hur program presenteras i startprogram</summary>
+  <summary xml:lang="ta">ஏவிகளில் செயலிகள் காட்டப்படும் வித‍த்தை மாற்றுங்கள்</summary>
   <summary xml:lang="tr">Uygulamaların, uygulama başlatıcılarda nice sunulduğunu düzenleyin</summary>
   <summary xml:lang="uk">Редагування способу, у який пункти програм буде показано у програмах для запуску програм</summary>
   <summary xml:lang="vi">Chỉnh sửa cách các ứng dụng được trình bày trong các trình khởi chạy ứng dụng</summary>
