@@ -15,7 +15,6 @@
 #include <KActionMenu>
 #include <KLocalizedString>
 #include <KMessageBox>
-#include <KService>
 #include <KStandardAction>
 #include <KStandardShortcut>
 #include <KTreeWidgetSearchLine>
