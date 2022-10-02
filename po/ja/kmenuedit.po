@@ -1,0 +1,388 @@
+# Translation of kmenuedit into Japanese.
+# This file is distributed under the same license as the kdebase package.
+# Noboru Sinohara <shinobo@leo.bekkoame.ne.jp>, 2002.
+# Ryuichi Kakuda <ryuk@user.script.nu>, 2004.
+# Kurose Shushi <md81@bird.email.ne.jp>, 2004.
+# Fumiaki Okushi <fumiaki@okushi.com>, 2005.
+# Yukiko Bando <ybando@k6.dion.ne.jp>, 2006, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kmenuedit\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-28 00:51+0000\n"
+"PO-Revision-Date: 2008-11-26 01:38+0900\n"
+"Last-Translator: Yukiko Bando <ybando@k6.dion.ne.jp>\n"
+"Language-Team: Japanese <kde-jp@kde.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.9.1\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Noboru Sinohara,Ryuichi Kakuda,Kurose Shushi, Fumiaki Okushi"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+"shinobo@leo.bekkoame.ne.jp,ryuk@user.script.nu,md81@bird.email.ne.jp, "
+"fumiaki@okushi.com"
+
+#: basictab.cpp:49
+#, kde-format
+msgid "&Name:"
+msgstr "名前(&N):"
+
+#: basictab.cpp:58
+#, kde-format
+msgid "&Description:"
+msgstr "説明(&D):"
+
+#: basictab.cpp:66
+#, kde-format
+msgid "&Comment:"
+msgstr "コメント(&C):"
+
+#: basictab.cpp:74
+#, kde-format
+msgctxt "@label:textbox the name or path to a command-line program"
+msgid "Program:"
+msgstr ""
+
+#: basictab.cpp:81
+#, kde-format
+msgctxt "@label:textfield"
+msgid "Command-Line Arguments:"
+msgstr ""
+
+#: basictab.cpp:85
+#, kde-format
+msgid ""
+"Following the command, you can have several place holders which will be "
+"replaced with the actual values when the actual program is run:\n"
+"%f - a single file name\n"
+"%F - a list of files; use for applications that can open several local files "
+"at once\n"
+"%u - a single URL\n"
+"%U - a list of URLs\n"
+"%d - the folder of the file to open\n"
+"%D - a list of folders\n"
+"%i - the icon\n"
+"%m - the mini-icon\n"
+"%c - the caption"
+msgstr ""
+"コマンドには以下のプレースホルダを追加できます。プレースホルダはプログラムが"
+"実行されるときに実際の値に置き換えられます:\n"
+"%f - 単一ファイル名\n"
+"%F - ファイルのリスト (一度に複数のローカルファイルを開くことのできるアプリ"
+"ケーションで使用)\n"
+"%u - 単一 URL\n"
+"%U - URL のリスト\n"
+"%d - 開くファイルを含むフォルダ\n"
+"%D - フォルダのリスト\n"
+"%i - アイコン\n"
+"%m - ミニアイコン\n"
+"%c - キャプション"
+
+#: basictab.cpp:100
+#, kde-format
+msgid "Enable &launch feedback"
+msgstr "起動フィードバックを有効にする(&L)"
+
+#: basictab.cpp:104
+#, kde-format
+msgid "Only show when logged into a Plasma session"
+msgstr ""
+
+#: basictab.cpp:108
+#, kde-format
+msgid "Hidden entry"
+msgstr "隠し項目"
+
+#: basictab.cpp:120 preferencesdlg.cpp:63
+#, kde-format
+msgid "General"
+msgstr "全般"
+
+#: basictab.cpp:132
+#, kde-format
+msgid "&Work path:"
+msgstr "作業パス(&W):"
+
+#: basictab.cpp:144
+#, kde-format
+msgid "Run in term&inal"
+msgstr "ターミナルで実行する(&I)"
+
+#: basictab.cpp:149
+#, kde-format
+msgid "Terminal &options:"
+msgstr "ターミナルオプション(&O):"
+
+#: basictab.cpp:163
+#, kde-format
+msgid "&Run as a different user"
+msgstr "別のユーザで実行する(&R)"
+
+#: basictab.cpp:168
+#, kde-format
+msgid "&Username:"
+msgstr "ユーザ名(&U):"
+
+#: basictab.cpp:182
+#, kde-format
+msgid "Current shortcut &key:"
+msgstr "現在のショートカットキー(&K):"
+
+#: basictab.cpp:193
+#, kde-format
+msgid "Advanced"
+msgstr "詳細"
+
+#: globalaccel.cpp:24
+#, kde-format
+msgid "Launch %1"
+msgstr ""
+
+#: kmenuedit.cpp:55
+#, kde-format
+msgid "&New Submenu..."
+msgstr "新しいサブメニュー(&N)..."
+
+#: kmenuedit.cpp:59
+#, kde-format
+msgid "New &Item..."
+msgstr "新しい項目(&I)..."
+
+#: kmenuedit.cpp:63
+#, kde-format
+msgid "New S&eparator"
+msgstr "新しいセパレータ(&E)"
+
+#: kmenuedit.cpp:67
+#, kde-format
+msgid "&Sort"
+msgstr ""
+
+#: kmenuedit.cpp:71
+#, fuzzy, kde-format
+#| msgid "&Description:"
+msgid "&Sort selection by Name"
+msgstr "説明(&D):"
+
+#: kmenuedit.cpp:74
+#, fuzzy, kde-format
+#| msgid "&Description:"
+msgid "&Sort selection by Description"
+msgstr "説明(&D):"
+
+#: kmenuedit.cpp:78
+#, kde-format
+msgid "&Sort all by Name"
+msgstr ""
+
+#: kmenuedit.cpp:81
+#, fuzzy, kde-format
+#| msgid "&Description:"
+msgid "&Sort all by Description"
+msgstr "説明(&D):"
+
+#: kmenuedit.cpp:87
+#, kde-format
+msgid "Move &Up"
+msgstr ""
+
+#: kmenuedit.cpp:90
+#, kde-format
+msgid "Move &Down"
+msgstr ""
+
+#: kmenuedit.cpp:98
+#, kde-format
+msgid "Restore to System Menu"
+msgstr "システムの標準メニューに戻す"
+
+#: kmenuedit.cpp:126
+#, kde-format
+msgid "Search..."
+msgstr ""
+
+#: kmenuedit.cpp:127
+#, kde-format
+msgid "Search through the list of applications below"
+msgstr ""
+
+#: kmenuedit.cpp:188
+#, kde-format
+msgid "&Delete"
+msgstr "削除(&D)"
+
+#: kmenuedit.cpp:213
+#, kde-format
+msgid ""
+"You have made changes to the menu.\n"
+"Do you want to save the changes or discard them?"
+msgstr ""
+"メニューは変更されました。\n"
+"変更を保存しますか？破棄しますか？"
+
+#: kmenuedit.cpp:215
+#, kde-format
+msgid "Save Menu Changes?"
+msgstr "メニューの変更を保存しますか？"
+
+#. i18n: ectx: Menu (file)
+#: kmenueditui.rc:7
+#, kde-format
+msgid "&File"
+msgstr "ファイル(&F)"
+
+#. i18n: ectx: Menu (edit)
+#: kmenueditui.rc:17
+#, kde-format
+msgid "&Edit"
+msgstr "編集(&E)"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: kmenueditui.rc:34
+#, kde-format
+msgid "Main Toolbar"
+msgstr "メインツールバー"
+
+#: main.cpp:31 main.cpp:48 main.cpp:62
+#, kde-format
+msgid "KDE Menu Editor"
+msgstr "KDE メニューエディタ"
+
+#: main.cpp:50
+#, kde-format
+msgid "KDE menu editor"
+msgstr "KDE メニューエディタ"
+
+#: main.cpp:52
+#, kde-format
+msgid "(C) 2000-2003, Waldo Bastian, Raffaele Sandrini, Matthias Elter"
+msgstr "(C) 2000-2003, Waldo Bastian, Raffaele Sandrini, Matthias Elter"
+
+#: main.cpp:53
+#, kde-format
+msgid "Waldo Bastian"
+msgstr "Waldo Bastian"
+
+#: main.cpp:53
+#, kde-format
+msgid "Maintainer"
+msgstr "メンテナ"
+
+#: main.cpp:54
+#, kde-format
+msgid "Raffaele Sandrini"
+msgstr "Raffaele Sandrini"
+
+#: main.cpp:54
+#, kde-format
+msgid "Previous Maintainer"
+msgstr "以前のメンテナ"
+
+#: main.cpp:55
+#, kde-format
+msgid "Matthias Elter"
+msgstr "Matthias Elter"
+
+#: main.cpp:55
+#, kde-format
+msgid "Original Author"
+msgstr "オリジナルの作者"
+
+#: main.cpp:56
+#, kde-format
+msgid "Montel Laurent"
+msgstr "Montel Laurent"
+
+#: main.cpp:63
+#, kde-format
+msgid "Sub menu to pre-select"
+msgstr "あらかじめ選択するサブメニュー"
+
+#: main.cpp:64
+#, kde-format
+msgid "Menu entry to pre-select"
+msgstr "あらかじめ選択するメニュー項目"
+
+#: menufile.cpp:94 menufile.cpp:108
+#, kde-format
+msgid "Could not write to %1"
+msgstr "%1 に書き込めませんでした"
+
+#: preferencesdlg.cpp:26
+#, fuzzy, kde-format
+#| msgid "Terminal &options:"
+msgid "General options"
+msgstr "ターミナルオプション(&O):"
+
+#: preferencesdlg.cpp:31
+#, kde-format
+msgid "Spell Checking"
+msgstr "スペルチェック"
+
+#: preferencesdlg.cpp:32
+#, kde-format
+msgid "Spell checking Options"
+msgstr "スペルチェックのオプション"
+
+#: preferencesdlg.cpp:65
+#, kde-format
+msgid "Show hidden entries"
+msgstr "隠し項目を表示する"
+
+#: treeview.cpp:177
+#, kde-format
+msgid " [Hidden]"
+msgstr " [非表示]"
+
+#: treeview.cpp:1018
+#, kde-format
+msgid "New Submenu"
+msgstr "新しいサブメニュー"
+
+#: treeview.cpp:1018
+#, kde-format
+msgid "Submenu name:"
+msgstr "サブメニュー名:"
+
+#: treeview.cpp:1085
+#, kde-format
+msgid "New Item"
+msgstr "新しい項目"
+
+#: treeview.cpp:1085
+#, kde-format
+msgid "Item name:"
+msgstr "項目名:"
+
+#: treeview.cpp:1561
+#, kde-format
+msgid "All submenus of '%1' will be removed. Do you want to continue?"
+msgstr "“%1” のすべてのサブメニューが削除されます。続けますか？"
+
+#: treeview.cpp:1720
+#, kde-format
+msgid "Menu changes could not be saved because of the following problem:"
+msgstr "メニューの変更は、以下の問題で保存できませんでした:"
+
+#: treeview.cpp:1766
+#, kde-format
+msgid ""
+"Do you want to restore the system menu? Warning: This will remove all custom "
+"menus."
+msgstr "システムの標準メニューに戻しますか？カスタム項目はすべて削除されます。"
+
+#~ msgid "Co&mmand:"
+#~ msgstr "コマンド(&M):"
