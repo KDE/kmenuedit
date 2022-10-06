@@ -238,7 +238,7 @@ msgstr "Voleu guardar els canvis del menú?"
 #: kmenueditui.rc:7
 #, kde-format
 msgid "&File"
-msgstr "&Fitxer"
+msgstr "Fi&txer"
 
 #. i18n: ectx: Menu (edit)
 #: kmenueditui.rc:17
