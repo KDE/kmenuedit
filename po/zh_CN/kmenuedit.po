@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-28 00:51+0000\n"
-"PO-Revision-Date: 2022-10-19 13:22\n"
+"PO-Revision-Date: 2022-10-22 05:28\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -46,13 +46,13 @@ msgstr "注释(&C)："
 #, kde-format
 msgctxt "@label:textbox the name or path to a command-line program"
 msgid "Program:"
-msgstr ""
+msgstr "程序："
 
 #: basictab.cpp:81
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Command-Line Arguments:"
-msgstr ""
+msgstr "命令行参数："
 
 #: basictab.cpp:85
 #, kde-format
