@@ -78,6 +78,7 @@ protected:
     KLineSpellChecking *_descriptionEdit = nullptr;
     KKeySequenceWidget *_keyBindingEdit = nullptr;
     KUrlRequester *_programEdit, *_pathEdit = nullptr;
+    QLineEdit *_envarsEdit = nullptr;
     QLineEdit *_argsEdit = nullptr;
     QLineEdit *_terminalOptionsEdit = nullptr;
     QLineEdit *_userNameEdit = nullptr;
@@ -97,6 +98,7 @@ protected:
     QLabel *_nameLabel = nullptr;
     QLabel *_commentLabel = nullptr;
     QLabel *_programLabel = nullptr;
+    QLabel *_envarsLabel = nullptr;
     QLabel *_argsLabel = nullptr;
     QLabel *_keyBindingLabel = nullptr;
     QLabel *_descriptionLabel = nullptr;

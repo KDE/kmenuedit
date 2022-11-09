@@ -70,16 +70,23 @@ void BasicTab::initGeneralTab()
     _commentLabel->setBuddy(_commentEdit);
     generalTabLayout->addWidget(_commentEdit, 2, 1, 1, 2);
 
+    // environment variables
+    _envarsLabel = new QLabel(i18nc("@label:textfield", "Environment Variables:"));
+    generalTabLayout->addWidget(_envarsLabel, 3, 0);
+    _envarsEdit = new QLineEdit();
+    _envarsLabel->setBuddy(_envarsEdit);
+    generalTabLayout->addWidget(_envarsEdit, 3, 1, 1, 2);
+
     // command
     _programLabel = new QLabel(i18nc("@label:textbox the name or path to a command-line program", "Program:"));
-    generalTabLayout->addWidget(_programLabel, 3, 0);
+    generalTabLayout->addWidget(_programLabel, 4, 0);
     _programEdit = new KUrlRequester();
     _programEdit->lineEdit()->setAcceptDrops(false);
     _programLabel->setBuddy(_programEdit);
-    generalTabLayout->addWidget(_programEdit, 3, 1, 1, 2);
+    generalTabLayout->addWidget(_programEdit, 4, 1, 1, 2);
 
     _argsLabel = new QLabel(i18nc("@label:textfield", "Command-Line Arguments:"));
-    generalTabLayout->addWidget(_argsLabel, 4, 0);
+    generalTabLayout->addWidget(_argsLabel, 5, 0);
     _argsEdit = new QLineEdit();
     _argsEdit->setWhatsThis(
         i18n("Following the command, you can have several place holders which will be replaced "
@@ -94,20 +101,20 @@ void BasicTab::initGeneralTab()
              "%m - the mini-icon\n"
              "%c - the caption"));
     _argsLabel->setBuddy(_argsEdit);
-    generalTabLayout->addWidget(_argsEdit, 4, 1, 1, 2);
+    generalTabLayout->addWidget(_argsEdit, 5, 1, 1, 2);
 
     // launch feedback
     _launchCB = new QCheckBox(i18n("Enable &launch feedback"));
-    generalTabLayout->addWidget(_launchCB, 5, 0, 1, 3);
+    generalTabLayout->addWidget(_launchCB, 6, 0, 1, 3);
 
     // KDE visibility
     _onlyShowInKdeCB = new QCheckBox(i18n("Only show when logged into a Plasma session"));
-    generalTabLayout->addWidget(_onlyShowInKdeCB, 6, 0, 1, 3);
+    generalTabLayout->addWidget(_onlyShowInKdeCB, 7, 0, 1, 3);
 
     // hidden entry
     _hiddenEntryCB = new QCheckBox(i18n("Hidden entry"));
     _hiddenEntryCB->hide();
-    generalTabLayout->addWidget(_hiddenEntryCB, 7, 0, 1, 3);
+    generalTabLayout->addWidget(_hiddenEntryCB, 8, 0, 1, 3);
 
     // icon
     _iconButton = new KIconButton();
@@ -200,6 +207,7 @@ void BasicTab::initConnections()
     connect(_descriptionEdit, &KLineSpellChecking::textChanged, this, &BasicTab::slotChanged);
     connect(_commentEdit, &KLineSpellChecking::textChanged, this, &BasicTab::slotChanged);
     connect(_programEdit, &KUrlRequester::textChanged, this, &BasicTab::slotChanged);
+    connect(_envarsEdit, &QLineEdit::textChanged, this, &BasicTab::slotChanged);
     connect(_argsEdit, &QLineEdit::textChanged, this, &BasicTab::slotChanged);
     connect(_programEdit, &KUrlRequester::urlSelected, this, &BasicTab::slotExecSelected);
     connect(_launchCB, &QCheckBox::clicked, this, &BasicTab::launchcb_clicked);
@@ -224,6 +232,7 @@ void BasicTab::slotDisableAction()
     _descriptionEdit->setEnabled(false);
     _commentEdit->setEnabled(false);
     _programEdit->setEnabled(false);
+    _envarsEdit->setEnabled(false);
     _argsEdit->setEnabled(false);
     _launchCB->setEnabled(false);
     _onlyShowInKdeCB->setEnabled(false);
@@ -232,6 +241,7 @@ void BasicTab::slotDisableAction()
     _descriptionLabel->setEnabled(false);
     _commentLabel->setEnabled(false);
     _programLabel->setEnabled(false);
+    _envarsLabel->setEnabled(false);
     _argsLabel->setEnabled(false);
     _workPathGroup->setEnabled(false);
     _terminalGroup->setEnabled(false);
@@ -249,6 +259,7 @@ void BasicTab::enableWidgets(bool isDF, bool isDeleted)
     _commentEdit->setEnabled(!isDeleted);
     _iconButton->setEnabled(!isDeleted);
     _programEdit->setEnabled(isDF && !isDeleted);
+    _envarsEdit->setEnabled(isDF && !isDeleted);
     _argsEdit->setEnabled(isDF && !isDeleted);
     _launchCB->setEnabled(isDF && !isDeleted);
     _onlyShowInKdeCB->setEnabled(isDF && !isDeleted);
@@ -257,6 +268,7 @@ void BasicTab::enableWidgets(bool isDF, bool isDeleted)
     _descriptionLabel->setEnabled(!isDeleted);
     _commentLabel->setEnabled(!isDeleted);
     _programLabel->setEnabled(isDF && !isDeleted);
+    _envarsLabel->setEnabled(isDF && !isDeleted);
     _argsLabel->setEnabled(isDF && !isDeleted);
 
     _workPathGroup->setEnabled(isDF && !isDeleted);
@@ -286,6 +298,7 @@ void BasicTab::setFolderInfo(MenuFolderInfo *folderInfo)
 
     // clean all disabled fields and return
     _programEdit->lineEdit()->clear();
+    _envarsEdit->clear();
     _argsEdit->clear();
     _pathEdit->lineEdit()->clear();
     _terminalOptionsEdit->clear();
@@ -317,6 +330,7 @@ void BasicTab::setEntryInfo(MenuEntryInfo *entryInfo)
         _keyBindingEdit->clearKeySequence();
 
         _programEdit->lineEdit()->clear();
+        _envarsEdit->clear();
         _argsEdit->clear();
         _onlyShowInKdeCB->setChecked(false);
         _hiddenEntryCB->setChecked(false);
@@ -350,12 +364,27 @@ void BasicTab::setEntryInfo(MenuEntryInfo *entryInfo)
     }
 
     QStringList execLine = KShell::splitArgs(df->desktopGroup().readEntry("Exec"));
+    QStringList enVars = {};
     if (!execLine.isEmpty()) {
+        // check for apps that use the env executable
+        // to set the environment
+        if (execLine[0] == QLatin1String("env")) {
+            execLine.pop_front();
+        }
+        for (auto env : execLine) {
+            if (!env.contains(QLatin1String("="))) {
+                break;
+            }
+            enVars += env;
+            execLine.pop_front();
+        }
+
         _programEdit->lineEdit()->setText(execLine.takeFirst());
     } else {
         _programEdit->lineEdit()->clear();
     }
     _argsEdit->setText(KShell::joinArgs(execLine));
+    _envarsEdit->setText(KShell::joinArgs(enVars));
 
     _pathEdit->lineEdit()->setText(df->readPath());
     _terminalOptionsEdit->setText(df->desktopGroup().readEntry("TerminalOptions"));
@@ -395,7 +424,11 @@ void BasicTab::apply()
         KDesktopFile *df = _menuEntryInfo->desktopFile();
         KConfigGroup dg = df->desktopGroup();
         dg.writeEntry("Comment", _commentEdit->text());
-        QStringList programArgs = QStringList(_programEdit->lineEdit()->text()) + KShell::splitArgs(_argsEdit->text());
+        QStringList programArgs = KShell::splitArgs(_envarsEdit->text()) + QStringList(_programEdit->lineEdit()->text()) + KShell::splitArgs(_argsEdit->text());
+
+        if (KShell::splitArgs(_envarsEdit->text()).length()) {
+            programArgs.push_front(QLatin1String("env"));
+        }
         dg.writeEntry("Exec", KShell::joinArgs(programArgs));
 
         // NOT writePathEntry, it writes the entry with non-XDG-compliant flag: Path[$e]
