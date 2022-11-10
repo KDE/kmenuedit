@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-28 00:51+0000\n"
+"POT-Creation-Date: 2022-11-10 00:48+0000\n"
 "PO-Revision-Date: 2022-09-16 15:15+0200\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@neuf.fr>\n"
 "Language-Team: French <kde-francophone@kde.org>\n"
@@ -62,17 +62,23 @@ msgstr "&Commentaire :"
 
 #: basictab.cpp:74
 #, kde-format
+msgctxt "@label:textfield"
+msgid "Environment Variables:"
+msgstr ""
+
+#: basictab.cpp:81
+#, kde-format
 msgctxt "@label:textbox the name or path to a command-line program"
 msgid "Program:"
 msgstr "Programme :"
 
-#: basictab.cpp:81
+#: basictab.cpp:88
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Command-Line Arguments:"
 msgstr "Arguments pour la ligne de commandes :"
 
-#: basictab.cpp:85
+#: basictab.cpp:92
 #, kde-format
 msgid ""
 "Following the command, you can have several place holders which will be "
@@ -101,57 +107,57 @@ msgstr ""
 "%m - la mini-icône\n"
 "%c - le titre"
 
-#: basictab.cpp:100
+#: basictab.cpp:107
 #, kde-format
 msgid "Enable &launch feedback"
 msgstr "&Activer le témoin de démarrage"
 
-#: basictab.cpp:104
+#: basictab.cpp:111
 #, kde-format
 msgid "Only show when logged into a Plasma session"
 msgstr "N'afficher qu'une fois connecté avec une session Plasma."
 
-#: basictab.cpp:108
+#: basictab.cpp:115
 #, kde-format
 msgid "Hidden entry"
 msgstr "Élément caché"
 
-#: basictab.cpp:120 preferencesdlg.cpp:63
+#: basictab.cpp:127 preferencesdlg.cpp:63
 #, kde-format
 msgid "General"
 msgstr "Général"
 
-#: basictab.cpp:132
+#: basictab.cpp:139
 #, kde-format
 msgid "&Work path:"
 msgstr "&Dossier de travail :"
 
-#: basictab.cpp:144
+#: basictab.cpp:151
 #, kde-format
 msgid "Run in term&inal"
 msgstr "Exécuter dans un term&inal"
 
-#: basictab.cpp:149
+#: basictab.cpp:156
 #, kde-format
 msgid "Terminal &options:"
 msgstr "&Options du terminal :"
 
-#: basictab.cpp:163
+#: basictab.cpp:170
 #, kde-format
 msgid "&Run as a different user"
 msgstr "Exécute&r en tant qu'utilisateur différent"
 
-#: basictab.cpp:168
+#: basictab.cpp:175
 #, kde-format
 msgid "&Username:"
 msgstr "Nom d'&utilisateur :"
 
-#: basictab.cpp:182
+#: basictab.cpp:189
 #, kde-format
 msgid "Current shortcut &key:"
 msgstr "Raccourci &clavier actuel :"
 
-#: basictab.cpp:193
+#: basictab.cpp:200
 #, kde-format
 msgid "Advanced"
 msgstr "Avancé"

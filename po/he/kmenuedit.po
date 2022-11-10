@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-28 00:51+0000\n"
+"POT-Creation-Date: 2022-11-10 00:48+0000\n"
 "PO-Revision-Date: 2017-05-16 06:53-0400\n"
 "Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: Hebrew <kde-i18n-doc@kde.org>\n"
@@ -53,17 +53,23 @@ msgstr "הע&רה:"
 
 #: basictab.cpp:74
 #, kde-format
+msgctxt "@label:textfield"
+msgid "Environment Variables:"
+msgstr ""
+
+#: basictab.cpp:81
+#, kde-format
 msgctxt "@label:textbox the name or path to a command-line program"
 msgid "Program:"
 msgstr ""
 
-#: basictab.cpp:81
+#: basictab.cpp:88
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Command-Line Arguments:"
 msgstr ""
 
-#: basictab.cpp:85
+#: basictab.cpp:92
 #, kde-format
 msgid ""
 "Following the command, you can have several place holders which will be "
@@ -91,57 +97,57 @@ msgstr ""
 "%m - הסמל המוקטן\n"
 "%c - הכותרת"
 
-#: basictab.cpp:100
+#: basictab.cpp:107
 #, kde-format
 msgid "Enable &launch feedback"
 msgstr "אפשר משוב ל&גבי הפעלה"
 
-#: basictab.cpp:104
+#: basictab.cpp:111
 #, kde-format
 msgid "Only show when logged into a Plasma session"
 msgstr ""
 
-#: basictab.cpp:108
+#: basictab.cpp:115
 #, kde-format
 msgid "Hidden entry"
 msgstr "כניסה מוסתרת"
 
-#: basictab.cpp:120 preferencesdlg.cpp:63
+#: basictab.cpp:127 preferencesdlg.cpp:63
 #, kde-format
 msgid "General"
 msgstr "כללי"
 
-#: basictab.cpp:132
+#: basictab.cpp:139
 #, kde-format
 msgid "&Work path:"
 msgstr "&נתיב עבודה:"
 
-#: basictab.cpp:144
+#: basictab.cpp:151
 #, kde-format
 msgid "Run in term&inal"
 msgstr "הפעל ב&מסוף"
 
-#: basictab.cpp:149
+#: basictab.cpp:156
 #, kde-format
 msgid "Terminal &options:"
 msgstr "&אפשרויות מסוף:"
 
-#: basictab.cpp:163
+#: basictab.cpp:170
 #, kde-format
 msgid "&Run as a different user"
 msgstr "הפע&ל בתור משתמש אחר"
 
-#: basictab.cpp:168
+#: basictab.cpp:175
 #, kde-format
 msgid "&Username:"
 msgstr "שם מש&תמש:"
 
-#: basictab.cpp:182
+#: basictab.cpp:189
 #, kde-format
 msgid "Current shortcut &key:"
 msgstr "מ&קש קיצור נוכחי:"
 
-#: basictab.cpp:193
+#: basictab.cpp:200
 #, kde-format
 msgid "Advanced"
 msgstr "מתקדם"

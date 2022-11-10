@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-28 00:51+0000\n"
+"POT-Creation-Date: 2022-11-10 00:48+0000\n"
 "PO-Revision-Date: 2022-09-15 08:32+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -45,17 +45,23 @@ msgstr "&კომენტარი:"
 
 #: basictab.cpp:74
 #, kde-format
+msgctxt "@label:textfield"
+msgid "Environment Variables:"
+msgstr ""
+
+#: basictab.cpp:81
+#, kde-format
 msgctxt "@label:textbox the name or path to a command-line program"
 msgid "Program:"
 msgstr "პროგრამა:"
 
-#: basictab.cpp:81
+#: basictab.cpp:88
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Command-Line Arguments:"
 msgstr "ბრძანების სტრიქონის არგუმენტები:"
 
-#: basictab.cpp:85
+#: basictab.cpp:92
 #, kde-format
 msgid ""
 "Following the command, you can have several place holders which will be "
@@ -84,57 +90,57 @@ msgstr ""
 "%m - მინი-ხატულა\n"
 "%c - წარწერა"
 
-#: basictab.cpp:100
+#: basictab.cpp:107
 #, kde-format
 msgid "Enable &launch feedback"
 msgstr "გაშვების &უკუკავშირის ჩართვა"
 
-#: basictab.cpp:104
+#: basictab.cpp:111
 #, kde-format
 msgid "Only show when logged into a Plasma session"
 msgstr "მხოლოდ მაშინ, როცა Plasma-ის სესიაა გაშვებული"
 
-#: basictab.cpp:108
+#: basictab.cpp:115
 #, kde-format
 msgid "Hidden entry"
 msgstr "დამალული ერთეული"
 
-#: basictab.cpp:120 preferencesdlg.cpp:63
+#: basictab.cpp:127 preferencesdlg.cpp:63
 #, kde-format
 msgid "General"
 msgstr "საერთო"
 
-#: basictab.cpp:132
+#: basictab.cpp:139
 #, kde-format
 msgid "&Work path:"
 msgstr "&სამუშაო ბილიკი:"
 
-#: basictab.cpp:144
+#: basictab.cpp:151
 #, kde-format
 msgid "Run in term&inal"
 msgstr "&ტერმინალში გაშვება"
 
-#: basictab.cpp:149
+#: basictab.cpp:156
 #, kde-format
 msgid "Terminal &options:"
 msgstr "ტერმინალის &პარამეტრები:"
 
-#: basictab.cpp:163
+#: basictab.cpp:170
 #, kde-format
 msgid "&Run as a different user"
 msgstr "&სხვა მომხმარებლით გაშვება"
 
-#: basictab.cpp:168
+#: basictab.cpp:175
 #, kde-format
 msgid "&Username:"
 msgstr "&მომხმარებლის სახელი:"
 
-#: basictab.cpp:182
+#: basictab.cpp:189
 #, kde-format
 msgid "Current shortcut &key:"
 msgstr "მიმდინარე მალსახმობი &ღილაკი:"
 
-#: basictab.cpp:193
+#: basictab.cpp:200
 #, kde-format
 msgid "Advanced"
 msgstr "დამატებით"

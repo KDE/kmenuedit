@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-28 00:51+0000\n"
+"POT-Creation-Date: 2022-11-10 00:48+0000\n"
 "PO-Revision-Date: 2022-11-06 01:06\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -44,17 +44,23 @@ msgstr "注释(&C)："
 
 #: basictab.cpp:74
 #, kde-format
+msgctxt "@label:textfield"
+msgid "Environment Variables:"
+msgstr ""
+
+#: basictab.cpp:81
+#, kde-format
 msgctxt "@label:textbox the name or path to a command-line program"
 msgid "Program:"
 msgstr "程序："
 
-#: basictab.cpp:81
+#: basictab.cpp:88
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Command-Line Arguments:"
 msgstr "命令行参数："
 
-#: basictab.cpp:85
+#: basictab.cpp:92
 #, kde-format
 msgid ""
 "Following the command, you can have several place holders which will be "
@@ -81,57 +87,57 @@ msgstr ""
 "%m - 小图标\n"
 "%c - 标题"
 
-#: basictab.cpp:100
+#: basictab.cpp:107
 #, kde-format
 msgid "Enable &launch feedback"
 msgstr "启用程序启动动效(&L)"
 
-#: basictab.cpp:104
+#: basictab.cpp:111
 #, kde-format
 msgid "Only show when logged into a Plasma session"
 msgstr "仅在登录到 Plasma 会话时显示"
 
-#: basictab.cpp:108
+#: basictab.cpp:115
 #, kde-format
 msgid "Hidden entry"
 msgstr "隐藏条目"
 
-#: basictab.cpp:120 preferencesdlg.cpp:63
+#: basictab.cpp:127 preferencesdlg.cpp:63
 #, kde-format
 msgid "General"
 msgstr "常规"
 
-#: basictab.cpp:132
+#: basictab.cpp:139
 #, kde-format
 msgid "&Work path:"
 msgstr "工作路径(&W)："
 
-#: basictab.cpp:144
+#: basictab.cpp:151
 #, kde-format
 msgid "Run in term&inal"
 msgstr "在终端中运行(&I)"
 
-#: basictab.cpp:149
+#: basictab.cpp:156
 #, kde-format
 msgid "Terminal &options:"
 msgstr "终端选项(&O)："
 
-#: basictab.cpp:163
+#: basictab.cpp:170
 #, kde-format
 msgid "&Run as a different user"
 msgstr "作为不同用户运行(&R)"
 
-#: basictab.cpp:168
+#: basictab.cpp:175
 #, kde-format
 msgid "&Username:"
 msgstr "用户名(&U)："
 
-#: basictab.cpp:182
+#: basictab.cpp:189
 #, kde-format
 msgid "Current shortcut &key:"
 msgstr "当前快捷键(&K)："
 
-#: basictab.cpp:193
+#: basictab.cpp:200
 #, kde-format
 msgid "Advanced"
 msgstr "高级"

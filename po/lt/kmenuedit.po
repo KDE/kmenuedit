@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-28 00:51+0000\n"
+"POT-Creation-Date: 2022-11-10 00:48+0000\n"
 "PO-Revision-Date: 2021-06-15 23:16+0300\n"
 "Last-Translator: Moo\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
@@ -48,17 +48,23 @@ msgstr "&Komentaras:"
 
 #: basictab.cpp:74
 #, kde-format
+msgctxt "@label:textfield"
+msgid "Environment Variables:"
+msgstr ""
+
+#: basictab.cpp:81
+#, kde-format
 msgctxt "@label:textbox the name or path to a command-line program"
 msgid "Program:"
 msgstr ""
 
-#: basictab.cpp:81
+#: basictab.cpp:88
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Command-Line Arguments:"
 msgstr ""
 
-#: basictab.cpp:85
+#: basictab.cpp:92
 #, kde-format
 msgid ""
 "Following the command, you can have several place holders which will be "
@@ -87,57 +93,57 @@ msgstr ""
 "%m - mini-piktograma\n"
 "%c - lango antraštė"
 
-#: basictab.cpp:100
+#: basictab.cpp:107
 #, kde-format
 msgid "Enable &launch feedback"
 msgstr "Įjungti grįžtamąjį &paleidimo ryšį"
 
-#: basictab.cpp:104
+#: basictab.cpp:111
 #, kde-format
 msgid "Only show when logged into a Plasma session"
 msgstr "Rodyti tik prisijungus prie Plasma seanso"
 
-#: basictab.cpp:108
+#: basictab.cpp:115
 #, kde-format
 msgid "Hidden entry"
 msgstr "Paslėptas įrašas"
 
-#: basictab.cpp:120 preferencesdlg.cpp:63
+#: basictab.cpp:127 preferencesdlg.cpp:63
 #, kde-format
 msgid "General"
 msgstr "Bendra"
 
-#: basictab.cpp:132
+#: basictab.cpp:139
 #, kde-format
 msgid "&Work path:"
 msgstr "&Darbinis kelias:"
 
-#: basictab.cpp:144
+#: basictab.cpp:151
 #, kde-format
 msgid "Run in term&inal"
 msgstr "Vykdyti term&inale"
 
-#: basictab.cpp:149
+#: basictab.cpp:156
 #, kde-format
 msgid "Terminal &options:"
 msgstr "Terminalo &parinktys:"
 
-#: basictab.cpp:163
+#: basictab.cpp:170
 #, kde-format
 msgid "&Run as a different user"
 msgstr "Vykdyti &kito naudotojo teisėmis"
 
-#: basictab.cpp:168
+#: basictab.cpp:175
 #, kde-format
 msgid "&Username:"
 msgstr "&Naudotojo vardas:"
 
-#: basictab.cpp:182
+#: basictab.cpp:189
 #, kde-format
 msgid "Current shortcut &key:"
 msgstr "Esamas spartusis &klavišas:"
 
-#: basictab.cpp:193
+#: basictab.cpp:200
 #, kde-format
 msgid "Advanced"
 msgstr "Išplėstiniai"
