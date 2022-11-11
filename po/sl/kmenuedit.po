@@ -1,7 +1,7 @@
 # Translation of kmenuedit.po to Slovenian
 # KMENUEDIT translation to Slovenian language
 # Copyright (C) 2001, 2003, 2004, 2005 Free Software Foundation, Inc.
-# $Id: kmenuedit.po 1637734 2022-11-10 01:38:46Z scripty $
+# $Id: kmenuedit.po 1637855 2022-11-10 11:59:07Z matjazjeran $
 # $Source$
 #
 # Roman Maurer <roman.maurer@amis.net>, 2000.
@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-11-10 00:48+0000\n"
-"PO-Revision-Date: 2022-09-17 07:11+0200\n"
+"PO-Revision-Date: 2022-11-10 12:20+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Translator: Andrej Mernik <andrejm@ubuntu.si>\n"
-"X-Generator: Lokalize 22.04.1\n"
+"X-Generator: Lokalize 22.08.1\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
 
@@ -57,7 +57,7 @@ msgstr "Opomba:"
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Environment Variables:"
-msgstr ""
+msgstr "Spremenljivke okolja:"
 
 #: basictab.cpp:81
 #, kde-format

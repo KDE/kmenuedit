@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-11-10 00:48+0000\n"
-"PO-Revision-Date: 2022-09-15 18:07+0200\n"
+"PO-Revision-Date: 2022-11-10 03:33+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "First-Translator: Valux (José Luis Sánchez) <jsanchezv@teleline.es>\n"
-"X-Generator: Lokalize 22.08.1\n"
+"X-Generator: Lokalize 22.08.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #, kde-format
@@ -58,7 +58,7 @@ msgstr "&Comentario:"
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Environment Variables:"
-msgstr ""
+msgstr "Variables de entorno:"
 
 #: basictab.cpp:81
 #, kde-format
