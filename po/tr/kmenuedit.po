@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-11-10 00:48+0000\n"
-"PO-Revision-Date: 2022-11-10 06:36+0300\n"
+"PO-Revision-Date: 2022-11-21 22:15+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -250,7 +250,7 @@ msgstr "&Dosya"
 #: kmenueditui.rc:17
 #, kde-format
 msgid "&Edit"
-msgstr "&Düzen"
+msgstr "Dü&zen"
 
 #. i18n: ectx: ToolBar (mainToolBar)
 #: kmenueditui.rc:34
