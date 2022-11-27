@@ -120,3 +120,4 @@ ecm_qt_install_logging_categories(
         )
 
 ki18n_install(po)
+kdoctools_install(po)
