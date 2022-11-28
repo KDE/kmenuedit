@@ -11,7 +11,7 @@ Dependencies:
     'frameworks/kiconthemes': '@stable'
     'frameworks/kio': '@stable'
     'frameworks/kitemviews': '@stable'
-    'frameworks/ksonnet': '@stable'
+    'frameworks/sonnet': '@stable'
     'frameworks/kdoctools': '@stable'
     'frameworks/kglobalaccel': '@stable'
     'frameworks/kwindowsystem': '@stable'
