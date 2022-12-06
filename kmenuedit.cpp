@@ -209,18 +209,18 @@ bool KMenuEdit::queryClose()
     }
 
     int result;
-    result = KMessageBox::warningYesNoCancel(this,
-                                             i18n("You have made changes to the menu.\n"
-                                                  "Do you want to save the changes or discard them?"),
-                                             i18n("Save Menu Changes?"),
-                                             KStandardGuiItem::save(),
-                                             KStandardGuiItem::discard());
+    result = KMessageBox::warningTwoActionsCancel(this,
+                                                  i18n("You have made changes to the menu.\n"
+                                                       "Do you want to save the changes or discard them?"),
+                                                  i18n("Save Menu Changes?"),
+                                                  KStandardGuiItem::save(),
+                                                  KStandardGuiItem::discard());
 
     switch (result) {
-    case KMessageBox::Yes:
+    case KMessageBox::PrimaryAction:
         return m_tree->save();
 
-    case KMessageBox::No:
+    case KMessageBox::SecondaryAction:
         return true;
 
     default:

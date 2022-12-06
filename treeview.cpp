@@ -1558,7 +1558,12 @@ void TreeView::del(TreeItem *item, bool deleteInfo)
     TreeItem *parentItem = static_cast<TreeItem *>(item->parent());
     // is file a .directory or a .desktop file
     if (item->isDirectory()) {
-        if (KMessageBox::warningYesNo(this, i18n("All submenus of '%1' will be removed. Do you want to continue?", item->name())) == KMessageBox::No) {
+        if (KMessageBox::questionTwoActions(this,
+                                            i18n("All submenus of '%1' will be removed. Do you want to continue?", item->name()),
+                                            i18nc("@title:window", "Delete"),
+                                            KStandardGuiItem::del(),
+                                            KStandardGuiItem::cancel())
+            == KMessageBox::SecondaryAction) {
             return;
         }
 
@@ -1763,7 +1768,12 @@ void TreeView::findServiceShortcut(const QKeySequence &cut, KService::Ptr &servi
 
 void TreeView::restoreMenuSystem()
 {
-    if (KMessageBox::warningYesNo(this, i18n("Do you want to restore the system menu? Warning: This will remove all custom menus.")) == KMessageBox::No) {
+    if (KMessageBox::questionTwoActions(this,
+                                        i18n("Do you want to restore the system menu? Warning: This will remove all custom menus."),
+                                        i18nc("@title:window", "Restore Menu System"),
+                                        KStandardGuiItem::reset(),
+                                        KStandardGuiItem::cancel())
+        == KMessageBox::SecondaryAction) {
         return;
     }
     const QString kmenueditfile = QStandardPaths::writableLocation(QStandardPaths::ConfigLocation) + QStringLiteral("/menus/applications-kmenuedit.menu");
