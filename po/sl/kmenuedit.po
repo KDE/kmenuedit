@@ -1,7 +1,7 @@
 # Translation of kmenuedit.po to Slovenian
 # KMENUEDIT translation to Slovenian language
 # Copyright (C) 2001, 2003, 2004, 2005 Free Software Foundation, Inc.
-# $Id: kmenuedit.po 1639575 2022-12-07 01:39:45Z scripty $
+# $Id: kmenuedit.po 1639675 2022-12-09 01:36:42Z scripty $
 # $Source$
 #
 # Roman Maurer <roman.maurer@amis.net>, 2000.
@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-07 00:48+0000\n"
-"PO-Revision-Date: 2022-11-10 12:20+0100\n"
+"PO-Revision-Date: 2022-12-08 08:12+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Translator: Andrej Mernik <andrejm@ubuntu.si>\n"
-"X-Generator: Lokalize 22.08.1\n"
+"X-Generator: Lokalize 22.08.3\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
 
@@ -378,8 +378,7 @@ msgid "All submenus of '%1' will be removed. Do you want to continue?"
 msgstr "Odstranjeni bodo vsi meniji pod '%1'. Ali želite nadaljevati?"
 
 #: treeview.cpp:1563
-#, fuzzy, kde-format
-#| msgid "&Delete"
+#, kde-format
 msgctxt "@title:window"
 msgid "Delete"
 msgstr "Izbriši"
@@ -399,8 +398,7 @@ msgstr ""
 "po meri."
 
 #: treeview.cpp:1773
-#, fuzzy, kde-format
-#| msgid "Restore to System Menu"
+#, kde-format
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "Obnovi sistemski meni"

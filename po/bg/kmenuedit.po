@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-07 00:48+0000\n"
-"PO-Revision-Date: 2022-11-11 21:51+0100\n"
+"PO-Revision-Date: 2022-12-07 19:18+0100\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
 "Language: bg\n"
@@ -369,11 +369,10 @@ msgstr ""
 "Всички подменюта на \"%1\" ще бъдат премахната. Искате ли да продължите?"
 
 #: treeview.cpp:1563
-#, fuzzy, kde-format
-#| msgid "&Delete"
+#, kde-format
 msgctxt "@title:window"
 msgid "Delete"
-msgstr "&Изтриване"
+msgstr "Изтриване"
 
 #: treeview.cpp:1725
 #, kde-format
@@ -391,8 +390,7 @@ msgstr ""
 "потребителските менюта."
 
 #: treeview.cpp:1773
-#, fuzzy, kde-format
-#| msgid "Restore to System Menu"
+#, kde-format
 msgctxt "@title:window"
 msgid "Restore Menu System"
-msgstr "Възстановяване в системното меню"
+msgstr "Възстановяване на системното меню"

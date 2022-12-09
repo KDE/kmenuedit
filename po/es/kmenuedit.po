@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-07 00:48+0000\n"
-"PO-Revision-Date: 2022-12-07 03:44+0100\n"
+"PO-Revision-Date: 2022-12-08 12:05+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -400,11 +400,10 @@ msgstr ""
 "personalizados."
 
 #: treeview.cpp:1773
-#, fuzzy, kde-format
-#| msgid "Restore to System Menu"
+#, kde-format
 msgctxt "@title:window"
 msgid "Restore Menu System"
-msgstr "Restaurar al menú del sistema"
+msgstr "Restaurar el menú del sistema"
 
 #~ msgid "Co&mmand:"
 #~ msgstr "&Orden:"
