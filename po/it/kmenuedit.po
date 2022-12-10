@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-07 00:48+0000\n"
-"PO-Revision-Date: 2022-11-11 10:58+0100\n"
+"PO-Revision-Date: 2022-12-07 19:18+0100\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -370,11 +370,10 @@ msgstr ""
 "Tutti i sottomenu di «%1» saranno rimossi. Sei sicuro di voler continuare?"
 
 #: treeview.cpp:1563
-#, fuzzy, kde-format
-#| msgid "&Delete"
+#, kde-format
 msgctxt "@title:window"
 msgid "Delete"
-msgstr "E&limina"
+msgstr "Elimina"
 
 #: treeview.cpp:1725
 #, kde-format
@@ -391,8 +390,7 @@ msgstr ""
 "tutti i menu personalizzati."
 
 #: treeview.cpp:1773
-#, fuzzy, kde-format
-#| msgid "Restore to System Menu"
+#, kde-format
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "Ripristina menu di sistema"
