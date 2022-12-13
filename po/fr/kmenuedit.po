@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-07 00:48+0000\n"
-"PO-Revision-Date: 2022-11-10 21:52+0100\n"
+"PO-Revision-Date: 2022-12-11 20:31+0100\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@neuf.fr>\n"
 "Language-Team: French <kde-francophone@kde.org>\n"
 "Language: fr\n"
@@ -27,7 +27,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.08.3\n"
+"X-Generator: Lokalize 22.12.0\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
@@ -386,11 +386,10 @@ msgstr ""
 "Tous les sous-menus de « %1 » seront supprimés. Voulez-vous continuer ?"
 
 #: treeview.cpp:1563
-#, fuzzy, kde-format
-#| msgid "&Delete"
+#, kde-format
 msgctxt "@title:window"
 msgid "Delete"
-msgstr "&Supprimer"
+msgstr "Supprimer"
 
 #: treeview.cpp:1725
 #, kde-format
@@ -409,11 +408,10 @@ msgstr ""
 "personnalisés seront supprimés."
 
 #: treeview.cpp:1773
-#, fuzzy, kde-format
-#| msgid "Restore to System Menu"
+#, kde-format
 msgctxt "@title:window"
 msgid "Restore Menu System"
-msgstr "Restaurer le menu système"
+msgstr "Restaurer le menu du système"
 
 #~ msgid "Co&mmand:"
 #~ msgstr "Co&mmande :"
