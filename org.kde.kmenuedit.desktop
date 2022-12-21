@@ -132,6 +132,7 @@ Comment[uk]=Редагування способу, у який пункти пр
 Comment[vi]=Chỉnh sửa cách các ứng dụng được trình bày trong các trình khởi chạy ứng dụng
 Comment[x-test]=xxEdit how applications are presented in app launchersxx
 Comment[zh_CN]=编辑应用程序在应用程序启动器中的显示方式
+Comment[zh_TW]=編輯應用程式在啟動器中的顯示方式
 
 X-DBUS-StartupType=Unique
 X-DBUS-ServiceName=org.kde.kmenuedit
