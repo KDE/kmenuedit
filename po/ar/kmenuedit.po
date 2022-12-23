@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-07 00:48+0000\n"
-"PO-Revision-Date: 2022-11-21 20:34+0400\n"
+"PO-Revision-Date: 2022-12-22 11:05+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -375,11 +375,10 @@ msgid "All submenus of '%1' will be removed. Do you want to continue?"
 msgstr "جميع القوائم الفرعية لـ '%1'  ستزال . هل ترغب في الاستمرار؟ "
 
 #: treeview.cpp:1563
-#, fuzzy, kde-format
-#| msgid "&Delete"
+#, kde-format
 msgctxt "@title:window"
 msgid "Delete"
-msgstr "اح&ذف"
+msgstr "احذف"
 
 #: treeview.cpp:1725
 #, kde-format
@@ -394,11 +393,10 @@ msgid ""
 msgstr "هل تريد استرجاع قائمة النظام؟ تحذير: هذا سيزيل كل القوائم المخصصة."
 
 #: treeview.cpp:1773
-#, fuzzy, kde-format
-#| msgid "Restore to System Menu"
+#, kde-format
 msgctxt "@title:window"
 msgid "Restore Menu System"
-msgstr "استرجع إلى قائمة النظام"
+msgstr "استرجع قائمة النظام"
 
 #~ msgid "Co&mmand:"
 #~ msgstr "الأ&مر:"
