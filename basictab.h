@@ -19,7 +19,6 @@ class QCheckBox;
 class QGroupBox;
 class QLabel;
 class KUrlRequester;
-class KService;
 class KLineSpellChecking;
 
 class MenuFolderInfo;
