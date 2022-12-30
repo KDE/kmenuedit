@@ -1,4 +1,4 @@
-# Version: $Revision: 1639575 $
+# Version: $Revision: 1641066 $
 # translation of kmenuedit.po to Polish
 # translation of kmenuedit.po to
 # translation of kmenuedit.po to
@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-07 00:48+0000\n"
-"PO-Revision-Date: 2022-09-23 10:44+0200\n"
+"PO-Revision-Date: 2022-12-29 11:39+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -24,7 +24,7 @@ msgstr ""
 ">\n"
 ">\n"
 ">\n"
-"X-Generator: Lokalize 22.04.1\n"
+"X-Generator: Lokalize 22.12.0\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
 
@@ -57,7 +57,7 @@ msgstr "&Uwaga:"
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Environment Variables:"
-msgstr ""
+msgstr "Zmienne środowiskowe:"
 
 #: basictab.cpp:81
 #, kde-format
@@ -133,7 +133,7 @@ msgstr "Uruchom w term&inalu"
 #: basictab.cpp:156
 #, kde-format
 msgid "Terminal &options:"
-msgstr "&Opcje terminala:"
+msgstr "U&stawienia terminala:"
 
 #: basictab.cpp:170
 #, kde-format
@@ -378,11 +378,10 @@ msgid "All submenus of '%1' will be removed. Do you want to continue?"
 msgstr "Wszystkie podmenu %1 zostaną usunięte. Kontynuować?"
 
 #: treeview.cpp:1563
-#, fuzzy, kde-format
-#| msgid "&Delete"
+#, kde-format
 msgctxt "@title:window"
 msgid "Delete"
-msgstr "U&suń"
+msgstr "Usuń"
 
 #: treeview.cpp:1725
 #, kde-format
@@ -399,8 +398,7 @@ msgstr ""
 "usunięte."
 
 #: treeview.cpp:1773
-#, fuzzy, kde-format
-#| msgid "Restore to System Menu"
+#, kde-format
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "Przywróć menu systemowe"
