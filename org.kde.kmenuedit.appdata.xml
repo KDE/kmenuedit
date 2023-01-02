@@ -40,7 +40,7 @@
   <summary xml:lang="az">Tətbiq başladıcıda görünən tətbiqlər siyahısına düzəliş edin</summary>
   <summary xml:lang="bg">Настройване на изгледа на приложенията в стартера</summary>
   <summary xml:lang="ca">Edita com es presenten les aplicacions en els llançadors d'aplicacions</summary>
-  <summary xml:lang="ca-valencia">Edita com es presenten les aplicacions en els llançadors d'aplicacions</summary>
+  <summary xml:lang="ca-valencia">Edita com es presenten les aplicacions en els iniciadors d'aplicacions</summary>
   <summary xml:lang="cs">Upravit jak budou aplikace zobrazovány ve spouštěčích</summary>
   <summary xml:lang="de">Bearbeiten, wie Anwendungen im Anwendungsstarter dargestellt werden</summary>
   <summary xml:lang="en-GB">Edit how applications are presented in app launchers</summary>
@@ -74,7 +74,7 @@
     <p xml:lang="az">KDE Menyu redaktoru Plama Tətbiq Başladıcı vidjeti kimi tətbiq başladıcıda təqdim ediləcək tətbiqlər siyahısına düzəliş etməyə imkan verir.</p>
     <p xml:lang="bg">Редактиране на меню на KDE ви позволява да настройвате начина, по който приложенията се показват в стартерите на приложения като панелните уиджетите за стартери на Plasma</p>
     <p xml:lang="ca">L'editor de menús del KDE permet editar com es presenten les aplicacions en els llançadors d'aplicacions, com el giny del Llançador d'aplicacions del KDE.</p>
-    <p xml:lang="ca-valencia">L'editor de menús de KDE permet editar com es presenten les aplicacions en els llançadors d'aplicacions, com el giny del Iniciador d'aplicacions de KDE.</p>
+    <p xml:lang="ca-valencia">L'editor de menús de KDE permet editar com es presenten les aplicacions en els iniciadors d'aplicacions, com el giny de l'Iniciador d'aplicacions de KDE.</p>
     <p xml:lang="de">Mit dem KDE-Menüeditor können Sie bearbeiten, wie Ihre Anwendungen in Anwendungsstartern angezeigt werden, wie zum Beipsiel im Starter von Plasma.</p>
     <p xml:lang="en-GB">KDE Menu Edit lets you edit how your apps are presented in application launchers, such as Plasma's Application Launcher widget.</p>
     <p xml:lang="es">Editar el menú de KDE le permite modificar cómo se presentan las aplicaciones en los lanzadores de aplicaciones, como el widget del «Lanzador de aplicaciones» de Plasma.</p>
