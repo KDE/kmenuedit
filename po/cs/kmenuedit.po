@@ -368,11 +368,10 @@ msgid "All submenus of '%1' will be removed. Do you want to continue?"
 msgstr "Všechny podnabídky '%1' budou odstraněny. Přejete si pokračovat?"
 
 #: treeview.cpp:1563
-#, fuzzy, kde-format
-#| msgid "&Delete"
+#, kde-format
 msgctxt "@title:window"
 msgid "Delete"
-msgstr "&Smazat"
+msgstr ""
 
 #: treeview.cpp:1725
 #, kde-format
@@ -388,8 +387,7 @@ msgstr ""
 "Přejete si obnovit systémovou nabídku? Tímto odstraníte vlastní nabídky."
 
 #: treeview.cpp:1773
-#, fuzzy, kde-format
-#| msgid "Restore to System Menu"
+#, kde-format
 msgctxt "@title:window"
 msgid "Restore Menu System"
-msgstr "Vrátit systémovou nabídku"
+msgstr ""
