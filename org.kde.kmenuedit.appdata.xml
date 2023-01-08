@@ -10,6 +10,7 @@
   <name xml:lang="ca">Editor de menús</name>
   <name xml:lang="ca-valencia">Editor de menús</name>
   <name xml:lang="de">Menü bearbeiten</name>
+  <name xml:lang="el">Επεξεργασία μενού</name>
   <name xml:lang="en-GB">Menu Edit</name>
   <name xml:lang="es">Editar el menú</name>
   <name xml:lang="eu">Menua editatzea</name>
@@ -45,6 +46,7 @@
   <summary xml:lang="ca-valencia">Edita com es presenten les aplicacions en els iniciadors d'aplicacions</summary>
   <summary xml:lang="cs">Upravit jak budou aplikace zobrazovány ve spouštěčích</summary>
   <summary xml:lang="de">Bearbeiten, wie Anwendungen im Anwendungsstarter dargestellt werden</summary>
+  <summary xml:lang="el">Επεξεργάζεται τον τρόπο παρουσίασης των εφαρμογών στους εκτελεστές εφαρμογών</summary>
   <summary xml:lang="en-GB">Edit how applications are presented in app launchers</summary>
   <summary xml:lang="es">Editar cómo se presentan las aplicaciones en los lanzadores de aplicaciones</summary>
   <summary xml:lang="eu">Editatu aplikazio-abiarazleetan aplikazioak nola aurkezten diren</summary>
@@ -80,6 +82,7 @@
     <p xml:lang="ca">L'editor de menús del KDE permet editar com es presenten les aplicacions en els llançadors d'aplicacions, com el giny del Llançador d'aplicacions del KDE.</p>
     <p xml:lang="ca-valencia">L'editor de menús de KDE permet editar com es presenten les aplicacions en els iniciadors d'aplicacions, com el giny de l'Iniciador d'aplicacions de KDE.</p>
     <p xml:lang="de">Mit dem KDE-Menüeditor können Sie bearbeiten, wie Ihre Anwendungen in Anwendungsstartern angezeigt werden, wie zum Beipsiel im Starter von Plasma.</p>
+    <p xml:lang="el">Με την Επεξεργασία μενού του KDE ορίζετε πώς οι εφαρμογές σας παρουσιάζονται σε εκτελεστές εφαρμογών, όπως το γραφικό συστατικό του Εκτελεστή εφαρμογών του Plasma.</p>
     <p xml:lang="en-GB">KDE Menu Edit lets you edit how your apps are presented in application launchers, such as Plasma's Application Launcher widget.</p>
     <p xml:lang="es">Editar el menú de KDE le permite modificar cómo se presentan las aplicaciones en los lanzadores de aplicaciones, como el widget del «Lanzador de aplicaciones» de Plasma.</p>
     <p xml:lang="eu">KDE Menua editatzeak aplikazio-abiarazleetan aplikazioak nola aurkezten diren editatzen uzten dizu, Plasmaren aplikazio abiarazle trepetan esaterako.</p>
