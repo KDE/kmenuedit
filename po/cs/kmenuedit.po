@@ -1,14 +1,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Tomáš Chvátal <tomas.chvatal@gmail.com>, 2013.
-# Vit Pelcak <vit@pelcak.org>, 2013, 2017, 2019.
+# Vit Pelcak <vit@pelcak.org>, 2013, 2017, 2019, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-07 00:48+0000\n"
-"PO-Revision-Date: 2019-08-21 14:20+0200\n"
+"PO-Revision-Date: 2023-01-12 15:57+0100\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 19.04.3\n"
+"X-Generator: Lokalize 22.12.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -47,19 +47,19 @@ msgstr "&Komentář:"
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Environment Variables:"
-msgstr ""
+msgstr "Proměnné prostředí:"
 
 #: basictab.cpp:81
 #, kde-format
 msgctxt "@label:textbox the name or path to a command-line program"
 msgid "Program:"
-msgstr ""
+msgstr "Program:"
 
 #: basictab.cpp:88
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Command-Line Arguments:"
-msgstr ""
+msgstr "Argumenty příkazového řádku:"
 
 #: basictab.cpp:92
 #, kde-format
@@ -98,7 +98,7 @@ msgstr "Povo&lit odezvu při spouštění"
 #: basictab.cpp:111
 #, kde-format
 msgid "Only show when logged into a Plasma session"
-msgstr ""
+msgstr "Zobrazit pouze pokud jste přihlášeni v sezení Plasma"
 
 #: basictab.cpp:115
 #, kde-format
@@ -371,7 +371,7 @@ msgstr "Všechny podnabídky '%1' budou odstraněny. Přejete si pokračovat?"
 #, kde-format
 msgctxt "@title:window"
 msgid "Delete"
-msgstr ""
+msgstr "Smazat"
 
 #: treeview.cpp:1725
 #, kde-format
@@ -390,4 +390,4 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window"
 msgid "Restore Menu System"
-msgstr ""
+msgstr "Vrátit systém nabídek"
