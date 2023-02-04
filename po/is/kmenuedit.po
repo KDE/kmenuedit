@@ -5,20 +5,21 @@
 # Richard Allen <ra@ra.is>, 2000.
 # Svanur Palsson <svanur@tern.is>, 2004.
 # Arnar Leosson <leosson@frisurf.no>, 2005.
-# Sveinn í Felli <sveinki@nett.is>, 2008, 2009, 2021, 2022, 2023.
+# Sveinn í Felli <sveinki@nett.is>, 2008, 2009, 2021, 2022.
+# gummi <gudmundure@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-07 00:48+0000\n"
-"PO-Revision-Date: 2023-02-02 14:42+0000\n"
-"Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
-"Language-Team: Icelandic\n"
+"PO-Revision-Date: 2023-01-27 00:17+0000\n"
+"Last-Translator: gummi <gudmundure@gmail.com>\n"
+"Language-Team: Icelandic <kde-i18n-doc@kde.org>\n"
 "Language: is\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 22.12.1\n"
 "Plural-Forms: Plural-Forms: nplurals=2; plural=n != 1;\n"
 "\n"
 "\n"
@@ -26,12 +27,12 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Richard Allen, Svanur Pálsson"
+msgstr "Richard Allen, Svanur Pálsson,Guðmundur Erlingsson"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "ra@ra.is, svanurpalsson@hotmail.com"
+msgstr "ra@ra.is, svanurpalsson@hotmail.com,gudmundure@gmail.com"
 
 #: basictab.cpp:49
 #, kde-format
@@ -82,16 +83,17 @@ msgid ""
 "%m - the mini-icon\n"
 "%c - the caption"
 msgstr ""
-"Á eftir skipuninni er hægt að setja breytur sem verður skipt út með "
+"Hægt er að setja breytur á eftir skipuninni sem verður skipt út með "
 "innihaldi þeirra áður en forritið er keyrt:\n"
-"%f - stakt skráarheiti\n"
-"%F - listi af skráarheitum fyrir forrit sem geta opnað margar í einu\n"
+"%f - stakt skrárheiti\n"
+"%F - listi yfir skrárheiti; fyrir forrit sem geta opnað margar staðbundnar "
+"skrár í einu\n"
 "%u - stök slóð\n"
-"%U - listi af slóðum\n"
-"%d - mappan sem skráin sem á að opna er í\n"
-"%D - listi af möppum\n"
-"%i - táknmyndin\n"
-"%m - minni táknmyndin\n"
+"%U - listi yfir slóðir\n"
+"%d - mappan sem inniheldur skrána sem á að opna\n"
+"%D - listi yfir möppur\n"
+"%i - táknið\n"
+"%m - minna táknið\n"
 "%c - lýsingin"
 
 #: basictab.cpp:107
@@ -102,7 +104,7 @@ msgstr "Virkja keyrs&luupplýsingar"
 #: basictab.cpp:111
 #, kde-format
 msgid "Only show when logged into a Plasma session"
-msgstr "Aðeins birta þegar skrá er inn í Plasma-setu"
+msgstr "Aðeins sýna þegar skráð er inn í Plasma-setu"
 
 #: basictab.cpp:115
 #, kde-format
@@ -127,7 +129,7 @@ msgstr "Keyra í skjáherm&i"
 #: basictab.cpp:156
 #, kde-format
 msgid "Terminal &options:"
-msgstr "Stillin&gar skjáhermis:"
+msgstr "Valkos&tir skjáhermis:"
 
 #: basictab.cpp:170
 #, kde-format
@@ -147,7 +149,7 @@ msgstr "Núverandi flýtily&kill:"
 #: basictab.cpp:200
 #, kde-format
 msgid "Advanced"
-msgstr "Nánar"
+msgstr "Ítarlegt"
 
 #: globalaccel.cpp:24
 #, kde-format
@@ -177,17 +179,17 @@ msgstr "&Raða"
 #: kmenuedit.cpp:71
 #, kde-format
 msgid "&Sort selection by Name"
-msgstr "&Raða völdu eftir nafni"
+msgstr "&Raða vali eftir heiti"
 
 #: kmenuedit.cpp:74
 #, kde-format
 msgid "&Sort selection by Description"
-msgstr "&Raða völdu eftir lýsingu"
+msgstr "&Raða vali eftir lýsingu"
 
 #: kmenuedit.cpp:78
 #, kde-format
 msgid "&Sort all by Name"
-msgstr "&Raða öllu eftir nafni"
+msgstr "&Raða öllu eftir heiti"
 
 #: kmenuedit.cpp:81
 #, kde-format
@@ -217,7 +219,7 @@ msgstr "Leita..."
 #: kmenuedit.cpp:127
 #, kde-format
 msgid "Search through the list of applications below"
-msgstr "Leita í listanum yfir forrit hér að neðan"
+msgstr "Leita í listanum yfir forrit hér fyrir neðan"
 
 #: kmenuedit.cpp:188
 #, kde-format
@@ -231,7 +233,7 @@ msgid ""
 "Do you want to save the changes or discard them?"
 msgstr ""
 "Þú hefur breytt valmyndinni.\n"
-"Viltu vista breytingunum eða hunsa þær?"
+"Viltu vista breytingarnar eða hunsa þær?"
 
 #: kmenuedit.cpp:215
 #, kde-format
@@ -254,17 +256,17 @@ msgstr "Br&eyta"
 #: kmenueditui.rc:34
 #, kde-format
 msgid "Main Toolbar"
-msgstr "Aðalverkfærastika"
+msgstr "Aðaltækjastika"
 
 #: main.cpp:31 main.cpp:48 main.cpp:62
 #, kde-format
 msgid "KDE Menu Editor"
-msgstr "KDE valmyndaritillinn"
+msgstr "KDE valmyndaritill"
 
 #: main.cpp:50
 #, kde-format
 msgid "KDE menu editor"
-msgstr "KDE valmyndaritillinn"
+msgstr "KDE valmyndaritill"
 
 #: main.cpp:52
 #, kde-format
@@ -289,7 +291,7 @@ msgstr "Raffaele Sandrini"
 #: main.cpp:54
 #, kde-format
 msgid "Previous Maintainer"
-msgstr "Fyrrverandi Viðhaldsforritari"
+msgstr "Fyrrverandi viðhaldsforritari"
 
 #: main.cpp:55
 #, kde-format
@@ -314,12 +316,12 @@ msgstr "Undirvalmynd sem á að forvelja"
 #: main.cpp:64
 #, kde-format
 msgid "Menu entry to pre-select"
-msgstr "Valmynd sem á að forvelja"
+msgstr "Valmyndarfærsla sem á að forvelja"
 
 #: menufile.cpp:94 menufile.cpp:108
 #, kde-format
 msgid "Could not write to %1"
-msgstr "Gat ekki ritað í %1"
+msgstr "Gat ekki skrifað í %1"
 
 #: preferencesdlg.cpp:26
 #, kde-format
@@ -329,12 +331,12 @@ msgstr "Almennir valkostir"
 #: preferencesdlg.cpp:31
 #, kde-format
 msgid "Spell Checking"
-msgstr "Skoða stafsetningu"
+msgstr "Yfirfara stafsetningu"
 
 #: preferencesdlg.cpp:32
 #, kde-format
 msgid "Spell checking Options"
-msgstr "Stillingar stafsetningarleiðréttingar"
+msgstr "Valkostir stafsetningarkönnunar"
 
 #: preferencesdlg.cpp:65
 #, kde-format
