@@ -65,7 +65,7 @@
   <summary xml:lang="pt">Edita como as aplicações aparecem nos lançadores de aplicações</summary>
   <summary xml:lang="pt-BR">Editar como as aplicações são mostradas nos lançadores de aplicativos</summary>
   <summary xml:lang="ro">Modifică felul în care aplicațiile sunt prezentate în lansatorii de aplicații</summary>
-  <summary xml:lang="ru">Редактирование списка приложений в меню запуска</summary>
+  <summary xml:lang="ru">Редактирование представления приложений в средствах запуска приложений</summary>
   <summary xml:lang="sk">Editovať, ako sa aplikácie zobrazujú v spúšťačoch aplikácií</summary>
   <summary xml:lang="sl">Uredi kako so aplikacije prikazane v zaganjalnikih programov</summary>
   <summary xml:lang="sv">Redigera hur program presenteras i startprogram</summary>
@@ -102,7 +102,7 @@
     <p xml:lang="pt">A Edição do Menu do KDE permite-lhe editar como aparecem as suas aplicações nos lançadores das mesmas, como o item do Lançador de Aplicações do Plasma.</p>
     <p xml:lang="pt-BR">O editor de menu do KDE permite a você editar como seus aplicativos são mostrados nos lançadores de aplicativos como o widget do lançador de aplicativos do Plasma</p>
     <p xml:lang="ro">„Redactare meniu” KDE vă permite să modificați felul în care aplicațiile sunt prezentate în lansatori de aplicații, cum ar fi controlul grafic Plasma „Lansator de aplicații”.</p>
-    <p xml:lang="ru">Редактор меню позволяет настроить содержимое списка, отображаемого в виджетах запуска приложений.</p>
+    <p xml:lang="ru">Редактор меню KDE позволяет изменить представление приложений в средствах запуска приложений (например, в виджете запуска приложений Plasma).</p>
     <p xml:lang="sk">KDE Menu Edit vám umožní upraviť, ako sa vaše aplikácie prezentujú v spúšťačoch aplikácií, ako widget Plasma spúšťača aplikácií.</p>
     <p xml:lang="sl">KDE Menu Edit vam omogoča urejanje, kako so aplikacije prikazane v zaganjalnikih kot npr. gradnik Plasma's Application Launcher.</p>
     <p xml:lang="sv">KDE:s Menyredigering låter dig redigera hur program presenteras i startprogram, såsom Plasmas grafiska komponent för programstart.</p>
