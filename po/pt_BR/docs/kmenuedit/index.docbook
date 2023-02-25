@@ -284,22 +284,24 @@
 <para
 >Não há uma forma de transferir as configurações do menu usando a &GUI;, você precisa fazer isso manualmente e copiar os seguintes arquivos para o usuário de destino:</para>
 <para
->O &kmenuedit; armazena a hierarquia de menus em <filename class="directory"
->$<envar
->HOME</envar
->/.config/menus/applications-kmenuedit.menu</filename
-> e o <filename class="directory"
->$<envar
->HOME</envar
->/.local/share/desktop-directories</filename
-> contém os arquivos 'desktop' para os submenus que você criou. Em <filename class="directory"
->$<envar
->HOME</envar
->/.local/share/applications/</filename
+>O &kmenuedit; armazena a hierarquia de menus em <filename
+>menus/applications-kmenuedit.menu</filename
+> na pasta <filename class="directory"
+>$(qtpaths --paths GenericConfigLocation)</filename
+> e <filename class="directory"
+>desktop-directories</filename
+> na pasta <filename class="directory"
+>$(qtpaths --paths GenericDataLocation)</filename
+>  contém os arquivos 'desktop' para os submenus que você criou. Em <filename class="directory"
+>applications/</filename
+> na pasta <filename class="directory"
+>$(qtpaths --paths GenericDataLocation)</filename
 > você encontrará os arquivos 'desktop' para os itens personalizados que você criou. </para>
 <para
 >Os atalhos de cada aplicativo são armazenados em <filename
->~/.kde/share/config/kglobalshortcutsrc</filename
+>kglobalshortcutsrc </filename
+> na pasta <filename class="directory"
+>$(qtpaths --paths GenericConfigLocation)</filename
 >, mas a exportação/importação não funciona porque os UUIDs dos atalhos não correspondem entre sistemas, mesmo que os arquivos <filename class="extension"
 >.desktop</filename
 > sejam os mesmos. Você terá que atribuir novamente todos os atalhos de forma manual. </para>
@@ -599,16 +601,6 @@
 <listitem
 ><para
 >Se esta opção estiver assinalada, será mostrado uma reação visual sempre que for iniciado um aplicativo. </para
-></listitem>
-</varlistentry>
-<varlistentry>
-<term
-><guilabel
->Colocar na área de notificação</guilabel
-></term>
-<listitem
-><para
->Quando estiver assinalada, o ícone do aplicativo irá aparecer na área de notificação do painel. Você poderá então ocultar ou mostrar o aplicativo, clicando para isso no ícone da área de notificação. Clicar nele com o &RMB;, poderá também desacoplar ou sair do aplicativo. </para
 ></listitem>
 </varlistentry>
 <varlistentry>
@@ -1001,9 +993,9 @@
 >Configurações</guimenu
 > e <guimenu
 >Ajuda</guimenu
->, comuns do &kde;. Para mais informações, consulte as seções sobre o <ulink url="help:/fundamentals/ui.html#menus-settings"
+>, comuns do &kde;. Para mais informações, consulte as seções sobre o <ulink url="help:/fundamentals/menus.html#menus-settings"
 >Menu Configurações</ulink
-> e o <ulink url="help:/fundamentals/ui.html#menus-help"
+> e o <ulink url="help:/fundamentals/menus.html#menus-help"
 >Menu Ajuda</ulink
 > dos Fundamentos do &kde;. </para>
 
@@ -1051,8 +1043,7 @@
 >Tradução de Marcus Gama <email
 >marcus.gama@gmail.com</email
 ></para
-> 
-&underFDL; &underGPL; </chapter>
+> &underFDL; &underGPL; </chapter>
 
 <glossary id="glossary">
 <title
