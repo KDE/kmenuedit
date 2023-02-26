@@ -970,6 +970,11 @@ bool TreeView::dropMimeData(QTreeWidgetItem *item, int index, const QMimeData *d
 
         TreeItem *newItem = createTreeItem(parentItem, after, entryInfo);
         setCurrentItem(newItem);
+
+        // clipboard no longer owns entryInfo
+        if (m_clipboardEntryInfo == entryInfo) {
+            m_clipboard = COPY_FILE;
+        }
     } else {
         // copying a separator
         if (action != Qt::CopyAction) {
