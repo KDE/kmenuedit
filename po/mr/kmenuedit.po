@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-07 00:48+0000\n"
+"POT-Creation-Date: 2023-02-28 03:03+0000\n"
 "PO-Revision-Date: 2014-10-28 15:30+0530\n"
 "Last-Translator: Chetan Khona <chetan@kompkin.com>\n"
 "Language-Team: Marathi <kde-i18n-doc@kde.org>\n"
@@ -335,44 +335,44 @@ msgstr "लपविलेली नोंदणी दर्शवा"
 msgid " [Hidden]"
 msgstr " [लपविलेले]"
 
-#: treeview.cpp:1018
+#: treeview.cpp:1023
 #, kde-format
 msgid "New Submenu"
 msgstr "नवीन उपमेन्यू"
 
-#: treeview.cpp:1018
+#: treeview.cpp:1023
 #, kde-format
 msgid "Submenu name:"
 msgstr "उपमेन्यूचे नाव:"
 
-#: treeview.cpp:1085
+#: treeview.cpp:1090
 #, kde-format
 msgid "New Item"
 msgstr "नवीन घटक"
 
-#: treeview.cpp:1085
+#: treeview.cpp:1090
 #, kde-format
 msgid "Item name:"
 msgstr "घटकाचे नाव:"
 
-#: treeview.cpp:1562
+#: treeview.cpp:1567
 #, kde-format
 msgid "All submenus of '%1' will be removed. Do you want to continue?"
 msgstr "'%1' चे सर्व उपमेन्यू काढून टाकले जातील. तुम्हाला पुढे जायचे आहे का?"
 
-#: treeview.cpp:1563
+#: treeview.cpp:1568
 #, fuzzy, kde-format
 #| msgid "&Delete"
 msgctxt "@title:window"
 msgid "Delete"
 msgstr "काढून टाका (&D)"
 
-#: treeview.cpp:1725
+#: treeview.cpp:1730
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
 msgstr "खालील अडचणीमुळे मेन्यू बदल साठवले जाऊ शकत नाही :"
 
-#: treeview.cpp:1772
+#: treeview.cpp:1777
 #, kde-format
 msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
@@ -380,7 +380,7 @@ msgid ""
 msgstr ""
 "प्रणाली मेन्यू पुन्हस्थापित करायचे आहे का? इशारा : यामुळे सर्व ऐच्छिक मेन्यू काढून टाकले जातील."
 
-#: treeview.cpp:1773
+#: treeview.cpp:1778
 #, fuzzy, kde-format
 #| msgid "Restore to System Menu"
 msgctxt "@title:window"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-07 00:48+0000\n"
+"POT-Creation-Date: 2023-02-28 03:03+0000\n"
 "PO-Revision-Date: 2022-11-11 18:00+0400\n"
 "Last-Translator: Kheyyam <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
@@ -341,45 +341,45 @@ msgstr "Gizli girişlər göstərilsin"
 msgid " [Hidden]"
 msgstr " [Gizli]"
 
-#: treeview.cpp:1018
+#: treeview.cpp:1023
 #, kde-format
 msgid "New Submenu"
 msgstr "Yeni alt menyu"
 
-#: treeview.cpp:1018
+#: treeview.cpp:1023
 #, kde-format
 msgid "Submenu name:"
 msgstr "Alt menyunun adı:"
 
-#: treeview.cpp:1085
+#: treeview.cpp:1090
 #, kde-format
 msgid "New Item"
 msgstr "Yeni element"
 
-#: treeview.cpp:1085
+#: treeview.cpp:1090
 #, kde-format
 msgid "Item name:"
 msgstr "Elementin adı"
 
-#: treeview.cpp:1562
+#: treeview.cpp:1567
 #, kde-format
 msgid "All submenus of '%1' will be removed. Do you want to continue?"
 msgstr "Bütün \"%1\" alt menyuları silinəcəkdir. Davam etmək istəyirsiniz?"
 
-#: treeview.cpp:1563
+#: treeview.cpp:1568
 #, fuzzy, kde-format
 #| msgid "&Delete"
 msgctxt "@title:window"
 msgid "Delete"
 msgstr "&Silin"
 
-#: treeview.cpp:1725
+#: treeview.cpp:1730
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
 msgstr ""
 "Menyu dəyişiklikləri aşağıdakı problemlər səbəbindən saxlanıla bilmədi:"
 
-#: treeview.cpp:1772
+#: treeview.cpp:1777
 #, kde-format
 msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
@@ -388,7 +388,7 @@ msgstr ""
 "Sistem menyusunu bərpa etmək istəyirsiniz? Xəbərsarlıq: Bunla istifadəçinin "
 "yaratdığı bütün menyular silinəcəkdir."
 
-#: treeview.cpp:1773
+#: treeview.cpp:1778
 #, fuzzy, kde-format
 #| msgid "Restore to System Menu"
 msgctxt "@title:window"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-07 00:48+0000\n"
+"POT-Creation-Date: 2023-02-28 03:03+0000\n"
 "PO-Revision-Date: 2009-05-20 20:59+0300\n"
 "Last-Translator: Viesturs Zariņš <viesturs.zarins@mii.lu.lv>\n"
 "Language-Team: Latvian <locale@laka.lv>\n"
@@ -350,44 +350,44 @@ msgstr "Rādīt slēptos ierakstus"
 msgid " [Hidden]"
 msgstr " [Slēpts]"
 
-#: treeview.cpp:1018
+#: treeview.cpp:1023
 #, kde-format
 msgid "New Submenu"
 msgstr "Jauna apakšizvēlne"
 
-#: treeview.cpp:1018
+#: treeview.cpp:1023
 #, kde-format
 msgid "Submenu name:"
 msgstr "Apakšizvēlnes nosaukums:"
 
-#: treeview.cpp:1085
+#: treeview.cpp:1090
 #, kde-format
 msgid "New Item"
 msgstr "Jauns elements"
 
-#: treeview.cpp:1085
+#: treeview.cpp:1090
 #, kde-format
 msgid "Item name:"
 msgstr "Elementa nosaukums:"
 
-#: treeview.cpp:1562
+#: treeview.cpp:1567
 #, kde-format
 msgid "All submenus of '%1' will be removed. Do you want to continue?"
 msgstr "Visas '%1' apakšizvēlnes tiks noņemtas. Vai vēlaties turpināt?"
 
-#: treeview.cpp:1563
+#: treeview.cpp:1568
 #, fuzzy, kde-format
 #| msgid "&Delete"
 msgctxt "@title:window"
 msgid "Delete"
 msgstr "&Dzēst"
 
-#: treeview.cpp:1725
+#: treeview.cpp:1730
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
 msgstr "Izvēlnes izmaiņas nevarēja saglabāt sekojošas problēmas dēļ:"
 
-#: treeview.cpp:1772
+#: treeview.cpp:1777
 #, kde-format
 msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
@@ -396,7 +396,7 @@ msgstr ""
 "Vai vēlaties atjaunot sistēmas izvēlni? Brīdinājums: Tas noņemtas visas "
 "pielāgotās izvēlnes."
 
-#: treeview.cpp:1773
+#: treeview.cpp:1778
 #, fuzzy, kde-format
 #| msgid "Restore to System Menu"
 msgctxt "@title:window"

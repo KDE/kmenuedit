@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KDE 4.2\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-07 00:48+0000\n"
+"POT-Creation-Date: 2023-02-28 03:03+0000\n"
 "PO-Revision-Date: 2021-09-20 10:02+0200\n"
 "Last-Translator: Kristof Kiszel <kiszel.kristof@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -342,44 +342,44 @@ msgstr "A rejtett bejegyzések megjelenítése"
 msgid " [Hidden]"
 msgstr " [Rejtett]"
 
-#: treeview.cpp:1018
+#: treeview.cpp:1023
 #, kde-format
 msgid "New Submenu"
 msgstr "Új almenü"
 
-#: treeview.cpp:1018
+#: treeview.cpp:1023
 #, kde-format
 msgid "Submenu name:"
 msgstr "Az almenü neve:"
 
-#: treeview.cpp:1085
+#: treeview.cpp:1090
 #, kde-format
 msgid "New Item"
 msgstr "Új elem"
 
-#: treeview.cpp:1085
+#: treeview.cpp:1090
 #, kde-format
 msgid "Item name:"
 msgstr "Az elem neve:"
 
-#: treeview.cpp:1562
+#: treeview.cpp:1567
 #, kde-format
 msgid "All submenus of '%1' will be removed. Do you want to continue?"
 msgstr "„%1” összes almenüje el lesz távolítva. Folytatni szeretné?"
 
-#: treeview.cpp:1563
+#: treeview.cpp:1568
 #, fuzzy, kde-format
 #| msgid "&Delete"
 msgctxt "@title:window"
 msgid "Delete"
 msgstr "&Törlés"
 
-#: treeview.cpp:1725
+#: treeview.cpp:1730
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
 msgstr "A menü módosításait nem sikerült elmenteni a következő probléma miatt:"
 
-#: treeview.cpp:1772
+#: treeview.cpp:1777
 #, kde-format
 msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
@@ -388,7 +388,7 @@ msgstr ""
 "Vissza szeretné állítani a rendszermenüt? Figyelem: visszaállításkor az "
 "egyedi menük el lesznek távolítva."
 
-#: treeview.cpp:1773
+#: treeview.cpp:1778
 #, fuzzy, kde-format
 #| msgid "Restore to System Menu"
 msgctxt "@title:window"

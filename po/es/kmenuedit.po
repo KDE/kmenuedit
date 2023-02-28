@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-07 00:48+0000\n"
+"POT-Creation-Date: 2023-02-28 03:03+0000\n"
 "PO-Revision-Date: 2022-12-08 12:05+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -353,44 +353,44 @@ msgstr "Mostrar entradas ocultas"
 msgid " [Hidden]"
 msgstr " [Oculto]"
 
-#: treeview.cpp:1018
+#: treeview.cpp:1023
 #, kde-format
 msgid "New Submenu"
 msgstr "Nuevo submenú"
 
-#: treeview.cpp:1018
+#: treeview.cpp:1023
 #, kde-format
 msgid "Submenu name:"
 msgstr "Nombre del submenú:"
 
-#: treeview.cpp:1085
+#: treeview.cpp:1090
 #, kde-format
 msgid "New Item"
 msgstr "Nuevo elemento"
 
-#: treeview.cpp:1085
+#: treeview.cpp:1090
 #, kde-format
 msgid "Item name:"
 msgstr "Nombre del elemento:"
 
-#: treeview.cpp:1562
+#: treeview.cpp:1567
 #, kde-format
 msgid "All submenus of '%1' will be removed. Do you want to continue?"
 msgstr "Todos los submenús de «%1» se eliminarán. ¿Quiere continuar?"
 
-#: treeview.cpp:1563
+#: treeview.cpp:1568
 #, kde-format
 msgctxt "@title:window"
 msgid "Delete"
 msgstr "Borrar"
 
-#: treeview.cpp:1725
+#: treeview.cpp:1730
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
 msgstr ""
 "No fue posible guardar los cambios al menú debido al siguiente problema:"
 
-#: treeview.cpp:1772
+#: treeview.cpp:1777
 #, kde-format
 msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
@@ -399,7 +399,7 @@ msgstr ""
 "¿Quiere restaurar el menú del sistema? Aviso: Eliminará todos los menús "
 "personalizados."
 
-#: treeview.cpp:1773
+#: treeview.cpp:1778
 #, kde-format
 msgctxt "@title:window"
 msgid "Restore Menu System"
