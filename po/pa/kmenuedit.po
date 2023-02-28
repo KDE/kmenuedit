@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-07 00:48+0000\n"
+"POT-Creation-Date: 2023-02-28 01:00+0000\n"
 "PO-Revision-Date: 2010-10-25 06:45+0530\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi/Panjabi <punjabi-users@lists.sf.net>\n"
@@ -348,44 +348,44 @@ msgstr "ਲੁਕਵੀਆਂ ਐਂਟਰੀਆਂ ਵੇਖੋ"
 msgid " [Hidden]"
 msgstr " [ਓਹਲੇ]"
 
-#: treeview.cpp:1018
+#: treeview.cpp:1023
 #, kde-format
 msgid "New Submenu"
 msgstr "ਨਵਾਂ ਸਬ-ਮੇਨੂ"
 
-#: treeview.cpp:1018
+#: treeview.cpp:1023
 #, kde-format
 msgid "Submenu name:"
 msgstr "ਸਬ-ਮੇਨੂ ਨਾਂ:"
 
-#: treeview.cpp:1085
+#: treeview.cpp:1090
 #, kde-format
 msgid "New Item"
 msgstr "ਨਵੀਂ ਇਕਾਈ"
 
-#: treeview.cpp:1085
+#: treeview.cpp:1090
 #, kde-format
 msgid "Item name:"
 msgstr "ਇਕਾਈ ਨਾਂ:"
 
-#: treeview.cpp:1562
+#: treeview.cpp:1567
 #, kde-format
 msgid "All submenus of '%1' will be removed. Do you want to continue?"
 msgstr "'%1' ਦੇ ਸਭ ਸਬ-ਮੇਨੂ ਹਟਾਏ ਜਾਣਗੇ। ਕੀ ਤੁਸੀਂ ਜਾਰੀ ਰੱਖਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
-#: treeview.cpp:1563
+#: treeview.cpp:1568
 #, fuzzy, kde-format
 #| msgid "&Delete"
 msgctxt "@title:window"
 msgid "Delete"
 msgstr "ਹਟਾਓ(&D)"
 
-#: treeview.cpp:1725
+#: treeview.cpp:1730
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
 msgstr "ਮੇਨੂ ਤਬਦੀਲੀ ਹੇਠ ਲਿਖੀ ਗਲਤੀ ਕਰਕੇ ਸੰਭਾਲੀ ਨਹੀਂ ਜਾ ਸਕਦੀ ਹੈ:"
 
-#: treeview.cpp:1772
+#: treeview.cpp:1777
 #, kde-format
 msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
@@ -393,7 +393,7 @@ msgid ""
 msgstr ""
 "ਕੀ ਤੁਸੀਂ ਸਿਸਟਮ ਮੇਨੂ ਨੂੰ ਮੁੜ-ਸਟੋਰ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ? ਚੇਤਾਵਨੀ: ਇਸ ਨਾਲ ਕਸਟਮ ਮੇਨੂ ਹਟਾਏ ਜਾਣਗੇ।"
 
-#: treeview.cpp:1773
+#: treeview.cpp:1778
 #, fuzzy, kde-format
 #| msgid "Restore to System Menu"
 msgctxt "@title:window"

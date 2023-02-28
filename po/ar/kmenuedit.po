@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-07 00:48+0000\n"
+"POT-Creation-Date: 2023-02-28 01:00+0000\n"
 "PO-Revision-Date: 2022-12-22 11:05+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -349,50 +349,50 @@ msgstr "أظهر المدخلات المخفية"
 msgid " [Hidden]"
 msgstr " [مخفي]"
 
-#: treeview.cpp:1018
+#: treeview.cpp:1023
 #, kde-format
 msgid "New Submenu"
 msgstr "قائمة فرعية جديدة"
 
-#: treeview.cpp:1018
+#: treeview.cpp:1023
 #, kde-format
 msgid "Submenu name:"
 msgstr "اسم القائمة الفرعية:"
 
-#: treeview.cpp:1085
+#: treeview.cpp:1090
 #, kde-format
 msgid "New Item"
 msgstr "عنصر جديد"
 
-#: treeview.cpp:1085
+#: treeview.cpp:1090
 #, kde-format
 msgid "Item name:"
 msgstr "اسم العنصر:"
 
-#: treeview.cpp:1562
+#: treeview.cpp:1567
 #, kde-format
 msgid "All submenus of '%1' will be removed. Do you want to continue?"
 msgstr "جميع القوائم الفرعية لـ '%1'  ستزال . هل ترغب في الاستمرار؟ "
 
-#: treeview.cpp:1563
+#: treeview.cpp:1568
 #, kde-format
 msgctxt "@title:window"
 msgid "Delete"
 msgstr "احذف"
 
-#: treeview.cpp:1725
+#: treeview.cpp:1730
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
 msgstr "لم يتم حفظ تغييرات القائمة بسبب المشكلة التالية:"
 
-#: treeview.cpp:1772
+#: treeview.cpp:1777
 #, kde-format
 msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
 "menus."
 msgstr "هل تريد استرجاع قائمة النظام؟ تحذير: هذا سيزيل كل القوائم المخصصة."
 
-#: treeview.cpp:1773
+#: treeview.cpp:1778
 #, kde-format
 msgctxt "@title:window"
 msgid "Restore Menu System"
