@@ -1,19 +1,19 @@
--kf6# SPDX-FileCopyrightText: None
--kf6# SPDX-License-Identifier: CC0-1.0
--kf6
--kf6Dependencies:
--kf6- 'on': ['@all']
--kf6  'require':
--kf6    'frameworks/extra-cmake-modules': '@stable'
--kf6    'frameworks/ki18n': '@stable'
--kf6    'frameworks/kxmlgui': '@stable'
--kf6    'frameworks/kdbusaddons': '@stable'
--kf6    'frameworks/kiconthemes': '@stable'
--kf6    'frameworks/kio': '@stable'
--kf6    'frameworks/kitemviews': '@stable'
--kf6    'frameworks/sonnet': '@stable'
--kf6    'frameworks/kdoctools': '@stable'
--kf6    'frameworks/kglobalaccel': '@stable'
--kf6    'frameworks/kwindowsystem': '@stable'
--kf6Options:
--kf6  require-passing-tests-on: [ 'Linux', 'FreeBSD']
+# SPDX-FileCopyrightText: None
+# SPDX-License-Identifier: CC0-1.0
+
+Dependencies:
+- 'on': ['@all']
+  'require':
+    'frameworks/extra-cmake-modules': '@latest-kf6'
+    'frameworks/ki18n': '@latest-kf6'
+    'frameworks/kxmlgui': '@latest-kf6'
+    'frameworks/kdbusaddons': '@latest-kf6'
+    'frameworks/kiconthemes': '@latest-kf6'
+    'frameworks/kio': '@latest-kf6'
+    'frameworks/kitemviews': '@latest-kf6'
+    'frameworks/sonnet': '@latest-kf6'
+    'frameworks/kdoctools': '@latest-kf6'
+    'frameworks/kglobalaccel': '@latest-kf6'
+    'frameworks/kwindowsystem': '@latest-kf6'
+Options:
+  require-passing-tests-on: [ 'Linux', 'FreeBSD']
