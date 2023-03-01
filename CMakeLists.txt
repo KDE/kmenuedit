@@ -3,14 +3,14 @@ set(PROJECT_VERSION "5.27.80")
 
 cmake_minimum_required(VERSION 3.16)
 
-set(QT_MIN_VERSION "5.15.2")
-set(KF5_MIN_VERSION "5.102.0")
+set(QT_MIN_VERSION "6.4.0")
+set(KF6_MIN_VERSION "5.240.0")
 set(KDE_COMPILERSETTINGS_LEVEL "5.82")
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(ECM ${KF5_MIN_VERSION} REQUIRED NO_MODULE)
+find_package(ECM ${KF6_MIN_VERSION} REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} )
 
 include(FeatureSummary)
@@ -22,6 +22,7 @@ include(ECMInstallIcons)
 include(ECMQtDeclareLoggingCategory)
 include(KDEClangFormat)
 include(KDEGitCommitHooks)
+include(ECMDeprecationSettings)
 
 find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS
     Core
@@ -29,7 +30,7 @@ find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS
     Xml
 )
 
-find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
+find_package(KF6 ${KF6_MIN_VERSION} REQUIRED COMPONENTS
     I18n
     XmlGui
     DBusAddons
@@ -42,8 +43,9 @@ find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
     WindowSystem
 )
 
-add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0x050f00)
-add_definitions(-DKF_DISABLE_DEPRECATED_BEFORE_AND_AT=0x054200)
+ecm_set_disabled_deprecation_versions(QT 6.4
+     KF 5.103.0
+    )
 
 #add_definitions(-DQT_NO_CAST_FROM_ASCII -DQT_STRICT_ITERATORS -DQT_NO_CAST_FROM_BYTEARRAY)
 
@@ -85,17 +87,17 @@ target_compile_definitions(kmenuedit PRIVATE -DPROJECT_VERSION="${PROJECT_VERSIO
 target_link_libraries(kmenuedit
     Qt::DBus
     Qt::Xml
-    KF5::DBusAddons
-    KF5::GlobalAccel
-    KF5::I18n
-    KF5::IconThemes
-    KF5::KIOCore
-    KF5::KIOWidgets
-    KF5::ItemViews
-    KF5::SonnetCore
-    KF5::SonnetUi
-    KF5::XmlGui
-    KF5::WindowSystem
+    KF6::DBusAddons
+    KF6::GlobalAccel
+    KF6::I18n
+    KF6::IconThemes
+    KF6::KIOCore
+    KF6::KIOWidgets
+    KF6::ItemViews
+    KF6::SonnetCore
+    KF6::SonnetUi
+    KF6::XmlGui
+    KF6::WindowSystem
 )
 
 # add clang-format target for all our real source files
