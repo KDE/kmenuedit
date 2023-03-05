@@ -262,12 +262,12 @@ msgstr "شريط الأدوات الرئيسي"
 #: main.cpp:31 main.cpp:48 main.cpp:62
 #, kde-format
 msgid "KDE Menu Editor"
-msgstr "محرِّر القوائم لـكدي"
+msgstr "محرِّر القوائم لـكِيدِي"
 
 #: main.cpp:50
 #, kde-format
 msgid "KDE menu editor"
-msgstr "محرِّر القوائم لـكدي"
+msgstr "محرِّر القوائم لـكِيدِي"
 
 #: main.cpp:52
 #, kde-format
@@ -402,7 +402,7 @@ msgstr "استرجع قائمة النظام"
 #~ msgstr "الأ&مر:"
 
 #~ msgid "Only show in KDE"
-#~ msgstr "تظهر فقط في الكيدي"
+#~ msgstr "تظهر فقط في الكِيدِي"
 
 #~ msgid ""
 #~ "Unable to contact khotkeys. Your changes are saved, but they could not be "
