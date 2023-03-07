@@ -5,20 +5,21 @@
 # Franklin Weng <franklin at goodhorse dot idv dot tw>, 2007, 2013.
 # Frank Weng (a.k.a. Franklin) <franklin@goodhorse.idv.tw>, 2009.
 # pan93412 <pan93412@gmail.com>, 2019.
+# Kisaragi Hiu <mail@kisaragi-hiu.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-02-28 01:00+0000\n"
-"PO-Revision-Date: 2019-11-20 20:07+0800\n"
-"Last-Translator: pan93412 <pan93412@gmail.com>\n"
-"Language-Team: Chinese <zh-l10n@lists.linux.org.tw>\n"
+"PO-Revision-Date: 2023-03-06 22:09+0900\n"
+"Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
+"Language-Team: Traditional Chinese <zh-l10n@linux.org.tw>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 19.11.80\n"
+"X-Generator: Lokalize 22.12.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -49,19 +50,19 @@ msgstr "註解(&C):"
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Environment Variables:"
-msgstr ""
+msgstr "環境變數："
 
 #: basictab.cpp:81
 #, kde-format
 msgctxt "@label:textbox the name or path to a command-line program"
 msgid "Program:"
-msgstr ""
+msgstr "程式："
 
 #: basictab.cpp:88
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Command-Line Arguments:"
-msgstr ""
+msgstr "命令列參數："
 
 #: basictab.cpp:92
 #, kde-format
@@ -98,7 +99,7 @@ msgstr "啟用執行回饋(&L)"
 #: basictab.cpp:111
 #, kde-format
 msgid "Only show when logged into a Plasma session"
-msgstr ""
+msgstr "只在登入 Plasma 工作階段時顯示"
 
 #: basictab.cpp:115
 #, kde-format
@@ -368,11 +369,10 @@ msgid "All submenus of '%1' will be removed. Do you want to continue?"
 msgstr "%1 的所有子選單都將被移除。您要繼續嗎？"
 
 #: treeview.cpp:1568
-#, fuzzy, kde-format
-#| msgid "&Delete"
+#, kde-format
 msgctxt "@title:window"
 msgid "Delete"
-msgstr "刪除(&D)"
+msgstr "刪除"
 
 #: treeview.cpp:1730
 #, kde-format
@@ -387,11 +387,10 @@ msgid ""
 msgstr "您要回復系統選單嗎？警告：您將會移除所有的自定選單。"
 
 #: treeview.cpp:1778
-#, fuzzy, kde-format
-#| msgid "Restore to System Menu"
+#, kde-format
 msgctxt "@title:window"
 msgid "Restore Menu System"
-msgstr "回復為系統選單"
+msgstr "回復系統選單"
 
 #~ msgid "Co&mmand:"
 #~ msgstr "指令(&M):"
