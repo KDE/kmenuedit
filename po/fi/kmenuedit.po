@@ -9,7 +9,7 @@
 # Teemu Rytilahti <teemu.rytilahti@d5k.net>, 2008.
 # Jorma Karvonen <karvonen.jorma@gmail.com>, 2010.
 # Lasse Liehu <lasse.liehu@gmail.com>, 2010, 2013, 2014.
-# Tommi Nieminen <translator@legisign.org>, 2013, 2018, 2019, 2021, 2022.
+# Tommi Nieminen <translator@legisign.org>, 2013, 2018, 2019, 2021, 2022, 2023.
 # Copyright © 2002, 2003, 2004, 2005, 2008 Free Software Foundation, Inc.
 #
 # KDE Finnish translation sprint participants:
@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-02-28 03:03+0000\n"
-"PO-Revision-Date: 2022-02-05 18:30+0200\n"
+"PO-Revision-Date: 2023-03-05 18:13+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -27,7 +27,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-POT-Import-Date: 2012-12-01 22:22:26+0000\n"
-"X-Generator: Lokalize 20.04.2\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -63,19 +63,19 @@ msgstr "&Huomautus:"
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Environment Variables:"
-msgstr ""
+msgstr "Ympäristömuuttujat:"
 
 #: basictab.cpp:81
 #, kde-format
 msgctxt "@label:textbox the name or path to a command-line program"
 msgid "Program:"
-msgstr ""
+msgstr "Ohjelma:"
 
 #: basictab.cpp:88
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Command-Line Arguments:"
-msgstr ""
+msgstr "Komentoriviparametrit:"
 
 #: basictab.cpp:92
 #, kde-format
@@ -386,11 +386,10 @@ msgid "All submenus of '%1' will be removed. Do you want to continue?"
 msgstr "Valikon ”%1” kaikki alivalikot poistetaan. Haluatko jatkaa?"
 
 #: treeview.cpp:1568
-#, fuzzy, kde-format
-#| msgid "&Delete"
+#, kde-format
 msgctxt "@title:window"
 msgid "Delete"
-msgstr "&Poista"
+msgstr "Poista"
 
 #: treeview.cpp:1730
 #, kde-format
@@ -407,11 +406,10 @@ msgstr ""
 "poistuvat."
 
 #: treeview.cpp:1778
-#, fuzzy, kde-format
-#| msgid "Restore to System Menu"
+#, kde-format
 msgctxt "@title:window"
 msgid "Restore Menu System"
-msgstr "Palauta järjestelmävalikkoon"
+msgstr "Palauta järjestelmävalikko"
 
 #~ msgid "Co&mmand:"
 #~ msgstr "K&omento:"
