@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-02-28 01:00+0000\n"
-"PO-Revision-Date: 2023-02-08 19:43+0300\n"
+"PO-Revision-Date: 2023-03-24 20:22+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.12.2\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -261,12 +261,12 @@ msgstr "Ana Araç Çubuğu"
 #: main.cpp:31 main.cpp:48 main.cpp:62
 #, kde-format
 msgid "KDE Menu Editor"
-msgstr "KDE Menü Düzenleyici"
+msgstr "KDE Menü Düzenleyicisi"
 
 #: main.cpp:50
 #, kde-format
 msgid "KDE menu editor"
-msgstr "KDE menü düzenleyici"
+msgstr "KDE menü düzenleyicisi"
 
 #: main.cpp:52
 #, kde-format
