@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-02-28 01:00+0000\n"
-"PO-Revision-Date: 2023-03-24 20:22+0300\n"
+"PO-Revision-Date: 2023-04-04 00:58+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -52,7 +52,7 @@ msgstr "&Yorum:"
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Environment Variables:"
-msgstr "Çevre Değişkenleri:"
+msgstr "Çevre değişkenleri:"
 
 #: basictab.cpp:81
 #, kde-format
@@ -64,7 +64,7 @@ msgstr "Program:"
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Command-Line Arguments:"
-msgstr "Komut Satırı Argümanları:"
+msgstr "Komut satırı argümanları:"
 
 #: basictab.cpp:92
 #, kde-format
@@ -209,7 +209,7 @@ msgstr "A&şağı Taşı"
 #: kmenuedit.cpp:98
 #, kde-format
 msgid "Restore to System Menu"
-msgstr "Sistem Menüsünü Yeniden Yükle"
+msgstr "Sistem Menüsünü Geri Yükle"
 
 #: kmenuedit.cpp:126
 #, kde-format
@@ -301,7 +301,7 @@ msgstr "Matthias Elter"
 #: main.cpp:55
 #, kde-format
 msgid "Original Author"
-msgstr "Orjinal Yazar"
+msgstr "Özgün Yazar"
 
 #: main.cpp:56
 #, kde-format
@@ -326,7 +326,7 @@ msgstr "%1 dosyasına yazılamadı"
 #: preferencesdlg.cpp:26
 #, kde-format
 msgid "General options"
-msgstr "Genel seçenekler"
+msgstr "Genel Seçenekler"
 
 #: preferencesdlg.cpp:31
 #, kde-format
