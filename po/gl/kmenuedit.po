@@ -1,19 +1,19 @@
 # translation of kmenuedit.po to galician
 # Copyright (C) 2003, 2006, 2007, 2008, 2009 Free Software Foundation, Inc.
-#
 # Xabi García <xabigf@gmx.net>, 2003.
 # Xabi G. Feal <xabigf@gmx.net>, 2006.
 # mvillarino <mvillarino@users.sourceforge.net>, 2007, 2008, 2009.
 # marce villarino <mvillarino@users.sourceforge.net>, 2009.
 # Marce Villarino <mvillarino@kde-espana.es>, 2009, 2011, 2013.
 # Adrián Chaves Fernández (Gallaecio) <adriyetichaves@gmail.com>, 2017.
-# Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2017, 2018, 2019.
+# Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2017, 2018, 2019, 2023.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-02-28 01:00+0000\n"
-"PO-Revision-Date: 2019-11-26 22:55+0100\n"
+"PO-Revision-Date: 2023-04-30 11:28+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 19.08.3\n"
+"X-Generator: Lokalize 23.04.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -52,19 +52,19 @@ msgstr "&Comentario:"
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Environment Variables:"
-msgstr ""
+msgstr "Variábeis de ambiente:"
 
 #: basictab.cpp:81
 #, kde-format
 msgctxt "@label:textbox the name or path to a command-line program"
 msgid "Program:"
-msgstr ""
+msgstr "Programa:"
 
 #: basictab.cpp:88
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Command-Line Arguments:"
-msgstr ""
+msgstr "Argumentos da liña de ordes:"
 
 #: basictab.cpp:92
 #, kde-format
@@ -103,7 +103,7 @@ msgstr "Activar o &aviso de inicio"
 #: basictab.cpp:111
 #, kde-format
 msgid "Only show when logged into a Plasma session"
-msgstr ""
+msgstr "Mostrar só nas sesións de Plasma"
 
 #: basictab.cpp:115
 #, kde-format
@@ -325,7 +325,7 @@ msgstr "Non se puido escribir en %1"
 #: preferencesdlg.cpp:26
 #, kde-format
 msgid "General options"
-msgstr "Opcións xeerais"
+msgstr "Opcións xerais"
 
 #: preferencesdlg.cpp:31
 #, kde-format
@@ -373,11 +373,10 @@ msgid "All submenus of '%1' will be removed. Do you want to continue?"
 msgstr "Retiraranse todos os submenús de «%1». Quere realmente continuar?"
 
 #: treeview.cpp:1568
-#, fuzzy, kde-format
-#| msgid "&Delete"
+#, kde-format
 msgctxt "@title:window"
 msgid "Delete"
-msgstr "&Eliminar"
+msgstr "Eliminar"
 
 #: treeview.cpp:1730
 #, kde-format
@@ -394,11 +393,10 @@ msgstr ""
 "personalizados."
 
 #: treeview.cpp:1778
-#, fuzzy, kde-format
-#| msgid "Restore to System Menu"
+#, kde-format
 msgctxt "@title:window"
 msgid "Restore Menu System"
-msgstr "Restaurar para o menú do sistema"
+msgstr "Restaurar o sistema de menús"
 
 #~ msgid "Co&mmand:"
 #~ msgstr "&Orde:"
