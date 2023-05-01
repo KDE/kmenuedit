@@ -17,6 +17,7 @@
   <name xml:lang="eu">Menua editatzea</name>
   <name xml:lang="fi">Valikkomuokkain</name>
   <name xml:lang="fr">Menu « Édition »</name>
+  <name xml:lang="gl">Edición de menú</name>
   <name xml:lang="ia">Menu Edit (Modifica de menu )</name>
   <name xml:lang="id">Menu Edit</name>
   <name xml:lang="is">Valmyndaritill</name>
@@ -55,6 +56,7 @@
   <summary xml:lang="eu">Editatu aplikazio-abiarazleetan aplikazioak nola aurkezten diren</summary>
   <summary xml:lang="fi">Muokkaa sitä, miten sovellukset esitetään sovelluskäynnistimissä</summary>
   <summary xml:lang="fr">Modifier la présentation des applications dans les lanceurs d'applications</summary>
+  <summary xml:lang="gl">Edita como se presentan as aplicacións nos iniciadores</summary>
   <summary xml:lang="ia">Modifica  como applicationes essera presentate in lanceatores de app</summary>
   <summary xml:lang="id">Edit bagaimana aplikasi disajikan di peluncur aplikasi</summary>
   <summary xml:lang="is">Breyttu því hvernig forrit birtast í forritaræsum</summary>
@@ -93,6 +95,7 @@
     <p xml:lang="eu">KDE Menua editatzeak aplikazio-abiarazleetan aplikazioak nola aurkezten diren editatzen uzten dizu, Plasmaren aplikazio abiarazle trepetan esaterako.</p>
     <p xml:lang="fi">KDE:n valikkomuokkaimella voit muokata sitä, miten sovellukset esitetään sovelluskäynnistimissä kuten Plasman käynnistinsovelmassa.</p>
     <p xml:lang="fr">Le menu « Édition » de KDE vous permet de modifier la présentation des applications dans les lanceurs d'applications, comme le composant graphique « Lanceur d'applications » de Plasma.</p>
+    <p xml:lang="gl">A edición de menú de KDE permíteche editar como se presentan as aplicacións nos iniciadores, como o trebello de iniciación de aplicacións de Plasma.</p>
     <p xml:lang="ia">Menu Edit de KDE permitte te modifcar como tu applicationes es presentate in lanceatores de app, come le widget Application Launcher (Lanceator de application) de Plasma.</p>
     <p xml:lang="id">Edit Menu KDE memungkinkan kamu mengedit bagaimana aplikasimu disajikan di peluncur aplikasi, seperti widget Peluncur Aplikasi Plasma.</p>
     <p xml:lang="is">KDE valmyndaritill gerir þér kleift að breyta því hvernig forritin birtast í forritaræsum eins og forritaræsi Plasma.</p>
