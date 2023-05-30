@@ -100,6 +100,10 @@ target_link_libraries(kmenuedit
     KF6::WindowSystem
 )
 
+if (QT_MAJOR_VERSION STREQUAL "6")
+    target_link_libraries(kmenuedit KF6::IconWidgets)
+endif()
+
 # add clang-format target for all our real source files
 file(GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES *.cpp *.h)
 kde_clang_format(${ALL_CLANG_FORMAT_SOURCE_FILES})
