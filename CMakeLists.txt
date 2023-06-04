@@ -98,11 +98,8 @@ target_link_libraries(kmenuedit
     KF6::SonnetUi
     KF6::XmlGui
     KF6::WindowSystem
+    KF6::IconWidgets
 )
-
-if (QT_MAJOR_VERSION STREQUAL "6")
-    target_link_libraries(kmenuedit KF6::IconWidgets)
-endif()
 
 # add clang-format target for all our real source files
 file(GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES *.cpp *.h)
