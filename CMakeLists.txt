@@ -126,5 +126,4 @@ ecm_qt_install_logging_categories(
         )
 
 ki18n_install(po)
-MESSAGE(STATUS "Reactivate kdocbook support when 'Entity 'kmenu' not defined' will be fixed")
-#kdoctools_install(po)
+kdoctools_install(po)
