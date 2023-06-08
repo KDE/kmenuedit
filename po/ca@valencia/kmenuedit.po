@@ -199,12 +199,12 @@ msgstr "&Ordena-ho tot per descripció"
 #: kmenuedit.cpp:87
 #, kde-format
 msgid "Move &Up"
-msgstr "Mou am&unt"
+msgstr "Mou cap am&unt"
 
 #: kmenuedit.cpp:90
 #, kde-format
 msgid "Move &Down"
-msgstr "Mou a&vall"
+msgstr "Mou cap a&vall"
 
 #: kmenuedit.cpp:98
 #, kde-format
