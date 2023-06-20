@@ -52,7 +52,7 @@ msgstr "&Comentario:"
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Environment Variables:"
-msgstr "Variábeis de ambiente:"
+msgstr "Variábeis de contorno:"
 
 #: basictab.cpp:81
 #, kde-format
@@ -103,7 +103,7 @@ msgstr "Activar o &aviso de inicio"
 #: basictab.cpp:111
 #, kde-format
 msgid "Only show when logged into a Plasma session"
-msgstr "Mostrar só nas sesións de Plasma"
+msgstr "Amosar só nas sesións de Plasma"
 
 #: basictab.cpp:115
 #, kde-format
@@ -340,7 +340,7 @@ msgstr "Opcións da comprobación da ortografía"
 #: preferencesdlg.cpp:65
 #, kde-format
 msgid "Show hidden entries"
-msgstr "Mostrar as entradas agochadas"
+msgstr "Amosar as entradas agochadas"
 
 #: treeview.cpp:177
 #, kde-format
