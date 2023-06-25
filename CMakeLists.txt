@@ -50,7 +50,7 @@ ecm_set_disabled_deprecation_versions(QT 6.4
 #add_definitions(-DQT_NO_CAST_FROM_ASCII -DQT_STRICT_ITERATORS -DQT_NO_CAST_FROM_BYTEARRAY)
 
 add_definitions(-DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_FROM_BYTEARRAY)
-
+add_definitions(-DTRANSLATION_DOMAIN=\"kmenuedit\")
 add_subdirectory( pixmaps ) 
 add_subdirectory( doc )
 add_subdirectory(kconf_update)
