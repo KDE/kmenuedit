@@ -9,9 +9,6 @@
 
 #include <KAboutData>
 #include <KLocalizedString>
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-#include <Kdelibs4ConfigMigrator>
-#endif
 #include <KWindowSystem>
 #include <kdbusservice.h>
 
@@ -35,13 +32,6 @@ public:
 int main(int argc, char **argv)
 {
     KMenuApplication app(argc, argv);
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    Kdelibs4ConfigMigrator migrate(QStringLiteral("kmenuedit"));
-    migrate.setConfigFiles(QStringList() << QStringLiteral("kmenueditrc"));
-    migrate.setUiFiles(QStringList() << QStringLiteral("kmenueditui.rc"));
-    migrate.migrate();
-    QGuiApplication::setAttribute(Qt::AA_UseHighDpiPixmaps);
-#endif
     KLocalizedString::setApplicationDomain("kmenuedit");
 
     KAboutData aboutData(QStringLiteral("kmenuedit"),

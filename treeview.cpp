@@ -704,11 +704,7 @@ void TreeView::startDrag(Qt::DropActions supportedActions)
     drag->exec(supportedActions, Qt::MoveAction);
 }
 
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-QMimeData *TreeView::mimeData(const QList<QTreeWidgetItem *> items) const
-#else
 QMimeData *TreeView::mimeData(const QList<QTreeWidgetItem *> &items) const
-#endif
 {
     if (items.isEmpty()) {
         return nullptr;
@@ -1890,11 +1886,7 @@ bool MenuItemMimeData::hasFormat(const QString &mimeType) const
     return m_item && mimeType == QLatin1String(s_internalMimeType);
 }
 
-#if (QT_VERSION < QT_VERSION_CHECK(6, 0, 0))
-QVariant MenuItemMimeData::retrieveData(const QString &mimeType, QVariant::Type type) const
-#else
 QVariant MenuItemMimeData::retrieveData(const QString &mimeType, QMetaType type) const
-#endif
 {
     Q_UNUSED(type);
 

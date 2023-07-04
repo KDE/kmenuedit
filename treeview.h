@@ -229,11 +229,7 @@ protected:
     void saveLayout();
 
     QStringList mimeTypes() const override;
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    QMimeData *mimeData(const QList<QTreeWidgetItem *> items) const override;
-#else
     QMimeData *mimeData(const QList<QTreeWidgetItem *> &items) const override;
-#endif
     Qt::DropActions supportedDropActions() const override;
 
     void sendReloadMenu();
@@ -266,11 +262,8 @@ public:
     TreeItem *item() const;
 
 protected:
-#if (QT_VERSION < QT_VERSION_CHECK(6, 0, 0))
-    QVariant retrieveData(const QString &mimeType, QVariant::Type type) const override;
-#else
     QVariant retrieveData(const QString &mimeType, QMetaType type) const override;
-#endif
+
 private:
     TreeItem *m_item = nullptr;
 };
