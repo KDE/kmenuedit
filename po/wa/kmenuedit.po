@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-28 01:00+0000\n"
+"POT-Creation-Date: 2023-07-05 02:51+0000\n"
 "PO-Revision-Date: 2010-01-22 14:42+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -244,67 +244,67 @@ msgstr "&Candjî"
 msgid "Main Toolbar"
 msgstr "Mwaisse båre ås usteyes"
 
-#: main.cpp:31 main.cpp:48 main.cpp:62
+#: main.cpp:28 main.cpp:38 main.cpp:52
 #, kde-format
 msgid "KDE Menu Editor"
 msgstr "Aspougneu del dressêye di KDE"
 
-#: main.cpp:50
+#: main.cpp:40
 #, kde-format
 msgid "KDE menu editor"
 msgstr "Aspougneu del dressêye di KDE"
 
-#: main.cpp:52
+#: main.cpp:42
 #, kde-format
 msgid "(C) 2000-2003, Waldo Bastian, Raffaele Sandrini, Matthias Elter"
 msgstr "© 2000-2003, Waldo Bastian, Raffaele Sandrini eyet Matthias Elter"
 
-#: main.cpp:53
+#: main.cpp:43
 #, kde-format
 msgid "Waldo Bastian"
 msgstr "Waldo Bastian"
 
-#: main.cpp:53
+#: main.cpp:43
 #, kde-format
 msgid "Maintainer"
 msgstr "Mintneu"
 
-#: main.cpp:54
+#: main.cpp:44
 #, kde-format
 msgid "Raffaele Sandrini"
 msgstr "Raffaele Sandrini"
 
-#: main.cpp:54
+#: main.cpp:44
 #, kde-format
 msgid "Previous Maintainer"
 msgstr "Mintneu di dvant"
 
-#: main.cpp:55
+#: main.cpp:45
 #, kde-format
 msgid "Matthias Elter"
 msgstr "Matthias Elter"
 
-#: main.cpp:55
+#: main.cpp:45
 #, kde-format
 msgid "Original Author"
 msgstr "Prumî oteur"
 
-#: main.cpp:56
+#: main.cpp:46
 #, kde-format
 msgid "Montel Laurent"
 msgstr "Montel Laurent"
 
-#: main.cpp:63
+#: main.cpp:53
 #, kde-format
 msgid "Sub menu to pre-select"
 msgstr "Dressêye efant a tchoezi d' avance"
 
-#: main.cpp:64
+#: main.cpp:54
 #, kde-format
 msgid "Menu entry to pre-select"
 msgstr "Intrêye del dressêye a tchoezi d' avance"
 
-#: menufile.cpp:94 menufile.cpp:108
+#: menufile.cpp:94 menufile.cpp:105
 #, kde-format
 msgid "Could not write to %1"
 msgstr "Dji n' a nén sepou scrire so %1"
@@ -335,48 +335,48 @@ msgstr "Mostrer les intrêyes catcheyes"
 msgid " [Hidden]"
 msgstr " [Catchî]"
 
-#: treeview.cpp:1023
+#: treeview.cpp:1019
 #, kde-format
 msgid "New Submenu"
 msgstr "Novele dressêye efant"
 
-#: treeview.cpp:1023
+#: treeview.cpp:1019
 #, kde-format
 msgid "Submenu name:"
 msgstr "No del dressêye efant :"
 
-#: treeview.cpp:1090
+#: treeview.cpp:1086
 #, kde-format
 msgid "New Item"
 msgstr "Novea cayet"
 
-#: treeview.cpp:1090
+#: treeview.cpp:1086
 #, kde-format
 msgid "Item name:"
 msgstr "No do cayet :"
 
-#: treeview.cpp:1567
+#: treeview.cpp:1563
 #, kde-format
 msgid "All submenus of '%1' will be removed. Do you want to continue?"
 msgstr ""
 "Totes les dressêyes efant di « %1 » vont-st esse oistêyes. Voloz vs "
 "continouwer ?"
 
-#: treeview.cpp:1568
+#: treeview.cpp:1564
 #, fuzzy, kde-format
 #| msgid "&Delete"
 msgctxt "@title:window"
 msgid "Delete"
 msgstr "&Disfacer"
 
-#: treeview.cpp:1730
+#: treeview.cpp:1726
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
 msgstr ""
 "Les candjmints al dressêye n' ont nén savou esse schapés a cåze di ç' "
 "problinme la :"
 
-#: treeview.cpp:1777
+#: treeview.cpp:1773
 #, kde-format
 msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
@@ -385,7 +385,7 @@ msgstr ""
 "Voloz vs rapexhî l' dressêye sistinme ? Asteme : Ça va disfacer totes les "
 "dressêyes fwaites a vosse môde."
 
-#: treeview.cpp:1778
+#: treeview.cpp:1774
 #, fuzzy, kde-format
 #| msgid "Restore to System Menu"
 msgctxt "@title:window"

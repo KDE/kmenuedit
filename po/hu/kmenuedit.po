@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KDE 4.2\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-28 01:00+0000\n"
+"POT-Creation-Date: 2023-07-05 02:51+0000\n"
 "PO-Revision-Date: 2021-09-20 10:02+0200\n"
 "Last-Translator: Kristof Kiszel <kiszel.kristof@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -252,67 +252,67 @@ msgstr "S&zerkesztés"
 msgid "Main Toolbar"
 msgstr "Fő eszköztár"
 
-#: main.cpp:31 main.cpp:48 main.cpp:62
+#: main.cpp:28 main.cpp:38 main.cpp:52
 #, kde-format
 msgid "KDE Menu Editor"
 msgstr "KDE menüszerkesztő"
 
-#: main.cpp:50
+#: main.cpp:40
 #, kde-format
 msgid "KDE menu editor"
 msgstr "KDE menüszerkesztő"
 
-#: main.cpp:52
+#: main.cpp:42
 #, kde-format
 msgid "(C) 2000-2003, Waldo Bastian, Raffaele Sandrini, Matthias Elter"
 msgstr "(C) Waldo Bastian, Raffaele Sandrini, Matthias Elter, 2003."
 
-#: main.cpp:53
+#: main.cpp:43
 #, kde-format
 msgid "Waldo Bastian"
 msgstr "Waldo Bastian"
 
-#: main.cpp:53
+#: main.cpp:43
 #, kde-format
 msgid "Maintainer"
 msgstr "Karbantartó"
 
-#: main.cpp:54
+#: main.cpp:44
 #, kde-format
 msgid "Raffaele Sandrini"
 msgstr "Raffaele Sandrini"
 
-#: main.cpp:54
+#: main.cpp:44
 #, kde-format
 msgid "Previous Maintainer"
 msgstr "Előző karbantartó"
 
-#: main.cpp:55
+#: main.cpp:45
 #, kde-format
 msgid "Matthias Elter"
 msgstr "Matthias Elter"
 
-#: main.cpp:55
+#: main.cpp:45
 #, kde-format
 msgid "Original Author"
 msgstr "Eredeti szerző"
 
-#: main.cpp:56
+#: main.cpp:46
 #, kde-format
 msgid "Montel Laurent"
 msgstr "Montel Laurent"
 
-#: main.cpp:63
+#: main.cpp:53
 #, kde-format
 msgid "Sub menu to pre-select"
 msgstr "Kiválasztandó almenü"
 
-#: main.cpp:64
+#: main.cpp:54
 #, kde-format
 msgid "Menu entry to pre-select"
 msgstr "Kiválasztandó menüelem"
 
-#: menufile.cpp:94 menufile.cpp:108
+#: menufile.cpp:94 menufile.cpp:105
 #, kde-format
 msgid "Could not write to %1"
 msgstr "Nem sikerült írni ide: %1"
@@ -342,44 +342,44 @@ msgstr "A rejtett bejegyzések megjelenítése"
 msgid " [Hidden]"
 msgstr " [Rejtett]"
 
-#: treeview.cpp:1023
+#: treeview.cpp:1019
 #, kde-format
 msgid "New Submenu"
 msgstr "Új almenü"
 
-#: treeview.cpp:1023
+#: treeview.cpp:1019
 #, kde-format
 msgid "Submenu name:"
 msgstr "Az almenü neve:"
 
-#: treeview.cpp:1090
+#: treeview.cpp:1086
 #, kde-format
 msgid "New Item"
 msgstr "Új elem"
 
-#: treeview.cpp:1090
+#: treeview.cpp:1086
 #, kde-format
 msgid "Item name:"
 msgstr "Az elem neve:"
 
-#: treeview.cpp:1567
+#: treeview.cpp:1563
 #, kde-format
 msgid "All submenus of '%1' will be removed. Do you want to continue?"
 msgstr "„%1” összes almenüje el lesz távolítva. Folytatni szeretné?"
 
-#: treeview.cpp:1568
+#: treeview.cpp:1564
 #, fuzzy, kde-format
 #| msgid "&Delete"
 msgctxt "@title:window"
 msgid "Delete"
 msgstr "&Törlés"
 
-#: treeview.cpp:1730
+#: treeview.cpp:1726
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
 msgstr "A menü módosításait nem sikerült elmenteni a következő probléma miatt:"
 
-#: treeview.cpp:1777
+#: treeview.cpp:1773
 #, kde-format
 msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
@@ -388,7 +388,7 @@ msgstr ""
 "Vissza szeretné állítani a rendszermenüt? Figyelem: visszaállításkor az "
 "egyedi menük el lesznek távolítva."
 
-#: treeview.cpp:1778
+#: treeview.cpp:1774
 #, fuzzy, kde-format
 #| msgid "Restore to System Menu"
 msgctxt "@title:window"

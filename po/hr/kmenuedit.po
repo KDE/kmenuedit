@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit 0\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-28 01:00+0000\n"
+"POT-Creation-Date: 2023-07-05 02:51+0000\n"
 "PO-Revision-Date: 2011-04-17 14:14+0200\n"
 "Last-Translator: Marko Dimjašević <marko@dimjasevic.net>\n"
 "Language-Team: Croatian <kde-croatia-list@lists.sourceforge.net>\n"
@@ -257,67 +257,67 @@ msgstr "&Uredi"
 msgid "Main Toolbar"
 msgstr "Glavna alatna traka"
 
-#: main.cpp:31 main.cpp:48 main.cpp:62
+#: main.cpp:28 main.cpp:38 main.cpp:52
 #, kde-format
 msgid "KDE Menu Editor"
 msgstr "KDE izmjene izbornika"
 
-#: main.cpp:50
+#: main.cpp:40
 #, kde-format
 msgid "KDE menu editor"
 msgstr "KDE uređivač izbornika"
 
-#: main.cpp:52
+#: main.cpp:42
 #, kde-format
 msgid "(C) 2000-2003, Waldo Bastian, Raffaele Sandrini, Matthias Elter"
 msgstr "© 2000–2003 Waldo Bastian, Raffaele Sandrini, Matthias Elter"
 
-#: main.cpp:53
+#: main.cpp:43
 #, kde-format
 msgid "Waldo Bastian"
 msgstr "Waldo Bastian"
 
-#: main.cpp:53
+#: main.cpp:43
 #, kde-format
 msgid "Maintainer"
 msgstr "Održavatelj"
 
-#: main.cpp:54
+#: main.cpp:44
 #, kde-format
 msgid "Raffaele Sandrini"
 msgstr "Raffaele Sandrini"
 
-#: main.cpp:54
+#: main.cpp:44
 #, kde-format
 msgid "Previous Maintainer"
 msgstr "Trenutni održavatelj"
 
-#: main.cpp:55
+#: main.cpp:45
 #, kde-format
 msgid "Matthias Elter"
 msgstr "Matthias Elter"
 
-#: main.cpp:55
+#: main.cpp:45
 #, kde-format
 msgid "Original Author"
 msgstr "Originalni autor"
 
-#: main.cpp:56
+#: main.cpp:46
 #, kde-format
 msgid "Montel Laurent"
 msgstr "Montel Laurent"
 
-#: main.cpp:63
+#: main.cpp:53
 #, kde-format
 msgid "Sub menu to pre-select"
 msgstr "Podizbornik za pred-odabir"
 
-#: main.cpp:64
+#: main.cpp:54
 #, kde-format
 msgid "Menu entry to pre-select"
 msgstr "Izbornički unos za pred-odabir"
 
-#: menufile.cpp:94 menufile.cpp:108
+#: menufile.cpp:94 menufile.cpp:105
 #, kde-format
 msgid "Could not write to %1"
 msgstr "Ne mogu zapisati u %1"
@@ -348,44 +348,44 @@ msgstr "Pokaži skrivene unose"
 msgid " [Hidden]"
 msgstr " [Sakriveno]"
 
-#: treeview.cpp:1023
+#: treeview.cpp:1019
 #, kde-format
 msgid "New Submenu"
 msgstr "&Novi Podizbornik"
 
-#: treeview.cpp:1023
+#: treeview.cpp:1019
 #, kde-format
 msgid "Submenu name:"
 msgstr "Naziv podizbornika"
 
-#: treeview.cpp:1090
+#: treeview.cpp:1086
 #, kde-format
 msgid "New Item"
 msgstr "Nova stavka"
 
-#: treeview.cpp:1090
+#: treeview.cpp:1086
 #, kde-format
 msgid "Item name:"
 msgstr "Naziv stavke:"
 
-#: treeview.cpp:1567
+#: treeview.cpp:1563
 #, kde-format
 msgid "All submenus of '%1' will be removed. Do you want to continue?"
 msgstr "Svi podizbornici od '%1' biti će uklonjeni. Da li želite nastaviti?"
 
-#: treeview.cpp:1568
+#: treeview.cpp:1564
 #, fuzzy, kde-format
 #| msgid "&Delete"
 msgctxt "@title:window"
 msgid "Delete"
 msgstr "&Izbriši"
 
-#: treeview.cpp:1730
+#: treeview.cpp:1726
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
 msgstr "Promjene u izborniku ne mogu biti spremljene zbog slijedećeg problema:"
 
-#: treeview.cpp:1777
+#: treeview.cpp:1773
 #, kde-format
 msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
@@ -394,7 +394,7 @@ msgstr ""
 "Da li želite vratiti sustavksi izbornik? Oprez: Ovo će ukloniti sve "
 "prilagođene izbornike."
 
-#: treeview.cpp:1778
+#: treeview.cpp:1774
 #, fuzzy, kde-format
 #| msgid "Restore to System Menu"
 msgctxt "@title:window"

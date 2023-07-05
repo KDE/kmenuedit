@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-28 01:00+0000\n"
+"POT-Creation-Date: 2023-07-05 02:51+0000\n"
 "PO-Revision-Date: 2009-01-08 20:11+0530\n"
 "Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
 "Language-Team: Bengali INDIA <fedora-trans-bn_IN@redhat.com>\n"
@@ -243,67 +243,67 @@ msgstr "সম্পাদনা (&E)"
 msgid "Main Toolbar"
 msgstr "প্রধান টুল-বার"
 
-#: main.cpp:31 main.cpp:48 main.cpp:62
+#: main.cpp:28 main.cpp:38 main.cpp:52
 #, kde-format
 msgid "KDE Menu Editor"
 msgstr "KDE মেনু সম্পাদনা ব্যবস্থা"
 
-#: main.cpp:50
+#: main.cpp:40
 #, kde-format
 msgid "KDE menu editor"
 msgstr "KDE মেনু সম্পাদনা ব্যবস্থা"
 
-#: main.cpp:52
+#: main.cpp:42
 #, kde-format
 msgid "(C) 2000-2003, Waldo Bastian, Raffaele Sandrini, Matthias Elter"
 msgstr "(C) ২০০০-২০০৩, ওয়াল্ডো ব্যাস্টিয়েন, রাফেল সান্দ্রিনি, ম্যাথায়েস এলটার"
 
-#: main.cpp:53
+#: main.cpp:43
 #, kde-format
 msgid "Waldo Bastian"
 msgstr "ওয়াল্ডো ব্যাস্টিয়েন"
 
-#: main.cpp:53
+#: main.cpp:43
 #, kde-format
 msgid "Maintainer"
 msgstr "মেইন্টেনার"
 
-#: main.cpp:54
+#: main.cpp:44
 #, kde-format
 msgid "Raffaele Sandrini"
 msgstr " রাফেল সান্দ্রিনি"
 
-#: main.cpp:54
+#: main.cpp:44
 #, kde-format
 msgid "Previous Maintainer"
 msgstr "পূর্ববর্তী মেইন্টেনার"
 
-#: main.cpp:55
+#: main.cpp:45
 #, kde-format
 msgid "Matthias Elter"
 msgstr "ম্যাথায়েস এলটার"
 
-#: main.cpp:55
+#: main.cpp:45
 #, kde-format
 msgid "Original Author"
 msgstr "মূল নির্মাতা"
 
-#: main.cpp:56
+#: main.cpp:46
 #, kde-format
 msgid "Montel Laurent"
 msgstr "মন্টেল লরেন্ট"
 
-#: main.cpp:63
+#: main.cpp:53
 #, kde-format
 msgid "Sub menu to pre-select"
 msgstr "পূর্বে নির্বাচনের জন্য চিহ্নিত সাব-মেনু"
 
-#: main.cpp:64
+#: main.cpp:54
 #, kde-format
 msgid "Menu entry to pre-select"
 msgstr "পূর্বে নির্বাচনের জন্য চিহ্নিত মেনুর এনট্রি"
 
-#: menufile.cpp:94 menufile.cpp:108
+#: menufile.cpp:94 menufile.cpp:105
 #, kde-format
 msgid "Could not write to %1"
 msgstr "%1-এ লেখা যায়নি"
@@ -334,44 +334,44 @@ msgstr "আড়াল করা এনট্রি প্রদর্শন ক�
 msgid " [Hidden]"
 msgstr " [Hidden]"
 
-#: treeview.cpp:1023
+#: treeview.cpp:1019
 #, kde-format
 msgid "New Submenu"
 msgstr "নতুন সাব-মেনু"
 
-#: treeview.cpp:1023
+#: treeview.cpp:1019
 #, kde-format
 msgid "Submenu name:"
 msgstr "সাব-মেনুর নাম:"
 
-#: treeview.cpp:1090
+#: treeview.cpp:1086
 #, kde-format
 msgid "New Item"
 msgstr "নতুন বস্তু"
 
-#: treeview.cpp:1090
+#: treeview.cpp:1086
 #, kde-format
 msgid "Item name:"
 msgstr "বস্তুর নাম:"
 
-#: treeview.cpp:1567
+#: treeview.cpp:1563
 #, kde-format
 msgid "All submenus of '%1' will be removed. Do you want to continue?"
 msgstr "'%1'-র সকল সাব-মেনু মুছে ফেলা হবে। আপনি কি এগিয়ে যেতে ইচ্ছুক?"
 
-#: treeview.cpp:1568
+#: treeview.cpp:1564
 #, fuzzy, kde-format
 #| msgid "&Delete"
 msgctxt "@title:window"
 msgid "Delete"
 msgstr "মুছে ফেলুন (&D)"
 
-#: treeview.cpp:1730
+#: treeview.cpp:1726
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
 msgstr "নিম্নলিখিত কারণে, মেনুর মধ্যে করা পরিবর্তনগুলি সংরক্ষণ করা সম্ভব হয়নি:"
 
-#: treeview.cpp:1777
+#: treeview.cpp:1773
 #, kde-format
 msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
@@ -380,7 +380,7 @@ msgstr ""
 "সিস্টেম মেনু পুনরুদ্ধার করা হবে কি? সতর্কবার্তা: এর ফলে, স্বনির্ধারিত সকল মেনু মুছে "
 "ফেলা হবে।"
 
-#: treeview.cpp:1778
+#: treeview.cpp:1774
 #, fuzzy, kde-format
 #| msgid "Restore to System Menu"
 msgctxt "@title:window"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit-gu\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-28 01:00+0000\n"
+"POT-Creation-Date: 2023-07-05 02:51+0000\n"
 "PO-Revision-Date: 2008-11-29 23:36+0530\n"
 "Last-Translator: Kartik Mistry <kartik.mistry@gmail.com>\n"
 "Language-Team: Gujarati <kde-i18n-doc@kde.org>\n"
@@ -253,67 +253,67 @@ msgstr "ફેરફાર (&E)"
 msgid "Main Toolbar"
 msgstr "મુખ્ય સાધનપટ્ટી"
 
-#: main.cpp:31 main.cpp:48 main.cpp:62
+#: main.cpp:28 main.cpp:38 main.cpp:52
 #, kde-format
 msgid "KDE Menu Editor"
 msgstr "KDE મેનુ સંપાદક"
 
-#: main.cpp:50
+#: main.cpp:40
 #, kde-format
 msgid "KDE menu editor"
 msgstr "KDE મેનુ સંપાદક"
 
-#: main.cpp:52
+#: main.cpp:42
 #, kde-format
 msgid "(C) 2000-2003, Waldo Bastian, Raffaele Sandrini, Matthias Elter"
 msgstr "(C) ૨૦૦૦-૨૦૦૩, વાલ્ડો બાસ્ટિઅન, રાફ્ફેલ સાન્ડ્રિનિ, મેથ્થિઆસ એલ્ટર"
 
-#: main.cpp:53
+#: main.cpp:43
 #, kde-format
 msgid "Waldo Bastian"
 msgstr "વાલ્ડો બાસ્ટિઅન"
 
-#: main.cpp:53
+#: main.cpp:43
 #, kde-format
 msgid "Maintainer"
 msgstr "જાળવનાર"
 
-#: main.cpp:54
+#: main.cpp:44
 #, kde-format
 msgid "Raffaele Sandrini"
 msgstr "રાફ્ફેલ સાન્ડ્રિનિ"
 
-#: main.cpp:54
+#: main.cpp:44
 #, kde-format
 msgid "Previous Maintainer"
 msgstr "પહેલાંનો જાળવનાર"
 
-#: main.cpp:55
+#: main.cpp:45
 #, kde-format
 msgid "Matthias Elter"
 msgstr "મેથ્થિઆસ એલ્ટર"
 
-#: main.cpp:55
+#: main.cpp:45
 #, kde-format
 msgid "Original Author"
 msgstr "મૂળ લેખક"
 
-#: main.cpp:56
+#: main.cpp:46
 #, kde-format
 msgid "Montel Laurent"
 msgstr "મોન્ટેલ લોરેન્ટ"
 
-#: main.cpp:63
+#: main.cpp:53
 #, kde-format
 msgid "Sub menu to pre-select"
 msgstr "પહેલેથી-પસંદ કરવાનું ઉપ મેનુ"
 
-#: main.cpp:64
+#: main.cpp:54
 #, kde-format
 msgid "Menu entry to pre-select"
 msgstr "પહેલેથી-પસંદ કરવાનું મેનુ"
 
-#: menufile.cpp:94 menufile.cpp:108
+#: menufile.cpp:94 menufile.cpp:105
 #, kde-format
 msgid "Could not write to %1"
 msgstr "%1 પર લખી શકાતું નથી"
@@ -344,44 +344,44 @@ msgstr "છુપાયેલ યાદીઓ બતાવો"
 msgid " [Hidden]"
 msgstr " [છૂપાયેલ]"
 
-#: treeview.cpp:1023
+#: treeview.cpp:1019
 #, kde-format
 msgid "New Submenu"
 msgstr "નવું ઉપમેનુ"
 
-#: treeview.cpp:1023
+#: treeview.cpp:1019
 #, kde-format
 msgid "Submenu name:"
 msgstr "ઉપમેનુ નામ:"
 
-#: treeview.cpp:1090
+#: treeview.cpp:1086
 #, kde-format
 msgid "New Item"
 msgstr "નવી વસ્તુ"
 
-#: treeview.cpp:1090
+#: treeview.cpp:1086
 #, kde-format
 msgid "Item name:"
 msgstr "વસ્તુ નામ:"
 
-#: treeview.cpp:1567
+#: treeview.cpp:1563
 #, kde-format
 msgid "All submenus of '%1' will be removed. Do you want to continue?"
 msgstr "'%1' નાં બધા ઉપમેનુઓ દૂર કરવામાં આવશે. શું તમે આગળ વધવા માંગો છો?"
 
-#: treeview.cpp:1568
+#: treeview.cpp:1564
 #, fuzzy, kde-format
 #| msgid "&Delete"
 msgctxt "@title:window"
 msgid "Delete"
 msgstr "દૂર કરો (&D)"
 
-#: treeview.cpp:1730
+#: treeview.cpp:1726
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
 msgstr "નીચેનાં કારણસર મેનુ ફેરફારો સંગ્રહ કરી શકાયા નહી:"
 
-#: treeview.cpp:1777
+#: treeview.cpp:1773
 #, kde-format
 msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
@@ -389,7 +389,7 @@ msgid ""
 msgstr ""
 "શું તમે સિસ્ટમ મેનુ પાછું લાવવા માંગો છો? ચેતવણી: આ તમે ગોઠવેલ બધાં મેનુઓ દૂર કરી નાખશે."
 
-#: treeview.cpp:1778
+#: treeview.cpp:1774
 #, fuzzy, kde-format
 #| msgid "Restore to System Menu"
 msgctxt "@title:window"

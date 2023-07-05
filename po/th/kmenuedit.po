@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-28 01:00+0000\n"
+"POT-Creation-Date: 2023-07-05 02:51+0000\n"
 "PO-Revision-Date: 2010-03-27 23:01+0700\n"
 "Last-Translator: Thanomsub Noppaburana <donga.nb@gmail.com>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
@@ -255,67 +255,67 @@ msgstr "แ&ก้ไข"
 msgid "Main Toolbar"
 msgstr "แถบเครื่องมือหลัก"
 
-#: main.cpp:31 main.cpp:48 main.cpp:62
+#: main.cpp:28 main.cpp:38 main.cpp:52
 #, kde-format
 msgid "KDE Menu Editor"
 msgstr "เครื่องมือแก้ไขเมนู KDE"
 
-#: main.cpp:50
+#: main.cpp:40
 #, kde-format
 msgid "KDE menu editor"
 msgstr "เครื่องมือแก้ไขเมนู KDE"
 
-#: main.cpp:52
+#: main.cpp:42
 #, kde-format
 msgid "(C) 2000-2003, Waldo Bastian, Raffaele Sandrini, Matthias Elter"
 msgstr "(C) 2000-2003, Waldo Bastian, Raffaele Sandrini, Matthias Elter"
 
-#: main.cpp:53
+#: main.cpp:43
 #, kde-format
 msgid "Waldo Bastian"
 msgstr "Waldo Bastian"
 
-#: main.cpp:53
+#: main.cpp:43
 #, kde-format
 msgid "Maintainer"
 msgstr "ผู้ดูแล"
 
-#: main.cpp:54
+#: main.cpp:44
 #, kde-format
 msgid "Raffaele Sandrini"
 msgstr "Raffaele Sandrini"
 
-#: main.cpp:54
+#: main.cpp:44
 #, kde-format
 msgid "Previous Maintainer"
 msgstr "ผู้ดูแลคนก่อน"
 
-#: main.cpp:55
+#: main.cpp:45
 #, kde-format
 msgid "Matthias Elter"
 msgstr "Matthias Elter"
 
-#: main.cpp:55
+#: main.cpp:45
 #, kde-format
 msgid "Original Author"
 msgstr "ผู้เขียนแรกเริ่ม"
 
-#: main.cpp:56
+#: main.cpp:46
 #, kde-format
 msgid "Montel Laurent"
 msgstr "Montel Laurent"
 
-#: main.cpp:63
+#: main.cpp:53
 #, kde-format
 msgid "Sub menu to pre-select"
 msgstr "เมนูย่อยที่จะเลือกก่อน"
 
-#: main.cpp:64
+#: main.cpp:54
 #, kde-format
 msgid "Menu entry to pre-select"
 msgstr "รายการเมนูที่จะเลือกก่อน"
 
-#: menufile.cpp:94 menufile.cpp:108
+#: menufile.cpp:94 menufile.cpp:105
 #, kde-format
 msgid "Could not write to %1"
 msgstr "ไม่สามารถเขียนไปยัง %1 ได้"
@@ -346,44 +346,44 @@ msgstr "แสดงรายการที่ถูกซ่อน"
 msgid " [Hidden]"
 msgstr " [ถูกซ่อน]"
 
-#: treeview.cpp:1023
+#: treeview.cpp:1019
 #, kde-format
 msgid "New Submenu"
 msgstr "สร้างเมนูย่อยใหม่"
 
-#: treeview.cpp:1023
+#: treeview.cpp:1019
 #, kde-format
 msgid "Submenu name:"
 msgstr "ชื่อเมนูย่อย:"
 
-#: treeview.cpp:1090
+#: treeview.cpp:1086
 #, kde-format
 msgid "New Item"
 msgstr "สร้างรายการใหม่"
 
-#: treeview.cpp:1090
+#: treeview.cpp:1086
 #, kde-format
 msgid "Item name:"
 msgstr "ชื่อรายการ:"
 
-#: treeview.cpp:1567
+#: treeview.cpp:1563
 #, kde-format
 msgid "All submenus of '%1' will be removed. Do you want to continue?"
 msgstr "เมนูย่อยทั้งหมดของ '%1' จะถูกลบออกไปด้วย คุณต้องการจะทำต่อไปหรือไม่ ?"
 
-#: treeview.cpp:1568
+#: treeview.cpp:1564
 #, fuzzy, kde-format
 #| msgid "&Delete"
 msgctxt "@title:window"
 msgid "Delete"
 msgstr "&ลบทิ้ง"
 
-#: treeview.cpp:1730
+#: treeview.cpp:1726
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
 msgstr "ไม่สามารถจัดเก็บความเปลี่ยนแปลงของเมนูได้ เนื่องจากเกิดข้อผิดพลาดต่อไปนี้:"
 
-#: treeview.cpp:1777
+#: treeview.cpp:1773
 #, kde-format
 msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
@@ -392,7 +392,7 @@ msgstr ""
 "คุณต้องการจะเรียกคืนเมนูของระบบกลับเป็นค่าปริยายใช่หรือไม่ ? หากใช่ "
 "เมนูที่คุณได้กำหนดเองจะถูกลบออกทั้งหมด"
 
-#: treeview.cpp:1778
+#: treeview.cpp:1774
 #, fuzzy, kde-format
 #| msgid "Restore to System Menu"
 msgctxt "@title:window"
