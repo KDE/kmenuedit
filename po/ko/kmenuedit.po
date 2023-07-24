@@ -77,10 +77,10 @@ msgid ""
 "%m - the mini-icon\n"
 "%c - the caption"
 msgstr ""
-"명령 다음에 다음 자리 표시자를 사용하면 프로그램이 실행될 때 실제 값으로 대체"
-"됩니다:\n"
+"명령 다음에 다음 자리 표시자를 사용하면 앱이 실행될 때 실제 값으로 대체됩니"
+"다:\n"
 "%f - 단일 파일 이름\n"
-"%F - 파일 여러 개를 한 번에 열 수 있는 프로그램에 사용할 파일 목록\n"
+"%F - 파일 여러 개를 한 번에 열 수 있는 앱에 사용할 파일 목록\n"
 "%u - 단일 URL\n"
 "%U - URL 목록\n"
 "%d - 열 파일이 있는 폴더\n"
@@ -212,7 +212,7 @@ msgstr "찾기..."
 #: kmenuedit.cpp:127
 #, kde-format
 msgid "Search through the list of applications below"
-msgstr "아래 프로그램 목록에서 찾기"
+msgstr "아래 앱 목록에서 찾기"
 
 #: kmenuedit.cpp:188
 #, kde-format

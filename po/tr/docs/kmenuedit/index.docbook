@@ -65,7 +65,7 @@
 
 <abstract
 ><para
->&kmenuedit;, &kde; uygulama başlatıcılardan birini düzenlemenize olanak verir. </para
+>&kmenuedit;, &kde; uygulama başlatıcılarından birini düzenlemenize olanak verir. </para
 ></abstract>
 
 <keywordset>
@@ -93,10 +93,10 @@
 >Giriş</title>
 
 <para
->&kmenuedit; &kde; uygulama başlatıcıların menülerini düzenlemeye izin verir.</para>
+>&kmenuedit; &kde; uygulama başlatıcılarının menülerini düzenlemeye izin verir.</para>
 
 <para
->&kmenuedit;, paneldeki uygulama başlatıcı düğmesine &RMB; ile tıklayıp <guimenuitem
+>&kmenuedit;, paneldeki uygulama başlatıcısı düğmesine &RMB; ile tıklayıp <guimenuitem
 >Uygulamaları Düzenle...</guimenuitem
 >'yi seçerek veya &krunner; satırına <userinput
 >kmenuedit</userinput
@@ -108,7 +108,7 @@
 <itemizedlist>
 <listitem
 ><para
->Geçerli uygulama başlatıcı tarafından kullanılan menüyü görüntülemek ve düzenlemek</para
+>Geçerli uygulama başlatıcısı tarafından kullanılan menüyü görüntülemek ve düzenlemek</para
 ></listitem>
 <listitem
 ><para
@@ -190,7 +190,7 @@
 > 
 
 <para
->Bu, yalnızca uygulama başlatıcı menüsünde görünen alt menülerin ve ögelerin görüntülendiği gizli görünüm kipinde yapılmalıdır. </para>
+>Bu, yalnızca uygulama başlatıcısı menüsünde görünen alt menülerin ve ögelerin görüntülendiği gizli görünüm kipinde yapılmalıdır. </para>
 <para
 >Öntanımlı olarak menü, İngilizce adlar veya açıklamalar kullanılarak abecesel olarak sıralanmıştır. Bu nedenle, İngilizceden başka bir dil kullanıldığında bazı alt menüler ve ögeler sıralanmamış olarak görünecektir. </para>
 <para
@@ -239,7 +239,7 @@
 > dosyalarınızı kaldıracaktır. </para>
 
 <para
->Bir uygulama başlatıcının menüsündeki ögeleri ve alt menüleri kaldırmanın yeğlenen yöntemi <guilabel
+>Bir uygulama başlatıcısının menüsündeki ögeleri ve alt menüleri kaldırmanın yeğlenen yöntemi <guilabel
 >Genel</guilabel
 > sekmesindeki <guilabel
 >Gizli girdi</guilabel
@@ -264,7 +264,7 @@
 
 <sect2 id="use-cases-transfer">
 <title
->Uygulama başlatıcı ayarlarını aktar</title
+>Uygulama başlatıcısı ayarlarını aktar</title
 > 
 
 <para
@@ -388,7 +388,7 @@
 >Web Tarayıcı</userinput
 > yazıyoruz. <note
 ><para
->Açıklamanın ve adın nice görüntüleneceği uygulama başlatıcının ayarlarına bağlıdır; &eg;, <quote
+>Açıklamanın ve adın nice görüntüleneceği uygulama başlatıcısının ayarlarına bağlıdır; &eg;, <quote
 >Web Tarayıcı (Firefox)</quote
 > veya <quote
 >Firefox (Web Tarayıcı)</quote
@@ -517,7 +517,7 @@
 ></menuchoice
 > menü ögesine tıklayın, <guilabel
 >Sistem Yapılandırması Güncelleniyor</guilabel
-> iletişim kutusunun bitmesini bekleyin. &firefox; uygulamasını başlatıcıdaki <guisubmenu
+> iletişim kutusunun bitmesini bekleyin. &firefox; uygulamasını başlatıcısındaki <guisubmenu
 >İnternet</guisubmenu
 > alt menüsünde bulabilirsiniz.</para>
 
@@ -528,7 +528,7 @@
 >&kmenuedit; Kullanımı</title>
 
 <para
->Sol uygulama paneli, uygulama başlatıcı yapısını gösterir. Sol paneldeki ögelere göz attığınızda, sağ panel, vurgulanan menü ögesi için ayrıntılı bilgileri gösterir.</para>
+>Sol uygulama paneli, uygulama başlatıcısı yapısını gösterir. Sol paneldeki ögelere göz attığınızda, sağ panel, vurgulanan menü ögesi için ayrıntılı bilgileri gösterir.</para>
 
 <sect1 id="details-general">
 <title
@@ -542,7 +542,7 @@
 ></term>
 <listitem
 ><para
->Bu, uygulama başlatıcı menüsünde göründüğü şekliyle programınızın adıdır. Gerçek yürütülebilir dosya adından farklı olabilir. Örneğin, <command
+>Bu, uygulama başlatıcısı menüsünde göründüğü şekliyle programınızın adıdır. Gerçek yürütülebilir dosya adından farklı olabilir. Örneğin, <command
 >mc</command
 > yürütülebilirinin adı "<application
 >Midnight Commander</application
@@ -556,7 +556,7 @@
 ></term>
 <listitem
 ><para
->Açıklama, uygulama başlatıcıda adla birlikte görüntülenecektir. Bu tümüyle isteğe bağlıdır.</para
+>Açıklama, uygulama başlatıcısındaki adla birlikte görüntülenecektir. Bu tümüyle isteğe bağlıdır.</para
 ></listitem>
 </varlistentry>
 <varlistentry>
@@ -606,7 +606,7 @@
 ></term>
 <listitem
 ><para
->Uygulama başlatıcıdaki menü görünümünden bir girdiyi kaldırın. </para
+>Uygulama başlatıcısındaki menü görünümünden bir girdiyi kaldırın. </para
 ></listitem>
 </varlistentry>
 </variablelist>
@@ -967,7 +967,7 @@
 <listitem
 ><para
 ><action
->Bu, uygulama başlatıcıyı öntanımlı durumuna geri yükler ve tüm özel ayarlarınızı kaldırır. Bunu gerçekten yapmak isteyip istemediğinizi soran bir ileti kutusu çıkacaktır.</action
+>Bu, uygulama başlatıcısını öntanımlı durumuna geri yükler ve tüm özel ayarlarınızı kaldırır. Bunu gerçekten yapmak isteyip istemediğinizi soran bir ileti kutusu çıkacaktır.</action
 ></para
 ></listitem>
 </varlistentry>
