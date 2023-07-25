@@ -4,13 +4,13 @@
 #
 # Mattias Newzella <newzella@swipnet.se>, 2000-2001.
 # Mattias Newzella <newzella@linux.nu>, 2000,2001,2003, 2004.
-# Stefan Asserhäll <stefan.asserhall@bredband.net>, 2004, 2005, 2007, 2008, 2009, 2013, 2019, 2021, 2022.
+# Stefan Asserhäll <stefan.asserhall@bredband.net>, 2004, 2005, 2007, 2008, 2009, 2013, 2019, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-02-28 03:03+0000\n"
-"PO-Revision-Date: 2022-09-25 10:11+0200\n"
+"PO-Revision-Date: 2023-07-24 15:52+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -49,7 +49,7 @@ msgstr "&Kommentar:"
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Environment Variables:"
-msgstr ""
+msgstr "Miljövariabler:"
 
 #: basictab.cpp:81
 #, kde-format
@@ -370,11 +370,10 @@ msgid "All submenus of '%1' will be removed. Do you want to continue?"
 msgstr "Alla undermenyer till '%1' kommer att tas bort. Vill du fortsätta?"
 
 #: treeview.cpp:1568
-#, fuzzy, kde-format
-#| msgid "&Delete"
+#, kde-format
 msgctxt "@title:window"
 msgid "Delete"
-msgstr "&Ta bort"
+msgstr "Ta bort"
 
 #: treeview.cpp:1730
 #, kde-format
@@ -390,11 +389,10 @@ msgstr ""
 "Vill du återställa systemmenyn? Varning: Detta tar bort alla egna menyer."
 
 #: treeview.cpp:1778
-#, fuzzy, kde-format
-#| msgid "Restore to System Menu"
+#, kde-format
 msgctxt "@title:window"
 msgid "Restore Menu System"
-msgstr "Återställ till systemmeny"
+msgstr "Återställ till menysystem"
 
 #~ msgid "Co&mmand:"
 #~ msgstr "Ko&mmando:"
