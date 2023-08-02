@@ -56,6 +56,7 @@ add_subdirectory( doc )
 add_subdirectory(kconf_update)
 
 set(kmenueditcommon_STAT_SRCS basictab.cpp
+    kmenuedit.qrc
     basictab.h
     configurationmanager.cpp
     configurationmanager.h
@@ -111,7 +112,6 @@ install(TARGETS kmenuedit ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 
 install( PROGRAMS org.kde.kmenuedit.desktop  DESTINATION  ${KDE_INSTALL_APPDIR} )
 install( FILES org.kde.kmenuedit.appdata.xml DESTINATION ${KDE_INSTALL_METAINFODIR} )
-install( FILES kmenueditui.rc  DESTINATION  ${KDE_INSTALL_KXMLGUIDIR}/kmenuedit )
 
 ecm_install_icons( ICONS 16-apps-kmenuedit.png  22-apps-kmenuedit.png  32-apps-kmenuedit.png  48-apps-kmenuedit.png DESTINATION ${KDE_INSTALL_ICONDIR} THEME hicolor  )
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
