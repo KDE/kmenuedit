@@ -36,6 +36,8 @@ BasicTab::BasicTab(QWidget *parent)
     initConnections();
 
     slotDisableAction();
+
+    setProperty("_breeze_borders_sides", QVariant::fromValue(QFlags{Qt::TopEdge}));
 }
 
 void BasicTab::initGeneralTab()

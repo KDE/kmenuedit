@@ -120,15 +120,30 @@ void KMenuEdit::setupView()
     // setup search and tree view
     m_tree = new TreeView(actionCollection(), this);
 
-    m_searchLine = new KTreeWidgetSearchLine(this, m_tree);
+    auto wrapper = new QWidget(this);
+    wrapper->setContentsMargins(wrapper->style()->pixelMetric(QStyle::PM_LayoutLeftMargin),
+                                wrapper->style()->pixelMetric(QStyle::PM_LayoutTopMargin),
+                                wrapper->style()->pixelMetric(QStyle::PM_LayoutRightMargin),
+                                wrapper->style()->pixelMetric(QStyle::PM_LayoutBottomMargin));
+    auto wrapperLayout = new QVBoxLayout(wrapper);
+    wrapperLayout->setContentsMargins({});
+
+    m_searchLine = new KTreeWidgetSearchLine(wrapper, m_tree);
     m_searchLine->setCaseSensitivity(Qt::CaseSensitivity::CaseInsensitive);
     m_searchLine->setKeepParentsVisible(true);
     m_searchLine->setPlaceholderText(i18n("Search..."));
     m_searchLine->setToolTip(i18n("Search through the list of applications below"));
 
+    wrapperLayout->addWidget(m_searchLine);
+
+    auto horizontalSeparator = new QFrame(this);
+    horizontalSeparator->setFrameStyle(QFrame::HLine);
+
     QVBoxLayout *treeLayout = new QVBoxLayout;
-    treeLayout->addWidget(m_searchLine);
+    treeLayout->addWidget(wrapper);
+    treeLayout->addWidget(horizontalSeparator);
     treeLayout->addWidget(m_tree);
+    treeLayout->setSpacing(0);
     treeLayout->setContentsMargins(0, 0, 0, 0); // no padding, fixes alignment issues
     QFrame *treeFrame = new QFrame; // required to insert tree + search into splitter
     treeFrame->setLayout(treeLayout);
@@ -142,7 +157,7 @@ void KMenuEdit::setupView()
     m_splitter->addWidget(m_basicTab);
 
     // add padding to splitter
-    m_splitter->setContentsMargins(/*left=*/5, /*top=*/0, /*right=*/5, /*bottom=*/0);
+    m_splitter->setContentsMargins(0, 0, 0, 0);
 
     // clang-format off
     connect(m_tree, SIGNAL(entrySelected(MenuFolderInfo*)), m_basicTab, SLOT(setFolderInfo(MenuFolderInfo*)));
