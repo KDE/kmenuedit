@@ -424,12 +424,19 @@ void BasicTab::apply()
         KDesktopFile *df = _menuEntryInfo->desktopFile();
         KConfigGroup dg = df->desktopGroup();
         dg.writeEntry("Comment", _commentEdit->text());
-        QStringList programArgs = KShell::splitArgs(_envarsEdit->text()) + QStringList(_programEdit->lineEdit()->text()) + KShell::splitArgs(_argsEdit->text());
-
-        if (KShell::splitArgs(_envarsEdit->text()).length()) {
-            programArgs.push_front(QLatin1String("env"));
+        
+        QStringList command;
+        QStringList envars = KShell::splitArgs(_envarsEdit->text());
+        if (!envars.isEmpty()) {
+            envars.push_front(QLatin1String("env"));
+            command << KShell::joinArgs(envars);
         }
-        dg.writeEntry("Exec", KShell::joinArgs(programArgs));
+        command << _programEdit->lineEdit()->text();
+        const QStringList args = KShell::splitArgs(_argsEdit->text());
+        if (!args.isEmpty()) {
+            command << KShell::joinArgs(args);
+        }
+        dg.writeEntry("Exec", command.join(QLatin1Char(' ')));
 
         // NOT writePathEntry, it writes the entry with non-XDG-compliant flag: Path[$e]
         dg.writeEntry("Path", _pathEdit->lineEdit()->text());
