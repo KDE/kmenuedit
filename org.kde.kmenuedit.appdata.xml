@@ -31,6 +31,7 @@
   <name xml:lang="pt-BR">Editor de menu</name>
   <name xml:lang="ro">Redactare meniu</name>
   <name xml:lang="ru">Редактор меню</name>
+  <name xml:lang="sa">विकल्पसूचि सम्पादकः</name>
   <name xml:lang="sk">Menu editor</name>
   <name xml:lang="sl">Urejevalnik menijev</name>
   <name xml:lang="sv">Menyredigering</name>
@@ -70,6 +71,7 @@
   <summary xml:lang="pt-BR">Editar como as aplicações são mostradas nos lançadores de aplicativos</summary>
   <summary xml:lang="ro">Modifică felul în care aplicațiile sunt prezentate în lansatorii de aplicații</summary>
   <summary xml:lang="ru">Редактирование представления приложений в средствах запуска приложений</summary>
+  <summary xml:lang="sa">अनुप्रयोगप्रक्षेपकेषु अनुप्रयोगाः कथं प्रस्तुताः भवन्ति इति सम्पादयन्तु</summary>
   <summary xml:lang="sk">Editovať, ako sa aplikácie zobrazujú v spúšťačoch aplikácií</summary>
   <summary xml:lang="sl">Uredi kako so aplikacije prikazane v zaganjalnikih programov</summary>
   <summary xml:lang="sv">Redigera hur program presenteras i startprogram</summary>
@@ -109,6 +111,7 @@
     <p xml:lang="pt-BR">O editor de menu do KDE permite a você editar como seus aplicativos são mostrados nos lançadores de aplicativos como o widget do lançador de aplicativos do Plasma</p>
     <p xml:lang="ro">„Redactare meniu” KDE vă permite să modificați felul în care aplicațiile sunt prezentate în lansatori de aplicații, cum ar fi controlul grafic Plasma „Lansator de aplicații”.</p>
     <p xml:lang="ru">Редактор меню KDE позволяет изменить представление приложений в средствах запуска приложений (например, в виджете запуска приложений Plasma).</p>
+    <p xml:lang="sa">KDE विकल्पसूचि सम्पादनं भवन्तं सम्पादयितुं शक्नोति यत् भवतः अनुप्रयोगाः अनुप्रयोगप्रक्षेपकेषु कथं प्रस्तुताः सन्ति, यथा Plasma इत्यस्य अनुप्रयोगप्रक्षेपकविजेट् ।.</p>
     <p xml:lang="sk">KDE Menu Edit vám umožní upraviť, ako sa vaše aplikácie prezentujú v spúšťačoch aplikácií, ako widget Plasma spúšťača aplikácií.</p>
     <p xml:lang="sl">KDE Menu Edit vam omogoča urejanje, kako so aplikacije prikazane v zaganjalnikih kot npr. gradnik Plasma's Application Launcher.</p>
     <p xml:lang="sv">KDE:s Menyredigering låter dig redigera hur program presenteras i startprogram, såsom Plasmas grafiska komponent för programstart.</p>
