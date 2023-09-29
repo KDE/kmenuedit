@@ -140,14 +140,14 @@
 ></listitem>
 <listitem
 ><para
->Elements: Utilitzeu aquesta entrada per introduir les dades de l'aplicació que voleu afegir. Per obtenir informació més detallada vegeu <link linkend="using-kmenuedit"
+>Elements: Utilitzeu aquesta entrada per a introduir les dades de l'aplicació que voleu afegir. Per a obtenir informació més detallada vegeu <link linkend="using-kmenuedit"
 >Ús del &kmenuedit;</link
 >. </para
 ></listitem>
 </itemizedlist>
 
 <para
->El &kmenuedit; té dos modes de vista en arbre -normal i amb les entrades ocultes-. Per veure l'última marqueu l'opció <guilabel
+>El &kmenuedit; té dos modes de vista en arbre -normal i amb les entrades ocultes-. Per a veure l'última marqueu l'opció <guilabel
 >Mostra les entrades ocultes</guilabel
 > al diàleg de configuració a la pàgina <guilabel
 >Opcions generals</guilabel
@@ -186,13 +186,13 @@
 ><guimenuitem
 >Ordena</guimenuitem
 ></menuchoice
-> per ordenar per nom o descripció. Si utilitzeu el llançador d'aplicacions clàssic, haureu de seleccionar la corresponent opció <guilabel
+> per a ordenar per nom o descripció. Si utilitzeu el llançador d'aplicacions clàssic, haureu de seleccionar la corresponent opció <guilabel
 >Format</guilabel
 > al diàleg de configuració. En el llançador &kickoff; marqueu <guilabel
 >Mostra les aplicacions per nom</guilabel
 > si ordeneu pel nom. </para>
 <para
->Quan agrupeu els submenús o elements utilitzats amb freqüència, &pex;, a la part superior del menú, fareu que la selecció sigui més fàcil. Per canviar l'ordre a l'arbre d'elements o submenús en particular, utilitzeu el botó <guibutton
+>Quan agrupeu els submenús o elements utilitzats amb freqüència, &pex;, a la part superior del menú, fareu que la selecció sigui més fàcil. Per a canviar l'ordre a l'arbre d'elements o submenús en particular, utilitzeu el botó <guibutton
 >Mou amunt</guibutton
 > o <guibutton
 >Mou avall</guibutton
@@ -212,7 +212,7 @@
 <para
 >Canvieu al mode de vista normal sense entrades ocultes. Si suprimiu elements, es mouran al submenú <guilabel
 >.hidden [Hidden]</guilabel
->. Els podreu moure una altra vegada a l'arbre per tenir-los al menú. </para>
+>. Els podreu moure una altra vegada a l'arbre per a tenir-los al menú. </para>
 <para
 >Si elimineu un submenú, serà realment eliminat amb tots els seus submenús i elements. Per a tornar-lo a crear, podeu utilitzar <menuchoice
 ><guimenu
@@ -229,7 +229,7 @@
 >Entrada oculta</guilabel
 > a la pestanya <guilabel
 >General</guilabel
-> i canviar al mode de vista ocult. En aquest mode és fàcil revertir els canvis sense destruir l'estructura del menú. L'únic inconvenient és que haureu d'ocultar totes les entrades en un submenú manualment per ocultar tot el submenú de la vista. </para>
+> i canviar al mode de vista ocult. En aquest mode és fàcil revertir els canvis sense destruir l'estructura del menú. L'únic inconvenient és que haureu d'ocultar totes les entrades en un submenú manualment per a ocultar tot el submenú de la vista. </para>
 </sect3>
 
 </sect2>
@@ -240,7 +240,7 @@
 > 
 
 <para
->Per afegir elements personalitzats (submenú o element), utilitzeu les accions al menú o barra d'eines. Els elements necessiten un nom i una ordre, sense introduir una ordre, un element no serà desat i el vostre afegit es perdrà. </para>
+>Per a afegir elements personalitzats (submenú o element), utilitzeu les accions al menú o barra d'eines. Els elements necessiten un nom i una ordre, sense introduir una ordre, un element no serà desat i el vostre afegit es perdrà. </para>
 <para
 >Si afegiu una entrada que s'insereix a l'arbre com a subentrada a la posició ressaltada real. Moveu una entrada arrossegant-la amb el ratolí o utilitzant el botó <guibutton
 >Mou avall</guibutton
@@ -620,7 +620,7 @@
 ></term>
 <listitem
 ><para
->Haureu de marcar aquesta opció si el vostre programa requereix emulador de terminal per executar-se. Això s'aplica principalment a <link linkend="gloss-console-application"
+>Haureu de marcar aquesta opció si el vostre programa requereix emulador de terminal per a executar-se. Això s'aplica principalment a <link linkend="gloss-console-application"
 >aplicacions de consola</link
 >.</para
 ></listitem>
@@ -655,7 +655,7 @@
 ></term>
 <listitem
 ><para
->Podeu assignar una drecera de teclat especial per engegar el vostre programa.</para>
+>Podeu assignar una drecera de teclat especial per a engegar el vostre programa.</para>
 
 <para
 >Feu clic al botó <guibutton
@@ -845,7 +845,7 @@
 >Retalla l'element de menú actual cap al porta-retalls</action
 >. Si voleu moure l'element de menú, primer hauríeu de tallar-lo cap al porta-retalls, moure'l cap al lloc de destinació emprant el plafó esquerre, i usar la funció <guimenuitem
 >Enganxa</guimenuitem
-> per enganxar-lo des del porta-retalls.</para
+> per a enganxar-lo des del porta-retalls.</para
 ></listitem>
 </varlistentry>
 
@@ -870,7 +870,7 @@
 >Copia l'element de menú actual cap al porta-retalls</action
 >. Més tard podeu usar la funció <guimenuitem
 >Enganxa</guimenuitem
-> per enganxar-lo des del porta-retalls cap a la seva destinació. Podeu enganxar el mateix element moltes vegades.</para
+> per a enganxar-lo des del porta-retalls cap a la seva destinació. Podeu enganxar el mateix element moltes vegades.</para
 ></listitem>
 </varlistentry>
 
@@ -937,7 +937,7 @@
 ><para
 ><action
 >Obre</action
-> el submenú per ordenar el submenú seleccionat o tot l'arbre del menú. Hi ha implementats dos mètodes d'ordenació, anomenats, pel nom i per la descripció.</para
+> el submenú per a ordenar el submenú seleccionat o tot l'arbre del menú. Hi ha implementats dos mètodes d'ordenació, anomenats, pel nom i per la descripció.</para
 ></listitem>
 </varlistentry>
 
@@ -1032,7 +1032,7 @@
 >&Ctrl; <keycap
 >V</keycap
 ></keycombo
-> per enganxar el text. Si voleu copiar des d'una aplicació &kde; cap a una aplicació de consola, primer marqueu el text amb el vostre ratolí, premeu <keycombo action="simul"
+> per a enganxar el text. Si voleu copiar des d'una aplicació &kde; cap a una aplicació de consola, primer marqueu el text amb el vostre ratolí, premeu <keycombo action="simul"
 >&Ctrl; <keycap
 >C</keycap
 ></keycombo
