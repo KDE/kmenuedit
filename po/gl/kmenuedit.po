@@ -320,7 +320,7 @@ msgstr "Entrada do menú que se vai preseleccionar"
 #: menufile.cpp:94 menufile.cpp:105
 #, kde-format
 msgid "Could not write to %1"
-msgstr "Non se puido escribir en %1"
+msgstr "Non foi posíbel escribir en %1"
 
 #: preferencesdlg.cpp:26
 #, kde-format
@@ -381,7 +381,7 @@ msgstr "Eliminar"
 #: treeview.cpp:1726
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
-msgstr "Non se puideron gardar os cambios no menú debido ao seguinte problema:"
+msgstr "Non foi posíbel gardar os cambios no menú debido ao seguinte problema:"
 
 #: treeview.cpp:1773
 #, kde-format
