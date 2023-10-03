@@ -8,13 +8,13 @@
 # Pablo de Vicente <p.devicente@wanadoo.es>, 2004.
 # Santiago Fernandez Sancho <santi@kde-es.org>, 2005.
 # Enrique Matias Sanchez (aka Quique) <cronopios@gmail.com>, 2007.
-# Eloy Cuadra <ecuadra@eloihr.net>, 2013, 2014, 2019, 2021, 2022.
+# SPDX-FileCopyrightText: 2013, 2014, 2019, 2021, 2022, 2023 Eloy Cuadra <ecuadra@eloihr.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-07-05 02:51+0000\n"
-"PO-Revision-Date: 2022-12-08 12:05+0100\n"
+"PO-Revision-Date: 2023-10-02 20:55+0200\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "First-Translator: Valux (José Luis Sánchez) <jsanchezv@teleline.es>\n"
-"X-Generator: Lokalize 22.11.90\n"
+"X-Generator: Lokalize 23.08.1\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #, kde-format
@@ -149,7 +149,7 @@ msgstr "Nombre de &usuario:"
 #: basictab.cpp:189
 #, kde-format
 msgid "Current shortcut &key:"
-msgstr "&Tecla de acceso rápido actual:"
+msgstr "&Tecla del atajo actual:"
 
 #: basictab.cpp:200
 #, kde-format
