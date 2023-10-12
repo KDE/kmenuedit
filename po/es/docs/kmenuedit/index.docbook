@@ -694,7 +694,7 @@
 ></term>
 <listitem
 ><para
->Si desea ejecutar este programa como un usuario diferente (no usted), seleccione esta casilla y proporcione el nombre de usuario en el campo <guilabel
+>Si desea ejecutar este programa como un usuario diferente (no el suyo), seleccione esta casilla y proporcione el nombre de usuario en el campo <guilabel
 >Usuario</guilabel
 >.</para
 ></listitem>
@@ -707,13 +707,13 @@
 ></term>
 <listitem
 ><para
->Puede asignar un acceso rápido especial de teclado para iniciar su programa.</para>
+>Puede asignar un atajo de teclado especial para iniciar el programa.</para>
 
 <para
 >Pulse el botón <guibutton
 >Ninguno</guibutton
 > situado a la derecha de la casilla <guilabel
->Tecla de acceso rápido actual</guilabel
+>Tecla de atajo de teclado actual</guilabel
 >.</para>
 
 <para
@@ -1087,7 +1087,7 @@
 <glossdef>
 
 <para
->Aplicación originalmente escrita para entornos no gráficos, solo tipo texto. Estas aplicaciones se ejecutan bien en &kde;. Deben ejecutarse dentro de un emulador de consola como &konsole;. No reciben aviso automático de finalización cuando usted termina su sesión &kde;. Por tanto debe no olvidar guardar los documentos abiertos en estas aplicaciones antes de salir de &kde;.</para>
+>Aplicación originalmente escrita para entornos no gráficos, solo tipo texto. Estas aplicaciones se ejecutan bien en &kde;. Deben ejecutarse dentro de un emulador de consola como &konsole;. No reciben aviso automático de finalización al cerrar sesión de &kde;. Por lo tanto, no debe olvidarse de guardar los documentos abiertos en estas aplicaciones antes de salir de &kde;.</para>
 
 <para
 >Las aplicaciones de consola admiten la copia y pegado de las aplicaciones válidas de &kde;. Simplemente marque el texto en la aplicación de consola con su ratón, cambie a la aplicación &kde; y pulse <keycombo action="simul"
