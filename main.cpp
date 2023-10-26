@@ -32,7 +32,7 @@ public:
 int main(int argc, char **argv)
 {
     KMenuApplication app(argc, argv);
-    KLocalizedString::setApplicationDomain("kmenuedit");
+    KLocalizedString::setApplicationDomain(QByteArrayLiteral("kmenuedit"));
 
     KAboutData aboutData(QStringLiteral("kmenuedit"),
                          i18n("KDE Menu Editor"),
