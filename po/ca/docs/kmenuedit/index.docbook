@@ -374,11 +374,7 @@
 >Navegador web</userinput
 >. <note
 ><para
->L'aparença de com es mostraran la descripció i el nom dependrà de la configuració al llançador d'aplicacions, &pex;, <quote
->Navegador web (Firefox)</quote
-> o <quote
->Firefox (Navegador web)</quote
->.</para
+>L'aparença de com es mostraran la descripció i el nom dependrà de la configuració al llançador d'aplicacions, &pex;, «Navegador web (Firefox)» o «Firefox (Navegador web)».</para
 ></note
 > Ens caldrà omplir el nom de l'executable en el camp <guilabel
 >Ordre:</guilabel
@@ -1042,9 +1038,7 @@
 >esquerre</mousebutton
 > i <mousebutton
 >dret</mousebutton
-> a l'hora. Això s'anomena <quote
->emulació del botó del mig</quote
-> i perquè funcioni haurà d'estar acceptat pel vostre sistema operatiu.</para
+> a l'hora. Això s'anomena «emulació del botó del mig» i perquè funcioni haurà d'estar acceptat pel vostre sistema operatiu.</para
 ></footnote
 >.</para>
 
