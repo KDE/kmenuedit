@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-07-05 02:51+0000\n"
-"PO-Revision-Date: 2023-10-31 20:02+0100\n"
+"PO-Revision-Date: 2023-11-02 01:10+0100\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: \n"
 "Language: ast\n"
@@ -30,29 +30,29 @@ msgstr "alministradores@softastur.org"
 #: basictab.cpp:49
 #, kde-format
 msgid "&Name:"
-msgstr ""
+msgstr "&Nome:"
 
 #: basictab.cpp:58
 #, kde-format
 msgid "&Description:"
-msgstr ""
+msgstr "&Descripción:"
 
 #: basictab.cpp:66
 #, kde-format
 msgid "&Comment:"
-msgstr ""
+msgstr "Com&entariu:"
 
 #: basictab.cpp:74
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Environment Variables:"
-msgstr ""
+msgstr "Variables d'entornu:"
 
 #: basictab.cpp:81
 #, kde-format
 msgctxt "@label:textbox the name or path to a command-line program"
 msgid "Program:"
-msgstr ""
+msgstr "Programa:"
 
 #: basictab.cpp:88
 #, kde-format
@@ -145,7 +145,7 @@ msgstr ""
 #: kmenuedit.cpp:59
 #, kde-format
 msgid "New &Item..."
-msgstr ""
+msgstr "&Elementu nuevu…"
 
 #: kmenuedit.cpp:63
 #, kde-format
@@ -180,12 +180,12 @@ msgstr ""
 #: kmenuedit.cpp:87
 #, kde-format
 msgid "Move &Up"
-msgstr ""
+msgstr "&Xubir"
 
 #: kmenuedit.cpp:90
 #, kde-format
 msgid "Move &Down"
-msgstr ""
+msgstr "&Baxar"
 
 #: kmenuedit.cpp:98
 #, kde-format
@@ -195,7 +195,7 @@ msgstr ""
 #: kmenuedit.cpp:126
 #, kde-format
 msgid "Search..."
-msgstr ""
+msgstr "Buscar…"
 
 #: kmenuedit.cpp:127
 #, kde-format
@@ -205,7 +205,7 @@ msgstr ""
 #: kmenuedit.cpp:188
 #, kde-format
 msgid "&Delete"
-msgstr ""
+msgstr "&Desaniciar"
 
 #: kmenuedit.cpp:213
 #, kde-format
@@ -223,19 +223,19 @@ msgstr ""
 #: kmenueditui.rc:7
 #, kde-format
 msgid "&File"
-msgstr ""
+msgstr "&Ficheru"
 
 #. i18n: ectx: Menu (edit)
 #: kmenueditui.rc:17
 #, kde-format
 msgid "&Edit"
-msgstr ""
+msgstr "&Editar"
 
 #. i18n: ectx: ToolBar (mainToolBar)
 #: kmenueditui.rc:34
 #, kde-format
 msgid "Main Toolbar"
-msgstr ""
+msgstr "Barra de ferramientes principal"
 
 #: main.cpp:28 main.cpp:38 main.cpp:52
 #, kde-format
@@ -255,7 +255,7 @@ msgstr ""
 #: main.cpp:43
 #, kde-format
 msgid "Waldo Bastian"
-msgstr ""
+msgstr "Waldo Bastian"
 
 #: main.cpp:43
 #, kde-format
@@ -275,7 +275,7 @@ msgstr ""
 #: main.cpp:45
 #, kde-format
 msgid "Matthias Elter"
-msgstr ""
+msgstr "Matthias Elter"
 
 #: main.cpp:45
 #, kde-format
@@ -340,7 +340,7 @@ msgstr ""
 #: treeview.cpp:1086
 #, kde-format
 msgid "New Item"
-msgstr ""
+msgstr "Elementu nuevu"
 
 #: treeview.cpp:1086
 #, kde-format
