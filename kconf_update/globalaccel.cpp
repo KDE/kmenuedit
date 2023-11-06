@@ -20,7 +20,7 @@ int main(int argc, char **argv)
     QDBusInterface khotkeys(QStringLiteral("org.kde.kded5"), QStringLiteral("/modules/khotkeys"), QStringLiteral("org.kde.khotkeys"));
     khotkeys.call(QStringLiteral("declareConfigOutDated"));
     KConfig khotkeysrc(QStringLiteral("khotkeysrc"), KConfig::SimpleConfig);
-    const int dataCount = KConfigGroup(&khotkeysrc, "Data").readEntry("DataCount", 0);
+    const int dataCount = KConfigGroup(&khotkeysrc, QStringLiteral("Data")).readEntry("DataCount", 0);
     bool foundKmenuedit = false;
     int kmenueditIndex;
     KConfigGroup kmenueditGroup;
