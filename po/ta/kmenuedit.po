@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-05 02:51+0000\n"
+"POT-Creation-Date: 2023-11-07 02:44+0000\n"
 "PO-Revision-Date: 2022-12-08 21:36+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
@@ -28,40 +28,40 @@ msgstr ""
 "sshanmu@yahoo.com,gomathiss@hotmail.com,t_vasee@yahoo.com, "
 "prabu_anand2000@yahoo.com,"
 
-#: basictab.cpp:49
+#: basictab.cpp:51
 #, kde-format
 msgid "&Name:"
 msgstr "&பெயர்:"
 
-#: basictab.cpp:58
+#: basictab.cpp:60
 #, kde-format
 msgid "&Description:"
 msgstr "&விவரணம்:"
 
-#: basictab.cpp:66
+#: basictab.cpp:68
 #, kde-format
 msgid "&Comment:"
 msgstr "&குறிப்பு:"
 
-#: basictab.cpp:74
+#: basictab.cpp:76
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Environment Variables:"
 msgstr "சூழல் மாறிகள்:"
 
-#: basictab.cpp:81
+#: basictab.cpp:83
 #, kde-format
 msgctxt "@label:textbox the name or path to a command-line program"
 msgid "Program:"
 msgstr "நிரல்:"
 
-#: basictab.cpp:88
+#: basictab.cpp:90
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Command-Line Arguments:"
 msgstr "கட்டளைவரிக்கான தருமதிப்புகள்:"
 
-#: basictab.cpp:92
+#: basictab.cpp:94
 #, kde-format
 msgid ""
 "Following the command, you can have several place holders which will be "
@@ -90,57 +90,57 @@ msgstr ""
 "%m - சிறிய சின்னம்\n"
 "%c - குறிப்பு"
 
-#: basictab.cpp:107
+#: basictab.cpp:109
 #, kde-format
 msgid "Enable &launch feedback"
 msgstr "&தொடக்கும்போது பின்னூட்டம் காட்டு"
 
-#: basictab.cpp:111
+#: basictab.cpp:113
 #, kde-format
 msgid "Only show when logged into a Plasma session"
 msgstr "பிளாஸ்மா அமர்வில் இருக்கும்போது மட்டும் காட்டு"
 
-#: basictab.cpp:115
+#: basictab.cpp:117
 #, kde-format
 msgid "Hidden entry"
 msgstr "மறைந்துள்ள பதிவு"
 
-#: basictab.cpp:127 preferencesdlg.cpp:63
+#: basictab.cpp:129 preferencesdlg.cpp:63
 #, kde-format
 msgid "General"
 msgstr "பொது"
 
-#: basictab.cpp:139
+#: basictab.cpp:141
 #, kde-format
 msgid "&Work path:"
 msgstr "&பணி பாதை:"
 
-#: basictab.cpp:151
+#: basictab.cpp:153
 #, kde-format
 msgid "Run in term&inal"
 msgstr "&முனையத்தில் இயக்கு"
 
-#: basictab.cpp:156
+#: basictab.cpp:158
 #, kde-format
 msgid "Terminal &options:"
 msgstr "முனைய &விருப்பத் தேர்வுகள்:"
 
-#: basictab.cpp:170
+#: basictab.cpp:172
 #, kde-format
 msgid "&Run as a different user"
 msgstr "&வேறு பயனராக இயக்கு"
 
-#: basictab.cpp:175
+#: basictab.cpp:177
 #, kde-format
 msgid "&Username:"
 msgstr "&பயனர் பெயர்:"
 
-#: basictab.cpp:189
+#: basictab.cpp:191
 #, kde-format
 msgid "Current shortcut &key:"
 msgstr "தற்போதைய &சுருக்குவழி விசை:"
 
-#: basictab.cpp:200
+#: basictab.cpp:202
 #, kde-format
 msgid "Advanced"
 msgstr "மேம்பட்டவை"
@@ -205,22 +205,22 @@ msgstr "&கீழே நகர்த்து"
 msgid "Restore to System Menu"
 msgstr "கணினி முழுவதற்குமான பட்டியை மீளமர்த்து"
 
-#: kmenuedit.cpp:126
+#: kmenuedit.cpp:134
 #, kde-format
 msgid "Search..."
 msgstr "தேடு..."
 
-#: kmenuedit.cpp:127
+#: kmenuedit.cpp:135
 #, kde-format
 msgid "Search through the list of applications below"
 msgstr "பின்வரும் செயலிகளின் பட்டியலில் தேடும்"
 
-#: kmenuedit.cpp:188
+#: kmenuedit.cpp:203
 #, kde-format
 msgid "&Delete"
 msgstr "&நீக்கு"
 
-#: kmenuedit.cpp:213
+#: kmenuedit.cpp:228
 #, kde-format
 msgid ""
 "You have made changes to the menu.\n"
@@ -229,7 +229,7 @@ msgstr ""
 "பட்டியை மாற்றியுள்ளீர்கள்.\n"
 "மாற்றங்களை சேமிக்க வேண்டுமா அல்லது கைவிட வேண்டுமா?"
 
-#: kmenuedit.cpp:215
+#: kmenuedit.cpp:230
 #, kde-format
 msgid "Save Menu Changes?"
 msgstr "பட்டி மாற்றங்களை சேமிக்கலாமா?"

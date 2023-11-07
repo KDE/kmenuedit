@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-05 02:51+0000\n"
+"POT-Creation-Date: 2023-11-07 02:44+0000\n"
 "PO-Revision-Date: 2019-11-22 12:03+0200\n"
 "Last-Translator: Marek Laane <qiilaq69@gmail.com>\n"
 "Language-Team: Estonian <kde-et@lists.linux.ee>\n"
@@ -29,40 +29,40 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "hasso@linux.ee, qiilaq69@gmail.com"
 
-#: basictab.cpp:49
+#: basictab.cpp:51
 #, kde-format
 msgid "&Name:"
 msgstr "&Nimi:"
 
-#: basictab.cpp:58
+#: basictab.cpp:60
 #, kde-format
 msgid "&Description:"
 msgstr "Kir&jeldus:"
 
-#: basictab.cpp:66
+#: basictab.cpp:68
 #, kde-format
 msgid "&Comment:"
 msgstr "&Kommentaar:"
 
-#: basictab.cpp:74
+#: basictab.cpp:76
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Environment Variables:"
 msgstr ""
 
-#: basictab.cpp:81
+#: basictab.cpp:83
 #, kde-format
 msgctxt "@label:textbox the name or path to a command-line program"
 msgid "Program:"
 msgstr ""
 
-#: basictab.cpp:88
+#: basictab.cpp:90
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Command-Line Arguments:"
 msgstr ""
 
-#: basictab.cpp:92
+#: basictab.cpp:94
 #, kde-format
 msgid ""
 "Following the command, you can have several place holders which will be "
@@ -91,57 +91,57 @@ msgstr ""
 "%m - miniikoon\n"
 "%c - pealdis"
 
-#: basictab.cpp:107
+#: basictab.cpp:109
 #, kde-format
 msgid "Enable &launch feedback"
 msgstr "Käivitamise tagasiside &lubamine"
 
-#: basictab.cpp:111
+#: basictab.cpp:113
 #, kde-format
 msgid "Only show when logged into a Plasma session"
 msgstr ""
 
-#: basictab.cpp:115
+#: basictab.cpp:117
 #, kde-format
 msgid "Hidden entry"
 msgstr "Peidetud kirje"
 
-#: basictab.cpp:127 preferencesdlg.cpp:63
+#: basictab.cpp:129 preferencesdlg.cpp:63
 #, kde-format
 msgid "General"
 msgstr "Üldine"
 
-#: basictab.cpp:139
+#: basictab.cpp:141
 #, kde-format
 msgid "&Work path:"
 msgstr "Töökataloo&g:"
 
-#: basictab.cpp:151
+#: basictab.cpp:153
 #, kde-format
 msgid "Run in term&inal"
 msgstr "Käivitatakse term&inalis"
 
-#: basictab.cpp:156
+#: basictab.cpp:158
 #, kde-format
 msgid "Terminal &options:"
 msgstr "T&erminali parameetrid:"
 
-#: basictab.cpp:170
+#: basictab.cpp:172
 #, kde-format
 msgid "&Run as a different user"
 msgstr "Käi&vitatakse teise kasutajana"
 
-#: basictab.cpp:175
+#: basictab.cpp:177
 #, kde-format
 msgid "&Username:"
 msgstr "Kas&utajanimi:"
 
-#: basictab.cpp:189
+#: basictab.cpp:191
 #, kde-format
 msgid "Current shortcut &key:"
 msgstr "&Käesolev kiirklahv:"
 
-#: basictab.cpp:200
+#: basictab.cpp:202
 #, kde-format
 msgid "Advanced"
 msgstr "Muu"
@@ -206,22 +206,22 @@ msgstr "Liiguta &alla"
 msgid "Restore to System Menu"
 msgstr "Süsteemi menüü taastamine"
 
-#: kmenuedit.cpp:126
+#: kmenuedit.cpp:134
 #, kde-format
 msgid "Search..."
 msgstr "Otsi ..."
 
-#: kmenuedit.cpp:127
+#: kmenuedit.cpp:135
 #, kde-format
 msgid "Search through the list of applications below"
 msgstr "Otsimine allolevas rakenduste loendis"
 
-#: kmenuedit.cpp:188
+#: kmenuedit.cpp:203
 #, kde-format
 msgid "&Delete"
 msgstr "&Kustuta"
 
-#: kmenuedit.cpp:213
+#: kmenuedit.cpp:228
 #, kde-format
 msgid ""
 "You have made changes to the menu.\n"
@@ -230,7 +230,7 @@ msgstr ""
 "Oled menüüd muutnud.\n"
 "Kas salvestada muudatused või unustada?"
 
-#: kmenuedit.cpp:215
+#: kmenuedit.cpp:230
 #, kde-format
 msgid "Save Menu Changes?"
 msgstr "Kas salvestada menüü muudatused?"

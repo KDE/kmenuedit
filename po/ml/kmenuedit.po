@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KDE Malayalam\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-05 02:51+0000\n"
+"POT-Creation-Date: 2023-11-07 02:44+0000\n"
 "PO-Revision-Date: 2019-12-12 22:20+0000\n"
 "Last-Translator: Vivek KJ Pazhedath <vivekkj2004@gmail.com>\n"
 "Language-Team: Malayalam <Swathanthra|സ്വതന്ത്ര Malayalam|മലയാളം Computing|"
@@ -28,40 +28,40 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "shijualexonline@gmail.com,snalledam@dataone.in,vivekkj2004@gmail.com"
 
-#: basictab.cpp:49
+#: basictab.cpp:51
 #, kde-format
 msgid "&Name:"
 msgstr "പേരു്"
 
-#: basictab.cpp:58
+#: basictab.cpp:60
 #, kde-format
 msgid "&Description:"
 msgstr "വിവരണം"
 
-#: basictab.cpp:66
+#: basictab.cpp:68
 #, kde-format
 msgid "&Comment:"
 msgstr "കുറിപ്പ്"
 
-#: basictab.cpp:74
+#: basictab.cpp:76
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Environment Variables:"
 msgstr ""
 
-#: basictab.cpp:81
+#: basictab.cpp:83
 #, kde-format
 msgctxt "@label:textbox the name or path to a command-line program"
 msgid "Program:"
 msgstr ""
 
-#: basictab.cpp:88
+#: basictab.cpp:90
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Command-Line Arguments:"
 msgstr ""
 
-#: basictab.cpp:92
+#: basictab.cpp:94
 #, kde-format
 msgid ""
 "Following the command, you can have several place holders which will be "
@@ -89,57 +89,57 @@ msgstr ""
 "%m - കുഞ്ഞു പ്രതിരൂപം\n"
 "%c - തലക്കെട്ട്"
 
-#: basictab.cpp:107
+#: basictab.cpp:109
 #, kde-format
 msgid "Enable &launch feedback"
 msgstr "അഭിപ്രായം രേഖപ്പെടുത്താനുള്ള ഉപാധി പ്രവര്‍ത്തിപ്പിക്കുക"
 
-#: basictab.cpp:111
+#: basictab.cpp:113
 #, kde-format
 msgid "Only show when logged into a Plasma session"
 msgstr ""
 
-#: basictab.cpp:115
+#: basictab.cpp:117
 #, kde-format
 msgid "Hidden entry"
 msgstr "മറച്ചുവെച്ച ഇനം"
 
-#: basictab.cpp:127 preferencesdlg.cpp:63
+#: basictab.cpp:129 preferencesdlg.cpp:63
 #, kde-format
 msgid "General"
 msgstr "പൊതുവായ"
 
-#: basictab.cpp:139
+#: basictab.cpp:141
 #, kde-format
 msgid "&Work path:"
 msgstr "പ്രവര്‍ത്തനത്തിനുള്ള വഴി"
 
-#: basictab.cpp:151
+#: basictab.cpp:153
 #, kde-format
 msgid "Run in term&inal"
 msgstr "ടെര്‍മിനലില്‍ പ്രവര്‍ത്തിപ്പിക്കുക"
 
-#: basictab.cpp:156
+#: basictab.cpp:158
 #, kde-format
 msgid "Terminal &options:"
 msgstr "ടെര്‍മിനല്‍ ഐച്ഛികങ്ങള്‍"
 
-#: basictab.cpp:170
+#: basictab.cpp:172
 #, kde-format
 msgid "&Run as a different user"
 msgstr "മറ്റൊരു ഉപയോക്താവായി പ്രവര്‍ത്തിപ്പിക്കുക"
 
-#: basictab.cpp:175
+#: basictab.cpp:177
 #, kde-format
 msgid "&Username:"
 msgstr "ഉപയോക്താവിന്റെ പേര്:"
 
-#: basictab.cpp:189
+#: basictab.cpp:191
 #, kde-format
 msgid "Current shortcut &key:"
 msgstr "ഇപ്പോഴത്തെ "
 
-#: basictab.cpp:200
+#: basictab.cpp:202
 #, kde-format
 msgid "Advanced"
 msgstr "സങ്കീര്‍ണ്ണമായ"
@@ -204,29 +204,29 @@ msgstr ""
 msgid "Restore to System Menu"
 msgstr "സിസ്റ്റം മെനുവിലേക്ക് തിരിച്ച് കൊണ്ടുവരിക"
 
-#: kmenuedit.cpp:126
+#: kmenuedit.cpp:134
 #, kde-format
 msgid "Search..."
 msgstr "തിരയുക..."
 
-#: kmenuedit.cpp:127
+#: kmenuedit.cpp:135
 #, kde-format
 msgid "Search through the list of applications below"
 msgstr ""
 
-#: kmenuedit.cpp:188
+#: kmenuedit.cpp:203
 #, kde-format
 msgid "&Delete"
 msgstr "നീക്കം ചെയ്യുക"
 
-#: kmenuedit.cpp:213
+#: kmenuedit.cpp:228
 #, kde-format
 msgid ""
 "You have made changes to the menu.\n"
 "Do you want to save the changes or discard them?"
 msgstr "താങ്കള്‍ മെനുവില്‍ മാറ്റം വരുത്തിയിരിക്കുന്നു. മാറ്റങ്ങള്‍ സൂക്ഷിക്കണോ അതോ കളയണോ ?"
 
-#: kmenuedit.cpp:215
+#: kmenuedit.cpp:230
 #, kde-format
 msgid "Save Menu Changes?"
 msgstr "മെനുവിലെ മാറ്റങ്ങള്‍ സൂക്ഷിക്കണോ ?"

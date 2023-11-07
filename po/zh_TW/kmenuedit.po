@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-05 02:51+0000\n"
+"POT-Creation-Date: 2023-11-07 02:44+0000\n"
 "PO-Revision-Date: 2023-03-06 22:09+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@linux.org.tw>\n"
@@ -31,40 +31,40 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "ericc@shinewave.com.tw"
 
-#: basictab.cpp:49
+#: basictab.cpp:51
 #, kde-format
 msgid "&Name:"
 msgstr "名稱(&N):"
 
-#: basictab.cpp:58
+#: basictab.cpp:60
 #, kde-format
 msgid "&Description:"
 msgstr "描述(&D):"
 
-#: basictab.cpp:66
+#: basictab.cpp:68
 #, kde-format
 msgid "&Comment:"
 msgstr "註解(&C):"
 
-#: basictab.cpp:74
+#: basictab.cpp:76
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Environment Variables:"
 msgstr "環境變數："
 
-#: basictab.cpp:81
+#: basictab.cpp:83
 #, kde-format
 msgctxt "@label:textbox the name or path to a command-line program"
 msgid "Program:"
 msgstr "程式："
 
-#: basictab.cpp:88
+#: basictab.cpp:90
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Command-Line Arguments:"
 msgstr "命令列參數："
 
-#: basictab.cpp:92
+#: basictab.cpp:94
 #, kde-format
 msgid ""
 "Following the command, you can have several place holders which will be "
@@ -91,57 +91,57 @@ msgstr ""
 "%m - 迷你圖示\n"
 "%c - 說明"
 
-#: basictab.cpp:107
+#: basictab.cpp:109
 #, kde-format
 msgid "Enable &launch feedback"
 msgstr "啟用執行回饋(&L)"
 
-#: basictab.cpp:111
+#: basictab.cpp:113
 #, kde-format
 msgid "Only show when logged into a Plasma session"
 msgstr "只在登入 Plasma 工作階段時顯示"
 
-#: basictab.cpp:115
+#: basictab.cpp:117
 #, kde-format
 msgid "Hidden entry"
 msgstr "隱藏的項目"
 
-#: basictab.cpp:127 preferencesdlg.cpp:63
+#: basictab.cpp:129 preferencesdlg.cpp:63
 #, kde-format
 msgid "General"
 msgstr "一般"
 
-#: basictab.cpp:139
+#: basictab.cpp:141
 #, kde-format
 msgid "&Work path:"
 msgstr "工作路徑(&W):"
 
-#: basictab.cpp:151
+#: basictab.cpp:153
 #, kde-format
 msgid "Run in term&inal"
 msgstr "在終端機視窗執行(&T)"
 
-#: basictab.cpp:156
+#: basictab.cpp:158
 #, kde-format
 msgid "Terminal &options:"
 msgstr "終端機選項(&O):"
 
-#: basictab.cpp:170
+#: basictab.cpp:172
 #, kde-format
 msgid "&Run as a different user"
 msgstr "用不同使用者身分來執行(&R)"
 
-#: basictab.cpp:175
+#: basictab.cpp:177
 #, kde-format
 msgid "&Username:"
 msgstr "使用者名稱(&U):"
 
-#: basictab.cpp:189
+#: basictab.cpp:191
 #, kde-format
 msgid "Current shortcut &key:"
 msgstr "目前的捷徑鍵(&K):"
 
-#: basictab.cpp:200
+#: basictab.cpp:202
 #, kde-format
 msgid "Advanced"
 msgstr "進階"
@@ -206,22 +206,22 @@ msgstr "下移(&D)"
 msgid "Restore to System Menu"
 msgstr "回復為系統選單"
 
-#: kmenuedit.cpp:126
+#: kmenuedit.cpp:134
 #, kde-format
 msgid "Search..."
 msgstr "搜尋…"
 
-#: kmenuedit.cpp:127
+#: kmenuedit.cpp:135
 #, kde-format
 msgid "Search through the list of applications below"
 msgstr "在底下的應用程式列表搜尋"
 
-#: kmenuedit.cpp:188
+#: kmenuedit.cpp:203
 #, kde-format
 msgid "&Delete"
 msgstr "刪除(&D)"
 
-#: kmenuedit.cpp:213
+#: kmenuedit.cpp:228
 #, kde-format
 msgid ""
 "You have made changes to the menu.\n"
@@ -230,7 +230,7 @@ msgstr ""
 "您已經對選單做了變更。\n"
 "您想要儲存變更或是放棄它們？"
 
-#: kmenuedit.cpp:215
+#: kmenuedit.cpp:230
 #, kde-format
 msgid "Save Menu Changes?"
 msgstr "是否儲存選單變更？"

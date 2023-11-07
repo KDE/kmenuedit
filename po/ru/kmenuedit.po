@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-05 02:51+0000\n"
+"POT-Creation-Date: 2023-11-07 02:44+0000\n"
 "PO-Revision-Date: 2023-01-28 13:38+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -44,40 +44,40 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "szh@chat.ru,leon@asplinux.ru"
 
-#: basictab.cpp:49
+#: basictab.cpp:51
 #, kde-format
 msgid "&Name:"
 msgstr "Назван&ие:"
 
-#: basictab.cpp:58
+#: basictab.cpp:60
 #, kde-format
 msgid "&Description:"
 msgstr "&Описание:"
 
-#: basictab.cpp:66
+#: basictab.cpp:68
 #, kde-format
 msgid "&Comment:"
 msgstr "&Комментарий:"
 
-#: basictab.cpp:74
+#: basictab.cpp:76
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Environment Variables:"
 msgstr "Переменные окружения:"
 
-#: basictab.cpp:81
+#: basictab.cpp:83
 #, kde-format
 msgctxt "@label:textbox the name or path to a command-line program"
 msgid "Program:"
 msgstr "Программа:"
 
-#: basictab.cpp:88
+#: basictab.cpp:90
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Command-Line Arguments:"
 msgstr "Аргументы командной строки:"
 
-#: basictab.cpp:92
+#: basictab.cpp:94
 #, kde-format
 msgid ""
 "Following the command, you can have several place holders which will be "
@@ -106,57 +106,57 @@ msgstr ""
 "%m - мини-значок\n"
 "%c - заголовок окна"
 
-#: basictab.cpp:107
+#: basictab.cpp:109
 #, kde-format
 msgid "Enable &launch feedback"
 msgstr "Включить &отклик запуска"
 
-#: basictab.cpp:111
+#: basictab.cpp:113
 #, kde-format
 msgid "Only show when logged into a Plasma session"
 msgstr "Показывать, только если открыт сеанс Plasma"
 
-#: basictab.cpp:115
+#: basictab.cpp:117
 #, kde-format
 msgid "Hidden entry"
 msgstr "Скрытый пункт"
 
-#: basictab.cpp:127 preferencesdlg.cpp:63
+#: basictab.cpp:129 preferencesdlg.cpp:63
 #, kde-format
 msgid "General"
 msgstr "Основные параметры"
 
-#: basictab.cpp:139
+#: basictab.cpp:141
 #, kde-format
 msgid "&Work path:"
 msgstr "&Рабочая папка:"
 
-#: basictab.cpp:151
+#: basictab.cpp:153
 #, kde-format
 msgid "Run in term&inal"
 msgstr "&Запускать в терминале"
 
-#: basictab.cpp:156
+#: basictab.cpp:158
 #, kde-format
 msgid "Terminal &options:"
 msgstr "&Параметры терминала:"
 
-#: basictab.cpp:170
+#: basictab.cpp:172
 #, kde-format
 msgid "&Run as a different user"
 msgstr "Запускать от имени &другого пользователя"
 
-#: basictab.cpp:175
+#: basictab.cpp:177
 #, kde-format
 msgid "&Username:"
 msgstr "&Имя пользователя:"
 
-#: basictab.cpp:189
+#: basictab.cpp:191
 #, kde-format
 msgid "Current shortcut &key:"
 msgstr "Текущая &клавиша:"
 
-#: basictab.cpp:200
+#: basictab.cpp:202
 #, kde-format
 msgid "Advanced"
 msgstr "Дополнительно"
@@ -221,22 +221,22 @@ msgstr "Переместить &ниже"
 msgid "Restore to System Menu"
 msgstr "Восстановить системное меню"
 
-#: kmenuedit.cpp:126
+#: kmenuedit.cpp:134
 #, kde-format
 msgid "Search..."
 msgstr "Поиск..."
 
-#: kmenuedit.cpp:127
+#: kmenuedit.cpp:135
 #, kde-format
 msgid "Search through the list of applications below"
 msgstr "Поиск по приложениям из списка"
 
-#: kmenuedit.cpp:188
+#: kmenuedit.cpp:203
 #, kde-format
 msgid "&Delete"
 msgstr "&Удалить"
 
-#: kmenuedit.cpp:213
+#: kmenuedit.cpp:228
 #, kde-format
 msgid ""
 "You have made changes to the menu.\n"
@@ -245,7 +245,7 @@ msgstr ""
 "Вами были сделаны изменения в меню.\n"
 "Сохранить изменения или отклонить их?"
 
-#: kmenuedit.cpp:215
+#: kmenuedit.cpp:230
 #, kde-format
 msgid "Save Menu Changes?"
 msgstr "Сохранить изменения меню?"

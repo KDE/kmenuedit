@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-05 02:51+0000\n"
+"POT-Creation-Date: 2023-11-07 02:44+0000\n"
 "PO-Revision-Date: 2023-09-25 12:48+0530\n"
 "Last-Translator: \n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -29,40 +29,40 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "skkalwar999@gmail.com"
 
-#: basictab.cpp:49
+#: basictab.cpp:51
 #, kde-format
 msgid "&Name:"
 msgstr "&नामः:"
 
-#: basictab.cpp:58
+#: basictab.cpp:60
 #, kde-format
 msgid "&Description:"
 msgstr "&वर्णनम्‌:"
 
-#: basictab.cpp:66
+#: basictab.cpp:68
 #, kde-format
 msgid "&Comment:"
 msgstr "&टिप्पणी:"
 
-#: basictab.cpp:74
+#: basictab.cpp:76
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Environment Variables:"
 msgstr "पर्यावरणचराः :"
 
-#: basictab.cpp:81
+#: basictab.cpp:83
 #, kde-format
 msgctxt "@label:textbox the name or path to a command-line program"
 msgid "Program:"
 msgstr "कार्यक्रमः :"
 
-#: basictab.cpp:88
+#: basictab.cpp:90
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Command-Line Arguments:"
 msgstr "आदेशपङ्क्तिः निवेशाः :"
 
-#: basictab.cpp:92
+#: basictab.cpp:94
 #, kde-format
 msgid ""
 "Following the command, you can have several place holders which will be "
@@ -91,57 +91,57 @@ msgstr ""
 "%m - लघु-चिह्नम् (the mini-icon)\n"
 "%c - शीर्षकम् (the caption)"
 
-#: basictab.cpp:107
+#: basictab.cpp:109
 #, kde-format
 msgid "Enable &launch feedback"
 msgstr "&प्रक्षेपणप्रतिक्रिया सक्षमं कुर्वन्तु"
 
-#: basictab.cpp:111
+#: basictab.cpp:113
 #, kde-format
 msgid "Only show when logged into a Plasma session"
 msgstr "केवलं प्लाज्मा सत्रे प्रवेशं कृत्वा एव दर्शयन्तु"
 
-#: basictab.cpp:115
+#: basictab.cpp:117
 #, kde-format
 msgid "Hidden entry"
 msgstr "गुप्तप्रविष्टिः"
 
-#: basictab.cpp:127 preferencesdlg.cpp:63
+#: basictab.cpp:129 preferencesdlg.cpp:63
 #, kde-format
 msgid "General"
 msgstr "सर्वत्रगत"
 
-#: basictab.cpp:139
+#: basictab.cpp:141
 #, kde-format
 msgid "&Work path:"
 msgstr "&कार्यमार्गः :"
 
-#: basictab.cpp:151
+#: basictab.cpp:153
 #, kde-format
 msgid "Run in term&inal"
 msgstr "&टर्मिनले चालयन्तु"
 
-#: basictab.cpp:156
+#: basictab.cpp:158
 #, kde-format
 msgid "Terminal &options:"
 msgstr "टर्मिनल् &विकल्पाः :"
 
-#: basictab.cpp:170
+#: basictab.cpp:172
 #, kde-format
 msgid "&Run as a different user"
 msgstr "भिन्नप्रयोक्तृरूपेण &चालयन्तु"
 
-#: basictab.cpp:175
+#: basictab.cpp:177
 #, kde-format
 msgid "&Username:"
 msgstr "&उपयोक्तृनाम:"
 
-#: basictab.cpp:189
+#: basictab.cpp:191
 #, kde-format
 msgid "Current shortcut &key:"
 msgstr "वर्तमान सङ्क्षिप्तमार्गस्य &कीलम् :"
 
-#: basictab.cpp:200
+#: basictab.cpp:202
 #, kde-format
 msgid "Advanced"
 msgstr "उन्नतम्"
@@ -206,22 +206,22 @@ msgstr "&अधः चालयन्तु"
 msgid "Restore to System Menu"
 msgstr "तन्त्रस्य विकल्पसूचि इत्यत्र पुनः स्थापयन्तु"
 
-#: kmenuedit.cpp:126
+#: kmenuedit.cpp:134
 #, kde-format
 msgid "Search..."
 msgstr "अन्वेषण..."
 
-#: kmenuedit.cpp:127
+#: kmenuedit.cpp:135
 #, kde-format
 msgid "Search through the list of applications below"
 msgstr "अधोलिखितानां अनुप्रयोगानाम् सूचीतः अन्वेषणं कुर्वन्तु"
 
-#: kmenuedit.cpp:188
+#: kmenuedit.cpp:203
 #, kde-format
 msgid "&Delete"
 msgstr "&विलोपयतु"
 
-#: kmenuedit.cpp:213
+#: kmenuedit.cpp:228
 #, kde-format
 msgid ""
 "You have made changes to the menu.\n"
@@ -230,7 +230,7 @@ msgstr ""
 "भवता विकल्पसूचि मध्ये परिवर्तनं कृतम् अस्ति ।\n"
 "परिवर्तनं रक्षितुम् इच्छति वा परित्यक्तुं वा इच्छति वा?"
 
-#: kmenuedit.cpp:215
+#: kmenuedit.cpp:230
 #, kde-format
 msgid "Save Menu Changes?"
 msgstr "विकल्पसूचि परिवर्तनं रक्षतु?"
