@@ -35,9 +35,9 @@ BasicTab::BasicTab(QWidget *parent)
     initAdvancedTab();
     initConnections();
 
-    slotDisableAction();
+    setDocumentMode(true);
 
-    setProperty("_breeze_borders_sides", QVariant::fromValue(QFlags{Qt::TopEdge}));
+    slotDisableAction();
 }
 
 void BasicTab::initGeneralTab()
