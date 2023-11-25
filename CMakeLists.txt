@@ -53,7 +53,6 @@ add_definitions(-DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_FROM_BYTEARRAY)
 add_definitions(-DTRANSLATION_DOMAIN=\"kmenuedit\")
 add_subdirectory( pixmaps ) 
 add_subdirectory( doc )
-add_subdirectory(kconf_update)
 
 set(kmenueditcommon_STAT_SRCS basictab.cpp
     kmenuedit.qrc
