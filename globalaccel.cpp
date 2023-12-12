@@ -15,6 +15,10 @@
 
 void GlobalAccel::changeMenuEntryShortcut(const KService::Ptr &service, const QKeySequence &shortcut)
 {
+    if (!service) {
+        return;
+    }
+
     const QString desktopFile = QStringLiteral("%1.desktop").arg(service->desktopEntryName());
 
     if (!KGlobalAccel::isComponentActive(desktopFile)) {
