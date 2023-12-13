@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-07 02:44+0000\n"
+"POT-Creation-Date: 2023-12-13 01:35+0000\n"
 "PO-Revision-Date: 2019-09-16 19:00+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik <kde-i18n-doc@kde.org>\n"
@@ -131,7 +131,7 @@ msgstr ""
 msgid "Advanced"
 msgstr ""
 
-#: globalaccel.cpp:24
+#: globalaccel.cpp:28
 #, kde-format
 msgid "Launch %1"
 msgstr ""

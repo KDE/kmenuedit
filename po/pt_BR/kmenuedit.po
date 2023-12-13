@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-07 02:44+0000\n"
+"POT-Creation-Date: 2023-12-13 01:35+0000\n"
 "PO-Revision-Date: 2022-12-15 11:32-0300\n"
 "Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
 "Language-Team: Portuguese <kde-i18n-pt_BR@kde.org>\n"
@@ -155,7 +155,7 @@ msgstr "Tecla de &atalho atual:"
 msgid "Advanced"
 msgstr "Avançado"
 
-#: globalaccel.cpp:24
+#: globalaccel.cpp:28
 #, kde-format
 msgid "Launch %1"
 msgstr "Iniciar %1"
