@@ -56,6 +56,7 @@ int main(int argc, char **argv)
     parser.process(app);
     aboutData.processCommandLine(&parser);
 
+    QApplication::setWindowIcon(QIcon::fromTheme(QStringLiteral("kmenuedit")));
     auto *menuEdit = new KMenuEdit();
 
     auto useArgs = [menuEdit](const QCommandLineParser &parser) {
