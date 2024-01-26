@@ -259,11 +259,11 @@
 >&kmenuedit; enregistre la hiérarchie du menu dans <filename
 >menus/applications-kmenuedit.menu</filename
 > dans le dossier <filename class="directory"
->$(qtpaths --paths GenericConfigLocation)</filename
+>$(qtpaths --paths Emplacement-Générique-Configuration)</filename
 > et <filename class="directory"
 >desktop-directories</filename
 > dans le dossier <filename class="directory"
->$(qtpaths --paths GenericDataLocation)</filename
+>$(qtpaths --paths Emplacement-Générique-Données)</filename
 >, contenant les fichiers de bureau pour les sous-menus que vous avez créés. Dans <filename class="directory"
 >applications/</filename
 > dans le dossier <filename class="directory"
@@ -273,7 +273,7 @@
 >Les raccourcis pour chaque application sont enregistrés dans <filename
 >kglobalshortcutsrc</filename
 >, dans le dossier <filename class="directory"
->$(qtpaths --paths GenericConfigLocation)</filename
+>$(qtpaths --paths Emplacement-Générique-Configuration)</filename
 >. Mais, l'importation / exportation ne fonctionnent pas parce que les « UUID » des raccourcis ne correspondent pas entre les systèmes, bien que les fichiers en extension <filename class="extension"
 >.desktop</filename
 > soient les mêmes. Vous devez assigner à nouveau tous les raccourcis manuellement. </para>
@@ -394,7 +394,7 @@
 ><command
 >locate</command
 ></userinput
-> pour chercher le fichier desktop et saisir la chaîne depuis la ligne Exec comme commande ici. </para>
+> pour chercher le fichier de bureau et saisir la chaîne depuis la ligne de commandes comme ici. </para>
 <note
 ><para
 >À la suite de la commande, vous pouvez avoir plusieurs variables qui seront remplacées par les valeurs réelles lorsque le programme est démarré :  <simplelist>
