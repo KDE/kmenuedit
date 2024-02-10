@@ -254,7 +254,7 @@
 > 
 
 <para
->Özel ögeler (alt menü veya öge) eklemek için menüdeki veya araç çubuğundaki eylemleri kullanın. Ögelerin bir Ad ve Komut'a gereksinimi vardır, komut girişi olmadan hiçbir öge kaydedilmez ve ekleme işleminiz kaybolur. </para>
+>Özel ögeler (alt menü veya öge) eklemek için menüdeki veya araç çubuğundaki eylemleri kullanın. Ögelerin bir Ad ve Komut’a gereksinimi vardır, komut girişi olmadan hiçbir öge kaydedilmez ve ekleme işleminiz kaybolur. </para>
 <para
 >Bir girdi eklerseniz ağaçta asıl vurgulanan konuma alt girdi olarak eklenir. Bir girdiyi üst düzey bir girdi yapmak için fareyle sürükleyerek veya <guibutton
 >Aşağı Taşı</guibutton
@@ -288,7 +288,7 @@
 >$(qtpaths --paths GenericConfigLocation)</filename
 > klasöründeki <filename
 >kglobalshortcutsrc</filename
-> dosyasında depolanır; ancak içe/dışa aktarma çalışmaz; çünkü kısayolların UUID'leri, <filename class="extension"
+> dosyasında depolanır; ancak içe/dışa aktarma çalışmaz; çünkü kısayolların UUID’leri, <filename class="extension"
 >.desktop</filename
 > dosyaları aynı olsa bile sistemler arasında eşleşmez. Tüm kısayolları elle yeniden atamanız gerekir. </para>
 
@@ -366,7 +366,7 @@
 </screenshot>
 </para>
 <para
->Dönüş'e basın ve ana pencerede aşağıdaki resme benzer bir şeyler görmelisiniz. <screenshot>
+>Dönüş’e basın ve ana pencerede aşağıdaki resme benzer bir şeyler görmelisiniz. <screenshot>
 <screeninfo
 >Yeni Öge</screeninfo>
 <mediaobject>
@@ -434,7 +434,7 @@
 ></para>
 <informalexample
 ><para
->Örneğin: Firefox'un web taramaya <command
+>Örneğin: Firefox’un web taramaya <command
 >firefox</command
 > komutu yerine www.kde.org ile başlamasını istiyorsanız <command
 >firefox %u www.kde.org</command
@@ -979,7 +979,7 @@
 >Ayarlar</guimenu
 > ve <guimenu
 >Yardım</guimenu
-> menü ögeleri vardır; daha fazla bilgi için &kde; Temelleri'nde <ulink url="help:/fundamentals/menus.html#menus-settings"
+> menü ögeleri vardır; daha fazla bilgi için &kde; Temelleri’nde <ulink url="help:/fundamentals/menus.html#menus-settings"
 >Ayarlar Menüsü</ulink
 > ve <ulink url="help:/fundamentals/menus.html#menus-help"
 >Yardım Menüsü</ulink
