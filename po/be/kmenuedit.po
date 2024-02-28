@@ -1,18 +1,14 @@
-# translation of kmenuedit.po to Belarusian
-# Belarusian (classic spelling) translation of kmenuedit.pot
-# Copyright (C) 2002-2004 KDE Team.
-#
 # Eugene Zelenko <greendeath@mail.ru>, 2002-2004.
 # Ihar Hrachyshka <ihar.hrachyshka@gmail.com>, 2006.
 # Darafei Praliaskouski <komzpa@licei2.com>, 2007.
 msgid ""
 msgstr ""
-"Project-Id-Version: kmenuedit\n"
+"Project-Id-Version: fc57ad16a28d02dea100ceb1c60de14e\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-13 01:35+0000\n"
-"PO-Revision-Date: 2007-08-22 12:31+0000\n"
+"PO-Revision-Date: 2024-02-26 19:23\n"
 "Last-Translator: Darafei Praliaskouski <komzpa@licei2.com>\n"
-"Language-Team: Belarusian <i18n@mova.org>\n"
+"Language-Team: Belarusian\n"
 "Language: be\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,16 +17,24 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
 "%100>=11 && n%100<=14 ? 2 : 3);\n"
+"X-Crowdin-Project: fc57ad16a28d02dea100ceb1c60de14e\n"
+"X-Crowdin-Project-ID: 136\n"
+"X-Crowdin-Language: be\n"
+"X-Crowdin-File: /[antikruk.KDE] main/KDE6/be/messages/kmenuedit/kmenuedit."
+"po\n"
+"X-Crowdin-File-ID: 10200\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Eugene Zelenko, Ігар Грачышка"
+msgstr "Дарафей Праляскоўскі, Андрэйчанка Анастасія, Сталярчук Іван, Antikruk"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "greendeath@mail.ru, ihar.hrachyshka@gmail.com"
+msgstr ""
+"komzpa@licei2.com, bashybuzuk@tut.by, ivan.telkontar@gmail.com, "
+"nashtlumach@gmail.com"
 
 #: basictab.cpp:51
 #, kde-format
@@ -51,19 +55,19 @@ msgstr "&Каментар:"
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Environment Variables:"
-msgstr ""
+msgstr "Зменныя асяроддзя:"
 
 #: basictab.cpp:83
 #, kde-format
 msgctxt "@label:textbox the name or path to a command-line program"
 msgid "Program:"
-msgstr ""
+msgstr "Праграма:"
 
 #: basictab.cpp:90
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Command-Line Arguments:"
-msgstr ""
+msgstr "Аргументы загаднага радка:"
 
 #: basictab.cpp:94
 #, kde-format
@@ -81,18 +85,18 @@ msgid ""
 "%m - the mini-icon\n"
 "%c - the caption"
 msgstr ""
-"Пры запуску праграмы вы можаце вызначыць некалькі пазіцыяў у камандзе для "
-"падстаноўкі адпаведных назваў файлаў:\n"
-"%f - адзін файл\n"
-"%F - спіс файлаў; выкарыстоўваецца для праграмаў, якія могуць адкрываць "
-"некалькі мясцовых файлаў адначасова\n"
-"%u - адна спасылка\n"
-"%U - спіс спасылак\n"
-"%d - тэчка\n"
-"%D - спіс тэчак\n"
-"%i - значка\n"
-"%m - маленькая значка\n"
-"%c - назва праграмы"
+"Пасля загаду можа быць некалькі зменных, якія заменяцца канкрэтнымі "
+"значэннямі пры запуску канкрэтнай праграмы:\n"
+"%f - адна назва файла\n"
+"%F - спіс файлаў для праграм, якія могуць адкрыць некалькі лакальных файлаў "
+"запар\n"
+"%u - адзін URL\n"
+"%U - спіс URL\n"
+"%d - каталог файла, які трэба адкрыць\n"
+"%D - спіс каталогаў\n"
+"%i - значок\n"
+"%m - міні-значок\n"
+"%c - подпіс"
 
 #: basictab.cpp:109
 #, kde-format
@@ -102,22 +106,22 @@ msgstr "Уключыць &адказ на запуск"
 #: basictab.cpp:113
 #, kde-format
 msgid "Only show when logged into a Plasma session"
-msgstr ""
+msgstr "Паказваць толькі пры ўваходзе ў сеанс Plasma"
 
 #: basictab.cpp:117
 #, kde-format
 msgid "Hidden entry"
-msgstr ""
+msgstr "Схаваны элемент"
 
 #: basictab.cpp:129 preferencesdlg.cpp:63
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "Асноўныя налады"
 
 #: basictab.cpp:141
 #, kde-format
 msgid "&Work path:"
-msgstr "&Працоўная тэчка:"
+msgstr "&Працоўны шлях:"
 
 #: basictab.cpp:153
 #, kde-format
@@ -127,7 +131,7 @@ msgstr "Выконваць у тэрм&інале"
 #: basictab.cpp:158
 #, kde-format
 msgid "Terminal &options:"
-msgstr "&Параметры тэрміналу:"
+msgstr "&Параметры тэрмінала:"
 
 #: basictab.cpp:172
 #, kde-format
@@ -137,22 +141,22 @@ msgstr "&Выконваць ад імя іншага карыстальніка"
 #: basictab.cpp:177
 #, kde-format
 msgid "&Username:"
-msgstr "Імя &карыстальніка:"
+msgstr "&Імя карыстальніка:"
 
 #: basictab.cpp:191
 #, kde-format
 msgid "Current shortcut &key:"
-msgstr "С&карот:"
+msgstr "Бягучае &спалучэнне клавіш:"
 
 #: basictab.cpp:202
 #, kde-format
 msgid "Advanced"
-msgstr ""
+msgstr "Дадатковыя"
 
 #: globalaccel.cpp:28
 #, kde-format
 msgid "Launch %1"
-msgstr ""
+msgstr "Запусціць %1"
 
 #: kmenuedit.cpp:55
 #, kde-format
@@ -172,60 +176,57 @@ msgstr "Новы па&дзяляльнік"
 #: kmenuedit.cpp:67
 #, kde-format
 msgid "&Sort"
-msgstr ""
+msgstr "&Сартаваць"
 
 #: kmenuedit.cpp:71
-#, fuzzy, kde-format
-#| msgid "&Description:"
+#, kde-format
 msgid "&Sort selection by Name"
-msgstr "&Апісанне:"
+msgstr "&Сартаваць абранае па назве"
 
 #: kmenuedit.cpp:74
-#, fuzzy, kde-format
-#| msgid "&Description:"
+#, kde-format
 msgid "&Sort selection by Description"
-msgstr "&Апісанне:"
+msgstr "&Сартаваць абранае па апісанні"
 
 #: kmenuedit.cpp:78
 #, kde-format
 msgid "&Sort all by Name"
-msgstr ""
+msgstr "&Сартаваць усё па назве"
 
 #: kmenuedit.cpp:81
-#, fuzzy, kde-format
-#| msgid "&Description:"
+#, kde-format
 msgid "&Sort all by Description"
-msgstr "&Апісанне:"
+msgstr "&Сартаваць усё па апісанні"
 
 #: kmenuedit.cpp:87
 #, kde-format
 msgid "Move &Up"
-msgstr ""
+msgstr "Перамясціць &вышэй"
 
 #: kmenuedit.cpp:90
 #, kde-format
 msgid "Move &Down"
-msgstr ""
+msgstr "Перамясціць ні&жэй"
 
 #: kmenuedit.cpp:98
 #, kde-format
 msgid "Restore to System Menu"
-msgstr ""
+msgstr "Аднавіць сістэмнае меню"
 
 #: kmenuedit.cpp:134
 #, kde-format
 msgid "Search..."
-msgstr ""
+msgstr "Пошук..."
 
 #: kmenuedit.cpp:135
 #, kde-format
 msgid "Search through the list of applications below"
-msgstr ""
+msgstr "Пошук па спісе праграм ніжэй"
 
 #: kmenuedit.cpp:203
 #, kde-format
 msgid "&Delete"
-msgstr "В&ыдаліць"
+msgstr "&Выдаліць"
 
 #: kmenuedit.cpp:228
 #, kde-format
@@ -233,8 +234,8 @@ msgid ""
 "You have made changes to the menu.\n"
 "Do you want to save the changes or discard them?"
 msgstr ""
-"Вы зрабілі змены ў меню.\n"
-"Вы хочаце захаваць змены ці адхіліць?"
+"Вы ўнеслі змены ў меню.\n"
+"Хочаце захаваць ці адкінуць змены?"
 
 #: kmenuedit.cpp:230
 #, kde-format
@@ -251,13 +252,13 @@ msgstr "&Файл"
 #: kmenueditui.rc:17
 #, kde-format
 msgid "&Edit"
-msgstr "&Змяніць"
+msgstr "&Рэдагаванне"
 
 #. i18n: ectx: ToolBar (mainToolBar)
 #: kmenueditui.rc:34
 #, kde-format
 msgid "Main Toolbar"
-msgstr "Галоўная панель начыння"
+msgstr "Галоўная панэль інструментаў"
 
 #: main.cpp:28 main.cpp:38 main.cpp:52
 #, kde-format
@@ -272,42 +273,42 @@ msgstr "Рэдактар меню KDE"
 #: main.cpp:42
 #, kde-format
 msgid "(C) 2000-2003, Waldo Bastian, Raffaele Sandrini, Matthias Elter"
-msgstr "(C) 2000-2003, Вальдо Басціян, Рафаэль Сандрыні, Матыяс Эльтэр"
+msgstr "(C) 2000-2003, Waldo Bastian, Raffaele Sandrini, Matthias Elter"
 
 #: main.cpp:43
 #, kde-format
 msgid "Waldo Bastian"
-msgstr "Вальдо Басціян"
+msgstr "Waldo Bastian"
 
 #: main.cpp:43
 #, kde-format
 msgid "Maintainer"
-msgstr "Адказны"
+msgstr "Суправаджальнік"
 
 #: main.cpp:44
 #, kde-format
 msgid "Raffaele Sandrini"
-msgstr "Рафаэль Сандрыні"
+msgstr "Raffaele Sandrini"
 
 #: main.cpp:44
 #, kde-format
 msgid "Previous Maintainer"
-msgstr "Ранейшы адказны"
+msgstr "Папярэдні суправаджальнік"
 
 #: main.cpp:45
 #, kde-format
 msgid "Matthias Elter"
-msgstr "Матыас Эльтэр"
+msgstr "Matthias Elter"
 
 #: main.cpp:45
 #, kde-format
 msgid "Original Author"
-msgstr "Аўтар"
+msgstr "Першапачатковы стваральнік"
 
 #: main.cpp:46
 #, kde-format
 msgid "Montel Laurent"
-msgstr ""
+msgstr "Montel Laurent"
 
 #: main.cpp:53
 #, kde-format
@@ -325,30 +326,29 @@ msgid "Could not write to %1"
 msgstr "Немагчыма запісаць у %1"
 
 #: preferencesdlg.cpp:26
-#, fuzzy, kde-format
-#| msgid "Terminal &options:"
+#, kde-format
 msgid "General options"
-msgstr "&Параметры тэрміналу:"
+msgstr "Асноўныя параметры"
 
 #: preferencesdlg.cpp:31
 #, kde-format
 msgid "Spell Checking"
-msgstr ""
+msgstr "Праверка правапісу"
 
 #: preferencesdlg.cpp:32
 #, kde-format
 msgid "Spell checking Options"
-msgstr ""
+msgstr "Параметры праверкі правапісу"
 
 #: preferencesdlg.cpp:65
 #, kde-format
 msgid "Show hidden entries"
-msgstr ""
+msgstr "Паказваць схаваныя элементы"
 
 #: treeview.cpp:177
 #, kde-format
 msgid " [Hidden]"
-msgstr " [Схаваны]"
+msgstr " [Схавана]"
 
 #: treeview.cpp:1019
 #, kde-format
@@ -373,19 +373,18 @@ msgstr "Назва элемента:"
 #: treeview.cpp:1563
 #, kde-format
 msgid "All submenus of '%1' will be removed. Do you want to continue?"
-msgstr ""
+msgstr "Усе падменю \"%1\" будуць выдалены. Хочаце працягнуць?"
 
 #: treeview.cpp:1564
-#, fuzzy, kde-format
-#| msgid "&Delete"
+#, kde-format
 msgctxt "@title:window"
 msgid "Delete"
-msgstr "В&ыдаліць"
+msgstr "Выдаліць"
 
 #: treeview.cpp:1726
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
-msgstr "Немагчыма захаваць змены ў меню з-за наступных праблемаў:"
+msgstr "Не ўдалося захаваць змены ў меню праз наступную праблему:"
 
 #: treeview.cpp:1773
 #, kde-format
@@ -393,12 +392,14 @@ msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
 "menus."
 msgstr ""
+"Вы хочаце аднавіць сістэмнае меню? Увага: гэтае дзеянне выдаліць усе меню "
+"карыстальніка."
 
 #: treeview.cpp:1774
 #, kde-format
 msgctxt "@title:window"
 msgid "Restore Menu System"
-msgstr ""
+msgstr "Аднавіць сістэмнае меню"
 
 #~ msgid "Co&mmand:"
 #~ msgstr "Ка&манда:"
