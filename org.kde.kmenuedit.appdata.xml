@@ -136,10 +136,10 @@
     <binary>kmenuedit</binary>
   </provides>
   <releases>
-    <release version="5.27.11" date="2024-03-06"/>
     <release version="6.0.1" date="2024-03-05"/>
     <release version="6.0.0" date="2024-02-21"/>
     <release version="5.93.0" date="2024-01-31"/>
+    <release version="5.27.11" date="2024-03-06"/>
   </releases>
   <content_rating type="oars-1.1"/>
 </component>
