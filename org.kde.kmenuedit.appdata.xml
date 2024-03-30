@@ -12,6 +12,7 @@
   <name xml:lang="de">Menü bearbeiten</name>
   <name xml:lang="el">Επεξεργασία μενού</name>
   <name xml:lang="en-GB">Menu Edit</name>
+  <name xml:lang="eo">Menu Edit</name>
   <name xml:lang="es">Editar el menú</name>
   <name xml:lang="eu">Menua editatzea</name>
   <name xml:lang="fi">Valikkomuokkain</name>
@@ -50,6 +51,7 @@
   <summary xml:lang="de">Bearbeiten, wie Anwendungen im Anwendungsstarter dargestellt werden</summary>
   <summary xml:lang="el">Επεξεργάζεται τον τρόπο παρουσίασης των εφαρμογών στους εκτελεστές εφαρμογών</summary>
   <summary xml:lang="en-GB">Edit how applications are presented in app launchers</summary>
+  <summary xml:lang="eo">Redaktu kiel aplikaĵoj estas prezentotaj en app-lanĉiloj</summary>
   <summary xml:lang="es">Editar cómo se presentan las aplicaciones en los lanzadores de aplicaciones</summary>
   <summary xml:lang="eu">Editatu aplikazio-abiarazleetan aplikazioak nola aurkezten diren</summary>
   <summary xml:lang="fi">Muokkaa sitä, miten sovellukset esitetään sovelluskäynnistimissä</summary>
