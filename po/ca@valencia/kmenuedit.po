@@ -159,12 +159,12 @@ msgstr "Inicia %1"
 #: kmenuedit.cpp:55
 #, kde-format
 msgid "&New Submenu..."
-msgstr "Submenú &nou..."
+msgstr "Submenú &nou…"
 
 #: kmenuedit.cpp:59
 #, kde-format
 msgid "New &Item..."
-msgstr "&Element nou..."
+msgstr "&Element nou…"
 
 #: kmenuedit.cpp:63
 #, kde-format
@@ -214,7 +214,7 @@ msgstr "Restaura al menú del sistema"
 #: kmenuedit.cpp:134
 #, kde-format
 msgid "Search..."
-msgstr "Busca..."
+msgstr "Busca…"
 
 #: kmenuedit.cpp:135
 #, kde-format
