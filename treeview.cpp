@@ -1559,15 +1559,6 @@ void TreeView::del(TreeItem *item, bool deleteInfo)
     TreeItem *parentItem = static_cast<TreeItem *>(item->parent());
     // is file a .directory or a .desktop file
     if (item->isDirectory()) {
-        if (KMessageBox::questionTwoActions(this,
-                                            i18n("All submenus of '%1' will be removed. Do you want to continue?", item->name()),
-                                            i18nc("@title:window", "Delete"),
-                                            KStandardGuiItem::del(),
-                                            KStandardGuiItem::cancel())
-            == KMessageBox::SecondaryAction) {
-            return;
-        }
-
         MenuFolderInfo *folderInfo = item->folderInfo();
 
         // Remove MenuFolderInfo
