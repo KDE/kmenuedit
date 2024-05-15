@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-13 01:35+0000\n"
+"POT-Creation-Date: 2024-05-15 00:39+0000\n"
 "PO-Revision-Date: 2023-10-02 20:55+0200\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -373,24 +373,13 @@ msgstr "Nuevo elemento"
 msgid "Item name:"
 msgstr "Nombre del elemento:"
 
-#: treeview.cpp:1563
-#, kde-format
-msgid "All submenus of '%1' will be removed. Do you want to continue?"
-msgstr "Todos los submenús de «%1» se eliminarán. ¿Quiere continuar?"
-
-#: treeview.cpp:1564
-#, kde-format
-msgctxt "@title:window"
-msgid "Delete"
-msgstr "Borrar"
-
-#: treeview.cpp:1726
+#: treeview.cpp:1717
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
 msgstr ""
 "No fue posible guardar los cambios al menú debido al siguiente problema:"
 
-#: treeview.cpp:1773
+#: treeview.cpp:1764
 #, kde-format
 msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
@@ -399,11 +388,18 @@ msgstr ""
 "¿Quiere restaurar el menú del sistema? Aviso: Eliminará todos los menús "
 "personalizados."
 
-#: treeview.cpp:1774
+#: treeview.cpp:1765
 #, kde-format
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "Restaurar el menú del sistema"
+
+#~ msgid "All submenus of '%1' will be removed. Do you want to continue?"
+#~ msgstr "Todos los submenús de «%1» se eliminarán. ¿Quiere continuar?"
+
+#~ msgctxt "@title:window"
+#~ msgid "Delete"
+#~ msgstr "Borrar"
 
 #~ msgid "Co&mmand:"
 #~ msgstr "&Orden:"

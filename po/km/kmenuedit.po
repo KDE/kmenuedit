@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-13 01:35+0000\n"
+"POT-Creation-Date: 2024-05-15 00:39+0000\n"
 "PO-Revision-Date: 2009-04-09 14:51+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -367,36 +367,33 @@ msgstr "ធាតុ​ថ្មី"
 msgid "Item name:"
 msgstr "ឈ្មោះ​វត្ថុ ៖"
 
-#: treeview.cpp:1563
-#, kde-format
-msgid "All submenus of '%1' will be removed. Do you want to continue?"
-msgstr "ម៉ឺនុយ​រង​​របស់ '%1' ទាំងអស់​នឹង​ត្រូវបាន​យកចេញ ។ តើ​អ្នក​ចង់​បន្ត​ឬ​ទេ ?"
-
-#: treeview.cpp:1564
-#, fuzzy, kde-format
-#| msgid "&Delete"
-msgctxt "@title:window"
-msgid "Delete"
-msgstr "លុប"
-
-#: treeview.cpp:1726
+#: treeview.cpp:1717
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
 msgstr "ការ​ផ្លាស់ប្ដូរ​ម៉ឺនុយ​មិន​អាច​រក្សា​ទុក​បាន​ទេ ដោយ​សារ​តែ​បញ្ហា​ខាង​ក្រោម ៖"
 
-#: treeview.cpp:1773
+#: treeview.cpp:1764
 #, kde-format
 msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
 "menus."
 msgstr "តើ​អ្នក​ចង់​ស្ដារ​ម៉ឺនុយ​ប្រពន្ធ​ឡើងវិញ​ឬ ? ព្រមាន ៖ វា​នឹង​យក​ម៉ឺនុយ​ផ្ទាល់ខ្លួន​ទាំងអស់​ចេញ ។"
 
-#: treeview.cpp:1774
+#: treeview.cpp:1765
 #, fuzzy, kde-format
 #| msgid "Restore to System Menu"
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "ស្ដារ​ទៅ​ម៉ឺនុយ​ប្រព័ន្ធ​ឡើង​វិញ"
+
+#~ msgid "All submenus of '%1' will be removed. Do you want to continue?"
+#~ msgstr "ម៉ឺនុយ​រង​​របស់ '%1' ទាំងអស់​នឹង​ត្រូវបាន​យកចេញ ។ តើ​អ្នក​ចង់​បន្ត​ឬ​ទេ ?"
+
+#, fuzzy
+#~| msgid "&Delete"
+#~ msgctxt "@title:window"
+#~ msgid "Delete"
+#~ msgstr "លុប"
 
 #~ msgid "Co&mmand:"
 #~ msgstr "ពាក្យ​បញ្ជា ៖"
