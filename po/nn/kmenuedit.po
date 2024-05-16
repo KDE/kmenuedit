@@ -384,10 +384,3 @@ msgstr ""
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "Gjenopprett systemmeny"
-
-#~ msgid "All submenus of '%1' will be removed. Do you want to continue?"
-#~ msgstr "Alle undermenyane til «%1» vert sletta. Vil du halda fram?"
-
-#~ msgctxt "@title:window"
-#~ msgid "Delete"
-#~ msgstr "Slett"

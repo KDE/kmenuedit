@@ -376,10 +376,3 @@ msgstr "您想要重置为系统菜单吗？警告：这将移除所有自定义
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "还原菜单系统"
-
-#~ msgid "All submenus of '%1' will be removed. Do you want to continue?"
-#~ msgstr "“%1”的所有子菜单将被移除，您想要继续吗？"
-
-#~ msgctxt "@title:window"
-#~ msgid "Delete"
-#~ msgstr "删除"
