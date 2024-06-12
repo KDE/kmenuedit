@@ -6,6 +6,7 @@
   <name>Menu Edit</name>
   <name xml:lang="ar">محرر القائمة</name>
   <name xml:lang="az">Menyu redaktoru</name>
+  <name xml:lang="be">Рэдагаванне меню</name>
   <name xml:lang="bg">Редактиране на меню</name>
   <name xml:lang="ca">Editor de menús</name>
   <name xml:lang="ca-valencia">Editor de menús</name>
@@ -48,6 +49,7 @@
   <summary>Edit how applications are presented in app launchers</summary>
   <summary xml:lang="ar">حرر كيف تُعرض البرامج في مطلقات البرامج</summary>
   <summary xml:lang="az">Tətbiq başladıcıda görünən tətbiqlər siyahısına düzəliş edin</summary>
+  <summary xml:lang="be">Рэдагаванне спосабу паказу праграм у праграмах запуску</summary>
   <summary xml:lang="bg">Настройване на изгледа на приложенията в стартера</summary>
   <summary xml:lang="ca">Edita com es presenten les aplicacions en els llançadors d'aplicacions</summary>
   <summary xml:lang="ca-valencia">Edita com es presenten les aplicacions en els iniciadors d'aplicacions</summary>
@@ -92,6 +94,7 @@
     <p>KDE Menu Edit lets you edit how your apps are presented in application launchers, such as Plasma's Application Launcher widget.</p>
     <p xml:lang="ar">يسمح لك محرر قائمة كِيدِي أن تحرر كيف تُعرض البرامج في مطلقات البرامج مثل مطلق برامج بلازما.</p>
     <p xml:lang="az">KDE Menyu redaktoru Plama Tətbiq Başladıcı vidjeti kimi tətbiq başladıcıda təqdim ediləcək tətbiqlər siyahısına düzəliş etməyə imkan verir.</p>
+    <p xml:lang="be">Рэдагаванне меню KDE дае магчымасць рэдагаваць тое, як вашыя праграмы падаюцца ў сродках запуску праграм, такіх як віджэт сродку запуску праграм Plasma.</p>
     <p xml:lang="bg">Редактиране на меню на KDE ви позволява да настройвате начина, по който приложенията се показват в стартерите на приложения като панелните уиджетите за стартери на Plasma</p>
     <p xml:lang="ca">L'editor de menús del KDE permet editar com es presenten les aplicacions en els llançadors d'aplicacions, com el giny del Llançador d'aplicacions del KDE.</p>
     <p xml:lang="ca-valencia">L'editor de menús de KDE permet editar com es presenten les aplicacions en els iniciadors d'aplicacions, com el giny de l'Iniciador d'aplicacions de KDE.</p>
