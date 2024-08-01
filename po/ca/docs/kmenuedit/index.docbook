@@ -108,7 +108,7 @@
 ></listitem>
 <listitem
 ><para
->Crear i eliminar elements i submenús.</para
+>Crear i suprimir elements i submenús.</para
 ></listitem>
 <listitem
 ><para
@@ -214,13 +214,13 @@
 >.hidden [Hidden]</guilabel
 >. Els podreu moure una altra vegada a l'arbre per a tenir-los al menú. </para>
 <para
->Si elimineu un submenú, serà realment eliminat amb tots els seus submenús i elements. Per a tornar-lo a crear, podeu utilitzar <menuchoice
+>Si suprimir un submenú, serà realment suprimit amb tots els seus submenús i elements. Per a tornar-lo a crear, podeu utilitzar <menuchoice
 ><guimenu
 >Edita</guimenu
 ><guimenuitem
 >Restaura al menú del sistema</guimenuitem
 ></menuchoice
->, però això eliminarà tots els submenús i elements personalitzats, i també s'eliminaran els fitxers <filename class="extension"
+>, però això eliminarà tots els submenús i elements personalitzats, i també se suprimiran els fitxers <filename class="extension"
 >.desktop</filename
 >. Aquesta acció no es pot revertir. </para>
 
