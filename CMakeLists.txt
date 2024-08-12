@@ -41,6 +41,7 @@ find_package(KF6 ${KF6_MIN_VERSION} REQUIRED COMPONENTS
     DocTools
     GlobalAccel
     WindowSystem
+    Crash
 )
 
 ecm_set_disabled_deprecation_versions(QT 6.7.0
@@ -99,6 +100,7 @@ target_link_libraries(kmenuedit
     KF6::XmlGui
     KF6::WindowSystem
     KF6::IconWidgets
+    KF6::Crash
 )
 
 # add clang-format target for all our real source files

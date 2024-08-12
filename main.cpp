@@ -8,6 +8,7 @@
  */
 
 #include <KAboutData>
+#include <KCrash>
 #include <KLocalizedString>
 #include <KWindowSystem>
 #include <kdbusservice.h>
@@ -45,7 +46,7 @@ int main(int argc, char **argv)
     aboutData.addAuthor(i18n("Matthias Elter"), i18n("Original Author"), QStringLiteral("elter@kde.org"));
     aboutData.addAuthor(i18n("Montel Laurent"), QString(), QStringLiteral("montel@kde.org"));
     KAboutData::setApplicationData(aboutData);
-
+    KCrash::initialize();
     KDBusService service(KDBusService::Unique);
 
     QCommandLineParser parser;
