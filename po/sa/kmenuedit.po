@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-15 00:39+0000\n"
+"POT-Creation-Date: 2024-08-13 00:40+0000\n"
 "PO-Revision-Date: 2023-09-25 12:48+0530\n"
 "Last-Translator: \n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -253,62 +253,62 @@ msgstr "&सम्पादयतु"
 msgid "Main Toolbar"
 msgstr "मुख्य साधनपट्टी"
 
-#: main.cpp:28 main.cpp:38 main.cpp:52
+#: main.cpp:29 main.cpp:39 main.cpp:53
 #, kde-format
 msgid "KDE Menu Editor"
 msgstr "KDE विकल्पसूचि सम्पादकः"
 
-#: main.cpp:40
+#: main.cpp:41
 #, kde-format
 msgid "KDE menu editor"
 msgstr "KDE विकल्पसूचि सम्पादकः"
 
-#: main.cpp:42
+#: main.cpp:43
 #, kde-format
 msgid "(C) 2000-2003, Waldo Bastian, Raffaele Sandrini, Matthias Elter"
 msgstr "(C) २०००-२००३, वाल्दो बास्टियन्, राफेल् सैंड्रिनी, मथियस् एल्टर्"
 
-#: main.cpp:43
+#: main.cpp:44
 #, kde-format
 msgid "Waldo Bastian"
 msgstr "वाल्दो बास्टियन्"
 
-#: main.cpp:43
+#: main.cpp:44
 #, kde-format
 msgid "Maintainer"
 msgstr "परिपालकः"
 
-#: main.cpp:44
+#: main.cpp:45
 #, kde-format
 msgid "Raffaele Sandrini"
 msgstr "राफेल् सैंड्रिनी"
 
-#: main.cpp:44
+#: main.cpp:45
 #, kde-format
 msgid "Previous Maintainer"
 msgstr "पूर्वपालकः"
 
-#: main.cpp:45
+#: main.cpp:46
 #, kde-format
 msgid "Matthias Elter"
 msgstr "मथियस् एल्टर्"
 
-#: main.cpp:45
+#: main.cpp:46
 #, kde-format
 msgid "Original Author"
 msgstr "मूल लेखक"
 
-#: main.cpp:46
+#: main.cpp:47
 #, kde-format
 msgid "Montel Laurent"
 msgstr "मोंटेल् लॉरेण्ट्"
 
-#: main.cpp:53
+#: main.cpp:54
 #, kde-format
 msgid "Sub menu to pre-select"
 msgstr "पूर्वचयनार्थं उपविकल्पसूचि"
 
-#: main.cpp:54
+#: main.cpp:55
 #, kde-format
 msgid "Menu entry to pre-select"
 msgstr "पूर्वचयनार्थं विकल्पसूचिप्रविष्टिः"

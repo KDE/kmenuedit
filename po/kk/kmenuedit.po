@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-15 00:39+0000\n"
+"POT-Creation-Date: 2024-08-13 00:40+0000\n"
 "PO-Revision-Date: 2013-09-15 05:14+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -254,62 +254,62 @@ msgstr "Өңд&еу"
 msgid "Main Toolbar"
 msgstr "Негізгі құралдар"
 
-#: main.cpp:28 main.cpp:38 main.cpp:52
+#: main.cpp:29 main.cpp:39 main.cpp:53
 #, kde-format
 msgid "KDE Menu Editor"
 msgstr "KDE Мәзір өңдегіші"
 
-#: main.cpp:40
+#: main.cpp:41
 #, kde-format
 msgid "KDE menu editor"
 msgstr "KDE мәзір өңдегіші"
 
-#: main.cpp:42
+#: main.cpp:43
 #, kde-format
 msgid "(C) 2000-2003, Waldo Bastian, Raffaele Sandrini, Matthias Elter"
 msgstr "(C) 2000-2003, Waldo Bastian, Raffaele Sandrini, Matthias Elter"
 
-#: main.cpp:43
+#: main.cpp:44
 #, kde-format
 msgid "Waldo Bastian"
 msgstr "Waldo Bastian"
 
-#: main.cpp:43
+#: main.cpp:44
 #, kde-format
 msgid "Maintainer"
 msgstr "Жетілдірушісі"
 
-#: main.cpp:44
+#: main.cpp:45
 #, kde-format
 msgid "Raffaele Sandrini"
 msgstr "Raffaele Sandrini"
 
-#: main.cpp:44
+#: main.cpp:45
 #, kde-format
 msgid "Previous Maintainer"
 msgstr "Бұрынғы жетілдірушісі"
 
-#: main.cpp:45
+#: main.cpp:46
 #, kde-format
 msgid "Matthias Elter"
 msgstr "Matthias Elter"
 
-#: main.cpp:45
+#: main.cpp:46
 #, kde-format
 msgid "Original Author"
 msgstr "Бастапқы авторы"
 
-#: main.cpp:46
+#: main.cpp:47
 #, kde-format
 msgid "Montel Laurent"
 msgstr "Montel Laurent"
 
-#: main.cpp:53
+#: main.cpp:54
 #, kde-format
 msgid "Sub menu to pre-select"
 msgstr "Дайын бағыныңқы мәзір"
 
-#: main.cpp:54
+#: main.cpp:55
 #, kde-format
 msgid "Menu entry to pre-select"
 msgstr "Дайын мәзір жазуы"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-15 00:39+0000\n"
+"POT-Creation-Date: 2024-08-13 00:40+0000\n"
 "PO-Revision-Date: 2008-08-05 22:26+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -243,62 +243,62 @@ msgstr "&Edicion"
 msgid "Main Toolbar"
 msgstr "Barra d'espleches principala"
 
-#: main.cpp:28 main.cpp:38 main.cpp:52
+#: main.cpp:29 main.cpp:39 main.cpp:53
 #, kde-format
 msgid "KDE Menu Editor"
 msgstr ""
 
-#: main.cpp:40
+#: main.cpp:41
 #, kde-format
 msgid "KDE menu editor"
 msgstr ""
 
-#: main.cpp:42
+#: main.cpp:43
 #, kde-format
 msgid "(C) 2000-2003, Waldo Bastian, Raffaele Sandrini, Matthias Elter"
 msgstr ""
 
-#: main.cpp:43
+#: main.cpp:44
 #, kde-format
 msgid "Waldo Bastian"
 msgstr "Waldo Bastian"
 
-#: main.cpp:43
+#: main.cpp:44
 #, kde-format
 msgid "Maintainer"
 msgstr "Manteneire"
 
-#: main.cpp:44
+#: main.cpp:45
 #, kde-format
 msgid "Raffaele Sandrini"
 msgstr ""
 
-#: main.cpp:44
+#: main.cpp:45
 #, kde-format
 msgid "Previous Maintainer"
 msgstr "Manteneire precedent"
 
-#: main.cpp:45
+#: main.cpp:46
 #, kde-format
 msgid "Matthias Elter"
 msgstr ""
 
-#: main.cpp:45
+#: main.cpp:46
 #, kde-format
 msgid "Original Author"
 msgstr ""
 
-#: main.cpp:46
+#: main.cpp:47
 #, kde-format
 msgid "Montel Laurent"
 msgstr ""
 
-#: main.cpp:53
+#: main.cpp:54
 #, kde-format
 msgid "Sub menu to pre-select"
 msgstr ""
 
-#: main.cpp:54
+#: main.cpp:55
 #, kde-format
 msgid "Menu entry to pre-select"
 msgstr ""

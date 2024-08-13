@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-15 00:39+0000\n"
+"POT-Creation-Date: 2024-08-13 00:40+0000\n"
 "PO-Revision-Date: 2022-12-07 19:18+0100\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
@@ -252,62 +252,62 @@ msgstr "&Редактиране"
 msgid "Main Toolbar"
 msgstr "Главна лента с инструменти"
 
-#: main.cpp:28 main.cpp:38 main.cpp:52
+#: main.cpp:29 main.cpp:39 main.cpp:53
 #, kde-format
 msgid "KDE Menu Editor"
 msgstr "Редактор на главното меню"
 
-#: main.cpp:40
+#: main.cpp:41
 #, kde-format
 msgid "KDE menu editor"
 msgstr "Редактор на системното меню"
 
-#: main.cpp:42
+#: main.cpp:43
 #, kde-format
 msgid "(C) 2000-2003, Waldo Bastian, Raffaele Sandrini, Matthias Elter"
 msgstr "(C) 2000-2003, Waldo Bastian, Raffaele Sandrini, Matthias Elter"
 
-#: main.cpp:43
+#: main.cpp:44
 #, kde-format
 msgid "Waldo Bastian"
 msgstr "Waldo Bastian"
 
-#: main.cpp:43
+#: main.cpp:44
 #, kde-format
 msgid "Maintainer"
 msgstr "Maintainer"
 
-#: main.cpp:44
+#: main.cpp:45
 #, kde-format
 msgid "Raffaele Sandrini"
 msgstr "Raffaele Sandrini"
 
-#: main.cpp:44
+#: main.cpp:45
 #, kde-format
 msgid "Previous Maintainer"
 msgstr "Previous Maintainer"
 
-#: main.cpp:45
+#: main.cpp:46
 #, kde-format
 msgid "Matthias Elter"
 msgstr "Matthias Elter"
 
-#: main.cpp:45
+#: main.cpp:46
 #, kde-format
 msgid "Original Author"
 msgstr "Original Author"
 
-#: main.cpp:46
+#: main.cpp:47
 #, kde-format
 msgid "Montel Laurent"
 msgstr "Montel Laurent"
 
-#: main.cpp:53
+#: main.cpp:54
 #, kde-format
 msgid "Sub menu to pre-select"
 msgstr "Предварително избрано подменю"
 
-#: main.cpp:54
+#: main.cpp:55
 #, kde-format
 msgid "Menu entry to pre-select"
 msgstr "Предварително избран елемент"
