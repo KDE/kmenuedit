@@ -68,17 +68,17 @@ void KMenuEdit::setupActions()
     sortMenu->setPopupMode(QToolButton::InstantPopup);
     actionCollection()->addAction(SORT_ACTION_NAME, sortMenu);
     action = actionCollection()->addAction(SORT_BY_NAME_ACTION_NAME);
-    action->setText(i18n("&Sort selection by Name"));
+    action->setText(i18n("&Sort Selection by Name"));
     sortMenu->addAction(action);
     action = actionCollection()->addAction(SORT_BY_DESCRIPTION_ACTION_NAME);
-    action->setText(i18n("&Sort selection by Description"));
+    action->setText(i18n("&Sort Selection by Description"));
     sortMenu->addAction(action);
     sortMenu->addSeparator();
     action = actionCollection()->addAction(SORT_ALL_BY_NAME_ACTION_NAME);
-    action->setText(i18n("&Sort all by Name"));
+    action->setText(i18n("&Sort All by Name"));
     sortMenu->addAction(action);
     action = actionCollection()->addAction(SORT_ALL_BY_DESCRIPTION_ACTION_NAME);
-    action->setText(i18n("&Sort all by Description"));
+    action->setText(i18n("&Sort All by Description"));
     sortMenu->addAction(action);
 
     // move up/down

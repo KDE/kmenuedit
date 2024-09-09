@@ -73,7 +73,7 @@ void BasicTab::initGeneralTab()
     generalTabLayout->addWidget(_commentEdit, 2, 1, 1, 2);
 
     // environment variables
-    _envarsLabel = new QLabel(i18nc("@label:textfield", "Environment Variables:"));
+    _envarsLabel = new QLabel(i18nc("@label:textfield", "Environment variables:"));
     generalTabLayout->addWidget(_envarsLabel, 3, 0);
     _envarsEdit = new QLineEdit();
     _envarsLabel->setBuddy(_envarsEdit);
@@ -87,7 +87,7 @@ void BasicTab::initGeneralTab()
     _programLabel->setBuddy(_programEdit);
     generalTabLayout->addWidget(_programEdit, 4, 1, 1, 2);
 
-    _argsLabel = new QLabel(i18nc("@label:textfield", "Command-Line Arguments:"));
+    _argsLabel = new QLabel(i18nc("@label:textfield", "Command-line arguments:"));
     generalTabLayout->addWidget(_argsLabel, 5, 0);
     _argsEdit = new QLineEdit();
     _argsEdit->setWhatsThis(
