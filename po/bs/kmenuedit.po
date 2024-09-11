@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-13 00:40+0000\n"
+"POT-Creation-Date: 2024-09-11 00:40+0000\n"
 "PO-Revision-Date: 2013-11-15 13:39+0000\n"
 "Last-Translator: Samir Ribić <Unknown>\n"
 "Language-Team: Bosnian <bs@li.org>\n"
@@ -51,7 +51,7 @@ msgstr "&Komentar:"
 #: basictab.cpp:76
 #, kde-format
 msgctxt "@label:textfield"
-msgid "Environment Variables:"
+msgid "Environment variables:"
 msgstr ""
 
 #: basictab.cpp:83
@@ -63,7 +63,7 @@ msgstr ""
 #: basictab.cpp:90
 #, kde-format
 msgctxt "@label:textfield"
-msgid "Command-Line Arguments:"
+msgid "Command-line arguments:"
 msgstr ""
 
 #: basictab.cpp:94
@@ -176,23 +176,27 @@ msgid "&Sort"
 msgstr "&Sortiraj"
 
 #: kmenuedit.cpp:71
-#, kde-format
-msgid "&Sort selection by Name"
+#, fuzzy, kde-format
+#| msgid "&Sort selection by Name"
+msgid "&Sort Selection by Name"
 msgstr "&Sortiraj izbor po imenu"
 
 #: kmenuedit.cpp:74
-#, kde-format
-msgid "&Sort selection by Description"
+#, fuzzy, kde-format
+#| msgid "&Sort selection by Description"
+msgid "&Sort Selection by Description"
 msgstr "&Sortiraj izbor po opisu"
 
 #: kmenuedit.cpp:78
-#, kde-format
-msgid "&Sort all by Name"
+#, fuzzy, kde-format
+#| msgid "&Sort all by Name"
+msgid "&Sort All by Name"
 msgstr "&Sortiraj sve po imenu"
 
 #: kmenuedit.cpp:81
-#, kde-format
-msgid "&Sort all by Description"
+#, fuzzy, kde-format
+#| msgid "&Sort all by Description"
+msgid "&Sort All by Description"
 msgstr "&Sortiraj sve po opisu"
 
 #: kmenuedit.cpp:87

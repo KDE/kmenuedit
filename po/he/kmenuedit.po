@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-13 00:40+0000\n"
+"POT-Creation-Date: 2024-09-11 00:40+0000\n"
 "PO-Revision-Date: 2023-10-19 20:13+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
@@ -54,9 +54,11 @@ msgid "&Comment:"
 msgstr "ה&ערה:"
 
 #: basictab.cpp:76
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@label:textfield"
+#| msgid "Environment Variables:"
 msgctxt "@label:textfield"
-msgid "Environment Variables:"
+msgid "Environment variables:"
 msgstr "משתני סביבה:"
 
 #: basictab.cpp:83
@@ -66,9 +68,11 @@ msgid "Program:"
 msgstr "יישום:"
 
 #: basictab.cpp:90
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@label:textfield"
+#| msgid "Command-Line Arguments:"
 msgctxt "@label:textfield"
-msgid "Command-Line Arguments:"
+msgid "Command-line arguments:"
 msgstr "ארגומנטים לשורת הפקודה:"
 
 #: basictab.cpp:94
@@ -180,23 +184,27 @@ msgid "&Sort"
 msgstr "&מיון"
 
 #: kmenuedit.cpp:71
-#, kde-format
-msgid "&Sort selection by Name"
+#, fuzzy, kde-format
+#| msgid "&Sort selection by Name"
+msgid "&Sort Selection by Name"
 msgstr "&מיון בחירה לפי שם"
 
 #: kmenuedit.cpp:74
-#, kde-format
-msgid "&Sort selection by Description"
+#, fuzzy, kde-format
+#| msgid "&Sort selection by Description"
+msgid "&Sort Selection by Description"
 msgstr "&מיון בחירה לפי תיאור"
 
 #: kmenuedit.cpp:78
-#, kde-format
-msgid "&Sort all by Name"
+#, fuzzy, kde-format
+#| msgid "&Sort all by Name"
+msgid "&Sort All by Name"
 msgstr "&מיון הכול לפי שם"
 
 #: kmenuedit.cpp:81
-#, kde-format
-msgid "&Sort all by Description"
+#, fuzzy, kde-format
+#| msgid "&Sort all by Description"
+msgid "&Sort All by Description"
 msgstr "מיון הכול לפי תיאור"
 
 #: kmenuedit.cpp:87

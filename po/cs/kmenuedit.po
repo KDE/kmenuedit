@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-13 00:40+0000\n"
+"POT-Creation-Date: 2024-09-11 00:40+0000\n"
 "PO-Revision-Date: 2023-01-12 15:57+0100\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -44,9 +44,11 @@ msgid "&Comment:"
 msgstr "&Komentář:"
 
 #: basictab.cpp:76
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@label:textfield"
+#| msgid "Environment Variables:"
 msgctxt "@label:textfield"
-msgid "Environment Variables:"
+msgid "Environment variables:"
 msgstr "Proměnné prostředí:"
 
 #: basictab.cpp:83
@@ -56,9 +58,11 @@ msgid "Program:"
 msgstr "Program:"
 
 #: basictab.cpp:90
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@label:textfield"
+#| msgid "Command-Line Arguments:"
 msgctxt "@label:textfield"
-msgid "Command-Line Arguments:"
+msgid "Command-line arguments:"
 msgstr "Argumenty příkazového řádku:"
 
 #: basictab.cpp:94
@@ -171,23 +175,27 @@ msgid "&Sort"
 msgstr "&Seřadit"
 
 #: kmenuedit.cpp:71
-#, kde-format
-msgid "&Sort selection by Name"
+#, fuzzy, kde-format
+#| msgid "&Sort selection by Name"
+msgid "&Sort Selection by Name"
 msgstr "&Seřadit výběr podle názvu"
 
 #: kmenuedit.cpp:74
-#, kde-format
-msgid "&Sort selection by Description"
+#, fuzzy, kde-format
+#| msgid "&Sort selection by Description"
+msgid "&Sort Selection by Description"
 msgstr "&Seřadit výběr podle popisu"
 
 #: kmenuedit.cpp:78
-#, kde-format
-msgid "&Sort all by Name"
+#, fuzzy, kde-format
+#| msgid "&Sort all by Name"
+msgid "&Sort All by Name"
 msgstr "&Seřadit vše dle názvu"
 
 #: kmenuedit.cpp:81
-#, kde-format
-msgid "&Sort all by Description"
+#, fuzzy, kde-format
+#| msgid "&Sort all by Description"
+msgid "&Sort All by Description"
 msgstr "&Seřadit vše podle popisu"
 
 #: kmenuedit.cpp:87

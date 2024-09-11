@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-13 00:40+0000\n"
+"POT-Creation-Date: 2024-09-11 00:40+0000\n"
 "PO-Revision-Date: 2023-09-25 12:48+0530\n"
 "Last-Translator: \n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -45,9 +45,11 @@ msgid "&Comment:"
 msgstr "&टिप्पणी:"
 
 #: basictab.cpp:76
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@label:textfield"
+#| msgid "Environment Variables:"
 msgctxt "@label:textfield"
-msgid "Environment Variables:"
+msgid "Environment variables:"
 msgstr "पर्यावरणचराः :"
 
 #: basictab.cpp:83
@@ -57,9 +59,11 @@ msgid "Program:"
 msgstr "कार्यक्रमः :"
 
 #: basictab.cpp:90
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@label:textfield"
+#| msgid "Command-Line Arguments:"
 msgctxt "@label:textfield"
-msgid "Command-Line Arguments:"
+msgid "Command-line arguments:"
 msgstr "आदेशपङ्क्तिः निवेशाः :"
 
 #: basictab.cpp:94
@@ -172,23 +176,27 @@ msgid "&Sort"
 msgstr "&क्रमणम्"
 
 #: kmenuedit.cpp:71
-#, kde-format
-msgid "&Sort selection by Name"
+#, fuzzy, kde-format
+#| msgid "&Sort selection by Name"
+msgid "&Sort Selection by Name"
 msgstr "&नामनुसारं चयनं क्रमयन्तु"
 
 #: kmenuedit.cpp:74
-#, kde-format
-msgid "&Sort selection by Description"
+#, fuzzy, kde-format
+#| msgid "&Sort selection by Description"
+msgid "&Sort Selection by Description"
 msgstr "&विवरणेन चयनं क्रमयन्तु"
 
 #: kmenuedit.cpp:78
-#, kde-format
-msgid "&Sort all by Name"
+#, fuzzy, kde-format
+#| msgid "&Sort all by Name"
+msgid "&Sort All by Name"
 msgstr "&सर्वं नामेन क्रमयन्तु"
 
 #: kmenuedit.cpp:81
-#, kde-format
-msgid "&Sort all by Description"
+#, fuzzy, kde-format
+#| msgid "&Sort all by Description"
+msgid "&Sort All by Description"
 msgstr "&सर्वं विवरणानुसारं क्रमयन्तु"
 
 #: kmenuedit.cpp:87

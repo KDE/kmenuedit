@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-13 00:40+0000\n"
+"POT-Creation-Date: 2024-09-11 00:40+0000\n"
 "PO-Revision-Date: 2010-03-27 23:01+0700\n"
 "Last-Translator: Thanomsub Noppaburana <donga.nb@gmail.com>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
@@ -47,7 +47,7 @@ msgstr "&หมายเหตุ:"
 #: basictab.cpp:76
 #, kde-format
 msgctxt "@label:textfield"
-msgid "Environment Variables:"
+msgid "Environment variables:"
 msgstr ""
 
 #: basictab.cpp:83
@@ -59,7 +59,7 @@ msgstr ""
 #: basictab.cpp:90
 #, kde-format
 msgctxt "@label:textfield"
-msgid "Command-Line Arguments:"
+msgid "Command-line arguments:"
 msgstr ""
 
 #: basictab.cpp:94
@@ -173,24 +173,25 @@ msgstr ""
 #: kmenuedit.cpp:71
 #, fuzzy, kde-format
 #| msgid "&Description:"
-msgid "&Sort selection by Name"
+msgid "&Sort Selection by Name"
 msgstr "&คำอธิบาย:"
 
 #: kmenuedit.cpp:74
 #, fuzzy, kde-format
 #| msgid "&Description:"
-msgid "&Sort selection by Description"
+msgid "&Sort Selection by Description"
 msgstr "&คำอธิบาย:"
 
 #: kmenuedit.cpp:78
-#, kde-format
-msgid "&Sort all by Name"
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "&Description:"
+msgid "&Sort All by Name"
+msgstr "&คำอธิบาย:"
 
 #: kmenuedit.cpp:81
 #, fuzzy, kde-format
 #| msgid "&Description:"
-msgid "&Sort all by Description"
+msgid "&Sort All by Description"
 msgstr "&คำอธิบาย:"
 
 #: kmenuedit.cpp:87
