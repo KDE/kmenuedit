@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-11 00:40+0000\n"
-"PO-Revision-Date: 2024-01-03 14:17+0100\n"
+"PO-Revision-Date: 2024-09-15 04:00+0200\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -46,9 +46,7 @@ msgid "&Comment:"
 msgstr "&Komento:"
 
 #: basictab.cpp:76
-#, fuzzy, kde-format
-#| msgctxt "@label:textfield"
-#| msgid "Environment Variables:"
+#, kde-format
 msgctxt "@label:textfield"
 msgid "Environment variables:"
 msgstr "Mediovariabloj:"
@@ -60,9 +58,7 @@ msgid "Program:"
 msgstr "Programo:"
 
 #: basictab.cpp:90
-#, fuzzy, kde-format
-#| msgctxt "@label:textfield"
-#| msgid "Command-Line Arguments:"
+#, kde-format
 msgctxt "@label:textfield"
 msgid "Command-line arguments:"
 msgstr "Komandliniaj argumentoj:"
@@ -177,28 +173,24 @@ msgid "&Sort"
 msgstr "&Ordigi"
 
 #: kmenuedit.cpp:71
-#, fuzzy, kde-format
-#| msgid "&Sort selection by Name"
+#, kde-format
 msgid "&Sort Selection by Name"
-msgstr "&Ordigi elekton laŭ Nomo"
+msgstr "&Ordigi Elekton laŭ Nomo"
 
 #: kmenuedit.cpp:74
-#, fuzzy, kde-format
-#| msgid "&Sort selection by Description"
+#, kde-format
 msgid "&Sort Selection by Description"
-msgstr "&Ordigi elekton laŭ Priskribo"
+msgstr "&Ordigi Elekton laŭ Priskribo"
 
 #: kmenuedit.cpp:78
-#, fuzzy, kde-format
-#| msgid "&Sort all by Name"
+#, kde-format
 msgid "&Sort All by Name"
-msgstr "&Ordigi ĉiujn laŭ Nomo"
+msgstr "&Ordigi Ĉiujn laŭ Nomo"
 
 #: kmenuedit.cpp:81
-#, fuzzy, kde-format
-#| msgid "&Sort all by Description"
+#, kde-format
 msgid "&Sort All by Description"
-msgstr "&Ordigi ĉiujn laŭ Priskribo"
+msgstr "&Ordigi Ĉiujn laŭ Priskribo"
 
 #: kmenuedit.cpp:87
 #, kde-format
@@ -391,10 +383,3 @@ msgstr ""
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "Restaŭri Menusistemon"
-
-#~ msgid "All submenus of '%1' will be removed. Do you want to continue?"
-#~ msgstr "Ĉiuj submenuoj de '%1' estos forigataj. Ĉu vi volas daŭrigi?"
-
-#~ msgctxt "@title:window"
-#~ msgid "Delete"
-#~ msgstr "Forigi"
