@@ -1,14 +1,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Tomáš Chvátal <tomas.chvatal@gmail.com>, 2013.
-# Vit Pelcak <vit@pelcak.org>, 2013, 2017, 2019, 2023.
+# SPDX-FileCopyrightText: 2013, 2017, 2019, 2023, 2024 Vit Pelcak <vit@pelcak.org>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-11 00:40+0000\n"
-"PO-Revision-Date: 2023-01-12 15:57+0100\n"
+"PO-Revision-Date: 2024-09-17 15:09+0200\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 22.12.1\n"
+"X-Generator: Lokalize 24.08.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -47,7 +47,7 @@ msgstr "&Komentář:"
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Environment variables:"
-msgstr ""
+msgstr "Proměnné prostředí:"
 
 #: basictab.cpp:83
 #, kde-format
@@ -59,7 +59,7 @@ msgstr "Program:"
 #, kde-format
 msgctxt "@label:textfield"
 msgid "Command-line arguments:"
-msgstr ""
+msgstr "Argumenty příkazového řádku:"
 
 #: basictab.cpp:94
 #, kde-format
@@ -173,22 +173,22 @@ msgstr "&Seřadit"
 #: kmenuedit.cpp:71
 #, kde-format
 msgid "&Sort Selection by Name"
-msgstr ""
+msgstr "&Seřadit výběr podle názvu"
 
 #: kmenuedit.cpp:74
 #, kde-format
 msgid "&Sort Selection by Description"
-msgstr ""
+msgstr "&Seřadit výběr podle popisu"
 
 #: kmenuedit.cpp:78
 #, kde-format
 msgid "&Sort All by Name"
-msgstr ""
+msgstr "&Seřadit vše dle názvu"
 
 #: kmenuedit.cpp:81
 #, kde-format
 msgid "&Sort All by Description"
-msgstr ""
+msgstr "&Seřadit vše podle popisu"
 
 #: kmenuedit.cpp:87
 #, kde-format
