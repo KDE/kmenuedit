@@ -9,21 +9,21 @@
 # Toussis Manolis <manolis@koppermind.homelinux.org>, 2005, 2007, 2008, 2009.
 # Spiros Georgaras <sng@hellug.gr>, 2007.
 # Stelios <sstavra@gmail.com>, 2013, 2020, 2021, 2023.
-# Antonis Geralis <capoiosct@gmail.com>, 2013.
+# SPDX-FileCopyrightText: 2013, 2024 Antonis Geralis <capoiosct@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-11 00:40+0000\n"
-"PO-Revision-Date: 2023-01-07 09:20+0200\n"
-"Last-Translator: Stelios <sstavra@gmail.com>\n"
+"PO-Revision-Date: 2024-09-20 14:04+0300\n"
+"Last-Translator: Antonis Geralis <capoiosct@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 24.08.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -94,7 +94,7 @@ msgstr ""
 "%U - μία λίστα από URL\n"
 "%d - Ο φάκελος του αρχείου που θα ανοιχτεί\n"
 "%D - Μία λίστα φακέλων\n"
-"%i - To εικονίδιο\n"
+"%i - Το εικονίδιο\n"
 "%m  - το μικρό εικονίδιο\n"
 "%c - Ο τίτλος παραθύρου"
 
