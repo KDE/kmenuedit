@@ -1,4 +1,4 @@
-# Version: $Revision: 1690024 $
+# Version: $Revision: 1691027 $
 # translation of kmenuedit.po to Polish
 # translation of kmenuedit.po to
 # translation of kmenuedit.po to
@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-11 00:40+0000\n"
-"PO-Revision-Date: 2024-01-07 13:16+0100\n"
+"PO-Revision-Date: 2024-09-21 11:48+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -23,6 +23,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -50,9 +51,7 @@ msgid "&Comment:"
 msgstr "&Uwaga:"
 
 #: basictab.cpp:76
-#, fuzzy, kde-format
-#| msgctxt "@label:textfield"
-#| msgid "Environment Variables:"
+#, kde-format
 msgctxt "@label:textfield"
 msgid "Environment variables:"
 msgstr "Zmienne środowiskowe:"
@@ -64,12 +63,10 @@ msgid "Program:"
 msgstr "Program:"
 
 #: basictab.cpp:90
-#, fuzzy, kde-format
-#| msgctxt "@label:textfield"
-#| msgid "Command-Line Arguments:"
+#, kde-format
 msgctxt "@label:textfield"
 msgid "Command-line arguments:"
-msgstr "Argumenty do programu:"
+msgstr "Argumenty wiersza poleceń:"
 
 #: basictab.cpp:94
 #, kde-format
@@ -148,7 +145,7 @@ msgstr "&Użytkownik:"
 #: basictab.cpp:191
 #, kde-format
 msgid "Current shortcut &key:"
-msgstr "Skrót &klawiszowy:"
+msgstr "Bieżący skrót &klawiszowy:"
 
 #: basictab.cpp:202
 #, kde-format
@@ -181,28 +178,24 @@ msgid "&Sort"
 msgstr "U&szereguj"
 
 #: kmenuedit.cpp:71
-#, fuzzy, kde-format
-#| msgid "&Sort selection by Name"
+#, kde-format
 msgid "&Sort Selection by Name"
-msgstr "U&szereguj zaznaczone według nazwy"
+msgstr "U&szereguj zaznaczone wg nazwy"
 
 #: kmenuedit.cpp:74
-#, fuzzy, kde-format
-#| msgid "&Sort selection by Description"
+#, kde-format
 msgid "&Sort Selection by Description"
-msgstr "U&szereguj zaznaczone według opisu"
+msgstr "U&szereguj zaznaczone wg opisu"
 
 #: kmenuedit.cpp:78
-#, fuzzy, kde-format
-#| msgid "&Sort all by Name"
+#, kde-format
 msgid "&Sort All by Name"
-msgstr "U&szereguj wszystkie według nazwy"
+msgstr "U&szereguj wszystkie wg nazwy"
 
 #: kmenuedit.cpp:81
-#, fuzzy, kde-format
-#| msgid "&Sort all by Description"
+#, kde-format
 msgid "&Sort All by Description"
-msgstr "U&szereguj wszystkie według opisu"
+msgstr "U&szereguj wszystkie wg opisu"
 
 #: kmenuedit.cpp:87
 #, kde-format
