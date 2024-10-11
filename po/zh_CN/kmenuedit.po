@@ -14,8 +14,8 @@ msgstr ""
 "X-Crowdin-Project: kdeorg\n"
 "X-Crowdin-Project-ID: 269464\n"
 "X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-File: /kf6-trunk/messages/kmenuedit/kmenuedit.pot\n"
-"X-Crowdin-File-ID: 43375\n"
+"X-Crowdin-File: /kf6-stable/messages/kmenuedit/kmenuedit.pot\n"
+"X-Crowdin-File-ID: 50414\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -43,9 +43,7 @@ msgid "&Comment:"
 msgstr "注释(&C)："
 
 #: basictab.cpp:76
-#, fuzzy, kde-format
-#| msgctxt "@label:textfield"
-#| msgid "Environment Variables:"
+#, kde-format
 msgctxt "@label:textfield"
 msgid "Environment variables:"
 msgstr "环境变量："
@@ -57,9 +55,7 @@ msgid "Program:"
 msgstr "程序："
 
 #: basictab.cpp:90
-#, fuzzy, kde-format
-#| msgctxt "@label:textfield"
-#| msgid "Command-Line Arguments:"
+#, kde-format
 msgctxt "@label:textfield"
 msgid "Command-line arguments:"
 msgstr "命令行参数："
@@ -172,28 +168,24 @@ msgid "&Sort"
 msgstr "排序(&S)"
 
 #: kmenuedit.cpp:71
-#, fuzzy, kde-format
-#| msgid "&Sort selection by Name"
+#, kde-format
 msgid "&Sort Selection by Name"
 msgstr "按名称排序所选项目(&S)"
 
 #: kmenuedit.cpp:74
-#, fuzzy, kde-format
-#| msgid "&Sort selection by Description"
+#, kde-format
 msgid "&Sort Selection by Description"
 msgstr "按描述排序所选项目(&S)"
 
 #: kmenuedit.cpp:78
-#, fuzzy, kde-format
-#| msgid "&Sort all by Name"
+#, kde-format
 msgid "&Sort All by Name"
-msgstr "按名称排序全部项目(&S)"
+msgstr "按名称排序所有项目(&S)"
 
 #: kmenuedit.cpp:81
-#, fuzzy, kde-format
-#| msgid "&Sort all by Description"
+#, kde-format
 msgid "&Sort All by Description"
-msgstr "按描述排序全部项目(&S)"
+msgstr "按描述排序所有项目(&S)"
 
 #: kmenuedit.cpp:87
 #, kde-format
