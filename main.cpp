@@ -51,8 +51,8 @@ int main(int argc, char **argv)
 
     QCommandLineParser parser;
     parser.setApplicationDescription(i18n("KDE Menu Editor"));
-    parser.addPositionalArgument(QStringLiteral("menu"), i18n("Sub menu to pre-select"), QStringLiteral("[menu]"));
-    parser.addPositionalArgument(QStringLiteral("menu-id"), i18n("Menu entry to pre-select"), QStringLiteral("[menu-id]"));
+    parser.addPositionalArgument(QStringLiteral("menu"), i18n("Menu to select, e.g. \"Education/Mathematics\""), QStringLiteral("[menu]"));
+    parser.addPositionalArgument(QStringLiteral("entry"), i18n("Entry to select, e.g. \"org.kde.dolphin.desktop\""), QStringLiteral("[entry]"));
     aboutData.setupCommandLine(&parser);
     parser.process(app);
     aboutData.processCommandLine(&parser);
