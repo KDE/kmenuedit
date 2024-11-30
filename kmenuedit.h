@@ -25,7 +25,7 @@ public:
     ~KMenuEdit() override;
 
     void selectMenu(const QString &menu);
-    void selectMenuEntry(const QString &menuEntry);
+    void selectMenuEntry(const QString &menuEntry, const bool inSelection = true);
 
     // dbus method
     void restoreSystemMenu();

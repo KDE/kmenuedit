@@ -159,7 +159,7 @@ public:
     bool dirty();
 
     void selectMenu(const QString &menu);
-    void selectMenuEntry(const QString &menuEntry);
+    void selectMenuEntry(const QString &menuEntry, const bool inSelection = true);
 
     void restoreMenuSystem();
 

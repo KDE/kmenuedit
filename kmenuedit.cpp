@@ -187,9 +187,9 @@ void KMenuEdit::selectMenu(const QString &menu)
     m_tree->selectMenu(menu);
 }
 
-void KMenuEdit::selectMenuEntry(const QString &menuEntry)
+void KMenuEdit::selectMenuEntry(const QString &menuEntry, const bool inSelection)
 {
-    m_tree->selectMenuEntry(menuEntry);
+    m_tree->selectMenuEntry(menuEntry, inSelection);
 }
 
 void KMenuEdit::slotChangeView()
