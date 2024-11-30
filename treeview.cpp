@@ -565,35 +565,22 @@ void TreeView::selectMenuEntry(const QString &menuEntry)
         return;
     }
 
-    QTreeWidgetItem *parent = item->parent();
-    if (parent) {
-        for (int i = 0; i < parent->childCount(); ++i) {
-            TreeItem *item = dynamic_cast<TreeItem *>(parent->child(i));
-            if (!item || item->isDirectory()) {
-                continue;
-            }
+    if (!item->isDirectory()) {
+        // If we've selected a menu item, we want to look at its siblings
+        item = dynamic_cast<TreeItem *>(item->parent());
+    }
 
-            MenuEntryInfo *entry = item->entryInfo();
-            if (entry && entry->menuId() == menuEntry) {
-                setCurrentItem(item);
-                scrollToItem(item);
-                return;
-            }
+    for (int i = 0; i < item->childCount(); ++i) {
+        TreeItem *child = dynamic_cast<TreeItem *>(item->child(i));
+        if (!child || child->isDirectory()) {
+            continue;
         }
-    } else {
-        // top level
-        for (int i = 0; i < topLevelItemCount(); ++i) {
-            TreeItem *item = dynamic_cast<TreeItem *>(topLevelItem(i));
-            if (!item || item->isDirectory()) {
-                continue;
-            }
 
-            MenuEntryInfo *entry = item->entryInfo();
-            if (entry && entry->menuId() == menuEntry) {
-                setCurrentItem(item);
-                scrollToItem(item);
-                return;
-            }
+        MenuEntryInfo *entry = child->entryInfo();
+        if (entry && entry->menuId() == menuEntry) {
+            setCurrentItem(child);
+            scrollToItem(child);
+            return;
         }
     }
 }
