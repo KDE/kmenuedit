@@ -51,8 +51,10 @@ int main(int argc, char **argv)
 
     QCommandLineParser parser;
     parser.setApplicationDescription(i18n("KDE Menu Editor"));
-    parser.addPositionalArgument(QStringLiteral("menu"), i18n("Sub menu to pre-select"), QStringLiteral("[menu]"));
-    parser.addPositionalArgument(QStringLiteral("menu-id"), i18n("Menu entry to pre-select"), QStringLiteral("[menu-id]"));
+    parser.addPositionalArgument(
+        QStringLiteral("entry"),
+        i18n("Entry and/or menu to select, e.g. \"org.kde.dolphin.desktop\", \"Utilties/org.kde.kwrite.desktop\", \"Education/Mathematics\""),
+        QStringLiteral("[entry]"));
     aboutData.setupCommandLine(&parser);
     parser.process(app);
     aboutData.processCommandLine(&parser);
@@ -63,9 +65,25 @@ int main(int argc, char **argv)
     auto useArgs = [menuEdit](const QCommandLineParser &parser) {
         const QStringList args = parser.positionalArguments();
         if (!args.isEmpty()) {
-            menuEdit->selectMenu(args.at(0));
-            if (args.count() > 1) {
-                menuEdit->selectMenuEntry(args.at(1));
+            const QString &arg = args.first();
+
+            if (!arg.endsWith(QStringLiteral(".desktop"))) {
+                // No entry, so this must be a menu
+                menuEdit->selectMenu(arg);
+            } else {
+                // Entry, might include menu
+                int index = arg.lastIndexOf(QStringLiteral("/"));
+
+                if (index != -1) {
+                    // This entry has a menu, so select it
+                    menuEdit->selectMenu(arg.first(index));
+                } else {
+                    // No menu, so select root
+                    menuEdit->selectMenu(QStringLiteral("/"));
+                }
+
+                // Select the entry
+                menuEdit->selectMenuEntry(arg.sliced(index + 1));
             }
         }
     };

@@ -515,8 +515,7 @@ void TreeView::selectMenu(const QString &menu)
     setCurrentIndex(rootIndex());
 
     if (menu.length() <= 1) {
-        setCurrentItem(topLevelItem(0));
-        clearSelection();
+        setCurrentItem(invisibleRootItem());
         return; // Root menu
     }
 
@@ -556,45 +555,50 @@ void TreeView::selectMenu(const QString &menu)
 
 void TreeView::selectMenuEntry(const QString &menuEntry)
 {
+    // C++ 23 gives us an explicit object parameter, which would be better for a
+    // recursive lambda and allow for capture rather than passing in args
+    using findEntry_t = TreeItem *(*)(const TreeItem *, const QString &);
+    static findEntry_t findEntry = [](const TreeItem *item, const QString &menuEntry) -> TreeItem * {
+        if (!item) {
+            return nullptr;
+        }
+
+        for (int i = 0; i < item->childCount(); ++i) {
+            TreeItem *child = dynamic_cast<TreeItem *>(item->child(i));
+
+            if (!child) {
+                continue;
+            }
+
+            if (child->isDirectory()) {
+                TreeItem *found = findEntry(child, menuEntry);
+                if (found) {
+                    return found;
+                }
+            } else {
+                MenuEntryInfo *entry = child->entryInfo();
+                if (entry && entry->menuId() == menuEntry) {
+                    return child;
+                }
+            }
+        }
+
+        return nullptr;
+    };
+
+    // Find the entry in the selected menu
     TreeItem *item = static_cast<TreeItem *>(selectedItem());
     if (!item) {
         item = static_cast<TreeItem *>(currentItem());
     }
-
     if (!item) {
-        return;
+        item = static_cast<TreeItem *>(invisibleRootItem());
     }
 
-    QTreeWidgetItem *parent = item->parent();
-    if (parent) {
-        for (int i = 0; i < parent->childCount(); ++i) {
-            TreeItem *item = dynamic_cast<TreeItem *>(parent->child(i));
-            if (!item || item->isDirectory()) {
-                continue;
-            }
-
-            MenuEntryInfo *entry = item->entryInfo();
-            if (entry && entry->menuId() == menuEntry) {
-                setCurrentItem(item);
-                scrollToItem(item);
-                return;
-            }
-        }
-    } else {
-        // top level
-        for (int i = 0; i < topLevelItemCount(); ++i) {
-            TreeItem *item = dynamic_cast<TreeItem *>(topLevelItem(i));
-            if (!item || item->isDirectory()) {
-                continue;
-            }
-
-            MenuEntryInfo *entry = item->entryInfo();
-            if (entry && entry->menuId() == menuEntry) {
-                setCurrentItem(item);
-                scrollToItem(item);
-                return;
-            }
-        }
+    TreeItem *entry = findEntry(item, menuEntry);
+    if (entry) {
+        setCurrentItem(entry);
+        scrollToItem(entry);
     }
 }
 
