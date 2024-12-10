@@ -1,14 +1,14 @@
 # Translation of kmenuedit to Korean.
 # Copyright (C) 2001, 2007-2008 Free Software Foundation, Inc.
 # Sae-keun Kim <segni@susekorea.net>, 2001.
-# Shinjo Park <kde@peremen.name>, 2007, 2008, 2009, 2013, 2014, 2019, 2020, 2021, 2022, 2023.
+# SPDX-FileCopyrightText: 2007, 2008, 2009, 2013, 2014, 2019, 2020, 2021, 2022, 2023, 2024 Shinjo Park <kde@peremen.name>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-11 00:40+0000\n"
-"PO-Revision-Date: 2023-03-01 02:00+0100\n"
+"PO-Revision-Date: 2024-12-10 00:58+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -44,9 +44,7 @@ msgid "&Comment:"
 msgstr "주석(&C):"
 
 #: basictab.cpp:76
-#, fuzzy, kde-format
-#| msgctxt "@label:textfield"
-#| msgid "Environment Variables:"
+#, kde-format
 msgctxt "@label:textfield"
 msgid "Environment variables:"
 msgstr "환경 변수:"
@@ -58,9 +56,7 @@ msgid "Program:"
 msgstr "프로그램:"
 
 #: basictab.cpp:90
-#, fuzzy, kde-format
-#| msgctxt "@label:textfield"
-#| msgid "Command-Line Arguments:"
+#, kde-format
 msgctxt "@label:textfield"
 msgid "Command-line arguments:"
 msgstr "명령행 인자:"
@@ -174,28 +170,24 @@ msgid "&Sort"
 msgstr "정렬(&S)"
 
 #: kmenuedit.cpp:71
-#, fuzzy, kde-format
-#| msgid "&Sort selection by Name"
+#, kde-format
 msgid "&Sort Selection by Name"
-msgstr "이름 순으로 정렬(&S)"
+msgstr "선택을 이름 순으로 정렬(&S)"
 
 #: kmenuedit.cpp:74
-#, fuzzy, kde-format
-#| msgid "&Sort selection by Description"
+#, kde-format
 msgid "&Sort Selection by Description"
-msgstr "설명 순으로 정렬(&S)"
+msgstr "선택을 설명순으로 정렬(&S)"
 
 #: kmenuedit.cpp:78
-#, fuzzy, kde-format
-#| msgid "&Sort all by Name"
+#, kde-format
 msgid "&Sort All by Name"
-msgstr "모두 이름 순으로 정렬(&S)"
+msgstr "모두 이름순으로 정렬(&S)"
 
 #: kmenuedit.cpp:81
-#, fuzzy, kde-format
-#| msgid "&Sort all by Description"
+#, kde-format
 msgid "&Sort All by Description"
-msgstr "모두 설명 순으로 정렬(&S)"
+msgstr "모두 설명순으로 정렬(&S)"
 
 #: kmenuedit.cpp:87
 #, kde-format
@@ -210,17 +202,17 @@ msgstr "아래로 이동(&D)"
 #: kmenuedit.cpp:98
 #, kde-format
 msgid "Restore to System Menu"
-msgstr "시스템 메뉴로 복구하기"
+msgstr "시스템 메뉴로 복원"
 
 #: kmenuedit.cpp:134
 #, kde-format
 msgid "Search..."
-msgstr "찾기..."
+msgstr "검색..."
 
 #: kmenuedit.cpp:135
 #, kde-format
 msgid "Search through the list of applications below"
-msgstr "아래 앱 목록에서 찾기"
+msgstr "아래쪽에 있는 앱 목록에서 검색"
 
 #: kmenuedit.cpp:203
 #, kde-format
