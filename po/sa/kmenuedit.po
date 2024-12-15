@@ -390,11 +390,3 @@ msgstr ""
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "विकल्पसूचि प्रणालीं पुनर्स्थापयन्तु"
-
-#~ msgid "All submenus of '%1' will be removed. Do you want to continue?"
-#~ msgstr ""
-#~ "'%1' इत्यस्य सर्वाणि उपविकल्पसूचिः निष्कासितानि भविष्यन्ति । किं त्वं प्रगन्तुं इच्छसि ?"
-
-#~ msgctxt "@title:window"
-#~ msgid "Delete"
-#~ msgstr "विलोपयतु"
