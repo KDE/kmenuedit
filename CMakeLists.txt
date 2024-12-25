@@ -24,6 +24,8 @@ include(KDEClangFormat)
 include(KDEGitCommitHooks)
 include(ECMDeprecationSettings)
 
+option(BUILD_DOC "Whether to build the documentation" ON)
+
 find_package(Qt6 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS
     Core
     DBus
@@ -38,11 +40,18 @@ find_package(KF6 ${KF6_MIN_VERSION} REQUIRED COMPONENTS
     KIO
     ItemViews
     Sonnet
-    DocTools
     GlobalAccel
     WindowSystem
     Crash
 )
+
+if(BUILD_DOC)
+    find_package(KF6DocTools ${KF6_MIN_VERSION})
+    set_package_properties(KF6DocTools PROPERTIES
+        DESCRIPTION "Tools to generate documentation"
+        TYPE REQUIRED
+    )
+endif()
 
 ecm_set_disabled_deprecation_versions(QT 6.7.0
      KF 6.4.0
@@ -53,7 +62,6 @@ ecm_set_disabled_deprecation_versions(QT 6.7.0
 add_definitions(-DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_FROM_BYTEARRAY)
 add_definitions(-DTRANSLATION_DOMAIN=\"kmenuedit\")
 add_subdirectory( pixmaps ) 
-add_subdirectory( doc )
 
 set(kmenueditcommon_STAT_SRCS basictab.cpp
     kmenuedit.qrc
@@ -123,5 +131,9 @@ ecm_qt_install_logging_categories(
         DESTINATION ${KDE_INSTALL_LOGGINGCATEGORIESDIR}
         )
 
+if(BUILD_DOC)
+    add_subdirectory(doc)
+    kdoctools_install(po)
+endif()
+
 ki18n_install(po)
-kdoctools_install(po)
