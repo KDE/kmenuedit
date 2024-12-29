@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-09-11 00:40+0000\n"
+"POT-Creation-Date: 2024-12-29 00:43+0000\n"
 "PO-Revision-Date: 2024-12-24 20:39+0530\n"
 "Last-Translator: kali <shreekantkalwar@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -302,15 +302,12 @@ msgstr "मूल लेखक"
 msgid "Montel Laurent"
 msgstr "मोंटेल् लॉरेण्ट्"
 
-#: main.cpp:54
+#: main.cpp:56
 #, kde-format
-msgid "Sub menu to pre-select"
-msgstr "पूर्वचयनार्थं उपविकल्पसूचि"
-
-#: main.cpp:55
-#, kde-format
-msgid "Menu entry to pre-select"
-msgstr "पूर्वचयनार्थं विकल्पसूचिप्रविष्टिः"
+msgid ""
+"Entry and/or menu to select, e.g. \"org.kde.dolphin.desktop\", \"Utilties/"
+"org.kde.kwrite.desktop\", \"Education/Mathematics\""
+msgstr ""
 
 #: menufile.cpp:94 menufile.cpp:105
 #, kde-format
@@ -342,32 +339,32 @@ msgstr "गुप्तप्रविष्टयः दर्शयन्त�
 msgid " [Hidden]"
 msgstr " [अदृष्ट]"
 
-#: treeview.cpp:1019
+#: treeview.cpp:1023
 #, kde-format
 msgid "New Submenu"
 msgstr "नवीन उपविकल्पसूचि"
 
-#: treeview.cpp:1019
+#: treeview.cpp:1023
 #, kde-format
 msgid "Submenu name:"
 msgstr "उपविकल्पसूचिनाम:"
 
-#: treeview.cpp:1086
+#: treeview.cpp:1090
 #, kde-format
 msgid "New Item"
 msgstr "नवीनं वस्तु"
 
-#: treeview.cpp:1086
+#: treeview.cpp:1090
 #, kde-format
 msgid "Item name:"
 msgstr "द्रव्यस्य नाम :"
 
-#: treeview.cpp:1717
+#: treeview.cpp:1721
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
 msgstr "विकल्पसूचि परिवर्तनं निम्नलिखितसमस्यायाः कारणात् रक्षितुं न शक्यते स्म:"
 
-#: treeview.cpp:1764
+#: treeview.cpp:1768
 #, kde-format
 msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
@@ -376,8 +373,14 @@ msgstr ""
 "किं भवान् तन्त्रस्य विकल्पसूचि पुनः स्थापयितुम् इच्छति ? चेतावनी: एतेन सर्वाणि अनुकूलनीयम् "
 "विकल्पसूचि निष्कासितानि भविष्यन्ति।."
 
-#: treeview.cpp:1765
+#: treeview.cpp:1769
 #, kde-format
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "विकल्पसूचि प्रणालीं पुनर्स्थापयन्तु"
+
+#~ msgid "Sub menu to pre-select"
+#~ msgstr "पूर्वचयनार्थं उपविकल्पसूचि"
+
+#~ msgid "Menu entry to pre-select"
+#~ msgstr "पूर्वचयनार्थं विकल्पसूचिप्रविष्टिः"

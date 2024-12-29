@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-09-11 00:40+0000\n"
+"POT-Creation-Date: 2024-12-29 00:43+0000\n"
 "PO-Revision-Date: 2009-05-15 21:33+0200\n"
 "Last-Translator: Mark Kwidzińśczi <mark@linuxcsb.org>\n"
 "Language-Team: Kaszëbsczi <i18n-csb@linuxcsb.org>\n"
@@ -307,15 +307,12 @@ msgstr "Apartny ùsôdzca"
 msgid "Montel Laurent"
 msgstr "Montel Laurent"
 
-#: main.cpp:54
+#: main.cpp:56
 #, kde-format
-msgid "Sub menu to pre-select"
-msgstr "Domëszlné pòdmenu"
-
-#: main.cpp:55
-#, kde-format
-msgid "Menu entry to pre-select"
-msgstr "Domëszlné menu"
+msgid ""
+"Entry and/or menu to select, e.g. \"org.kde.dolphin.desktop\", \"Utilties/"
+"org.kde.kwrite.desktop\", \"Education/Mathematics\""
+msgstr ""
 
 #: menufile.cpp:94 menufile.cpp:105
 #, kde-format
@@ -348,32 +345,32 @@ msgstr "Pòkażë zataconé wpisënczi"
 msgid " [Hidden]"
 msgstr " [Zatacôné]"
 
-#: treeview.cpp:1019
+#: treeview.cpp:1023
 #, kde-format
 msgid "New Submenu"
 msgstr "Nowé pòdmenu"
 
-#: treeview.cpp:1019
+#: treeview.cpp:1023
 #, kde-format
 msgid "Submenu name:"
 msgstr "Miono pòdmenu:"
 
-#: treeview.cpp:1086
+#: treeview.cpp:1090
 #, kde-format
 msgid "New Item"
 msgstr "Nowi element"
 
-#: treeview.cpp:1086
+#: treeview.cpp:1090
 #, kde-format
 msgid "Item name:"
 msgstr "Miono elementu:"
 
-#: treeview.cpp:1717
+#: treeview.cpp:1721
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
 msgstr "Zmianë w menu nie mògłe òstac zapisóné przez felã:"
 
-#: treeview.cpp:1764
+#: treeview.cpp:1768
 #, kde-format
 msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
@@ -381,12 +378,18 @@ msgid ""
 msgstr ""
 "Chcesz dostac nazôd systemòwé menu? Òstrzéga: rëmniesz przez to swòjé menu."
 
-#: treeview.cpp:1765
+#: treeview.cpp:1769
 #, fuzzy, kde-format
 #| msgid "Restore to System Menu"
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "Dostónié nazôd do systemòwégò menu"
+
+#~ msgid "Sub menu to pre-select"
+#~ msgstr "Domëszlné pòdmenu"
+
+#~ msgid "Menu entry to pre-select"
+#~ msgstr "Domëszlné menu"
 
 #~ msgid "All submenus of '%1' will be removed. Do you want to continue?"
 #~ msgstr "Całowné pòdmenu %1 bãdze rëmniãté. Chcesz to zrobic?"

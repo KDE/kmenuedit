@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-09-11 00:40+0000\n"
+"POT-Creation-Date: 2024-12-29 00:43+0000\n"
 "PO-Revision-Date: 2024-09-17 12:22+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -309,15 +309,12 @@ msgstr "المؤلف الأصلي"
 msgid "Montel Laurent"
 msgstr "Montel Laurent"
 
-#: main.cpp:54
+#: main.cpp:56
 #, kde-format
-msgid "Sub menu to pre-select"
-msgstr "القائمة الفرعية للانتقاء المسبق"
-
-#: main.cpp:55
-#, kde-format
-msgid "Menu entry to pre-select"
-msgstr "مدخلة القائمة للانتقاء المسبق"
+msgid ""
+"Entry and/or menu to select, e.g. \"org.kde.dolphin.desktop\", \"Utilties/"
+"org.kde.kwrite.desktop\", \"Education/Mathematics\""
+msgstr ""
 
 #: menufile.cpp:94 menufile.cpp:105
 #, kde-format
@@ -349,43 +346,49 @@ msgstr "أظهر المدخلات المخفية"
 msgid " [Hidden]"
 msgstr " [مخفي]"
 
-#: treeview.cpp:1019
+#: treeview.cpp:1023
 #, kde-format
 msgid "New Submenu"
 msgstr "قائمة فرعية جديدة"
 
-#: treeview.cpp:1019
+#: treeview.cpp:1023
 #, kde-format
 msgid "Submenu name:"
 msgstr "اسم القائمة الفرعية:"
 
-#: treeview.cpp:1086
+#: treeview.cpp:1090
 #, kde-format
 msgid "New Item"
 msgstr "عنصر جديد"
 
-#: treeview.cpp:1086
+#: treeview.cpp:1090
 #, kde-format
 msgid "Item name:"
 msgstr "اسم العنصر:"
 
-#: treeview.cpp:1717
+#: treeview.cpp:1721
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
 msgstr "لم يتم حفظ تغييرات القائمة بسبب المشكلة التالية:"
 
-#: treeview.cpp:1764
+#: treeview.cpp:1768
 #, kde-format
 msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
 "menus."
 msgstr "هل تريد استرجاع قائمة النظام؟ تحذير: هذا سيزيل كل القوائم المخصصة."
 
-#: treeview.cpp:1765
+#: treeview.cpp:1769
 #, kde-format
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "استرجع قائمة النظام"
+
+#~ msgid "Sub menu to pre-select"
+#~ msgstr "القائمة الفرعية للانتقاء المسبق"
+
+#~ msgid "Menu entry to pre-select"
+#~ msgstr "مدخلة القائمة للانتقاء المسبق"
 
 #~ msgid "All submenus of '%1' will be removed. Do you want to continue?"
 #~ msgstr "جميع القوائم الفرعية لـ '%1'  ستزال . هل ترغب في الاستمرار؟ "

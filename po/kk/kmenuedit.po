@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-09-11 00:40+0000\n"
+"POT-Creation-Date: 2024-12-29 00:43+0000\n"
 "PO-Revision-Date: 2013-09-15 05:14+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -308,15 +308,12 @@ msgstr "Бастапқы авторы"
 msgid "Montel Laurent"
 msgstr "Montel Laurent"
 
-#: main.cpp:54
+#: main.cpp:56
 #, kde-format
-msgid "Sub menu to pre-select"
-msgstr "Дайын бағыныңқы мәзір"
-
-#: main.cpp:55
-#, kde-format
-msgid "Menu entry to pre-select"
-msgstr "Дайын мәзір жазуы"
+msgid ""
+"Entry and/or menu to select, e.g. \"org.kde.dolphin.desktop\", \"Utilties/"
+"org.kde.kwrite.desktop\", \"Education/Mathematics\""
+msgstr ""
 
 #: menufile.cpp:94 menufile.cpp:105
 #, kde-format
@@ -348,32 +345,32 @@ msgstr "Жасырындары көрсетілсін"
 msgid " [Hidden]"
 msgstr " [Жасырын]"
 
-#: treeview.cpp:1019
+#: treeview.cpp:1023
 #, kde-format
 msgid "New Submenu"
 msgstr "Жаңа бағыныңқы мәзірі"
 
-#: treeview.cpp:1019
+#: treeview.cpp:1023
 #, kde-format
 msgid "Submenu name:"
 msgstr "Бағыныңқы мәзірдің атауы:"
 
-#: treeview.cpp:1086
+#: treeview.cpp:1090
 #, kde-format
 msgid "New Item"
 msgstr "Жаңа элемент"
 
-#: treeview.cpp:1086
+#: treeview.cpp:1090
 #, kde-format
 msgid "Item name:"
 msgstr "Әлементтің атауы:"
 
-#: treeview.cpp:1717
+#: treeview.cpp:1721
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
 msgstr "Мәзірдің өзгерістері сақталмайды, себебі:"
 
-#: treeview.cpp:1764
+#: treeview.cpp:1768
 #, kde-format
 msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
@@ -381,12 +378,18 @@ msgid ""
 msgstr ""
 "Жүйелік мәзірін қалпына қайтармақсыз ба? Барлық өзіндік мәзірлер жоғалады."
 
-#: treeview.cpp:1765
+#: treeview.cpp:1769
 #, fuzzy, kde-format
 #| msgid "Restore to System Menu"
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "Жүйелік мәзіріне қайтару"
+
+#~ msgid "Sub menu to pre-select"
+#~ msgstr "Дайын бағыныңқы мәзір"
+
+#~ msgid "Menu entry to pre-select"
+#~ msgstr "Дайын мәзір жазуы"
 
 #~ msgid "All submenus of '%1' will be removed. Do you want to continue?"
 #~ msgstr "'%1' дегеннің барлық ішкі мәзірлері өшіріледі. Бола берсін бе?"

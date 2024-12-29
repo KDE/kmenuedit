@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-09-11 00:40+0000\n"
+"POT-Creation-Date: 2024-12-29 00:43+0000\n"
 "PO-Revision-Date: 2024-09-11 22:41+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -310,15 +310,12 @@ msgstr "Jatorrizko egilea"
 msgid "Montel Laurent"
 msgstr "Montel Laurent"
 
-#: main.cpp:54
+#: main.cpp:56
 #, kde-format
-msgid "Sub menu to pre-select"
-msgstr "Aurrez hautatzeko azpimenua"
-
-#: main.cpp:55
-#, kde-format
-msgid "Menu entry to pre-select"
-msgstr "Aurrez hautatzeko menu-sarrera"
+msgid ""
+"Entry and/or menu to select, e.g. \"org.kde.dolphin.desktop\", \"Utilties/"
+"org.kde.kwrite.desktop\", \"Education/Mathematics\""
+msgstr ""
 
 #: menufile.cpp:94 menufile.cpp:105
 #, kde-format
@@ -350,32 +347,32 @@ msgstr "Erakutsi sarrera ezkutuak"
 msgid " [Hidden]"
 msgstr "[Ezkutatuta]"
 
-#: treeview.cpp:1019
+#: treeview.cpp:1023
 #, kde-format
 msgid "New Submenu"
 msgstr "Azpimenu berria"
 
-#: treeview.cpp:1019
+#: treeview.cpp:1023
 #, kde-format
 msgid "Submenu name:"
 msgstr "Azpimenuaren izena:"
 
-#: treeview.cpp:1086
+#: treeview.cpp:1090
 #, kde-format
 msgid "New Item"
 msgstr "Elementu berria"
 
-#: treeview.cpp:1086
+#: treeview.cpp:1090
 #, kde-format
 msgid "Item name:"
 msgstr "Elementuaren izena:"
 
-#: treeview.cpp:1717
+#: treeview.cpp:1721
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
 msgstr "Ezin izan dira gorde menuko aldaketak, arazo hau dela eta:"
 
-#: treeview.cpp:1764
+#: treeview.cpp:1768
 #, kde-format
 msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
@@ -384,11 +381,17 @@ msgstr ""
 "Sistemaren menua berrezarri nahi duzu? Abisua: Honek menu pertsonalizatu "
 "guztiak kenduko ditu."
 
-#: treeview.cpp:1765
+#: treeview.cpp:1769
 #, kde-format
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "Lehengoratu Menu-sistema"
+
+#~ msgid "Sub menu to pre-select"
+#~ msgstr "Aurrez hautatzeko azpimenua"
+
+#~ msgid "Menu entry to pre-select"
+#~ msgstr "Aurrez hautatzeko menu-sarrera"
 
 #~ msgid "All submenus of '%1' will be removed. Do you want to continue?"
 #~ msgstr "'%1'(r)en azpimenu guztiak kenduko dira. Jarraitu nahi duzu?"

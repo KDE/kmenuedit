@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-09-11 00:40+0000\n"
+"POT-Creation-Date: 2024-12-29 00:43+0000\n"
 "PO-Revision-Date: 2024-09-11 05:30+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -302,15 +302,12 @@ msgstr "საწყისი ავტორი"
 msgid "Montel Laurent"
 msgstr "Montel Laurent"
 
-#: main.cpp:54
+#: main.cpp:56
 #, kde-format
-msgid "Sub menu to pre-select"
-msgstr "წინასწარ ასარჩევი ქვემენიუ"
-
-#: main.cpp:55
-#, kde-format
-msgid "Menu entry to pre-select"
-msgstr "წინასწარ ასარჩევი მენიუს პუნქტი"
+msgid ""
+"Entry and/or menu to select, e.g. \"org.kde.dolphin.desktop\", \"Utilties/"
+"org.kde.kwrite.desktop\", \"Education/Mathematics\""
+msgstr ""
 
 #: menufile.cpp:94 menufile.cpp:105
 #, kde-format
@@ -342,32 +339,32 @@ msgstr "დამალული ელემენტების ჩვენ�
 msgid " [Hidden]"
 msgstr " [დამალული]"
 
-#: treeview.cpp:1019
+#: treeview.cpp:1023
 #, kde-format
 msgid "New Submenu"
 msgstr "ახალი ქვემენიუ"
 
-#: treeview.cpp:1019
+#: treeview.cpp:1023
 #, kde-format
 msgid "Submenu name:"
 msgstr "ქვემენიუს სახელი:"
 
-#: treeview.cpp:1086
+#: treeview.cpp:1090
 #, kde-format
 msgid "New Item"
 msgstr "ახალი ელემენტი"
 
-#: treeview.cpp:1086
+#: treeview.cpp:1090
 #, kde-format
 msgid "Item name:"
 msgstr "ელემენტის სახელი:"
 
-#: treeview.cpp:1717
+#: treeview.cpp:1721
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
 msgstr "მენიუს ცვლილებების შენახვა შეუძლებელია შემდეგი შეცდომის გამო:"
 
-#: treeview.cpp:1764
+#: treeview.cpp:1768
 #, kde-format
 msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
@@ -375,11 +372,17 @@ msgid ""
 msgstr ""
 "გნებავთ სისტემური მენიუს აღდგენა? წაიშლება ხელით ჩამატებული ყველა მენიუ."
 
-#: treeview.cpp:1765
+#: treeview.cpp:1769
 #, kde-format
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "სისტემური მენიუს აღდგენა"
+
+#~ msgid "Sub menu to pre-select"
+#~ msgstr "წინასწარ ასარჩევი ქვემენიუ"
+
+#~ msgid "Menu entry to pre-select"
+#~ msgstr "წინასწარ ასარჩევი მენიუს პუნქტი"
 
 #~ msgid "All submenus of '%1' will be removed. Do you want to continue?"
 #~ msgstr "წაიშლება %1-ის ყველა ქვემენიუ. გნებავთ გავაგრძელო?"
