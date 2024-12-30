@@ -373,9 +373,3 @@ msgstr "您想要重置为系统菜单吗？警告：这将移除所有自定义
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "恢复系统菜单"
-
-#~ msgid "Sub menu to pre-select"
-#~ msgstr "预先选中的子菜单"
-
-#~ msgid "Menu entry to pre-select"
-#~ msgstr "预先选中的菜单项"
