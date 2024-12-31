@@ -305,6 +305,8 @@ msgid ""
 "Entry and/or menu to select, e.g. \"org.kde.dolphin.desktop\", \"Utilties/"
 "org.kde.kwrite.desktop\", \"Education/Mathematics\""
 msgstr ""
+"要选择的条目和/或菜单，例如：org.kde.dolphin.desktop、Utilties/org.kde."
+"kwrite.desktop、Education/Mathematics"
 
 #: menufile.cpp:94 menufile.cpp:105
 #, kde-format
