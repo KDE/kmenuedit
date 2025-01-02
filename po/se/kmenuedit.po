@@ -379,9 +379,3 @@ msgstr ""
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr ""
-
-#~ msgid "Sub menu to pre-select"
-#~ msgstr "Vuollefállu mii ovdagihtii válljejuvvo"
-
-#~ msgid "Menu entry to pre-select"
-#~ msgstr "Fállomearkkus maid ovdagihtii válljejuvvo"

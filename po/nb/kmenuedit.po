@@ -387,9 +387,3 @@ msgstr ""
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr ""
-
-#~ msgid "Sub menu to pre-select"
-#~ msgstr "Undermeny som skal forhåndsvelges"
-
-#~ msgid "Menu entry to pre-select"
-#~ msgstr "Menyvalg som skal forhåndsvelges"
