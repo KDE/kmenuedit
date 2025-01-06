@@ -188,7 +188,6 @@ msgstr ""
 
 #: kmenuedit.cpp:81
 #, fuzzy, kde-format
-#| msgid "&Description:"
 msgid "&Sort All by Description"
 msgstr "&Válddahus:"
 

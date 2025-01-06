@@ -177,25 +177,21 @@ msgstr "&Sorter"
 
 #: kmenuedit.cpp:71
 #, fuzzy, kde-format
-#| msgid "&Sort selection by Name"
 msgid "&Sort Selection by Name"
 msgstr "&Sorter utvalget etter navn"
 
 #: kmenuedit.cpp:74
 #, fuzzy, kde-format
-#| msgid "&Sort selection by Description"
 msgid "&Sort Selection by Description"
 msgstr "&Sorter utvalget etter beskrivelse"
 
 #: kmenuedit.cpp:78
 #, fuzzy, kde-format
-#| msgid "&Sort all by Name"
 msgid "&Sort All by Name"
 msgstr "&Sorter alt etter navn"
 
 #: kmenuedit.cpp:81
 #, fuzzy, kde-format
-#| msgid "&Sort all by Description"
 msgid "&Sort All by Description"
 msgstr "&Sorter alt etter beskrivelse"
 
