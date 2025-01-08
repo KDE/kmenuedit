@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: fc57ad16a28d02dea100ceb1c60de14e\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-12-29 00:43+0000\n"
-"PO-Revision-Date: 2024-06-03 07:40\n"
+"PO-Revision-Date: 2025-01-06 19:10\n"
 "Last-Translator: Darafei Praliaskouski <komzpa@licei2.com>\n"
 "Language-Team: Belarusian\n"
 "Language: be\n"
@@ -52,9 +52,7 @@ msgid "&Comment:"
 msgstr "&Каментар:"
 
 #: basictab.cpp:76
-#, fuzzy, kde-format
-#| msgctxt "@label:textfield"
-#| msgid "Environment Variables:"
+#, kde-format
 msgctxt "@label:textfield"
 msgid "Environment variables:"
 msgstr "Зменныя асяроддзя:"
@@ -66,9 +64,7 @@ msgid "Program:"
 msgstr "Праграма:"
 
 #: basictab.cpp:90
-#, fuzzy, kde-format
-#| msgctxt "@label:textfield"
-#| msgid "Command-Line Arguments:"
+#, kde-format
 msgctxt "@label:textfield"
 msgid "Command-line arguments:"
 msgstr "Аргументы каманднага радка:"
@@ -183,26 +179,22 @@ msgid "&Sort"
 msgstr "&Сартаваць"
 
 #: kmenuedit.cpp:71
-#, fuzzy, kde-format
-#| msgid "&Sort selection by Name"
+#, kde-format
 msgid "&Sort Selection by Name"
 msgstr "&Сартаваць абранае па назве"
 
 #: kmenuedit.cpp:74
-#, fuzzy, kde-format
-#| msgid "&Sort selection by Description"
+#, kde-format
 msgid "&Sort Selection by Description"
 msgstr "&Сартаваць абранае па апісанні"
 
 #: kmenuedit.cpp:78
-#, fuzzy, kde-format
-#| msgid "&Sort all by Name"
+#, kde-format
 msgid "&Sort All by Name"
 msgstr "&Сартаваць усё па назве"
 
 #: kmenuedit.cpp:81
-#, fuzzy, kde-format
-#| msgid "&Sort all by Description"
+#, kde-format
 msgid "&Sort All by Description"
 msgstr "&Сартаваць усё па апісанні"
 
