@@ -145,6 +145,7 @@ Comment[zh_CN]=编辑应用程序在应用程序启动器中的显示方式
 Comment[zh_TW]=編輯應用程式在啟動器中的顯示方式
 Keywords=kmenuedit;
 Keywords[ar]=محرّر قوائم كِيدِي;
+Keywords[bg]=kmenuedit;
 Keywords[ca]=kmenuedit;
 Keywords[ca@valencia]=kmenuedit;
 Keywords[es]=kmenuedit;
