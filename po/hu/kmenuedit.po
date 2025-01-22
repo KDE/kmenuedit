@@ -2,13 +2,13 @@
 # Tamas Szanto <tszanto@interware.hu>, 2000.
 # Kristóf Kiszel <ulysses@kubuntu.org>, 2011, 2019.
 # Balázs Úr <urbalazs@gmail.com>, 2013.
-# SPDX-FileCopyrightText: 2021, 2024 Kristof Kiszel <kiszel.kristof@gmail.com>
+# SPDX-FileCopyrightText: 2021, 2024, 2025 Kristof Kiszel <kiszel.kristof@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: KDE 4.2\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-12-29 00:43+0000\n"
-"PO-Revision-Date: 2024-09-26 15:15+0200\n"
+"PO-Revision-Date: 2025-01-21 21:23+0100\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.08.0\n"
+"X-Generator: Lokalize 24.12.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -308,6 +308,8 @@ msgid ""
 "Entry and/or menu to select, e.g. \"org.kde.dolphin.desktop\", \"Utilties/"
 "org.kde.kwrite.desktop\", \"Education/Mathematics\""
 msgstr ""
+"A kiválasztandó bejegyzés és/vagy menü, például „org.kde.dolphin.desktop”, "
+"„Segédprogramok/org.kde.kwrite.desktop”, „Oktatás/Matematika”"
 
 #: menufile.cpp:94 menufile.cpp:105
 #, kde-format
