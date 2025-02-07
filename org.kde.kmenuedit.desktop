@@ -168,6 +168,7 @@ Keywords[tr]=kmenuedit;kmenüdüzenleyicisi;
 Keywords[uk]=kmenuedit;кменюедіт;
 Keywords[x-test]=xxkmenueditxx;
 Keywords[zh_CN]=kmenuedit;菜单编辑;
+Keywords[zh_TW]=kmenuedit;選單編輯;目錄編輯;
 
 X-DBUS-StartupType=Unique
 X-DBUS-ServiceName=org.kde.kmenuedit
