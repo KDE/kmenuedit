@@ -11,31 +11,34 @@
 # Fernando Boaglio <boaglio@kde.org>, 2008.
 # André Marcelo Alvarenga <alvarenga@kde.org>, 2009, 2010, 2012, 2013, 2016.
 # Luiz Fernando Ranghetti <elchevive@opensuse.org>, 2019, 2021, 2022.
+# SPDX-FileCopyrightText: 2025 Geraldo Simiao <geraldosimiao@fedoraproject.org>
 msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-12-29 00:43+0000\n"
-"PO-Revision-Date: 2022-12-15 11:32-0300\n"
-"Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
-"Language-Team: Portuguese <kde-i18n-pt_BR@kde.org>\n"
+"PO-Revision-Date: 2025-02-08 10:51-0300\n"
+"Last-Translator: Geraldo Simiao <geraldosimiao@fedoraproject.org>\n"
+"Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 24.12.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Diniz Bortolotto, Rodrigo Stulzer, Lisiane Sztoltz Teixeira"
+msgstr ""
+"Diniz Bortolotto, Rodrigo Stulzer, Lisiane Sztoltz Teixeira, Geraldo Simião"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ""
-"diniz.bortolotto@gmail.com, rodrigo@conectiva.com.br, lisiane@kdemail.net"
+"diniz.bortolotto@gmail.com, rodrigo@conectiva.com.br, lisiane@kdemail.net, "
+"geraldosimiao@fedoraproject.org"
 
 #: basictab.cpp:51
 #, kde-format
@@ -53,9 +56,7 @@ msgid "&Comment:"
 msgstr "&Comentário:"
 
 #: basictab.cpp:76
-#, fuzzy, kde-format
-#| msgctxt "@label:textfield"
-#| msgid "Environment Variables:"
+#, kde-format
 msgctxt "@label:textfield"
 msgid "Environment variables:"
 msgstr "Variáveis de ambiente:"
@@ -67,9 +68,7 @@ msgid "Program:"
 msgstr "Programa:"
 
 #: basictab.cpp:90
-#, fuzzy, kde-format
-#| msgctxt "@label:textfield"
-#| msgid "Command-Line Arguments:"
+#, kde-format
 msgctxt "@label:textfield"
 msgid "Command-line arguments:"
 msgstr "Argumentos da linha de comando:"
@@ -185,26 +184,22 @@ msgid "&Sort"
 msgstr "&Ordenar"
 
 #: kmenuedit.cpp:71
-#, fuzzy, kde-format
-#| msgid "&Sort selection by Name"
+#, kde-format
 msgid "&Sort Selection by Name"
 msgstr "Ordenar a &seleção por nome"
 
 #: kmenuedit.cpp:74
-#, fuzzy, kde-format
-#| msgid "&Sort selection by Description"
+#, kde-format
 msgid "&Sort Selection by Description"
 msgstr "Ordenar a &seleção por descrição"
 
 #: kmenuedit.cpp:78
-#, fuzzy, kde-format
-#| msgid "&Sort all by Name"
+#, kde-format
 msgid "&Sort All by Name"
 msgstr "Ordenar &todos por nome"
 
 #: kmenuedit.cpp:81
-#, fuzzy, kde-format
-#| msgid "&Sort all by Description"
+#, kde-format
 msgid "&Sort All by Description"
 msgstr "Ordenar &todos por descrição"
 
@@ -326,6 +321,8 @@ msgid ""
 "Entry and/or menu to select, e.g. \"org.kde.dolphin.desktop\", \"Utilties/"
 "org.kde.kwrite.desktop\", \"Education/Mathematics\""
 msgstr ""
+"Entrada e/ou menu para selecionar, por exemplo, \"org.kde.dolphin.desktop\", "
+"\"Utilitários/org.kde.kwrite.desktop\", \"Educação/Matemática\""
 
 #: menufile.cpp:94 menufile.cpp:105
 #, kde-format
