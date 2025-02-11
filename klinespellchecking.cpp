@@ -10,7 +10,7 @@
 #include <QMenu>
 
 #include <KActionCollection>
-#include <KStandardAction>
+#include <KStandardActions>
 #include <QAction>
 #include <sonnet/backgroundchecker.h>
 #include <sonnet/dialog.h>
@@ -19,7 +19,7 @@ KLineSpellChecking::KLineSpellChecking(QWidget *parent)
     : KLineEdit(parent)
 {
     KActionCollection *ac = new KActionCollection(this);
-    m_spellAction = KStandardAction::spelling(this, SLOT(slotCheckSpelling()), ac);
+    m_spellAction = KStandardActions::spelling(this, &KLineSpellChecking::slotCheckSpelling, ac);
 }
 
 KLineSpellChecking::~KLineSpellChecking()
