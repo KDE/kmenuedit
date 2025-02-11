@@ -15,7 +15,7 @@
 #include <KActionMenu>
 #include <KLocalizedString>
 #include <KMessageBox>
-#include <KStandardAction>
+#include <KStandardActions>
 #include <KStandardShortcut>
 #include <KTreeWidgetSearchLine>
 #include <KXMLGUIFactory>
@@ -89,17 +89,17 @@ void KMenuEdit::setupActions()
     action->setIcon(QIcon::fromTheme(QStringLiteral("go-down")));
     action->setText(i18n("Move &Down"));
 
-    actionCollection()->addAction(KStandardAction::Save, this, SLOT(slotSave()));
-    actionCollection()->addAction(KStandardAction::Quit, this, SLOT(close()));
-    actionCollection()->addAction(KStandardAction::Cut);
-    actionCollection()->addAction(KStandardAction::Copy);
-    actionCollection()->addAction(KStandardAction::Paste);
+    actionCollection()->addAction(KStandardActions::Save, this, &KMenuEdit::slotSave);
+    actionCollection()->addAction(KStandardActions::Quit, this, &KMenuEdit::close);
+    actionCollection()->addAction(KStandardActions::Cut);
+    actionCollection()->addAction(KStandardActions::Copy);
+    actionCollection()->addAction(KStandardActions::Paste);
 
     action = new QAction(i18n("Restore to System Menu"), this);
     actionCollection()->addAction(QStringLiteral("restore_system_menu"), action);
     connect(action, &QAction::triggered, this, &KMenuEdit::slotRestoreMenu);
 
-    KStandardAction::preferences(this, SLOT(slotConfigure()), actionCollection());
+    KStandardActions::preferences(this, &KMenuEdit::slotConfigure, actionCollection());
 }
 
 void KMenuEdit::slotConfigure()
