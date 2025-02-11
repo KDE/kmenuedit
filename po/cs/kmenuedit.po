@@ -377,9 +377,3 @@ msgstr ""
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "Vrátit systém nabídek"
-
-#~ msgid "Sub menu to pre-select"
-#~ msgstr "Předvybrat podnabídku"
-
-#~ msgid "Menu entry to pre-select"
-#~ msgstr "Předvybrat nabídku"
