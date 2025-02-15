@@ -9,7 +9,7 @@
 # Teemu Rytilahti <teemu.rytilahti@d5k.net>, 2008.
 # Jorma Karvonen <karvonen.jorma@gmail.com>, 2010.
 # Lasse Liehu <lasse.liehu@gmail.com>, 2010, 2013, 2014.
-# SPDX-FileCopyrightText: 2013, 2018, 2019, 2021, 2022, 2023, 2024 Tommi Nieminen <translator@legisign.org>
+# SPDX-FileCopyrightText: 2013, 2018, 2019, 2021, 2022, 2023, 2024, 2025 Tommi Nieminen <translator@legisign.org>
 # Copyright © 2002, 2003, 2004, 2005, 2008 Free Software Foundation, Inc.
 #
 # KDE Finnish translation sprint participants:
@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-12-29 00:43+0000\n"
-"PO-Revision-Date: 2024-10-16 18:08+0300\n"
+"PO-Revision-Date: 2025-01-12 19:47+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -26,7 +26,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.08.2\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -325,6 +325,8 @@ msgid ""
 "Entry and/or menu to select, e.g. \"org.kde.dolphin.desktop\", \"Utilties/"
 "org.kde.kwrite.desktop\", \"Education/Mathematics\""
 msgstr ""
+"Valittava tietue tai valikko, esim. ”org.kde.dolphin.desktop”, ”Utilities/"
+"org.kde.kwrite.desktop”, ”Education/Mathematics”"
 
 #: menufile.cpp:94 menufile.cpp:105
 #, kde-format
