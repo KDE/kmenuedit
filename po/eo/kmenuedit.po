@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-12-29 00:43+0000\n"
-"PO-Revision-Date: 2024-09-15 04:00+0200\n"
+"PO-Revision-Date: 2025-01-13 22:15+0100\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -125,12 +125,12 @@ msgstr "Lanĉi en term&inalo"
 #: basictab.cpp:158
 #, kde-format
 msgid "Terminal &options:"
-msgstr "Terminalaj &opcioj:"
+msgstr "Terminalaj elektebl&oj:"
 
 #: basictab.cpp:172
 #, kde-format
 msgid "&Run as a different user"
-msgstr "Lanĉi kiel &alia uzanto"
+msgstr "&Ruli kiel alia uzanto"
 
 #: basictab.cpp:177
 #, kde-format
@@ -310,6 +310,8 @@ msgid ""
 "Entry and/or menu to select, e.g. \"org.kde.dolphin.desktop\", \"Utilties/"
 "org.kde.kwrite.desktop\", \"Education/Mathematics\""
 msgstr ""
+"Eniro kaj/aŭ menuo elektota, ekz. \"org.kde.dolphin.desktop\", \"Utilties/"
+"org.kde.kwrite.desktop\", \"Edukado/Matematiko\""
 
 #: menufile.cpp:94 menufile.cpp:105
 #, kde-format
@@ -319,7 +321,7 @@ msgstr "Ne povis skribi al %1"
 #: preferencesdlg.cpp:26
 #, kde-format
 msgid "General options"
-msgstr "Ĝeneralaj opcioj"
+msgstr "Ĝeneralaj elektebloj"
 
 #: preferencesdlg.cpp:31
 #, kde-format
@@ -329,7 +331,7 @@ msgstr "Literumkontrolo"
 #: preferencesdlg.cpp:32
 #, kde-format
 msgid "Spell checking Options"
-msgstr "Opcioj de Literumkontrolo"
+msgstr "Elektebloj de Literumkontrolo"
 
 #: preferencesdlg.cpp:65
 #, kde-format
@@ -380,9 +382,3 @@ msgstr ""
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "Restaŭri Menusistemon"
-
-#~ msgid "Sub menu to pre-select"
-#~ msgstr "Submenuo por antaŭelekti"
-
-#~ msgid "Menu entry to pre-select"
-#~ msgstr "Menuero por antaŭelekti"
