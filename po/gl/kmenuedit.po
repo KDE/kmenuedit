@@ -255,7 +255,7 @@ msgstr "&Editar"
 #: kmenueditui.rc:34
 #, kde-format
 msgid "Main Toolbar"
-msgstr "Barra de ferramentas Principal"
+msgstr "Barra de ferramentas principal"
 
 #: main.cpp:29 main.cpp:39 main.cpp:53
 #, kde-format
