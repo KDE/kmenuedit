@@ -14,6 +14,7 @@
 
 #include <QAction>
 #include <QApplication>
+#include <QClipboard>
 #include <QDBusConnection>
 #include <QDBusMessage>
 #include <QDir>
@@ -33,9 +34,11 @@
 #include <KConfig>
 #include <KConfigGroup>
 #include <KDesktopFile>
+#include <KIO/OpenFileManagerWindowJob>
 #include <KIconLoader>
 #include <KLocalizedString>
 #include <KMessageBox>
+#include <KPropertiesDialog>
 #include <KStringHandler>
 #include <KUrlMimeData>
 #include <QStandardPaths>
@@ -237,6 +240,11 @@ TreeView::TreeView(KActionCollection *ac, QWidget *parent)
     connect(m_ac->action(NEW_SUBMENU_ACTION_NAME), &QAction::triggered, this, &TreeView::newsubmenu);
     connect(m_ac->action(NEW_SEPARATOR_ACTION_NAME), &QAction::triggered, this, &TreeView::newsep);
 
+    // listen for file actions
+    connect(m_ac->action(COPY_FILEPATH_ACTION_NAME), &QAction::triggered, this, &TreeView::copyFilePath);
+    connect(m_ac->action(OPEN_CONTAINING_FOLDER_ACTION_NAME), &QAction::triggered, this, &TreeView::openContainingFolder);
+    connect(m_ac->action(PROPERTIES_ACTION_NAME), &QAction::triggered, this, &TreeView::properties);
+
     // listen for copy
     connect(m_ac->action(CUT_ACTION_NAME), &QAction::triggered, this, &TreeView::cut);
     connect(m_ac->action(COPY_ACTION_NAME), SIGNAL(triggered()), SLOT(copy()));
@@ -313,6 +321,12 @@ void TreeView::setViewMode(bool showHidden)
 
     // sort
     m_popupMenu->addAction(m_ac->action(SORT_ACTION_NAME));
+    m_popupMenu->addSeparator();
+
+    // file actions
+    m_popupMenu->addAction(m_ac->action(COPY_FILEPATH_ACTION_NAME));
+    m_popupMenu->addAction(m_ac->action(OPEN_CONTAINING_FOLDER_ACTION_NAME));
+    m_popupMenu->addAction(m_ac->action(PROPERTIES_ACTION_NAME));
 
     m_showHidden = showHidden;
     readMenuFolderInfo();
@@ -1169,6 +1183,40 @@ void TreeView::newsep()
     setLayoutDirty(parentItem);
 }
 
+void TreeView::copyFilePath()
+{
+    auto fileUrl = fileUrlForSelected();
+    if (fileUrl.has_value()) {
+        QApplication::clipboard()->setText(fileUrl.value().toLocalFile());
+    }
+}
+
+void TreeView::openContainingFolder()
+{
+    auto fileUrl = fileUrlForSelected();
+    if (fileUrl.has_value()) {
+        KIO::highlightInFileManager({fileUrl.value()});
+    }
+}
+
+void TreeView::properties()
+{
+    auto fileUrl = fileUrlForSelected();
+    if (fileUrl.has_value()) {
+        KPropertiesDialog *dialog = new KPropertiesDialog(fileUrl.value(), this);
+
+        // Reload if changes could have possibly been made — unfortunately we cannot know for certain
+        connect(dialog, &KPropertiesDialog::applied, this, [this]() {
+            this->updateTreeView(m_showHidden);
+        });
+
+        dialog->setAttribute(Qt::WA_DeleteOnClose);
+        dialog->show();
+        dialog->raise();
+        dialog->activateWindow();
+    }
+}
+
 void TreeView::cut()
 {
     copy(true);
@@ -1540,6 +1588,28 @@ TreeItem *TreeView::getParentItem(QTreeWidgetItem *item) const
         parentItem = invisibleRootItem();
     }
     return static_cast<TreeItem *>(parentItem);
+}
+
+/**
+ * Return the file URL for the selected item, directory or entry.
+ *
+ * @brief Get the selected item file URL
+ * @return QUrl or empty
+ */
+std::optional<QUrl> TreeView::fileUrlForSelected()
+{
+    TreeItem *item = (TreeItem *)selectedItem();
+    if (!item) {
+        return {};
+    }
+
+    if (item->isEntry()) {
+        return QUrl::fromLocalFile(item->entryInfo()->desktopFile()->fileName());
+    } else if (item->isDirectory()) {
+        return QUrl::fromLocalFile(item->folderInfo()->directoryFile);
+    }
+
+    return {};
 }
 
 void TreeView::del()

@@ -63,6 +63,18 @@ void KMenuEdit::setupActions()
     action->setText(i18n("New S&eparator"));
     actionCollection()->setDefaultShortcut(action, QKeySequence(Qt::CTRL | Qt::Key_I));
 
+    // File actions menu
+    action = actionCollection()->addAction(COPY_FILEPATH_ACTION_NAME);
+    action->setIcon(QIcon::fromTheme(QStringLiteral("edit-copy-path")));
+    action->setText(i18nc("@action:inmenu", "Copy Location"));
+    action = actionCollection()->addAction(OPEN_CONTAINING_FOLDER_ACTION_NAME);
+    action->setIcon(QIcon::fromTheme(QStringLiteral("document-open-folder")));
+    action->setText(i18nc("@action:inmenu", "&Open Containing Folder"));
+    action = actionCollection()->addAction(PROPERTIES_ACTION_NAME);
+    action->setIcon(QIcon::fromTheme(QStringLiteral("document-properties")));
+    action->setText(i18nc("@action:inmenu", "Properties"));
+    actionCollection()->setDefaultShortcuts(action, {Qt::ALT | Qt::Key_Return, Qt::ALT | Qt::Key_Enter});
+
     // "sort selection" menu
     KActionMenu *sortMenu = new KActionMenu(QIcon::fromTheme(QStringLiteral("view-sort-ascending")), i18n("&Sort"), this);
     sortMenu->setPopupMode(QToolButton::InstantPopup);

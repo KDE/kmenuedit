@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!DOCTYPE gui SYSTEM "kpartgui.dtd">
-<gui name="kmenuedit" version="11">
+<gui name="kmenuedit" version="12">
 
 <MenuBar>
 
@@ -10,6 +10,12 @@
  <Action name="new_separator" />
  <Separator/>
  <Action name="file_save"/>
+ <Separator/>
+ <Menu name="file_file_actions"><text>File Act&amp;ions</text>
+  <Action name="file_copy_filepath"/>
+  <Action name="file_open_containing_folder"/>
+  <Action name="file_properties"/>
+ </Menu>
  <Separator/>
  <Action name="file_quit"/>
 </Menu>

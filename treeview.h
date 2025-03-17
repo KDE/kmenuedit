@@ -32,6 +32,9 @@ static const QString SAVE_ACTION_NAME = QStringLiteral("file_save");
 static const QString NEW_ITEM_ACTION_NAME = QStringLiteral("new_item");
 static const QString NEW_SUBMENU_ACTION_NAME = QStringLiteral("new_submenu");
 static const QString NEW_SEPARATOR_ACTION_NAME = QStringLiteral("new_separator");
+static const QString COPY_FILEPATH_ACTION_NAME = QStringLiteral("file_copy_filepath");
+static const QString OPEN_CONTAINING_FOLDER_ACTION_NAME = QStringLiteral("file_open_containing_folder");
+static const QString PROPERTIES_ACTION_NAME = QStringLiteral("file_properties");
 static const QString CUT_ACTION_NAME = QStringLiteral("edit_cut");
 static const QString COPY_ACTION_NAME = QStringLiteral("edit_copy");
 static const QString PASTE_ACTION_NAME = QStringLiteral("edit_paste");
@@ -183,6 +186,9 @@ protected Q_SLOTS:
     void newsubmenu();
     void newitem();
     void newsep();
+    void copyFilePath();
+    void openContainingFolder();
+    void properties();
 
     void cut();
     void copy();
@@ -216,6 +222,7 @@ protected:
     void sortItemChildren(const QList<QTreeWidgetItem *>::iterator &begin, const QList<QTreeWidgetItem *>::iterator &end, SortType sortType);
     TreeItem *getParentItem(QTreeWidgetItem *item) const;
     void moveUpOrDownItem(bool isMovingUpAction);
+    std::optional<QUrl> fileUrlForSelected();
 
     TreeItem *expandPath(TreeItem *item, const QString &path);
 
