@@ -105,6 +105,14 @@ void KMenuEdit::setupActions()
     action->setText(i18nc("@action:inmenu", "Properties"));
     actionCollection()->setDefaultShortcuts(action, {Qt::ALT | Qt::Key_Return, Qt::ALT | Qt::Key_Enter});
 
+    // "new" menu
+    KActionMenu *newMenu = new KActionMenu(QIcon::fromTheme(QStringLiteral("list-add-symbolic")), i18n("&New"), this);
+    newMenu->setPopupMode(QToolButton::InstantPopup);
+    newMenu->addAction(actionCollection()->action(NEW_ITEM_ACTION_NAME));
+    newMenu->addAction(actionCollection()->action(NEW_SUBMENU_ACTION_NAME));
+    newMenu->addAction(actionCollection()->action(NEW_SEPARATOR_ACTION_NAME));
+    actionCollection()->addAction(NEW_ACTION_NAME, newMenu);
+
     // "sort selection" menu
     KActionMenu *sortMenu = new KActionMenu(QIcon::fromTheme(QStringLiteral("view-sort-ascending")), i18n("&Sort"), this);
     sortMenu->setPopupMode(QToolButton::InstantPopup);

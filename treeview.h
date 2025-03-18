@@ -29,6 +29,7 @@ class MenuSeparatorInfo;
 class QKeySequence;
 
 static const QString SAVE_ACTION_NAME = QStringLiteral("file_save");
+static const QString NEW_ACTION_NAME = QStringLiteral("new");
 static const QString NEW_ITEM_ACTION_NAME = QStringLiteral("new_item");
 static const QString NEW_SUBMENU_ACTION_NAME = QStringLiteral("new_submenu");
 static const QString NEW_SEPARATOR_ACTION_NAME = QStringLiteral("new_separator");

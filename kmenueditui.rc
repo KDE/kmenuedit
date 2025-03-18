@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!DOCTYPE gui SYSTEM "kpartgui.dtd">
-<gui name="kmenuedit" version="13">
+<gui name="kmenuedit" version="14">
 
 <MenuBar>
     <Menu name="file" noMerge="1">
@@ -40,9 +40,7 @@
 
 <ToolBar name="mainToolBar" noMerge="1">
     <text>Main Toolbar</text>
-    <Action name="new_item"/>
-    <Action name="new_submenu"/>
-    <Action name="new_separator" />
+    <Action name="new"/>
     <Separator/>
     <Action name="move_up"/>
     <Action name="move_down"/>
