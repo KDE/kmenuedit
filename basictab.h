@@ -8,9 +8,9 @@
 #ifndef basictab_h
 #define basictab_h
 
+#include <KPageWidget>
 #include <KService>
 #include <QKeySequence>
-#include <QTabWidget>
 
 class KKeySequenceWidget;
 class QLineEdit;
@@ -24,7 +24,7 @@ class KLineSpellChecking;
 class MenuFolderInfo;
 class MenuEntryInfo;
 
-class BasicTab : public QTabWidget
+class BasicTab : public KPageWidget
 {
     Q_OBJECT
 

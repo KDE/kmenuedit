@@ -29,13 +29,13 @@
 #include "menuinfo.h"
 
 BasicTab::BasicTab(QWidget *parent)
-    : QTabWidget(parent)
+    : KPageWidget(parent)
 {
     initGeneralTab();
     initAdvancedTab();
     initConnections();
 
-    setDocumentMode(true);
+    setFaceType(FaceType::Tabbed);
 
     slotDisableAction();
 }
@@ -126,7 +126,7 @@ void BasicTab::initGeneralTab()
     generalTabLayout->addItem(new QSpacerItem(0, 0, QSizePolicy::Minimum, QSizePolicy::MinimumExpanding), 8, 0, 1, 3);
 
     // add the general group
-    addTab(generalTab, i18n("General"));
+    addPage(generalTab, i18n("General"));
 }
 
 void BasicTab::initAdvancedTab()
@@ -199,7 +199,7 @@ void BasicTab::initAdvancedTab()
     // push components to the top
     advancedTabLayout->addItem(new QSpacerItem(0, 0, QSizePolicy::Minimum, QSizePolicy::MinimumExpanding));
     // add the general group
-    addTab(advancedTab, i18n("Advanced"));
+    addPage(advancedTab, i18n("Advanced"));
 }
 
 void BasicTab::initConnections()
