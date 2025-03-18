@@ -22,6 +22,7 @@ class ConfigurationManager : public QObject
 
 protected:
     static const QString GENERAL_CONFIG_GROUP;
+    static const QString SHOW_MENU_BAR_PROPERTY_NAME;
     static const QString SHOW_HIDDEN_ENTRIES_PROPERTY_NAME;
     static const QString SPLITTER_SIZES_PROPERTY_NAME;
 
@@ -47,6 +48,20 @@ public:
         }
         return m_instance;
     }
+
+    /**
+     * @brief Determine if the menu bar is visible or not.
+     *
+     * @return True to show menu bar, false else.
+     */
+    bool menuBarVisible() const;
+
+    /**
+     * @brief Replace the menu bar visibility by the new one.
+     *
+     * @param visible True to show menu bar, false else.
+     */
+    void setMenuBarVisible(bool visible);
 
     /**
      * @brief Determine if hidden entries must be visible or not.

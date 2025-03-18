@@ -9,6 +9,7 @@
 #include <KSharedConfig>
 
 const QString ConfigurationManager::GENERAL_CONFIG_GROUP = QStringLiteral("General");
+const QString ConfigurationManager::SHOW_MENU_BAR_PROPERTY_NAME = QStringLiteral("ShowMenuBar");
 const QString ConfigurationManager::SHOW_HIDDEN_ENTRIES_PROPERTY_NAME = QStringLiteral("ShowHidden");
 const QString ConfigurationManager::SPLITTER_SIZES_PROPERTY_NAME = QStringLiteral("SplitterSizes");
 
@@ -17,6 +18,17 @@ ConfigurationManager *ConfigurationManager::m_instance = nullptr;
 ConfigurationManager::ConfigurationManager()
     : m_configGroup(KSharedConfig::openConfig(), GENERAL_CONFIG_GROUP)
 {
+}
+
+bool ConfigurationManager::menuBarVisible() const
+{
+    return m_configGroup.readEntry(SHOW_MENU_BAR_PROPERTY_NAME, false);
+}
+
+void ConfigurationManager::setMenuBarVisible(bool visible)
+{
+    m_configGroup.writeEntry(SHOW_MENU_BAR_PROPERTY_NAME, visible);
+    m_configGroup.sync();
 }
 
 bool ConfigurationManager::hiddenEntriesVisible() const

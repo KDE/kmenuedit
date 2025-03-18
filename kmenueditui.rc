@@ -1,59 +1,60 @@
 <?xml version="1.0"?>
 <!DOCTYPE gui SYSTEM "kpartgui.dtd">
-<gui name="kmenuedit" version="12">
+<gui name="kmenuedit" version="13">
 
 <MenuBar>
+    <Menu name="file" noMerge="1">
+        <text>&amp;File</text>
+        <Action name="new_item"/>
+        <Action name="new_submenu" />
+        <Action name="new_separator" />
+        <Separator/>
+        <Action name="file_save"/>
+        <Separator/>
+        <Menu name="file_file_actions">
+            <text>File Act&amp;ions</text>
+            <Action name="file_copy_filepath"/>
+            <Action name="file_open_containing_folder"/>
+            <Action name="file_properties"/>
+        </Menu>
+        <Separator/>
+        <Action name="file_quit"/>
+    </Menu>
 
-<Menu name="file" noMerge="1"><text>&amp;File</text>
- <Action name="new_item"/>
- <Action name="new_submenu" />
- <Action name="new_separator" />
- <Separator/>
- <Action name="file_save"/>
- <Separator/>
- <Menu name="file_file_actions"><text>File Act&amp;ions</text>
-  <Action name="file_copy_filepath"/>
-  <Action name="file_open_containing_folder"/>
-  <Action name="file_properties"/>
- </Menu>
- <Separator/>
- <Action name="file_quit"/>
-</Menu>
-
-<Menu name="edit" noMerge="1"><text>&amp;Edit</text>
- <Action name="move_up"/>
- <Action name="move_down"/>
- <Separator/>
- <Action name="edit_cut"/>
- <Action name="edit_copy"/>
- <Action name="edit_paste"/>
- <Separator/>
- <Action name="delete"/>
- <Separator/>
- <Action name="sort"/>
- <Separator/>
- <Action name="restore_system_menu"/>
-</Menu>
-
+    <Menu name="edit" noMerge="1">
+        <text>&amp;Edit</text>
+        <Action name="move_up"/>
+        <Action name="move_down"/>
+        <Separator/>
+        <Action name="edit_cut"/>
+        <Action name="edit_copy"/>
+        <Action name="edit_paste"/>
+        <Separator/>
+        <Action name="delete"/>
+        <Separator/>
+        <Action name="sort"/>
+        <Separator/>
+        <Action name="restore_system_menu"/>
+    </Menu>
 </MenuBar>
 
-<ToolBar name="mainToolBar" noMerge="1" fullWidth="true"><text>Main Toolbar</text>
- <Action name="file_save"/>
- <Separator/>
- <Action name="new_item"/>
- <Action name="new_submenu"/>
- <Action name="new_separator" />
- <Separator/>
- <Action name="move_up"/>
- <Action name="move_down"/>
- <Separator/>
- <Action name="edit_cut"/>
- <Action name="edit_copy"/>
- <Action name="edit_paste"/>
- <Separator/>
- <Action name="delete"/>
- <Separator/>
- <Action name="sort"/>
+<ToolBar name="mainToolBar" noMerge="1">
+    <text>Main Toolbar</text>
+    <Action name="new_item"/>
+    <Action name="new_submenu"/>
+    <Action name="new_separator" />
+    <Separator/>
+    <Action name="move_up"/>
+    <Action name="move_down"/>
+    <Separator/>
+    <Action name="delete"/>
+</ToolBar>
+
+<ToolBar name="hamburgerBar" noMerge="1">
+    <text>Hamburger Menu Toolbar</text>
+    <Spacer/>
+    <Action name="file_save"/>
+    <Action name="hamburger_menu"/>
 </ToolBar>
 
 </gui>

@@ -8,6 +8,7 @@
 #include "kmenuedit.h"
 
 #include <QFrame>
+#include <QMenuBar>
 #include <QSplitter>
 #include <QVBoxLayout>
 
@@ -17,6 +18,7 @@
 #include <KMessageBox>
 #include <KStandardActions>
 #include <KStandardShortcut>
+#include <KToolBar>
 #include <KTreeWidgetSearchLine>
 #include <KXMLGUIFactory>
 #include <QAction>
@@ -50,6 +52,34 @@ KMenuEdit::~KMenuEdit()
 
 void KMenuEdit::setupActions()
 {
+    // hamburger & menubar
+    const bool menuBarInitiallyVisible = ConfigurationManager::getInstance()->menuBarVisible();
+    menuBar()->setVisible(menuBarInitiallyVisible);
+
+    auto showMenuBarAction = KStandardAction::showMenubar(this, nullptr, actionCollection());
+    showMenuBarAction->setChecked(menuBarInitiallyVisible);
+    connect(showMenuBarAction, &QAction::toggled, this, [this, &showMenuBarAction]() {
+        const bool newVisibility = !menuBar()->isVisible();
+
+        if (!newVisibility && toolBar()->isHidden()) {
+            const QString accel = showMenuBarAction->shortcut().toString(QKeySequence::NativeText);
+            KMessageBox::information(this,
+                                     i18n("This will hide the menu bar completely."
+                                          " You can show it again by typing %1.",
+                                          accel),
+                                     i18n("Hide menu bar"),
+                                     QStringLiteral("HideMenuBarWarning"));
+        }
+
+        menuBar()->setVisible(newVisibility);
+        ConfigurationManager::getInstance()->setMenuBarVisible(newVisibility);
+    });
+
+    auto hamburgerMenu = KStandardAction::hamburgerMenu(nullptr, nullptr, actionCollection());
+    hamburgerMenu->setMenuBar(menuBar());
+    hamburgerMenu->setShowMenuBarAction(showMenuBarAction);
+
+    // File menu
     QAction *action = actionCollection()->addAction(NEW_SUBMENU_ACTION_NAME);
     action->setIcon(QIcon::fromTheme(QStringLiteral("menu_new")));
     action->setText(i18n("&New Submenu..."));
