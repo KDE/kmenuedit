@@ -7,6 +7,7 @@
 
 #include "menuinfo.h"
 
+#include <QFileInfo>
 #include <QRegularExpressionMatch>
 
 #include <KDesktopFile>
@@ -296,7 +297,18 @@ void MenuEntryInfo::setDirty()
     dirty = true;
 
     QString local = QStandardPaths::writableLocation(QStandardPaths::ApplicationsLocation) + QLatin1Char('/') + service->menuId();
-    if (local != service->entryPath()) {
+
+    QFile localFile(local);
+    bool isSymlink = localFile.exists() && QFileInfo(localFile).isSymbolicLink();
+
+    // If local already exists as a symlink, we should get rid of it so we can save the changes
+    if (isSymlink) {
+        QFile::remove(local);
+    }
+
+    // service->entryPath() will give us the location of the symlink, so if it is a symlink,
+    // local is entryPath, but we still need to copy it
+    if (local != service->entryPath() || isSymlink) {
         KDesktopFile *oldDf = desktopFile();
         m_desktopFile = oldDf->copyTo(local);
         delete oldDf;
