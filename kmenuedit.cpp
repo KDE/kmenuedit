@@ -77,7 +77,40 @@ void KMenuEdit::setupActions()
 
     auto hamburgerMenu = KStandardAction::hamburgerMenu(nullptr, nullptr, actionCollection());
     hamburgerMenu->setMenuBar(menuBar());
+    hamburgerMenu->setMenuBarAdvertised(true);
     hamburgerMenu->setShowMenuBarAction(showMenuBarAction);
+
+    connect(hamburgerMenu, &KHamburgerMenu::aboutToShowMenu, this, [this]() {
+        auto hamburgerMenu = actionCollection()->action(QStringLiteral("hamburger_menu"));
+
+        auto menu = hamburgerMenu->menu();
+        if (!menu) {
+            menu = new QMenu(this);
+            hamburgerMenu->setMenu(menu);
+        } else {
+            menu->clear();
+        }
+
+        menu->addAction(actionCollection()->action(NEW_ACTION_NAME));
+        menu->addAction(actionCollection()->action(SAVE_ACTION_NAME));
+        menu->addSeparator();
+        menu->addAction(actionCollection()->action(MOVE_UP_ACTION_NAME));
+        menu->addAction(actionCollection()->action(MOVE_DOWN_ACTION_NAME));
+        menu->addAction(actionCollection()->action(CUT_ACTION_NAME));
+        menu->addAction(actionCollection()->action(COPY_ACTION_NAME));
+        menu->addAction(actionCollection()->action(COPY_FILEPATH_ACTION_NAME));
+        menu->addAction(actionCollection()->action(PASTE_ACTION_NAME));
+        menu->addAction(actionCollection()->action(SORT_ACTION_NAME));
+        menu->addAction(actionCollection()->action(OPEN_CONTAINING_FOLDER_ACTION_NAME));
+        menu->addAction(actionCollection()->action(PROPERTIES_ACTION_NAME));
+        menu->addSeparator();
+        menu->addAction(actionCollection()->action(QStringLiteral("restore_system_menu")));
+        menu->addSeparator();
+
+        for (KToolBar *toolbar : toolBars()) {
+            static_cast<KHamburgerMenu *>(hamburgerMenu)->hideActionsOf(toolbar);
+        }
+    });
 
     // File menu
     QAction *action = actionCollection()->addAction(NEW_SUBMENU_ACTION_NAME);
@@ -146,6 +179,7 @@ void KMenuEdit::setupActions()
     actionCollection()->addAction(KStandardActions::Paste);
 
     action = new QAction(i18n("Restore to System Menu"), this);
+    action->setIcon(QIcon::fromTheme(QStringLiteral("edit-reset-symbolic")));
     actionCollection()->addAction(QStringLiteral("restore_system_menu"), action);
     connect(action, &QAction::triggered, this, &KMenuEdit::slotRestoreMenu);
 
