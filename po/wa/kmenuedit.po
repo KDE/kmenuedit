@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-29 00:43+0000\n"
+"POT-Creation-Date: 2025-03-20 00:43+0000\n"
 "PO-Revision-Date: 2010-01-22 14:42+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -154,66 +154,84 @@ msgstr "No&vea cayet..."
 msgid "New S&eparator"
 msgstr "Novea s&eparateu"
 
-#: kmenuedit.cpp:67
+#: kmenuedit.cpp:69
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Copy Location"
+msgstr ""
+
+#: kmenuedit.cpp:72
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "&Open Containing Folder"
+msgstr ""
+
+#: kmenuedit.cpp:75
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Properties"
+msgstr ""
+
+#: kmenuedit.cpp:79
 #, kde-format
 msgid "&Sort"
 msgstr ""
 
-#: kmenuedit.cpp:71
+#: kmenuedit.cpp:83
 #, fuzzy, kde-format
 #| msgid "&Description:"
 msgid "&Sort Selection by Name"
 msgstr "&Discrijhaedje :"
 
-#: kmenuedit.cpp:74
+#: kmenuedit.cpp:86
 #, fuzzy, kde-format
 #| msgid "&Description:"
 msgid "&Sort Selection by Description"
 msgstr "&Discrijhaedje :"
 
-#: kmenuedit.cpp:78
+#: kmenuedit.cpp:90
 #, fuzzy, kde-format
 #| msgid "&Description:"
 msgid "&Sort All by Name"
 msgstr "&Discrijhaedje :"
 
-#: kmenuedit.cpp:81
+#: kmenuedit.cpp:93
 #, fuzzy, kde-format
 #| msgid "&Description:"
 msgid "&Sort All by Description"
 msgstr "&Discrijhaedje :"
 
-#: kmenuedit.cpp:87
+#: kmenuedit.cpp:99
 #, kde-format
 msgid "Move &Up"
 msgstr ""
 
-#: kmenuedit.cpp:90
+#: kmenuedit.cpp:102
 #, kde-format
 msgid "Move &Down"
 msgstr ""
 
-#: kmenuedit.cpp:98
+#: kmenuedit.cpp:110
 #, kde-format
 msgid "Restore to System Menu"
 msgstr "Rimete come li Dressêye sistinme"
 
-#: kmenuedit.cpp:134
+#: kmenuedit.cpp:146
 #, kde-format
 msgid "Search..."
 msgstr ""
 
-#: kmenuedit.cpp:135
+#: kmenuedit.cpp:147
 #, kde-format
 msgid "Search through the list of applications below"
 msgstr ""
 
-#: kmenuedit.cpp:203
+#: kmenuedit.cpp:215
 #, kde-format
 msgid "&Delete"
 msgstr "&Disfacer"
 
-#: kmenuedit.cpp:228
+#: kmenuedit.cpp:240
 #, kde-format
 msgid ""
 "You have made changes to the menu.\n"
@@ -222,7 +240,7 @@ msgstr ""
 "Vos avoz fwait des candjmints al dressêye.\n"
 "Voloz vs schaper les candjmints oudonbén ls abandner?"
 
-#: kmenuedit.cpp:230
+#: kmenuedit.cpp:242
 #, kde-format
 msgid "Save Menu Changes?"
 msgstr "Schaper candjmints del dressêye ?"
@@ -233,14 +251,20 @@ msgstr "Schaper candjmints del dressêye ?"
 msgid "&File"
 msgstr "&Fitchî"
 
+#. i18n: ectx: Menu (file_file_actions)
+#: kmenueditui.rc:14
+#, kde-format
+msgid "File Act&ions"
+msgstr ""
+
 #. i18n: ectx: Menu (edit)
-#: kmenueditui.rc:17
+#: kmenueditui.rc:23
 #, kde-format
 msgid "&Edit"
 msgstr "&Candjî"
 
 #. i18n: ectx: ToolBar (mainToolBar)
-#: kmenueditui.rc:34
+#: kmenueditui.rc:40
 #, kde-format
 msgid "Main Toolbar"
 msgstr "Mwaisse båre ås usteyes"
@@ -328,39 +352,39 @@ msgstr "Tchuzes do coridjaedje ortografike"
 msgid "Show hidden entries"
 msgstr "Mostrer les intrêyes catcheyes"
 
-#: treeview.cpp:177
+#: treeview.cpp:180
 #, kde-format
 msgid " [Hidden]"
 msgstr " [Catchî]"
 
-#: treeview.cpp:1023
+#: treeview.cpp:1037
 #, kde-format
 msgid "New Submenu"
 msgstr "Novele dressêye efant"
 
-#: treeview.cpp:1023
+#: treeview.cpp:1037
 #, kde-format
 msgid "Submenu name:"
 msgstr "No del dressêye efant :"
 
-#: treeview.cpp:1090
+#: treeview.cpp:1104
 #, kde-format
 msgid "New Item"
 msgstr "Novea cayet"
 
-#: treeview.cpp:1090
+#: treeview.cpp:1104
 #, kde-format
 msgid "Item name:"
 msgstr "No do cayet :"
 
-#: treeview.cpp:1721
+#: treeview.cpp:1791
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
 msgstr ""
 "Les candjmints al dressêye n' ont nén savou esse schapés a cåze di ç' "
 "problinme la :"
 
-#: treeview.cpp:1768
+#: treeview.cpp:1838
 #, kde-format
 msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
@@ -369,7 +393,7 @@ msgstr ""
 "Voloz vs rapexhî l' dressêye sistinme ? Asteme : Ça va disfacer totes les "
 "dressêyes fwaites a vosse môde."
 
-#: treeview.cpp:1769
+#: treeview.cpp:1839
 #, fuzzy, kde-format
 #| msgid "Restore to System Menu"
 msgctxt "@title:window"

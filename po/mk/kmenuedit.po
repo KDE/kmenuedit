@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-29 00:43+0000\n"
+"POT-Creation-Date: 2025-03-20 00:43+0000\n"
 "PO-Revision-Date: 2009-06-21 21:06+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -167,66 +167,84 @@ msgstr "Нов &елемент..."
 msgid "New S&eparator"
 msgstr "Нов &раздвојувач"
 
-#: kmenuedit.cpp:67
+#: kmenuedit.cpp:69
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Copy Location"
+msgstr ""
+
+#: kmenuedit.cpp:72
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "&Open Containing Folder"
+msgstr ""
+
+#: kmenuedit.cpp:75
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Properties"
+msgstr ""
+
+#: kmenuedit.cpp:79
 #, kde-format
 msgid "&Sort"
 msgstr ""
 
-#: kmenuedit.cpp:71
+#: kmenuedit.cpp:83
 #, fuzzy, kde-format
 #| msgid "&Description:"
 msgid "&Sort Selection by Name"
 msgstr "&Опис:"
 
-#: kmenuedit.cpp:74
+#: kmenuedit.cpp:86
 #, fuzzy, kde-format
 #| msgid "&Description:"
 msgid "&Sort Selection by Description"
 msgstr "&Опис:"
 
-#: kmenuedit.cpp:78
+#: kmenuedit.cpp:90
 #, fuzzy, kde-format
 #| msgid "&Description:"
 msgid "&Sort All by Name"
 msgstr "&Опис:"
 
-#: kmenuedit.cpp:81
+#: kmenuedit.cpp:93
 #, fuzzy, kde-format
 #| msgid "&Description:"
 msgid "&Sort All by Description"
 msgstr "&Опис:"
 
-#: kmenuedit.cpp:87
+#: kmenuedit.cpp:99
 #, kde-format
 msgid "Move &Up"
 msgstr ""
 
-#: kmenuedit.cpp:90
+#: kmenuedit.cpp:102
 #, kde-format
 msgid "Move &Down"
 msgstr ""
 
-#: kmenuedit.cpp:98
+#: kmenuedit.cpp:110
 #, kde-format
 msgid "Restore to System Menu"
 msgstr "Врати го системското мени"
 
-#: kmenuedit.cpp:134
+#: kmenuedit.cpp:146
 #, kde-format
 msgid "Search..."
 msgstr ""
 
-#: kmenuedit.cpp:135
+#: kmenuedit.cpp:147
 #, kde-format
 msgid "Search through the list of applications below"
 msgstr ""
 
-#: kmenuedit.cpp:203
+#: kmenuedit.cpp:215
 #, kde-format
 msgid "&Delete"
 msgstr "&Избриши"
 
-#: kmenuedit.cpp:228
+#: kmenuedit.cpp:240
 #, kde-format
 msgid ""
 "You have made changes to the menu.\n"
@@ -235,7 +253,7 @@ msgstr ""
 "Направивте измени во менито.\n"
 "Дали сакате да ги зачувате измените или да ги отфрлите?"
 
-#: kmenuedit.cpp:230
+#: kmenuedit.cpp:242
 #, kde-format
 msgid "Save Menu Changes?"
 msgstr "Да зачувам измени во менито?"
@@ -246,14 +264,20 @@ msgstr "Да зачувам измени во менито?"
 msgid "&File"
 msgstr "&Датотека"
 
+#. i18n: ectx: Menu (file_file_actions)
+#: kmenueditui.rc:14
+#, kde-format
+msgid "File Act&ions"
+msgstr ""
+
 #. i18n: ectx: Menu (edit)
-#: kmenueditui.rc:17
+#: kmenueditui.rc:23
 #, kde-format
 msgid "&Edit"
 msgstr "Ур&еди"
 
 #. i18n: ectx: ToolBar (mainToolBar)
-#: kmenueditui.rc:34
+#: kmenueditui.rc:40
 #, kde-format
 msgid "Main Toolbar"
 msgstr "Главен алатник"
@@ -341,37 +365,37 @@ msgstr "Опции за проверка на правопис"
 msgid "Show hidden entries"
 msgstr "Прикажи скриени елементи"
 
-#: treeview.cpp:177
+#: treeview.cpp:180
 #, kde-format
 msgid " [Hidden]"
 msgstr " [Скриен]"
 
-#: treeview.cpp:1023
+#: treeview.cpp:1037
 #, kde-format
 msgid "New Submenu"
 msgstr "Ново подмени"
 
-#: treeview.cpp:1023
+#: treeview.cpp:1037
 #, kde-format
 msgid "Submenu name:"
 msgstr "Име на подменито:"
 
-#: treeview.cpp:1090
+#: treeview.cpp:1104
 #, kde-format
 msgid "New Item"
 msgstr "Нов елемент"
 
-#: treeview.cpp:1090
+#: treeview.cpp:1104
 #, kde-format
 msgid "Item name:"
 msgstr "Име на елементот:"
 
-#: treeview.cpp:1721
+#: treeview.cpp:1791
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
 msgstr "Измените во менито не можеа да се зачуваат поради следниот проблем:"
 
-#: treeview.cpp:1768
+#: treeview.cpp:1838
 #, kde-format
 msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
@@ -380,7 +404,7 @@ msgstr ""
 "Дали сакате да го вратите назад системското мени? Внимание: ова ќе ги "
 "отстрани сите сопствени менија."
 
-#: treeview.cpp:1769
+#: treeview.cpp:1839
 #, fuzzy, kde-format
 #| msgid "Restore to System Menu"
 msgctxt "@title:window"

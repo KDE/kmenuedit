@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-29 00:43+0000\n"
+"POT-Creation-Date: 2025-03-20 00:43+0000\n"
 "PO-Revision-Date: 2024-12-30 17:07+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -166,62 +166,80 @@ msgstr "新增項目(&I)..."
 msgid "New S&eparator"
 msgstr "新增分隔(&E)"
 
-#: kmenuedit.cpp:67
+#: kmenuedit.cpp:69
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Copy Location"
+msgstr ""
+
+#: kmenuedit.cpp:72
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "&Open Containing Folder"
+msgstr ""
+
+#: kmenuedit.cpp:75
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Properties"
+msgstr ""
+
+#: kmenuedit.cpp:79
 #, kde-format
 msgid "&Sort"
 msgstr "排序(&S)"
 
-#: kmenuedit.cpp:71
+#: kmenuedit.cpp:83
 #, kde-format
 msgid "&Sort Selection by Name"
 msgstr "依名稱排序選取項目(&S)"
 
-#: kmenuedit.cpp:74
+#: kmenuedit.cpp:86
 #, kde-format
 msgid "&Sort Selection by Description"
 msgstr "依描述排序選取項目(&S)"
 
-#: kmenuedit.cpp:78
+#: kmenuedit.cpp:90
 #, kde-format
 msgid "&Sort All by Name"
 msgstr "依名稱排序(&S)"
 
-#: kmenuedit.cpp:81
+#: kmenuedit.cpp:93
 #, kde-format
 msgid "&Sort All by Description"
 msgstr "依描述排序(&D)"
 
-#: kmenuedit.cpp:87
+#: kmenuedit.cpp:99
 #, kde-format
 msgid "Move &Up"
 msgstr "上移(&U)"
 
-#: kmenuedit.cpp:90
+#: kmenuedit.cpp:102
 #, kde-format
 msgid "Move &Down"
 msgstr "下移(&D)"
 
-#: kmenuedit.cpp:98
+#: kmenuedit.cpp:110
 #, kde-format
 msgid "Restore to System Menu"
 msgstr "回復為系統選單"
 
-#: kmenuedit.cpp:134
+#: kmenuedit.cpp:146
 #, kde-format
 msgid "Search..."
 msgstr "搜尋…"
 
-#: kmenuedit.cpp:135
+#: kmenuedit.cpp:147
 #, kde-format
 msgid "Search through the list of applications below"
 msgstr "在底下的應用程式列表搜尋"
 
-#: kmenuedit.cpp:203
+#: kmenuedit.cpp:215
 #, kde-format
 msgid "&Delete"
 msgstr "刪除(&D)"
 
-#: kmenuedit.cpp:228
+#: kmenuedit.cpp:240
 #, kde-format
 msgid ""
 "You have made changes to the menu.\n"
@@ -230,7 +248,7 @@ msgstr ""
 "您已經對選單做了變更。\n"
 "您想要儲存變更或是放棄它們？"
 
-#: kmenuedit.cpp:230
+#: kmenuedit.cpp:242
 #, kde-format
 msgid "Save Menu Changes?"
 msgstr "是否儲存選單變更？"
@@ -241,14 +259,20 @@ msgstr "是否儲存選單變更？"
 msgid "&File"
 msgstr "檔案(&F)"
 
+#. i18n: ectx: Menu (file_file_actions)
+#: kmenueditui.rc:14
+#, kde-format
+msgid "File Act&ions"
+msgstr ""
+
 #. i18n: ectx: Menu (edit)
-#: kmenueditui.rc:17
+#: kmenueditui.rc:23
 #, kde-format
 msgid "&Edit"
 msgstr "編輯(&E)"
 
 #. i18n: ectx: ToolBar (mainToolBar)
-#: kmenueditui.rc:34
+#: kmenueditui.rc:40
 #, kde-format
 msgid "Main Toolbar"
 msgstr "主工具列"
@@ -337,44 +361,44 @@ msgstr "拼字檢查選項"
 msgid "Show hidden entries"
 msgstr "顯示隱藏的項目"
 
-#: treeview.cpp:177
+#: treeview.cpp:180
 #, kde-format
 msgid " [Hidden]"
 msgstr " [隱藏]"
 
-#: treeview.cpp:1023
+#: treeview.cpp:1037
 #, kde-format
 msgid "New Submenu"
 msgstr "新增子選單"
 
-#: treeview.cpp:1023
+#: treeview.cpp:1037
 #, kde-format
 msgid "Submenu name:"
 msgstr "子選單名稱:"
 
-#: treeview.cpp:1090
+#: treeview.cpp:1104
 #, kde-format
 msgid "New Item"
 msgstr "新增項目"
 
-#: treeview.cpp:1090
+#: treeview.cpp:1104
 #, kde-format
 msgid "Item name:"
 msgstr "項目名稱:"
 
-#: treeview.cpp:1721
+#: treeview.cpp:1791
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
 msgstr "選單的變更由於下列問題無法儲存："
 
-#: treeview.cpp:1768
+#: treeview.cpp:1838
 #, kde-format
 msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
 "menus."
 msgstr "您要回復系統選單嗎？警告：這將會移除所有的自訂選單。"
 
-#: treeview.cpp:1769
+#: treeview.cpp:1839
 #, kde-format
 msgctxt "@title:window"
 msgid "Restore Menu System"

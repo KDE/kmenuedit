@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-29 00:43+0000\n"
+"POT-Creation-Date: 2025-03-20 00:43+0000\n"
 "PO-Revision-Date: 2009-01-08 20:11+0530\n"
 "Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
 "Language-Team: Bengali INDIA <fedora-trans-bn_IN@redhat.com>\n"
@@ -153,66 +153,84 @@ msgstr "নতুন বস্তু...(&I)"
 msgid "New S&eparator"
 msgstr "নতুন বিভাজন রেখা (&e)"
 
-#: kmenuedit.cpp:67
+#: kmenuedit.cpp:69
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Copy Location"
+msgstr ""
+
+#: kmenuedit.cpp:72
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "&Open Containing Folder"
+msgstr ""
+
+#: kmenuedit.cpp:75
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Properties"
+msgstr ""
+
+#: kmenuedit.cpp:79
 #, kde-format
 msgid "&Sort"
 msgstr ""
 
-#: kmenuedit.cpp:71
+#: kmenuedit.cpp:83
 #, fuzzy, kde-format
 #| msgid "&Description:"
 msgid "&Sort Selection by Name"
 msgstr "বিবরণ: (&D)"
 
-#: kmenuedit.cpp:74
+#: kmenuedit.cpp:86
 #, fuzzy, kde-format
 #| msgid "&Description:"
 msgid "&Sort Selection by Description"
 msgstr "বিবরণ: (&D)"
 
-#: kmenuedit.cpp:78
+#: kmenuedit.cpp:90
 #, fuzzy, kde-format
 #| msgid "&Description:"
 msgid "&Sort All by Name"
 msgstr "বিবরণ: (&D)"
 
-#: kmenuedit.cpp:81
+#: kmenuedit.cpp:93
 #, fuzzy, kde-format
 #| msgid "&Description:"
 msgid "&Sort All by Description"
 msgstr "বিবরণ: (&D)"
 
-#: kmenuedit.cpp:87
+#: kmenuedit.cpp:99
 #, kde-format
 msgid "Move &Up"
 msgstr ""
 
-#: kmenuedit.cpp:90
+#: kmenuedit.cpp:102
 #, kde-format
 msgid "Move &Down"
 msgstr ""
 
-#: kmenuedit.cpp:98
+#: kmenuedit.cpp:110
 #, kde-format
 msgid "Restore to System Menu"
 msgstr "সিস্টেম মেনুর মধ্যে পুনরায় স্থাপন করা হবে"
 
-#: kmenuedit.cpp:134
+#: kmenuedit.cpp:146
 #, kde-format
 msgid "Search..."
 msgstr ""
 
-#: kmenuedit.cpp:135
+#: kmenuedit.cpp:147
 #, kde-format
 msgid "Search through the list of applications below"
 msgstr ""
 
-#: kmenuedit.cpp:203
+#: kmenuedit.cpp:215
 #, kde-format
 msgid "&Delete"
 msgstr "মুছে ফেলুন (&D)"
 
-#: kmenuedit.cpp:228
+#: kmenuedit.cpp:240
 #, kde-format
 msgid ""
 "You have made changes to the menu.\n"
@@ -221,7 +239,7 @@ msgstr ""
 "মেনুর মধ্যে কিছু পরিবর্তন করা হয়েছে।\n"
 "পরিবর্তনগুলি সংরক্ষণ করা হবে নাকি বর্জন করা হবে?"
 
-#: kmenuedit.cpp:230
+#: kmenuedit.cpp:242
 #, kde-format
 msgid "Save Menu Changes?"
 msgstr "মেনুর পরিবর্তন সংরক্ষণ করা হবে কি?"
@@ -232,14 +250,20 @@ msgstr "মেনুর পরিবর্তন সংরক্ষণ করা
 msgid "&File"
 msgstr "ফাইল (&F)"
 
+#. i18n: ectx: Menu (file_file_actions)
+#: kmenueditui.rc:14
+#, kde-format
+msgid "File Act&ions"
+msgstr ""
+
 #. i18n: ectx: Menu (edit)
-#: kmenueditui.rc:17
+#: kmenueditui.rc:23
 #, kde-format
 msgid "&Edit"
 msgstr "সম্পাদনা (&E)"
 
 #. i18n: ectx: ToolBar (mainToolBar)
-#: kmenueditui.rc:34
+#: kmenueditui.rc:40
 #, kde-format
 msgid "Main Toolbar"
 msgstr "প্রধান টুল-বার"
@@ -327,37 +351,37 @@ msgstr "বানান পরীক্ষণ সংক্রান্ত বি
 msgid "Show hidden entries"
 msgstr "আড়াল করা এনট্রি প্রদর্শন করা হবে"
 
-#: treeview.cpp:177
+#: treeview.cpp:180
 #, kde-format
 msgid " [Hidden]"
 msgstr " [Hidden]"
 
-#: treeview.cpp:1023
+#: treeview.cpp:1037
 #, kde-format
 msgid "New Submenu"
 msgstr "নতুন সাব-মেনু"
 
-#: treeview.cpp:1023
+#: treeview.cpp:1037
 #, kde-format
 msgid "Submenu name:"
 msgstr "সাব-মেনুর নাম:"
 
-#: treeview.cpp:1090
+#: treeview.cpp:1104
 #, kde-format
 msgid "New Item"
 msgstr "নতুন বস্তু"
 
-#: treeview.cpp:1090
+#: treeview.cpp:1104
 #, kde-format
 msgid "Item name:"
 msgstr "বস্তুর নাম:"
 
-#: treeview.cpp:1721
+#: treeview.cpp:1791
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
 msgstr "নিম্নলিখিত কারণে, মেনুর মধ্যে করা পরিবর্তনগুলি সংরক্ষণ করা সম্ভব হয়নি:"
 
-#: treeview.cpp:1768
+#: treeview.cpp:1838
 #, kde-format
 msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
@@ -366,7 +390,7 @@ msgstr ""
 "সিস্টেম মেনু পুনরুদ্ধার করা হবে কি? সতর্কবার্তা: এর ফলে, স্বনির্ধারিত সকল মেনু মুছে "
 "ফেলা হবে।"
 
-#: treeview.cpp:1769
+#: treeview.cpp:1839
 #, fuzzy, kde-format
 #| msgid "Restore to System Menu"
 msgctxt "@title:window"

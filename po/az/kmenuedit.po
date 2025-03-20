@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-29 00:43+0000\n"
+"POT-Creation-Date: 2025-03-20 00:43+0000\n"
 "PO-Revision-Date: 2023-02-19 14:27+0400\n"
 "Last-Translator: Kheyyam <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
@@ -168,66 +168,84 @@ msgstr "Yeni &element..."
 msgid "New S&eparator"
 msgstr "Yeni &ayırıcı"
 
-#: kmenuedit.cpp:67
+#: kmenuedit.cpp:69
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Copy Location"
+msgstr ""
+
+#: kmenuedit.cpp:72
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "&Open Containing Folder"
+msgstr ""
+
+#: kmenuedit.cpp:75
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Properties"
+msgstr ""
+
+#: kmenuedit.cpp:79
 #, kde-format
 msgid "&Sort"
 msgstr "Çeşi&dləyin"
 
-#: kmenuedit.cpp:71
+#: kmenuedit.cpp:83
 #, fuzzy, kde-format
 #| msgid "&Sort selection by Name"
 msgid "&Sort Selection by Name"
 msgstr "&Seçilmişi adına görə çeşidləyin"
 
-#: kmenuedit.cpp:74
+#: kmenuedit.cpp:86
 #, fuzzy, kde-format
 #| msgid "&Sort selection by Description"
 msgid "&Sort Selection by Description"
 msgstr "&Seçilmişi təsvirinə görə çeşidləyin"
 
-#: kmenuedit.cpp:78
+#: kmenuedit.cpp:90
 #, fuzzy, kde-format
 #| msgid "&Sort all by Name"
 msgid "&Sort All by Name"
 msgstr "&Hamı&sını adına görə çeşidləyin"
 
-#: kmenuedit.cpp:81
+#: kmenuedit.cpp:93
 #, fuzzy, kde-format
 #| msgid "&Sort all by Description"
 msgid "&Sort All by Description"
 msgstr "Hamısı&nı təsvirinə görə çeşidləyin"
 
-#: kmenuedit.cpp:87
+#: kmenuedit.cpp:99
 #, kde-format
 msgid "Move &Up"
 msgstr "&Yuxarı köçürün"
 
-#: kmenuedit.cpp:90
+#: kmenuedit.cpp:102
 #, kde-format
 msgid "Move &Down"
 msgstr "&Aşağı köçürün"
 
-#: kmenuedit.cpp:98
+#: kmenuedit.cpp:110
 #, kde-format
 msgid "Restore to System Menu"
 msgstr "Sistem menyusuna bərpa edin"
 
-#: kmenuedit.cpp:134
+#: kmenuedit.cpp:146
 #, kde-format
 msgid "Search..."
 msgstr "Axtarış..."
 
-#: kmenuedit.cpp:135
+#: kmenuedit.cpp:147
 #, kde-format
 msgid "Search through the list of applications below"
 msgstr "Aşağıdakı tətbiqlərin siyahısında axtarın"
 
-#: kmenuedit.cpp:203
+#: kmenuedit.cpp:215
 #, kde-format
 msgid "&Delete"
 msgstr "&Silin"
 
-#: kmenuedit.cpp:228
+#: kmenuedit.cpp:240
 #, kde-format
 msgid ""
 "You have made changes to the menu.\n"
@@ -236,7 +254,7 @@ msgstr ""
 "Siz menyuya dəyişiklik etmisiniz.\n"
 "Dəyişiklikləri saxlamaq yoxsa ləğv etmək istəyirsiniz?"
 
-#: kmenuedit.cpp:230
+#: kmenuedit.cpp:242
 #, kde-format
 msgid "Save Menu Changes?"
 msgstr "Menyudakı dəyişiklikləri saxlanılsın?"
@@ -247,14 +265,20 @@ msgstr "Menyudakı dəyişiklikləri saxlanılsın?"
 msgid "&File"
 msgstr "&Fayl"
 
+#. i18n: ectx: Menu (file_file_actions)
+#: kmenueditui.rc:14
+#, kde-format
+msgid "File Act&ions"
+msgstr ""
+
 #. i18n: ectx: Menu (edit)
-#: kmenueditui.rc:17
+#: kmenueditui.rc:23
 #, kde-format
 msgid "&Edit"
 msgstr "&Düzəliş edin"
 
 #. i18n: ectx: ToolBar (mainToolBar)
-#: kmenueditui.rc:34
+#: kmenueditui.rc:40
 #, kde-format
 msgid "Main Toolbar"
 msgstr "Əsas alətlər paneli"
@@ -341,38 +365,38 @@ msgstr "Orfoqrafiya yoxlaması seçimləri"
 msgid "Show hidden entries"
 msgstr "Gizli girişlər göstərilsin"
 
-#: treeview.cpp:177
+#: treeview.cpp:180
 #, kde-format
 msgid " [Hidden]"
 msgstr " [Gizli]"
 
-#: treeview.cpp:1023
+#: treeview.cpp:1037
 #, kde-format
 msgid "New Submenu"
 msgstr "Yeni alt menyu"
 
-#: treeview.cpp:1023
+#: treeview.cpp:1037
 #, kde-format
 msgid "Submenu name:"
 msgstr "Alt menyunun adı:"
 
-#: treeview.cpp:1090
+#: treeview.cpp:1104
 #, kde-format
 msgid "New Item"
 msgstr "Yeni element"
 
-#: treeview.cpp:1090
+#: treeview.cpp:1104
 #, kde-format
 msgid "Item name:"
 msgstr "Elementin adı"
 
-#: treeview.cpp:1721
+#: treeview.cpp:1791
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
 msgstr ""
 "Menyu dəyişiklikləri aşağıdakı problemlər səbəbindən saxlanıla bilmədi:"
 
-#: treeview.cpp:1768
+#: treeview.cpp:1838
 #, kde-format
 msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
@@ -381,7 +405,7 @@ msgstr ""
 "Sistem menyusunu bərpa etmək istəyirsiniz? Xəbərsarlıq: Bunla istifadəçinin "
 "yaratdığı bütün menyular silinəcəkdir."
 
-#: treeview.cpp:1769
+#: treeview.cpp:1839
 #, kde-format
 msgctxt "@title:window"
 msgid "Restore Menu System"

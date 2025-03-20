@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KDE Malayalam\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-29 00:43+0000\n"
+"POT-Creation-Date: 2025-03-20 00:43+0000\n"
 "PO-Revision-Date: 2019-12-12 22:20+0000\n"
 "Last-Translator: Vivek KJ Pazhedath <vivekkj2004@gmail.com>\n"
 "Language-Team: Malayalam <Swathanthra|സ്വതന്ത്ര Malayalam|മലയാളം Computing|"
@@ -164,69 +164,87 @@ msgstr "പുതിയ ഇനം"
 msgid "New S&eparator"
 msgstr "പുതിയ സംയോജനഘടകം"
 
-#: kmenuedit.cpp:67
+#: kmenuedit.cpp:69
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Copy Location"
+msgstr ""
+
+#: kmenuedit.cpp:72
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "&Open Containing Folder"
+msgstr ""
+
+#: kmenuedit.cpp:75
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Properties"
+msgstr ""
+
+#: kmenuedit.cpp:79
 #, kde-format
 msgid "&Sort"
 msgstr ""
 
-#: kmenuedit.cpp:71
+#: kmenuedit.cpp:83
 #, fuzzy, kde-format
 msgid "&Sort Selection by Name"
 msgstr "വിവരണം"
 
-#: kmenuedit.cpp:74
+#: kmenuedit.cpp:86
 #, fuzzy, kde-format
 msgid "&Sort Selection by Description"
 msgstr "വിവരണം"
 
-#: kmenuedit.cpp:78
+#: kmenuedit.cpp:90
 #, fuzzy, kde-format
 msgid "&Sort All by Name"
 msgstr "വിവരണം"
 
-#: kmenuedit.cpp:81
+#: kmenuedit.cpp:93
 #, fuzzy, kde-format
 msgid "&Sort All by Description"
 msgstr "വിവരണം"
 
-#: kmenuedit.cpp:87
+#: kmenuedit.cpp:99
 #, kde-format
 msgid "Move &Up"
 msgstr ""
 
-#: kmenuedit.cpp:90
+#: kmenuedit.cpp:102
 #, kde-format
 msgid "Move &Down"
 msgstr ""
 
-#: kmenuedit.cpp:98
+#: kmenuedit.cpp:110
 #, kde-format
 msgid "Restore to System Menu"
 msgstr "സിസ്റ്റം മെനുവിലേക്ക് തിരിച്ച് കൊണ്ടുവരിക"
 
-#: kmenuedit.cpp:134
+#: kmenuedit.cpp:146
 #, kde-format
 msgid "Search..."
 msgstr "തിരയുക..."
 
-#: kmenuedit.cpp:135
+#: kmenuedit.cpp:147
 #, kde-format
 msgid "Search through the list of applications below"
 msgstr ""
 
-#: kmenuedit.cpp:203
+#: kmenuedit.cpp:215
 #, kde-format
 msgid "&Delete"
 msgstr "നീക്കം ചെയ്യുക"
 
-#: kmenuedit.cpp:228
+#: kmenuedit.cpp:240
 #, kde-format
 msgid ""
 "You have made changes to the menu.\n"
 "Do you want to save the changes or discard them?"
 msgstr "താങ്കള്‍ മെനുവില്‍ മാറ്റം വരുത്തിയിരിക്കുന്നു. മാറ്റങ്ങള്‍ സൂക്ഷിക്കണോ അതോ കളയണോ ?"
 
-#: kmenuedit.cpp:230
+#: kmenuedit.cpp:242
 #, kde-format
 msgid "Save Menu Changes?"
 msgstr "മെനുവിലെ മാറ്റങ്ങള്‍ സൂക്ഷിക്കണോ ?"
@@ -237,14 +255,20 @@ msgstr "മെനുവിലെ മാറ്റങ്ങള്‍ സൂക്�
 msgid "&File"
 msgstr "&ഫയല്‍"
 
+#. i18n: ectx: Menu (file_file_actions)
+#: kmenueditui.rc:14
+#, kde-format
+msgid "File Act&ions"
+msgstr ""
+
 #. i18n: ectx: Menu (edit)
-#: kmenueditui.rc:17
+#: kmenueditui.rc:23
 #, kde-format
 msgid "&Edit"
 msgstr "&ചിട്ടപ്പെടുത്തുക"
 
 #. i18n: ectx: ToolBar (mainToolBar)
-#: kmenueditui.rc:34
+#: kmenueditui.rc:40
 #, kde-format
 msgid "Main Toolbar"
 msgstr "പ്രധാന ഉപകരണപ്പട്ട"
@@ -331,37 +355,37 @@ msgstr "അക്ഷരത്തെറ്റ് പരിശോധിക്ക�
 msgid "Show hidden entries"
 msgstr "മറച്ചുവച്ച ഇനങ്ങള്‍ കാണിക്കുക"
 
-#: treeview.cpp:177
+#: treeview.cpp:180
 #, kde-format
 msgid " [Hidden]"
 msgstr "[മറച്ചുവച്ചത്]"
 
-#: treeview.cpp:1023
+#: treeview.cpp:1037
 #, kde-format
 msgid "New Submenu"
 msgstr "പുതിയ ഉപമെനു"
 
-#: treeview.cpp:1023
+#: treeview.cpp:1037
 #, kde-format
 msgid "Submenu name:"
 msgstr "ഉപമെനുവിന്റെ പേരു്"
 
-#: treeview.cpp:1090
+#: treeview.cpp:1104
 #, kde-format
 msgid "New Item"
 msgstr "പുതിയ ഇനം"
 
-#: treeview.cpp:1090
+#: treeview.cpp:1104
 #, kde-format
 msgid "Item name:"
 msgstr "ഇനത്തിന്റെ പേരു്"
 
-#: treeview.cpp:1721
+#: treeview.cpp:1791
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
 msgstr "മെനുവിലെ മാറ്റങ്ങള്‍ ഇനി പറയുന്ന കാരണം മൂലം സൂക്ഷിക്കാന്‍ പറ്റിയില്ല"
 
-#: treeview.cpp:1768
+#: treeview.cpp:1838
 #, kde-format
 msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
@@ -369,7 +393,7 @@ msgid ""
 msgstr ""
 "സിസ്റ്റം മെനു തിരിച്ചുകൊണ്ടു വരണോ ? മുന്നറിയിപ്പ് : നിങ്ങള്‍ ഉണ്ടാക്കിയ എല്ലാ മെനുവും നഷ്ടപ്പെടും"
 
-#: treeview.cpp:1769
+#: treeview.cpp:1839
 #, fuzzy, kde-format
 #| msgid "Restore to System Menu"
 msgctxt "@title:window"
