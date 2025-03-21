@@ -6,13 +6,13 @@
 # Eugene Onischenko <oneugene@ukr.net>, 2002, 2004, 2005.
 # Andriy Rysin <rysin@kde.org>, 2002, 2003, 2004.
 # Ivan Petrouchtchak <fr.ivan@ukrainian-orthodox.org>, 2006, 2008.
-# Yuri Chornoivan <yurchor@ukr.net>, 2008, 2009, 2010, 2011, 2013, 2019, 2021, 2022, 2024.
+# Yuri Chornoivan <yurchor@ukr.net>, 2008, 2009, 2010, 2011, 2013, 2019, 2021, 2022, 2024, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-20 00:43+0000\n"
-"PO-Revision-Date: 2024-12-29 12:52+0200\n"
+"PO-Revision-Date: 2025-03-20 10:16+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -174,19 +174,19 @@ msgstr "Новий &роздільник"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Location"
-msgstr ""
+msgstr "Копіювати адресу"
 
 #: kmenuedit.cpp:72
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "&Open Containing Folder"
-msgstr ""
+msgstr "Ві&дкрити теку, яка містить дані"
 
 #: kmenuedit.cpp:75
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Properties"
-msgstr ""
+msgstr "Властивості"
 
 #: kmenuedit.cpp:79
 #, kde-format
@@ -267,7 +267,7 @@ msgstr "&Файл"
 #: kmenueditui.rc:14
 #, kde-format
 msgid "File Act&ions"
-msgstr ""
+msgstr "Д&ії з файлами"
 
 #. i18n: ectx: Menu (edit)
 #: kmenueditui.rc:23

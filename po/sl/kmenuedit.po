@@ -1,7 +1,7 @@
 # Translation of kmenuedit.po to Slovenian
 # KMENUEDIT translation to Slovenian language
 # Copyright (C) 2001, 2003, 2004, 2005 Free Software Foundation, Inc.
-# $Id: kmenuedit.po 1705481 2025-03-20 01:21:46Z scripty $
+# $Id: kmenuedit.po 1705557 2025-03-21 01:21:34Z scripty $
 # $Source$
 #
 # Roman Maurer <roman.maurer@amis.net>, 2000.
@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-20 00:43+0000\n"
-"PO-Revision-Date: 2024-12-29 06:40+0100\n"
+"PO-Revision-Date: 2025-03-20 07:30+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -179,19 +179,19 @@ msgstr "Nov ločilnik"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Location"
-msgstr ""
+msgstr "Kopiraj lokacijo"
 
 #: kmenuedit.cpp:72
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "&Open Containing Folder"
-msgstr ""
+msgstr "&Odpri vsebujočo mapo"
 
 #: kmenuedit.cpp:75
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Properties"
-msgstr ""
+msgstr "Lastnosti"
 
 #: kmenuedit.cpp:79
 #, kde-format
@@ -272,7 +272,7 @@ msgstr "Datoteka"
 #: kmenueditui.rc:14
 #, kde-format
 msgid "File Act&ions"
-msgstr ""
+msgstr "Datotečna dejanja"
 
 #. i18n: ectx: Menu (edit)
 #: kmenueditui.rc:23

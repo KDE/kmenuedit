@@ -11,13 +11,13 @@
 #
 # Diego Iastrubni <elcuco@kde.org>, 2005, 2008, 2012, 2013.
 # Elkana Bardugo <ttv200@gmail.com>, 2017. #zanata
-# SPDX-FileCopyrightText: 2023, 2024 Yaron Shahrabani <sh.yaron@gmail.com>
+# SPDX-FileCopyrightText: 2023, 2024, 2025 Yaron Shahrabani <sh.yaron@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-20 00:43+0000\n"
-"PO-Revision-Date: 2024-12-29 08:40+0200\n"
+"PO-Revision-Date: 2025-03-20 20:31+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -26,7 +26,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 24.12.0\n"
+"X-Generator: Lokalize 24.12.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -178,19 +178,19 @@ msgstr "מ&פריד חדש"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Location"
-msgstr ""
+msgstr "העתקת מקום"
 
 #: kmenuedit.cpp:72
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "&Open Containing Folder"
-msgstr ""
+msgstr "פתיחת תיקייה מ&כילה"
 
 #: kmenuedit.cpp:75
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Properties"
-msgstr ""
+msgstr "מאפיינים"
 
 #: kmenuedit.cpp:79
 #, kde-format
@@ -271,7 +271,7 @@ msgstr "&קובץ"
 #: kmenueditui.rc:14
 #, kde-format
 msgid "File Act&ions"
-msgstr ""
+msgstr "&פעולות קבצים"
 
 #. i18n: ectx: Menu (edit)
 #: kmenueditui.rc:23

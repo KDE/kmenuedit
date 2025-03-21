@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-20 00:43+0000\n"
-"PO-Revision-Date: 2024-12-29 03:52+0100\n"
+"PO-Revision-Date: 2025-03-20 03:31+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -169,19 +169,19 @@ msgstr "ახალი &გამყოფი"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Location"
-msgstr ""
+msgstr "მდებარეობის კოპირება"
 
 #: kmenuedit.cpp:72
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "&Open Containing Folder"
-msgstr ""
+msgstr "შემცველი საქაღალდის &გახსნა"
 
 #: kmenuedit.cpp:75
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Properties"
-msgstr ""
+msgstr "თვისებები"
 
 #: kmenuedit.cpp:79
 #, kde-format
@@ -262,7 +262,7 @@ msgstr "&ფაილი"
 #: kmenueditui.rc:14
 #, kde-format
 msgid "File Act&ions"
-msgstr ""
+msgstr "ფაილ&ის ქმედებები"
 
 #. i18n: ectx: Menu (edit)
 #: kmenueditui.rc:23

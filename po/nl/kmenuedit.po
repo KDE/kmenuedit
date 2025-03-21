@@ -14,27 +14,27 @@
 # Tom Albers <tomalbers@kde.nl>, 2004.
 # Bram Schoenmakers <bramschoenmakers@kde.nl>, 2004.
 # Kristof Bal <kristof.bal@gmail.com>, 2008.
-# SPDX-FileCopyrightText: 2009, 2024 Freek de Kruijf <f.de.kruijf@hetnet.nl>
+# SPDX-FileCopyrightText: 2009, 2024, 2025 Freek de Kruijf <f.de.kruijf@hetnet.nl>
 # Freek de Kruijf <freekdekruijf@kde.nl>, 2010, 2013, 2019, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-20 00:43+0000\n"
-"PO-Revision-Date: 2024-12-29 13:10+0100\n"
+"PO-Revision-Date: 2025-03-20 13:02+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 24.12.0\n"
+"X-Generator: Lokalize 24.12.3\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Otto Bruggeman,Rinse de Vries,Chris Hooijer,Freek de Kruijf - t/m 2024"
+msgstr "Otto Bruggeman,Rinse de Vries,Chris Hooijer,Freek de Kruijf - t/m 2025"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
@@ -183,19 +183,19 @@ msgstr "Nieuwe &scheiding"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Location"
-msgstr ""
+msgstr "Locatie kopiëren"
 
 #: kmenuedit.cpp:72
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "&Open Containing Folder"
-msgstr ""
+msgstr "Map &openen waarin het zich bevindt"
 
 #: kmenuedit.cpp:75
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Properties"
-msgstr ""
+msgstr "Eigenschappen"
 
 #: kmenuedit.cpp:79
 #, kde-format
@@ -276,7 +276,7 @@ msgstr "&Bestand"
 #: kmenueditui.rc:14
 #, kde-format
 msgid "File Act&ions"
-msgstr ""
+msgstr "Bestandsact&ies"
 
 #. i18n: ectx: Menu (edit)
 #: kmenueditui.rc:23
