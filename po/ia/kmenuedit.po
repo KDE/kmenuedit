@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-03-20 00:43+0000\n"
+"POT-Creation-Date: 2025-03-22 00:43+0000\n"
 "PO-Revision-Date: 2025-03-20 18:37+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
@@ -150,95 +150,111 @@ msgstr "Avantiate"
 msgid "Launch %1"
 msgstr "Lancea %1"
 
-#: kmenuedit.cpp:55
+#: kmenuedit.cpp:67
+#, kde-format
+msgid ""
+"This will hide the menu bar completely. You can show it again by typing %1."
+msgstr ""
+
+#: kmenuedit.cpp:70
+#, kde-format
+msgid "Hide menu bar"
+msgstr ""
+
+#: kmenuedit.cpp:118
 #, kde-format
 msgid "&New Submenu..."
 msgstr "&Nove Submenu ..."
 
-#: kmenuedit.cpp:59
+#: kmenuedit.cpp:122
 #, kde-format
 msgid "New &Item..."
 msgstr "Nove Term&ino..."
 
-#: kmenuedit.cpp:63
+#: kmenuedit.cpp:126
 #, kde-format
 msgid "New S&eparator"
 msgstr "Nove S&eparator"
 
-#: kmenuedit.cpp:69
+#: kmenuedit.cpp:132
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Location"
 msgstr "!"
 
-#: kmenuedit.cpp:72
+#: kmenuedit.cpp:135
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "&Open Containing Folder"
 msgstr "&Aperi dossier continente"
 
-#: kmenuedit.cpp:75
+#: kmenuedit.cpp:138
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Properties"
 msgstr "Proprietates"
 
-#: kmenuedit.cpp:79
+#: kmenuedit.cpp:142
+#, kde-format
+msgid "&New"
+msgstr ""
+
+#: kmenuedit.cpp:150
 #, kde-format
 msgid "&Sort"
 msgstr "&Ordina"
 
-#: kmenuedit.cpp:83
+#: kmenuedit.cpp:154
 #, kde-format
 msgid "&Sort Selection by Name"
 msgstr "&Ordina selection per nomine"
 
-#: kmenuedit.cpp:86
+#: kmenuedit.cpp:157
 #, kde-format
 msgid "&Sort Selection by Description"
 msgstr "&Ordina selection per Description"
 
-#: kmenuedit.cpp:90
+#: kmenuedit.cpp:161
 #, kde-format
 msgid "&Sort All by Name"
 msgstr "&Ordina toto per Nomine"
 
-#: kmenuedit.cpp:93
+#: kmenuedit.cpp:164
 #, kde-format
 msgid "&Sort All by Description"
 msgstr "&Ordina toto per Description"
 
-#: kmenuedit.cpp:99
+#: kmenuedit.cpp:170
 #, kde-format
 msgid "Move &Up"
 msgstr "Move in &alto"
 
-#: kmenuedit.cpp:102
+#: kmenuedit.cpp:173
 #, kde-format
 msgid "Move &Down"
 msgstr "Move a &basso"
 
-#: kmenuedit.cpp:110
+#: kmenuedit.cpp:181
 #, kde-format
 msgid "Restore to System Menu"
 msgstr "Restabili le menu de systema"
 
-#: kmenuedit.cpp:146
+#: kmenuedit.cpp:218
 #, kde-format
 msgid "Search..."
 msgstr "Cerca..."
 
-#: kmenuedit.cpp:147
+#: kmenuedit.cpp:219
 #, kde-format
 msgid "Search through the list of applications below"
 msgstr "Cerca per lelista de applicationes a basso"
 
-#: kmenuedit.cpp:215
+#: kmenuedit.cpp:287
 #, kde-format
 msgid "&Delete"
 msgstr "&Dele"
 
-#: kmenuedit.cpp:240
+#: kmenuedit.cpp:312
 #, kde-format
 msgid ""
 "You have made changes to the menu.\n"
@@ -247,7 +263,7 @@ msgstr ""
 "Tu faceva modificationes al menu.\n"
 "Tu vole salvar le modificationes  o refusar los?"
 
-#: kmenuedit.cpp:242
+#: kmenuedit.cpp:314
 #, kde-format
 msgid "Save Menu Changes?"
 msgstr "Salva modificationes de menu?"
@@ -259,22 +275,28 @@ msgid "&File"
 msgstr "&File"
 
 #. i18n: ectx: Menu (file_file_actions)
-#: kmenueditui.rc:14
+#: kmenueditui.rc:15
 #, kde-format
 msgid "File Act&ions"
 msgstr "Act&iones de File"
 
 #. i18n: ectx: Menu (edit)
-#: kmenueditui.rc:23
+#: kmenueditui.rc:25
 #, kde-format
 msgid "&Edit"
 msgstr "&Edita"
 
 #. i18n: ectx: ToolBar (mainToolBar)
-#: kmenueditui.rc:40
+#: kmenueditui.rc:42
 #, kde-format
 msgid "Main Toolbar"
 msgstr "Barra de instrumento principal"
+
+#. i18n: ectx: ToolBar (hamburgerBar)
+#: kmenueditui.rc:52
+#, kde-format
+msgid "Hamburger Menu Toolbar"
+msgstr ""
 
 #: main.cpp:29 main.cpp:39 main.cpp:53
 #, kde-format

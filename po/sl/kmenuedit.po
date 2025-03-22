@@ -1,7 +1,7 @@
 # Translation of kmenuedit.po to Slovenian
 # KMENUEDIT translation to Slovenian language
 # Copyright (C) 2001, 2003, 2004, 2005 Free Software Foundation, Inc.
-# $Id: kmenuedit.po 1705557 2025-03-21 01:21:34Z scripty $
+# $Id: kmenuedit.po 1705603 2025-03-22 01:21:00Z scripty $
 # $Source$
 #
 # Roman Maurer <roman.maurer@amis.net>, 2000.
@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-03-20 00:43+0000\n"
+"POT-Creation-Date: 2025-03-22 00:43+0000\n"
 "PO-Revision-Date: 2025-03-20 07:30+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -160,95 +160,111 @@ msgstr "Napredno"
 msgid "Launch %1"
 msgstr "Zaženi %1"
 
-#: kmenuedit.cpp:55
+#: kmenuedit.cpp:67
+#, kde-format
+msgid ""
+"This will hide the menu bar completely. You can show it again by typing %1."
+msgstr ""
+
+#: kmenuedit.cpp:70
+#, kde-format
+msgid "Hide menu bar"
+msgstr ""
+
+#: kmenuedit.cpp:118
 #, kde-format
 msgid "&New Submenu..."
 msgstr "&Nov podmeni..."
 
-#: kmenuedit.cpp:59
+#: kmenuedit.cpp:122
 #, kde-format
 msgid "New &Item..."
 msgstr "Nov predmet..."
 
-#: kmenuedit.cpp:63
+#: kmenuedit.cpp:126
 #, kde-format
 msgid "New S&eparator"
 msgstr "Nov ločilnik"
 
-#: kmenuedit.cpp:69
+#: kmenuedit.cpp:132
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Location"
 msgstr "Kopiraj lokacijo"
 
-#: kmenuedit.cpp:72
+#: kmenuedit.cpp:135
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "&Open Containing Folder"
 msgstr "&Odpri vsebujočo mapo"
 
-#: kmenuedit.cpp:75
+#: kmenuedit.cpp:138
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Properties"
 msgstr "Lastnosti"
 
-#: kmenuedit.cpp:79
+#: kmenuedit.cpp:142
+#, kde-format
+msgid "&New"
+msgstr ""
+
+#: kmenuedit.cpp:150
 #, kde-format
 msgid "&Sort"
 msgstr "Razvr&sti"
 
-#: kmenuedit.cpp:83
+#: kmenuedit.cpp:154
 #, kde-format
 msgid "&Sort Selection by Name"
 msgstr "Razvr&sti izbor po imenu"
 
-#: kmenuedit.cpp:86
+#: kmenuedit.cpp:157
 #, kde-format
 msgid "&Sort Selection by Description"
 msgstr "Razvr&sti izbor po opisu"
 
-#: kmenuedit.cpp:90
+#: kmenuedit.cpp:161
 #, kde-format
 msgid "&Sort All by Name"
 msgstr "Razvr&sti vse po imenu"
 
-#: kmenuedit.cpp:93
+#: kmenuedit.cpp:164
 #, kde-format
 msgid "&Sort All by Description"
 msgstr "Razvr&sti vse po opisu"
 
-#: kmenuedit.cpp:99
+#: kmenuedit.cpp:170
 #, kde-format
 msgid "Move &Up"
 msgstr "Premakni gor"
 
-#: kmenuedit.cpp:102
+#: kmenuedit.cpp:173
 #, kde-format
 msgid "Move &Down"
 msgstr "Premakni &dol"
 
-#: kmenuedit.cpp:110
+#: kmenuedit.cpp:181
 #, kde-format
 msgid "Restore to System Menu"
 msgstr "Obnovi sistemski meni"
 
-#: kmenuedit.cpp:146
+#: kmenuedit.cpp:218
 #, kde-format
 msgid "Search..."
 msgstr "Išči..."
 
-#: kmenuedit.cpp:147
+#: kmenuedit.cpp:219
 #, kde-format
 msgid "Search through the list of applications below"
 msgstr "Preišči spodnji seznam programov"
 
-#: kmenuedit.cpp:215
+#: kmenuedit.cpp:287
 #, kde-format
 msgid "&Delete"
 msgstr "Izbriši"
 
-#: kmenuedit.cpp:240
+#: kmenuedit.cpp:312
 #, kde-format
 msgid ""
 "You have made changes to the menu.\n"
@@ -257,7 +273,7 @@ msgstr ""
 "Opravili ste spremembe v meniju.\n"
 "Ali bi jih radi shranili ali zavrgli?"
 
-#: kmenuedit.cpp:242
+#: kmenuedit.cpp:314
 #, kde-format
 msgid "Save Menu Changes?"
 msgstr "Shranim spremembe menija?"
@@ -269,22 +285,28 @@ msgid "&File"
 msgstr "Datoteka"
 
 #. i18n: ectx: Menu (file_file_actions)
-#: kmenueditui.rc:14
+#: kmenueditui.rc:15
 #, kde-format
 msgid "File Act&ions"
 msgstr "Datotečna dejanja"
 
 #. i18n: ectx: Menu (edit)
-#: kmenueditui.rc:23
+#: kmenueditui.rc:25
 #, kde-format
 msgid "&Edit"
 msgstr "Ur&edi"
 
 #. i18n: ectx: ToolBar (mainToolBar)
-#: kmenueditui.rc:40
+#: kmenueditui.rc:42
 #, kde-format
 msgid "Main Toolbar"
 msgstr "Glavna orodna vrstica"
+
+#. i18n: ectx: ToolBar (hamburgerBar)
+#: kmenueditui.rc:52
+#, kde-format
+msgid "Hamburger Menu Toolbar"
+msgstr ""
 
 #: main.cpp:29 main.cpp:39 main.cpp:53
 #, kde-format

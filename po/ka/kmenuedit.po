@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-03-20 00:43+0000\n"
+"POT-Creation-Date: 2025-03-22 00:43+0000\n"
 "PO-Revision-Date: 2025-03-20 03:31+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -150,95 +150,111 @@ msgstr "დამატებით"
 msgid "Launch %1"
 msgstr "%1-ს გაშვება"
 
-#: kmenuedit.cpp:55
+#: kmenuedit.cpp:67
+#, kde-format
+msgid ""
+"This will hide the menu bar completely. You can show it again by typing %1."
+msgstr ""
+
+#: kmenuedit.cpp:70
+#, kde-format
+msgid "Hide menu bar"
+msgstr ""
+
+#: kmenuedit.cpp:118
 #, kde-format
 msgid "&New Submenu..."
 msgstr "&ახალი ქვემენიუ..."
 
-#: kmenuedit.cpp:59
+#: kmenuedit.cpp:122
 #, kde-format
 msgid "New &Item..."
 msgstr "&ახალი ელემენტი..."
 
-#: kmenuedit.cpp:63
+#: kmenuedit.cpp:126
 #, kde-format
 msgid "New S&eparator"
 msgstr "ახალი &გამყოფი"
 
-#: kmenuedit.cpp:69
+#: kmenuedit.cpp:132
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Location"
 msgstr "მდებარეობის კოპირება"
 
-#: kmenuedit.cpp:72
+#: kmenuedit.cpp:135
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "&Open Containing Folder"
 msgstr "შემცველი საქაღალდის &გახსნა"
 
-#: kmenuedit.cpp:75
+#: kmenuedit.cpp:138
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Properties"
 msgstr "თვისებები"
 
-#: kmenuedit.cpp:79
+#: kmenuedit.cpp:142
+#, kde-format
+msgid "&New"
+msgstr ""
+
+#: kmenuedit.cpp:150
 #, kde-format
 msgid "&Sort"
 msgstr "&დალაგება"
 
-#: kmenuedit.cpp:83
+#: kmenuedit.cpp:154
 #, kde-format
 msgid "&Sort Selection by Name"
 msgstr "მონიშნულის &სახელის მიხედვით დალაგება"
 
-#: kmenuedit.cpp:86
+#: kmenuedit.cpp:157
 #, kde-format
 msgid "&Sort Selection by Description"
 msgstr "მონიშნულის &აღწერის მიხედვით დალაგება"
 
-#: kmenuedit.cpp:90
+#: kmenuedit.cpp:161
 #, kde-format
 msgid "&Sort All by Name"
 msgstr "&ყველას სახელის მიხედვით დალაგება"
 
-#: kmenuedit.cpp:93
+#: kmenuedit.cpp:164
 #, kde-format
 msgid "&Sort All by Description"
 msgstr "&ყველას აღწერის მიხედვით დალაგება"
 
-#: kmenuedit.cpp:99
+#: kmenuedit.cpp:170
 #, kde-format
 msgid "Move &Up"
 msgstr "აწევა"
 
-#: kmenuedit.cpp:102
+#: kmenuedit.cpp:173
 #, kde-format
 msgid "Move &Down"
 msgstr "ჩამოწევა"
 
-#: kmenuedit.cpp:110
+#: kmenuedit.cpp:181
 #, kde-format
 msgid "Restore to System Menu"
 msgstr "სისტემურ მენუში აღდგენა"
 
-#: kmenuedit.cpp:146
+#: kmenuedit.cpp:218
 #, kde-format
 msgid "Search..."
 msgstr "ძებნა..."
 
-#: kmenuedit.cpp:147
+#: kmenuedit.cpp:219
 #, kde-format
 msgid "Search through the list of applications below"
 msgstr "ქვემორე აპლიკაციების სიაში ძებნა"
 
-#: kmenuedit.cpp:215
+#: kmenuedit.cpp:287
 #, kde-format
 msgid "&Delete"
 msgstr "&წაშლა"
 
-#: kmenuedit.cpp:240
+#: kmenuedit.cpp:312
 #, kde-format
 msgid ""
 "You have made changes to the menu.\n"
@@ -247,7 +263,7 @@ msgstr ""
 "მენიუში ცვლილებებია.\n"
 "გნებავთ მათი შენახვა?"
 
-#: kmenuedit.cpp:242
+#: kmenuedit.cpp:314
 #, kde-format
 msgid "Save Menu Changes?"
 msgstr "გნებავთ მენიუს ცვლილებების შენახვა?"
@@ -259,22 +275,28 @@ msgid "&File"
 msgstr "&ფაილი"
 
 #. i18n: ectx: Menu (file_file_actions)
-#: kmenueditui.rc:14
+#: kmenueditui.rc:15
 #, kde-format
 msgid "File Act&ions"
 msgstr "ფაილ&ის ქმედებები"
 
 #. i18n: ectx: Menu (edit)
-#: kmenueditui.rc:23
+#: kmenueditui.rc:25
 #, kde-format
 msgid "&Edit"
 msgstr "&ჩასწორება"
 
 #. i18n: ectx: ToolBar (mainToolBar)
-#: kmenueditui.rc:40
+#: kmenueditui.rc:42
 #, kde-format
 msgid "Main Toolbar"
 msgstr "ხელსაწყოთა მთავარი ზოლი"
+
+#. i18n: ectx: ToolBar (hamburgerBar)
+#: kmenueditui.rc:52
+#, kde-format
+msgid "Hamburger Menu Toolbar"
+msgstr ""
 
 #: main.cpp:29 main.cpp:39 main.cpp:53
 #, kde-format
