@@ -3,13 +3,13 @@
 #
 # Zlatko Popov <zlatkopopov@fsa-bg.org>, 2006, 2007, 2008.
 # Yasen Pramatarov <yasen@lindeas.com>, 2009.
-# SPDX-FileCopyrightText: 2022, 2024 Mincho Kondarev <mkondarev@yahoo.de>
+# SPDX-FileCopyrightText: 2022, 2024, 2025 Mincho Kondarev <mkondarev@yahoo.de>
 msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-22 00:43+0000\n"
-"PO-Revision-Date: 2024-12-30 22:53+0100\n"
+"PO-Revision-Date: 2025-03-22 17:01+0100\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
 "Language: bg\n"
@@ -155,11 +155,13 @@ msgstr "Стартиране %1"
 msgid ""
 "This will hide the menu bar completely. You can show it again by typing %1."
 msgstr ""
+"Това ще скрие лентата с менюта напълно. Можете да го покажете отново, като  "
+"натиснете %1."
 
 #: kmenuedit.cpp:70
 #, kde-format
 msgid "Hide menu bar"
-msgstr ""
+msgstr "Скриване на меню лентата"
 
 #: kmenuedit.cpp:118
 #, kde-format
@@ -180,24 +182,24 @@ msgstr "Нов &разделител"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Location"
-msgstr ""
+msgstr "Копиране на местоположението"
 
 #: kmenuedit.cpp:135
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "&Open Containing Folder"
-msgstr ""
+msgstr "&Отваряне на съдържащата папка"
 
 #: kmenuedit.cpp:138
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Properties"
-msgstr ""
+msgstr "Информация"
 
 #: kmenuedit.cpp:142
 #, kde-format
 msgid "&New"
-msgstr ""
+msgstr "&Нов"
 
 #: kmenuedit.cpp:150
 #, kde-format
@@ -278,7 +280,7 @@ msgstr "&Файл"
 #: kmenueditui.rc:15
 #, kde-format
 msgid "File Act&ions"
-msgstr ""
+msgstr "Файлови о&перации"
 
 #. i18n: ectx: Menu (edit)
 #: kmenueditui.rc:25
@@ -296,7 +298,7 @@ msgstr "Главна лента с инструменти"
 #: kmenueditui.rc:52
 #, kde-format
 msgid "Hamburger Menu Toolbar"
-msgstr ""
+msgstr "Лента с инструменти на менюто"
 
 #: main.cpp:29 main.cpp:39 main.cpp:53
 #, kde-format

@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-22 00:43+0000\n"
-"PO-Revision-Date: 2025-03-20 10:16+0200\n"
+"PO-Revision-Date: 2025-03-22 09:30+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -160,11 +160,13 @@ msgstr "Запустити %1"
 msgid ""
 "This will hide the menu bar completely. You can show it again by typing %1."
 msgstr ""
+"У результаті смужку меню буде повністю приховано. Щоб наказати програмі "
+"знову її показувати, натисніть %1."
 
 #: kmenuedit.cpp:70
 #, kde-format
 msgid "Hide menu bar"
-msgstr ""
+msgstr "Приховати смужку меню"
 
 #: kmenuedit.cpp:118
 #, kde-format
@@ -202,7 +204,7 @@ msgstr "Властивості"
 #: kmenuedit.cpp:142
 #, kde-format
 msgid "&New"
-msgstr ""
+msgstr "С&творити"
 
 #: kmenuedit.cpp:150
 #, kde-format
@@ -301,7 +303,7 @@ msgstr "Головний пенал"
 #: kmenueditui.rc:52
 #, kde-format
 msgid "Hamburger Menu Toolbar"
-msgstr ""
+msgstr "Панель інструментів кнопки меню"
 
 #: main.cpp:29 main.cpp:39 main.cpp:53
 #, kde-format

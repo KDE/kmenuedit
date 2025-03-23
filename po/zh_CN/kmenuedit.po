@@ -177,19 +177,19 @@ msgstr "新建分隔线(&E)"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Location"
-msgstr ""
+msgstr "复制位置"
 
 #: kmenuedit.cpp:135
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "&Open Containing Folder"
-msgstr ""
+msgstr "打开所在文件夹(&O)"
 
 #: kmenuedit.cpp:138
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Properties"
-msgstr ""
+msgstr "属性"
 
 #: kmenuedit.cpp:142
 #, kde-format
@@ -275,7 +275,7 @@ msgstr "文件(&F)"
 #: kmenueditui.rc:15
 #, kde-format
 msgid "File Act&ions"
-msgstr ""
+msgstr "文件操作(&I)"
 
 #. i18n: ectx: Menu (edit)
 #: kmenueditui.rc:25

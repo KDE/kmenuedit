@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-22 00:43+0000\n"
-"PO-Revision-Date: 2025-03-20 20:31+0200\n"
+"PO-Revision-Date: 2025-03-22 19:20+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -164,11 +164,12 @@ msgstr "הפעלת %1"
 msgid ""
 "This will hide the menu bar completely. You can show it again by typing %1."
 msgstr ""
+"הפעולה הזת תסתיר את סרגל התפריטים לחלוטין. אפשר להציג אותו שוב בהקלדת %1."
 
 #: kmenuedit.cpp:70
 #, kde-format
 msgid "Hide menu bar"
-msgstr ""
+msgstr "הסתרת סרגל תפריטים"
 
 #: kmenuedit.cpp:118
 #, kde-format
@@ -206,7 +207,7 @@ msgstr "מאפיינים"
 #: kmenuedit.cpp:142
 #, kde-format
 msgid "&New"
-msgstr ""
+msgstr "&חדש"
 
 #: kmenuedit.cpp:150
 #, kde-format
@@ -305,7 +306,7 @@ msgstr "סרגל כלים ראשי"
 #: kmenueditui.rc:52
 #, kde-format
 msgid "Hamburger Menu Toolbar"
-msgstr ""
+msgstr "סרגל כלים תפריט המבורגר"
 
 #: main.cpp:29 main.cpp:39 main.cpp:53
 #, kde-format

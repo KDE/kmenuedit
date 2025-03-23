@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-22 00:43+0000\n"
-"PO-Revision-Date: 2025-03-20 03:31+0100\n"
+"PO-Revision-Date: 2025-03-22 03:55+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -154,12 +154,12 @@ msgstr "%1-ს გაშვება"
 #, kde-format
 msgid ""
 "This will hide the menu bar completely. You can show it again by typing %1."
-msgstr ""
+msgstr "ეს მენიუს ზოლს სრულად დამალავს. მისი ჩვენება %1-ზე დაწოლით შეგიძლიათ."
 
 #: kmenuedit.cpp:70
 #, kde-format
 msgid "Hide menu bar"
-msgstr ""
+msgstr "მენიუს ზოლის დამალვა"
 
 #: kmenuedit.cpp:118
 #, kde-format
@@ -197,7 +197,7 @@ msgstr "თვისებები"
 #: kmenuedit.cpp:142
 #, kde-format
 msgid "&New"
-msgstr ""
+msgstr "&ახალი"
 
 #: kmenuedit.cpp:150
 #, kde-format
@@ -296,7 +296,7 @@ msgstr "ხელსაწყოთა მთავარი ზოლი"
 #: kmenueditui.rc:52
 #, kde-format
 msgid "Hamburger Menu Toolbar"
-msgstr ""
+msgstr "ჰამბურგერის მენიუს ზოლი"
 
 #: main.cpp:29 main.cpp:39 main.cpp:53
 #, kde-format

@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-22 00:43+0000\n"
-"PO-Revision-Date: 2025-03-20 13:02+0100\n"
+"PO-Revision-Date: 2025-03-22 15:16+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -169,11 +169,13 @@ msgstr "%1 opstarten"
 msgid ""
 "This will hide the menu bar completely. You can show it again by typing %1."
 msgstr ""
+"Hierdoor wordt de menubalk geheel verborgen. U kunt die weer zichtbaar maken "
+"door %1 te typen."
 
 #: kmenuedit.cpp:70
 #, kde-format
 msgid "Hide menu bar"
-msgstr ""
+msgstr "Menubalk verbergen"
 
 #: kmenuedit.cpp:118
 #, kde-format
@@ -211,7 +213,7 @@ msgstr "Eigenschappen"
 #: kmenuedit.cpp:142
 #, kde-format
 msgid "&New"
-msgstr ""
+msgstr "&Nieuw"
 
 #: kmenuedit.cpp:150
 #, kde-format
@@ -310,7 +312,7 @@ msgstr "Hoofdwerkbalk"
 #: kmenueditui.rc:52
 #, kde-format
 msgid "Hamburger Menu Toolbar"
-msgstr ""
+msgstr "Werkbalk van hamburgermenu"
 
 #: main.cpp:29 main.cpp:39 main.cpp:53
 #, kde-format

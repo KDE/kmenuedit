@@ -1,7 +1,7 @@
 # Translation of kmenuedit.po to Slovenian
 # KMENUEDIT translation to Slovenian language
 # Copyright (C) 2001, 2003, 2004, 2005 Free Software Foundation, Inc.
-# $Id: kmenuedit.po 1705603 2025-03-22 01:21:00Z scripty $
+# $Id: kmenuedit.po 1705666 2025-03-23 01:21:16Z scripty $
 # $Source$
 #
 # Roman Maurer <roman.maurer@amis.net>, 2000.
@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-22 00:43+0000\n"
-"PO-Revision-Date: 2025-03-20 07:30+0100\n"
+"PO-Revision-Date: 2025-03-22 13:15+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -165,11 +165,13 @@ msgstr "Zaženi %1"
 msgid ""
 "This will hide the menu bar completely. You can show it again by typing %1."
 msgstr ""
+"To bo popolnoma skrilo menijsko vrstico. Ponovno ga lahko prikažete tako, da "
+"vnesete %1."
 
 #: kmenuedit.cpp:70
 #, kde-format
 msgid "Hide menu bar"
-msgstr ""
+msgstr "Skrij menijsko vrstico"
 
 #: kmenuedit.cpp:118
 #, kde-format
@@ -207,7 +209,7 @@ msgstr "Lastnosti"
 #: kmenuedit.cpp:142
 #, kde-format
 msgid "&New"
-msgstr ""
+msgstr "Nova"
 
 #: kmenuedit.cpp:150
 #, kde-format
@@ -306,7 +308,7 @@ msgstr "Glavna orodna vrstica"
 #: kmenueditui.rc:52
 #, kde-format
 msgid "Hamburger Menu Toolbar"
-msgstr ""
+msgstr "Orodna vrstica Hamburger menija"
 
 #: main.cpp:29 main.cpp:39 main.cpp:53
 #, kde-format
