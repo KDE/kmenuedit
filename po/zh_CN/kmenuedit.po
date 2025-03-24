@@ -151,12 +151,12 @@ msgstr "启动 %1"
 #, kde-format
 msgid ""
 "This will hide the menu bar completely. You can show it again by typing %1."
-msgstr ""
+msgstr "这将完全隐藏菜单栏。按 %1 可以重新显示。"
 
 #: kmenuedit.cpp:70
 #, kde-format
 msgid "Hide menu bar"
-msgstr ""
+msgstr "隐藏菜单栏"
 
 #: kmenuedit.cpp:118
 #, kde-format
@@ -194,7 +194,7 @@ msgstr "属性"
 #: kmenuedit.cpp:142
 #, kde-format
 msgid "&New"
-msgstr ""
+msgstr "新建(&N)"
 
 #: kmenuedit.cpp:150
 #, kde-format
@@ -293,7 +293,7 @@ msgstr "主工具栏"
 #: kmenueditui.rc:52
 #, kde-format
 msgid "Hamburger Menu Toolbar"
-msgstr ""
+msgstr "多层菜单工具栏"
 
 #: main.cpp:29 main.cpp:39 main.cpp:53
 #, kde-format

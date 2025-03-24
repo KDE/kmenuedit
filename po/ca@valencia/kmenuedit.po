@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-22 00:43+0000\n"
-"PO-Revision-Date: 2025-03-20 09:17+0100\n"
+"PO-Revision-Date: 2025-03-22 22:25+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -161,11 +161,13 @@ msgstr "Inicia %1"
 msgid ""
 "This will hide the menu bar completely. You can show it again by typing %1."
 msgstr ""
+"Ocultarà completament la barra de menús. La podeu tornar a mostrar prement "
+"%1."
 
 #: kmenuedit.cpp:70
 #, kde-format
 msgid "Hide menu bar"
-msgstr ""
+msgstr "Oculta la barra de menús"
 
 #: kmenuedit.cpp:118
 #, kde-format
@@ -203,7 +205,7 @@ msgstr "Propietats"
 #: kmenuedit.cpp:142
 #, kde-format
 msgid "&New"
-msgstr ""
+msgstr "&Nou"
 
 #: kmenuedit.cpp:150
 #, kde-format
@@ -302,7 +304,7 @@ msgstr "Barra d'eines principal"
 #: kmenueditui.rc:52
 #, kde-format
 msgid "Hamburger Menu Toolbar"
-msgstr ""
+msgstr "Barra d'eines del menú d'hamburguesa"
 
 #: main.cpp:29 main.cpp:39 main.cpp:53
 #, kde-format

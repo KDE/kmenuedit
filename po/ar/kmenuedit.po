@@ -8,13 +8,13 @@
 # محمد سعد  Mohamed SAAD <metehyi@free.fr>, 2006.
 # AbdulAziz AlSharif <a.a-a.s@hotmail.com>, 2007.
 # Youssef Chahibi <chahibi@gmail.com>, 2007.
-# SPDX-FileCopyrightText: 2008, 2021, 2022, 2024 zayed <zayed.alsaidi@gmail.com>
+# SPDX-FileCopyrightText: 2008, 2021, 2022, 2024, 2025 zayed <zayed.alsaidi@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-22 00:43+0000\n"
-"PO-Revision-Date: 2024-12-31 20:18+0400\n"
+"PO-Revision-Date: 2025-03-23 10:01+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -88,7 +88,7 @@ msgstr ""
 "البرنامج الفعلي:\n"
 "%f - اسم ملف وحيد\n"
 "%F - لائحة ملفات ، استخدم هذه الصلاحية للتطبيقات التي تستطيع فتح عدة ملفات "
-"محلًية مرة واحدة\n"
+"محلية مرة واحدة\n"
 "%u - عنوان وحيد\n"
 "%U لائحة عناوين متعددة\n"
 "%d - المجلد أو الملف للفتح\n"
@@ -187,19 +187,19 @@ msgstr "&فاصل جديد"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Location"
-msgstr ""
+msgstr "انسخ المكان"
 
 #: kmenuedit.cpp:135
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "&Open Containing Folder"
-msgstr ""
+msgstr "ا&فتح المجلّد الحاوي"
 
 #: kmenuedit.cpp:138
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Properties"
-msgstr ""
+msgstr "الخصائص"
 
 #: kmenuedit.cpp:142
 #, kde-format
@@ -285,7 +285,7 @@ msgstr "&ملف"
 #: kmenueditui.rc:15
 #, kde-format
 msgid "File Act&ions"
-msgstr ""
+msgstr "إجراءات ال&ملف"
 
 #. i18n: ectx: Menu (edit)
 #: kmenueditui.rc:25
@@ -308,22 +308,22 @@ msgstr ""
 #: main.cpp:29 main.cpp:39 main.cpp:53
 #, kde-format
 msgid "KDE Menu Editor"
-msgstr "محرِّر القوائم لـكِيدِي"
+msgstr "محرِّر القوائم لكِيدِي"
 
 #: main.cpp:41
 #, kde-format
 msgid "KDE menu editor"
-msgstr "محرِّر القوائم لـكِيدِي"
+msgstr "محرِّر القوائم لكِيدِي"
 
 #: main.cpp:43
 #, kde-format
 msgid "(C) 2000-2003, Waldo Bastian, Raffaele Sandrini, Matthias Elter"
-msgstr "(C) 2000-2003, Waldo Bastian, Raffaele Sandrini, Matthias Elter"
+msgstr "(ج) 2000-2003، فالدو باستيان، رافاييل ساندريني، ماتياس إلتر"
 
 #: main.cpp:44
 #, kde-format
 msgid "Waldo Bastian"
-msgstr "Waldo Bastian"
+msgstr "والدو باستيان"
 
 #: main.cpp:44
 #, kde-format
@@ -333,7 +333,7 @@ msgstr "المشرف على المشروع"
 #: main.cpp:45
 #, kde-format
 msgid "Raffaele Sandrini"
-msgstr "Raffaele Sandrini"
+msgstr "رافاييلي ساندريني"
 
 #: main.cpp:45
 #, kde-format
@@ -343,7 +343,7 @@ msgstr "المشرف السابق على المشروع"
 #: main.cpp:46
 #, kde-format
 msgid "Matthias Elter"
-msgstr "Matthias Elter"
+msgstr "ماتياس إلتر"
 
 #: main.cpp:46
 #, kde-format
@@ -353,7 +353,7 @@ msgstr "المؤلف الأصلي"
 #: main.cpp:47
 #, kde-format
 msgid "Montel Laurent"
-msgstr "Montel Laurent"
+msgstr "مونتيل لوران"
 
 #: main.cpp:56
 #, kde-format
