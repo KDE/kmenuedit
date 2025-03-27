@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-22 00:43+0000\n"
-"PO-Revision-Date: 2025-03-20 18:37+0100\n"
+"PO-Revision-Date: 2025-03-26 11:27+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -155,11 +155,13 @@ msgstr "Lancea %1"
 msgid ""
 "This will hide the menu bar completely. You can show it again by typing %1."
 msgstr ""
+"Isto celara completemente le barra de menu. Tu pote monstrar lo de novo per "
+"typar %1."
 
 #: kmenuedit.cpp:70
 #, kde-format
 msgid "Hide menu bar"
-msgstr ""
+msgstr "Cela barra de menu"
 
 #: kmenuedit.cpp:118
 #, kde-format
@@ -197,7 +199,7 @@ msgstr "Proprietates"
 #: kmenuedit.cpp:142
 #, kde-format
 msgid "&New"
-msgstr ""
+msgstr "&Nove "
 
 #: kmenuedit.cpp:150
 #, kde-format
@@ -296,7 +298,7 @@ msgstr "Barra de instrumento principal"
 #: kmenueditui.rc:52
 #, kde-format
 msgid "Hamburger Menu Toolbar"
-msgstr ""
+msgstr "Barra de instrumento de Hamburger Menu"
 
 #: main.cpp:29 main.cpp:39 main.cpp:53
 #, kde-format
