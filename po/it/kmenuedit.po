@@ -2,14 +2,14 @@
 # Copyright (C) 2003, 2004, 2005, 2007, 2008 Free Software Foundation, Inc.
 # Andrea Rizzi <rizzi@kde.org>, 2003, 2004, 2005, 2007.
 # Dario Panico <Dareus_Persarumrex@fastwebnet.it>, 2008.
-# SPDX-FileCopyrightText: 2013, 2014, 2019, 2021, 2022, 2024 Vincenzo Reale <smart2128vr@gmail.com>
+# SPDX-FileCopyrightText: 2013, 2014, 2019, 2021, 2022, 2024, 2025 Vincenzo Reale <smart2128vr@gmail.com>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-22 00:43+0000\n"
-"PO-Revision-Date: 2024-12-29 17:09+0100\n"
+"PO-Revision-Date: 2025-03-24 09:00+0100\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.12.0\n"
+"X-Generator: Lokalize 24.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -156,11 +156,13 @@ msgstr "Avvia %1"
 msgid ""
 "This will hide the menu bar completely. You can show it again by typing %1."
 msgstr ""
+"Questo nasconderà completamente la barra dei menu. Puoi visualizzarla di "
+"nuovo digitando %1."
 
 #: kmenuedit.cpp:70
 #, kde-format
 msgid "Hide menu bar"
-msgstr ""
+msgstr "Nascondi la barra dei menu"
 
 #: kmenuedit.cpp:118
 #, kde-format
@@ -181,24 +183,24 @@ msgstr "Nuovo &separatore"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Location"
-msgstr ""
+msgstr "Copia posizione"
 
 #: kmenuedit.cpp:135
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "&Open Containing Folder"
-msgstr ""
+msgstr "&Apri cartella contenitore"
 
 #: kmenuedit.cpp:138
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Properties"
-msgstr ""
+msgstr "Proprietà"
 
 #: kmenuedit.cpp:142
 #, kde-format
 msgid "&New"
-msgstr ""
+msgstr "&Nuovo"
 
 #: kmenuedit.cpp:150
 #, kde-format
@@ -279,7 +281,7 @@ msgstr "&File"
 #: kmenueditui.rc:15
 #, kde-format
 msgid "File Act&ions"
-msgstr ""
+msgstr "Az&ioni sui file"
 
 #. i18n: ectx: Menu (edit)
 #: kmenueditui.rc:25
@@ -297,7 +299,7 @@ msgstr "Barra strumenti principale"
 #: kmenueditui.rc:52
 #, kde-format
 msgid "Hamburger Menu Toolbar"
-msgstr ""
+msgstr "Barra degli strumenti del menu hamburger"
 
 #: main.cpp:29 main.cpp:39 main.cpp:53
 #, kde-format
