@@ -185,6 +185,13 @@ void BasicTab::initAdvancedTab()
     userGroupLayout->addWidget(userNameGroup);
     advancedTabLayout->addWidget(_userGroup);
 
+    // gpu
+    _gpuGroup = new QGroupBox();
+    QHBoxLayout *gpuGroupLayout = new QHBoxLayout(_gpuGroup);
+    _gpuCB = new QCheckBox(i18n("Run using dedicated &graphics card"));
+    gpuGroupLayout->addWidget(_gpuCB);
+    advancedTabLayout->addWidget(_gpuGroup);
+
     // key binding
     _keyBindingGroup = new QGroupBox();
     QHBoxLayout *keyBindingGroupLayout = new QHBoxLayout(_keyBindingGroup);
@@ -222,6 +229,7 @@ void BasicTab::initConnections()
     connect(_terminalCB, &QCheckBox::clicked, this, &BasicTab::termcb_clicked);
     connect(_terminalOptionsEdit, &QLineEdit::textChanged, this, &BasicTab::slotChanged);
     connect(_userCB, &QCheckBox::clicked, this, &BasicTab::uidcb_clicked);
+    connect(_gpuCB, &QCheckBox::clicked, this, &BasicTab::slotChanged);
     connect(_userNameEdit, &QLineEdit::textChanged, this, &BasicTab::slotChanged);
     connect(_keyBindingEdit, &KKeySequenceWidget::keySequenceChanged, this, &BasicTab::slotCapturedKeySequence);
 }
@@ -248,6 +256,7 @@ void BasicTab::slotDisableAction()
     _workPathGroup->setEnabled(false);
     _terminalGroup->setEnabled(false);
     _userGroup->setEnabled(false);
+    _gpuGroup->setEnabled(false);
     _iconButton->setEnabled(false);
     // key binding part
     _keyBindingGroup->setEnabled(false);
@@ -277,6 +286,7 @@ void BasicTab::enableWidgets(bool isDF, bool isDeleted)
     _terminalGroup->setEnabled(isDF && !isDeleted);
     _userGroup->setEnabled(isDF && !isDeleted);
     _keyBindingGroup->setEnabled(isDF && !isDeleted);
+    _gpuGroup->setEnabled(isDF && !isDeleted);
 
     _terminalOptionsEdit->setEnabled(isDF && !isDeleted && _terminalCB->isChecked());
     _terminalOptionsLabel->setEnabled(isDF && !isDeleted && _terminalCB->isChecked());
@@ -310,6 +320,7 @@ void BasicTab::setFolderInfo(MenuFolderInfo *folderInfo)
     _onlyShowInKdeCB->setChecked(false);
     _hiddenEntryCB->setChecked(false);
     _userCB->setChecked(false);
+    _gpuCB->setChecked(false);
     _keyBindingEdit->clearKeySequence();
 
     enableWidgets(false, folderInfo->hidden);
@@ -411,6 +422,12 @@ void BasicTab::setEntryInfo(MenuEntryInfo *entryInfo)
 
     _userCB->setChecked(df->desktopGroup().readEntry("X-KDE-SubstituteUID", false));
 
+    if (df->desktopGroup().hasKey("PrefersNonDefaultGPU")) {
+        _gpuCB->setChecked(df->desktopGroup().readEntry("PrefersNonDefaultGPU", false));
+    } else {
+        _gpuCB->setChecked(df->desktopGroup().readEntry("X-KDE-RunOnDiscreteGpu", false));
+    }
+
     enableWidgets(true, entryInfo->hidden);
     blockSignals(false);
 }
@@ -464,6 +481,12 @@ void BasicTab::apply()
             dg.deleteEntry("OnlyShowIn");
         } else {
             dg.writeXdgListEntry("OnlyShowIn", onlyShowIn);
+        }
+
+        dg.writeEntry("PrefersNonDefaultGPU", _gpuCB->isChecked());
+        // Delete the old key — it could cause confusion when inspecting .desktop content
+        if (dg.hasKey("X-KDE-RunOnDiscreteGpu")) {
+            dg.deleteEntry("X-KDE-RunOnDiscreteGpu");
         }
     } else {
         _menuFolderInfo->setCaption(_nameEdit->text());

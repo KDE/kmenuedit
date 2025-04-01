@@ -86,10 +86,12 @@ protected:
     QCheckBox *_launchCB = nullptr;
     QCheckBox *_onlyShowInKdeCB = nullptr;
     QCheckBox *_hiddenEntryCB = nullptr;
+    QCheckBox *_gpuCB = nullptr;
     KIconButton *_iconButton = nullptr;
     QGroupBox *_workPathGroup = nullptr;
     QGroupBox *_terminalGroup = nullptr;
     QGroupBox *_userGroup = nullptr;
+    QGroupBox *_gpuGroup = nullptr;
     QGroupBox *_keyBindingGroup = nullptr;
     QLabel *_terminalOptionsLabel = nullptr;
     QLabel *_userNameLabel = nullptr;
