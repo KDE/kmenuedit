@@ -155,11 +155,12 @@ msgstr "Spustit %1"
 msgid ""
 "This will hide the menu bar completely. You can show it again by typing %1."
 msgstr ""
+"Toto úplně skryje panel nabídky. Můžete ji opětovně zobrazit pomocí %1."
 
 #: kmenuedit.cpp:70
 #, kde-format
 msgid "Hide menu bar"
-msgstr ""
+msgstr "Skrýt nabídku"
 
 #: kmenuedit.cpp:118
 #, kde-format
@@ -180,24 +181,24 @@ msgstr "Nový o&ddělovač"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Location"
-msgstr ""
+msgstr "Kopírovat umístění"
 
 #: kmenuedit.cpp:135
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "&Open Containing Folder"
-msgstr ""
+msgstr "&Otevřít odpovídající složku"
 
 #: kmenuedit.cpp:138
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Properties"
-msgstr ""
+msgstr "Vlastnosti"
 
 #: kmenuedit.cpp:142
 #, kde-format
 msgid "&New"
-msgstr ""
+msgstr "&Nový"
 
 #: kmenuedit.cpp:150
 #, kde-format
@@ -296,7 +297,7 @@ msgstr "Hlavní panel nástrojů"
 #: kmenueditui.rc:52
 #, kde-format
 msgid "Hamburger Menu Toolbar"
-msgstr ""
+msgstr "Hamburgerová nástrojová lišta"
 
 #: main.cpp:29 main.cpp:39 main.cpp:53
 #, kde-format
