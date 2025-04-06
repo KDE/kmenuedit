@@ -10,14 +10,14 @@ msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-22 00:43+0000\n"
-"PO-Revision-Date: 2025-01-11 12:10+0100\n"
+"PO-Revision-Date: 2025-04-05 08:54+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 24.12.0\n"
+"X-Generator: Lokalize 24.12.3\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #, kde-format
@@ -157,11 +157,13 @@ msgstr "Starta %1"
 msgid ""
 "This will hide the menu bar completely. You can show it again by typing %1."
 msgstr ""
+"Det här döljer menyraden fullständigt. Du kan visa den igen genom att skriva "
+"%1."
 
 #: kmenuedit.cpp:70
 #, kde-format
 msgid "Hide menu bar"
-msgstr ""
+msgstr "Dölj menyrad"
 
 #: kmenuedit.cpp:118
 #, kde-format
@@ -182,24 +184,24 @@ msgstr "&Ny avskiljare"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Location"
-msgstr ""
+msgstr "Kopiera plats"
 
 #: kmenuedit.cpp:135
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "&Open Containing Folder"
-msgstr ""
+msgstr "Ö&ppna katalog med innehåll"
 
 #: kmenuedit.cpp:138
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Properties"
-msgstr ""
+msgstr "Egenskaper"
 
 #: kmenuedit.cpp:142
 #, kde-format
 msgid "&New"
-msgstr ""
+msgstr "&Ny"
 
 #: kmenuedit.cpp:150
 #, kde-format
@@ -280,7 +282,7 @@ msgstr "&Arkiv"
 #: kmenueditui.rc:15
 #, kde-format
 msgid "File Act&ions"
-msgstr ""
+msgstr "F&ilåtgärder"
 
 #. i18n: ectx: Menu (edit)
 #: kmenueditui.rc:25
@@ -298,7 +300,7 @@ msgstr "Huvudverktygsrad"
 #: kmenueditui.rc:52
 #, kde-format
 msgid "Hamburger Menu Toolbar"
-msgstr ""
+msgstr "Hamburgarmenyverktygsrad"
 
 #: main.cpp:29 main.cpp:39 main.cpp:53
 #, kde-format
