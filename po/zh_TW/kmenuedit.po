@@ -5,13 +5,13 @@
 # Franklin Weng <franklin at goodhorse dot idv dot tw>, 2007, 2013.
 # Frank Weng (a.k.a. Franklin) <franklin@goodhorse.idv.tw>, 2009.
 # pan93412 <pan93412@gmail.com>, 2019.
-# SPDX-FileCopyrightText: 2023, 2024 Kisaragi Hiu <mail@kisaragi-hiu.com>
+# SPDX-FileCopyrightText: 2023, 2024, 2025 Kisaragi Hiu <mail@kisaragi-hiu.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-22 00:43+0000\n"
-"PO-Revision-Date: 2024-12-30 17:07+0900\n"
+"PO-Revision-Date: 2025-04-07 14:34+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -19,17 +19,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 24.12.0\n"
+"X-Generator: Lokalize 24.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Eric Cheng"
+msgstr "Eric Cheng, Kisaragi Hiu"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "ericc@shinewave.com.tw"
+msgstr "ericc@shinewave.com.tw, mail@kisaragi-hiu.com"
 
 #: basictab.cpp:51
 #, kde-format
@@ -155,12 +155,12 @@ msgstr "啟動 %1"
 #, kde-format
 msgid ""
 "This will hide the menu bar completely. You can show it again by typing %1."
-msgstr ""
+msgstr "這會完全隱藏選單列。您可以按下 %1 重新顯示選單列。"
 
 #: kmenuedit.cpp:70
 #, kde-format
 msgid "Hide menu bar"
-msgstr ""
+msgstr "隱藏選單列"
 
 #: kmenuedit.cpp:118
 #, kde-format
@@ -181,24 +181,24 @@ msgstr "新增分隔(&E)"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Location"
-msgstr ""
+msgstr "複製位置"
 
 #: kmenuedit.cpp:135
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "&Open Containing Folder"
-msgstr ""
+msgstr "開啟包含資料夾(&O)"
 
 #: kmenuedit.cpp:138
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Properties"
-msgstr ""
+msgstr "屬性"
 
 #: kmenuedit.cpp:142
 #, kde-format
 msgid "&New"
-msgstr ""
+msgstr "新增(&N)"
 
 #: kmenuedit.cpp:150
 #, kde-format
@@ -279,7 +279,7 @@ msgstr "檔案(&F)"
 #: kmenueditui.rc:15
 #, kde-format
 msgid "File Act&ions"
-msgstr ""
+msgstr "檔案操作(&I)"
 
 #. i18n: ectx: Menu (edit)
 #: kmenueditui.rc:25
@@ -297,7 +297,7 @@ msgstr "主工具列"
 #: kmenueditui.rc:52
 #, kde-format
 msgid "Hamburger Menu Toolbar"
-msgstr ""
+msgstr "三點選單工具列"
 
 #: main.cpp:29 main.cpp:39 main.cpp:53
 #, kde-format

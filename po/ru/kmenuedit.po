@@ -14,13 +14,13 @@
 # Alexander Potashev <aspotashev@gmail.com>, 2014, 2018, 2019.
 # Alexander Yavorsky <kekcuha@gmail.com>, 2019, 2020, 2023.
 # Дронова Юлия <juliette.tux@gmail.com>, 2021.
-# SPDX-FileCopyrightText: 2022, 2024 Olesya Gerasimenko <translation-team@basealt.ru>
+# SPDX-FileCopyrightText: 2022, 2024, 2025 Olesya Gerasimenko <translation-team@basealt.ru>
 msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-22 00:43+0000\n"
-"PO-Revision-Date: 2024-09-16 16:14+0300\n"
+"PO-Revision-Date: 2025-04-07 11:46+0300\n"
 "Last-Translator: Olesya Gerasimenko <translation-team@basealt.ru>\n"
 "Language-Team: Basealt Translation Team\n"
 "Language: ru\n"
@@ -370,6 +370,8 @@ msgid ""
 "Entry and/or menu to select, e.g. \"org.kde.dolphin.desktop\", \"Utilties/"
 "org.kde.kwrite.desktop\", \"Education/Mathematics\""
 msgstr ""
+"Пункт и/или меню для выбора, например: «org.kde.dolphin.desktop», "
+"«Инструменты/org.kde.kwrite.desktop», «Образование/Математика»"
 
 #: menufile.cpp:94 menufile.cpp:105
 #, kde-format
