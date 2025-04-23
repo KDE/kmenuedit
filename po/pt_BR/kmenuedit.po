@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-03-22 00:43+0000\n"
+"POT-Creation-Date: 2025-04-23 00:43+0000\n"
 "PO-Revision-Date: 2025-02-08 10:51-0300\n"
 "Last-Translator: Geraldo Simiao <geraldosimiao@fedoraproject.org>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
@@ -150,10 +150,15 @@ msgstr "Nome do &usuário:"
 
 #: basictab.cpp:191
 #, kde-format
+msgid "Run using dedicated &graphics card"
+msgstr ""
+
+#: basictab.cpp:198
+#, kde-format
 msgid "Current shortcut &key:"
 msgstr "Tecla de &atalho atual:"
 
-#: basictab.cpp:202
+#: basictab.cpp:209
 #, kde-format
 msgid "Advanced"
 msgstr "Avançado"

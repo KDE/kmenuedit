@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-03-22 00:43+0000\n"
+"POT-Creation-Date: 2025-04-23 00:43+0000\n"
 "PO-Revision-Date: 2009-01-16 22:16+0530\n"
 "Last-Translator: Krishna Babu K <kkrothap@redhat.com>\n"
 "Language-Team: Telugu <en@li.org>\n"
@@ -125,10 +125,15 @@ msgstr "(&U) యూజర్ పేరు:"
 
 #: basictab.cpp:191
 #, kde-format
+msgid "Run using dedicated &graphics card"
+msgstr ""
+
+#: basictab.cpp:198
+#, kde-format
 msgid "Current shortcut &key:"
 msgstr ""
 
-#: basictab.cpp:202
+#: basictab.cpp:209
 #, kde-format
 msgid "Advanced"
 msgstr "ఆధునాతన"

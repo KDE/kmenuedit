@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fc57ad16a28d02dea100ceb1c60de14e\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-03-22 00:43+0000\n"
+"POT-Creation-Date: 2025-04-23 00:43+0000\n"
 "PO-Revision-Date: 2025-01-06 19:10\n"
 "Last-Translator: Darafei Praliaskouski <komzpa@licei2.com>\n"
 "Language-Team: Belarusian\n"
@@ -145,10 +145,15 @@ msgstr "&Імя карыстальніка:"
 
 #: basictab.cpp:191
 #, kde-format
+msgid "Run using dedicated &graphics card"
+msgstr ""
+
+#: basictab.cpp:198
+#, kde-format
 msgid "Current shortcut &key:"
 msgstr "Бягучае &спалучэнне клавіш:"
 
-#: basictab.cpp:202
+#: basictab.cpp:209
 #, kde-format
 msgid "Advanced"
 msgstr "Дадатковыя"
