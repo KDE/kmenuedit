@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-04-23 00:43+0000\n"
-"PO-Revision-Date: 2025-03-22 22:25+0100\n"
+"PO-Revision-Date: 2025-04-23 10:14+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -144,7 +144,7 @@ msgstr "Nom d'&usuari:"
 #: basictab.cpp:191
 #, kde-format
 msgid "Run using dedicated &graphics card"
-msgstr ""
+msgstr "Executa utilitzant la targeta &gràfica dedicada"
 
 #: basictab.cpp:198
 #, kde-format

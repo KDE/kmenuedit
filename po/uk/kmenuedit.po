@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-04-23 00:43+0000\n"
-"PO-Revision-Date: 2025-03-22 09:30+0200\n"
+"PO-Revision-Date: 2025-04-23 09:27+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -143,7 +143,7 @@ msgstr "Ім'я &користувача:"
 #: basictab.cpp:191
 #, kde-format
 msgid "Run using dedicated &graphics card"
-msgstr ""
+msgstr "Запуск із використанням відповідної &графічної картки"
 
 #: basictab.cpp:198
 #, kde-format
