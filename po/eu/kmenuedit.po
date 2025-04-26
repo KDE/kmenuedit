@@ -1,7 +1,7 @@
 # Translation for kmenuedit.po to Euskara/Basque (eu).
 # Copyright (C) 2002-2024 This file is copyright:
 # This file is distributed under the same license as the kmenuedit package.
-# SPDX-FileCopyrightText: 2024 KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>
+# SPDX-FileCopyrightText: 2024, 2025 KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>
 #
 # Translators:
 # Marcos  <marcos@euskalgnu.org>, 2002, 2004, 2005, 2006, 2007.
@@ -13,14 +13,14 @@ msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-04-23 00:43+0000\n"
-"PO-Revision-Date: 2024-12-29 09:46+0100\n"
+"PO-Revision-Date: 2025-04-25 22:10+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 24.12.0\n"
+"X-Generator: Lokalize 25.04.0\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #, kde-format
@@ -146,7 +146,7 @@ msgstr "Erabiltzaile-&izena:"
 #: basictab.cpp:191
 #, kde-format
 msgid "Run using dedicated &graphics card"
-msgstr ""
+msgstr "Exekutatu txartel &grafiko dedikatua erabiliz"
 
 #: basictab.cpp:198
 #, kde-format
@@ -168,11 +168,12 @@ msgstr "Abiarazi %1"
 msgid ""
 "This will hide the menu bar completely. You can show it again by typing %1."
 msgstr ""
+"Honek menu-barra osorik ezkutatuko du. %1 tekleatuz berriz erakuts dezakezu."
 
 #: kmenuedit.cpp:70
 #, kde-format
 msgid "Hide menu bar"
-msgstr ""
+msgstr "Ezkutatu menu-barra"
 
 #: kmenuedit.cpp:118
 #, kde-format
@@ -193,24 +194,24 @@ msgstr "Berei&zle berria"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Location"
-msgstr ""
+msgstr "Kopiatu kokalekua"
 
 #: kmenuedit.cpp:135
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "&Open Containing Folder"
-msgstr ""
+msgstr "&Ireki hau barnean duen karpeta"
 
 #: kmenuedit.cpp:138
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Properties"
-msgstr ""
+msgstr "Propietateak"
 
 #: kmenuedit.cpp:142
 #, kde-format
 msgid "&New"
-msgstr ""
+msgstr "&Berria"
 
 #: kmenuedit.cpp:150
 #, kde-format
@@ -291,7 +292,7 @@ msgstr "&Fitxategia"
 #: kmenueditui.rc:15
 #, kde-format
 msgid "File Act&ions"
-msgstr ""
+msgstr "Fitxategien ek&intzak"
 
 #. i18n: ectx: Menu (edit)
 #: kmenueditui.rc:25
@@ -309,7 +310,7 @@ msgstr "Tresna-barra nagusia"
 #: kmenueditui.rc:52
 #, kde-format
 msgid "Hamburger Menu Toolbar"
-msgstr ""
+msgstr "Hanburger menu tresna-barra"
 
 #: main.cpp:29 main.cpp:39 main.cpp:53
 #, kde-format
