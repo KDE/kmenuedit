@@ -135,7 +135,7 @@ msgstr "用户名(&U)："
 #: basictab.cpp:191
 #, kde-format
 msgid "Run using dedicated &graphics card"
-msgstr ""
+msgstr "使用独立显卡运行(&G)"
 
 #: basictab.cpp:198
 #, kde-format
