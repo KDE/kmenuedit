@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-04-23 00:43+0000\n"
-"PO-Revision-Date: 2025-01-12 19:47+0200\n"
+"PO-Revision-Date: 2025-04-20 16:38+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -175,11 +175,12 @@ msgstr "Käynnistä %1"
 msgid ""
 "This will hide the menu bar completely. You can show it again by typing %1."
 msgstr ""
+"Tämä piilottaa valikkorivin täysin. Uudelleen sen saa näkyviin painamalla %1."
 
 #: kmenuedit.cpp:70
 #, kde-format
 msgid "Hide menu bar"
-msgstr ""
+msgstr "Piilota valikkorivi"
 
 #: kmenuedit.cpp:118
 #, kde-format
@@ -200,24 +201,24 @@ msgstr "Uusi &erotin"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Location"
-msgstr ""
+msgstr "Kopioi sijainti"
 
 #: kmenuedit.cpp:135
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "&Open Containing Folder"
-msgstr ""
+msgstr "Avaa &yläkansio"
 
 #: kmenuedit.cpp:138
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Properties"
-msgstr ""
+msgstr "Ominaisuudet"
 
 #: kmenuedit.cpp:142
 #, kde-format
 msgid "&New"
-msgstr ""
+msgstr "&Uusi"
 
 #: kmenuedit.cpp:150
 #, kde-format
@@ -298,7 +299,7 @@ msgstr "&Tiedosto"
 #: kmenueditui.rc:15
 #, kde-format
 msgid "File Act&ions"
-msgstr ""
+msgstr "Tie&dostotoimenpiteet"
 
 #. i18n: ectx: Menu (edit)
 #: kmenueditui.rc:25
@@ -316,7 +317,7 @@ msgstr "Päätyökalurivi"
 #: kmenueditui.rc:52
 #, kde-format
 msgid "Hamburger Menu Toolbar"
-msgstr ""
+msgstr "Valikkopainikkeen työkalurivi"
 
 # pmap: =/gen=KDE:n valikkomuokkaimen/
 # pmap: =/elat=KDE:n valikkomuokkaimesta/
