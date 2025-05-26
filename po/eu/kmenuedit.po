@@ -1,12 +1,12 @@
 # Translation for kmenuedit.po to Euskara/Basque (eu).
-# Copyright (C) 2002-2024 This file is copyright:
+# Copyright (C) 2002-2025 This file is copyright:
 # This file is distributed under the same license as the kmenuedit package.
-# SPDX-FileCopyrightText: 2024, 2025 KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>
+# SPDX-FileCopyrightText: 2024, 2025 KDE euskaratzeko proiektuaren arduraduna <xalba@ni.eus>
 #
 # Translators:
 # Marcos  <marcos@euskalgnu.org>, 2002, 2004, 2005, 2006, 2007.
 # Juan Irigoien <juanirigoien@yahoo.es>, 2004.
-# Iñigo Salvador Azurmendi <xalba@ni.eus>, 2009, 2011, 2014, 2019, 2021, 2022, 2024.
+# Iñigo Salvador Azurmendi <xalba@ni.eus>, 2009, 2011, 2014, 2019, 2021, 2022, 2024, 2025.
 # Hizkuntza Politikarako Sailburuordetza <hizpol@ej-gv.es>, 2014.
 msgid ""
 msgstr ""
