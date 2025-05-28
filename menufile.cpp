@@ -19,7 +19,7 @@
 
 const QString MenuFile::MF_MENU = QStringLiteral("Menu");
 const QString MenuFile::MF_PUBLIC_ID = QStringLiteral("-//freedesktop//DTD Menu 1.0//EN");
-const QString MenuFile::MF_SYSTEM_ID = QStringLiteral("http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd");
+const QString MenuFile::MF_SYSTEM_ID = QStringLiteral("http://www.freedesktop.org/standards/menu-spec/menu-1.0.dtd");
 const QString MenuFile::MF_NAME = QStringLiteral("Name");
 const QString MenuFile::MF_INCLUDE = QStringLiteral("Include");
 const QString MenuFile::MF_EXCLUDE = QStringLiteral("Exclude");
