@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-04-23 00:43+0000\n"
-"PO-Revision-Date: 2025-04-20 16:38+0300\n"
+"PO-Revision-Date: 2025-05-28 17:15+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -153,7 +153,7 @@ msgstr "&Käyttäjätunnus:"
 #: basictab.cpp:191
 #, kde-format
 msgid "Run using dedicated &graphics card"
-msgstr ""
+msgstr "Suorita &omistetussa näytönohjaimessa"
 
 #: basictab.cpp:198
 #, kde-format
