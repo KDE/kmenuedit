@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-04-23 00:43+0000\n"
-"PO-Revision-Date: 2025-04-07 11:46+0300\n"
+"PO-Revision-Date: 2025-06-25 11:45+0300\n"
 "Last-Translator: Olesya Gerasimenko <translation-team@basealt.ru>\n"
 "Language-Team: Basealt Translation Team\n"
 "Language: ru\n"
@@ -154,7 +154,7 @@ msgstr "&Имя пользователя:"
 #: basictab.cpp:191
 #, kde-format
 msgid "Run using dedicated &graphics card"
-msgstr ""
+msgstr "Запустить с использованием отдельной (дискретной) &видеокарты"
 
 #: basictab.cpp:198
 #, kde-format
@@ -176,11 +176,12 @@ msgstr "Запустить %1"
 msgid ""
 "This will hide the menu bar completely. You can show it again by typing %1."
 msgstr ""
+"Это действие полностью скроет меню. Чтобы снова вывести его, нажмите %1."
 
 #: kmenuedit.cpp:70
 #, kde-format
 msgid "Hide menu bar"
-msgstr ""
+msgstr "Скрыть строку меню"
 
 #: kmenuedit.cpp:118
 #, kde-format
@@ -201,24 +202,24 @@ msgstr "Добавить разд&елитель"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Location"
-msgstr ""
+msgstr "Копировать расположение"
 
 #: kmenuedit.cpp:135
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "&Open Containing Folder"
-msgstr ""
+msgstr "&Открыть содержащую папку"
 
 #: kmenuedit.cpp:138
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Properties"
-msgstr ""
+msgstr "Свойства"
 
 #: kmenuedit.cpp:142
 #, kde-format
 msgid "&New"
-msgstr ""
+msgstr "&Создать"
 
 #: kmenuedit.cpp:150
 #, kde-format
@@ -299,7 +300,7 @@ msgstr "&Файл"
 #: kmenueditui.rc:15
 #, kde-format
 msgid "File Act&ions"
-msgstr ""
+msgstr "Действия c &файлами"
 
 #. i18n: ectx: Menu (edit)
 #: kmenueditui.rc:25
@@ -317,7 +318,7 @@ msgstr "Основная панель инструментов"
 #: kmenueditui.rc:52
 #, kde-format
 msgid "Hamburger Menu Toolbar"
-msgstr ""
+msgstr "Панель инструментов «гамбургер»"
 
 #: main.cpp:29 main.cpp:39 main.cpp:53
 #, kde-format
