@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-07-05 03:22+0000\n"
+"POT-Creation-Date: 2025-07-05 05:54+0000\n"
 "PO-Revision-Date: 2023-04-04 00:58+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -240,6 +240,24 @@ msgstr ""
 msgid "Save Menu Changes?"
 msgstr "Menü Değişiklikleri Kaydedilsin mi?"
 
+#. i18n: ectx: Menu (file)
+#: kmenueditui.rc:7
+#, kde-format
+msgid "&File"
+msgstr "&Dosya"
+
+#. i18n: ectx: Menu (edit)
+#: kmenueditui.rc:17
+#, kde-format
+msgid "&Edit"
+msgstr "Dü&zen"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: kmenueditui.rc:34
+#, kde-format
+msgid "Main Toolbar"
+msgstr "Ana Araç Çubuğu"
+
 #: main.cpp:31 main.cpp:48 main.cpp:62
 #, kde-format
 msgid "KDE Menu Editor"
@@ -380,15 +398,6 @@ msgstr ""
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "Menü Sistemini Geri Yükle"
-
-#~ msgid "&File"
-#~ msgstr "&Dosya"
-
-#~ msgid "&Edit"
-#~ msgstr "Dü&zen"
-
-#~ msgid "Main Toolbar"
-#~ msgstr "Ana Araç Çubuğu"
 
 #~ msgid "Co&mmand:"
 #~ msgstr "&Komut:"

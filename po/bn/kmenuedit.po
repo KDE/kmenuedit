@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-07-05 03:22+0000\n"
+"POT-Creation-Date: 2025-07-05 05:54+0000\n"
 "PO-Revision-Date: 2006-01-04 14:01-0600\n"
 "Last-Translator: Deepayan Sarkar <deepayan@bengalinux.org>\n"
 "Language-Team: Bengali <kde-translation@bengalinux.org>\n"
@@ -221,6 +221,24 @@ msgstr ""
 #, kde-format
 msgid "Save Menu Changes?"
 msgstr "মেনু পরিবর্তন সংরক্ষণ করব?"
+
+#. i18n: ectx: Menu (file)
+#: kmenueditui.rc:7
+#, kde-format
+msgid "&File"
+msgstr ""
+
+#. i18n: ectx: Menu (edit)
+#: kmenueditui.rc:17
+#, kde-format
+msgid "&Edit"
+msgstr ""
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: kmenueditui.rc:34
+#, kde-format
+msgid "Main Toolbar"
+msgstr ""
 
 #: main.cpp:31 main.cpp:48 main.cpp:62
 #, kde-format

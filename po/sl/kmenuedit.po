@@ -1,7 +1,7 @@
 # Translation of kmenuedit.po to Slovenian
 # KMENUEDIT translation to Slovenian language
 # Copyright (C) 2001, 2003, 2004, 2005 Free Software Foundation, Inc.
-# $Id: kmenuedit.po 1712705 2025-07-05 03:36:47Z scripty $
+# $Id: kmenuedit.po 1712710 2025-07-05 06:09:14Z scripty $
 # $Source$
 #
 # Roman Maurer <roman.maurer@amis.net>, 2000.
@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-07-05 03:22+0000\n"
+"POT-Creation-Date: 2025-07-05 05:54+0000\n"
 "PO-Revision-Date: 2022-12-08 08:12+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -244,6 +244,24 @@ msgstr ""
 msgid "Save Menu Changes?"
 msgstr "Shranim spremembe menija?"
 
+#. i18n: ectx: Menu (file)
+#: kmenueditui.rc:7
+#, kde-format
+msgid "&File"
+msgstr "Datoteka"
+
+#. i18n: ectx: Menu (edit)
+#: kmenueditui.rc:17
+#, kde-format
+msgid "&Edit"
+msgstr "Ur&edi"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: kmenueditui.rc:34
+#, kde-format
+msgid "Main Toolbar"
+msgstr "Glavna orodna vrstica"
+
 #: main.cpp:31 main.cpp:48 main.cpp:62
 #, kde-format
 msgid "KDE Menu Editor"
@@ -384,15 +402,6 @@ msgstr ""
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "Obnovi sistemski meni"
-
-#~ msgid "&File"
-#~ msgstr "Datoteka"
-
-#~ msgid "&Edit"
-#~ msgstr "Ur&edi"
-
-#~ msgid "Main Toolbar"
-#~ msgstr "Glavna orodna vrstica"
 
 #~ msgid "Co&mmand:"
 #~ msgstr "Ukaz:"

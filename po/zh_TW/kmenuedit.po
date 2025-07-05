@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-07-05 03:22+0000\n"
+"POT-Creation-Date: 2025-07-05 05:54+0000\n"
 "PO-Revision-Date: 2019-11-20 20:07+0800\n"
 "Last-Translator: pan93412 <pan93412@gmail.com>\n"
 "Language-Team: Chinese <zh-l10n@lists.linux.org.tw>\n"
@@ -234,6 +234,24 @@ msgstr ""
 msgid "Save Menu Changes?"
 msgstr "是否儲存選單變更？"
 
+#. i18n: ectx: Menu (file)
+#: kmenueditui.rc:7
+#, kde-format
+msgid "&File"
+msgstr "檔案(&F)"
+
+#. i18n: ectx: Menu (edit)
+#: kmenueditui.rc:17
+#, kde-format
+msgid "&Edit"
+msgstr "編輯(&E)"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: kmenueditui.rc:34
+#, kde-format
+msgid "Main Toolbar"
+msgstr "主工具列"
+
 #: main.cpp:31 main.cpp:48 main.cpp:62
 #, kde-format
 msgid "KDE Menu Editor"
@@ -374,15 +392,6 @@ msgstr "您要回復系統選單嗎？警告：您將會移除所有的自定選
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "回復為系統選單"
-
-#~ msgid "&File"
-#~ msgstr "檔案(&F)"
-
-#~ msgid "&Edit"
-#~ msgstr "編輯(&E)"
-
-#~ msgid "Main Toolbar"
-#~ msgstr "主工具列"
 
 #~ msgid "Co&mmand:"
 #~ msgstr "指令(&M):"

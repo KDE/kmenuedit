@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-07-05 03:22+0000\n"
+"POT-Creation-Date: 2025-07-05 05:54+0000\n"
 "PO-Revision-Date: 2024-03-30 19:46\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -231,6 +231,24 @@ msgstr ""
 msgid "Save Menu Changes?"
 msgstr "您想要保存对菜单的更改吗？"
 
+#. i18n: ectx: Menu (file)
+#: kmenueditui.rc:7
+#, kde-format
+msgid "&File"
+msgstr "文件(&F)"
+
+#. i18n: ectx: Menu (edit)
+#: kmenueditui.rc:17
+#, kde-format
+msgid "&Edit"
+msgstr "编辑(&E)"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: kmenueditui.rc:34
+#, kde-format
+msgid "Main Toolbar"
+msgstr "主工具栏"
+
 #: main.cpp:31 main.cpp:48 main.cpp:62
 #, kde-format
 msgid "KDE Menu Editor"
@@ -369,12 +387,3 @@ msgstr "您想要重置为系统菜单吗？警告：这将移除所有自定义
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "还原菜单系统"
-
-#~ msgid "&File"
-#~ msgstr "文件(&F)"
-
-#~ msgid "&Edit"
-#~ msgstr "编辑(&E)"
-
-#~ msgid "Main Toolbar"
-#~ msgstr "主工具栏"

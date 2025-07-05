@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-07-05 03:22+0000\n"
+"POT-Creation-Date: 2025-07-05 05:54+0000\n"
 "PO-Revision-Date: 2022-12-08 09:03+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -234,6 +234,24 @@ msgstr ""
 msgid "Save Menu Changes?"
 msgstr "გნებავთ მენიუს ცვლილებების შენახვა?"
 
+#. i18n: ectx: Menu (file)
+#: kmenueditui.rc:7
+#, kde-format
+msgid "&File"
+msgstr "&ფაილი"
+
+#. i18n: ectx: Menu (edit)
+#: kmenueditui.rc:17
+#, kde-format
+msgid "&Edit"
+msgstr "&ჩასწორება"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: kmenueditui.rc:34
+#, kde-format
+msgid "Main Toolbar"
+msgstr "ხელსაწყოთა მთავარი ზოლი"
+
 #: main.cpp:31 main.cpp:48 main.cpp:62
 #, kde-format
 msgid "KDE Menu Editor"
@@ -373,15 +391,6 @@ msgstr ""
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "სისტემური მენიუს აღდგენა"
-
-#~ msgid "&File"
-#~ msgstr "&ფაილი"
-
-#~ msgid "&Edit"
-#~ msgstr "&ჩასწორება"
-
-#~ msgid "Main Toolbar"
-#~ msgstr "ხელსაწყოთა მთავარი ზოლი"
 
 #~ msgid "Co&mmand:"
 #~ msgstr "&ბრძანება:"

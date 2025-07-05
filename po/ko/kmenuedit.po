@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-07-05 03:22+0000\n"
+"POT-Creation-Date: 2025-07-05 05:54+0000\n"
 "PO-Revision-Date: 2024-12-10 00:58+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -233,6 +233,24 @@ msgstr ""
 msgid "Save Menu Changes?"
 msgstr "메뉴 변경 사항을 저장하시겠습니까?"
 
+#. i18n: ectx: Menu (file)
+#: kmenueditui.rc:7
+#, kde-format
+msgid "&File"
+msgstr "파일(&F)"
+
+#. i18n: ectx: Menu (edit)
+#: kmenueditui.rc:17
+#, kde-format
+msgid "&Edit"
+msgstr "편집(&E)"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: kmenueditui.rc:34
+#, kde-format
+msgid "Main Toolbar"
+msgstr "주 도구 모음"
+
 #: main.cpp:31 main.cpp:48 main.cpp:62
 #, kde-format
 msgid "KDE Menu Editor"
@@ -372,15 +390,6 @@ msgstr ""
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "메뉴 시스템 복구"
-
-#~ msgid "&File"
-#~ msgstr "파일(&F)"
-
-#~ msgid "&Edit"
-#~ msgstr "편집(&E)"
-
-#~ msgid "Main Toolbar"
-#~ msgstr "주 도구 모음"
 
 #~ msgid "Co&mmand:"
 #~ msgstr "명령(&M):"

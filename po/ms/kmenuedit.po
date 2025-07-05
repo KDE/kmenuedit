@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-07-05 03:22+0000\n"
+"POT-Creation-Date: 2025-07-05 05:54+0000\n"
 "PO-Revision-Date: 2009-06-14 00:14+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -237,6 +237,24 @@ msgstr ""
 msgid "Save Menu Changes?"
 msgstr "Simpan Perubahan Menu?"
 
+#. i18n: ectx: Menu (file)
+#: kmenueditui.rc:7
+#, kde-format
+msgid "&File"
+msgstr "&Fail"
+
+#. i18n: ectx: Menu (edit)
+#: kmenueditui.rc:17
+#, kde-format
+msgid "&Edit"
+msgstr "&Sunting"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: kmenueditui.rc:34
+#, kde-format
+msgid "Main Toolbar"
+msgstr "Bar Alatan Utama"
+
 #: main.cpp:31 main.cpp:48 main.cpp:62
 #, kde-format
 msgid "KDE Menu Editor"
@@ -380,15 +398,6 @@ msgstr ""
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "Kembalikan kepada Menu Sistem"
-
-#~ msgid "&File"
-#~ msgstr "&Fail"
-
-#~ msgid "&Edit"
-#~ msgstr "&Sunting"
-
-#~ msgid "Main Toolbar"
-#~ msgstr "Bar Alatan Utama"
 
 #~ msgid "Co&mmand:"
 #~ msgstr "A&rahan:"
