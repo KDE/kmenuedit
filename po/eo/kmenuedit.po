@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-28 03:03+0000\n"
+"POT-Creation-Date: 2025-07-05 03:22+0000\n"
 "PO-Revision-Date: 2023-04-15 14:32+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
@@ -236,24 +236,6 @@ msgstr ""
 msgid "Save Menu Changes?"
 msgstr "Ĉu konservi menuajn ŝanĝojn?"
 
-#. i18n: ectx: Menu (file)
-#: kmenueditui.rc:7
-#, kde-format
-msgid "&File"
-msgstr "&Dosiero"
-
-#. i18n: ectx: Menu (edit)
-#: kmenueditui.rc:17
-#, kde-format
-msgid "&Edit"
-msgstr "&Modifi"
-
-#. i18n: ectx: ToolBar (mainToolBar)
-#: kmenueditui.rc:34
-#, kde-format
-msgid "Main Toolbar"
-msgstr "Ĉefa ilobreto"
-
 #: main.cpp:31 main.cpp:48 main.cpp:62
 #, kde-format
 msgid "KDE Menu Editor"
@@ -394,3 +376,12 @@ msgstr ""
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "Restaŭri Menusistemon"
+
+#~ msgid "&File"
+#~ msgstr "&Dosiero"
+
+#~ msgid "&Edit"
+#~ msgstr "&Modifi"
+
+#~ msgid "Main Toolbar"
+#~ msgstr "Ĉefa ilobreto"

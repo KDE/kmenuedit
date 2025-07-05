@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-28 03:03+0000\n"
+"POT-Creation-Date: 2025-07-05 03:22+0000\n"
 "PO-Revision-Date: 2009-04-09 14:51+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -237,24 +237,6 @@ msgstr ""
 msgid "Save Menu Changes?"
 msgstr "រក្សា​ទុក​ការ​ផ្លាស់ប្ដូរ​ម៉ឺនុយ?"
 
-#. i18n: ectx: Menu (file)
-#: kmenueditui.rc:7
-#, kde-format
-msgid "&File"
-msgstr "​ឯកសារ​"
-
-#. i18n: ectx: Menu (edit)
-#: kmenueditui.rc:17
-#, kde-format
-msgid "&Edit"
-msgstr "កែ​សម្រួល​"
-
-#. i18n: ectx: ToolBar (mainToolBar)
-#: kmenueditui.rc:34
-#, kde-format
-msgid "Main Toolbar"
-msgstr "របារ​ឧបករណ៍​មេ​"
-
 #: main.cpp:31 main.cpp:48 main.cpp:62
 #, kde-format
 msgid "KDE Menu Editor"
@@ -397,6 +379,15 @@ msgstr "តើ​អ្នក​ចង់​ស្ដារ​ម៉ឺនុយ
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "ស្ដារ​ទៅ​ម៉ឺនុយ​ប្រព័ន្ធ​ឡើង​វិញ"
+
+#~ msgid "&File"
+#~ msgstr "​ឯកសារ​"
+
+#~ msgid "&Edit"
+#~ msgstr "កែ​សម្រួល​"
+
+#~ msgid "Main Toolbar"
+#~ msgstr "របារ​ឧបករណ៍​មេ​"
 
 #~ msgid "Co&mmand:"
 #~ msgstr "ពាក្យ​បញ្ជា ៖"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KDE Malayalam\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-28 03:03+0000\n"
+"POT-Creation-Date: 2025-07-05 03:22+0000\n"
 "PO-Revision-Date: 2019-12-12 22:20+0000\n"
 "Last-Translator: Vivek KJ Pazhedath <vivekkj2004@gmail.com>\n"
 "Language-Team: Malayalam <Swathanthra|സ്വതന്ത്ര Malayalam|മലയാളം Computing|"
@@ -231,24 +231,6 @@ msgstr "താങ്കള്‍ മെനുവില്‍ മാറ്റം 
 msgid "Save Menu Changes?"
 msgstr "മെനുവിലെ മാറ്റങ്ങള്‍ സൂക്ഷിക്കണോ ?"
 
-#. i18n: ectx: Menu (file)
-#: kmenueditui.rc:7
-#, kde-format
-msgid "&File"
-msgstr "&ഫയല്‍"
-
-#. i18n: ectx: Menu (edit)
-#: kmenueditui.rc:17
-#, kde-format
-msgid "&Edit"
-msgstr "&ചിട്ടപ്പെടുത്തുക"
-
-#. i18n: ectx: ToolBar (mainToolBar)
-#: kmenueditui.rc:34
-#, kde-format
-msgid "Main Toolbar"
-msgstr "പ്രധാന ഉപകരണപ്പട്ട"
-
 #: main.cpp:31 main.cpp:48 main.cpp:62
 #, kde-format
 msgid "KDE Menu Editor"
@@ -390,6 +372,15 @@ msgstr ""
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "സിസ്റ്റം മെനുവിലേക്ക് തിരിച്ച് കൊണ്ടുവരിക"
+
+#~ msgid "&File"
+#~ msgstr "&ഫയല്‍"
+
+#~ msgid "&Edit"
+#~ msgstr "&ചിട്ടപ്പെടുത്തുക"
+
+#~ msgid "Main Toolbar"
+#~ msgstr "പ്രധാന ഉപകരണപ്പട്ട"
 
 #~ msgid "Co&mmand:"
 #~ msgstr "ആജ്ഞ"

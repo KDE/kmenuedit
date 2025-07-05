@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-28 03:03+0000\n"
+"POT-Creation-Date: 2025-07-05 03:22+0000\n"
 "PO-Revision-Date: 2009-12-13 18:04+0530\n"
 "Last-Translator: Danishka Navin <danishka@gmail.com>\n"
 "Language-Team: Sinhala <danishka@gmail.com>\n"
@@ -235,24 +235,6 @@ msgstr ""
 msgid "Save Menu Changes?"
 msgstr "මෙනු වෙනස්කම් සුරකින්නද?"
 
-#. i18n: ectx: Menu (file)
-#: kmenueditui.rc:7
-#, kde-format
-msgid "&File"
-msgstr "ගොනුව (&F)"
-
-#. i18n: ectx: Menu (edit)
-#: kmenueditui.rc:17
-#, kde-format
-msgid "&Edit"
-msgstr "සකසන්න (&E)"
-
-#. i18n: ectx: ToolBar (mainToolBar)
-#: kmenueditui.rc:34
-#, kde-format
-msgid "Main Toolbar"
-msgstr "ප්‍රධාන ටූල්බාරය"
-
 #: main.cpp:31 main.cpp:48 main.cpp:62
 #, kde-format
 msgid "KDE Menu Editor"
@@ -394,6 +376,15 @@ msgstr "ඔබට පද්ධති මෙනුව ප්‍රතිස්ථ
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "පද්ධති මෙනුවට ප්‍රථිස්ථාපනය කරන්න"
+
+#~ msgid "&File"
+#~ msgstr "ගොනුව (&F)"
+
+#~ msgid "&Edit"
+#~ msgstr "සකසන්න (&E)"
+
+#~ msgid "Main Toolbar"
+#~ msgstr "ප්‍රධාන ටූල්බාරය"
 
 #~ msgid "Co&mmand:"
 #~ msgstr "විධානය (&m):"

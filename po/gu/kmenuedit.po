@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit-gu\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-28 03:03+0000\n"
+"POT-Creation-Date: 2025-07-05 03:22+0000\n"
 "PO-Revision-Date: 2008-11-29 23:36+0530\n"
 "Last-Translator: Kartik Mistry <kartik.mistry@gmail.com>\n"
 "Language-Team: Gujarati <kde-i18n-doc@kde.org>\n"
@@ -235,24 +235,6 @@ msgstr ""
 msgid "Save Menu Changes?"
 msgstr "મેનુ ફેરફારો સંગ્રહ કરશો?"
 
-#. i18n: ectx: Menu (file)
-#: kmenueditui.rc:7
-#, kde-format
-msgid "&File"
-msgstr "ફાઇલ (&F)"
-
-#. i18n: ectx: Menu (edit)
-#: kmenueditui.rc:17
-#, kde-format
-msgid "&Edit"
-msgstr "ફેરફાર (&E)"
-
-#. i18n: ectx: ToolBar (mainToolBar)
-#: kmenueditui.rc:34
-#, kde-format
-msgid "Main Toolbar"
-msgstr "મુખ્ય સાધનપટ્ટી"
-
 #: main.cpp:31 main.cpp:48 main.cpp:62
 #, kde-format
 msgid "KDE Menu Editor"
@@ -395,6 +377,15 @@ msgstr ""
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "સિસ્ટમ મેનુમાં પાછા મોકલો"
+
+#~ msgid "&File"
+#~ msgstr "ફાઇલ (&F)"
+
+#~ msgid "&Edit"
+#~ msgstr "ફેરફાર (&E)"
+
+#~ msgid "Main Toolbar"
+#~ msgstr "મુખ્ય સાધનપટ્ટી"
 
 #~ msgid "Co&mmand:"
 #~ msgstr "આદેશ (&m):"

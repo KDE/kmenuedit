@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-28 03:03+0000\n"
+"POT-Creation-Date: 2025-07-05 03:22+0000\n"
 "PO-Revision-Date: 2022-12-07 11:14+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -248,24 +248,6 @@ msgstr ""
 msgid "Save Menu Changes?"
 msgstr "Menuwijzigingen opslaan?"
 
-#. i18n: ectx: Menu (file)
-#: kmenueditui.rc:7
-#, kde-format
-msgid "&File"
-msgstr "&Bestand"
-
-#. i18n: ectx: Menu (edit)
-#: kmenueditui.rc:17
-#, kde-format
-msgid "&Edit"
-msgstr "Be&werken"
-
-#. i18n: ectx: ToolBar (mainToolBar)
-#: kmenueditui.rc:34
-#, kde-format
-msgid "Main Toolbar"
-msgstr "Hoofdwerkbalk"
-
 #: main.cpp:31 main.cpp:48 main.cpp:62
 #, kde-format
 msgid "KDE Menu Editor"
@@ -408,6 +390,15 @@ msgstr ""
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "Menusysteem herstellen"
+
+#~ msgid "&File"
+#~ msgstr "&Bestand"
+
+#~ msgid "&Edit"
+#~ msgstr "Be&werken"
+
+#~ msgid "Main Toolbar"
+#~ msgstr "Hoofdwerkbalk"
 
 #~ msgid "Co&mmand:"
 #~ msgstr "Co&mmando:"

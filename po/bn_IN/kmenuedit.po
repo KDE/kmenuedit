@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-28 03:03+0000\n"
+"POT-Creation-Date: 2025-07-05 03:22+0000\n"
 "PO-Revision-Date: 2009-01-08 20:11+0530\n"
 "Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
 "Language-Team: Bengali INDIA <fedora-trans-bn_IN@redhat.com>\n"
@@ -225,24 +225,6 @@ msgstr ""
 msgid "Save Menu Changes?"
 msgstr "মেনুর পরিবর্তন সংরক্ষণ করা হবে কি?"
 
-#. i18n: ectx: Menu (file)
-#: kmenueditui.rc:7
-#, kde-format
-msgid "&File"
-msgstr "ফাইল (&F)"
-
-#. i18n: ectx: Menu (edit)
-#: kmenueditui.rc:17
-#, kde-format
-msgid "&Edit"
-msgstr "সম্পাদনা (&E)"
-
-#. i18n: ectx: ToolBar (mainToolBar)
-#: kmenueditui.rc:34
-#, kde-format
-msgid "Main Toolbar"
-msgstr "প্রধান টুল-বার"
-
 #: main.cpp:31 main.cpp:48 main.cpp:62
 #, kde-format
 msgid "KDE Menu Editor"
@@ -386,6 +368,15 @@ msgstr ""
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "সিস্টেম মেনুর মধ্যে পুনরায় স্থাপন করা হবে"
+
+#~ msgid "&File"
+#~ msgstr "ফাইল (&F)"
+
+#~ msgid "&Edit"
+#~ msgstr "সম্পাদনা (&E)"
+
+#~ msgid "Main Toolbar"
+#~ msgstr "প্রধান টুল-বার"
 
 #~ msgid "Co&mmand:"
 #~ msgstr "কমান্ড: (&m)"
