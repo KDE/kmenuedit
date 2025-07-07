@@ -57,12 +57,12 @@ void BasicTab::initGeneralTab()
     generalTabLayout->addWidget(_nameEdit, 0, 1, 1, 1);
 
     // description
-    _descriptionLabel = new QLabel(i18n("&Description:"));
-    generalTabLayout->addWidget(_descriptionLabel, 1, 0);
-    _descriptionEdit = new KLineSpellChecking();
-    _descriptionEdit->setAcceptDrops(false);
-    _descriptionLabel->setBuddy(_descriptionEdit);
-    generalTabLayout->addWidget(_descriptionEdit, 1, 1, 1, 1);
+    _genericNameLabel = new QLabel(i18n("&Generic name:"));
+    generalTabLayout->addWidget(_genericNameLabel, 1, 0);
+    _genericNameEdit = new KLineSpellChecking();
+    _genericNameEdit->setAcceptDrops(false);
+    _genericNameLabel->setBuddy(_genericNameEdit);
+    generalTabLayout->addWidget(_genericNameEdit, 1, 1, 1, 1);
 
     // comment
     _commentLabel = new QLabel(i18n("&Comment:"));
@@ -213,7 +213,7 @@ void BasicTab::initConnections()
 {
     // general tab's components
     connect(_nameEdit, &QLineEdit::textChanged, this, &BasicTab::slotChanged);
-    connect(_descriptionEdit, &KLineSpellChecking::textChanged, this, &BasicTab::slotChanged);
+    connect(_genericNameEdit, &KLineSpellChecking::textChanged, this, &BasicTab::slotChanged);
     connect(_commentEdit, &KLineSpellChecking::textChanged, this, &BasicTab::slotChanged);
     connect(_programEdit, &KUrlRequester::textChanged, this, &BasicTab::slotChanged);
     connect(_envarsEdit, &QLineEdit::textChanged, this, &BasicTab::slotChanged);
@@ -239,7 +239,7 @@ void BasicTab::slotDisableAction()
     // disable all group at the beginning.
     // because there is not file selected.
     _nameEdit->setEnabled(false);
-    _descriptionEdit->setEnabled(false);
+    _genericNameEdit->setEnabled(false);
     _commentEdit->setEnabled(false);
     _programEdit->setEnabled(false);
     _envarsEdit->setEnabled(false);
@@ -248,7 +248,7 @@ void BasicTab::slotDisableAction()
     _onlyShowInKdeCB->setEnabled(false);
     _hiddenEntryCB->setEnabled(false);
     _nameLabel->setEnabled(false);
-    _descriptionLabel->setEnabled(false);
+    _genericNameLabel->setEnabled(false);
     _commentLabel->setEnabled(false);
     _programLabel->setEnabled(false);
     _envarsLabel->setEnabled(false);
@@ -266,7 +266,7 @@ void BasicTab::enableWidgets(bool isDF, bool isDeleted)
 {
     // set only basic attributes if it is not a .desktop file
     _nameEdit->setEnabled(!isDeleted);
-    _descriptionEdit->setEnabled(!isDeleted);
+    _genericNameEdit->setEnabled(!isDeleted);
     _commentEdit->setEnabled(!isDeleted);
     _iconButton->setEnabled(!isDeleted);
     _programEdit->setEnabled(isDF && !isDeleted);
@@ -276,7 +276,7 @@ void BasicTab::enableWidgets(bool isDF, bool isDeleted)
     _onlyShowInKdeCB->setEnabled(isDF && !isDeleted);
     _hiddenEntryCB->setEnabled(isDF && !isDeleted);
     _nameLabel->setEnabled(!isDeleted);
-    _descriptionLabel->setEnabled(!isDeleted);
+    _genericNameLabel->setEnabled(!isDeleted);
     _commentLabel->setEnabled(!isDeleted);
     _programLabel->setEnabled(isDF && !isDeleted);
     _envarsLabel->setEnabled(isDF && !isDeleted);
@@ -302,8 +302,8 @@ void BasicTab::setFolderInfo(MenuFolderInfo *folderInfo)
     _menuEntryInfo = 0;
 
     _nameEdit->setText(folderInfo->caption);
-    _descriptionEdit->setText(folderInfo->genericname);
-    _descriptionEdit->setCursorPosition(0);
+    _genericNameEdit->setText(folderInfo->genericname);
+    _genericNameEdit->setCursorPosition(0);
     _commentEdit->setText(folderInfo->comment);
     _commentEdit->setCursorPosition(0);
     _iconButton->setIcon(folderInfo->icon);
@@ -335,7 +335,7 @@ void BasicTab::setEntryInfo(MenuEntryInfo *entryInfo)
 
     if (!entryInfo) {
         _nameEdit->clear();
-        _descriptionEdit->clear();
+        _genericNameEdit->clear();
         _commentEdit->clear();
         _iconButton->setIcon(QString());
 
@@ -363,8 +363,8 @@ void BasicTab::setEntryInfo(MenuEntryInfo *entryInfo)
     KDesktopFile *df = entryInfo->desktopFile();
 
     _nameEdit->setText(df->readName());
-    _descriptionEdit->setText(df->readGenericName());
-    _descriptionEdit->setCursorPosition(0);
+    _genericNameEdit->setText(df->readGenericName());
+    _genericNameEdit->setCursorPosition(0);
     _commentEdit->setText(df->readComment());
     _commentEdit->setCursorPosition(0);
     _iconButton->setIcon(df->readIcon());
@@ -437,7 +437,7 @@ void BasicTab::apply()
     if (_menuEntryInfo) {
         _menuEntryInfo->setDirty();
         _menuEntryInfo->setCaption(_nameEdit->text());
-        _menuEntryInfo->setDescription(_descriptionEdit->text());
+        _menuEntryInfo->setDescription(_genericNameEdit->text());
         _menuEntryInfo->setIcon(_iconButton->icon());
 
         KDesktopFile *df = _menuEntryInfo->desktopFile();
@@ -490,7 +490,7 @@ void BasicTab::apply()
         }
     } else {
         _menuFolderInfo->setCaption(_nameEdit->text());
-        _menuFolderInfo->setGenericName(_descriptionEdit->text());
+        _menuFolderInfo->setGenericName(_genericNameEdit->text());
         _menuFolderInfo->setComment(_commentEdit->text());
         _menuFolderInfo->setIcon(_iconButton->icon());
     }
