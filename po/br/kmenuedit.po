@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-23 00:43+0000\n"
+"POT-Creation-Date: 2025-07-08 00:43+0000\n"
 "PO-Revision-Date: 2004-07-08 17:18+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud.com>\n"
 "Language-Team: Brezhoneg <Suav.Icb.fr>\n"
@@ -30,9 +30,10 @@ msgid "&Name:"
 msgstr "&Anv :"
 
 #: basictab.cpp:60
-#, kde-format
-msgid "&Description:"
-msgstr "&Deskrivadur :"
+#, fuzzy, kde-format
+#| msgid "&Username:"
+msgid "&Generic name:"
+msgstr "Anv &arveriad :"
 
 #: basictab.cpp:68
 #, kde-format
@@ -414,6 +415,9 @@ msgstr ""
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr ""
+
+#~ msgid "&Description:"
+#~ msgstr "&Deskrivadur :"
 
 #~ msgid "Menu entry to pre-select"
 #~ msgstr "Prest eo ar modem"

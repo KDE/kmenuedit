@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-23 00:43+0000\n"
+"POT-Creation-Date: 2025-07-08 00:43+0000\n"
 "PO-Revision-Date: 2009-04-09 14:51+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -35,9 +35,10 @@ msgid "&Name:"
 msgstr "ឈ្មោះ ៖"
 
 #: basictab.cpp:60
-#, kde-format
-msgid "&Description:"
-msgstr "សេចក្ដី​ពណ៌នា ៖"
+#, fuzzy, kde-format
+#| msgid "&Username:"
+msgid "&Generic name:"
+msgstr "ឈ្មោះ​អ្នក​ប្រើ ៖"
 
 #: basictab.cpp:68
 #, kde-format
@@ -434,6 +435,9 @@ msgstr "តើ​អ្នក​ចង់​ស្ដារ​ម៉ឺនុយ
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "ស្ដារ​ទៅ​ម៉ឺនុយ​ប្រព័ន្ធ​ឡើង​វិញ"
+
+#~ msgid "&Description:"
+#~ msgstr "សេចក្ដី​ពណ៌នា ៖"
 
 #~ msgid "Sub menu to pre-select"
 #~ msgstr "ម៉ឺនុយ​រង​ដែល​ត្រូវ​ជ្រើស​ជាមុន"

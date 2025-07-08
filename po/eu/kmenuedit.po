@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-23 00:43+0000\n"
+"POT-Creation-Date: 2025-07-08 00:43+0000\n"
 "PO-Revision-Date: 2025-04-25 22:10+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -42,9 +42,10 @@ msgid "&Name:"
 msgstr "I&zena:"
 
 #: basictab.cpp:60
-#, kde-format
-msgid "&Description:"
-msgstr "&Deskribapena:"
+#, fuzzy, kde-format
+#| msgid "&Username:"
+msgid "&Generic name:"
+msgstr "Erabiltzaile-&izena:"
 
 #: basictab.cpp:68
 #, kde-format
@@ -440,6 +441,9 @@ msgstr ""
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "Lehengoratu Menu-sistema"
+
+#~ msgid "&Description:"
+#~ msgstr "&Deskribapena:"
 
 #~ msgid "Sub menu to pre-select"
 #~ msgstr "Aurrez hautatzeko azpimenua"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-23 00:43+0000\n"
+"POT-Creation-Date: 2025-07-08 00:43+0000\n"
 "PO-Revision-Date: 2013-11-15 13:39+0000\n"
 "Last-Translator: Samir Ribić <Unknown>\n"
 "Language-Team: Bosnian <bs@li.org>\n"
@@ -39,9 +39,10 @@ msgid "&Name:"
 msgstr "&Ime:"
 
 #: basictab.cpp:60
-#, kde-format
-msgid "&Description:"
-msgstr "&Opis:"
+#, fuzzy, kde-format
+#| msgid "&Username:"
+msgid "&Generic name:"
+msgstr "&Korisnik:"
 
 #: basictab.cpp:68
 #, kde-format
@@ -439,6 +440,9 @@ msgstr ""
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "Vrati na sistemski meni"
+
+#~ msgid "&Description:"
+#~ msgstr "&Opis:"
 
 #~ msgid "Sub menu to pre-select"
 #~ msgstr "Predodabrani podmeni"

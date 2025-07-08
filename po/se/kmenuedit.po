@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-23 00:43+0000\n"
+"POT-Creation-Date: 2025-07-08 00:43+0000\n"
 "PO-Revision-Date: 2006-01-10 20:23+0100\n"
 "Last-Translator: Børre Gaup <boerre@skolelinux.no>\n"
 "Language-Team: Northern Sami <l10n-no@lister.huftis.org>\n"
@@ -35,9 +35,10 @@ msgid "&Name:"
 msgstr "&Namma:"
 
 #: basictab.cpp:60
-#, kde-format
-msgid "&Description:"
-msgstr "&Válddahus:"
+#, fuzzy, kde-format
+#| msgid "&Username:"
+msgid "&Generic name:"
+msgstr "&Geavaheaddjinamma:"
 
 #: basictab.cpp:68
 #, kde-format
@@ -429,3 +430,6 @@ msgstr ""
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr ""
+
+#~ msgid "&Description:"
+#~ msgstr "&Válddahus:"

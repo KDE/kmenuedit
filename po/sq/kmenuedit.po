@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdebase-workspace\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-23 00:43+0000\n"
+"POT-Creation-Date: 2025-07-08 00:43+0000\n"
 "PO-Revision-Date: 2010-02-11 05:26+0000\n"
 "Last-Translator: Vilson Gjeci <vilsongjeci@gmail.com>\n"
 "Language-Team: Albanian <sq@li.org>\n"
@@ -35,9 +35,10 @@ msgid "&Name:"
 msgstr "&Emri:"
 
 #: basictab.cpp:60
-#, kde-format
-msgid "&Description:"
-msgstr "&Përshkrimi:"
+#, fuzzy, kde-format
+#| msgid "&Username:"
+msgid "&Generic name:"
+msgstr "&Emri i përdoruesit:"
 
 #: basictab.cpp:68
 #, kde-format
@@ -420,6 +421,9 @@ msgstr ""
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "Riktheje në Menunë e Sistemit"
+
+#~ msgid "&Description:"
+#~ msgstr "&Përshkrimi:"
 
 #~ msgid "Sub menu to pre-select"
 #~ msgstr "Para përzgjidh nën menunë"

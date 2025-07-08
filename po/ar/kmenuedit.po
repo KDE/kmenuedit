@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-23 00:43+0000\n"
+"POT-Creation-Date: 2025-07-08 00:43+0000\n"
 "PO-Revision-Date: 2025-04-24 10:56+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -41,9 +41,10 @@ msgid "&Name:"
 msgstr "الا&سم:"
 
 #: basictab.cpp:60
-#, kde-format
-msgid "&Description:"
-msgstr "&الوصف:"
+#, fuzzy, kde-format
+#| msgid "&Username:"
+msgid "&Generic name:"
+msgstr "اسم المستخ&دم:"
 
 #: basictab.cpp:68
 #, kde-format
@@ -436,6 +437,9 @@ msgstr "هل تريد استرجاع قائمة النظام؟ تحذير: هذ�
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "استرجع قائمة النظام"
+
+#~ msgid "&Description:"
+#~ msgstr "&الوصف:"
 
 #~ msgid "Sub menu to pre-select"
 #~ msgstr "القائمة الفرعية للانتقاء المسبق"

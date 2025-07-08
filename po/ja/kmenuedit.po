@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-23 00:43+0000\n"
+"POT-Creation-Date: 2025-07-08 00:43+0000\n"
 "PO-Revision-Date: 2025-03-25 07:18+0900\n"
 "Last-Translator: Ryuichi Yamada <ryuichi_ya220@outlook.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -44,9 +44,10 @@ msgid "&Name:"
 msgstr "名前(&N):"
 
 #: basictab.cpp:60
-#, kde-format
-msgid "&Description:"
-msgstr "説明(&D):"
+#, fuzzy, kde-format
+#| msgid "&Username:"
+msgid "&Generic name:"
+msgstr "ユーザ名(&U):"
 
 #: basictab.cpp:68
 #, kde-format
@@ -439,3 +440,6 @@ msgstr "システムの標準メニューに戻しますか？カスタム項目
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "メニューシステムを復元"
+
+#~ msgid "&Description:"
+#~ msgstr "説明(&D):"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit stable\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-23 00:43+0000\n"
+"POT-Creation-Date: 2025-07-08 00:43+0000\n"
 "PO-Revision-Date: 2005-07-09 11:29+0200\n"
 "Last-Translator: JUANITA FRANZ <JUANITA.FRANZ@VR-WEB.DE>\n"
 "Language-Team: AFRIKAANS <translate-discuss-af@lists.sourceforge.net>\n"
@@ -32,9 +32,10 @@ msgid "&Name:"
 msgstr "Naam:"
 
 #: basictab.cpp:60
-#, kde-format
-msgid "&Description:"
-msgstr "Beskrywing:"
+#, fuzzy, kde-format
+#| msgid "&Username:"
+msgid "&Generic name:"
+msgstr "Gebruikernaam:"
 
 #: basictab.cpp:68
 #, kde-format
@@ -432,6 +433,9 @@ msgstr ""
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr ""
+
+#~ msgid "&Description:"
+#~ msgstr "Beskrywing:"
 
 #~ msgid "Sub menu to pre-select"
 #~ msgstr "Sub kieslys om te voor-kies"

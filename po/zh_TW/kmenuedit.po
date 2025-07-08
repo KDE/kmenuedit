@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-23 00:43+0000\n"
+"POT-Creation-Date: 2025-07-08 00:43+0000\n"
 "PO-Revision-Date: 2025-04-30 01:54+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -37,9 +37,10 @@ msgid "&Name:"
 msgstr "名稱(&N):"
 
 #: basictab.cpp:60
-#, kde-format
-msgid "&Description:"
-msgstr "描述(&D):"
+#, fuzzy, kde-format
+#| msgid "&Username:"
+msgid "&Generic name:"
+msgstr "使用者名稱(&U):"
 
 #: basictab.cpp:68
 #, kde-format
@@ -430,6 +431,9 @@ msgstr "您要回復系統選單嗎？警告：這將會移除所有的自訂選
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "回復系統選單"
+
+#~ msgid "&Description:"
+#~ msgstr "描述(&D):"
 
 #~ msgid "Sub menu to pre-select"
 #~ msgstr "預先選擇的子選單"

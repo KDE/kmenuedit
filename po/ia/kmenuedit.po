@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-23 00:43+0000\n"
+"POT-Creation-Date: 2025-07-08 00:43+0000\n"
 "PO-Revision-Date: 2025-05-09 17:05+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
@@ -33,9 +33,10 @@ msgid "&Name:"
 msgstr "&Nomine:"
 
 #: basictab.cpp:60
-#, kde-format
-msgid "&Description:"
-msgstr "&Description:"
+#, fuzzy, kde-format
+#| msgid "&Username:"
+msgid "&Generic name:"
+msgstr "Nomine de &Usator:"
 
 #: basictab.cpp:68
 #, kde-format
@@ -434,6 +435,9 @@ msgstr ""
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "Restabili systema de menu"
+
+#~ msgid "&Description:"
+#~ msgstr "&Description:"
 
 #~ msgid "Sub menu to pre-select"
 #~ msgstr "Sub menu pro pre-selectionar"

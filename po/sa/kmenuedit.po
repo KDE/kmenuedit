@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-23 00:43+0000\n"
+"POT-Creation-Date: 2025-07-08 00:43+0000\n"
 "PO-Revision-Date: 2024-12-29 23:07+0530\n"
 "Last-Translator: kali <shreekantkalwar@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -34,9 +34,10 @@ msgid "&Name:"
 msgstr "&नामः:"
 
 #: basictab.cpp:60
-#, kde-format
-msgid "&Description:"
-msgstr "&वर्णनम्‌:"
+#, fuzzy, kde-format
+#| msgid "&Username:"
+msgid "&Generic name:"
+msgstr "&उपयोक्तृनाम:"
 
 #: basictab.cpp:68
 #, kde-format
@@ -431,6 +432,9 @@ msgstr ""
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "विकल्पसूचि प्रणालीं पुनर्स्थापयन्तु"
+
+#~ msgid "&Description:"
+#~ msgstr "&वर्णनम्‌:"
 
 #~ msgid "Sub menu to pre-select"
 #~ msgstr "पूर्वचयनार्थं उपविकल्पसूचि"

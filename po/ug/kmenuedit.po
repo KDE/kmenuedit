@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-23 00:43+0000\n"
+"POT-Creation-Date: 2025-07-08 00:43+0000\n"
 "PO-Revision-Date: 2013-09-08 07:05+0900\n"
 "Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -33,9 +33,10 @@ msgid "&Name:"
 msgstr "ئاتى(&N):"
 
 #: basictab.cpp:60
-#, kde-format
-msgid "&Description:"
-msgstr "چۈشەندۈرۈش(&D):"
+#, fuzzy, kde-format
+#| msgid "&Username:"
+msgid "&Generic name:"
+msgstr "ئىشلەتكۈچى نامى(&U):"
 
 #: basictab.cpp:68
 #, kde-format
@@ -414,6 +415,9 @@ msgstr ""
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "سىستېما تىزىملىكىگە ئەسلىگە كەلتۈر"
+
+#~ msgid "&Description:"
+#~ msgstr "چۈشەندۈرۈش(&D):"
 
 #~ msgid "All submenus of '%1' will be removed. Do you want to continue?"
 #~ msgstr ""

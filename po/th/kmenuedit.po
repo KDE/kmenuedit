@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-23 00:43+0000\n"
+"POT-Creation-Date: 2025-07-08 00:43+0000\n"
 "PO-Revision-Date: 2010-03-27 23:01+0700\n"
 "Last-Translator: Thanomsub Noppaburana <donga.nb@gmail.com>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
@@ -35,9 +35,10 @@ msgid "&Name:"
 msgstr "&ชื่อ:"
 
 #: basictab.cpp:60
-#, kde-format
-msgid "&Description:"
-msgstr "&คำอธิบาย:"
+#, fuzzy, kde-format
+#| msgid "&Username:"
+msgid "&Generic name:"
+msgstr "ชื่อ&ผู้ใช้:"
 
 #: basictab.cpp:68
 #, kde-format
@@ -435,6 +436,9 @@ msgstr ""
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "เรียกคืนไปยังเมนูของระบบ"
+
+#~ msgid "&Description:"
+#~ msgstr "&คำอธิบาย:"
 
 #~ msgid "Sub menu to pre-select"
 #~ msgstr "เมนูย่อยที่จะเลือกก่อน"

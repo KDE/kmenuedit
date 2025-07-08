@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-23 00:43+0000\n"
+"POT-Creation-Date: 2025-07-08 00:43+0000\n"
 "PO-Revision-Date: 2025-05-26 18:00+0300\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
@@ -39,9 +39,10 @@ msgid "&Name:"
 msgstr "&Nosaukums:"
 
 #: basictab.cpp:60
-#, kde-format
-msgid "&Description:"
-msgstr "&Apraksts:"
+#, fuzzy, kde-format
+#| msgid "&Username:"
+msgid "&Generic name:"
+msgstr "&Lietotājvārds:"
 
 #: basictab.cpp:68
 #, kde-format
@@ -438,6 +439,9 @@ msgstr ""
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "Izvēlnes sistēmas atjaunošana"
+
+#~ msgid "&Description:"
+#~ msgstr "&Apraksts:"
 
 #~ msgid "Sub menu to pre-select"
 #~ msgstr "Iepriekš atlasāmā apakšizvēlne"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-23 00:43+0000\n"
+"POT-Creation-Date: 2025-07-08 00:43+0000\n"
 "PO-Revision-Date: 2010-01-29 15:55+0530\n"
 "Last-Translator: Rajesh Ranjan <rajesh672@gmail.com>\n"
 "Language-Team: Maithili <maithili.sf.net>\n"
@@ -39,9 +39,10 @@ msgid "&Name:"
 msgstr "नाम (&N):"
 
 #: basictab.cpp:60
-#, kde-format
-msgid "&Description:"
-msgstr "विवरण (&D):"
+#, fuzzy, kde-format
+#| msgid "&Username:"
+msgid "&Generic name:"
+msgstr "प्रयोक्ता नाम: (&U)"
 
 #: basictab.cpp:68
 #, kde-format
@@ -426,6 +427,9 @@ msgstr ""
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "तंत्र मेनूमे वापिस जाउ"
+
+#~ msgid "&Description:"
+#~ msgstr "विवरण (&D):"
 
 #~ msgid "Sub menu to pre-select"
 #~ msgstr "उप मेनू टू प्री-सलेक्ट"

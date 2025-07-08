@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KDE Malayalam\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-23 00:43+0000\n"
+"POT-Creation-Date: 2025-07-08 00:43+0000\n"
 "PO-Revision-Date: 2019-12-12 22:20+0000\n"
 "Last-Translator: Vivek KJ Pazhedath <vivekkj2004@gmail.com>\n"
 "Language-Team: Malayalam <Swathanthra|സ്വതന്ത്ര Malayalam|മലയാളം Computing|"
@@ -34,9 +34,10 @@ msgid "&Name:"
 msgstr "പേരു്"
 
 #: basictab.cpp:60
-#, kde-format
-msgid "&Description:"
-msgstr "വിവരണം"
+#, fuzzy, kde-format
+#| msgid "&Username:"
+msgid "&Generic name:"
+msgstr "ഉപയോക്താവിന്റെ പേര്:"
 
 #: basictab.cpp:68
 #, kde-format
@@ -426,6 +427,9 @@ msgstr ""
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "സിസ്റ്റം മെനുവിലേക്ക് തിരിച്ച് കൊണ്ടുവരിക"
+
+#~ msgid "&Description:"
+#~ msgstr "വിവരണം"
 
 #~ msgid "Sub menu to pre-select"
 #~ msgstr "സബ്-മെനു പ്രി(പൂര്‍വ)-തിരഞ്ഞെടുക്കലിനായ്"

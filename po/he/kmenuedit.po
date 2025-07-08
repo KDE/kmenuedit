@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-23 00:43+0000\n"
+"POT-Creation-Date: 2025-07-08 00:43+0000\n"
 "PO-Revision-Date: 2025-04-24 20:37+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
@@ -44,9 +44,10 @@ msgid "&Name:"
 msgstr "&שם:"
 
 #: basictab.cpp:60
-#, kde-format
-msgid "&Description:"
-msgstr "&תיאור:"
+#, fuzzy, kde-format
+#| msgid "&Username:"
+msgid "&Generic name:"
+msgstr "שם מש&תמש:"
 
 #: basictab.cpp:68
 #, kde-format
@@ -439,6 +440,9 @@ msgstr "לשחזר את תפריט המערכת? אזהרה: פעולה זו ת�
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "שחזור תפריט המערכת"
+
+#~ msgid "&Description:"
+#~ msgstr "&תיאור:"
 
 #~ msgid "Sub menu to pre-select"
 #~ msgstr "תת־תפריט לבחירה מראש"

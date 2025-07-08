@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-23 00:43+0000\n"
+"POT-Creation-Date: 2025-07-08 00:43+0000\n"
 "PO-Revision-Date: 2023-02-19 14:27+0400\n"
 "Last-Translator: Kheyyam <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
@@ -33,9 +33,10 @@ msgid "&Name:"
 msgstr "&Ad:"
 
 #: basictab.cpp:60
-#, kde-format
-msgid "&Description:"
-msgstr "&Təsviri:"
+#, fuzzy, kde-format
+#| msgid "&Username:"
+msgid "&Generic name:"
+msgstr "&İstifadəçi adı:"
 
 #: basictab.cpp:68
 #, kde-format
@@ -437,6 +438,9 @@ msgstr ""
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr "Sistem menyusunu bərpa et"
+
+#~ msgid "&Description:"
+#~ msgstr "&Təsviri:"
 
 #~ msgid "Sub menu to pre-select"
 #~ msgstr "Əvvəlcədən seçmək üçün alt menyu"
