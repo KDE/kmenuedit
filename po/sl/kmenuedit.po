@@ -1,7 +1,7 @@
 # Translation of kmenuedit.po to Slovenian
 # KMENUEDIT translation to Slovenian language
 # Copyright (C) 2001, 2003, 2004, 2005 Free Software Foundation, Inc.
-# $Id: kmenuedit.po 1712867 2025-07-08 01:22:52Z scripty $
+# $Id: kmenuedit.po 1712918 2025-07-09 01:24:00Z scripty $
 # $Source$
 #
 # Roman Maurer <roman.maurer@amis.net>, 2000.
@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-07-08 00:43+0000\n"
-"PO-Revision-Date: 2025-04-23 07:01+0200\n"
+"PO-Revision-Date: 2025-07-08 06:47+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -44,10 +44,9 @@ msgid "&Name:"
 msgstr "Ime:"
 
 #: basictab.cpp:60
-#, fuzzy, kde-format
-#| msgid "&Username:"
+#, kde-format
 msgid "&Generic name:"
-msgstr "&Uporabniško ime:"
+msgstr "&Generično ime:"
 
 #: basictab.cpp:68
 #, kde-format
