@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-07-08 00:43+0000\n"
-"PO-Revision-Date: 2025-04-24 20:37+0300\n"
+"PO-Revision-Date: 2025-07-08 11:35+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -26,7 +26,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 24.12.3\n"
+"X-Generator: Lokalize 25.04.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -44,10 +44,9 @@ msgid "&Name:"
 msgstr "&שם:"
 
 #: basictab.cpp:60
-#, fuzzy, kde-format
-#| msgid "&Username:"
+#, kde-format
 msgid "&Generic name:"
-msgstr "שם מש&תמש:"
+msgstr "שם &כללי:"
 
 #: basictab.cpp:68
 #, kde-format
