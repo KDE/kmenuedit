@@ -430,6 +430,3 @@ msgstr ""
 msgctxt "@title:window"
 msgid "Restore Menu System"
 msgstr ""
-
-#~ msgid "&Description:"
-#~ msgstr "&Válddahus:"
