@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-07-08 00:43+0000\n"
-"PO-Revision-Date: 2025-04-23 22:11+0200\n"
+"PO-Revision-Date: 2025-07-28 18:07+0200\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
 "Language: bg\n"
@@ -35,10 +35,9 @@ msgid "&Name:"
 msgstr "&Име:"
 
 #: basictab.cpp:60
-#, fuzzy, kde-format
-#| msgid "&Username:"
+#, kde-format
 msgid "&Generic name:"
-msgstr "Потр&ебител:"
+msgstr "О&бщо име:"
 
 #: basictab.cpp:68
 #, kde-format
