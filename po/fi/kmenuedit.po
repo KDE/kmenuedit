@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-07-08 00:43+0000\n"
-"PO-Revision-Date: 2025-05-28 17:15+0300\n"
+"PO-Revision-Date: 2025-07-14 11:45+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -49,10 +49,9 @@ msgid "&Name:"
 msgstr "&Nimi:"
 
 #: basictab.cpp:60
-#, fuzzy, kde-format
-#| msgid "&Username:"
+#, kde-format
 msgid "&Generic name:"
-msgstr "&Käyttäjätunnus:"
+msgstr "&Yleisnimi:"
 
 #: basictab.cpp:68
 #, kde-format
