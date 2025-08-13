@@ -21,6 +21,11 @@ void GlobalAccel::changeMenuEntryShortcut(const KService::Ptr &service, const QK
 
     const QString desktopFile = QStringLiteral("%1.desktop").arg(service->desktopEntryName());
 
+    // if the component doesn't exist already, and we don't want any shortcuts, don't create one
+    if (!KGlobalAccel::isComponentActive(desktopFile) && shortcut.isEmpty()) {
+        return;
+    }
+
     if (!KGlobalAccel::isComponentActive(desktopFile)) {
         const QString destination = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QStringLiteral("/kglobalaccel/") + desktopFile;
         QFile::copy(service->entryPath(), destination);
