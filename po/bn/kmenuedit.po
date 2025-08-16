@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-07-08 00:43+0000\n"
+"POT-Creation-Date: 2025-08-16 00:44+0000\n"
 "PO-Revision-Date: 2006-01-04 14:01-0600\n"
 "Last-Translator: Deepayan Sarkar <deepayan@bengalinux.org>\n"
 "Language-Team: Bengali <kde-translation@bengalinux.org>\n"
@@ -136,7 +136,7 @@ msgstr "বর্তমান শর্টকা&ট কী:"
 msgid "Advanced"
 msgstr ""
 
-#: globalaccel.cpp:28
+#: globalaccel.cpp:33
 #, kde-format
 msgid "Launch %1"
 msgstr ""

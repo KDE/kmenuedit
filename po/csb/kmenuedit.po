@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-07-08 00:43+0000\n"
+"POT-Creation-Date: 2025-08-16 00:44+0000\n"
 "PO-Revision-Date: 2009-05-15 21:33+0200\n"
 "Last-Translator: Mark Kwidzińśczi <mark@linuxcsb.org>\n"
 "Language-Team: Kaszëbsczi <i18n-csb@linuxcsb.org>\n"
@@ -152,7 +152,7 @@ msgstr "&Klawiszowô skrodzëna:"
 msgid "Advanced"
 msgstr "Awansowóné"
 
-#: globalaccel.cpp:28
+#: globalaccel.cpp:33
 #, kde-format
 msgid "Launch %1"
 msgstr ""

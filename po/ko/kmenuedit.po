@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-07-08 00:43+0000\n"
+"POT-Creation-Date: 2025-08-16 00:44+0000\n"
 "PO-Revision-Date: 2025-07-20 01:48+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -149,7 +149,7 @@ msgstr "현재 단축 키(&K):"
 msgid "Advanced"
 msgstr "고급"
 
-#: globalaccel.cpp:28
+#: globalaccel.cpp:33
 #, kde-format
 msgid "Launch %1"
 msgstr "%1 실행"
