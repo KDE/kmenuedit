@@ -94,7 +94,6 @@ Name[uz@cyrillic]=Меню таҳрирчи
 Name[vi]=Trình sửa trình đơn
 Name[wa]=Aspougneu di menus
 Name[xh]=Umhleli we Menu
-Name[x-test]=xxMenu Editorxx
 Name[zh_CN]=菜单编辑器
 Name[zh_TW]=選單編輯器
 Comment=Edit how applications are presented in app launchers
@@ -135,7 +134,6 @@ Comment[ta]=ஏவிகளில் செயலிகள் காட்டப
 Comment[tr]=Uygulamaların, uygulama başlatıcılarda nice sunulduğunu düzenleyin
 Comment[uk]=Редагування способу, у який пункти програм буде показано у програмах для запуску програм
 Comment[vi]=Chỉnh sửa cách các ứng dụng được trình bày trong các trình khởi chạy ứng dụng
-Comment[x-test]=xxEdit how applications are presented in app launchersxx
 Comment[zh_CN]=编辑应用程序在应用程序启动器中的显示方式
 Comment[zh_TW]=編輯應用程式在啟動器中的顯示方式
 
