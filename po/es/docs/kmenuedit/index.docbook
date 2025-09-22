@@ -139,7 +139,7 @@
 
 <para
 >&kmenuedit; se puede iniciar pulsando con el &RMB; en el botón del lanzador de aplicaciones en el panel y seleccionando <guimenuitem
->Editar aplicaciones...</guimenuitem
+>Editar aplicaciones…</guimenuitem
 > o escribiendo <userinput
 >kmenuedit</userinput
 > en la línea de &krunner;.</para>
@@ -355,7 +355,7 @@
 >.</para>
   <para
 >Para empezar, necesitaremos abrir &kmenuedit;, por tanto, pulse el &RMB; en el menú lanzador de aplicaciones y haga clic en <guimenuitem
->Editar aplicaciones...</guimenuitem
+>Editar aplicaciones…</guimenuitem
 > para iniciar &kmenuedit;. Después de que se haya iniciado &kmenuedit;, seleccione <guisubmenu
 >Internet</guisubmenu
 > como se muestra en la imagen inferior. <screenshot>
@@ -383,7 +383,7 @@
 ><guimenu
 >Archivo</guimenu
 ><guimenuitem
->Nuevo elemento...</guimenuitem
+>Nuevo elemento…</guimenuitem
 ></menuchoice
 >, que abrirá el diálogo <guilabel
 >Nuevo elemento</guilabel
@@ -718,7 +718,7 @@
 
 <para
 >El texto del botón cambiará a <guilabel
->Entrada...</guilabel
+>Entrada…</guilabel
 > y podrá presionar la combinación de teclado que desee asignar al programa. </para>
 <para
 >Puede restablecer el atajo a <guilabel
@@ -767,7 +767,7 @@
 > <guimenu
 >Archivo</guimenu
 > <guimenuitem
->Nuevo elemento...</guimenuitem
+>Nuevo elemento…</guimenuitem
 > </menuchoice
 ></term
 > <listitem
