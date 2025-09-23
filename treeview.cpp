@@ -1417,6 +1417,11 @@ void TreeView::sort(const int sortCmd)
     TreeItem *itemToSort;
     if (sortType == SortByName || sortType == SortByDescription) {
         itemToSort = static_cast<TreeItem *>(selectedItem());
+
+        if (!itemToSort) {
+            return;
+        }
+
         sortItem(itemToSort, sortType);
     } else if (sortType == SortAllByDescription) {
         sortType = SortByDescription;
