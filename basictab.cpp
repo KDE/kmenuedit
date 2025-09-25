@@ -392,7 +392,12 @@ void BasicTab::setEntryInfo(MenuEntryInfo *entryInfo)
             execLine.pop_front();
         }
 
-        _programEdit->lineEdit()->setText(execLine.takeFirst());
+        if (execLine.isEmpty()) {
+            _programEdit->lineEdit()->clear();
+        } else {
+            _programEdit->lineEdit()->setText(execLine.takeFirst());
+        }
+
     } else {
         _programEdit->lineEdit()->clear();
     }
