@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-08-16 00:44+0000\n"
+"POT-Creation-Date: 2025-09-26 00:43+0000\n"
 "PO-Revision-Date: 2009-04-09 14:51+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -417,19 +417,19 @@ msgstr "ធាតុ​ថ្មី"
 msgid "Item name:"
 msgstr "ឈ្មោះ​វត្ថុ ៖"
 
-#: treeview.cpp:1791
+#: treeview.cpp:1796
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
 msgstr "ការ​ផ្លាស់ប្ដូរ​ម៉ឺនុយ​មិន​អាច​រក្សា​ទុក​បាន​ទេ ដោយ​សារ​តែ​បញ្ហា​ខាង​ក្រោម ៖"
 
-#: treeview.cpp:1838
+#: treeview.cpp:1843
 #, kde-format
 msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
 "menus."
 msgstr "តើ​អ្នក​ចង់​ស្ដារ​ម៉ឺនុយ​ប្រពន្ធ​ឡើងវិញ​ឬ ? ព្រមាន ៖ វា​នឹង​យក​ម៉ឺនុយ​ផ្ទាល់ខ្លួន​ទាំងអស់​ចេញ ។"
 
-#: treeview.cpp:1839
+#: treeview.cpp:1844
 #, fuzzy, kde-format
 #| msgid "Restore to System Menu"
 msgctxt "@title:window"

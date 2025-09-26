@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit-gu\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-08-16 00:44+0000\n"
+"POT-Creation-Date: 2025-09-26 00:43+0000\n"
 "PO-Revision-Date: 2008-11-29 23:36+0530\n"
 "Last-Translator: Kartik Mistry <kartik.mistry@gmail.com>\n"
 "Language-Team: Gujarati <kde-i18n-doc@kde.org>\n"
@@ -414,12 +414,12 @@ msgstr "નવી વસ્તુ"
 msgid "Item name:"
 msgstr "વસ્તુ નામ:"
 
-#: treeview.cpp:1791
+#: treeview.cpp:1796
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
 msgstr "નીચેનાં કારણસર મેનુ ફેરફારો સંગ્રહ કરી શકાયા નહી:"
 
-#: treeview.cpp:1838
+#: treeview.cpp:1843
 #, kde-format
 msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
@@ -427,7 +427,7 @@ msgid ""
 msgstr ""
 "શું તમે સિસ્ટમ મેનુ પાછું લાવવા માંગો છો? ચેતવણી: આ તમે ગોઠવેલ બધાં મેનુઓ દૂર કરી નાખશે."
 
-#: treeview.cpp:1839
+#: treeview.cpp:1844
 #, fuzzy, kde-format
 #| msgid "Restore to System Menu"
 msgctxt "@title:window"

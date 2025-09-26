@@ -1,7 +1,7 @@
 # Translation of kmenuedit.po to Slovenian
 # KMENUEDIT translation to Slovenian language
 # Copyright (C) 2001, 2003, 2004, 2005 Free Software Foundation, Inc.
-# $Id: kmenuedit.po 1716144 2025-08-16 01:24:45Z scripty $
+# $Id: kmenuedit.po 1719070 2025-09-26 01:23:33Z scripty $
 # $Source$
 #
 # Roman Maurer <roman.maurer@amis.net>, 2000.
@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-08-16 00:44+0000\n"
+"POT-Creation-Date: 2025-09-26 00:43+0000\n"
 "PO-Revision-Date: 2025-07-08 06:47+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -424,12 +424,12 @@ msgstr "Nov predmet"
 msgid "Item name:"
 msgstr "Ime predmeta:"
 
-#: treeview.cpp:1791
+#: treeview.cpp:1796
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
 msgstr "Spremembe menija niso bile shranjene zaradi naslednje težave:"
 
-#: treeview.cpp:1838
+#: treeview.cpp:1843
 #, kde-format
 msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
@@ -438,7 +438,7 @@ msgstr ""
 "Ali želite obnoviti sistemski meni? Opozorilo: to bo odstranilo vse menije "
 "po meri."
 
-#: treeview.cpp:1839
+#: treeview.cpp:1844
 #, kde-format
 msgctxt "@title:window"
 msgid "Restore Menu System"
