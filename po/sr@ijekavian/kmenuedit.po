@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-08-16 00:44+0000\n"
+"POT-Creation-Date: 2025-09-26 02:38+0000\n"
 "PO-Revision-Date: 2017-09-28 17:58+0200\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -423,12 +423,12 @@ msgstr "Нова ставка"
 msgid "Item name:"
 msgstr "Име ставке:"
 
-#: treeview.cpp:1791
+#: treeview.cpp:1796
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
 msgstr "Измјене менија не могу се сачувати из сљедећег разлога:"
 
-#: treeview.cpp:1838
+#: treeview.cpp:1843
 #, kde-format
 msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
@@ -437,7 +437,7 @@ msgstr ""
 "Желите ли да повратите системски мени? УПОЗОРЕЊЕ: Ово уклања све посебно "
 "додате меније."
 
-#: treeview.cpp:1839
+#: treeview.cpp:1844
 #, fuzzy, kde-format
 #| msgid "Restore to System Menu"
 msgctxt "@title:window"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdebase-workspace\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-08-16 00:44+0000\n"
+"POT-Creation-Date: 2025-09-26 02:38+0000\n"
 "PO-Revision-Date: 2010-02-11 05:26+0000\n"
 "Last-Translator: Vilson Gjeci <vilsongjeci@gmail.com>\n"
 "Language-Team: Albanian <sq@li.org>\n"
@@ -403,19 +403,19 @@ msgstr "Temë e Re"
 msgid "Item name:"
 msgstr "Emri i temës:"
 
-#: treeview.cpp:1791
+#: treeview.cpp:1796
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
 msgstr ""
 
-#: treeview.cpp:1838
+#: treeview.cpp:1843
 #, kde-format
 msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
 "menus."
 msgstr ""
 
-#: treeview.cpp:1839
+#: treeview.cpp:1844
 #, fuzzy, kde-format
 #| msgid "Restore to System Menu"
 msgctxt "@title:window"

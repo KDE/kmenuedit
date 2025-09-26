@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-08-16 00:44+0000\n"
+"POT-Creation-Date: 2025-09-26 02:38+0000\n"
 "PO-Revision-Date: 2025-08-21 12:58+0300\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
@@ -419,12 +419,12 @@ msgstr "Jauns elements"
 msgid "Item name:"
 msgstr "Elementa nosaukums:"
 
-#: treeview.cpp:1791
+#: treeview.cpp:1796
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
 msgstr "Izvēlnes izmaiņas nevarēja saglabāt problēmas dēļ:"
 
-#: treeview.cpp:1838
+#: treeview.cpp:1843
 #, kde-format
 msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
@@ -433,7 +433,7 @@ msgstr ""
 "Vai vēlaties atjaunot sistēmas izvēlni? Brīdinājums: šī rīcība noņems visas "
 "pielāgotās izvēlnes."
 
-#: treeview.cpp:1839
+#: treeview.cpp:1844
 #, kde-format
 msgctxt "@title:window"
 msgid "Restore Menu System"

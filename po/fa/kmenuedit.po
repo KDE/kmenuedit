@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-08-16 00:44+0000\n"
+"POT-Creation-Date: 2025-09-26 02:38+0000\n"
 "PO-Revision-Date: 2013-01-11 01:34+0330\n"
 "Last-Translator: Mohammad Reza Mirdamadi <mohi@linuxshop.ir>\n"
 "Language-Team: Farsi (Persian) <kde-i18n-fa@kde.org>\n"
@@ -417,19 +417,19 @@ msgstr "فقره جدید"
 msgid "Item name:"
 msgstr "نام فقره:"
 
-#: treeview.cpp:1791
+#: treeview.cpp:1796
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
 msgstr "تغییرات گزینگان را به دلیل مشکلات زیر نتوانست ذخیره کند:"
 
-#: treeview.cpp:1838
+#: treeview.cpp:1843
 #, kde-format
 msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
 "menus."
 msgstr ""
 
-#: treeview.cpp:1839
+#: treeview.cpp:1844
 #, fuzzy, kde-format
 #| msgid "Restore to System Menu"
 msgctxt "@title:window"
