@@ -178,7 +178,7 @@ msgid ""
 "This will hide the menu bar completely. You can show it again by typing %1."
 msgstr ""
 "Ceci masquera complètement la barre de menus. Vous pouvez la faire "
-"apparaître à nouveau en appuyant sur la touche %1."
+"apparaitre à nouveau en appuyant sur la touche %1."
 
 #: kmenuedit.cpp:70
 #, kde-format
