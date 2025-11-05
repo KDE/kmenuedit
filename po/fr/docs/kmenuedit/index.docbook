@@ -121,7 +121,7 @@
 </itemizedlist>
 
 <para
->Par défaut, toutes les applications installées sur l'ordinateur apparaissent pour tous les utilisateurs dans le menu des lanceurs d'applications. Des applications peuvent apparaître plus d'une fois dans des menus différents. Des catégories de sous-menus vides définies dans les spécifications de menu du bureau sont également présente, mais ne sont pas visibles dans les lanceurs d'applications, à moins que vous n'installiez des applications appartenant à ces catégories. </para>
+>Par défaut, toutes les applications installées sur l'ordinateur apparaissent pour tous les utilisateurs dans le menu des lanceurs d'applications. Des applications peuvent apparaitre plus d'une fois dans des menus différents. Des catégories de sous-menus vides définies dans les spécifications de menu du bureau sont également présente, mais ne sont pas visibles dans les lanceurs d'applications, à moins que vous n'installiez des applications appartenant à ces catégories. </para>
 
 <para
 >La vue arborescente dispose de deux types d'éléments différents : </para>
@@ -149,7 +149,7 @@
 <para
 >&kmenuedit; dispose de deux modes de vues arborescentes - normal, et affichage des éléments cachées. Pour voir ces dernières, cochez l'option <guilabel
 >Afficher les éléments cachés</guilabel
-> dans la boîte de dialogue de configuration, dans la page <guilabel
+> dans la boite de dialogue de configuration, dans la page <guilabel
 >Général</guilabel
 >. </para>
 <para
@@ -157,9 +157,9 @@
 <para
 >En mode affichage des éléments cachés, un sous-menu spécial <guilabel
 >.hidden [Hidden]</guilabel
-> apparaît à la racine de l'arborescence. Ce sous-menu spécial n'est pas modifiable. Dans ce sous-menu, tous les éléments supprimés seront affichés au prochain démarrage de &kmenuedit;.</para>
+> apparait à la racine de l'arborescence. Ce sous-menu spécial n'est pas modifiable. Dans ce sous-menu, tous les éléments supprimés seront affichés au prochain démarrage de &kmenuedit;.</para>
 <para
->Il n'est pas possible de supprimer un élément en utilisant l'interface graphique dans se sous-menu spécial. Il apparaîtra de nouveau au prochain démarrage de &kmenuedit;. </para>
+>Il n'est pas possible de supprimer un élément en utilisant l'interface graphique dans se sous-menu spécial. Il apparaitra de nouveau au prochain démarrage de &kmenuedit;. </para>
 
 <sect1 id="use-cases">
 <title
@@ -178,7 +178,7 @@
 <para
 >Ceci devrait être fait en mode affichage des éléments cachés où seuls les sous-menus et éléments visibles dans le menu du lanceur d'applications sont affichés. </para>
 <para
->Par défaut, le menu est trié par ordre alphabétique en utilisant les noms en anglais ou les descriptions. En utilisant une autre langue que l'anglais, certains sous-menus et éléments n'apparaîtront pas correctement triés. </para>
+>Par défaut, le menu est trié par ordre alphabétique en utilisant les noms en anglais ou les descriptions. En utilisant une autre langue que l'anglais, certains sous-menus et éléments n'apparaitront pas correctement triés. </para>
 <para
 >Utilisez les options dans <menuchoice
 ><guimenu
@@ -188,7 +188,7 @@
 ></menuchoice
 > pour trier soit par nom ou par description. Si vous utilisez le lanceur d'applications classique, vous devez choisir l'option de <guilabel
 >Format</guilabel
-> correspondant dans la boîte de dialogue de configuration. Dans le lanceur &kickoff;, cochez <guilabel
+> correspondant dans la boite de dialogue de configuration. Dans le lanceur &kickoff;, cochez <guilabel
 >Afficher les applications par nom</guilabel
 > si vous les triez ici par nom. </para>
 <para
@@ -329,7 +329,7 @@
 ><guimenuitem
 >Nouvel élément...</guimenuitem
 ></menuchoice
-> ouvre la boîte de dialogue <guilabel
+> ouvre la boite de dialogue <guilabel
 >Nouvel élément</guilabel
 >, comme montré ci-dessous. Saisissez le nom du programme que vous souhaitez ajouter. Dans notre cas, saisissez <userinput
 >firefox</userinput
@@ -344,7 +344,7 @@
 </imageobject>
 <textobject>
 <phrase
->La boîte de dialogue <guilabel
+>La boite de dialogue <guilabel
 >Nouvel élément</guilabel
 >.</phrase>
 </textobject>
@@ -394,7 +394,7 @@
 ><command
 >locate</command
 ></userinput
-> pour chercher le fichier de bureau et saisir la chaîne depuis la ligne de commandes comme ici. </para>
+> pour chercher le fichier de bureau et saisir la chaine depuis la ligne de commandes comme ici. </para>
 <note
 ><para
 >À la suite de la commande, vous pouvez avoir plusieurs variables qui seront remplacées par les valeurs réelles lorsque le programme est démarré :  <simplelist>
@@ -438,9 +438,9 @@
 <para
 >Nous voulons une icône plus créative, nous cliquons sur l'icône générique qui se trouve à côté de <guilabel
 >Nom : </guilabel
-> (notez que l'icône par défaut peut être vide, dans ce cas, cliquez sur la zone située à droite de la boîte de saisie du nom). La boîte de dialogue <guilabel
+> (notez que l'icône par défaut peut être vide, dans ce cas, cliquez sur la zone située à droite de la boite de saisie du nom). La boite de dialogue <guilabel
 >Choisir une icône</guilabel
-> apparaît, nous permettant de choisir une icône, comme montré ci-dessous. <screenshot>
+> apparait, nous permettant de choisir une icône, comme montré ci-dessous. <screenshot>
 <screeninfo
 >Boîte de dialogue <guilabel
 >Choisir une icône</guilabel
@@ -451,7 +451,7 @@
 </imageobject>
 <textobject>
 <phrase
->La boîte de dialogue <guilabel
+>La boite de dialogue <guilabel
 >Choisir une icône</guilabel
 >.</phrase>
 </textobject>
@@ -499,7 +499,7 @@
 ><guimenuitem
 >Enregistrer</guimenuitem
 ></menuchoice
->, attendez que la boîte de dialogue <guilabel
+>, attendez que la boite de dialogue <guilabel
 >Mise à jour de la configuration</guilabel
 > se termine. Vous devriez maintenant trouver &firefox; dans le lanceur d'applications, sous-menu <guisubmenu
 >Internet</guisubmenu
@@ -526,7 +526,7 @@
 ></term>
 <listitem
 ><para
->Ceci est le nom de votre programme comme il apparaît dans le lanceur d'applications. Il peut être différent du nom réel de l'exécutable. Par exemple, le nom de l'exécutable <command
+>Ceci est le nom de votre programme comme il apparait dans le lanceur d'applications. Il peut être différent du nom réel de l'exécutable. Par exemple, le nom de l'exécutable <command
 >mc</command
 > est &laquo; <application
 >Midnight Commander</application
