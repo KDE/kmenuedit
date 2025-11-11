@@ -3,7 +3,10 @@
   <id>org.kde.kmenuedit.desktop</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0+</project_license>
-  <name>Menu Edit</name>
+  <developer id="org.kde">
+    <name translate="no">KDE</name>
+  </developer>
+  <name>Menu Editor</name>
   <name xml:lang="ar">محرر القائمة</name>
   <name xml:lang="az">Menyu redaktoru</name>
   <name xml:lang="be">Рэдагаванне меню</name>
@@ -138,6 +141,7 @@
   <provides>
     <binary>kmenuedit</binary>
   </provides>
+  <launchable type="desktop-id">org.kde.kmenuedit.desktop</launchable>
   <releases>
     <release version="6.4.6" date="2025-11-11"/>
     <release version="6.5.2" date="2025-11-04"/>
