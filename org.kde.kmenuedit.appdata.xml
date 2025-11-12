@@ -7,47 +7,6 @@
     <name translate="no">KDE</name>
   </developer>
   <name>Menu Editor</name>
-  <name xml:lang="ar">محرر القائمة</name>
-  <name xml:lang="az">Menyu redaktoru</name>
-  <name xml:lang="be">Рэдагаванне меню</name>
-  <name xml:lang="bg">Редактиране на меню</name>
-  <name xml:lang="ca">Editor de menús</name>
-  <name xml:lang="ca-valencia">Editor de menús</name>
-  <name xml:lang="de">Menü bearbeiten</name>
-  <name xml:lang="el">Επεξεργασία μενού</name>
-  <name xml:lang="en-GB">Menu Edit</name>
-  <name xml:lang="eo">Menu Edit</name>
-  <name xml:lang="es">Editar el menú</name>
-  <name xml:lang="eu">Menua editatzea</name>
-  <name xml:lang="fi">Valikkomuokkain</name>
-  <name xml:lang="fr">Menu « Édition »</name>
-  <name xml:lang="gl">Edición de menú</name>
-  <name xml:lang="he">עריכת תפריטים</name>
-  <name xml:lang="hu">Menüszerkesztő</name>
-  <name xml:lang="ia">Menu Edit (Modifica de menu )</name>
-  <name xml:lang="id">Menu Edit</name>
-  <name xml:lang="is">Valmyndaritill</name>
-  <name xml:lang="it">Modifica menu</name>
-  <name xml:lang="ka">მენიუს რედაქტირება</name>
-  <name xml:lang="ko">메뉴 편집</name>
-  <name xml:lang="lv">Izvēlnes redaktors</name>
-  <name xml:lang="nl">Bewerken van menu</name>
-  <name xml:lang="nn">Menyredigering</name>
-  <name xml:lang="pl">Edytor menu</name>
-  <name xml:lang="pt">Edição do Menu</name>
-  <name xml:lang="pt-BR">Editor de menu</name>
-  <name xml:lang="ro">Redactare meniu</name>
-  <name xml:lang="ru">Редактор меню</name>
-  <name xml:lang="sa">विकल्पसूचि सम्पादकः</name>
-  <name xml:lang="sk">Menu editor</name>
-  <name xml:lang="sl">Urejevalnik menijev</name>
-  <name xml:lang="sv">Menyredigering</name>
-  <name xml:lang="ta">பட்டித் திருத்தி</name>
-  <name xml:lang="tr">Menü Düzenle</name>
-  <name xml:lang="uk">Редагування меню</name>
-  <name xml:lang="vi">Chỉnh sửa trình đơn</name>
-  <name xml:lang="zh-CN">菜单编辑器</name>
-  <name xml:lang="zh-TW">選單編輯</name>
   <summary>Edit how applications are presented in app launchers</summary>
   <summary xml:lang="ar">حرر كيف تُعرض البرامج في مطلقات البرامج</summary>
   <summary xml:lang="az">Tətbiq başladıcıda görünən tətbiqlər siyahısına düzəliş edin</summary>
