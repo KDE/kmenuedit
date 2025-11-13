@@ -7,6 +7,7 @@
     <name translate="no">KDE</name>
   </developer>
   <name>Menu Editor</name>
+  <name xml:lang="he">עורך התפריטים</name>
   <summary>Edit how applications are presented in app launchers</summary>
   <summary xml:lang="ar">حرر كيف تُعرض البرامج في مطلقات البرامج</summary>
   <summary xml:lang="az">Tətbiq başladıcıda görünən tətbiqlər siyahısına düzəliş edin</summary>
