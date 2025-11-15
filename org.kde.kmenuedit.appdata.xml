@@ -9,12 +9,16 @@
   <name>Menu Editor</name>
   <name xml:lang="ar">محرّر القوائم</name>
   <name xml:lang="ca">Editor de menús</name>
+  <name xml:lang="es">Editor del menú</name>
   <name xml:lang="he">עורך התפריטים</name>
+  <name xml:lang="is">Valmyndaritill</name>
   <name xml:lang="ka">მენიუს რედაქტორი</name>
+  <name xml:lang="nl">Menubewerker</name>
   <name xml:lang="pt-BR">Editor de menu</name>
   <name xml:lang="sl">Urejevalnik menijev</name>
   <name xml:lang="tr">Menü Düzenleyicisi</name>
   <name xml:lang="uk">Редактор меню</name>
+  <name xml:lang="zh-TW">選單編輯器</name>
   <summary>Edit how applications are presented in app launchers</summary>
   <summary xml:lang="ar">حرر كيف تُعرض البرامج في مطلقات البرامج</summary>
   <summary xml:lang="az">Tətbiq başladıcıda görünən tətbiqlər siyahısına düzəliş edin</summary>
