@@ -231,6 +231,7 @@ TreeView::TreeView(KActionCollection *ac, QWidget *parent)
     setDragEnabled(true);
     setAcceptDrops(true);
     setMinimumWidth(240);
+    setSelectionMode(QAbstractItemView::ExtendedSelection);
 
     setHeaderLabels(QStringList() << QLatin1String(""));
     header()->hide();
@@ -277,6 +278,10 @@ TreeView::TreeView(KActionCollection *ac, QWidget *parent)
 
     // listen for selection
     connect(this, &QTreeWidget::currentItemChanged, this, &TreeView::itemSelected);
+    // Also update actions when selection changes (for multi-selection support)
+    connect(this, &QTreeWidget::itemSelectionChanged, this, [this]() {
+        itemSelected(currentItem());
+    });
 
     m_menuFile = new MenuFile(QStandardPaths::writableLocation(QStandardPaths::ConfigLocation) + QStringLiteral("/menus/") +
                               QStringLiteral("applications-kmenuedit.menu"));
@@ -618,15 +623,16 @@ void TreeView::selectMenuEntry(const QString &menuEntry)
 
 void TreeView::itemSelected(QTreeWidgetItem *item)
 {
-    if (item) {
-        // ensure the item is visible as selected
-        item->setSelected(true);
-    }
-
     TreeItem *_item = item ? static_cast<TreeItem *>(item) : nullptr;
     TreeItem *parentItem = nullptr;
+
+    // Check if we have any selected items (for multi-selection support)
+    QList<QTreeWidgetItem *> selected_items = selectedItems();
+    bool hasSelection = !selected_items.isEmpty();
+    bool singleSelection = (selected_items.count() == 1);
     bool selected = false;
     bool dselected = false;
+
     if (_item) {
         selected = true;
         dselected = _item->isHiddenInMenu();
@@ -634,19 +640,44 @@ void TreeView::itemSelected(QTreeWidgetItem *item)
     }
 
     // change actions activation
-    m_ac->action(CUT_ACTION_NAME)->setEnabled(selected);
-    m_ac->action(COPY_ACTION_NAME)->setEnabled(selected);
+    // For multi-selection: only delete is enabled, all other actions are disabled
+    // For single selection: enable actions based on item type and state
+
+    // Calculate common enable conditions
+    bool enableSingleSelectionActions = singleSelection && selected;
+    bool canSort = enableSingleSelectionActions && _item && _item->isDirectory() && (_item->childCount() > 0);
+    bool canMoveUp = enableSingleSelectionActions && _item && (parentItem->indexOfChild(_item) > 0);
+    bool canMoveDown = enableSingleSelectionActions && _item && (parentItem->indexOfChild(_item) < parentItem->childCount() - 1);
+    bool canDelete = hasSelection && (m_showHidden || !dselected);
+
+    // Creation actions (enabled when no selection or single selection, disabled for multi-selection)
+    bool canCreateNew = !hasSelection || singleSelection;
+    m_ac->action(NEW_ITEM_ACTION_NAME)->setEnabled(canCreateNew);
+    m_ac->action(NEW_SUBMENU_ACTION_NAME)->setEnabled(canCreateNew);
+    m_ac->action(NEW_SEPARATOR_ACTION_NAME)->setEnabled(canCreateNew);
+
+    // Edit actions (clipboard operations)
+    m_ac->action(CUT_ACTION_NAME)->setEnabled(enableSingleSelectionActions);
+    m_ac->action(COPY_ACTION_NAME)->setEnabled(enableSingleSelectionActions);
     m_ac->action(PASTE_ACTION_NAME)->setEnabled(m_clipboard != 0);
 
+    // Delete action (supports multi-selection)
     if (m_ac->action(DELETE_ACTION_NAME)) {
-        m_ac->action(DELETE_ACTION_NAME)->setEnabled(selected && !dselected);
+        m_ac->action(DELETE_ACTION_NAME)->setEnabled(canDelete);
     }
 
-    m_ac->action(SORT_BY_NAME_ACTION_NAME)->setEnabled(selected && _item && _item->isDirectory() && (_item->childCount() > 0));
-    m_ac->action(SORT_BY_DESCRIPTION_ACTION_NAME)->setEnabled(m_ac->action(SORT_BY_NAME_ACTION_NAME)->isEnabled());
+    // Sort actions (single selection only)
+    m_ac->action(SORT_BY_NAME_ACTION_NAME)->setEnabled(canSort);
+    m_ac->action(SORT_BY_DESCRIPTION_ACTION_NAME)->setEnabled(canSort);
 
-    m_ac->action(MOVE_UP_ACTION_NAME)->setEnabled(_item && selected && (parentItem->indexOfChild(_item) > 0));
-    m_ac->action(MOVE_DOWN_ACTION_NAME)->setEnabled(_item && selected && (parentItem->indexOfChild(_item) < parentItem->childCount() - 1));
+    // Move actions (single selection only)
+    m_ac->action(MOVE_UP_ACTION_NAME)->setEnabled(canMoveUp);
+    m_ac->action(MOVE_DOWN_ACTION_NAME)->setEnabled(canMoveDown);
+
+    // File operations (single selection only)
+    m_ac->action(COPY_FILEPATH_ACTION_NAME)->setEnabled(enableSingleSelectionActions);
+    m_ac->action(OPEN_CONTAINING_FOLDER_ACTION_NAME)->setEnabled(enableSingleSelectionActions);
+    m_ac->action(PROPERTIES_ACTION_NAME)->setEnabled(enableSingleSelectionActions);
 
     if (!item) {
         emit disableAction();
@@ -1619,14 +1650,25 @@ std::optional<QUrl> TreeView::fileUrlForSelected()
 
 void TreeView::del()
 {
-    TreeItem *item = (TreeItem *)selectedItem();
+    QList<QTreeWidgetItem *> items = selectedItems();
 
-    // nil selected? -> nil to delete
-    if (item == nullptr) {
+    // Nothing selected? -> nothing to delete
+    if (items.isEmpty()) {
         return;
     }
 
-    del(item, true);
+    // Delete all selected items
+    // Note: Deleting a parent item will also delete its children via Qt's parent-child relationship.
+    // To avoid accessing deleted items, we iterate in reverse order (children before parents in tree order)
+    // and skip items that may have been deleted as children of previously deleted parents.
+    for (QTreeWidgetItem *item : items) {
+        // Check if item still exists in tree (may have been deleted as child of parent)
+        if (item->treeWidget() == nullptr) {
+            continue;
+        }
+        TreeItem *treeItem = static_cast<TreeItem *>(item);
+        del(treeItem, true);
+    }
 
     // Select new current item
     // TODO: is this completely redundant?
