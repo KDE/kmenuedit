@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:53+0000\n"
+"POT-Creation-Date: 2025-11-18 00:45+0000\n"
 "PO-Revision-Date: 2013-09-15 05:14+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -397,32 +397,32 @@ msgstr "Жасырындары көрсетілсін"
 msgid " [Hidden]"
 msgstr " [Жасырын]"
 
-#: treeview.cpp:1037
+#: treeview.cpp:1068
 #, kde-format
 msgid "New Submenu"
 msgstr "Жаңа бағыныңқы мәзірі"
 
-#: treeview.cpp:1037
+#: treeview.cpp:1068
 #, kde-format
 msgid "Submenu name:"
 msgstr "Бағыныңқы мәзірдің атауы:"
 
-#: treeview.cpp:1104
+#: treeview.cpp:1135
 #, kde-format
 msgid "New Item"
 msgstr "Жаңа элемент"
 
-#: treeview.cpp:1104
+#: treeview.cpp:1135
 #, kde-format
 msgid "Item name:"
 msgstr "Әлементтің атауы:"
 
-#: treeview.cpp:1796
+#: treeview.cpp:1838
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
 msgstr "Мәзірдің өзгерістері сақталмайды, себебі:"
 
-#: treeview.cpp:1843
+#: treeview.cpp:1885
 #, kde-format
 msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
@@ -430,7 +430,7 @@ msgid ""
 msgstr ""
 "Жүйелік мәзірін қалпына қайтармақсыз ба? Барлық өзіндік мәзірлер жоғалады."
 
-#: treeview.cpp:1844
+#: treeview.cpp:1886
 #, fuzzy, kde-format
 #| msgid "Restore to System Menu"
 msgctxt "@title:window"

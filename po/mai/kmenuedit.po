@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:53+0000\n"
+"POT-Creation-Date: 2025-11-18 00:45+0000\n"
 "PO-Revision-Date: 2010-01-29 15:55+0530\n"
 "Last-Translator: Rajesh Ranjan <rajesh672@gmail.com>\n"
 "Language-Team: Maithili <maithili.sf.net>\n"
@@ -389,39 +389,39 @@ msgstr "छुपी प्रविष्टि देखाउ"
 msgid " [Hidden]"
 msgstr "(छुपल)"
 
-#: treeview.cpp:1037
+#: treeview.cpp:1068
 #, kde-format
 msgid "New Submenu"
 msgstr "नव उपमेनू"
 
-#: treeview.cpp:1037
+#: treeview.cpp:1068
 #, kde-format
 msgid "Submenu name:"
 msgstr "उपमेनू नामः"
 
-#: treeview.cpp:1104
+#: treeview.cpp:1135
 #, kde-format
 msgid "New Item"
 msgstr "नव वस्तु"
 
-#: treeview.cpp:1104
+#: treeview.cpp:1135
 #, kde-format
 msgid "Item name:"
 msgstr "वस्तु क' नामः"
 
-#: treeview.cpp:1796
+#: treeview.cpp:1838
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
 msgstr "निम्न कारणसँ मेनू परिवर्तनकेँ सहेजल नहि जाए सकल:"
 
-#: treeview.cpp:1843
+#: treeview.cpp:1885
 #, kde-format
 msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
 "menus."
 msgstr ""
 
-#: treeview.cpp:1844
+#: treeview.cpp:1886
 #, fuzzy, kde-format
 #| msgid "Restore to System Menu"
 msgctxt "@title:window"

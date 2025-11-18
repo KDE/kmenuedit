@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:53+0000\n"
+"POT-Creation-Date: 2025-11-18 00:45+0000\n"
 "PO-Revision-Date: 2024-01-03 14:00-0600\n"
 "Last-Translator: A S Alam <aalam@punlinux.org>\n"
 "Language-Team: Punjabi <kde-i18n-doc@kde.org>\n"
@@ -398,32 +398,32 @@ msgstr "ਲੁਕਵੀਆਂ ਐਂਟਰੀਆਂ ਵੇਖੋ"
 msgid " [Hidden]"
 msgstr " [ਓਹਲੇ]"
 
-#: treeview.cpp:1037
+#: treeview.cpp:1068
 #, kde-format
 msgid "New Submenu"
 msgstr "ਨਵਾਂ ਸਬ-ਮੇਨੂ"
 
-#: treeview.cpp:1037
+#: treeview.cpp:1068
 #, kde-format
 msgid "Submenu name:"
 msgstr "ਸਬ-ਮੇਨੂ ਨਾਂ:"
 
-#: treeview.cpp:1104
+#: treeview.cpp:1135
 #, kde-format
 msgid "New Item"
 msgstr "ਨਵੀਂ ਇਕਾਈ"
 
-#: treeview.cpp:1104
+#: treeview.cpp:1135
 #, kde-format
 msgid "Item name:"
 msgstr "ਇਕਾਈ ਨਾਂ:"
 
-#: treeview.cpp:1796
+#: treeview.cpp:1838
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
 msgstr "ਮੇਨੂ ਤਬਦੀਲੀ ਹੇਠ ਲਿਖੀ ਗਲਤੀ ਕਰਕੇ ਸੰਭਾਲੀ ਨਹੀਂ ਜਾ ਸਕਦੀ ਹੈ:"
 
-#: treeview.cpp:1843
+#: treeview.cpp:1885
 #, kde-format
 msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
@@ -431,7 +431,7 @@ msgid ""
 msgstr ""
 "ਕੀ ਤੁਸੀਂ ਸਿਸਟਮ ਮੇਨੂ ਨੂੰ ਮੁੜ-ਸਟੋਰ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ? ਚੇਤਾਵਨੀ: ਇਸ ਨਾਲ ਕਸਟਮ ਮੇਨੂ ਹਟਾਏ ਜਾਣਗੇ।"
 
-#: treeview.cpp:1844
+#: treeview.cpp:1886
 #, fuzzy, kde-format
 #| msgid "Restore to System Menu"
 msgctxt "@title:window"

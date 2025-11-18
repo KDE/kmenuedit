@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:53+0000\n"
+"POT-Creation-Date: 2025-11-18 00:45+0000\n"
 "PO-Revision-Date: 2009-01-08 20:11+0530\n"
 "Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
 "Language-Team: Bengali INDIA <fedora-trans-bn_IN@redhat.com>\n"
@@ -384,32 +384,32 @@ msgstr "আড়াল করা এনট্রি প্রদর্শন ক�
 msgid " [Hidden]"
 msgstr " [Hidden]"
 
-#: treeview.cpp:1037
+#: treeview.cpp:1068
 #, kde-format
 msgid "New Submenu"
 msgstr "নতুন সাব-মেনু"
 
-#: treeview.cpp:1037
+#: treeview.cpp:1068
 #, kde-format
 msgid "Submenu name:"
 msgstr "সাব-মেনুর নাম:"
 
-#: treeview.cpp:1104
+#: treeview.cpp:1135
 #, kde-format
 msgid "New Item"
 msgstr "নতুন বস্তু"
 
-#: treeview.cpp:1104
+#: treeview.cpp:1135
 #, kde-format
 msgid "Item name:"
 msgstr "বস্তুর নাম:"
 
-#: treeview.cpp:1796
+#: treeview.cpp:1838
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
 msgstr "নিম্নলিখিত কারণে, মেনুর মধ্যে করা পরিবর্তনগুলি সংরক্ষণ করা সম্ভব হয়নি:"
 
-#: treeview.cpp:1843
+#: treeview.cpp:1885
 #, kde-format
 msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
@@ -418,7 +418,7 @@ msgstr ""
 "সিস্টেম মেনু পুনরুদ্ধার করা হবে কি? সতর্কবার্তা: এর ফলে, স্বনির্ধারিত সকল মেনু মুছে "
 "ফেলা হবে।"
 
-#: treeview.cpp:1844
+#: treeview.cpp:1886
 #, fuzzy, kde-format
 #| msgid "Restore to System Menu"
 msgctxt "@title:window"
