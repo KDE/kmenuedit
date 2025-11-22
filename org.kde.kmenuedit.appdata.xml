@@ -8,6 +8,7 @@
   </developer>
   <name>Menu Editor</name>
   <name xml:lang="ar">محرّر القوائم</name>
+  <name xml:lang="bg">Редактор на менюто</name>
   <name xml:lang="ca">Editor de menús</name>
   <name xml:lang="ca-valencia">Editor de menús</name>
   <name xml:lang="es">Editor del menú</name>
@@ -20,6 +21,7 @@
   <name xml:lang="pl">Edytor menu</name>
   <name xml:lang="pt-BR">Editor de menu</name>
   <name xml:lang="sl">Urejevalnik menijev</name>
+  <name xml:lang="sv">Menyeditor</name>
   <name xml:lang="tr">Menü Düzenleyicisi</name>
   <name xml:lang="uk">Редактор меню</name>
   <name xml:lang="zh-TW">選單編輯器</name>
@@ -71,7 +73,7 @@
     <p xml:lang="ar">يسمح لك محرر قائمة كِيدِي أن تحرر كيف تُعرض البرامج في مطلقات البرامج مثل مطلق برامج بلازما.</p>
     <p xml:lang="az">KDE Menyu redaktoru Plama Tətbiq Başladıcı vidjeti kimi tətbiq başladıcıda təqdim ediləcək tətbiqlər siyahısına düzəliş etməyə imkan verir.</p>
     <p xml:lang="be">Рэдагаванне меню KDE дае магчымасць рэдагаваць тое, як вашыя праграмы падаюцца ў сродках запуску праграм, такіх як віджэт сродку запуску праграм Plasma.</p>
-    <p xml:lang="bg">Редактиране на меню на KDE ви позволява да настройвате начина, по който приложенията се показват в стартерите на приложения като панелните уиджетите за стартери на Plasma</p>
+    <p xml:lang="bg">Редактиране на меню на KDE ви позволява да настройвате начина, по който приложенията се показват в стартерите на приложения като панелните уиджети за стартери на Plasma</p>
     <p xml:lang="ca">L'editor de menús del KDE permet editar com es presenten les aplicacions en els llançadors d'aplicacions, com el giny del Llançador d'aplicacions del KDE.</p>
     <p xml:lang="ca-valencia">L'editor de menús de KDE permet editar com es presenten les aplicacions en els iniciadors d'aplicacions, com el giny de l'Iniciador d'aplicacions de KDE.</p>
     <p xml:lang="de">Mit dem KDE-Menüeditor können Sie bearbeiten, wie Ihre Anwendungen in Anwendungsstartern angezeigt werden, wie zum Beipsiel im Starter von Plasma.</p>
