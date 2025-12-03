@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-18 00:45+0000\n"
-"PO-Revision-Date: 2025-10-23 14:02+0000\n"
+"PO-Revision-Date: 2025-12-02 16:18+0000\n"
 "Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
 "Language-Team: Icelandic\n"
 "Language: is\n"
@@ -85,8 +85,8 @@ msgid ""
 msgstr ""
 "Hægt er að setja breytur á eftir skipuninni sem verður skipt út með "
 "innihaldi þeirra áður en forritið er keyrt:\n"
-"%f - stakt skrárheiti\n"
-"%F - listi yfir skrárheiti; fyrir forrit sem geta opnað margar staðbundnar "
+"%f - stakt skráarheiti\n"
+"%F - listi yfir skráaheiti; fyrir forrit sem geta opnað margar staðbundnar "
 "skrár í einu\n"
 "%u - stök slóð\n"
 "%U - listi yfir slóðir\n"
@@ -388,7 +388,7 @@ msgstr "Yfirfara stafsetningu"
 #: preferencesdlg.cpp:32
 #, kde-format
 msgid "Spell checking Options"
-msgstr "Valkostir stafsetningarkönnunar"
+msgstr "Valkostir stafsetningaryfirferðar"
 
 #: preferencesdlg.cpp:65
 #, kde-format
