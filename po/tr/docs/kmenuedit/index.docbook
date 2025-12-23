@@ -59,7 +59,7 @@
 >&FDLNotice;</legalnotice>
 
 <date
->2015-04-27</date>
+>2015‒04‒27</date>
 <releaseinfo
 >Plasma 5.3</releaseinfo>
 
@@ -97,8 +97,8 @@
 
 <para
 >&kmenuedit;, paneldeki uygulama başlatıcısı düğmesine &RMB; ile tıklayıp <guimenuitem
->Uygulamaları Düzenle...</guimenuitem
->'yi seçerek veya &krunner; satırına <userinput
+>Uygulamaları Düzenle…</guimenuitem
+>’yi seçerek veya &krunner; satırına <userinput
 >kmenuedit</userinput
 > yazarak başlatılabilir.</para>
 
@@ -161,7 +161,7 @@
 </itemizedlist>
 
 <para
->&kmenuedit;'in iki ağaç görünümü kipi vardır - normal ve gizli girdiler. İkincisini görmek için <guilabel
+>&kmenuedit;’in iki ağaç görünümü kipi vardır — normal ve gizli girdiler. İkincisini görmek için <guilabel
 >Genel Seçenekler</guilabel
 > sayfasındaki <guilabel
 >Gizli girdileri göster</guilabel
@@ -173,7 +173,7 @@
 >.hidden [Gizli]</guilabel
 > alt menüsü görünür. Bu özel alt menü düzenlenemez. Bu alt menüde, silinen tüm ögeler bir sonraki &kmenuedit; başlatımında gösterilir.</para>
 <para
->Grafik arayüz kullanarak bu özel menüdeki girdileri silmek olanaklı değildir. &kmenuedit;'in her bir sonraki başlatımında bu girdiler yeniden ortaya çıkarlar. </para>
+>Grafik arayüz kullanarak bu özel menüdeki girdileri silmek olanaklı değildir. &kmenuedit;’in her bir sonraki başlatımında bu girdiler yeniden ortaya çıkarlar. </para>
 
 <sect1 id="use-cases">
 <title
@@ -308,19 +308,19 @@
 >Bir Menü Girdisi Eklemek</title>
 
   <para
->Bu örnekte, &firefox;'u <guisubmenu
+>Bu örnekte, &firefox;’u <guisubmenu
 >İnternet</guisubmenu
 > alt menüsüne ekleyeceğiz.</para>
   <para
 >Başlamak için önce &kmenuedit; uygulamasını açmamız gerekiyor; bu yüzden &kmenuedit; uygulamasını başlatmak için uygulama menüsüne &RMB; ile tıklayıp <guimenuitem
->Uygulamaları Düzenle...</guimenuitem
->'ye tıklayın. &kmenuedit; başladıktan sonra, aşağıdaki görselde gösterildiği üzere <guisubmenu
+>Uygulamaları Düzenle…</guimenuitem
+>’ye tıklayın. &kmenuedit; başladıktan sonra, aşağıdaki görselde gösterildiği üzere <guisubmenu
 >İnternet</guisubmenu
 > alt menüsünü seçin. <screenshot>
 <screeninfo
 ><guisubmenu
 >İnternet</guisubmenu
->'i Seç'</screeninfo>
+>’i Seç</screeninfo>
 <mediaobject>
 <imageobject>
 <imagedata fileref="selectinternet.png" format="PNG"/>
@@ -329,7 +329,7 @@
 <phrase
 ><guisubmenu
 >İnternet</guisubmenu
->'i Seç'</phrase>
+>’i Seç</phrase>
 </textobject>
 </mediaobject>
 </screenshot
@@ -337,11 +337,11 @@
   <para
 ><guisubmenu
 >İnternet</guisubmenu
->'i seçtikten sonra, <menuchoice
+>’i seçtikten sonra, <menuchoice
 ><guimenu
 >Dosya</guimenu
 ><guimenuitem
->Yeni Öge...</guimenuitem
+>Yeni Öge…</guimenuitem
 ></menuchoice
 > menü ögesini seçmek, aşağıda gösterildiği üzere <guilabel
 >Yeni Öge</guilabel
@@ -413,23 +413,23 @@
 ><para
 >Komuttan sonra, program çalıştığında gerçek değerlerle değiştirebileceğiniz birkaç yer tutucu koyabilirsiniz: <simplelist>
 <member
->%f - bir tek dosya adı</member>
+>%f — bir tek dosya adı</member>
 <member
->%F - bir dosyalar listesi; birden çok dosyayı aynı anda açabilen uygulamalarda kullanın</member>
+>%F — bir dosyalar listesi; birden çok dosyayı aynı anda açabilen uygulamalarda kullanın</member>
 <member
->%u - tek bir &URL;</member>
+>%u — tek bir &URL;</member>
 <member
->%U - bir &URL;'ler listesi</member>
+>%U — bir &URL;’ler listesi</member>
 <member
->%d - açılacak bir dosyanın klasörü</member>
+>%d — açılacak bir dosyanın klasörü</member>
 <member
->%D - bir klasörler listesi</member>
+>%D — bir klasörler listesi</member>
 <member
->%i - simge</member>
+>%i — simge</member>
 <member
->%m - ufak simge</member>
+>%m — ufak simge</member>
 <member
->%c - alt yazı</member>
+>%c — alt yazı</member>
 </simplelist
 ></para>
 <informalexample
@@ -442,7 +442,7 @@
 ></informalexample
 ></note>
 <para
->Çoğu uygulamalar ek seçenekler kabul ederler; &eg;, &konqueror; veya &konsole; gibi tanımlı bir profil. Bir uygulama başlangıcı için tüm seçenekleri görmek üzere &konsole;'da <userinput
+>Çoğu uygulamalar ek seçenekler kabul ederler; &eg;, &konqueror; veya &konsole; gibi tanımlı bir profil. Bir uygulama başlangıcı için tüm seçenekleri görmek üzere &konsole;’da <userinput
 ><command
 ><replaceable
 >uygulamaadı</replaceable
@@ -476,7 +476,7 @@
 ></para>
 
   <para
->Listeden Firefox simgesini seçip &Enter;'a basıyoruz. Bitmiş ekranınız aşağı yukarı aşağıdaki gibi görünür. <screenshot>
+>Listeden Firefox simgesini seçip &Enter;’e basıyoruz. Bitmiş ekranınız aşağı yukarı aşağıdaki gibi görünür. <screenshot>
 <screeninfo
 >Bitmiş ekran görüntüsü</screeninfo>
 <mediaobject>
@@ -592,7 +592,7 @@
 <varlistentry>
 <term
 ><guilabel
->Yalnızca &kde;'de göster</guilabel
+>Yalnızca &kde;’de göster</guilabel
 ></term>
 <listitem
 ><para
@@ -680,7 +680,7 @@
 
 <para
 >Düğme metni <guilabel
->Giriş...</guilabel
+>Giriş…</guilabel
 > olarak değişir ve programınıza atamak istediğiniz düğme kombinasyonunu girebilirsiniz. </para>
 <para
 >Kısayolu, bu düğmeyi kullanarak yine <guilabel
@@ -729,7 +729,7 @@
 > <guimenu
 >Dosya</guimenu
 > <guimenuitem
->Yeni Öge...</guimenuitem
+>Yeni Öge…</guimenuitem
 > </menuchoice
 ></term
 > <listitem
@@ -746,7 +746,7 @@
 ><guimenu
 >Dosya</guimenu
 > <guimenuitem
->Yeni Alt Menü...</guimenuitem
+>Yeni Alt Menü…</guimenuitem
 > </menuchoice
 ></term>
 <listitem
@@ -1002,7 +1002,7 @@
 <itemizedlist>
 <listitem
 ><para
->&Matthias.Elter; &Matthias.Elter.mail; - Özgün Yazar</para>
+>&Matthias.Elter; &Matthias.Elter.mail; — Özgün Yazar</para>
 </listitem>
 <listitem
 ><para
