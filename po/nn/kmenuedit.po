@@ -7,14 +7,14 @@ msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-18 00:45+0000\n"
-"PO-Revision-Date: 2024-09-23 20:17+0200\n"
+"PO-Revision-Date: 2026-04-18 15:43+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
 "Language: nn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 24.11.70\n"
+"X-Generator: Lokalize 25.12.3\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
@@ -36,10 +36,9 @@ msgid "&Name:"
 msgstr "&Namn:"
 
 #: basictab.cpp:60
-#, fuzzy, kde-format
-#| msgid "&Username:"
+#, kde-format
 msgid "&Generic name:"
-msgstr "&Brukarnamn:"
+msgstr "&Generisk namn:"
 
 #: basictab.cpp:68
 #, kde-format
@@ -141,7 +140,7 @@ msgstr "&Brukarnamn:"
 #: basictab.cpp:191
 #, kde-format
 msgid "Run using dedicated &graphics card"
-msgstr ""
+msgstr "Køyr med dedikert &skjermkort"
 
 #: basictab.cpp:198
 #, kde-format
@@ -162,12 +161,12 @@ msgstr "Start %1"
 #, kde-format
 msgid ""
 "This will hide the menu bar completely. You can show it again by typing %1."
-msgstr ""
+msgstr "Dette vil gøyma menylinja heilt. Du kan visa ho att ved å trykkja %1."
 
 #: kmenuedit.cpp:70
 #, kde-format
 msgid "Hide menu bar"
-msgstr ""
+msgstr "Gøym menylinja"
 
 #: kmenuedit.cpp:118
 #, kde-format
@@ -188,24 +187,24 @@ msgstr "Ny &skiljelinje"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Location"
-msgstr ""
+msgstr "Kopier filadressa"
 
 #: kmenuedit.cpp:135
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "&Open Containing Folder"
-msgstr ""
+msgstr "&Opna foreldermappa"
 
 #: kmenuedit.cpp:138
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Properties"
-msgstr ""
+msgstr "Eigenskapar"
 
 #: kmenuedit.cpp:142
 #, kde-format
 msgid "&New"
-msgstr ""
+msgstr "&Ny"
 
 #: kmenuedit.cpp:150
 #, kde-format
@@ -286,7 +285,7 @@ msgstr "&Fil"
 #: kmenueditui.rc:15
 #, kde-format
 msgid "File Act&ions"
-msgstr ""
+msgstr "&Filhandlingar"
 
 #. i18n: ectx: Menu (edit)
 #: kmenueditui.rc:25
@@ -304,7 +303,7 @@ msgstr "Hovudverktøylinje"
 #: kmenueditui.rc:52
 #, kde-format
 msgid "Hamburger Menu Toolbar"
-msgstr ""
+msgstr "Hamburgarmeny-verktøylinje"
 
 #: main.cpp:29 main.cpp:39 main.cpp:53
 #, kde-format
@@ -356,12 +355,15 @@ msgstr "Opphavsperson"
 msgid "Montel Laurent"
 msgstr "Montel Laurent"
 
+# Berre engelske menynamn fungerer (eks. «Education», ikkje «Utdanning», sjølv om det står «Utdanning» inni programmet).
 #: main.cpp:56
 #, kde-format
 msgid ""
 "Entry and/or menu to select, e.g. \"org.kde.dolphin.desktop\", \"Utilties/"
 "org.kde.kwrite.desktop\", \"Education/Mathematics\""
 msgstr ""
+"Oppføring og/eller meny å velja, for eksempel «org.kde.dolphin.desktop», "
+"«Utilties/org.kde.kwrite.desktop» eller «Education/Mathematics»"
 
 #: menufile.cpp:94 menufile.cpp:105
 #, kde-format
