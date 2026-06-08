@@ -1141,6 +1141,7 @@ void TreeView::newitem()
     QString menuId;
     QString file = caption;
     file.replace(QLatin1Char('/'), QLatin1Char('-'));
+    file.replace(QRegularExpression(QLatin1StringView("[^-\\w]")), QLatin1StringView("_"));
 
     file = createDesktopFile(file, &menuId, &m_newMenuIds); // Create
 
