@@ -137,6 +137,7 @@ void BasicTab::initAdvancedTab()
 
     // work path
     _workPathGroup = new QGroupBox();
+    _workPathGroup->setFlat(true);
     QHBoxLayout *workPathGroupLayout = new QHBoxLayout(_workPathGroup);
     _pathLabel = new QLabel(i18n("&Work path:"));
     workPathGroupLayout->addWidget(_pathLabel);
@@ -149,6 +150,7 @@ void BasicTab::initAdvancedTab()
 
     // terminal CB
     _terminalGroup = new QGroupBox();
+    _terminalGroup->setFlat(true);
     QVBoxLayout *terminalGroupLayout = new QVBoxLayout(_terminalGroup);
     _terminalCB = new QCheckBox(i18n("Run in term&inal"));
     terminalGroupLayout->addWidget(_terminalCB);
@@ -168,6 +170,7 @@ void BasicTab::initAdvancedTab()
 
     // user name CB
     _userGroup = new QGroupBox();
+    _userGroup->setFlat(true);
     QVBoxLayout *userGroupLayout = new QVBoxLayout(_userGroup);
     _userCB = new QCheckBox(i18n("&Run as a different user"));
     userGroupLayout->addWidget(_userCB);
@@ -187,6 +190,7 @@ void BasicTab::initAdvancedTab()
 
     // gpu
     _gpuGroup = new QGroupBox();
+    _gpuGroup->setFlat(true);
     QHBoxLayout *gpuGroupLayout = new QHBoxLayout(_gpuGroup);
     _gpuCB = new QCheckBox(i18n("Run using dedicated &graphics card"));
     gpuGroupLayout->addWidget(_gpuCB);
@@ -194,6 +198,7 @@ void BasicTab::initAdvancedTab()
 
     // key binding
     _keyBindingGroup = new QGroupBox();
+    _keyBindingGroup->setFlat(true);
     QHBoxLayout *keyBindingGroupLayout = new QHBoxLayout(_keyBindingGroup);
     _keyBindingLabel = new QLabel(i18n("Current shortcut &key:"));
     keyBindingGroupLayout->addWidget(_keyBindingLabel);

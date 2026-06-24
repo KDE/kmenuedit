@@ -61,6 +61,7 @@ MiscPage::MiscPage(QWidget *parent)
 {
     // general group
     QGroupBox *generalGroup = new QGroupBox(i18n("General"));
+    generalGroup->setFlat(true);
     QVBoxLayout *generalGroupLayout = new QVBoxLayout(generalGroup);
     m_showHiddenEntries = new QCheckBox(i18n("Show hidden entries"));
     generalGroupLayout->addWidget(m_showHiddenEntries);
