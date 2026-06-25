@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-06-10 00:47+0000\n"
+"POT-Creation-Date: 2026-06-25 00:45+0000\n"
 "PO-Revision-Date: 2009-12-13 18:04+0530\n"
 "Last-Translator: Danishka Navin <danishka@gmail.com>\n"
 "Language-Team: Sinhala <danishka@gmail.com>\n"
@@ -109,42 +109,42 @@ msgstr "සැඟවුනු ඇතුළත් කිරීමක්"
 msgid "General"
 msgstr "සාමාන්‍ය"
 
-#: basictab.cpp:141
+#: basictab.cpp:142
 #, kde-format
 msgid "&Work path:"
 msgstr "වැඩ මඟ (&W):"
 
-#: basictab.cpp:153
+#: basictab.cpp:155
 #, kde-format
 msgid "Run in term&inal"
 msgstr "අග්‍රය තුළ ක්‍රියාත්මක කරන්න (&i)"
 
-#: basictab.cpp:158
+#: basictab.cpp:160
 #, kde-format
 msgid "Terminal &options:"
 msgstr "අග්‍රයේ විකල්ප (&o):"
 
-#: basictab.cpp:172
+#: basictab.cpp:175
 #, kde-format
 msgid "&Run as a different user"
 msgstr "වෙනත් පරිශීලකයෙක් ලෙස ක්‍රියාත්මක කරන්න (&R)"
 
-#: basictab.cpp:177
+#: basictab.cpp:180
 #, kde-format
 msgid "&Username:"
 msgstr "පරිශීලක නාමය (&U): "
 
-#: basictab.cpp:191
+#: basictab.cpp:195
 #, kde-format
 msgid "Run using dedicated &graphics card"
 msgstr ""
 
-#: basictab.cpp:198
+#: basictab.cpp:203
 #, kde-format
 msgid "Current shortcut &key:"
 msgstr "වත්මන් කෙටිමං යතුර (&k): "
 
-#: basictab.cpp:209
+#: basictab.cpp:214
 #, kde-format
 msgid "Advanced"
 msgstr "උසස්"
@@ -384,7 +384,7 @@ msgstr "අකුරු පිරික්සමින්"
 msgid "Spell checking Options"
 msgstr "අකුරු පිරික්සීමේ විකල්ප"
 
-#: preferencesdlg.cpp:65
+#: preferencesdlg.cpp:66
 #, kde-format
 msgid "Show hidden entries"
 msgstr "සැඟවුනු ඇතුළත් කිරීම් පෙන්වන්න"

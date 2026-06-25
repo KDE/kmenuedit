@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-06-10 00:47+0000\n"
+"POT-Creation-Date: 2026-06-25 00:45+0000\n"
 "PO-Revision-Date: 2009-02-05 14:54+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -100,42 +100,42 @@ msgstr "लुकाए प्रविस्टि"
 msgid "General"
 msgstr "सामान्य"
 
-#: basictab.cpp:141
+#: basictab.cpp:142
 #, kde-format
 msgid "&Work path:"
 msgstr "काम रस्ता: (&W)"
 
-#: basictab.cpp:153
+#: basictab.cpp:155
 #, kde-format
 msgid "Run in term&inal"
 msgstr "टर्मिनल मं चलाव (&i)"
 
-#: basictab.cpp:158
+#: basictab.cpp:160
 #, kde-format
 msgid "Terminal &options:"
 msgstr "टर्मिनल विकल्पः (&o)"
 
-#: basictab.cpp:172
+#: basictab.cpp:175
 #, kde-format
 msgid "&Run as a different user"
 msgstr "भिन्न कमइया जइसन चलाव (&R)"
 
-#: basictab.cpp:177
+#: basictab.cpp:180
 #, kde-format
 msgid "&Username:"
 msgstr "कमइया नाम: (&U)"
 
-#: basictab.cpp:191
+#: basictab.cpp:195
 #, kde-format
 msgid "Run using dedicated &graphics card"
 msgstr ""
 
-#: basictab.cpp:198
+#: basictab.cpp:203
 #, kde-format
 msgid "Current shortcut &key:"
 msgstr "अभी हाल के सार्टकट कुंजीः (&k)"
 
-#: basictab.cpp:209
+#: basictab.cpp:214
 #, kde-format
 msgid "Advanced"
 msgstr "विस्तृत"
@@ -375,7 +375,7 @@ msgstr "हिज्जा जांच "
 msgid "Spell checking Options"
 msgstr "हिज्जा जांच बर विकल्प"
 
-#: preferencesdlg.cpp:65
+#: preferencesdlg.cpp:66
 #, kde-format
 msgid "Show hidden entries"
 msgstr "लुकाए प्रविस्टि मन ल देखाव"

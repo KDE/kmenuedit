@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-06-10 00:47+0000\n"
+"POT-Creation-Date: 2026-06-25 00:45+0000\n"
 "PO-Revision-Date: 2026-01-16 13:39+0200\n"
 "Last-Translator: Moo\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
@@ -113,42 +113,42 @@ msgstr "Paslėptas įrašas"
 msgid "General"
 msgstr "Bendra"
 
-#: basictab.cpp:141
+#: basictab.cpp:142
 #, kde-format
 msgid "&Work path:"
 msgstr "&Darbinis kelias:"
 
-#: basictab.cpp:153
+#: basictab.cpp:155
 #, kde-format
 msgid "Run in term&inal"
 msgstr "Vykdyti term&inale"
 
-#: basictab.cpp:158
+#: basictab.cpp:160
 #, kde-format
 msgid "Terminal &options:"
 msgstr "Terminalo &parinktys:"
 
-#: basictab.cpp:172
+#: basictab.cpp:175
 #, kde-format
 msgid "&Run as a different user"
 msgstr "Vykdyti &kito naudotojo teisėmis"
 
-#: basictab.cpp:177
+#: basictab.cpp:180
 #, kde-format
 msgid "&Username:"
 msgstr "&Naudotojo vardas:"
 
-#: basictab.cpp:191
+#: basictab.cpp:195
 #, kde-format
 msgid "Run using dedicated &graphics card"
 msgstr "Paleisti naudojant specialią &vaizdo plokštę"
 
-#: basictab.cpp:198
+#: basictab.cpp:203
 #, kde-format
 msgid "Current shortcut &key:"
 msgstr "Dabartinis spartusis &klavišas:"
 
-#: basictab.cpp:209
+#: basictab.cpp:214
 #, kde-format
 msgid "Advanced"
 msgstr "Išplėstiniai"
@@ -385,7 +385,7 @@ msgstr "Rašybos tikrinimas"
 msgid "Spell checking Options"
 msgstr "Rašybos tikrinimo parinktys"
 
-#: preferencesdlg.cpp:65
+#: preferencesdlg.cpp:66
 #, kde-format
 msgid "Show hidden entries"
 msgstr "Rodyti paslėptus įrašus"

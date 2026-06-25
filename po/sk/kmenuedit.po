@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-06-10 00:47+0000\n"
+"POT-Creation-Date: 2026-06-25 00:45+0000\n"
 "PO-Revision-Date: 2021-09-05 19:31+0200\n"
 "Last-Translator: Matej Mrenica <matejm98mthw@gmail.com>\n"
 "Language-Team: Slovak <kde-i18n-doc@kde.org>\n"
@@ -117,42 +117,42 @@ msgstr "Skrytá položka"
 msgid "General"
 msgstr "Všeobecné"
 
-#: basictab.cpp:141
+#: basictab.cpp:142
 #, kde-format
 msgid "&Work path:"
 msgstr "Pracovná &cesta:"
 
-#: basictab.cpp:153
+#: basictab.cpp:155
 #, kde-format
 msgid "Run in term&inal"
 msgstr "Spustiť v &termináli"
 
-#: basictab.cpp:158
+#: basictab.cpp:160
 #, kde-format
 msgid "Terminal &options:"
 msgstr "&Nastavenia terminálu:"
 
-#: basictab.cpp:172
+#: basictab.cpp:175
 #, kde-format
 msgid "&Run as a different user"
 msgstr "Spustiť ako &iný užívateľ"
 
-#: basictab.cpp:177
+#: basictab.cpp:180
 #, kde-format
 msgid "&Username:"
 msgstr "&Užívateľské meno:"
 
-#: basictab.cpp:191
+#: basictab.cpp:195
 #, kde-format
 msgid "Run using dedicated &graphics card"
 msgstr "Spustiť pomocou vyhradenej &grafickej karty"
 
-#: basictab.cpp:198
+#: basictab.cpp:203
 #, kde-format
 msgid "Current shortcut &key:"
 msgstr "Aktuálna klávesová &skratka:"
 
-#: basictab.cpp:209
+#: basictab.cpp:214
 #, kde-format
 msgid "Advanced"
 msgstr "Pokročilé"
@@ -389,7 +389,7 @@ msgstr "Kontrola pravopisu"
 msgid "Spell checking Options"
 msgstr "Možnosti kontroly pravopisu"
 
-#: preferencesdlg.cpp:65
+#: preferencesdlg.cpp:66
 #, kde-format
 msgid "Show hidden entries"
 msgstr "Zobraziť skryté položky"

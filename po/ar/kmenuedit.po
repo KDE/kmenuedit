@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-06-10 00:47+0000\n"
+"POT-Creation-Date: 2026-06-25 00:45+0000\n"
 "PO-Revision-Date: 2025-08-14 11:37+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -117,42 +117,42 @@ msgstr "مدخلة مخفية"
 msgid "General"
 msgstr "عام"
 
-#: basictab.cpp:141
+#: basictab.cpp:142
 #, kde-format
 msgid "&Work path:"
 msgstr "مسار ال&عمل:"
 
-#: basictab.cpp:153
+#: basictab.cpp:155
 #, kde-format
 msgid "Run in term&inal"
 msgstr "ن&فّذ في طرفيّة"
 
-#: basictab.cpp:158
+#: basictab.cpp:160
 #, kde-format
 msgid "Terminal &options:"
 msgstr "خيارات &الطرفيّة:"
 
-#: basictab.cpp:172
+#: basictab.cpp:175
 #, kde-format
 msgid "&Run as a different user"
 msgstr "ن&فّذ كمستخدم مختلف"
 
-#: basictab.cpp:177
+#: basictab.cpp:180
 #, kde-format
 msgid "&Username:"
 msgstr "اسم المستخ&دم:"
 
-#: basictab.cpp:191
+#: basictab.cpp:195
 #, kde-format
 msgid "Run using dedicated &graphics card"
 msgstr "شغّل باستخدام بطاقة &رسوميات مخصصة"
 
-#: basictab.cpp:198
+#: basictab.cpp:203
 #, kde-format
 msgid "Current shortcut &key:"
 msgstr "مفتاح الا&ختصار الحالي:"
 
-#: basictab.cpp:209
+#: basictab.cpp:214
 #, kde-format
 msgid "Advanced"
 msgstr "متقدم"
@@ -389,7 +389,7 @@ msgstr "التدقيق الإملائي"
 msgid "Spell checking Options"
 msgstr "خيارات التدقيق الإملائي"
 
-#: preferencesdlg.cpp:65
+#: preferencesdlg.cpp:66
 #, kde-format
 msgid "Show hidden entries"
 msgstr "أظهر المدخلات المخفية"

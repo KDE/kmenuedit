@@ -1,4 +1,4 @@
-# Version: $Revision: 1738793 $
+# Version: $Revision: 1739850 $
 # translation of kmenuedit.po to Polish
 # translation of kmenuedit.po to
 # translation of kmenuedit.po to
@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-06-10 00:47+0000\n"
+"POT-Creation-Date: 2026-06-25 00:45+0000\n"
 "PO-Revision-Date: 2025-09-27 08:40+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: pl\n"
@@ -117,42 +117,42 @@ msgstr "Ukryta rzecz"
 msgid "General"
 msgstr "Ogólne"
 
-#: basictab.cpp:141
+#: basictab.cpp:142
 #, kde-format
 msgid "&Work path:"
 msgstr "Ścieżka początko&wa:"
 
-#: basictab.cpp:153
+#: basictab.cpp:155
 #, kde-format
 msgid "Run in term&inal"
 msgstr "Uruchom w term&inalu"
 
-#: basictab.cpp:158
+#: basictab.cpp:160
 #, kde-format
 msgid "Terminal &options:"
 msgstr "U&stawienia terminala:"
 
-#: basictab.cpp:172
+#: basictab.cpp:175
 #, kde-format
 msgid "&Run as a different user"
 msgstr "U&ruchom jako inny użytkownik"
 
-#: basictab.cpp:177
+#: basictab.cpp:180
 #, kde-format
 msgid "&Username:"
 msgstr "&Użytkownik:"
 
-#: basictab.cpp:191
+#: basictab.cpp:195
 #, kde-format
 msgid "Run using dedicated &graphics card"
 msgstr "Uruchom przy użyciu osobnej karty &graficznej"
 
-#: basictab.cpp:198
+#: basictab.cpp:203
 #, kde-format
 msgid "Current shortcut &key:"
 msgstr "Bieżący skrót &klawiszowy:"
 
-#: basictab.cpp:209
+#: basictab.cpp:214
 #, kde-format
 msgid "Advanced"
 msgstr "Rozszerzone"
@@ -389,7 +389,7 @@ msgstr "Sprawdzanie pisowni"
 msgid "Spell checking Options"
 msgstr "Ustawienia sprawdzania pisowni"
 
-#: preferencesdlg.cpp:65
+#: preferencesdlg.cpp:66
 #, kde-format
 msgid "Show hidden entries"
 msgstr "Pokaż ukryte elementy"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-06-10 00:47+0000\n"
+"POT-Creation-Date: 2026-06-25 00:45+0000\n"
 "PO-Revision-Date: 2009-04-09 14:51+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -111,42 +111,42 @@ msgstr "ធាតុ​ដែល​បាន​លាក់"
 msgid "General"
 msgstr "ទូទៅ"
 
-#: basictab.cpp:141
+#: basictab.cpp:142
 #, kde-format
 msgid "&Work path:"
 msgstr "ផ្លូវ​ការងារ ៖"
 
-#: basictab.cpp:153
+#: basictab.cpp:155
 #, kde-format
 msgid "Run in term&inal"
 msgstr "រត់​ក្នុង​ស្ថានីយ"
 
-#: basictab.cpp:158
+#: basictab.cpp:160
 #, kde-format
 msgid "Terminal &options:"
 msgstr "ជម្រើស​ស្ថានីយ ៖"
 
-#: basictab.cpp:172
+#: basictab.cpp:175
 #, kde-format
 msgid "&Run as a different user"
 msgstr "រត់​ជា​អ្នក​ប្រើ​ផ្សេង"
 
-#: basictab.cpp:177
+#: basictab.cpp:180
 #, kde-format
 msgid "&Username:"
 msgstr "ឈ្មោះ​អ្នក​ប្រើ ៖"
 
-#: basictab.cpp:191
+#: basictab.cpp:195
 #, kde-format
 msgid "Run using dedicated &graphics card"
 msgstr ""
 
-#: basictab.cpp:198
+#: basictab.cpp:203
 #, kde-format
 msgid "Current shortcut &key:"
 msgstr "គ្រាប់ចុច​ផ្លូវ​កាត់​បច្ចុប្បន្ន ៖"
 
-#: basictab.cpp:209
+#: basictab.cpp:214
 #, kde-format
 msgid "Advanced"
 msgstr "កម្រិត​ខ្ពស់"
@@ -387,7 +387,7 @@ msgstr "កម្មវិធី​ពិនិត្យ​អក្ខរាវ
 msgid "Spell checking Options"
 msgstr "ជម្រើស​ការ​ពនិត្យ​អក្ខរាវិរុទ្ធ"
 
-#: preferencesdlg.cpp:65
+#: preferencesdlg.cpp:66
 #, kde-format
 msgid "Show hidden entries"
 msgstr "បង្ហាញ​ធាតុ​ដែល​បាន​លាក់"
