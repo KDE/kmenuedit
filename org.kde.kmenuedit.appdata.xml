@@ -71,7 +71,7 @@
   <summary xml:lang="lv">Rediģējiet, kā programmas ir redzamas to palaidējos</summary>
   <summary xml:lang="nl">Bewerk hoe toepassingen gepresenteerd worden in starters van toepassingen</summary>
   <summary xml:lang="nn">Endra korleis program vert viste i programstartarar</summary>
-  <summary xml:lang="pl">Zmienia sposób przedstawiania aplikacji w uruchamiaczach</summary>
+  <summary xml:lang="pl">Zmienia sposób przedstawiania aplikacji w menu aplikacji</summary>
   <summary xml:lang="pt">Edita como as aplicações aparecem nos lançadores de aplicações</summary>
   <summary xml:lang="pt-BR">Editar como as aplicações são mostradas nos lançadores de aplicativos</summary>
   <summary xml:lang="ro">Modifică felul în care aplicațiile sunt prezentate în lansatorii de aplicații</summary>
@@ -117,7 +117,7 @@
     <p xml:lang="lv">KDE izvēlnes redaktors ļauj rediģēt, kā programmas ir redzamas to palaidējos, piemēram, „Plasma“ programmu palaidēja logdaļā.</p>
     <p xml:lang="nl">KDE Bewerken van menu laat u bewerken hoe uw toepassingen gepresenteerd worden in starters van toepassingen, zoals het widget van Starter van toepassingen van Plasma.</p>
     <p xml:lang="nn">Med KDE-menyredigering kan du redigera korleis programma dine skal presenterast saman med andre, for eksempel i program­startaren i Plasma.</p>
-    <p xml:lang="pl">Edytor menu KDE umożliwia zmianę sposobu przedstawiania aplikacji w uruchamiaczach, takich jak Uruchamiacz Aplikacji Plazmy.</p>
+    <p xml:lang="pl">Edytor menu KDE umożliwia zmianę sposobu przedstawiania aplikacji w menu aplikacji, takich jak Menu Aplikacji Plazmy.</p>
     <p xml:lang="pt">A Edição do Menu do KDE permite-lhe editar como aparecem as suas aplicações nos lançadores das mesmas, como o item do Lançador de Aplicações do Plasma.</p>
     <p xml:lang="pt-BR">O editor de menu do KDE permite a você editar como seus aplicativos são mostrados nos lançadores de aplicativos como o widget do lançador de aplicativos do Plasma</p>
     <p xml:lang="ro">„Redactare meniu” KDE vă permite să modificați felul în care aplicațiile sunt prezentate în lansatori de aplicații, cum ar fi controlul grafic Plasma „Lansator de aplicații”.</p>
