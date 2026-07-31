@@ -154,7 +154,7 @@
 ></listitem>
 <listitem
 ><para
->Elemente: Benutzen Sie diesen Eintrag, um Daten für die Anwendung einzugeben, die Sie zum Menü hinzufügen möchten. Weitere Informationen finden Sie im Abschnitt <link linkend="using-kmenuedit"
+>Elemente: Verwenden Sie diesen Eintrag, um Daten für die Anwendung einzugeben, die Sie zum Menü hinzufügen möchten. Weitere Informationen finden Sie im Abschnitt <link linkend="using-kmenuedit"
 >Benutzung von &kmenuedit;</link
 >. </para
 ></listitem>
@@ -204,13 +204,13 @@
 >Anwendungsname anzeigen</guilabel
 >, wenn Sie hier eine Sortierung nach Namen einstellen. </para>
 <para
->Wenn Sie Ihre häufig verwendeten Untermenüs oder Einträge &eg; oben im Menü gruppieren, sind diese Elemente leichter zu erreichen. Um die Reihenfolge bestimmter Einträge oder Untermenüs im Menübaum zu ändern, benutzen Sie die Knöpfe <guibutton
+>Wenn Sie Ihre häufig verwendeten Untermenüs oder Einträge &eg; oben im Menü gruppieren, sind diese Elemente leichter zu erreichen. Um die Reihenfolge bestimmter Einträge oder Untermenüs im Menübaum zu ändern, verwenden Sie die Knöpfe <guibutton
 >Nach oben</guibutton
 > oder <guibutton
 >Nach unten</guibutton
 > in der Werkzeugleiste oder diese Aktionen im Menü. </para>
 <para
->Alle Programmstarter benutzen die in &kmenuedit; festgelegt Reihenfolge der Untermenüs. </para>
+>Alle Programmstarter verwenden die in &kmenuedit; festgelegt Reihenfolge der Untermenüs. </para>
 </sect3>
 
 <sect3 id="use-cases-adapt-hide">
@@ -219,7 +219,7 @@
 > 
 
 <para
->Die Anzeige aller auf einem Rechner installierten Programme kann für einige Benutzer verwirrend sein, daher möchten Sie vielleicht einige weniger häufig benutzte Untermenüs oder Einträge ausblenden. Es gibt zwei Möglichkeiten, dies zu erreichen.  </para>
+>Die Anzeige aller auf einem Rechner installierten Programme kann für einige Benutzer verwirrend sein, daher möchten Sie vielleicht einige weniger häufig verwendete Untermenüs oder Einträge ausblenden. Es gibt zwei Möglichkeiten, dies zu erreichen.  </para>
 
 <para
 >Wechseln Sie zum normalen Ansichtsmodus ohne die Anzeige versteckter Einträge. Wenn Sie nun Einträge löschen, werden sie in das Untermenü <guilabel
@@ -402,7 +402,7 @@
 <para
 >Dieser Befehl muss in Ihrer Variable <envar
 >PATH</envar
-> zu erreichen sein, oder Sie müssen den vollständigen Pfad zur ausführbaren Datei angeben. Wenn Sie den Namen der ausführbaren Datei nicht kennen, benutzen Sie den Befehl <userinput
+> zu erreichen sein, oder Sie müssen den vollständigen Pfad zur ausführbaren Datei angeben. Wenn Sie den Namen der ausführbaren Datei nicht kennen, verwenden Sie den Befehl <userinput
 ><command
 >locate</command
 ></userinput
@@ -413,7 +413,7 @@
 <member
 >%f - ein Dateiname</member>
 <member
->%F - eine Liste von Dateien. Benutzen Sie dies bei Anwendungen, die mehrere lokale Dateien gleichzeitig öffnen können</member>
+>%F - eine Liste von Dateien. Verwenden Sie dies bei Anwendungen, die mehrere lokale Dateien gleichzeitig öffnen können</member>
 <member
 >%u - eine Adresse (&URL;)</member>
 <member
@@ -432,7 +432,7 @@
 ></para>
 <informalexample
 ><para
->Ein Beispiel: Wenn Sie firefox mit der Seite www.kde.org starten wollen, geben Sie anstelle von <command
+>Ein Beispiel: Wenn Sie firefox mit der Seite www.kde.org starten möchten, geben Sie anstelle von <command
 >firefox</command
 > Folgendes ein: <command
 >firefox %u www.kde.org</command
@@ -981,7 +981,7 @@
 </variablelist>
 
 <para
->&kmenuedit; benutzt die bekannten &kde;-Menüeinträge <guimenu
+>&kmenuedit; verwendet die bekannten &kde;-Menüeinträge <guimenu
 >Einstellungen</guimenu
 > und <guimenu
 >Hilfe</guimenu
