@@ -365,7 +365,7 @@ msgid ""
 "Entry and/or menu to select, e.g. \"org.kde.dolphin.desktop\", \"Utilties/"
 "org.kde.kwrite.desktop\", \"Education/Mathematics\""
 msgstr ""
-"Auswahl des Menüeintrags oder Menüs (z. B. „org.kde.dolphin.desktop“, "
+"Auswahl des Menüeintrags oder Menüs (z. B. „org.kde.dolphin.desktop“, "
 "„Dienstprogramme/org.kde.kwrite.desktop“ oder „Lernprogramme/Mathematik“)"
 
 #: menufile.cpp:94 menufile.cpp:105
