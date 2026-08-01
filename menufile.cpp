@@ -61,11 +61,11 @@ bool MenuFile::load()
         return false;
     }
 
-    QString errorMsg;
-    int errorRow;
-    int errorCol;
-    if (!m_doc.setContent(&file, &errorMsg, &errorRow, &errorCol)) {
-        qCWarning(KMENUEDIT_LOG) << "Parse error in " << m_fileName << ", line " << errorRow << ", col " << errorCol << ": " << errorMsg;
+    QDomDocument::ParseOptions parseOptions;
+    QDomDocument::ParseResult parseResult = m_doc.setContent(&file, parseOptions);
+    if (!parseResult) {
+        qCWarning(KMENUEDIT_LOG).nospace() << "Parse error in " << m_fileName << ", line " << parseResult.errorLine << ", col " << parseResult.errorColumn
+                                           << ": " << parseResult.errorMessage;
         file.close();
         create();
         return false;
