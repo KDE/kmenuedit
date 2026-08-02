@@ -383,30 +383,31 @@ void BasicTab::setEntryInfo(MenuEntryInfo *entryInfo)
 
     QStringList execLine = KShell::splitArgs(df->desktopGroup().readEntry("Exec"));
     QStringList enVars = {};
+    QStringList arguments = {};
     if (!execLine.isEmpty()) {
         // check for apps that use the env executable
         // to set the environment
         if (execLine[0] == QLatin1String("env")) {
             execLine.pop_front();
         }
-        for (auto env : execLine) {
-            if (!env.contains(QLatin1String("="))) {
-                break;
+        for (const auto &execLineItem : std::as_const(execLine)) {
+            if (execLineItem.contains(QLatin1String("="))) {
+                enVars += execLineItem;
+            } else {
+                arguments += execLineItem;
             }
-            enVars += env;
-            execLine.pop_front();
         }
 
-        if (execLine.isEmpty()) {
+        if (arguments.isEmpty()) {
             _programEdit->lineEdit()->clear();
         } else {
-            _programEdit->lineEdit()->setText(execLine.takeFirst());
+            _programEdit->lineEdit()->setText(arguments.takeFirst());
         }
 
     } else {
         _programEdit->lineEdit()->clear();
     }
-    _argsEdit->setText(KShell::joinArgs(execLine));
+    _argsEdit->setText(KShell::joinArgs(arguments));
     _envarsEdit->setText(KShell::joinArgs(enVars));
 
     _pathEdit->lineEdit()->setText(df->readPath());
