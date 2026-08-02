@@ -172,9 +172,9 @@ void MenuFolderInfo::save(MenuFile *menuFile)
 {
     if (s_deletedApps) {
         // Remove hotkeys for applications that have been deleted
-        for (QStringList::ConstIterator it = s_deletedApps->constBegin(); it != s_deletedApps->constEnd(); ++it) {
-            // The shortcut is deleted if we set a empty sequence
-            GlobalAccel::changeMenuEntryShortcut(KService::serviceByStorageId(*it), QKeySequence());
+        for (const QString &deletedApp : std::as_const(*s_deletedApps)) {
+            // The shortcut is deleted if we set an empty sequence
+            GlobalAccel::changeMenuEntryShortcut(KService::serviceByStorageId(deletedApp), QKeySequence());
         }
         delete s_deletedApps;
         s_deletedApps = nullptr;
