@@ -397,13 +397,13 @@ QString TreeView::findName(KDesktopFile *df, bool deleted)
         if (name.isEmpty()) {
             bool isLocal = true;
             const QStringList files = QStandardPaths::locateAll(df->locationType(), df->fileName(), QStandardPaths::LocateFile);
-            for (QStringList::ConstIterator it = files.constBegin(); it != files.constEnd(); ++it) {
+            for (const QString &file : files) {
                 if (isLocal) {
                     isLocal = false;
                     continue;
                 }
 
-                KDesktopFile df2(*it);
+                KDesktopFile df2(file);
                 name = df2.readName();
 
                 if (!name.isEmpty() && (name != QLatin1String("empty"))) {

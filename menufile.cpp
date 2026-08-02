@@ -299,8 +299,7 @@ void MenuFile::setLayout(const QString &menuName, const QStringList &layout)
     QDomElement layoutNode = m_doc.createElement(MF_LAYOUT);
     elem.appendChild(layoutNode);
 
-    for (QStringList::ConstIterator it = layout.constBegin(); it != layout.constEnd(); ++it) {
-        QString li = *it;
+    for (const QString &li : layout) {
         if (li == QLatin1String(":S")) {
             layoutNode.appendChild(m_doc.createElement(MF_SEPARATOR));
         } else if (li == QLatin1String(":M")) {
@@ -316,9 +315,8 @@ void MenuFile::setLayout(const QString &menuName, const QStringList &layout)
             mergeNode.setAttribute(QStringLiteral("type"), QStringLiteral("all"));
             layoutNode.appendChild(mergeNode);
         } else if (li.endsWith(QLatin1Char('/'))) {
-            li.chop(1);
             QDomElement menuNode = m_doc.createElement(MF_MENUNAME);
-            menuNode.appendChild(m_doc.createTextNode(li));
+            menuNode.appendChild(m_doc.createTextNode(li.chopped(1)));
             layoutNode.appendChild(menuNode);
         } else {
             QDomElement fileNode = m_doc.createElement(MF_FILENAME);
@@ -505,10 +503,10 @@ bool MenuFile::performAllActions()
 
     // Entries that have been removed from the menu are added to .hidden
     // so that they don't re-appear in Lost & Found
-    QStringList removed = m_removedEntries;
+    const QStringList removed = m_removedEntries;
     m_removedEntries.clear();
-    for (QStringList::ConstIterator it = removed.constBegin(); it != removed.constEnd(); ++it) {
-        addEntry(QStringLiteral("/.hidden/"), *it);
+    for (const QString &removedEntry : removed) {
+        addEntry(QStringLiteral("/.hidden/"), removedEntry);
     }
 
     m_removedEntries.clear();
