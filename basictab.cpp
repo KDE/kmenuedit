@@ -304,7 +304,7 @@ void BasicTab::setFolderInfo(MenuFolderInfo *folderInfo)
 {
     blockSignals(true);
     _menuFolderInfo = folderInfo;
-    _menuEntryInfo = 0;
+    _menuEntryInfo = nullptr;
 
     _nameEdit->setText(folderInfo->caption);
     _genericNameEdit->setText(folderInfo->genericname);
@@ -335,7 +335,7 @@ void BasicTab::setFolderInfo(MenuFolderInfo *folderInfo)
 void BasicTab::setEntryInfo(MenuEntryInfo *entryInfo)
 {
     blockSignals(true);
-    _menuFolderInfo = 0;
+    _menuFolderInfo = nullptr;
     _menuEntryInfo = entryInfo;
 
     if (!entryInfo) {

@@ -155,7 +155,7 @@ public:
         , m_desktopFile(_df)
         , shortcutLoaded(false)
         , shortcutDirty(false)
-        , dirty(_df != 0)
+        , dirty(_df != nullptr)
         , hidden(false)
     {
         caption = service->name();

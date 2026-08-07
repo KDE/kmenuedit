@@ -156,7 +156,7 @@ public:
     explicit TreeView(KActionCollection *ac, QWidget *parent = nullptr);
     ~TreeView() override;
 
-    void readMenuFolderInfo(MenuFolderInfo *folderInfo = 0, KServiceGroup::Ptr folder = KServiceGroup::Ptr(), const QString &prefix = QString());
+    void readMenuFolderInfo(MenuFolderInfo *folderInfo = nullptr, KServiceGroup::Ptr folder = KServiceGroup::Ptr(), const QString &prefix = QString());
     void setViewMode(bool showHidden);
     bool save();
 
