@@ -680,15 +680,15 @@ void TreeView::itemSelected(QTreeWidgetItem *item)
     m_ac->action(PROPERTIES_ACTION_NAME)->setEnabled(enableSingleSelectionActions);
 
     if (!item) {
-        emit disableAction();
+        Q_EMIT disableAction();
         return;
     }
 
     if (_item) {
         if (_item->isDirectory()) {
-            emit entrySelected(_item->folderInfo());
+            Q_EMIT entrySelected(_item->folderInfo());
         } else {
-            emit entrySelected(_item->entryInfo());
+            Q_EMIT entrySelected(_item->entryInfo());
         }
     }
 }
@@ -1927,8 +1927,8 @@ void TreeView::restoreMenuSystem()
     readMenuFolderInfo();
     fill();
     sendReloadMenu();
-    emit disableAction();
-    emit entrySelected((MenuEntryInfo *)nullptr);
+    Q_EMIT disableAction();
+    Q_EMIT entrySelected((MenuEntryInfo *)nullptr);
 }
 
 void TreeView::updateTreeView(bool showHidden)
@@ -1949,8 +1949,8 @@ void TreeView::updateTreeView(bool showHidden)
     readMenuFolderInfo();
     fill();
     sendReloadMenu();
-    emit disableAction();
-    emit entrySelected((MenuEntryInfo *)nullptr);
+    Q_EMIT disableAction();
+    Q_EMIT entrySelected((MenuEntryInfo *)nullptr);
 }
 
 void TreeView::sendReloadMenu()

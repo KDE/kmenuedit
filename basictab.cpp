@@ -513,9 +513,9 @@ void BasicTab::slotChanged()
     }
     apply();
     if (_menuEntryInfo) {
-        emit changed(_menuEntryInfo);
+        Q_EMIT changed(_menuEntryInfo);
     } else {
-        emit changed(_menuFolderInfo);
+        Q_EMIT changed(_menuFolderInfo);
     }
 }
 
@@ -569,7 +569,7 @@ void BasicTab::slotCapturedKeySequence(const QKeySequence &seq)
         _keyBindingEdit->setKeySequence(QKeySequence());
     }
     if (_menuEntryInfo) {
-        emit changed(_menuEntryInfo);
+        Q_EMIT changed(_menuEntryInfo);
     }
 }
 
