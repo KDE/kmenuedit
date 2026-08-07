@@ -62,7 +62,7 @@ bool MenuFolderInfo::takeRecursive(MenuFolderInfo *info)
         return true;
     }
 
-    foreach (MenuFolderInfo *subFolderInfo, subFolders) {
+    for (MenuFolderInfo *subFolderInfo : std::as_const(subFolders)) {
         if (subFolderInfo->takeRecursive(info)) {
             return true;
         }
@@ -75,7 +75,7 @@ void MenuFolderInfo::updateFullId(const QString &parentId)
 {
     fullId = parentId + id;
 
-    foreach (MenuFolderInfo *subFolderInfo, subFolders) {
+    for (MenuFolderInfo *subFolderInfo : std::as_const(subFolders)) {
         subFolderInfo->updateFullId(fullId);
     }
 }
@@ -111,7 +111,7 @@ QString MenuFolderInfo::uniqueMenuCaption(const QString &caption)
 
     for (int n = 1; ++n;) {
         bool ok = true;
-        foreach (MenuFolderInfo *subFolderInfo, subFolders) {
+        for (MenuFolderInfo *subFolderInfo : std::as_const(subFolders)) {
             if (subFolderInfo->caption == result) {
                 ok = false;
                 break;
@@ -138,7 +138,7 @@ QString MenuFolderInfo::uniqueItemCaption(const QString &caption, const QString 
         if (result == exclude) {
             ok = false;
         }
-        foreach (MenuEntryInfo *entryInfo, entries) {
+        for (MenuEntryInfo *entryInfo : std::as_const(entries)) {
             if (entryInfo->caption == result) {
                 ok = false;
                 break;
@@ -157,7 +157,7 @@ QString MenuFolderInfo::uniqueItemCaption(const QString &caption, const QString 
 QStringList MenuFolderInfo::existingMenuIds()
 {
     QStringList result;
-    foreach (MenuFolderInfo *subFolderInfo, subFolders) {
+    for (MenuFolderInfo *subFolderInfo : std::as_const(subFolders)) {
         result.append(subFolderInfo->id);
     }
     return result;
@@ -202,12 +202,12 @@ void MenuFolderInfo::save(MenuFile *menuFile)
     }
 
     // Save sub-menus
-    foreach (MenuFolderInfo *subFolderInfo, subFolders) {
+    for (MenuFolderInfo *subFolderInfo : std::as_const(subFolders)) {
         subFolderInfo->save(menuFile);
     }
 
     // Save entries
-    foreach (MenuEntryInfo *entryInfo, entries) {
+    for (MenuEntryInfo *entryInfo : std::as_const(entries)) {
         if (entryInfo->needInsertion()) {
             menuFile->addEntry(fullId, entryInfo->menuId());
         }
@@ -222,14 +222,14 @@ bool MenuFolderInfo::hasDirt()
     }
 
     // Check sub-menus
-    foreach (MenuFolderInfo *subFolderInfo, subFolders) {
+    for (MenuFolderInfo *subFolderInfo : std::as_const(subFolders)) {
         if (subFolderInfo->hasDirt()) {
             return true;
         }
     }
 
     // Check entries
-    foreach (MenuEntryInfo *entryInfo, entries) {
+    for (MenuEntryInfo *entryInfo : std::as_const(entries)) {
         if (entryInfo->dirty || entryInfo->shortcutDirty) {
             return true;
         }
@@ -241,7 +241,7 @@ KService::Ptr MenuFolderInfo::findServiceShortcut(const QKeySequence &cut)
 {
     KService::Ptr result;
     // Check sub-menus
-    foreach (MenuFolderInfo *subFolderInfo, subFolders) {
+    for (MenuFolderInfo *subFolderInfo : std::as_const(subFolders)) {
         result = subFolderInfo->findServiceShortcut(cut);
         if (result) {
             return result;
@@ -249,7 +249,7 @@ KService::Ptr MenuFolderInfo::findServiceShortcut(const QKeySequence &cut)
     }
 
     // Check entries
-    foreach (MenuEntryInfo *entryInfo, entries) {
+    for (MenuEntryInfo *entryInfo : std::as_const(entries)) {
         if (entryInfo->shortCut == cut) {
             return entryInfo->service;
         }
@@ -260,12 +260,12 @@ KService::Ptr MenuFolderInfo::findServiceShortcut(const QKeySequence &cut)
 void MenuFolderInfo::setInUse(bool inUse)
 {
     // Propagate to sub-menus
-    foreach (MenuFolderInfo *subFolderInfo, subFolders) {
+    for (MenuFolderInfo *subFolderInfo : std::as_const(subFolders)) {
         subFolderInfo->setInUse(inUse);
     }
 
     // Propagate to entries
-    foreach (MenuEntryInfo *entryInfo, entries) {
+    for (MenuEntryInfo *entryInfo : std::as_const(entries)) {
         entryInfo->setInUse(inUse);
     }
 }

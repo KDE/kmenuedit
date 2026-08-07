@@ -363,7 +363,8 @@ void TreeView::readMenuFolderInfo(MenuFolderInfo *folderInfo, KServiceGroup::Ptr
     folderInfo->id = id;
     folderInfo->fullId = prefix + id;
 
-    for (const KSycocaEntry::Ptr &e : folder->entries(true, !m_showHidden, true, m_detailedMenuEntries && !m_detailedEntriesNamesFirst)) {
+    const auto entries = folder->entries(true, !m_showHidden, true, m_detailedMenuEntries && !m_detailedEntriesNamesFirst);
+    for (const KSycocaEntry::Ptr &e : entries) {
         if (e->isType(KST_KServiceGroup)) {
             const KServiceGroup::Ptr serviceGroup(static_cast<KServiceGroup *>(e.data()));
             MenuFolderInfo *subFolderInfo = new MenuFolderInfo();
@@ -482,7 +483,7 @@ void TreeView::fillBranch(MenuFolderInfo *folderInfo, TreeItem *parent)
 {
     QString relPath = parent ? parent->directory() : QString();
     TreeItem *after = nullptr;
-    foreach (MenuInfo *info, folderInfo->initialLayout) {
+    for (MenuInfo *info : std::as_const(folderInfo->initialLayout)) {
         MenuEntryInfo *entry = dynamic_cast<MenuEntryInfo *>(info);
         if (entry) {
             after = createTreeItem(parent, after, entry);
@@ -1504,7 +1505,7 @@ void TreeView::sortItem(TreeItem *item, SortType sortType)
 
     // insert sorted children in the tree
     item->addChildren(children);
-    foreach (QTreeWidgetItem *child, children) {
+    for (QTreeWidgetItem *child : std::as_const(children)) {
         // recreate item widget for separators
         TreeItem *treeItem = static_cast<TreeItem *>(child);
         if (treeItem->isSeparator()) {
@@ -1662,7 +1663,7 @@ void TreeView::del()
     // Note: Deleting a parent item will also delete its children via Qt's parent-child relationship.
     // To avoid accessing deleted items, we iterate in reverse order (children before parents in tree order)
     // and skip items that may have been deleted as children of previously deleted parents.
-    for (QTreeWidgetItem *item : items) {
+    for (QTreeWidgetItem *item : std::as_const(items)) {
         // Check if item still exists in tree (may have been deleted as child of parent)
         if (item->treeWidget() == nullptr) {
             continue;

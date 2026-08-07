@@ -497,7 +497,7 @@ void MenuFile::popAction(ActionAtom *atom)
 
 bool MenuFile::performAllActions()
 {
-    Q_FOREACH (ActionAtom *atom, m_actionList) {
+    for (ActionAtom *atom : std::as_const(m_actionList)) {
         performAction(atom);
         delete atom;
     }
@@ -532,7 +532,7 @@ void MenuFile::restoreMenuSystem(const QString &filename)
     m_fileName = filename;
     m_doc.clear();
     m_bDirty = false;
-    Q_FOREACH (ActionAtom *atom, m_actionList) {
+    for (ActionAtom *atom : std::as_const(m_actionList)) {
         delete atom;
     }
     m_actionList.clear();
