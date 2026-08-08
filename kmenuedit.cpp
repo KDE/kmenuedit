@@ -106,8 +106,9 @@ void KMenuEdit::setupActions()
         menu->addSeparator();
         menu->addAction(actionCollection()->action(QStringLiteral("restore_system_menu")));
         menu->addSeparator();
+        const QList<KToolBar *> toolBarList = toolBars();
 
-        for (KToolBar *toolbar : toolBars()) {
+        for (KToolBar *toolbar : toolBarList) {
             static_cast<KHamburgerMenu *>(hamburgerMenu)->hideActionsOf(toolbar);
         }
     });

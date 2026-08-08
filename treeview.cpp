@@ -1652,7 +1652,7 @@ std::optional<QUrl> TreeView::fileUrlForSelected()
 
 void TreeView::del()
 {
-    QList<QTreeWidgetItem *> items = selectedItems();
+    const QList<QTreeWidgetItem *> items = selectedItems();
 
     // Nothing selected? -> nothing to delete
     if (items.isEmpty()) {
