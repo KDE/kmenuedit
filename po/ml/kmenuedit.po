@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KDE Malayalam\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-06-25 00:45+0000\n"
+"POT-Creation-Date: 2026-08-09 00:46+0000\n"
 "PO-Revision-Date: 2019-12-12 22:20+0000\n"
 "Last-Translator: Vivek KJ Pazhedath <vivekkj2004@gmail.com>\n"
 "Language-Team: Malayalam <Swathanthra|സ്വതന്ത്ര Malayalam|മലയാളം Computing|"
@@ -388,32 +388,32 @@ msgstr "മറച്ചുവച്ച ഇനങ്ങള്‍ കാണിക�
 msgid " [Hidden]"
 msgstr "[മറച്ചുവച്ചത്]"
 
-#: treeview.cpp:1068
+#: treeview.cpp:1069
 #, kde-format
 msgid "New Submenu"
 msgstr "പുതിയ ഉപമെനു"
 
-#: treeview.cpp:1068
+#: treeview.cpp:1069
 #, kde-format
 msgid "Submenu name:"
 msgstr "ഉപമെനുവിന്റെ പേരു്"
 
-#: treeview.cpp:1135
+#: treeview.cpp:1136
 #, kde-format
 msgid "New Item"
 msgstr "പുതിയ ഇനം"
 
-#: treeview.cpp:1135
+#: treeview.cpp:1136
 #, kde-format
 msgid "Item name:"
 msgstr "ഇനത്തിന്റെ പേരു്"
 
-#: treeview.cpp:1839
+#: treeview.cpp:1840
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
 msgstr "മെനുവിലെ മാറ്റങ്ങള്‍ ഇനി പറയുന്ന കാരണം മൂലം സൂക്ഷിക്കാന്‍ പറ്റിയില്ല"
 
-#: treeview.cpp:1886
+#: treeview.cpp:1887
 #, kde-format
 msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
@@ -421,7 +421,7 @@ msgid ""
 msgstr ""
 "സിസ്റ്റം മെനു തിരിച്ചുകൊണ്ടു വരണോ ? മുന്നറിയിപ്പ് : നിങ്ങള്‍ ഉണ്ടാക്കിയ എല്ലാ മെനുവും നഷ്ടപ്പെടും"
 
-#: treeview.cpp:1887
+#: treeview.cpp:1888
 #, fuzzy, kde-format
 #| msgid "Restore to System Menu"
 msgctxt "@title:window"

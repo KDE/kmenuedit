@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-06-25 00:45+0000\n"
+"POT-Creation-Date: 2026-08-09 00:46+0000\n"
 "PO-Revision-Date: 2009-04-09 14:51+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -397,39 +397,39 @@ msgstr "បង្ហាញ​ធាតុ​ដែល​បាន​លាក់
 msgid " [Hidden]"
 msgstr " [លាក់]"
 
-#: treeview.cpp:1068
+#: treeview.cpp:1069
 #, kde-format
 msgid "New Submenu"
 msgstr "ម៉ឺនុយ​រង​ថ្មី"
 
-#: treeview.cpp:1068
+#: treeview.cpp:1069
 #, kde-format
 msgid "Submenu name:"
 msgstr "ឈ្មោះ​ម៉ឺនុយ​រង ៖"
 
-#: treeview.cpp:1135
+#: treeview.cpp:1136
 #, kde-format
 msgid "New Item"
 msgstr "ធាតុ​ថ្មី"
 
-#: treeview.cpp:1135
+#: treeview.cpp:1136
 #, kde-format
 msgid "Item name:"
 msgstr "ឈ្មោះ​វត្ថុ ៖"
 
-#: treeview.cpp:1839
+#: treeview.cpp:1840
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
 msgstr "ការ​ផ្លាស់ប្ដូរ​ម៉ឺនុយ​មិន​អាច​រក្សា​ទុក​បាន​ទេ ដោយ​សារ​តែ​បញ្ហា​ខាង​ក្រោម ៖"
 
-#: treeview.cpp:1886
+#: treeview.cpp:1887
 #, kde-format
 msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
 "menus."
 msgstr "តើ​អ្នក​ចង់​ស្ដារ​ម៉ឺនុយ​ប្រពន្ធ​ឡើងវិញ​ឬ ? ព្រមាន ៖ វា​នឹង​យក​ម៉ឺនុយ​ផ្ទាល់ខ្លួន​ទាំងអស់​ចេញ ។"
 
-#: treeview.cpp:1887
+#: treeview.cpp:1888
 #, fuzzy, kde-format
 #| msgid "Restore to System Menu"
 msgctxt "@title:window"
