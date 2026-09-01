@@ -50,7 +50,7 @@ if(BUILD_DOC)
     )
 endif()
 
-ecm_set_disabled_deprecation_versions(QT 6.7.0
+ecm_set_disabled_deprecation_versions(QT 6.10
      KF 6.27.0
     )
 
