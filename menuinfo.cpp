@@ -276,7 +276,9 @@ void MenuFolderInfo::setInUse(bool inUse)
 
 MenuEntryInfo::~MenuEntryInfo()
 {
-    m_desktopFile->markAsClean();
+    if (m_desktopFile) {
+        m_desktopFile->markAsClean();
+    }
     delete m_desktopFile;
 }
 
