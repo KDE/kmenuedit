@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-08-09 00:46+0000\n"
+"POT-Creation-Date: 2026-09-16 00:47+0000\n"
 "PO-Revision-Date: 2025-08-14 11:37+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -173,100 +173,100 @@ msgstr "سيُخفي هذا شريط القوائم بالكامل. يمكنك �
 msgid "Hide menu bar"
 msgstr "أخفِ شريط القوائم"
 
-#: kmenuedit.cpp:118
+#: kmenuedit.cpp:119
 #, kde-format
 msgid "&New Submenu..."
 msgstr "قائمة &فرعية جديدة..."
 
-#: kmenuedit.cpp:122
+#: kmenuedit.cpp:123
 #, kde-format
 msgid "New &Item..."
 msgstr "&عنصر جديد..."
 
-#: kmenuedit.cpp:126
+#: kmenuedit.cpp:127
 #, kde-format
 msgid "New S&eparator"
 msgstr "&فاصل جديد"
 
-#: kmenuedit.cpp:132
+#: kmenuedit.cpp:133
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Location"
 msgstr "انسخ المكان"
 
-#: kmenuedit.cpp:135
+#: kmenuedit.cpp:136
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "&Open Containing Folder"
 msgstr "ا&فتح المجلّد الحاوي"
 
-#: kmenuedit.cpp:138
+#: kmenuedit.cpp:139
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Properties"
 msgstr "الخصائص"
 
-#: kmenuedit.cpp:142
+#: kmenuedit.cpp:143
 #, kde-format
 msgid "&New"
 msgstr "&جديد"
 
-#: kmenuedit.cpp:150
+#: kmenuedit.cpp:151
 #, kde-format
 msgid "&Sort"
 msgstr "ا&فرز"
 
-#: kmenuedit.cpp:154
+#: kmenuedit.cpp:155
 #, kde-format
 msgid "&Sort Selection by Name"
 msgstr "افرز الاخ&تيار بالاسم"
 
-#: kmenuedit.cpp:157
+#: kmenuedit.cpp:158
 #, kde-format
 msgid "&Sort Selection by Description"
 msgstr "افرز الاختيار الو&صف"
 
-#: kmenuedit.cpp:161
+#: kmenuedit.cpp:162
 #, kde-format
 msgid "&Sort All by Name"
 msgstr "افرز الجميع بالا&سم:"
 
-#: kmenuedit.cpp:164
+#: kmenuedit.cpp:165
 #, kde-format
 msgid "&Sort All by Description"
 msgstr "ا&فرز الجميع بالوصف:"
 
-#: kmenuedit.cpp:170
+#: kmenuedit.cpp:171
 #, kde-format
 msgid "Move &Up"
 msgstr "انقل لأ&على"
 
-#: kmenuedit.cpp:173
+#: kmenuedit.cpp:174
 #, kde-format
 msgid "Move &Down"
 msgstr "انقل لأ&سفل"
 
-#: kmenuedit.cpp:181
+#: kmenuedit.cpp:182
 #, kde-format
 msgid "Restore to System Menu"
 msgstr "استرجع إلى قائمة النظام"
 
-#: kmenuedit.cpp:218
+#: kmenuedit.cpp:219
 #, kde-format
 msgid "Search..."
 msgstr "ابحث..."
 
-#: kmenuedit.cpp:219
+#: kmenuedit.cpp:220
 #, kde-format
 msgid "Search through the list of applications below"
 msgstr "ابحث خلال قائمة التطبيقات التي بالأسفل"
 
-#: kmenuedit.cpp:287
+#: kmenuedit.cpp:288
 #, kde-format
 msgid "&Delete"
 msgstr "اح&ذف"
 
-#: kmenuedit.cpp:312
+#: kmenuedit.cpp:313
 #, kde-format
 msgid ""
 "You have made changes to the menu.\n"
@@ -275,7 +275,7 @@ msgstr ""
 "لقد غيرت هذه القائمة.\n"
 "هل تريد حفظ هذه التغييرات أو تجاهلها ؟"
 
-#: kmenuedit.cpp:314
+#: kmenuedit.cpp:315
 #, kde-format
 msgid "Save Menu Changes?"
 msgstr "احفظ تغييرات القائمة ؟"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-08-09 00:46+0000\n"
+"POT-Creation-Date: 2026-09-16 00:47+0000\n"
 "PO-Revision-Date: 2026-02-06 13:02+0000\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
@@ -169,100 +169,100 @@ msgstr ""
 msgid "Hide menu bar"
 msgstr "Ascunde bara meniului"
 
-#: kmenuedit.cpp:118
+#: kmenuedit.cpp:119
 #, kde-format
 msgid "&New Submenu..."
 msgstr "Submeniu &nou..."
 
-#: kmenuedit.cpp:122
+#: kmenuedit.cpp:123
 #, kde-format
 msgid "New &Item..."
 msgstr "Ele&ment nou..."
 
-#: kmenuedit.cpp:126
+#: kmenuedit.cpp:127
 #, kde-format
 msgid "New S&eparator"
 msgstr "S&eparator nou"
 
-#: kmenuedit.cpp:132
+#: kmenuedit.cpp:133
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Location"
 msgstr "Copiază amplasarea"
 
-#: kmenuedit.cpp:135
+#: kmenuedit.cpp:136
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "&Open Containing Folder"
 msgstr "Deschide d&osarul conținător"
 
-#: kmenuedit.cpp:138
+#: kmenuedit.cpp:139
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Properties"
 msgstr "Proprietăți"
 
-#: kmenuedit.cpp:142
+#: kmenuedit.cpp:143
 #, kde-format
 msgid "&New"
 msgstr "&Nou"
 
-#: kmenuedit.cpp:150
+#: kmenuedit.cpp:151
 #, kde-format
 msgid "&Sort"
 msgstr "&Sortare"
 
-#: kmenuedit.cpp:154
+#: kmenuedit.cpp:155
 #, kde-format
 msgid "&Sort Selection by Name"
 msgstr "&Sortează selecția după denumire"
 
-#: kmenuedit.cpp:157
+#: kmenuedit.cpp:158
 #, kde-format
 msgid "&Sort Selection by Description"
 msgstr "&Sortează selecția după descriere"
 
-#: kmenuedit.cpp:161
+#: kmenuedit.cpp:162
 #, kde-format
 msgid "&Sort All by Name"
 msgstr "&Sortează toate după denumire"
 
-#: kmenuedit.cpp:164
+#: kmenuedit.cpp:165
 #, kde-format
 msgid "&Sort All by Description"
 msgstr "&Sortează toate după descriere"
 
-#: kmenuedit.cpp:170
+#: kmenuedit.cpp:171
 #, kde-format
 msgid "Move &Up"
 msgstr "Mută mai s&us"
 
-#: kmenuedit.cpp:173
+#: kmenuedit.cpp:174
 #, kde-format
 msgid "Move &Down"
 msgstr "Mută mai j&os"
 
-#: kmenuedit.cpp:181
+#: kmenuedit.cpp:182
 #, kde-format
 msgid "Restore to System Menu"
 msgstr "Restabilește în meniul de sistem"
 
-#: kmenuedit.cpp:218
+#: kmenuedit.cpp:219
 #, kde-format
 msgid "Search..."
 msgstr "Căutare..."
 
-#: kmenuedit.cpp:219
+#: kmenuedit.cpp:220
 #, kde-format
 msgid "Search through the list of applications below"
 msgstr "Caută în lista de aplicații de mai jos"
 
-#: kmenuedit.cpp:287
+#: kmenuedit.cpp:288
 #, kde-format
 msgid "&Delete"
 msgstr "Ș&terge"
 
-#: kmenuedit.cpp:312
+#: kmenuedit.cpp:313
 #, kde-format
 msgid ""
 "You have made changes to the menu.\n"
@@ -271,7 +271,7 @@ msgstr ""
 "Ați făcut modificări în meniu.\n"
 "Doriți să salvez modificările sau să le elimin?"
 
-#: kmenuedit.cpp:314
+#: kmenuedit.cpp:315
 #, kde-format
 msgid "Save Menu Changes?"
 msgstr "Salvare modificări meniu?"

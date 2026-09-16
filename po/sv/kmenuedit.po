@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-08-09 00:46+0000\n"
+"POT-Creation-Date: 2026-09-16 00:47+0000\n"
 "PO-Revision-Date: 2025-07-28 18:22+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -170,100 +170,100 @@ msgstr ""
 msgid "Hide menu bar"
 msgstr "Dölj menyrad"
 
-#: kmenuedit.cpp:118
+#: kmenuedit.cpp:119
 #, kde-format
 msgid "&New Submenu..."
 msgstr "Ny &undermeny..."
 
-#: kmenuedit.cpp:122
+#: kmenuedit.cpp:123
 #, kde-format
 msgid "New &Item..."
 msgstr "Ny &post..."
 
-#: kmenuedit.cpp:126
+#: kmenuedit.cpp:127
 #, kde-format
 msgid "New S&eparator"
 msgstr "&Ny avskiljare"
 
-#: kmenuedit.cpp:132
+#: kmenuedit.cpp:133
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Location"
 msgstr "Kopiera plats"
 
-#: kmenuedit.cpp:135
+#: kmenuedit.cpp:136
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "&Open Containing Folder"
 msgstr "Ö&ppna katalog med innehåll"
 
-#: kmenuedit.cpp:138
+#: kmenuedit.cpp:139
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Properties"
 msgstr "Egenskaper"
 
-#: kmenuedit.cpp:142
+#: kmenuedit.cpp:143
 #, kde-format
 msgid "&New"
 msgstr "&Ny"
 
-#: kmenuedit.cpp:150
+#: kmenuedit.cpp:151
 #, kde-format
 msgid "&Sort"
 msgstr "&Sortera"
 
-#: kmenuedit.cpp:154
+#: kmenuedit.cpp:155
 #, kde-format
 msgid "&Sort Selection by Name"
 msgstr "&Sortera markering enligt namn"
 
-#: kmenuedit.cpp:157
+#: kmenuedit.cpp:158
 #, kde-format
 msgid "&Sort Selection by Description"
 msgstr "&Sortera markering enligt beskrivning"
 
-#: kmenuedit.cpp:161
+#: kmenuedit.cpp:162
 #, kde-format
 msgid "&Sort All by Name"
 msgstr "&Sortera alla enligt namn"
 
-#: kmenuedit.cpp:164
+#: kmenuedit.cpp:165
 #, kde-format
 msgid "&Sort All by Description"
 msgstr "&Sortera alla enligt beskrivning"
 
-#: kmenuedit.cpp:170
+#: kmenuedit.cpp:171
 #, kde-format
 msgid "Move &Up"
 msgstr "Flytta &upp"
 
-#: kmenuedit.cpp:173
+#: kmenuedit.cpp:174
 #, kde-format
 msgid "Move &Down"
 msgstr "Flytta &ner"
 
-#: kmenuedit.cpp:181
+#: kmenuedit.cpp:182
 #, kde-format
 msgid "Restore to System Menu"
 msgstr "Återställ till systemmeny"
 
-#: kmenuedit.cpp:218
+#: kmenuedit.cpp:219
 #, kde-format
 msgid "Search..."
 msgstr "Sök..."
 
-#: kmenuedit.cpp:219
+#: kmenuedit.cpp:220
 #, kde-format
 msgid "Search through the list of applications below"
 msgstr "Sök igenom listan med program nedan"
 
-#: kmenuedit.cpp:287
+#: kmenuedit.cpp:288
 #, kde-format
 msgid "&Delete"
 msgstr "&Ta bort"
 
-#: kmenuedit.cpp:312
+#: kmenuedit.cpp:313
 #, kde-format
 msgid ""
 "You have made changes to the menu.\n"
@@ -272,7 +272,7 @@ msgstr ""
 "Du har gjort ändringar i menyn.\n"
 "Vill du spara ändringarna eller kasta dem?"
 
-#: kmenuedit.cpp:314
+#: kmenuedit.cpp:315
 #, kde-format
 msgid "Save Menu Changes?"
 msgstr "Spara menyändringar?"

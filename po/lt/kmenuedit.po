@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-08-09 00:46+0000\n"
+"POT-Creation-Date: 2026-09-16 00:47+0000\n"
 "PO-Revision-Date: 2026-01-16 13:39+0200\n"
 "Last-Translator: Moo\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
@@ -169,100 +169,100 @@ msgstr "Tai visiškai paslėps meniu juostą. Galite vėl ją rodyti, paspaudę 
 msgid "Hide menu bar"
 msgstr "Slėpti meniu juosta"
 
-#: kmenuedit.cpp:118
+#: kmenuedit.cpp:119
 #, kde-format
 msgid "&New Submenu..."
 msgstr "&Naujas submeniu..."
 
-#: kmenuedit.cpp:122
+#: kmenuedit.cpp:123
 #, kde-format
 msgid "New &Item..."
 msgstr "Naujas &elementas..."
 
-#: kmenuedit.cpp:126
+#: kmenuedit.cpp:127
 #, kde-format
 msgid "New S&eparator"
 msgstr "Nauja&s skirtukas"
 
-#: kmenuedit.cpp:132
+#: kmenuedit.cpp:133
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Location"
 msgstr "Kopijuoti vietą"
 
-#: kmenuedit.cpp:135
+#: kmenuedit.cpp:136
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "&Open Containing Folder"
 msgstr "A&tverti vidinį aplanką"
 
-#: kmenuedit.cpp:138
+#: kmenuedit.cpp:139
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Properties"
 msgstr "Savybės"
 
-#: kmenuedit.cpp:142
+#: kmenuedit.cpp:143
 #, kde-format
 msgid "&New"
 msgstr "&Naujas"
 
-#: kmenuedit.cpp:150
+#: kmenuedit.cpp:151
 #, kde-format
 msgid "&Sort"
 msgstr "&Rikiuoti"
 
-#: kmenuedit.cpp:154
+#: kmenuedit.cpp:155
 #, kde-format
 msgid "&Sort Selection by Name"
 msgstr "&Rikiuoti žymėjimą pagal pavadinimą"
 
-#: kmenuedit.cpp:157
+#: kmenuedit.cpp:158
 #, kde-format
 msgid "&Sort Selection by Description"
 msgstr "&Rikiuoti žymėjimą pagal aprašą"
 
-#: kmenuedit.cpp:161
+#: kmenuedit.cpp:162
 #, kde-format
 msgid "&Sort All by Name"
 msgstr "&Rikiuoti visus pagal pavadinimą"
 
-#: kmenuedit.cpp:164
+#: kmenuedit.cpp:165
 #, kde-format
 msgid "&Sort All by Description"
 msgstr "&Rikiuoti visus pagal aprašą"
 
-#: kmenuedit.cpp:170
+#: kmenuedit.cpp:171
 #, kde-format
 msgid "Move &Up"
 msgstr "Pa&kelti"
 
-#: kmenuedit.cpp:173
+#: kmenuedit.cpp:174
 #, kde-format
 msgid "Move &Down"
 msgstr "&Nuleisti"
 
-#: kmenuedit.cpp:181
+#: kmenuedit.cpp:182
 #, kde-format
 msgid "Restore to System Menu"
 msgstr "Atkurti į sisteminį meniu"
 
-#: kmenuedit.cpp:218
+#: kmenuedit.cpp:219
 #, kde-format
 msgid "Search..."
 msgstr "Ieškoti..."
 
-#: kmenuedit.cpp:219
+#: kmenuedit.cpp:220
 #, kde-format
 msgid "Search through the list of applications below"
 msgstr "Ieškoti per žemiau esančių programų sąrašą"
 
-#: kmenuedit.cpp:287
+#: kmenuedit.cpp:288
 #, kde-format
 msgid "&Delete"
 msgstr "Iš&trinti"
 
-#: kmenuedit.cpp:312
+#: kmenuedit.cpp:313
 #, kde-format
 msgid ""
 "You have made changes to the menu.\n"
@@ -271,7 +271,7 @@ msgstr ""
 "Šiame meniu atlikote pakeitimus.\n"
 "Ar norite šiuos pakeitimus įrašyti, ar juos atmesti?"
 
-#: kmenuedit.cpp:314
+#: kmenuedit.cpp:315
 #, kde-format
 msgid "Save Menu Changes?"
 msgstr "Įrašyti meniu pakeitimus?"

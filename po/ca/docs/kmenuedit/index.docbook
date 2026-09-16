@@ -157,9 +157,9 @@
 <para
 >En el mode ocult tindreu un submenú especial <guilabel
 >.hidden [Hidden]</guilabel
-> a l'arbre com a element de nivell superior. Aquest submenú especial no es pot editar. En aquest submenú tots els elements suprimits es mostraran al proper inici del &kmenuedit;.</para>
+> a l'arbre com a element de nivell superior. Aquest submenú especial no es pot editar. En aquest submenú tots els elements suprimits es mostraran al següent inici del &kmenuedit;.</para>
 <para
->No és possible suprimir les entrades utilitzant la &IGU; en aquest submenú especial. Tornaran a aparèixer al proper inici del &kmenuedit;. </para>
+>No és possible suprimir les entrades utilitzant la &IGU; en aquest submenú especial. Tornaran a aparèixer al següent inici del &kmenuedit;. </para>
 
 <sect1 id="use-cases">
 <title

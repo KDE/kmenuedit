@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-08-09 00:46+0000\n"
+"POT-Creation-Date: 2026-09-16 00:47+0000\n"
 "PO-Revision-Date: 2019-11-22 12:03+0200\n"
 "Last-Translator: Marek Laane <qiilaq69@gmail.com>\n"
 "Language-Team: Estonian <kde-et@lists.linux.ee>\n"
@@ -168,104 +168,104 @@ msgstr ""
 msgid "Hide menu bar"
 msgstr ""
 
-#: kmenuedit.cpp:118
+#: kmenuedit.cpp:119
 #, kde-format
 msgid "&New Submenu..."
 msgstr "&Uus alammenüü..."
 
-#: kmenuedit.cpp:122
+#: kmenuedit.cpp:123
 #, kde-format
 msgid "New &Item..."
 msgstr "Uus &element..."
 
-#: kmenuedit.cpp:126
+#: kmenuedit.cpp:127
 #, kde-format
 msgid "New S&eparator"
 msgstr "Uus &eraldaja"
 
-#: kmenuedit.cpp:132
+#: kmenuedit.cpp:133
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Location"
 msgstr ""
 
-#: kmenuedit.cpp:135
+#: kmenuedit.cpp:136
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "&Open Containing Folder"
 msgstr ""
 
-#: kmenuedit.cpp:138
+#: kmenuedit.cpp:139
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Properties"
 msgstr ""
 
-#: kmenuedit.cpp:142
+#: kmenuedit.cpp:143
 #, kde-format
 msgid "&New"
 msgstr ""
 
-#: kmenuedit.cpp:150
+#: kmenuedit.cpp:151
 #, kde-format
 msgid "&Sort"
 msgstr "&Sortimine"
 
-#: kmenuedit.cpp:154
+#: kmenuedit.cpp:155
 #, fuzzy, kde-format
 #| msgid "&Sort selection by Name"
 msgid "&Sort Selection by Name"
 msgstr "&Sordi valitud nime järgi"
 
-#: kmenuedit.cpp:157
+#: kmenuedit.cpp:158
 #, fuzzy, kde-format
 #| msgid "&Sort selection by Description"
 msgid "&Sort Selection by Description"
 msgstr "&Sordi valitud kirjelduse järgi"
 
-#: kmenuedit.cpp:161
+#: kmenuedit.cpp:162
 #, fuzzy, kde-format
 #| msgid "&Sort all by Name"
 msgid "&Sort All by Name"
 msgstr "&Sordi kõik nime järgi"
 
-#: kmenuedit.cpp:164
+#: kmenuedit.cpp:165
 #, fuzzy, kde-format
 #| msgid "&Sort all by Description"
 msgid "&Sort All by Description"
 msgstr "&Sordi kõik kirjelduse järgi"
 
-#: kmenuedit.cpp:170
+#: kmenuedit.cpp:171
 #, kde-format
 msgid "Move &Up"
 msgstr "Liiguta ü&les"
 
-#: kmenuedit.cpp:173
+#: kmenuedit.cpp:174
 #, kde-format
 msgid "Move &Down"
 msgstr "Liiguta &alla"
 
-#: kmenuedit.cpp:181
+#: kmenuedit.cpp:182
 #, kde-format
 msgid "Restore to System Menu"
 msgstr "Süsteemi menüü taastamine"
 
-#: kmenuedit.cpp:218
+#: kmenuedit.cpp:219
 #, kde-format
 msgid "Search..."
 msgstr "Otsi ..."
 
-#: kmenuedit.cpp:219
+#: kmenuedit.cpp:220
 #, kde-format
 msgid "Search through the list of applications below"
 msgstr "Otsimine allolevas rakenduste loendis"
 
-#: kmenuedit.cpp:287
+#: kmenuedit.cpp:288
 #, kde-format
 msgid "&Delete"
 msgstr "&Kustuta"
 
-#: kmenuedit.cpp:312
+#: kmenuedit.cpp:313
 #, kde-format
 msgid ""
 "You have made changes to the menu.\n"
@@ -274,7 +274,7 @@ msgstr ""
 "Oled menüüd muutnud.\n"
 "Kas salvestada muudatused või unustada?"
 
-#: kmenuedit.cpp:314
+#: kmenuedit.cpp:315
 #, kde-format
 msgid "Save Menu Changes?"
 msgstr "Kas salvestada menüü muudatused?"

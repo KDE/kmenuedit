@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-08-09 00:46+0000\n"
+"POT-Creation-Date: 2026-09-16 00:47+0000\n"
 "PO-Revision-Date: 2009-01-08 20:11+0530\n"
 "Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
 "Language-Team: Bengali INDIA <fedora-trans-bn_IN@redhat.com>\n"
@@ -155,104 +155,104 @@ msgstr ""
 msgid "Hide menu bar"
 msgstr ""
 
-#: kmenuedit.cpp:118
+#: kmenuedit.cpp:119
 #, kde-format
 msgid "&New Submenu..."
 msgstr "নতুন সাব-মেনু...(&N)"
 
-#: kmenuedit.cpp:122
+#: kmenuedit.cpp:123
 #, kde-format
 msgid "New &Item..."
 msgstr "নতুন বস্তু...(&I)"
 
-#: kmenuedit.cpp:126
+#: kmenuedit.cpp:127
 #, kde-format
 msgid "New S&eparator"
 msgstr "নতুন বিভাজন রেখা (&e)"
 
-#: kmenuedit.cpp:132
+#: kmenuedit.cpp:133
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Location"
 msgstr ""
 
-#: kmenuedit.cpp:135
+#: kmenuedit.cpp:136
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "&Open Containing Folder"
 msgstr ""
 
-#: kmenuedit.cpp:138
+#: kmenuedit.cpp:139
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Properties"
 msgstr ""
 
-#: kmenuedit.cpp:142
+#: kmenuedit.cpp:143
 #, kde-format
 msgid "&New"
 msgstr ""
 
-#: kmenuedit.cpp:150
+#: kmenuedit.cpp:151
 #, kde-format
 msgid "&Sort"
 msgstr ""
 
-#: kmenuedit.cpp:154
+#: kmenuedit.cpp:155
 #, fuzzy, kde-format
 #| msgid "&Description:"
 msgid "&Sort Selection by Name"
 msgstr "বিবরণ: (&D)"
 
-#: kmenuedit.cpp:157
+#: kmenuedit.cpp:158
 #, fuzzy, kde-format
 #| msgid "&Description:"
 msgid "&Sort Selection by Description"
 msgstr "বিবরণ: (&D)"
 
-#: kmenuedit.cpp:161
+#: kmenuedit.cpp:162
 #, fuzzy, kde-format
 #| msgid "&Description:"
 msgid "&Sort All by Name"
 msgstr "বিবরণ: (&D)"
 
-#: kmenuedit.cpp:164
+#: kmenuedit.cpp:165
 #, fuzzy, kde-format
 #| msgid "&Description:"
 msgid "&Sort All by Description"
 msgstr "বিবরণ: (&D)"
 
-#: kmenuedit.cpp:170
+#: kmenuedit.cpp:171
 #, kde-format
 msgid "Move &Up"
 msgstr ""
 
-#: kmenuedit.cpp:173
+#: kmenuedit.cpp:174
 #, kde-format
 msgid "Move &Down"
 msgstr ""
 
-#: kmenuedit.cpp:181
+#: kmenuedit.cpp:182
 #, kde-format
 msgid "Restore to System Menu"
 msgstr "সিস্টেম মেনুর মধ্যে পুনরায় স্থাপন করা হবে"
 
-#: kmenuedit.cpp:218
+#: kmenuedit.cpp:219
 #, kde-format
 msgid "Search..."
 msgstr ""
 
-#: kmenuedit.cpp:219
+#: kmenuedit.cpp:220
 #, kde-format
 msgid "Search through the list of applications below"
 msgstr ""
 
-#: kmenuedit.cpp:287
+#: kmenuedit.cpp:288
 #, kde-format
 msgid "&Delete"
 msgstr "মুছে ফেলুন (&D)"
 
-#: kmenuedit.cpp:312
+#: kmenuedit.cpp:313
 #, kde-format
 msgid ""
 "You have made changes to the menu.\n"
@@ -261,7 +261,7 @@ msgstr ""
 "মেনুর মধ্যে কিছু পরিবর্তন করা হয়েছে।\n"
 "পরিবর্তনগুলি সংরক্ষণ করা হবে নাকি বর্জন করা হবে?"
 
-#: kmenuedit.cpp:314
+#: kmenuedit.cpp:315
 #, kde-format
 msgid "Save Menu Changes?"
 msgstr "মেনুর পরিবর্তন সংরক্ষণ করা হবে কি?"
