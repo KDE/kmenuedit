@@ -9,25 +9,25 @@ msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-08-09 00:46+0000\n"
-"PO-Revision-Date: 2026-04-03 16:34+0200\n"
-"Last-Translator: Libor Filípek <filipek.libor@protonmail.com>\n"
+"PO-Revision-Date: 2026-09-22 15:36+0200\n"
+"Last-Translator: Libor Filípek <libor.filipek@gmail.com>\n"
 "Language-Team: \n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 25.12.3\n"
+"X-Generator: Poedit 3.9\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Lukáš Tinkl"
+msgstr "Lukáš Tinkl,Libor Filípek"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "lukas@kde.org"
+msgstr "lukas@kde.org,libor.filipek@gmail.com"
 
 #: basictab.cpp:51
 #, kde-format
@@ -139,7 +139,7 @@ msgstr "&Uživatelské jméno:"
 #: basictab.cpp:195
 #, kde-format
 msgid "Run using dedicated &graphics card"
-msgstr "Pro použití dedikované &grafické karty"
+msgstr "Spustit s využitím dedikované grafické karty"
 
 #: basictab.cpp:203
 #, kde-format
