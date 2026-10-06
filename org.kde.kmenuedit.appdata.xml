@@ -35,6 +35,10 @@
   <name xml:lang="ru">Редактор меню</name>
   <name xml:lang="sk">Menu editor</name>
   <name xml:lang="sl">Urejevalnik menijev</name>
+  <name xml:lang="sr">Уређивач менија</name>
+  <name xml:lang="sr-Latn">Uređivač menija</name>
+  <name xml:lang="sr-ijekavian">Уређивач менија</name>
+  <name xml:lang="sr-ijekavianlatin">Uređivač menija</name>
   <name xml:lang="sv">Menyeditor</name>
   <name xml:lang="ta">பட்டித் திருத்தி</name>
   <name xml:lang="tr">Menü Düzenleyicisi</name>
@@ -80,6 +84,10 @@
   <summary xml:lang="sa">अनुप्रयोगप्रक्षेपकेषु अनुप्रयोगाः कथं प्रस्तुताः भवन्ति इति सम्पादयन्तु</summary>
   <summary xml:lang="sk">Editovať, ako sa aplikácie zobrazujú v spúšťačoch aplikácií</summary>
   <summary xml:lang="sl">Uredi kako so aplikacije prikazane v zaganjalnikih programov</summary>
+  <summary xml:lang="sr">Уредите како се програми приказују у покретачима програма</summary>
+  <summary xml:lang="sr-Latn">Uredite kako se programi prikazuju u pokretačima programa</summary>
+  <summary xml:lang="sr-ijekavian">Уредите како се програми приказују у покретачима програма</summary>
+  <summary xml:lang="sr-ijekavianlatin">Uredite kako se programi prikazuju u pokretačima programa</summary>
   <summary xml:lang="sv">Redigera hur program presenteras i startprogram</summary>
   <summary xml:lang="ta">ஏவிகளில் செயலிகள் காட்டப்படும் வித‍த்தை மாற்றுங்கள்</summary>
   <summary xml:lang="tr">Uygulamaların başlatıcılarda nasıl sunulduğunu düzenleyin</summary>
@@ -126,6 +134,10 @@
     <p xml:lang="sa">KDE विकल्पसूचि सम्पादनं भवन्तं सम्पादयितुं शक्नोति यत् भवतः अनुप्रयोगाः अनुप्रयोगप्रक्षेपकेषु कथं प्रस्तुताः सन्ति, यथा Plasma इत्यस्य अनुप्रयोगप्रक्षेपकविजेट् ।.</p>
     <p xml:lang="sk">KDE Menu Edit vám umožní upraviť, ako sa vaše aplikácie prezentujú v spúšťačoch aplikácií, ako widget Plasma spúšťača aplikácií.</p>
     <p xml:lang="sl">KDE Menu Edit vam omogoča urejanje, kako so aplikacije prikazane v zaganjalnikih kot npr. gradnik Plasma's Application Launcher.</p>
+    <p xml:lang="sr">Уређивач К‑менија вам омогућава да уредите како се ваши програми приказују у покретачима програма, као што је виџет „Покретач програма“ у Плазми.</p>
+    <p xml:lang="sr-Latn">Uređivač K‑menija vam omogućava da uredite kako se vaši programi prikazuju u pokretačima programa, kao što je vidžet „Pokretač programa“ u Plasmi.</p>
+    <p xml:lang="sr-ijekavian">Уређивач К‑менија вам омогућава да уредите како се ваши програми приказују у покретачима програма, као што је виџет „Покретач програма“ у Плазми.</p>
+    <p xml:lang="sr-ijekavianlatin">Uređivač K‑menija vam omogućava da uredite kako se vaši programi prikazuju u pokretačima programa, kao što je vidžet „Pokretač programa“ u Plasmi.</p>
     <p xml:lang="sv">KDE:s Menyredigering låter dig redigera hur program presenteras i startprogram, såsom Plasmas grafiska komponent för programstart.</p>
     <p xml:lang="ta">செயலி ஏவிகளில் செயலிகள் காட்டப்படும் வித‍த்தை, கே.டீ.யீ. பட்டித் திருத்தியைக் கொண்டு மாற்றியமைக்கலாம்.</p>
     <p xml:lang="tr">KDE Menü Düzenleyicisi, uygulamalarınızın uygulama başlatıcılarda (örn. Plasma’nın Uygulama Başlatıcısı araç takımında) nice sunulduğunu düzenlemenize izin verir.</p>
