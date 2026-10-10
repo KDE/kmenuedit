@@ -481,7 +481,6 @@ TreeItem *TreeView::createTreeItem(TreeItem *parent, QTreeWidgetItem *after, Men
 
 void TreeView::fillBranch(MenuFolderInfo *folderInfo, TreeItem *parent)
 {
-    QString relPath = parent ? parent->directory() : QString();
     TreeItem *after = nullptr;
     for (MenuInfo *info : std::as_const(folderInfo->initialLayout)) {
         MenuEntryInfo *entry = dynamic_cast<MenuEntryInfo *>(info);
@@ -1282,7 +1281,6 @@ void TreeView::copy(bool cutting)
 
     // is item a folder or a file?
     if (item->isDirectory()) {
-        QString folder = item->directory();
         if (cutting) {
             // Place in clipboard
             m_clipboard = MOVE_FOLDER;
