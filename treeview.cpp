@@ -667,7 +667,7 @@ void TreeView::itemSelected(QTreeWidgetItem *item)
 
 void TreeView::currentDataChanged(MenuFolderInfo *folderInfo)
 {
-    TreeItem *item = (TreeItem *)selectedItem();
+    TreeItem *item = static_cast<TreeItem *>(selectedItem());
     if (!item || !folderInfo) {
         return;
     }
@@ -678,7 +678,7 @@ void TreeView::currentDataChanged(MenuFolderInfo *folderInfo)
 
 void TreeView::currentDataChanged(MenuEntryInfo *entryInfo)
 {
-    TreeItem *item = (TreeItem *)selectedItem();
+    TreeItem *item = static_cast<TreeItem *>(selectedItem());
     if (!item || !entryInfo) {
         return;
     }
@@ -1034,7 +1034,7 @@ void TreeView::dropEvent(QDropEvent *event)
 void TreeView::newsubmenu()
 {
     TreeItem *parentItem = nullptr;
-    TreeItem *item = (TreeItem *)selectedItem();
+    TreeItem *item = static_cast<TreeItem *>(selectedItem());
 
     bool ok;
     QString caption = QInputDialog::getText(this, i18n("New Submenu"), i18n("Submenu name:"), QLineEdit::Normal, QString(), &ok);
@@ -1101,7 +1101,7 @@ void TreeView::newsubmenu()
 void TreeView::newitem()
 {
     TreeItem *parentItem = nullptr;
-    TreeItem *item = (TreeItem *)selectedItem();
+    TreeItem *item = static_cast<TreeItem *>(selectedItem());
 
     bool ok;
     QString caption = QInputDialog::getText(this, i18n("New Item"), i18n("Item name:"), QLineEdit::Normal, QString(), &ok);
@@ -1165,7 +1165,7 @@ void TreeView::newitem()
 void TreeView::newsep()
 {
     TreeItem *parentItem = nullptr;
-    TreeItem *item = (TreeItem *)selectedItem();
+    TreeItem *item = static_cast<TreeItem *>(selectedItem());
 
     if (!item) {
         parentItem = nullptr;
@@ -1237,7 +1237,7 @@ void TreeView::copy()
 
 void TreeView::copy(bool cutting)
 {
-    TreeItem *item = (TreeItem *)selectedItem();
+    TreeItem *item = static_cast<TreeItem *>(selectedItem());
 
     // nil selected? -> nil to copy
     if (item == nullptr) {
@@ -1245,7 +1245,7 @@ void TreeView::copy(bool cutting)
     }
 
     if (cutting) {
-        setLayoutDirty((TreeItem *)item->parent());
+        setLayoutDirty(static_cast<TreeItem *>(item->parent()));
     }
 
     // clean up old stuff
@@ -1290,7 +1290,7 @@ void TreeView::copy(bool cutting)
 void TreeView::paste()
 {
     TreeItem *parentItem = nullptr;
-    TreeItem *item = (TreeItem *)selectedItem();
+    TreeItem *item = static_cast<TreeItem *>(selectedItem());
 
     // nil selected? -> nil to paste to
     if (item == nullptr) {
@@ -1606,7 +1606,7 @@ TreeItem *TreeView::getParentItem(QTreeWidgetItem *item) const
  */
 std::optional<QUrl> TreeView::fileUrlForSelected()
 {
-    TreeItem *item = (TreeItem *)selectedItem();
+    TreeItem *item = static_cast<TreeItem *>(selectedItem());
     if (!item) {
         return {};
     }
