@@ -77,9 +77,9 @@ public:
         return m_folderInfo;
     }
 
-    void setMenuFolderInfo(MenuFolderInfo *folderInfo)
+    void setMenuFolderInfo(MenuFolderInfo *newFolderInfo)
     {
-        m_folderInfo = folderInfo;
+        m_folderInfo = newFolderInfo;
     }
 
     MenuEntryInfo *entryInfo() const
@@ -87,9 +87,9 @@ public:
         return m_entryInfo;
     }
 
-    void setMenuEntryInfo(MenuEntryInfo *entryInfo)
+    void setMenuEntryInfo(MenuEntryInfo *newEntryInfo)
     {
-        m_entryInfo = entryInfo;
+        m_entryInfo = newEntryInfo;
     }
 
     QString name() const
@@ -97,7 +97,7 @@ public:
         return m_name;
     }
 
-    void setName(const QString &name);
+    void setName(const QString &newName);
 
     QString description() const;
 

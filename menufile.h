@@ -92,10 +92,10 @@ public:
 protected:
     /**
      * Finds menu @p menuName in @p elem.
-     * If @p create is true, the menu is created if it doesn't exist yet.
+     * If @p createIfNotFound is true, the menu is created if it doesn't exist yet.
      * @return The menu dom-node of @p menuName
      */
-    QDomElement findMenu(QDomElement elem, const QString &menuName, bool create);
+    QDomElement findMenu(QDomElement elem, const QString &menuName, bool createIfNotFound);
 
 private:
     QString m_error;

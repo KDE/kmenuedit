@@ -111,7 +111,7 @@ bool MenuFile::save()
     return true;
 }
 
-QDomElement MenuFile::findMenu(QDomElement elem, const QString &menuName, bool create)
+QDomElement MenuFile::findMenu(QDomElement elem, const QString &menuName, bool createIfNotFound)
 {
     QString menuNodeName;
     QString subMenuName;
@@ -123,7 +123,7 @@ QDomElement MenuFile::findMenu(QDomElement elem, const QString &menuName, bool c
         menuNodeName = menuName;
     }
     if (i == 0) {
-        return findMenu(elem, subMenuName, create);
+        return findMenu(elem, subMenuName, createIfNotFound);
     }
 
     if (menuNodeName.isEmpty()) {
@@ -150,14 +150,14 @@ QDomElement MenuFile::findMenu(QDomElement elem, const QString &menuName, bool c
                 if (subMenuName.isEmpty()) {
                     return e;
                 } else {
-                    return findMenu(e, subMenuName, create);
+                    return findMenu(e, subMenuName, createIfNotFound);
                 }
             }
         }
         n = n.nextSibling();
     }
 
-    if (!create) {
+    if (!createIfNotFound) {
         return QDomElement();
     }
 
@@ -171,7 +171,7 @@ QDomElement MenuFile::findMenu(QDomElement elem, const QString &menuName, bool c
     if (subMenuName.isEmpty()) {
         return newElem;
     } else {
-        return findMenu(newElem, subMenuName, create);
+        return findMenu(newElem, subMenuName, createIfNotFound);
     }
 }
 

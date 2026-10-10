@@ -102,12 +102,12 @@ QString uniqueCaption(const QString &caption)
     return match.hasMatch() ? match.captured(1) : caption;
 }
 
-// Return a unique sub-menu caption inspired by @p caption
-QString MenuFolderInfo::uniqueMenuCaption(const QString &caption)
+// Return a unique sub-menu caption inspired by @p proposedCaption
+QString MenuFolderInfo::uniqueMenuCaption(const QString &proposedCaption)
 {
-    QString cap = uniqueCaption(caption);
+    QString cap = uniqueCaption(proposedCaption);
 
-    QString result = caption;
+    QString result = proposedCaption;
 
     for (int n = 1; ++n;) {
         bool ok = true;
@@ -126,12 +126,12 @@ QString MenuFolderInfo::uniqueMenuCaption(const QString &caption)
     return QString(); // Never reached
 }
 
-// Return a unique item caption inspired by @p caption
-QString MenuFolderInfo::uniqueItemCaption(const QString &caption, const QString &exclude)
+// Return a unique item caption inspired by @p proposedCaption
+QString MenuFolderInfo::uniqueItemCaption(const QString &proposedCaption, const QString &exclude)
 {
-    QString cap = uniqueCaption(caption);
+    QString cap = uniqueCaption(proposedCaption);
 
-    QString result = caption;
+    QString result = proposedCaption;
 
     for (int n = 1; ++n;) {
         bool ok = true;

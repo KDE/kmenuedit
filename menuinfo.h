@@ -65,12 +65,12 @@ public:
     // Remove entry (without deleting it)
     void take(MenuEntryInfo *);
 
-    // Return a unique sub-menu caption inspired by @p caption
-    QString uniqueMenuCaption(const QString &caption);
+    // Return a unique sub-menu caption inspired by @p proposedCaption
+    QString uniqueMenuCaption(const QString &proposedCaption);
 
-    // Return a unique item caption inspired by @p caption but different
+    // Return a unique item caption inspired by @p proposedCaption but different
     // from @p exclude
-    QString uniqueItemCaption(const QString &caption, const QString &exclude = QString());
+    QString uniqueItemCaption(const QString &proposedCaption, const QString &exclude = QString());
 
     // Update full id's for this item and all submenus
     void updateFullId(const QString &parentId);

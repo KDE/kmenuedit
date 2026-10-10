@@ -153,13 +153,13 @@ bool TreeItem::itemDescriptionLessThan(QTreeWidgetItem *item1, QTreeWidgetItem *
     }
 }
 
-void TreeItem::setName(const QString &name)
+void TreeItem::setName(const QString &newName)
 {
-    if (m_name == name) {
+    if (m_name == newName) {
         return;
     }
 
-    m_name = name;
+    m_name = newName;
     update();
 }
 
@@ -503,9 +503,9 @@ void TreeView::fillBranch(MenuFolderInfo *folderInfo, TreeItem *parent)
 }
 TreeItem *TreeView::expandPath(TreeItem *item, const QString &path)
 {
-    int i = path.indexOf(QLatin1String("/"));
-    QString subMenu = path.left(i + 1);
-    QString restMenu = path.mid(i + 1);
+    int idx = path.indexOf(QLatin1String("/"));
+    QString subMenu = path.left(idx + 1);
+    QString restMenu = path.mid(idx + 1);
 
     for (int i = 0; i < item->childCount(); ++i) {
         TreeItem *childItem = dynamic_cast<TreeItem *>(item->child(i));
@@ -547,9 +547,9 @@ void TreeView::selectMenu(const QString &menu)
     }
 
     TreeItem *item = nullptr;
-    int i = restMenu.indexOf(QLatin1String("/"));
-    QString subMenu = restMenu.left(i + 1);
-    restMenu = restMenu.mid(i + 1);
+    int idx = restMenu.indexOf(QLatin1String("/"));
+    QString subMenu = restMenu.left(idx + 1);
+    restMenu = restMenu.mid(idx + 1);
 
     for (int i = 0; i < topLevelItemCount(); ++i) {
         item = dynamic_cast<TreeItem *>(topLevelItem(i));
@@ -1874,9 +1874,9 @@ bool TreeView::dirty()
     return m_layoutDirty || m_rootFolder->hasDirt() || m_menuFile->dirty() || isLayoutDirty();
 }
 
-void TreeView::findServiceShortcut(const QKeySequence &cut, KService::Ptr &service)
+void TreeView::findServiceShortcut(const QKeySequence &shortcut, KService::Ptr &service)
 {
-    service = m_rootFolder->findServiceShortcut(cut);
+    service = m_rootFolder->findServiceShortcut(shortcut);
 }
 
 void TreeView::restoreMenuSystem()
