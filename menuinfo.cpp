@@ -453,7 +453,7 @@ void MenuEntryInfo::setInUse(bool inUse)
 
 bool MenuEntryInfo::isShortcutAvailable(const QKeySequence &_shortcut)
 {
-    // We only have to check agains not saved local shortcuts.
+    // We only have to check against not saved local shortcuts.
     // KKeySequenceWidget checks against all other registered shortcuts.
     if (shortCut == _shortcut) {
         return true;
@@ -461,7 +461,7 @@ bool MenuEntryInfo::isShortcutAvailable(const QKeySequence &_shortcut)
 
     QString shortcutKey = _shortcut.toString();
     bool available = true;
-    if (available && s_newShortcuts) {
+    if (s_newShortcuts) {
         available = !s_newShortcuts->contains(shortcutKey);
     }
     if (!available && s_freeShortcuts) {
