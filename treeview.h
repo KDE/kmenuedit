@@ -218,7 +218,6 @@ protected:
     void del(TreeItem *, bool deleteInfo);
     void fill();
     void fillBranch(MenuFolderInfo *folderInfo, TreeItem *parent);
-    QString findName(KDesktopFile *df, bool deleted);
     void sortItem(TreeItem *item, SortType sortType);
     void sortItemChildren(const QList<QTreeWidgetItem *>::iterator &begin, const QList<QTreeWidgetItem *>::iterator &end, SortType sortType);
     TreeItem *getParentItem(QTreeWidgetItem *item) const;

@@ -387,34 +387,6 @@ void TreeView::fill()
     QApplication::restoreOverrideCursor();
 }
 
-QString TreeView::findName(KDesktopFile *df, bool deleted)
-{
-    QString name = df->readName();
-    if (deleted) {
-        if (name == QLatin1String("empty")) {
-            name.clear();
-        }
-        if (name.isEmpty()) {
-            bool isLocal = true;
-            const QStringList files = QStandardPaths::locateAll(df->locationType(), df->fileName(), QStandardPaths::LocateFile);
-            for (const QString &file : files) {
-                if (isLocal) {
-                    isLocal = false;
-                    continue;
-                }
-
-                KDesktopFile df2(file);
-                name = df2.readName();
-
-                if (!name.isEmpty() && (name != QLatin1String("empty"))) {
-                    return name;
-                }
-            }
-        }
-    }
-    return name;
-}
-
 TreeItem *TreeView::createTreeItem(TreeItem *parent, QTreeWidgetItem *after, MenuFolderInfo *folderInfo, bool m_init)
 {
     TreeItem *item;
