@@ -56,7 +56,7 @@ ecm_set_disabled_deprecation_versions(QT 6.10
 
 add_compile_definitions(QT_STRICT_ITERATORS)
 
-add_definitions(-DTRANSLATION_DOMAIN=\"kmenuedit\")
+add_compile_definitions(TRANSLATION_DOMAIN=\"kmenuedit\")
 add_subdirectory( pixmaps ) 
 
 set(kmenueditcommon_STAT_SRCS basictab.cpp
