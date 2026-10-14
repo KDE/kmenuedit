@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-09-16 00:47+0000\n"
+"POT-Creation-Date: 2026-10-14 00:49+0000\n"
 "PO-Revision-Date: 2010-03-27 23:01+0700\n"
 "Last-Translator: Thanomsub Noppaburana <donga.nb@gmail.com>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
@@ -396,32 +396,32 @@ msgstr "แสดงรายการที่ถูกซ่อน"
 msgid " [Hidden]"
 msgstr " [ถูกซ่อน]"
 
-#: treeview.cpp:1069
+#: treeview.cpp:1040
 #, kde-format
 msgid "New Submenu"
 msgstr "สร้างเมนูย่อยใหม่"
 
-#: treeview.cpp:1069
+#: treeview.cpp:1040
 #, kde-format
 msgid "Submenu name:"
 msgstr "ชื่อเมนูย่อย:"
 
-#: treeview.cpp:1136
+#: treeview.cpp:1107
 #, kde-format
 msgid "New Item"
 msgstr "สร้างรายการใหม่"
 
-#: treeview.cpp:1136
+#: treeview.cpp:1107
 #, kde-format
 msgid "Item name:"
 msgstr "ชื่อรายการ:"
 
-#: treeview.cpp:1840
+#: treeview.cpp:1810
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
 msgstr "ไม่สามารถจัดเก็บความเปลี่ยนแปลงของเมนูได้ เนื่องจากเกิดข้อผิดพลาดต่อไปนี้:"
 
-#: treeview.cpp:1887
+#: treeview.cpp:1857
 #, kde-format
 msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
@@ -430,7 +430,7 @@ msgstr ""
 "คุณต้องการจะเรียกคืนเมนูของระบบกลับเป็นค่าปริยายใช่หรือไม่ ? หากใช่ "
 "เมนูที่คุณได้กำหนดเองจะถูกลบออกทั้งหมด"
 
-#: treeview.cpp:1888
+#: treeview.cpp:1858
 #, fuzzy, kde-format
 #| msgid "Restore to System Menu"
 msgctxt "@title:window"

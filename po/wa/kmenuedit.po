@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmenuedit\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-09-16 00:47+0000\n"
+"POT-Creation-Date: 2026-10-14 00:49+0000\n"
 "PO-Revision-Date: 2010-01-22 14:42+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -385,34 +385,34 @@ msgstr "Mostrer les intrêyes catcheyes"
 msgid " [Hidden]"
 msgstr " [Catchî]"
 
-#: treeview.cpp:1069
+#: treeview.cpp:1040
 #, kde-format
 msgid "New Submenu"
 msgstr "Novele dressêye efant"
 
-#: treeview.cpp:1069
+#: treeview.cpp:1040
 #, kde-format
 msgid "Submenu name:"
 msgstr "No del dressêye efant :"
 
-#: treeview.cpp:1136
+#: treeview.cpp:1107
 #, kde-format
 msgid "New Item"
 msgstr "Novea cayet"
 
-#: treeview.cpp:1136
+#: treeview.cpp:1107
 #, kde-format
 msgid "Item name:"
 msgstr "No do cayet :"
 
-#: treeview.cpp:1840
+#: treeview.cpp:1810
 #, kde-format
 msgid "Menu changes could not be saved because of the following problem:"
 msgstr ""
 "Les candjmints al dressêye n' ont nén savou esse schapés a cåze di ç' "
 "problinme la :"
 
-#: treeview.cpp:1887
+#: treeview.cpp:1857
 #, kde-format
 msgid ""
 "Do you want to restore the system menu? Warning: This will remove all custom "
@@ -421,7 +421,7 @@ msgstr ""
 "Voloz vs rapexhî l' dressêye sistinme ? Asteme : Ça va disfacer totes les "
 "dressêyes fwaites a vosse môde."
 
-#: treeview.cpp:1888
+#: treeview.cpp:1858
 #, fuzzy, kde-format
 #| msgid "Restore to System Menu"
 msgctxt "@title:window"
