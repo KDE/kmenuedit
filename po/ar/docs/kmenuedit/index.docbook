@@ -1,0 +1,1082 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN"
+"dtd/kdedbx45.dtd" [
+ <!ENTITY kappname "&kde; Menu Editor">
+  <!ENTITY package "kdebase">
+  <!ENTITY firefox "<application
+>Firefox</application
+>">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Arabic "INCLUDE"
+> <!-- change language only here -->
+]>
+
+<book id="kmenuedit" lang="&language;">
+
+<bookinfo>
+
+<title
+>دليل محرر قوائم كيدي</title>
+
+<authorgroup>
+<author
+>&Milos.Prudek; &Milos.Prudek.mail;</author>
+<author
+>&Anne-Marie.Mahfouf; &Anne-Marie.Mahfouf.mail;</author>
+<othercredit role="reviewer"
+>&Lauri.Watts; &Lauri.Watts.mail; </othercredit>
+<othercredit role="translator"
+><firstname
+>زايد</firstname
+><surname
+>السعيدي</surname
+><affiliation
+><address
+><email
+>zayed.alsaidi@gmail.com</email
+></address
+></affiliation
+><contrib
+>التّرجمة العربيّة</contrib
+></othercredit
+> 
+</authorgroup>
+
+<copyright>
+<year
+>2000</year>
+<holder
+>&Milos.Prudek;</holder>
+</copyright>
+<copyright>
+<year
+>2008</year>
+<holder
+>&Anne-Marie.Mahfouf;</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>2015-04-27</date>
+<releaseinfo
+>بلازما 5.3</releaseinfo>
+
+<abstract
+><para
+>يسمح محرر قوائم كيدي بتحرير أحد مشغلات تطبيقات كيدي. </para
+></abstract>
+
+<keywordset>
+<keyword
+>كيدي</keyword>
+<keyword
+>محرر قوائم كيدي</keyword>
+<keyword
+>محرّر قوائم كِيدِي</keyword>
+<keyword
+>تطبيق</keyword>
+<keyword
+>برنامج</keyword>
+<keyword
+>قائمة</keyword>
+<keyword
+>كيك‌أوف</keyword>
+<keyword
+>لانسيوت</keyword>
+</keywordset>
+
+</bookinfo>
+<chapter id="introduction">
+<title
+>مقدمة</title>
+
+<para
+>يسمح محرر قوائم كيدي بتحرير قائمة مشغلات تطبيقات كيدي.</para>
+
+<para
+>يمكن بدء تشغيل محرر قوائم كيدي إما بالنقر بزر الفأرة الأيمن على زر مشغل التطبيقات في اللوحة واختيار <guimenuitem
+>حرّر التطبيقات...</guimenuitem
+>، أو بكتابة <userinput
+>kmenuedit</userinput
+> في سطر كيرنر.</para>
+
+<para
+>يسمح لك محرر قوائم كيدي بـ:</para>
+
+<itemizedlist>
+<listitem
+><para
+>عرض وتحرير القائمة المستخدمة من مشغل التطبيقات الحالي</para
+></listitem>
+<listitem
+><para
+>إجراء <guimenuitem
+>قص</guimenuitem
+> و <guimenuitem
+>نسخ</guimenuitem
+> و <guimenuitem
+>لصق</guimenuitem
+> للقوائم الفرعية والعناصر</para
+></listitem>
+<listitem
+><para
+>إنشاء وحذف القوائم الفرعية والعناصر</para
+></listitem>
+<listitem
+><para
+>تغيير ترتيب القوائم الفرعية والعناصر</para
+></listitem>
+<listitem
+><para
+>إخفاء العناصر وإضافة قوائم فرعية وعناصر جديدة</para
+></listitem>
+</itemizedlist>
+
+<para
+>تظهر كافة التطبيقات المثبتة على الحاسوب في قائمة مشغلات التطبيقات لكافة المستخدمين بشكل مبدئي. قد تظهر التطبيقات أكثر من مرة في عدة قوائم مختلفة. ستظهر أيضًا فئات القوائم الفرعية الفارغة المحددة في مواصفات قائمة سطح المكتب، ولكنها لا تظهر في مشغلات التطبيقات ما لم تثبت تطبيقات تنتمي إلى هذه الفئات. </para>
+
+<para
+>يحتوي العرض الشجري على نوعين مختلفين من الإدخالات:</para>
+<itemizedlist>
+<listitem
+><para
+>قائمة فرعية: تفعّل حقول <guilabel
+>الاسم</guilabel
+> و <guilabel
+>التعليق</guilabel
+> و <guilabel
+>الوصف</guilabel
+> وزر اختيار الأيقونة فقط، بينما تُعطل لسان التبويب <guilabel
+>متقدم</guilabel
+>. يمكن لأي قائمة فرعية أن تحتوي على قوائم فرعية و/أو عناصر إضافية. </para
+></listitem>
+<listitem
+><para
+>العناصر: استخدم هذا الإدخال لإدخال بيانات التطبيق الذي تريد إضافته. للحصول على معلومات مفصلة، راجع <link linkend="using-kmenuedit"
+>استخدام محرر قوائم كيدي</link
+>. </para
+></listitem>
+</itemizedlist>
+
+<para
+>يمتلك محرر قوائم كيدي وضعين للعرض الشجري - العادي ومع الإدخالات المخفية. لرؤية الأخير، حدد الخيار <guilabel
+>أظهر الإدخالات المخفية</guilabel
+> في حوار الضبط في صفحة <guilabel
+>خيارات عامة</guilabel
+>. </para>
+<para
+>تظهر العديد من الإدخالات الإضافية في وضع العرض المخفي في الشجرة. تبدو عدة إدخالات مخفية وكأنها مجرد تكرارات ولكنها تمتلك خيارات أوامر مختلفة. عادةً لا ينبغي لك تغيير هذه الإدخالات المخفية أبدًا وإلا فإنك تخاطر بتعطيل بعض وظائف النظام. </para>
+<para
+>في الوضع المخفي، ستحصل على قائمة فرعية خاصة <guilabel
+>‎.hidden [مخفي]</guilabel
+> كعنصر في المستوى الأعلى في الشجرة. هذه القائمة الفرعية الخاصة غير قابلة للتحرير. في هذه القائمة الفرعية، ستُعرض كافة العناصر المحذوفة عند التشغيل التالي لمحرر قوائم كيدي.</para>
+<para
+>لا يمكن حذف الإدخالات باستخدام واجهة المستخدم الرسومية في هذه القائمة الفرعية الخاصة. ستظهر مجددًا عند التشغيل التالي لمحرر قوائم كيدي. </para>
+
+<sect1 id="use-cases">
+<title
+>حالات الاستخدام</title>
+
+<sect2 id="use-cases-adapt">
+<title
+>تكييف القائمة للمستخدم</title
+> 
+
+<sect3 id="use-cases-adapt-order">
+<title
+>إعادة ترتيب العناصر</title
+> 
+
+<para
+>ينبغي القيام بذلك في وضع العرض المخفي حيث تُعرض فقط القوائم الفرعية والعناصر المرئية في قائمة مشغل التطبيقات. </para>
+<para
+>تُفرز القائمة أبجديًا باستخدام الأسماء أو الأوصاف الإنجليزية بشكل مبدئي. عند استخدام لغة أخرى غير الإنجليزية، ستظهر بعض القوائم الفرعية والعناصر بترتيب غير مفروز. </para>
+<para
+>استخدم الخيارات في <menuchoice
+><guimenu
+>حرر</guimenu
+><guimenuitem
+>فرز</guimenuitem
+></menuchoice
+> للفرز إما حسب الاسم أو الوصف. إذا كنت تستخدم مشغل التطبيقات الكلاسيكي، فعليك تحديد خيار <guilabel
+>التنسيق</guilabel
+> المقابل في حوار الإعدادات. في مشغل كيك‌أوف، حدد <guilabel
+>أظهر التطبيقات حسب الاسم</guilabel
+> إذا فرزتها حسب الاسم هنا. </para>
+<para
+>تجميع القوائم الفرعية أو العناصر التي تستخدمها بشكل متكرر معًا (مثل وضعها في أعلى القائمة) يجعل اختيارها أسهل. لتغيير ترتيب عناصر أو قوائم فرعية معينة في الشجرة، استخدم زر <guibutton
+>انقل للأعلى</guibutton
+> أو <guibutton
+>انقل للأسفل</guibutton
+> في شريط الأدوات أو هذه الإجراءات في القائمة. </para>
+<para
+>ستستخدم جميع مشغلات التطبيقات ترتيب القوائم الفرعية المحدد في محرر قوائم كيدي. </para>
+</sect3>
+
+<sect3 id="use-cases-adapt-hide">
+<title
+>إزالة العناصر من عرض القائمة</title
+> 
+
+<para
+>قد يكون عرض جميع التطبيقات المثبتة على الحاسوب مربكًا لبعض المستخدمين، لذا قد ترغب في إخفاء بعض العناصر أو القوائم الفرعية الأقل استخدامًا. هناك طريقتان مختلفتان للقيام بذلك: </para>
+
+<para
+>التبديل إلى وضع العرض العادي بدون الإدخالات المخفية. إذا حذفت عناصر، فستُنقل إلى القائمة الفرعية <guilabel
+>‎.hidden [مخفي]</guilabel
+>. يمكنك إعادتها إلى الشجرة لتظهر في القائمة مجددًا. </para>
+<para
+>إذا حذفت قائمة فرعية، فستُحذف فعليًا مع كافة قوائمها الفرعية وعناصرها. لإعادة إنشائها، يمكنك استخدام <menuchoice
+><guimenu
+>حرر</guimenu
+><guimenuitem
+>استعد إلى قائمة النظام</guimenuitem
+></menuchoice
+>، ولكن هذا سيزيل كافة قوائمك الفرعية وعناصرك المخصصة، وستُحذف ملفات <filename class="extension"
+>.desktop</filename
+> المقابلة لها أيضًا. لا يمكن التراجع عن هذا الإجراء. </para>
+
+<para
+>الطريقة المفضلة لإزالة القوائم الفرعية والعناصر في قائمة مشغل التطبيقات هي تحديد <guilabel
+>إدخال مخفي</guilabel
+> في لسان تبويب <guilabel
+>عام</guilabel
+> والتبديل إلى وضع العرض المخفي. في هذا الوضع، يسهل التراجع عن التغييرات دون تدمير بنية القائمة. العيب الوحيد هو أنه يجب عليك إخفاء كافة الإدخالات في قائمة فرعية يدويًا لإخفاء القائمة الفرعية بالكامل من العرض. </para>
+</sect3>
+
+</sect2>
+
+<sect2 id="use-cases-additems">
+<title
+>إضافة عناصر مخصصة</title
+> 
+
+<para
+>لإضافة عناصر مخصصة (قائمة فرعية أو عنصر)، استخدم الإجراءات في القائمة أو شريط الأدوات. تحتاج العناصر إلى اسم وأمر، وبدون إدخال أمر، لن يُحفظ العنصر وستفقد إضافتك. </para>
+<para
+>عند إضافة إدخال، سيُدرج كإدخال فرعي في الموقع المحدد حاليًا في الشجرة. يمكن نقل الإدخال بسحبه بالفأرة أو باستخدام زر <guibutton
+>انقل للأسفل</guibutton
+> إلى أسفل الشجرة لجعله إدخالًا في المستوى الأعلى. </para>
+
+</sect2>
+
+<sect2 id="use-cases-transfer">
+<title
+>نقل إعدادات مشغل التطبيقات</title
+> 
+
+<para
+>لا توجد طريقة لنقل إعدادات القائمة باستخدام واجهة المستخدم الرسومية، عليك القيام بذلك يدويًا ونسخ الملفات التالية إلى المستخدم المستهدف:</para>
+<para
+>يخزن محرر قوائم كيدي تسلسل القائمة الهرمي في <filename
+>menus/applications-kmenuedit.menu</filename
+> في المجلد <filename class="directory"
+>$(qtpaths --paths GenericConfigLocation)</filename
+>، ويحتوي <filename class="directory"
+>desktop-directories</filename
+> في المجلد <filename class="directory"
+>$(qtpaths --paths GenericDataLocation)</filename
+> على ملفات سطح المكتب للقوائم الفرعية التي أنشأتها. وفي <filename class="directory"
+>applications/</filename
+> في المجلد <filename class="directory"
+>$(qtpaths --paths GenericDataLocation)</filename
+> ستجد ملفات سطح المكتب للعناصر المخصصة التي أنشأتها. </para>
+<para
+>تُخزن الاختصارات لكل تطبيق في <filename
+>kglobalshortcutsrc</filename
+> في المجلد <filename class="directory"
+>$(qtpaths --paths GenericConfigLocation)</filename
+>، ولكن التصدير/الاستيراد لا يعمل لأن معرفات الاختصارات (UUIDs) لا تتطابق بين الأنظمة، حتى وإن كانت ملفات <filename class="extension"
+>.desktop</filename
+> متطابقة. عليك تعيين كافة الاختصارات يدويًا مرة أخرى. </para>
+
+</sect2>
+
+</sect1>
+</chapter>
+
+<chapter id="quickstart">
+<chapterinfo>
+<authorgroup>
+<author
+>&Virgil.J.Nisly; &Virgil.J.Nisly.mail;</author>
+</authorgroup>
+</chapterinfo>
+<title
+>إضافة إدخال قائمة</title>
+
+  <para
+>في هذا المثال، سنضيف فيرفوكس إلى القائمة الفرعية <guisubmenu
+>إنترنت</guisubmenu
+>.</para>
+  <para
+>للبدء، نحتاج إلى فتح محرر قوائم كيدي، لذا انقر بزر الفأرة الأيمن على قائمة مشغل التطبيقات، وانقر على <guimenuitem
+>حرّر التطبيقات...</guimenuitem
+> لبدء تشغيل محرر قوائم كيدي. بعد بدء تشغيله، حدد <guisubmenu
+>إنترنت</guisubmenu
+> كما هو موضح في الصورة أدناه. <screenshot>
+<screeninfo
+>حدد <guisubmenu
+>إنترنت</guisubmenu
+></screeninfo>
+<mediaobject>
+<imageobject>
+<imagedata fileref="selectinternet.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>حدد <guisubmenu
+>إنترنت</guisubmenu
+></phrase>
+</textobject>
+</mediaobject>
+</screenshot
+></para>
+  <para
+>بمجرد تحديد <guisubmenu
+>إنترنت</guisubmenu
+>، انقر على <menuchoice
+><guimenu
+>ملف</guimenu
+><guimenuitem
+>عنصر جديد...</guimenuitem
+></menuchoice
+>، ليُفتح حوار <guilabel
+>عنصر جديد</guilabel
+> كما هو موضح أدناه. اكتب اسم البرنامج الذي تريد إضافته، في هذه الحالة، اكتب <userinput
+>firefox</userinput
+>. <screenshot>
+<screeninfo
+>حوار <guilabel
+>عنصر جديد</guilabel
+></screeninfo>
+<mediaobject>
+<imageobject>
+<imagedata fileref="itemname.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>حوار <guilabel
+>عنصر جديد</guilabel
+>.</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+</para>
+<para
+>اضغط على مفتاح الإدخال (Enter)، وستظهر لك في النافذة الرئيسة صورة تشبه الصورة أدناه. <screenshot>
+<screeninfo
+>عنصر جديد</screeninfo>
+<mediaobject>
+<imageobject>
+<imagedata fileref="new.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>أُنشئ العنصر الجديد.</phrase>
+</textobject>
+</mediaobject>
+</screenshot
+></para>
+
+<para
+>الآن لنملأ <guilabel
+>الوصف:</guilabel
+>، في هذه الحالة اكتب <userinput
+>متصفح ويب</userinput
+>. <note
+><para
+>يعتمد شكل ظهور الوصف والاسم على الإعدادات في مشغل التطبيقات، على سبيل المثال: <quote
+>متصفح ويب (فيرفوكس)</quote
+> أو <quote
+>فيرفوكس (متصفح ويب)</quote
+>.</para
+></note
+> سنحتاج لملء اسم الملف التنفيذي في حقل <guilabel
+>الأمر:</guilabel
+>، وفي هذه الحالة سنكتب <userinput
+><command
+>firefox</command
+></userinput
+>.</para>
+<para
+>يجب أن يكون الأمر ضمن متغير <envar
+>PATH</envar
+> الخاص بك أو عليك تحديد المسار الكامل للملف التنفيذي. إذا كنت لا تعرف اسم الملف التنفيذي لتطبيق ما، استخدم الأمر <userinput
+><command
+>locate</command
+></userinput
+> للبحث عن ملف سطح المكتب وأدخل السلسلة من سطر Exec كأمر هنا. </para>
+<note
+><para
+>بعد الأمر، يمكنك استخدام عدة نائبات ستُستبدل بالقيم الفعلية عند تشغيل البرنامج: <simplelist>
+<member
+>‎%f - اسم ملف واحد</member>
+<member
+>‎%F - قائمة ملفات؛ تُستخدم للتطبيقات التي يمكنها فتح عدة ملفات محلية في وقت واحد</member>
+<member
+>‎%u - عنوان URL واحد</member>
+<member
+>‎%U - قائمة عناوين URL</member>
+<member
+>‎%d - مجلد الملف المراد فتحه</member>
+<member
+>‎%D - قائمة مجلدات</member>
+<member
+>‎%i - الأيقونة</member>
+<member
+>‎%m - الأيقونة الصغيرة</member>
+<member
+>‎%c - التسمية التوضيحية</member>
+</simplelist
+></para>
+<informalexample
+><para
+>على سبيل المثال: إذا أردت أن يبدأ فيرفوكس تصفح الويب عند الموقع www.kde.org - فبدلًا من <command
+>firefox</command
+> ستكتب <command
+>firefox %u www.kde.org</command
+>.</para
+></informalexample
+></note>
+<para
+>تقبل معظم التطبيقات خيارات إضافية، مثل اسم تشكيلة محددة كـ كوينكرر أو كونسول. لرؤية كافة خيارات تطبيق ما، شغّل <userinput
+><command
+><replaceable
+>اسم_التطبيق</replaceable
+></command
+> <option
+>--help</option
+></userinput
+> في كونسول.</para>
+<para
+>نود الحصول على أيقونة أكثر إبداعًا، لذا سننقر على الأيقونة العامة الموجودة بجانب <guilabel
+>الاسم:</guilabel
+> (لاحظ أن الأيقونة المبدئية قد تكون فارغة، وفي هذه الحالة انقر في المنطقة الواقعة يمين مربع إدخال الاسم). سيؤدي ذلك لفتح حوار <guilabel
+>اختر الأيقونة</guilabel
+> الذي سيتيح لنا اختيار الأيقونة الجديدة كما هو موضح أدناه. <screenshot>
+<screeninfo
+>حوار <guilabel
+>اختر الأيقونة</guilabel
+></screeninfo>
+<mediaobject>
+<imageobject>
+<imagedata fileref="selecticon.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>حوار <guilabel
+>اختر الأيقونة</guilabel
+>.</phrase>
+</textobject>
+</mediaobject>
+</screenshot
+></para>
+
+  <para
+>نختار أيقونة فيرفوكس من القائمة، ونضغط على مفتاح الإدخال (Enter). من المفترض أن تبدو شاشتك النهائية مشابهة للقطة الشاشة أدناه. <screenshot>
+<screeninfo
+>لقطة شاشة للانتهاء</screeninfo>
+<mediaobject>
+<imageobject>
+<imagedata fileref="done.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>هذا هو الشكل الذي ينبغي أن يبدو عليه عنصر القائمة المكتمل.</phrase>
+</textobject>
+</mediaobject>
+</screenshot
+></para>
+
+<para
+>يمكن الآن تغيير موقع عنصر القائمة الجديد باستخدام زري <guibutton
+>انقل للأعلى</guibutton
+> و <guibutton
+>انقل للأسفل</guibutton
+> في شريط أدوات محرر قوائم كيدي أو بسحبه بالفأرة.</para>
+ <para
+>يمكن فرز عناصر القائمة الفرعية باستخدام زر <guibutton
+>فرز</guibutton
+> في شريط أدوات محرر قوائم كيدي أو عبر عناصر القائمة الفرعية <menuchoice
+><guimenu
+>تحرير</guimenu
+><guisubmenu
+>فرز</guisubmenu
+></menuchoice
+>.</para>
+
+<para
+>انقر على <menuchoice
+><guimenu
+>ملف</guimenu
+><guimenuitem
+>احفظ</guimenuitem
+></menuchoice
+>، وانتظر انتهاء حوار <guilabel
+>يجري تحديث ضبط النظام</guilabel
+>، وستجد فيرفوكس في القائمة الفرعية <guisubmenu
+>إنترنت</guisubmenu
+> لمشغل التطبيقات.</para>
+
+</chapter>
+
+<chapter id="using-kmenuedit">
+<title
+>استخدام محرر قوائم كيدي</title>
+
+<para
+>تظهر لوحة التطبيقات اليسرى بنية مشغل التطبيقات. عندما تتصفح العناصر في اللوحة اليسرى، تظهر اللوحة اليمنى معلومات مفصلة عن عنصر القائمة المحدد.</para>
+
+<sect1 id="details-general">
+<title
+>لسان تبويب عام</title>
+
+<variablelist>
+<varlistentry>
+<term
+><guilabel
+>الاسم:</guilabel
+></term>
+<listitem
+><para
+>هذا هو اسم البرنامج كما يظهر في قائمة مشغل التطبيقات. يمكن أن يختلف عن اسم الملف التنفيذي الحقيقي. على سبيل المثال، اسم الملف التنفيذي <command
+>mc</command
+> هو "<application
+>ميدنايت كوماندر</application
+>".</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>الوصف:</guilabel
+></term>
+<listitem
+><para
+>سيُعرض الوصف مع الاسم في مشغل التطبيقات. هذا الأمر اختياري تمامًا.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>التعليق:</guilabel
+></term>
+<listitem
+><para
+>صف البرنامج بتفصيل أكبر في هذا الحقل. هذا الأمر اختياري تمامًا.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>الأمر:</guilabel
+></term>
+<listitem
+><para
+>هذا هو اسم البرنامج التنفيذي. تأكد من امتلاكك صلاحية تشغيل البرنامج.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>فعّل أصداء الإطلاق</guilabel
+></term>
+<listitem
+><para
+>إذا حُدد هذا المربع، فستُعرض أصداء (تفاعل مرئي) عند بدء تشغيل التطبيق. </para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>أظهر في كيدي فقط</guilabel
+></term>
+<listitem
+><para
+>عند تحديده، سيكون إدخال التطبيق مرئيًا فقط في كافة مشغلات تطبيقات كيدي، ولكن ليس في بيئات سطح المكتب الأخرى. </para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>إدخال مخفي</guilabel
+></term>
+<listitem
+><para
+>إزالة إدخال من عرض القائمة في مشغل التطبيقات. </para
+></listitem>
+</varlistentry>
+</variablelist>
+</sect1>
+
+<sect1 id="details-advanced">
+<title
+>لسان تبويب متقدم</title>
+
+<variablelist>
+<varlistentry>
+<term
+><guilabel
+>مسار العمل:</guilabel
+></term>
+<listitem
+><para
+>حدد مسار عمل البرنامج. سيكون هذا هو المسار الحالي عند إطلاق البرنامج. ليس بالضرورة أن يكون نفس موقع الملف التنفيذي.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>شغّل في الطرفية</guilabel
+></term>
+<listitem
+><para
+>يجب تحديد هذا الخيار إذا كان برنامجك يتطلب محاكي طرفية ليعمل. ينطبق هذا بشكل أساسي على <link linkend="gloss-console-application"
+>تطبيقات سطر الأوامر</link
+>.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>خيارات الطرفية:</guilabel
+></term>
+<listitem
+><para
+>ضع كافة خيارات الطرفية في هذا الحقل.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>شغّل كمستخدم مختلف</guilabel
+></term>
+<listitem
+><para
+>إذا أردت تشغيل هذا البرنامج كمستخدم مختلف (ليس أنت)، فحدد هذا المربع، وقدم اسم المستخدم في حقل <guilabel
+>اسم المستخدم:</guilabel
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>مفتاح الاختصار الحالي:</guilabel
+></term>
+<listitem
+><para
+>يمكنك تعيين اختصار لوحة مفاتيح خاص لإطلاق برنامجك.</para>
+
+<para
+>انقر على زر <guibutton
+>لا شيء</guibutton
+> الموجود يمين مربع تحديد <guilabel
+>مفتاح الاختصار الحالي:</guilabel
+>.</para>
+
+<para
+>سيتغير نص الزر إلى <guilabel
+>إدخال...</guilabel
+> وعندها يمكنك ضغط مزيج المفاتيح على لوحة مفاتيحك الذي ترغب في تعيينه لبرنامجك. </para>
+<para
+>يمكنك تصفير الاختصار إلى <guilabel
+>لا شيء</guilabel
+> باستخدام هذا الزر: <inlinemediaobject
+><imageobject
+> <imagedata fileref="reset.png" format="PNG"/></imageobject
+></inlinemediaobject
+>. </para>
+
+<para
+>لا تنسَ حفظ إعداداتك بالنقر على أيقونة <guiicon
+>احفظ</guiicon
+> في شريط الأدوات أو باستخدام عنصر القائمة <menuchoice
+> <guimenu
+>ملف</guimenu
+><guimenuitem
+>احفظ</guimenuitem
+> </menuchoice
+>.</para>
+
+</listitem>
+</varlistentry>
+</variablelist>
+</sect1>
+
+</chapter>
+
+<chapter id="menu-reference">
+<title
+>مرجع القائمة</title>
+
+<para
+>تتوفر معظم الإجراءات في شريط القائمة أيضًا في القائمة السياقية التي تُفتح بالنقر بزر الفأرة الأيمن على عنصر في العرض الشجري.</para>
+
+<variablelist>
+<varlistentry id="file-new-item">
+<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+></shortcut
+> <guimenu
+>ملف</guimenu
+> <guimenuitem
+>عنصر جديد...</guimenuitem
+> </menuchoice
+></term
+> <listitem
+><para
+><action
+>يضيف عنصر قائمة جديدًا.</action
+></para
+></listitem>
+</varlistentry>
+
+<varlistentry id="file-new-submenu">
+<term
+><menuchoice
+><guimenu
+>ملف</guimenu
+> <guimenuitem
+>قائمة فرعية جديدة...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>يضيف قائمة فرعية جديدة.</action
+></para
+></listitem>
+</varlistentry>
+
+<varlistentry id="file-save">
+<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>S</keycap
+></keycombo
+></shortcut
+> <guimenu
+>ملف</guimenu
+><guimenuitem
+>احفظ</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+><action
+>يحفظ القائمة</action
+></para>
+</listitem>
+</varlistentry>
+
+<varlistentry id="file-quit">
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>ملف</guimenu
+> <guimenuitem
+>أنهِ</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>ينهي</action
+> محرر قوائم كيدي.</para
+></listitem>
+</varlistentry>
+
+<varlistentry id="edit-move-up">
+<term
+><menuchoice
+><guimenu
+>حرر</guimenu
+> <guimenuitem
+>انقل للأعلى</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>ينقل</action
+> العنصر المحدد للأعلى في قائمته الفرعية.</para
+></listitem>
+</varlistentry>
+
+<varlistentry id="edit-move-down">
+<term
+><menuchoice
+><guimenu
+>حرر</guimenu
+> <guimenuitem
+>انقل للأسفل</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>انقل</action
+> العنصر المحدد للأسفل في قائمته الفرعية.</para
+></listitem>
+</varlistentry>
+
+
+<varlistentry id="edit-cut">
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>X</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>حرر</guimenu
+> <guimenuitem
+>قص</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>يقص عنصر القائمة الحالي إلى الحافظة.</action
+> إذا أردت نقل عنصر قائمة، فعليك أولًا قصه إلى الحافظة، ثم الانتقال إلى الوجهة المقصودة باستخدام اللوحة اليسرى، واستخدام وظيفة <guimenuitem
+>لصق</guimenuitem
+> للصق عنصر القائمة من الحافظة.</para
+></listitem>
+</varlistentry>
+
+<varlistentry id="edit-copy">
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>C</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>حرر</guimenu
+> <guimenuitem
+>انسخ</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>ينسخ عنصر القائمة الحالي إلى الحافظة</action
+>. يمكنك لاحقًا استخدام وظيفة <guimenuitem
+>لصق</guimenuitem
+> للصق عنصر القائمة المنسوخ من الحافظة إلى وجهته. يمكنك لصق نفس العنصر عدة مرات.</para
+></listitem>
+</varlistentry>
+
+<varlistentry id="edit-paste">
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>V</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>حرر</guimenu
+> <guimenuitem
+>ألصق</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>يلصق عنصر القائمة من الحافظة</action
+> في المكان المحدد حاليًا في القائمة الرئيسة. يجب استخدام <guimenuitem
+>قص</guimenuitem
+> أو <guimenuitem
+>نسخ</guimenuitem
+> أولًا قبل أن تتمكن من <guimenuitem
+>اللصق</guimenuitem
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry id="edit-delete">
+<term
+><menuchoice
+><shortcut
+><keycap
+>Del</keycap
+></shortcut
+> <guimenu
+>حرر</guimenu
+> <guimenuitem
+>احذف</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>يحذف عنصر القائمة المحدد حاليًا.</action
+></para
+></listitem>
+</varlistentry>
+
+<varlistentry id="edit-sort">
+<term
+><menuchoice
+><guimenu
+>حرر</guimenu
+> <guisubmenu
+>فرز</guisubmenu
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>يفتح</action
+> قائمة فرعية لفرز القائمة الفرعية المختارة أو شجرة القائمة بأكملها. توجد طريقتان مطبقتان للفرز، وهما حسب الاسم وحسب الوصف.</para
+></listitem>
+</varlistentry>
+
+<varlistentry id="edit-restore">
+<term
+><menuchoice
+><guimenu
+>حرر</guimenu
+> <guimenuitem
+>استعد إلى قائمة النظام</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>سيؤدي هذا لاستعادة مشغل التطبيقات كما كان عليه بشكل مبدئي وإزالة كافة إعداداتك المخصصة. سيظهر لك مربع رسالة يسألك عما إذا كنت تريد حقًا القيام بذلك.</action
+></para
+></listitem>
+</varlistentry>
+
+</variablelist>
+
+<para
+>يحتوي محرر قوائم كيدي على عناصر قوائم كيدي الشائعة <guimenu
+>إعدادات</guimenu
+> و <guimenu
+>مساعدة</guimenu
+>، للمزيد من المعلومات اقرأ الأقسام المتعلقة بـ <ulink url="help:/fundamentals/menus.html#menus-settings"
+>قائمة الإعدادات</ulink
+> و <ulink url="help:/fundamentals/menus.html#menus-help"
+>قائمة المساعدة</ulink
+> في أساسيات كيدي. </para>
+
+</chapter>
+
+<chapter id="credits">
+
+<title
+>الحقوق والترخيص</title>
+
+<para
+>محرر قوائم كيدي </para>
+<para
+>حقوق ملكية البرنامج © 2002 لمؤلفه Raffaele Sandrini</para>
+
+<para
+>المساهمون:</para>
+<itemizedlist>
+<listitem
+><para
+>&Matthias.Elter; &Matthias.Elter.mail; - المؤلف الأصلي</para>
+</listitem>
+<listitem
+><para
+>&Matthias.Ettrich; &Matthias.Ettrich.mail;</para>
+</listitem>
+<listitem
+><para
+>&Daniel.M.Duley; &Daniel.M.Duley.mail;</para>
+</listitem>
+<listitem
+><para
+>&Preston.Brown; &Preston.Brown.mail;</para>
+</listitem>
+</itemizedlist>
+
+<para
+>حقوق ملكية التوثيق © 2000 لمؤلفه Milos Prudek</para>
+<para
+>حقوق ملكية التوثيق © 2008 لمؤلفته Anne-Marie Mahfouf</para>
+<para
+>حدثه لـ كيدي 3.0 Lauri Watts‏ &Lauri.Watts.mail; عام 2002</para>
+
+<para
+>الترجمة: زايد السعيدي <email
+>zayed.alsaidi@gmail.com</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+<glossary id="glossary">
+<title
+>المُسرَد</title>
+
+<glossentry id="gloss-console-application">
+<glossterm
+>تطبيق سطر الأوامر</glossterm>
+<glossdef>
+
+<para
+>تطبيق كُتب في الأصل لبيئة غير رسومية موجهة للنصوص. تعمل هذه التطبيقات بشكل جيد في كيدي. يجب تشغيلها ضمن محاكي طرفية، مثل كونسول. لا تُحذر آليًا عند إغلاق جلسة كيدي. لذا يجب ألا تنسى حفظ المستندات المفتوحة في هذه التطبيقات قبل تسجيل الخروج من كيدي.</para>
+
+<para
+>تدعم تطبيقات سطر الأوامر النسخ واللصق من التطبيقات المتوافقة مع كيدي. ببساطة حدد النص في تطبيق سطر الأوامر بالفأرة، ثم انتقل إلى التطبيق المتوافق مع كيدي واضغط على <keycombo action="simul"
+>&Ctrl; <keycap
+>V</keycap
+></keycombo
+> للصق النص. إذا أردت النسخ من تطبيق كيدي إلى تطبيق سطر أوامر، فحدد النص أولًا بالفأرة، واضغط على <keycombo action="simul"
+>&Ctrl; <keycap
+>C</keycap
+></keycombo
+>، ثم انتقل إلى تطبيق سطر الأوامر واضغط على الزر الأوسط في فأرتك<footnote
+><para
+>إذا كانت فأرتك لا تمتلك زرًا أوسط، فيجب عليك ضغط الزرين <mousebutton
+>الأيسر</mousebutton
+> و <mousebutton
+>الأيمن</mousebutton
+> في وقت واحد. يسمى هذا <quote
+>محاكاة الزر الأوسط</quote
+> ويجب أن يدعمه نظام التشغيل لديك ليعمل.</para
+></footnote
+>.</para>
+
+</glossdef>
+</glossentry>
+
+</glossary>
+
+&documentation.index;
+
+</book>
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes: nil
+sgml-general-insert-case: lower
+End:
+-->
+
