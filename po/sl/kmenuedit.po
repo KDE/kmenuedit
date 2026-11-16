@@ -1,7 +1,7 @@
 # Translation of kmenuedit.po to Slovenian
 # KMENUEDIT translation to Slovenian language
 # Copyright (C) 2001, 2003, 2004, 2005 Free Software Foundation, Inc.
-# $Id: kmenuedit.po 1750294 2026-10-14 01:53:50Z scripty $
+# $Id$
 # $Source$
 #
 # Roman Maurer <roman.maurer@amis.net>, 2000.
