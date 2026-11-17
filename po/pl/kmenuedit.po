@@ -1,4 +1,4 @@
-# Version: $Revision: 1723123 $
+# Version: $Revision$
 # translation of kmenuedit.po to Polish
 # translation of kmenuedit.po to
 # translation of kmenuedit.po to
