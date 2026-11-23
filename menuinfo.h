@@ -65,6 +65,10 @@ public:
     // Remove entry (without deleting it)
     void take(MenuEntryInfo *);
 
+    // Remove entry (without deleting it)
+    // @return true if found
+    bool takeRecursive(MenuEntryInfo *entry);
+
     // Return a unique sub-menu caption inspired by @p proposedCaption
     QString uniqueMenuCaption(const QString &proposedCaption);
 

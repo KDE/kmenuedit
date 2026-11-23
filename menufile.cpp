@@ -44,6 +44,7 @@ MenuFile::MenuFile(const QString &file)
 
 MenuFile::~MenuFile()
 {
+    qDeleteAll(m_actionList);
 }
 
 bool MenuFile::load()

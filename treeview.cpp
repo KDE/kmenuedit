@@ -1659,15 +1659,17 @@ void TreeView::del(TreeItem *item, bool deleteInfo)
         parentFolderInfo->take(folderInfo);
         folderInfo->setInUse(false);
 
+        bool ownsFolderInfo = deleteInfo;
         if (m_clipboard == COPY_FOLDER && (m_clipboardFolderInfo == folderInfo)) {
             // Copy + Del == Cut
             m_clipboard = MOVE_FOLDER; // Clipboard now owns folderInfo
+            ownsFolderInfo = false;
         } else {
             if (folderInfo->takeRecursive(m_clipboardFolderInfo)) {
                 m_clipboard = MOVE_FOLDER; // Clipboard now owns m_clipboardFolderInfo
             }
-            if (deleteInfo) {
-                delete folderInfo; // Delete folderInfo
+            if (m_clipboard == COPY_FILE && folderInfo->takeRecursive(m_clipboardEntryInfo)) {
+                m_clipboard = MOVE_FILE; // Clipboard now owns m_clipboardEntryInfo
             }
         }
 
@@ -1677,6 +1679,10 @@ void TreeView::del(TreeItem *item, bool deleteInfo)
 
         // Remove tree item
         delete item;
+
+        if (ownsFolderInfo) {
+            delete folderInfo; // Delete folderInfo and everything in it
+        }
     } else if (item->isEntry()) {
         MenuEntryInfo *entryInfo = item->entryInfo();
         QString menuId = entryInfo->menuId();

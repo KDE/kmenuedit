@@ -31,6 +31,8 @@ MenuFolderInfo::~MenuFolderInfo()
 {
     qDeleteAll(subFolders);
     subFolders.clear();
+    qDeleteAll(entries);
+    entries.clear();
 }
 
 void MenuFolderInfo::add(MenuSeparatorInfo *info, bool initial)
@@ -93,6 +95,21 @@ void MenuFolderInfo::add(MenuEntryInfo *entry, bool initial)
 void MenuFolderInfo::take(MenuEntryInfo *entry)
 {
     entries.removeAll(entry);
+}
+
+// Remove entry (without deleting it)
+bool MenuFolderInfo::takeRecursive(MenuEntryInfo *entry)
+{
+    if (entries.removeAll(entry) > 0) {
+        return true;
+    }
+
+    for (MenuFolderInfo *subFolderInfo : std::as_const(subFolders)) {
+        if (subFolderInfo->takeRecursive(entry)) {
+            return true;
+        }
+    }
+    return false;
 }
 
 QString uniqueCaption(const QString &caption)
