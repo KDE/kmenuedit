@@ -248,11 +248,11 @@ TreeView::TreeView(KActionCollection *ac, QWidget *parent)
 
     // listen for copy
     connect(m_ac->action(CUT_ACTION_NAME), &QAction::triggered, this, &TreeView::cut);
-    connect(m_ac->action(COPY_ACTION_NAME), SIGNAL(triggered()), SLOT(copy()));
+    connect(m_ac->action(COPY_ACTION_NAME), &QAction::triggered, this, qOverload<>(&TreeView::copy));
     connect(m_ac->action(PASTE_ACTION_NAME), &QAction::triggered, this, &TreeView::paste);
 
     // listen for deleting
-    connect(m_ac->action(DELETE_ACTION_NAME), SIGNAL(triggered()), SLOT(del()));
+    connect(m_ac->action(DELETE_ACTION_NAME), &QAction::triggered, this, qOverload<>(&TreeView::del));
 
     // listen for sorting
     QAction *action = m_ac->action(SORT_BY_NAME_ACTION_NAME);

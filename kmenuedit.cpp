@@ -244,14 +244,12 @@ void KMenuEdit::setupView()
     // add padding to splitter
     m_splitter->setContentsMargins(0, 0, 0, 0);
 
-    // clang-format off
-    connect(m_tree, SIGNAL(entrySelected(MenuFolderInfo*)), m_basicTab, SLOT(setFolderInfo(MenuFolderInfo*)));
-    connect(m_tree, SIGNAL(entrySelected(MenuEntryInfo*)), m_basicTab, SLOT(setEntryInfo(MenuEntryInfo*)));
+    connect(m_tree, qOverload<MenuFolderInfo *>(&TreeView::entrySelected), m_basicTab, &BasicTab::setFolderInfo);
+    connect(m_tree, qOverload<MenuEntryInfo *>(&TreeView::entrySelected), m_basicTab, &BasicTab::setEntryInfo);
     connect(m_tree, &TreeView::disableAction, m_basicTab, &BasicTab::slotDisableAction);
 
-    connect(m_basicTab, SIGNAL(changed(MenuFolderInfo*)), m_tree, SLOT(currentDataChanged(MenuFolderInfo*)));
-    connect(m_basicTab, SIGNAL(changed(MenuEntryInfo*)), m_tree, SLOT(currentDataChanged(MenuEntryInfo*)));
-    // clang-format on
+    connect(m_basicTab, qOverload<MenuFolderInfo *>(&BasicTab::changed), m_tree, qOverload<MenuFolderInfo *>(&TreeView::currentDataChanged));
+    connect(m_basicTab, qOverload<MenuEntryInfo *>(&BasicTab::changed), m_tree, qOverload<MenuEntryInfo *>(&TreeView::currentDataChanged));
 
     connect(m_basicTab, &BasicTab::findServiceShortcut, m_tree, &TreeView::findServiceShortcut);
 
