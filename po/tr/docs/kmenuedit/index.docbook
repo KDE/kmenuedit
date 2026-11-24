@@ -135,7 +135,7 @@
 </itemizedlist>
 
 <para
->Bilgisayarda kurulu olan tüm uygulamalar öntanımlı olarak tüm kullanıcıların uygulama başlatıcıları menüsünde görünür. Uygulamalar birkaç farklı menüde birden çok kez görünebilir. Masaüstü menü belirtiminde tanımlanan boş alt menü kategorileri de görünür; ancak bu kategorilere ait uygulamaları kurmadığınız sürece başlatıcılar bu menüde görünmez. </para>
+>Bilgisayarda kurulu olan tüm uygulamalar varsayılan olarak tüm kullanıcıların uygulama başlatıcıları menüsünde görünür. Uygulamalar birkaç farklı menüde birden çok kez görünebilir. Masaüstü menü belirtiminde tanımlanan boş alt menü kategorileri de görünür; ancak bu kategorilere ait uygulamaları kurmadığınız sürece başlatıcılar bu menüde görünmez. </para>
 
 <para
 >Ağaç görünümünün iki farklı girdi türü vardır:</para>
@@ -192,7 +192,7 @@
 <para
 >Bu, yalnızca uygulama başlatıcısı menüsünde görünen alt menülerin ve ögelerin görüntülendiği gizli görünüm kipinde yapılmalıdır. </para>
 <para
->Öntanımlı olarak menü, İngilizce adlar veya açıklamalar kullanılarak abecesel olarak sıralanmıştır. Bu nedenle, İngilizceden başka bir dil kullanıldığında bazı alt menüler ve ögeler sıralanmamış olarak görünecektir. </para>
+>Varsayılan olarak menü, İngilizce adlar veya açıklamalar kullanılarak abecesel olarak sıralanmıştır. Bu nedenle, İngilizceden başka bir dil kullanıldığında bazı alt menüler ve ögeler sıralanmamış olarak görünecektir. </para>
 <para
 >Ada veya açıklamaya göre sıralamak için <menuchoice
 ><guimenu
@@ -429,7 +429,7 @@
 <member
 >%m — ufak simge</member>
 <member
->%c — alt yazı</member>
+>%c — görsel yazısı</member>
 </simplelist
 ></para>
 <informalexample
@@ -454,7 +454,7 @@
 <para
 >Daha yaratıcı bir simge koyalım derseniz <guilabel
 >Ad:</guilabel
-> alanının yanındaki düz simgeye tıklayın (not; öntanımlı simge boş olabilir, öyleyse ad giriş alanının sağındaki alana tıklayın). Bu, yeni simgemizi aşağıda gösterildiği üzere seçmemize izin verecek olan <guilabel
+> alanının yanındaki düz simgeye tıklayın (not; varsayılan simge boş olabilir, öyleyse ad giriş alanının sağındaki alana tıklayın). Bu, yeni simgemizi aşağıda gösterildiği üzere seçmemize izin verecek olan <guilabel
 >Simge Seç</guilabel
 > iletişim kutusunu getirir. <screenshot>
 <screeninfo
@@ -967,7 +967,7 @@
 <listitem
 ><para
 ><action
->Bu, uygulama başlatıcısını öntanımlı durumuna geri yükler ve tüm özel ayarlarınızı kaldırır. Bunu gerçekten yapmak isteyip istemediğinizi soran bir ileti kutusu çıkacaktır.</action
+>Bu, uygulama başlatıcısını varsayılan durumuna geri yükler ve tüm özel ayarlarınızı kaldırır. Bunu gerçekten yapmak isteyip istemediğinizi soran bir ileti kutusu çıkacaktır.</action
 ></para
 ></listitem>
 </varlistentry>
